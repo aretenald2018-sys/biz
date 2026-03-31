@@ -43,8 +43,46 @@ function parseDelimited(text: string, delimiter: string): string[][] {
   return lines.map((line) => line.split(delimiter).map((cell) => cell.trim()));
 }
 
-// Find the header row in an array of rows (might not be the first row)
+// Merge multi-row headers: e.g. row1 = ["","","","","","데이터 도메인","","","",""], row2 = ["리전","국가","법인명","브랜드","법인명상세","차량","고객","판매","품질","생산"]
+// For cells where row1 has a group label (like "데이터 도메인") and row2 has sub-labels, try both combined and individual.
+function mergeHeaderRows(row1: string[], row2: string[]): string[] {
+  const maxLen = Math.max(row1.length, row2.length);
+  const merged: string[] = [];
+  for (let i = 0; i < maxLen; i++) {
+    const top = String(row1[i] ?? '').trim();
+    const bot = String(row2[i] ?? '').trim();
+    if (top && bot) {
+      // Try bottom first (more specific), then combined
+      merged.push(bot || `${top} ${bot}`);
+    } else {
+      merged.push(bot || top);
+    }
+  }
+  return merged;
+}
+
+// Find the header row(s) in an array of rows — supports 1-row and 2-row headers
 function findHeaderRow(rows: string[][]): { headerIndex: number; mapping: (string | null)[] } | null {
+  for (let i = 0; i < Math.min(rows.length, 5); i++) {
+    // Try single row first
+    const mapping = rows[i].map((h) => matchHeader(String(h)));
+    const matched = mapping.filter((m) => m !== null).length;
+    if (matched >= 5 && mapping.includes('entity_code')) {
+      return { headerIndex: i, mapping };
+    }
+
+    // Try merging with next row (2-row header)
+    if (i + 1 < rows.length) {
+      const merged = mergeHeaderRows(rows[i], rows[i + 1]);
+      const mergedMapping = merged.map((h) => matchHeader(h));
+      const mergedMatched = mergedMapping.filter((m) => m !== null).length;
+      if (mergedMatched >= 5 && mergedMapping.includes('entity_code')) {
+        return { headerIndex: i + 1, mapping: mergedMapping };
+      }
+    }
+  }
+
+  // Fallback: accept fewer matches (2+) for simple files
   for (let i = 0; i < Math.min(rows.length, 5); i++) {
     const mapping = rows[i].map((h) => matchHeader(String(h)));
     const matched = mapping.filter((m) => m !== null).length;

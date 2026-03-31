@@ -62,14 +62,14 @@ function DomainCell({ value, contractId, field, onUpdate }: {
   if (value === 'O') {
     return (
       <td className="px-2 py-2 text-center cursor-pointer hover:bg-primary/10 transition-colors" onClick={cycle}>
-        <span className="inline-flex items-center justify-center w-6 h-6 rounded-full bg-green-500/20 text-green-400 text-xs font-bold border border-green-500/30">O</span>
+        <span className="text-xs font-bold text-foreground">O</span>
       </td>
     );
   }
   if (value === 'X') {
     return (
       <td className="px-2 py-2 text-center cursor-pointer hover:bg-primary/10 transition-colors" onClick={cycle}>
-        <span className="inline-flex items-center justify-center w-6 h-6 rounded-full bg-red-500/20 text-red-400 text-xs font-bold border border-red-500/30">X</span>
+        <span className="text-xs font-bold text-foreground">X</span>
       </td>
     );
   }
