@@ -1,0 +1,297 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-sans);
+  --font-mono: var(--font-geist-mono);
+  --font-heading: var(--font-sans);
+  --color-sidebar-ring: var(--sidebar-ring);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar: var(--sidebar);
+  --color-chart-5: var(--chart-5);
+  --color-chart-4: var(--chart-4);
+  --color-chart-3: var(--chart-3);
+  --color-chart-2: var(--chart-2);
+  --color-chart-1: var(--chart-1);
+  --color-ring: var(--ring);
+  --color-input: var(--input);
+  --color-border: var(--border);
+  --color-destructive: var(--destructive);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent: var(--accent);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-muted: var(--muted);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary: var(--secondary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary: var(--primary);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-popover: var(--popover);
+  --color-card-foreground: var(--card-foreground);
+  --color-card: var(--card);
+  --radius-sm: calc(var(--radius) * 0.6);
+  --radius-md: calc(var(--radius) * 0.8);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) * 1.4);
+  --radius-2xl: calc(var(--radius) * 1.8);
+  --radius-3xl: calc(var(--radius) * 2.2);
+  --radius-4xl: calc(var(--radius) * 2.6);
+
+  /* JARVIS Accent Colors — softened for readability */
+  --color-neon-cyan: #5ec4d4;
+  --color-neon-magenta: #d47ecf;
+  --color-neon-green: #5ec490;
+  --color-neon-amber: #d4a04e;
+  --color-neon-red: #d4606a;
+  --color-neon-blue: #6498d4;
+  --color-glass: rgba(14, 17, 28, 0.8);
+  --color-glass-light: rgba(22, 26, 40, 0.6);
+
+  /* Semantic soft text colors */
+  --color-soft-primary: #c8d0dc;
+  --color-soft-secondary: #a0aabb;
+  --color-soft-muted: #6b7a8d;
+
+  /* Accent semantic */
+  --color-accent-primary: #5ec4d4;
+  --color-accent-red: #d4606a;
+
+  /* Surface colors */
+  --color-surface: rgba(16, 20, 32, 0.9);
+  --color-surface-elevated: rgba(22, 27, 42, 0.9);
+  --color-surface-border: rgba(80, 110, 140, 0.2);
+}
+
+/* JARVIS Dark Theme — softer palette */
+:root {
+  --background: #0a0d14;
+  --foreground: #c8d0dc;
+  --card: rgba(16, 20, 32, 0.85);
+  --card-foreground: #c8d0dc;
+  --popover: rgba(16, 20, 32, 0.97);
+  --popover-foreground: #c8d0dc;
+  --primary: #5ec4d4;
+  --primary-foreground: #0a0d14;
+  --secondary: rgba(94, 196, 212, 0.1);
+  --secondary-foreground: #5ec4d4;
+  --muted: rgba(30, 36, 52, 0.6);
+  --muted-foreground: #6b7a8d;
+  --accent: rgba(94, 196, 212, 0.12);
+  --accent-foreground: #5ec4d4;
+  --destructive: #d4606a;
+  --border: rgba(80, 110, 140, 0.2);
+  --input: rgba(80, 110, 140, 0.15);
+  --ring: rgba(94, 196, 212, 0.35);
+  --chart-1: #5ec4d4;
+  --chart-2: #d47ecf;
+  --chart-3: #5ec490;
+  --chart-4: #d4a04e;
+  --chart-5: #6498d4;
+  --radius: 0.5rem;
+  --sidebar: rgba(12, 15, 24, 0.95);
+  --sidebar-foreground: #c8d0dc;
+  --sidebar-primary: #5ec4d4;
+  --sidebar-primary-foreground: #0a0d14;
+  --sidebar-accent: rgba(94, 196, 212, 0.1);
+  --sidebar-accent-foreground: #5ec4d4;
+  --sidebar-border: rgba(80, 110, 140, 0.15);
+  --sidebar-ring: rgba(94, 196, 212, 0.25);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'JetBrains Mono', 'Fira Code', 'Consolas', monospace;
+  }
+  html {
+    @apply font-mono;
+  }
+}
+
+/* Glassmorphism */
+.glass {
+  background: rgba(14, 17, 28, 0.8);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(80, 110, 140, 0.15);
+}
+
+.glass-light {
+  background: rgba(22, 26, 40, 0.6);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(80, 110, 140, 0.1);
+}
+
+/* Glow — softer */
+.glow-cyan { box-shadow: 0 0 8px rgba(94,196,212,0.2), 0 0 16px rgba(94,196,212,0.1); }
+.glow-magenta { box-shadow: 0 0 8px rgba(212,126,207,0.2), 0 0 16px rgba(212,126,207,0.1); }
+.glow-green { box-shadow: 0 0 8px rgba(94,196,144,0.2), 0 0 16px rgba(94,196,144,0.1); }
+.glow-amber { box-shadow: 0 0 8px rgba(212,160,78,0.2), 0 0 16px rgba(212,160,78,0.1); }
+.glow-red { box-shadow: 0 0 8px rgba(212,96,106,0.2), 0 0 16px rgba(212,96,106,0.1); }
+
+.text-glow-cyan { text-shadow: 0 0 6px rgba(94,196,212,0.4), 0 0 12px rgba(94,196,212,0.2); }
+.text-glow-magenta { text-shadow: 0 0 6px rgba(212,126,207,0.4), 0 0 12px rgba(212,126,207,0.2); }
+
+/* Grid Overlay */
+.grid-overlay {
+  background-image:
+    linear-gradient(rgba(80,110,140,0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(80,110,140,0.03) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+/* Animations */
+@keyframes neon-pulse { 0%,100%{opacity:1} 50%{opacity:0.7} }
+.neon-pulse { animation: neon-pulse 2s ease-in-out infinite; }
+
+@keyframes badge-pulse { 0%,100%{box-shadow:0 0 4px currentColor} 50%{box-shadow:0 0 10px currentColor,0 0 18px currentColor} }
+.badge-pulse { animation: badge-pulse 2.5s ease-in-out infinite; }
+
+/* Scrollbar */
+::-webkit-scrollbar { width:6px; height:6px; }
+::-webkit-scrollbar-track { background:rgba(14,17,28,0.5); }
+::-webkit-scrollbar-thumb { background:rgba(80,110,140,0.25); border-radius:3px; }
+::-webkit-scrollbar-thumb:hover { background:rgba(80,110,140,0.4); }
+
+/* Markdown Preview */
+.markdown-preview {
+  color: var(--color-soft-primary);
+  line-height: 1.8;
+}
+.markdown-preview h1 { font-size: 1.5em; font-weight: 700; margin: 1em 0 0.5em; color: var(--color-accent-primary); border-bottom: 1px solid var(--color-surface-border); padding-bottom: 0.3em; }
+.markdown-preview h2 { font-size: 1.25em; font-weight: 600; margin: 1em 0 0.4em; color: var(--color-accent-primary); }
+.markdown-preview h3 { font-size: 1.1em; font-weight: 600; margin: 0.8em 0 0.3em; }
+.markdown-preview p { margin: 0.6em 0; }
+.markdown-preview ul, .markdown-preview ol { padding-left: 1.5em; margin: 0.5em 0; }
+.markdown-preview li { margin: 0.25em 0; }
+.markdown-preview code { background: var(--color-surface-elevated, rgba(22,27,42,0.9)); padding: 0.15em 0.4em; border-radius: 3px; font-size: 0.9em; }
+.markdown-preview pre { background: var(--color-surface-elevated, rgba(22,27,42,0.9)); padding: 1em; border-radius: 6px; overflow-x: auto; margin: 0.8em 0; border: 1px solid var(--color-surface-border); }
+.markdown-preview pre code { background: none; padding: 0; }
+.markdown-preview blockquote { border-left: 3px solid var(--color-accent-primary); padding-left: 1em; margin: 0.8em 0; color: var(--color-soft-secondary); }
+.markdown-preview table { border-collapse: collapse; width: 100%; margin: 0.8em 0; }
+.markdown-preview th, .markdown-preview td { border: 1px solid var(--color-surface-border); padding: 0.5em 0.8em; text-align: left; }
+.markdown-preview th { background: var(--color-surface-elevated); font-weight: 600; }
+.markdown-preview a { color: var(--color-accent-primary); text-decoration: underline; }
+.markdown-preview hr { border: none; border-top: 1px solid var(--color-surface-border); margin: 1.5em 0; }
+.markdown-preview img { max-width: 100%; border-radius: 4px; }
+
+/* React Flow */
+.react-flow__background { background: transparent !important; }
+
+/* ═══════════════════════════════════════════════════
+   HYUNDAI CORPORATE THEME
+   ═══════════════════════════════════════════════════ */
+.hyundai-theme {
+  --background: #f4f6f8;
+  --foreground: #222222;
+  --card: #ffffff;
+  --card-foreground: #222222;
+  --popover: #ffffff;
+  --popover-foreground: #222222;
+  --primary: #002c5f;
+  --primary-foreground: #ffffff;
+  --secondary: #e8edf2;
+  --secondary-foreground: #002c5f;
+  --muted: #e8edf2;
+  --muted-foreground: #666666;
+  --accent: #00aad2;
+  --accent-foreground: #ffffff;
+  --destructive: #c62828;
+  --border: #d5dce4;
+  --input: #d5dce4;
+  --ring: rgba(0, 170, 210, 0.4);
+  --radius: 0.5rem;
+  --chart-1: #002c5f;
+  --chart-2: #00aad2;
+  --chart-3: #4caf50;
+  --chart-4: #ff9800;
+  --chart-5: #9c27b0;
+  --sidebar: #002c5f;
+  --sidebar-foreground: #ffffff;
+  --sidebar-primary: #00aad2;
+  --sidebar-primary-foreground: #ffffff;
+  --sidebar-accent: rgba(0, 170, 210, 0.15);
+  --sidebar-accent-foreground: #00aad2;
+  --sidebar-border: rgba(255, 255, 255, 0.12);
+  --sidebar-ring: rgba(0, 170, 210, 0.3);
+
+  /* Override neon/JARVIS semantic colors */
+  --color-neon-cyan: #00aad2;
+  --color-neon-magenta: #9c27b0;
+  --color-neon-green: #4caf50;
+  --color-neon-amber: #ff9800;
+  --color-neon-red: #c62828;
+  --color-neon-blue: #002c5f;
+  --color-glass: rgba(255, 255, 255, 0.95);
+  --color-glass-light: rgba(255, 255, 255, 0.8);
+
+  --color-soft-primary: #222222;
+  --color-soft-secondary: #444444;
+  --color-soft-muted: #888888;
+
+  --color-accent-primary: #00aad2;
+  --color-accent-red: #c62828;
+
+  --color-surface: #ffffff;
+  --color-surface-elevated: #f0f3f7;
+  --color-surface-border: #d5dce4;
+}
+
+.hyundai-theme body,
+body.hyundai-theme {
+  font-family: 'Hyundai Sans Head', 'Pretendard', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif !important;
+  background: #f4f6f8 !important;
+  color: #222222 !important;
+}
+
+.hyundai-theme .glass {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(12px);
+  border-color: #d5dce4;
+}
+
+.hyundai-theme .glass-light {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(8px);
+  border-color: #e0e4ea;
+}
+
+.hyundai-theme .glow-cyan,
+.hyundai-theme .glow-magenta,
+.hyundai-theme .glow-green,
+.hyundai-theme .glow-amber,
+.hyundai-theme .glow-red {
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+}
+
+.hyundai-theme .text-glow-cyan,
+.hyundai-theme .text-glow-magenta {
+  text-shadow: none;
+}
+
+.hyundai-theme .grid-overlay {
+  background-image: none;
+}
+
+.hyundai-theme .neon-pulse {
+  animation: none;
+}
+
+.hyundai-theme .badge-pulse {
+  animation: none;
+}
+
+.hyundai-theme ::-webkit-scrollbar-track { background: #f0f3f7; }
+.hyundai-theme ::-webkit-scrollbar-thumb { background: #c0c8d4; border-radius: 3px; }
+.hyundai-theme ::-webkit-scrollbar-thumb:hover { background: #a0aab8; }
