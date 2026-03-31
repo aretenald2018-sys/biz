@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useState, useRef } from 'react';
+import { useEffect, useState, useRef, useCallback } from 'react';
 import { useContractStore } from '@/stores/contract-store';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -22,6 +22,31 @@ import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 import type { Contract, ContractFile, DataDomainValue, CreateContractInput } from '@/types/contract';
 
+/* ─── File extension → icon ─── */
+function FileIcon({ fileName }: { fileName: string }) {
+  const ext = fileName.split('.').pop()?.toLowerCase() || '';
+  const iconMap: Record<string, { icon: string; color: string }> = {
+    pdf: { icon: '📕', color: 'text-red-400' },
+    doc: { icon: '📘', color: 'text-blue-400' },
+    docx: { icon: '📘', color: 'text-blue-400' },
+    xls: { icon: '📗', color: 'text-green-400' },
+    xlsx: { icon: '📗', color: 'text-green-400' },
+    csv: { icon: '📗', color: 'text-green-400' },
+    ppt: { icon: '📙', color: 'text-orange-400' },
+    pptx: { icon: '📙', color: 'text-orange-400' },
+    zip: { icon: '📦', color: 'text-yellow-400' },
+    rar: { icon: '📦', color: 'text-yellow-400' },
+    jpg: { icon: '🖼', color: 'text-purple-400' },
+    jpeg: { icon: '🖼', color: 'text-purple-400' },
+    png: { icon: '🖼', color: 'text-purple-400' },
+    txt: { icon: '📄', color: 'text-muted-foreground' },
+    msg: { icon: '✉️', color: 'text-blue-400' },
+    eml: { icon: '✉️', color: 'text-blue-400' },
+  };
+  const { icon, color } = iconMap[ext] || { icon: '📎', color: 'text-muted-foreground' };
+  return <span className={`text-sm ${color}`} title={ext.toUpperCase()}>{icon}</span>;
+}
+
 /* ─── Data Domain Cell ─── */
 function DomainCell({ value, contractId, field, onUpdate }: {
   value: DataDomainValue;
@@ -36,26 +61,26 @@ function DomainCell({ value, contractId, field, onUpdate }: {
 
   if (value === 'O') {
     return (
-      <td className="px-3 py-2 text-center cursor-pointer hover:bg-primary/10 transition-colors" onClick={cycle}>
+      <td className="px-2 py-2 text-center cursor-pointer hover:bg-primary/10 transition-colors" onClick={cycle}>
         <span className="inline-flex items-center justify-center w-6 h-6 rounded-full bg-green-500/20 text-green-400 text-xs font-bold border border-green-500/30">O</span>
       </td>
     );
   }
   if (value === 'X') {
     return (
-      <td className="px-3 py-2 text-center cursor-pointer hover:bg-primary/10 transition-colors" onClick={cycle}>
+      <td className="px-2 py-2 text-center cursor-pointer hover:bg-primary/10 transition-colors" onClick={cycle}>
         <span className="inline-flex items-center justify-center w-6 h-6 rounded-full bg-red-500/20 text-red-400 text-xs font-bold border border-red-500/30">X</span>
       </td>
     );
   }
   return (
-    <td className="px-3 py-2 text-center cursor-pointer hover:bg-primary/10 transition-colors" onClick={cycle}>
+    <td className="px-2 py-2 text-center cursor-pointer hover:bg-primary/10 transition-colors" onClick={cycle}>
       <span className="text-[10px] text-muted-foreground">데이터없음</span>
     </td>
   );
 }
 
-/* ─── File Upload Cell ─── */
+/* ─── File Upload Cell (icon-based) ─── */
 function FileCell({ files, contractId, category, categoryLabel }: {
   files: ContractFile[];
   contractId: string;
@@ -68,18 +93,19 @@ function FileCell({ files, contractId, category, categoryLabel }: {
 
   return (
     <td className="px-2 py-2">
-      <div className="space-y-1">
+      <div className="flex items-center gap-1 flex-wrap">
         {categoryFiles.map(f => (
-          <div key={f.id} className="flex items-center gap-1 text-[10px]">
+          <div key={f.id} className="relative group inline-flex">
             <a href={`/api/contracts/files/${f.id}`} download={f.file_name}
-              className="text-primary hover:underline truncate max-w-[80px]" title={f.file_name}>
-              📎 {f.file_name}
+              title={f.file_name} className="hover:opacity-70 transition-opacity">
+              <FileIcon fileName={f.file_name} />
             </a>
-            <button onClick={() => deleteFile(f.id)} className="text-muted-foreground hover:text-destructive">✕</button>
+            <button onClick={() => deleteFile(f.id)}
+              className="absolute -top-1 -right-1 hidden group-hover:flex items-center justify-center w-3 h-3 rounded-full bg-destructive text-white text-[7px] leading-none">✕</button>
           </div>
         ))}
-        <label className="inline-flex items-center text-[9px] text-muted-foreground hover:text-primary cursor-pointer">
-          + {categoryLabel}
+        <label className="inline-flex items-center justify-center w-5 h-5 rounded border border-dashed border-border text-[10px] text-muted-foreground hover:text-primary hover:border-primary cursor-pointer transition-colors" title={`${categoryLabel} 추가`}>
+          +
           <input ref={fileRef} type="file" className="hidden" onChange={async (e) => {
             const file = e.target.files?.[0];
             if (file) { await uploadFile(contractId, category, file); }
@@ -141,6 +167,109 @@ function TransferInfoCell({ contract, field, label }: {
         </div>
       )}
     </td>
+  );
+}
+
+/* ─── Checkbox Filter Dropdown ─── */
+function CheckboxFilter({ label, options, selected, onChange, labelMap }: {
+  label: string;
+  options: string[];
+  selected: Set<string>;
+  onChange: (next: Set<string>) => void;
+  labelMap?: Record<string, string>;
+}) {
+  const [open, setOpen] = useState(false);
+  const ref = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const handleClick = (e: MouseEvent) => {
+      if (ref.current && !ref.current.contains(e.target as Node)) setOpen(false);
+    };
+    document.addEventListener('mousedown', handleClick);
+    return () => document.removeEventListener('mousedown', handleClick);
+  }, []);
+
+  const allSelected = selected.size === 0; // empty = all
+  const toggleAll = () => onChange(new Set());
+  const toggleOne = (val: string) => {
+    const next = new Set(selected);
+    if (next.has(val)) next.delete(val); else next.add(val);
+    onChange(next);
+  };
+
+  return (
+    <div ref={ref} className="relative">
+      <button onClick={() => setOpen(!open)}
+        className={`flex items-center gap-1 px-2 py-1 text-[10px] tracking-wider rounded border transition-colors ${
+          !allSelected ? 'bg-primary/10 text-primary border-primary/30' : 'text-muted-foreground border-border hover:text-foreground'
+        }`}>
+        {label} {!allSelected && `(${selected.size})`} <span className="text-[8px]">▼</span>
+      </button>
+      {open && (
+        <div className="absolute z-50 top-full mt-1 left-0 min-w-[140px] max-h-[250px] overflow-y-auto bg-card border border-border rounded-lg shadow-xl p-1.5">
+          <label className="flex items-center gap-2 px-2 py-1 text-[10px] text-foreground cursor-pointer hover:bg-muted/30 rounded">
+            <input type="checkbox" checked={allSelected} onChange={toggleAll} className="w-3 h-3" />
+            ALL
+          </label>
+          <div className="border-t border-border my-1" />
+          {options.map(opt => (
+            <label key={opt} className="flex items-center gap-2 px-2 py-1 text-[10px] text-foreground cursor-pointer hover:bg-muted/30 rounded">
+              <input type="checkbox" checked={allSelected || selected.has(opt)} onChange={() => toggleOne(opt)} className="w-3 h-3" />
+              {labelMap?.[opt] || opt}
+            </label>
+          ))}
+        </div>
+      )}
+    </div>
+  );
+}
+
+/* ─── Domain Filter (O/X/데이터없음) ─── */
+const DOMAIN_LABELS: Record<string, string> = { 'O': 'O (있음)', 'X': 'X (없음)', 'null': '데이터없음' };
+function DomainFilter({ label, selected, onChange }: {
+  label: string;
+  selected: Set<string>;
+  onChange: (next: Set<string>) => void;
+}) {
+  return <CheckboxFilter label={label} options={['O', 'X', 'null']} selected={selected} onChange={onChange} labelMap={DOMAIN_LABELS} />;
+}
+
+/* ─── Resizable Column Header ─── */
+function ResizableTh({ children, className, minWidth = 40 }: {
+  children: React.ReactNode;
+  className?: string;
+  minWidth?: number;
+}) {
+  const [width, setWidth] = useState<number | undefined>(undefined);
+  const thRef = useRef<HTMLTableCellElement>(null);
+  const startX = useRef(0);
+  const startW = useRef(0);
+
+  const onMouseDown = useCallback((e: React.MouseEvent) => {
+    e.preventDefault();
+    startX.current = e.clientX;
+    startW.current = thRef.current?.offsetWidth || 80;
+
+    const onMouseMove = (ev: MouseEvent) => {
+      const diff = ev.clientX - startX.current;
+      setWidth(Math.max(minWidth, startW.current + diff));
+    };
+    const onMouseUp = () => {
+      document.removeEventListener('mousemove', onMouseMove);
+      document.removeEventListener('mouseup', onMouseUp);
+    };
+    document.addEventListener('mousemove', onMouseMove);
+    document.addEventListener('mouseup', onMouseUp);
+  }, [minWidth]);
+
+  return (
+    <th ref={thRef} className={className} style={width ? { width, minWidth } : undefined}>
+      <div className="flex items-center justify-between gap-1">
+        <span className="truncate">{children}</span>
+        <div onMouseDown={onMouseDown}
+          className="w-1 h-4 cursor-col-resize bg-border/50 hover:bg-primary/50 rounded flex-shrink-0 transition-colors" />
+      </div>
+    </th>
   );
 }
 
@@ -223,20 +352,38 @@ export default function ContractsPage() {
 
   const [newOpen, setNewOpen] = useState(false);
   const [deleteConfirm, setDeleteConfirm] = useState<string | null>(null);
-  const [filterRegion, setFilterRegion] = useState<string>('all');
-  const [filterBrand, setFilterBrand] = useState<string>('all');
   const importRef = useRef<HTMLInputElement>(null);
+
+  // Checkbox filters — empty Set means "all selected"
+  const [filterRegions, setFilterRegions] = useState<Set<string>>(new Set());
+  const [filterCountries, setFilterCountries] = useState<Set<string>>(new Set());
+  const [filterBrands, setFilterBrands] = useState<Set<string>>(new Set());
+  const [filterVehicle, setFilterVehicle] = useState<Set<string>>(new Set());
+  const [filterCustomer, setFilterCustomer] = useState<Set<string>>(new Set());
+  const [filterSales, setFilterSales] = useState<Set<string>>(new Set());
+  const [filterQuality, setFilterQuality] = useState<Set<string>>(new Set());
+  const [filterProduction, setFilterProduction] = useState<Set<string>>(new Set());
 
   useEffect(() => { fetchContracts(); }, [fetchContracts]);
 
+  const passesFilter = (value: string, filterSet: Set<string>) =>
+    filterSet.size === 0 || filterSet.has(value);
+
   const filtered = contracts.filter(c => {
-    if (filterRegion !== 'all' && c.region !== filterRegion) return false;
-    if (filterBrand !== 'all' && c.brand !== filterBrand) return false;
+    if (!passesFilter(c.region, filterRegions)) return false;
+    if (!passesFilter(c.country, filterCountries)) return false;
+    if (!passesFilter(c.brand, filterBrands)) return false;
+    if (!passesFilter(c.data_domain_vehicle, filterVehicle)) return false;
+    if (!passesFilter(c.data_domain_customer, filterCustomer)) return false;
+    if (!passesFilter(c.data_domain_sales, filterSales)) return false;
+    if (!passesFilter(c.data_domain_quality, filterQuality)) return false;
+    if (!passesFilter(c.data_domain_production, filterProduction)) return false;
     return true;
   });
 
-  const regions = [...new Set(contracts.map(c => c.region))];
-  const brands = [...new Set(contracts.map(c => c.brand))];
+  const regions = [...new Set(contracts.map(c => c.region))].sort();
+  const countries = [...new Set(contracts.map(c => c.country))].sort();
+  const brands = [...new Set(contracts.map(c => c.brand))].sort();
 
   // Group by region for display
   const grouped: Record<string, Contract[]> = {};
@@ -256,6 +403,17 @@ export default function ContractsPage() {
     if (searchQuery.trim()) searchContracts(searchQuery);
   };
 
+  const hasActiveFilters = filterRegions.size > 0 || filterCountries.size > 0 || filterBrands.size > 0 ||
+    filterVehicle.size > 0 || filterCustomer.size > 0 || filterSales.size > 0 || filterQuality.size > 0 || filterProduction.size > 0;
+
+  const clearAllFilters = () => {
+    setFilterRegions(new Set()); setFilterCountries(new Set()); setFilterBrands(new Set());
+    setFilterVehicle(new Set()); setFilterCustomer(new Set()); setFilterSales(new Set());
+    setFilterQuality(new Set()); setFilterProduction(new Set());
+  };
+
+  const thBase = "px-2 py-2.5 text-left text-[9px] text-muted-foreground tracking-wider font-medium";
+
   return (
     <div className="space-y-4">
       {/* Header */}
@@ -268,38 +426,32 @@ export default function ContractsPage() {
           <label className="cursor-pointer">
             <input ref={importRef} type="file" accept=".csv,.xlsx,.xls,.tsv" className="hidden" onChange={handleImport} />
             <span className="inline-flex items-center px-3 py-1.5 text-[10px] tracking-wider bg-muted/30 text-foreground border border-border rounded hover:bg-muted/50 transition-colors cursor-pointer">
-              📥 IMPORT CSV/EXCEL
+              📥 IMPORT
             </span>
           </label>
           <Button onClick={() => setNewOpen(true)} className="bg-primary/20 text-primary border border-primary/30 text-[10px] tracking-wider h-8">
-            + NEW ENTITY
+            + NEW
           </Button>
         </div>
       </div>
 
-      {/* Filters */}
-      <div className="flex items-center gap-3 flex-wrap">
-        <div className="flex items-center gap-1.5">
-          <span className="text-[10px] text-muted-foreground">REGION:</span>
-          <Select value={filterRegion} onValueChange={(v) => setFilterRegion(v || 'all')}>
-            <SelectTrigger className="h-7 text-[10px] bg-background border-border w-36"><SelectValue /></SelectTrigger>
-            <SelectContent className="glass border-border">
-              <SelectItem value="all" className="text-[10px]">ALL</SelectItem>
-              {regions.map(r => <SelectItem key={r} value={r} className="text-[10px]">{r}</SelectItem>)}
-            </SelectContent>
-          </Select>
-        </div>
-        <div className="flex items-center gap-1.5">
-          <span className="text-[10px] text-muted-foreground">BRAND:</span>
-          <Select value={filterBrand} onValueChange={(v) => setFilterBrand(v || 'all')}>
-            <SelectTrigger className="h-7 text-[10px] bg-background border-border w-24"><SelectValue /></SelectTrigger>
-            <SelectContent className="glass border-border">
-              <SelectItem value="all" className="text-[10px]">ALL</SelectItem>
-              {brands.map(b => <SelectItem key={b} value={b} className="text-[10px]">{b}</SelectItem>)}
-            </SelectContent>
-          </Select>
-        </div>
-        <span className="text-[10px] text-muted-foreground ml-2">{filtered.length} entities</span>
+      {/* Checkbox Filters */}
+      <div className="flex items-center gap-2 flex-wrap">
+        <span className="text-[9px] text-muted-foreground tracking-widest">FILTERS:</span>
+        <CheckboxFilter label="리전" options={regions} selected={filterRegions} onChange={setFilterRegions} />
+        <CheckboxFilter label="국가" options={countries} selected={filterCountries} onChange={setFilterCountries} />
+        <CheckboxFilter label="브랜드" options={brands} selected={filterBrands} onChange={setFilterBrands} />
+        <span className="w-px h-4 bg-border" />
+        <DomainFilter label="차량" selected={filterVehicle} onChange={setFilterVehicle} />
+        <DomainFilter label="고객" selected={filterCustomer} onChange={setFilterCustomer} />
+        <DomainFilter label="판매" selected={filterSales} onChange={setFilterSales} />
+        <DomainFilter label="품질" selected={filterQuality} onChange={setFilterQuality} />
+        <DomainFilter label="생산" selected={filterProduction} onChange={setFilterProduction} />
+        <span className="w-px h-4 bg-border" />
+        <span className="text-[10px] text-muted-foreground">{filtered.length}/{contracts.length}</span>
+        {hasActiveFilters && (
+          <button onClick={clearAllFilters} className="text-[9px] text-primary hover:underline">CLEAR</button>
+        )}
       </div>
 
       {/* Main Table */}
@@ -313,48 +465,41 @@ export default function ContractsPage() {
       ) : (
         <div className="border border-border rounded-lg overflow-hidden">
           <div className="overflow-x-auto">
-            <table className="w-full text-[11px]">
+            <table className="w-full text-[11px] table-fixed" style={{ minWidth: '1200px' }}>
               <thead>
                 <tr className="bg-muted/30 border-b border-border">
-                  {/* 기본 */}
-                  <th className="px-3 py-2.5 text-left text-[10px] text-muted-foreground tracking-wider font-medium sticky left-0 bg-muted/30 z-10">리전</th>
-                  <th className="px-3 py-2.5 text-left text-[10px] text-muted-foreground tracking-wider font-medium">국가</th>
-                  <th className="px-3 py-2.5 text-left text-[10px] text-muted-foreground tracking-wider font-medium">법인명</th>
-                  <th className="px-3 py-2.5 text-left text-[10px] text-muted-foreground tracking-wider font-medium">브랜드</th>
-                  <th className="px-3 py-2.5 text-left text-[10px] text-muted-foreground tracking-wider font-medium">법인명상세</th>
-                  {/* 데이터 도메인 */}
-                  <th className="px-2 py-2.5 text-center text-[9px] text-muted-foreground tracking-wider font-medium border-l border-border">차량</th>
-                  <th className="px-2 py-2.5 text-center text-[9px] text-muted-foreground tracking-wider font-medium">고객</th>
-                  <th className="px-2 py-2.5 text-center text-[9px] text-muted-foreground tracking-wider font-medium">판매</th>
-                  <th className="px-2 py-2.5 text-center text-[9px] text-muted-foreground tracking-wider font-medium">품질</th>
-                  <th className="px-2 py-2.5 text-center text-[9px] text-muted-foreground tracking-wider font-medium">생산</th>
-                  <th className="px-2 py-2.5 text-center text-[9px] text-muted-foreground tracking-wider font-medium border-l border-border">계약체결일</th>
-                  {/* 기본 정보 */}
-                  <th className="px-2 py-2.5 text-center text-[9px] text-muted-foreground tracking-wider font-medium border-l border-border">최종계약서</th>
-                  <th className="px-2 py-2.5 text-center text-[9px] text-muted-foreground tracking-wider font-medium">관련문서</th>
-                  <th className="px-2 py-2.5 text-center text-[9px] text-muted-foreground tracking-wider font-medium">교신내역</th>
-                  {/* 실무 정보 */}
-                  <th className="px-2 py-2.5 text-left text-[9px] text-muted-foreground tracking-wider font-medium border-l border-border">이전가능 목적</th>
-                  <th className="px-2 py-2.5 text-left text-[9px] text-muted-foreground tracking-wider font-medium">이전가능 데이터</th>
-                  {/* 삭제 */}
-                  <th className="px-2 py-2.5 text-center text-[10px] text-muted-foreground tracking-wider font-medium w-8"></th>
+                  <ResizableTh className={`${thBase} sticky left-0 bg-muted/30 z-10`} minWidth={80}>리전</ResizableTh>
+                  <ResizableTh className={thBase} minWidth={70}>국가</ResizableTh>
+                  <ResizableTh className={thBase} minWidth={50}>법인명</ResizableTh>
+                  <ResizableTh className={thBase} minWidth={40}>브랜드</ResizableTh>
+                  <ResizableTh className={thBase} minWidth={70}>법인명상세</ResizableTh>
+                  <ResizableTh className={`${thBase} text-center border-l border-border`} minWidth={40}>차량</ResizableTh>
+                  <ResizableTh className={`${thBase} text-center`} minWidth={40}>고객</ResizableTh>
+                  <ResizableTh className={`${thBase} text-center`} minWidth={40}>판매</ResizableTh>
+                  <ResizableTh className={`${thBase} text-center`} minWidth={40}>품질</ResizableTh>
+                  <ResizableTh className={`${thBase} text-center`} minWidth={40}>생산</ResizableTh>
+                  <ResizableTh className={`${thBase} text-center border-l border-border`} minWidth={60}>계약체결일</ResizableTh>
+                  <ResizableTh className={`${thBase} text-center border-l border-border`} minWidth={60}>최종계약서</ResizableTh>
+                  <ResizableTh className={`${thBase} text-center`} minWidth={60}>관련문서</ResizableTh>
+                  <ResizableTh className={`${thBase} text-center`} minWidth={60}>교신내역</ResizableTh>
+                  <ResizableTh className={`${thBase} border-l border-border`} minWidth={80}>이전가능 목적</ResizableTh>
+                  <ResizableTh className={thBase} minWidth={80}>이전가능 데이터</ResizableTh>
+                  <th className={`${thBase} text-center`} style={{ width: 30 }}></th>
                 </tr>
               </thead>
               <tbody>
                 {Object.entries(grouped).map(([region, regionContracts]) => (
                   regionContracts.map((contract, idx) => (
                     <tr key={contract.id} className="border-b border-border hover:bg-muted/10 transition-colors">
-                      {/* Show region only on first row of group */}
                       {idx === 0 ? (
-                        <td className="px-3 py-2 text-foreground font-medium sticky left-0 bg-card z-10" rowSpan={regionContracts.length}>
+                        <td className="px-2 py-2 text-foreground font-medium sticky left-0 bg-card z-10 text-[11px]" rowSpan={regionContracts.length}>
                           {region}
                         </td>
                       ) : null}
-                      <td className="px-3 py-2 text-foreground">{contract.country}</td>
-                      <td className="px-3 py-2 text-primary font-medium">{contract.entity_code}</td>
-                      <td className="px-3 py-2 text-foreground">{contract.brand}</td>
-                      <td className="px-3 py-2 text-foreground">{contract.entity_name}</td>
-                      {/* 데이터 도메인 */}
+                      <td className="px-2 py-2 text-foreground text-[11px]">{contract.country}</td>
+                      <td className="px-2 py-2 text-primary font-medium text-[11px]">{contract.entity_code}</td>
+                      <td className="px-2 py-2 text-foreground text-[11px]">{contract.brand}</td>
+                      <td className="px-2 py-2 text-foreground text-[11px]">{contract.entity_name}</td>
                       <DomainCell value={contract.data_domain_vehicle} contractId={contract.id} field="data_domain_vehicle" onUpdate={updateContract} />
                       <DomainCell value={contract.data_domain_customer} contractId={contract.id} field="data_domain_customer" onUpdate={updateContract} />
                       <DomainCell value={contract.data_domain_sales} contractId={contract.id} field="data_domain_sales" onUpdate={updateContract} />
@@ -363,18 +508,15 @@ export default function ContractsPage() {
                       <td className="px-2 py-2 text-center text-foreground text-[10px] border-l border-border">
                         {contract.contract_status || <span className="text-muted-foreground">—</span>}
                       </td>
-                      {/* 기본 정보 */}
                       <FileCell files={contract.files || []} contractId={contract.id} category="final_contract" categoryLabel="계약서" />
                       <FileCell files={contract.files || []} contractId={contract.id} category="related_document" categoryLabel="문서" />
                       <FileCell files={contract.files || []} contractId={contract.id} category="correspondence" categoryLabel="교신" />
-                      {/* 실무 정보 */}
                       <TransferInfoCell contract={contract} field="transfer_purpose" label="이전가능 목적" />
                       <TransferInfoCell contract={contract} field="transferable_data" label="이전가능 데이터" />
-
-                      <td className="px-2 py-2 text-center">
+                      <td className="px-1 py-2 text-center">
                         {deleteConfirm === contract.id ? (
                           <button onClick={() => { deleteContract(contract.id); setDeleteConfirm(null); }}
-                            className="text-[9px] text-destructive">CONFIRM?</button>
+                            className="text-[9px] text-destructive">?</button>
                         ) : (
                           <button onClick={() => { setDeleteConfirm(contract.id); setTimeout(() => setDeleteConfirm(null), 3000); }}
                             className="text-[9px] text-muted-foreground hover:text-destructive">✕</button>

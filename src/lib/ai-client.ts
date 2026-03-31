@@ -29,7 +29,7 @@ Keep the summary professional and factual. Write in Korean.`;
     });
 
     const response = await client.messages.create({
-      model: 'claude-sonnet-4-20250514',
+      model: 'claude-sonnet-4-6',
       max_tokens: 2048,
       system: systemPrompt,
       messages: [
@@ -81,7 +81,7 @@ ${bodyText}`;
     if (provider === 'claude') {
       const client = new Anthropic({ apiKey: process.env.CLAUDE_API_KEY });
       const response = await client.messages.create({
-        model: 'claude-sonnet-4-20250514',
+        model: 'claude-sonnet-4-6',
         max_tokens: 1024,
         messages: [{ role: 'user', content: prompt }],
       });

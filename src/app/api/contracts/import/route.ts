@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { getDb } from '@/lib/db';
+import * as XLSX from 'xlsx';
 
 // Flexible header matching: multiple aliases per field
 const HEADER_ALIASES: [string[], string][] = [
@@ -29,16 +30,29 @@ function matchHeader(header: string): string | null {
 }
 
 function normalizeDomainValue(value: string | undefined | null): string {
-  if (!value) return 'null';
-  const trimmed = value.trim().toUpperCase();
+  if (value === null || value === undefined) return 'null';
+  const trimmed = String(value).trim().toUpperCase();
   if (trimmed === 'O') return 'O';
   if (trimmed === 'X') return 'X';
+  if (trimmed === 'NULL' || trimmed === '' || trimmed === '-' || trimmed === 'N/A') return 'null';
   return 'null';
 }
 
 function parseDelimited(text: string, delimiter: string): string[][] {
   const lines = text.split(/\r?\n/).filter((line) => line.trim().length > 0);
   return lines.map((line) => line.split(delimiter).map((cell) => cell.trim()));
+}
+
+// Find the header row in an array of rows (might not be the first row)
+function findHeaderRow(rows: string[][]): { headerIndex: number; mapping: (string | null)[] } | null {
+  for (let i = 0; i < Math.min(rows.length, 5); i++) {
+    const mapping = rows[i].map((h) => matchHeader(String(h)));
+    const matched = mapping.filter((m) => m !== null).length;
+    if (matched >= 2 && mapping.includes('entity_code')) {
+      return { headerIndex: i, mapping };
+    }
+  }
+  return null;
 }
 
 export async function POST(request: NextRequest) {
@@ -51,18 +65,30 @@ export async function POST(request: NextRequest) {
   }
 
   const fileName = file.name.toLowerCase();
-  const text = await file.text();
-
   let rows: string[][];
 
-  if (fileName.endsWith('.csv')) {
+  if (fileName.endsWith('.xlsx') || fileName.endsWith('.xls')) {
+    // Binary Excel parsing with SheetJS
+    const buffer = await file.arrayBuffer();
+    const workbook = XLSX.read(buffer, { type: 'array' });
+    const sheetName = workbook.SheetNames[0];
+    const sheet = workbook.Sheets[sheetName];
+    // Convert to array of arrays, raw values (no formatting), defval keeps empty cells
+    const rawRows = XLSX.utils.sheet_to_json<string[]>(sheet, {
+      header: 1,
+      raw: true,
+      defval: '',
+    });
+    rows = rawRows.map((row) => row.map((cell) => String(cell ?? '').trim()));
+  } else if (fileName.endsWith('.csv')) {
+    const text = await file.text();
     rows = parseDelimited(text, ',');
-  } else if (fileName.endsWith('.xlsx') || fileName.endsWith('.xls') || fileName.endsWith('.tsv')) {
-    // Excel copy-paste creates TSV, also handle .tsv files
+  } else if (fileName.endsWith('.tsv')) {
+    const text = await file.text();
     rows = parseDelimited(text, '\t');
   } else {
     return NextResponse.json(
-      { error: 'Unsupported file format. Use CSV, TSV, or tab-delimited text.' },
+      { error: 'Unsupported file format. Use .xlsx, .xls, .csv, or .tsv.' },
       { status: 400 }
     );
   }
@@ -71,18 +97,18 @@ export async function POST(request: NextRequest) {
     return NextResponse.json({ error: 'File must have a header row and at least one data row' }, { status: 400 });
   }
 
-  const headerRow = rows[0];
-  const columnMapping: (string | null)[] = headerRow.map((header) => matchHeader(header));
-
-  const entityCodeIndex = columnMapping.indexOf('entity_code');
-  if (entityCodeIndex === -1) {
+  // Smart header detection: scan first 5 rows
+  const headerResult = findHeaderRow(rows);
+  if (!headerResult) {
     return NextResponse.json(
-      { error: 'Missing required column: entity_code (법인명)' },
+      { error: 'Could not find a valid header row with entity_code (법인명) column' },
       { status: 400 }
     );
   }
 
-  // Track which fields are present in the CSV
+  const { headerIndex, mapping: columnMapping } = headerResult;
+
+  // Track which fields are present
   const presentFields = new Set(columnMapping.filter((f): f is string => f !== null));
 
   const DOMAIN_FIELDS = ['data_domain_vehicle', 'data_domain_customer', 'data_domain_sales', 'data_domain_quality', 'data_domain_production'];
@@ -91,7 +117,8 @@ export async function POST(request: NextRequest) {
   const findByEntityCode = db.prepare('SELECT * FROM contracts WHERE entity_code = ?');
 
   let imported = 0;
-  const dataRows = rows.slice(1);
+  let skipped = 0;
+  const dataRows = rows.slice(headerIndex + 1);
 
   const runImport = db.transaction(() => {
     for (const row of dataRows) {
@@ -99,28 +126,30 @@ export async function POST(request: NextRequest) {
       for (let i = 0; i < columnMapping.length; i++) {
         const field = columnMapping[i];
         if (field && i < row.length) {
-          record[field] = row[i];
+          record[field] = String(row[i] ?? '');
         }
       }
 
-      if (!record.entity_code || !record.entity_code.trim()) continue;
+      if (!record.entity_code || !record.entity_code.trim()) {
+        skipped++;
+        continue;
+      }
 
       const entityCode = record.entity_code.trim();
       const existing = findByEntityCode.get(entityCode) as Record<string, string> | undefined;
 
       if (existing) {
-        // Only update fields that are present in the CSV — leave others untouched
         const setClauses: string[] = [];
         const values: (string | null)[] = [];
 
         for (const f of TEXT_FIELDS) {
-          if (presentFields.has(f)) {
+          if (presentFields.has(f) && record[f] !== undefined) {
             setClauses.push(`${f} = ?`);
             values.push(record[f] || '');
           }
         }
         for (const f of DOMAIN_FIELDS) {
-          if (presentFields.has(f)) {
+          if (presentFields.has(f) && record[f] !== undefined) {
             setClauses.push(`${f} = ?`);
             values.push(normalizeDomainValue(record[f]));
           }
@@ -132,13 +161,13 @@ export async function POST(request: NextRequest) {
           db.prepare(`UPDATE contracts SET ${setClauses.join(', ')} WHERE entity_code = ?`).run(...values);
         }
       } else {
-        // Insert: use defaults for missing fields
         db.prepare(`
           INSERT INTO contracts (
             region, country, entity_code, brand, entity_name,
             data_domain_vehicle, data_domain_customer, data_domain_sales,
-            data_domain_quality, data_domain_production, contract_status
-          ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+            data_domain_quality, data_domain_production, contract_status,
+            transfer_purpose, transferable_data
+          ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
         `).run(
           record.region || '',
           record.country || '',
@@ -150,7 +179,9 @@ export async function POST(request: NextRequest) {
           normalizeDomainValue(record.data_domain_sales),
           normalizeDomainValue(record.data_domain_quality),
           normalizeDomainValue(record.data_domain_production),
-          record.contract_status || null
+          record.contract_status || null,
+          record.transfer_purpose || null,
+          record.transferable_data || null
         );
       }
       imported++;
@@ -159,5 +190,5 @@ export async function POST(request: NextRequest) {
 
   runImport();
 
-  return NextResponse.json({ imported });
+  return NextResponse.json({ imported, skipped, columns: [...presentFields] });
 }
