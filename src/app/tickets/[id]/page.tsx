@@ -6,8 +6,6 @@ import { useTicketStore } from '@/stores/ticket-store';
 import { TicketStatusBadge } from '@/components/tickets/ticket-status-badge';
 import { EmailDropzone } from '@/components/email/email-dropzone';
 import { EmailList } from '@/components/email/email-list';
-import { AISummaryPanel } from '@/components/summary/ai-summary-panel';
-import { CommunicationGraph } from '@/components/lineage/communication-graph';
 import { NoteEditor } from '@/components/notes/note-editor';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -26,7 +24,6 @@ import {
   DialogTitle,
   DialogTrigger,
 } from '@/components/ui/dialog';
-import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import type { TicketStatus } from '@/types/ticket';
 
 const statuses: TicketStatus[] = ['신규', '진행중', '검토중', '종결', '보류'];
@@ -196,29 +193,11 @@ export default function TicketDetailPage({ params }: { params: Promise<{ id: str
         </div>
       </div>
 
-      {/* AI Summary */}
-      <AISummaryPanel ticketId={id} summary={selectedTicket.ai_summary} />
-
-      {/* Tabs: Emails / Graph */}
-      <Tabs defaultValue="emails" className="w-full">
-        <TabsList className="glass border border-border">
-          <TabsTrigger value="emails" className="text-xs tracking-wider data-active:text-neon-cyan data-active:bg-neon-cyan/10">
-            EMAILS
-          </TabsTrigger>
-          <TabsTrigger value="graph" className="text-xs tracking-wider data-active:text-neon-cyan data-active:bg-neon-cyan/10">
-            COMM GRAPH
-          </TabsTrigger>
-        </TabsList>
-
-        <TabsContent value="emails" className="space-y-4 mt-4">
-          <EmailDropzone ticketId={id} />
-          <EmailList ticketId={id} />
-        </TabsContent>
-
-        <TabsContent value="graph" className="mt-4">
-          <CommunicationGraph ticketId={id} />
-        </TabsContent>
-      </Tabs>
+      {/* Emails */}
+      <div className="space-y-4">
+        <EmailDropzone ticketId={id} />
+        <EmailList ticketId={id} />
+      </div>
 
       {/* Notes — always visible below, with pin/collapse */}
       <NoteEditor ticketId={id} pinned={notesPinned} onTogglePin={() => setNotesPinned(!notesPinned)} />

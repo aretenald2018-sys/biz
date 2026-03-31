@@ -38,6 +38,45 @@ export async function POST(
   const buffer = await file.arrayBuffer();
   const parsed = parseEmailFile(buffer, file.name);
 
+  // --- Incremental update: detect duplicate thread and append only new content ---
+  function stripRePrefix(s: string | null): string {
+    return (s || '').replace(/^(RE:|Re:|FW:|Fw:|답장:|전달:)\s*/gi, '').trim();
+  }
+
+  const strippedSubject = stripRePrefix(parsed.subject);
+
+  const existing = db.prepare(
+    'SELECT id, subject, body_text, body_html FROM emails WHERE ticket_id = ? ORDER BY created_at DESC'
+  ).all(id) as { id: string; subject: string | null; body_text: string | null; body_html: string | null }[];
+
+  let matchedEmail: { id: string; subject: string | null; body_text: string | null; body_html: string | null } | null = null;
+  for (const ex of existing) {
+    const exSubject = stripRePrefix(ex.subject);
+    if (exSubject && strippedSubject && exSubject === strippedSubject) {
+      matchedEmail = ex;
+      break;
+    }
+  }
+
+  if (matchedEmail && parsed.bodyText && matchedEmail.body_text) {
+    const oldText = matchedEmail.body_text.trim();
+    const newText = parsed.bodyText.trim();
+    const idx = newText.indexOf(oldText);
+
+    if (idx > 0) {
+      const incrementalText = newText.substring(0, idx).trim();
+      const newFullText = incrementalText + '\n\n' + '\u2500'.repeat(40) + '\n\n' + oldText;
+      const newFullHtml = parsed.bodyHtml || matchedEmail.body_html;
+
+      db.prepare(
+        'UPDATE emails SET body_text = ?, body_html = ?, file_blob = ? WHERE id = ?'
+      ).run(newFullText, newFullHtml, Buffer.from(buffer), matchedEmail.id);
+
+      return NextResponse.json({ email: { id: matchedEmail.id }, incremental: true });
+    }
+  }
+  // --- End incremental update ---
+
   const stmt = db.prepare(`
     INSERT INTO emails (ticket_id, file_name, file_blob, subject, sender_name, sender_email, recipients, cc_list, body_text, body_html, sent_date)
     VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)

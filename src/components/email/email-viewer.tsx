@@ -283,7 +283,7 @@ function MetaReplyItem({ reply, ticketId, annotationId, metaId }: {
     <div className="p-2 pl-3 bg-card/50">
       {editing ? (
         <div className="space-y-1">
-          <Textarea value={editText} onChange={(e) => setEditText(e.target.value)} rows={2} className="bg-background border-border text-xs resize-none text-foreground" autoFocus />
+          <Textarea value={editText} onChange={(e) => setEditText(e.target.value)} onKeyDown={(e) => { if (e.ctrlKey && e.key === 'Enter') { e.preventDefault(); handleSave(); } }} rows={2} className="bg-background border-border text-xs resize-none text-foreground" autoFocus />
           <div className="flex gap-1">
             <Button onClick={handleSave} className="text-[10px] h-5 px-2 bg-accent-primary/20 text-accent-primary border border-accent-primary/30">SAVE</Button>
             <Button onClick={() => setEditing(false)} variant="ghost" className="text-[10px] h-5 px-2 text-muted-foreground">CANCEL</Button>
@@ -332,7 +332,7 @@ function MetaAnnotationCard({ meta, ticketId, annotationId, isActive, onActivate
         </div>
         {editing ? (
           <div className="space-y-2">
-            <Textarea value={editText} onChange={(e) => setEditText(e.target.value)} rows={2} className="bg-background border-border text-xs resize-none text-foreground" autoFocus />
+            <Textarea value={editText} onChange={(e) => setEditText(e.target.value)} onKeyDown={(e) => { if (e.ctrlKey && e.key === 'Enter') { e.preventDefault(); handleSaveEdit(); } }} rows={2} className="bg-background border-border text-xs resize-none text-foreground" autoFocus />
             <div className="flex gap-1">
               <Button onClick={handleSaveEdit} className="text-[10px] h-6 px-2 bg-accent-primary/20 text-accent-primary border border-accent-primary/30">SAVE</Button>
               <Button onClick={() => setEditing(false)} variant="ghost" className="text-[10px] h-6 px-2 text-muted-foreground">CANCEL</Button>
@@ -351,7 +351,7 @@ function MetaAnnotationCard({ meta, ticketId, annotationId, isActive, onActivate
         )}
         {showReplyInput && (
           <div className="mt-2 pt-2 border-t border-border">
-            <Textarea value={replyText} onChange={(e) => setReplyText(e.target.value)} rows={2} placeholder="Reply..." className="bg-background border-border text-xs resize-none text-foreground" autoFocus />
+            <Textarea value={replyText} onChange={(e) => setReplyText(e.target.value)} onKeyDown={(e) => { if (e.ctrlKey && e.key === 'Enter') { e.preventDefault(); handleAddReply(); } }} rows={2} placeholder="Reply..." className="bg-background border-border text-xs resize-none text-foreground" autoFocus />
             <div className="flex gap-1 mt-1">
               <Button onClick={handleAddReply} className="text-[10px] h-6 px-2 bg-accent-primary/20 text-accent-primary border border-accent-primary/30">ADD</Button>
               <Button onClick={() => { setShowReplyInput(false); setReplyText(''); }} variant="ghost" className="text-[10px] h-6 px-2 text-muted-foreground">CANCEL</Button>
@@ -419,7 +419,7 @@ function AnnotationCard({ annotation, isActive, ticketId, onActivate, cardRef, m
 
         {editing ? (
           <div className="space-y-2">
-            <Textarea value={editText} onChange={(e) => setEditText(e.target.value)} rows={2} className="bg-background border-border text-xs resize-none text-foreground" autoFocus />
+            <Textarea value={editText} onChange={(e) => setEditText(e.target.value)} onKeyDown={(e) => { if (e.ctrlKey && e.key === 'Enter') { e.preventDefault(); handleSaveEdit(); } }} rows={2} className="bg-background border-border text-xs resize-none text-foreground" autoFocus />
             <div className="flex gap-1">
               <Button onClick={handleSaveEdit} className="text-[10px] h-6 px-2 bg-accent-primary/20 text-accent-primary border border-accent-primary/30">SAVE</Button>
               <Button onClick={() => setEditing(false)} variant="ghost" className="text-[10px] h-6 px-2 text-muted-foreground">CANCEL</Button>
@@ -471,7 +471,7 @@ function AnnotationCard({ annotation, isActive, ticketId, onActivate, cardRef, m
                   style={{ backgroundColor: c.border }} title={c.label} />
               ))}
             </div>
-            <Textarea value={metaNoteText} onChange={(e) => setMetaNoteText(e.target.value)} placeholder="메메모 작성..." rows={2} className="bg-background border-border text-xs resize-none text-foreground mb-1.5" autoFocus />
+            <Textarea value={metaNoteText} onChange={(e) => setMetaNoteText(e.target.value)} onKeyDown={(e) => { if (e.ctrlKey && e.key === 'Enter') { e.preventDefault(); handleCreateMeta(); } }} placeholder="메메모 작성..." rows={2} className="bg-background border-border text-xs resize-none text-foreground mb-1.5" autoFocus />
             <div className="flex gap-1">
               <Button onClick={handleCreateMeta} className="text-[10px] h-6 px-2 bg-accent-primary/20 text-accent-primary border border-accent-primary/30">SAVE</Button>
               <Button onClick={() => { setMetaSelData(null); window.getSelection()?.removeAllRanges(); }} variant="ghost" className="text-[10px] h-6 px-2 text-muted-foreground">CANCEL</Button>
@@ -513,6 +513,7 @@ export function EmailViewer({ email, ticketId }: { email: Email; ticketId: strin
   const [selectionData, setSelectionData] = useState<{ start: number; end: number; text: string } | null>(null);
   const [noteText, setNoteText] = useState('');
   const [selectedColor, setSelectedColor] = useState(ANNOTATION_COLORS[0].border);
+  const [viewMode, setViewMode] = useState<'html' | 'text'>(email.body_html ? 'html' : 'text');
 
   const { annotations, activeAnnotation, activeMetaAnnotation, fetchAnnotations, createAnnotation, setActiveAnnotation, setActiveMetaAnnotation } = useAnnotationStore();
 
@@ -558,7 +559,21 @@ export function EmailViewer({ email, ticketId }: { email: Email; ticketId: strin
     <div className="rounded-lg border border-border overflow-hidden bg-card">
       {/* Email Header */}
       <div className="p-4 border-b border-border bg-muted/30">
-        <div className="text-sm font-semibold text-foreground mb-2">{email.subject || '(No Subject)'}</div>
+        <div className="flex items-center justify-between mb-2">
+          <div className="text-sm font-semibold text-foreground">{email.subject || '(No Subject)'}</div>
+          {email.body_html && (
+            <button
+              onClick={() => setViewMode(viewMode === 'html' ? 'text' : 'html')}
+              className={`text-[10px] px-2 py-0.5 rounded border transition-all ${
+                viewMode === 'html'
+                  ? 'bg-primary/20 text-primary border-primary/30'
+                  : 'bg-muted/30 text-muted-foreground border-border hover:text-primary'
+              }`}
+            >
+              {viewMode === 'html' ? 'HTML' : 'TEXT'}
+            </button>
+          )}
+        </div>
         <div className="text-[11px] text-muted-foreground space-y-0.5">
           <div>FROM: <span className="text-primary font-medium">{email.sender_name}</span> &lt;{email.sender_email}&gt;</div>
           {recipients.length > 0 && <div>TO: {recipients.map(r => `${r.name} <${r.email}>`).join(', ')}</div>}
@@ -578,22 +593,31 @@ export function EmailViewer({ email, ticketId }: { email: Email; ticketId: strin
 
         {/* Col 1: Email Body */}
         <div className={`${bodyWidth} p-5 overflow-auto transition-all`} style={{ maxHeight: '70vh' }}>
-          <div ref={textRef} onMouseUp={handleMouseUp} className="text-[13px] leading-[1.8] whitespace-pre-wrap select-text text-foreground">
-            {segments.map((seg, i) => {
-              if (seg.annotations.length > 0) {
-                const ann = seg.annotations[0];
-                const isActive = activeAnnotation === ann.id;
-                return (
-                  <mark key={i} ref={(el) => { if (el) highlightRefs.current.set(ann.id, el); }}
-                    style={getAnnotationStyle(ann.color, isActive)}
-                    onClick={() => setActiveAnnotation(isActive ? null : ann.id)}>
-                    {seg.text}
-                  </mark>
-                );
-              }
-              return <span key={i}>{seg.text}</span>;
-            })}
-          </div>
+          {viewMode === 'html' && email.body_html ? (
+            <div
+              ref={textRef}
+              onMouseUp={handleMouseUp}
+              className="email-html-content text-[13px] leading-[1.8] select-text text-foreground"
+              dangerouslySetInnerHTML={{ __html: email.body_html }}
+            />
+          ) : (
+            <div ref={textRef} onMouseUp={handleMouseUp} className="text-[13px] leading-[1.8] whitespace-pre-wrap select-text text-foreground">
+              {segments.map((seg, i) => {
+                if (seg.annotations.length > 0) {
+                  const ann = seg.annotations[0];
+                  const isActive = activeAnnotation === ann.id;
+                  return (
+                    <mark key={i} ref={(el) => { if (el) highlightRefs.current.set(ann.id, el); }}
+                      style={getAnnotationStyle(ann.color, isActive)}
+                      onClick={() => setActiveAnnotation(isActive ? null : ann.id)}>
+                      {seg.text}
+                    </mark>
+                  );
+                }
+                return <span key={i}>{seg.text}</span>;
+              })}
+            </div>
+          )}
         </div>
 
         {/* Col 2: Annotation Panel */}
@@ -613,7 +637,7 @@ export function EmailViewer({ email, ticketId }: { email: Email; ticketId: strin
                       style={{ backgroundColor: c.border }} title={c.label} />
                   ))}
                 </div>
-                <Textarea value={noteText} onChange={(e) => setNoteText(e.target.value)} placeholder="Write your note..."
+                <Textarea value={noteText} onChange={(e) => setNoteText(e.target.value)} onKeyDown={(e) => { if (e.ctrlKey && e.key === 'Enter') { e.preventDefault(); handleCreateAnnotation(); } }} placeholder="Write your note..."
                   rows={3} className="bg-background border-border text-xs resize-none text-foreground mb-2" autoFocus />
                 <div className="flex gap-2">
                   <Button onClick={handleCreateAnnotation} className="bg-primary/20 text-primary border border-primary/30 text-[10px] h-7 px-3">SAVE NOTE</Button>

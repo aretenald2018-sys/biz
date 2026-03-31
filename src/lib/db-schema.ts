@@ -1,6 +1,6 @@
 import Database from 'better-sqlite3';
 
-const CURRENT_VERSION = 4;
+const CURRENT_VERSION = 5;
 
 export function initSchema(db: Database.Database) {
   db.exec(`
@@ -24,6 +24,9 @@ export function initSchema(db: Database.Database) {
   }
   if (currentVersion < 4) {
     applyV4(db);
+  }
+  if (currentVersion < 5) {
+    applyV5(db);
   }
 }
 
@@ -180,5 +183,48 @@ function applyV4(db: Database.Database) {
     CREATE INDEX IF NOT EXISTS idx_notes_ticket ON notes(ticket_id);
 
     INSERT INTO schema_version (version) VALUES (4);
+  `);
+}
+
+function applyV5(db: Database.Database) {
+  db.exec(`
+    CREATE TABLE IF NOT EXISTS contracts (
+      id TEXT PRIMARY KEY DEFAULT (lower(hex(randomblob(8)))),
+      region TEXT NOT NULL,
+      country TEXT NOT NULL,
+      entity_code TEXT NOT NULL,
+      brand TEXT NOT NULL,
+      entity_name TEXT NOT NULL,
+      data_domain_vehicle TEXT CHECK(data_domain_vehicle IN ('O','X','null')) DEFAULT 'null',
+      data_domain_customer TEXT CHECK(data_domain_customer IN ('O','X','null')) DEFAULT 'null',
+      data_domain_sales TEXT CHECK(data_domain_sales IN ('O','X','null')) DEFAULT 'null',
+      data_domain_quality TEXT CHECK(data_domain_quality IN ('O','X','null')) DEFAULT 'null',
+      data_domain_production TEXT CHECK(data_domain_production IN ('O','X','null')) DEFAULT 'null',
+      contract_status TEXT,
+      transfer_purpose TEXT,
+      transferable_data TEXT,
+      created_at TEXT NOT NULL DEFAULT (datetime('now','localtime')),
+      updated_at TEXT NOT NULL DEFAULT (datetime('now','localtime'))
+    );
+
+    CREATE INDEX IF NOT EXISTS idx_contracts_region ON contracts(region);
+    CREATE INDEX IF NOT EXISTS idx_contracts_entity_code ON contracts(entity_code);
+    CREATE INDEX IF NOT EXISTS idx_contracts_brand ON contracts(brand);
+
+    CREATE TABLE IF NOT EXISTS contract_files (
+      id TEXT PRIMARY KEY DEFAULT (lower(hex(randomblob(8)))),
+      contract_id TEXT NOT NULL REFERENCES contracts(id) ON DELETE CASCADE,
+      file_category TEXT NOT NULL CHECK(file_category IN ('final_contract','related_document','correspondence')),
+      file_name TEXT NOT NULL,
+      file_blob BLOB NOT NULL,
+      file_type TEXT NOT NULL DEFAULT 'application/octet-stream',
+      file_size INTEGER NOT NULL DEFAULT 0,
+      created_at TEXT NOT NULL DEFAULT (datetime('now','localtime'))
+    );
+
+    CREATE INDEX IF NOT EXISTS idx_contract_files_contract ON contract_files(contract_id);
+    CREATE INDEX IF NOT EXISTS idx_contract_files_category ON contract_files(file_category);
+
+    INSERT INTO schema_version (version) VALUES (5);
   `);
 }

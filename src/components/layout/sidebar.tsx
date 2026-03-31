@@ -7,6 +7,7 @@ import { useEffect, useState } from 'react';
 const navItems = [
   { href: '/', label: 'DASHBOARD', icon: '◆', exact: true },
   { href: '/tickets', label: 'TICKETS', icon: '▣', exact: false },
+  { href: '/contracts', label: 'CONTRACTS', icon: '▤', exact: false },
 ];
 
 export function Sidebar() {

@@ -3,11 +3,13 @@
 import { useEffect, useState } from 'react';
 import { useEmailStore } from '@/stores/email-store';
 import { EmailViewer } from './email-viewer';
+import { AIChatModal } from './ai-chat-modal';
 import type { Email } from '@/types/email';
 
 export function EmailList({ ticketId }: { ticketId: string }) {
   const { emails, selectedEmail, loading, fetchEmails, selectEmail, deleteEmail } = useEmailStore();
   const [confirmDelete, setConfirmDelete] = useState<string | null>(null);
+  const [aiEmail, setAiEmail] = useState<Email | null>(null);
 
   useEffect(() => {
     fetchEmails(ticketId);
@@ -53,25 +55,36 @@ export function EmailList({ ticketId }: { ticketId: string }) {
                   {email.sent_date && <span>| {email.sent_date}</span>}
                 </div>
               </div>
-              <button
-                onClick={(e) => {
-                  e.stopPropagation();
-                  if (confirmDelete === email.id) {
-                    deleteEmail(ticketId, email.id);
-                    setConfirmDelete(null);
-                  } else {
-                    setConfirmDelete(email.id);
-                    setTimeout(() => setConfirmDelete(null), 3000);
-                  }
-                }}
-                className={`text-[10px] px-2 py-1 rounded transition-all ${
-                  confirmDelete === email.id
-                    ? 'text-neon-red bg-neon-red/10 border border-neon-red/30'
-                    : 'text-muted-foreground hover:text-neon-red'
-                }`}
-              >
-                {confirmDelete === email.id ? 'CONFIRM?' : 'DEL'}
-              </button>
+              <div className="flex items-center gap-1">
+                <button
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    setAiEmail(email);
+                  }}
+                  className="text-[10px] px-2 py-1 rounded transition-all text-muted-foreground hover:text-neon-cyan hover:bg-neon-cyan/10"
+                >
+                  AI
+                </button>
+                <button
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    if (confirmDelete === email.id) {
+                      deleteEmail(ticketId, email.id);
+                      setConfirmDelete(null);
+                    } else {
+                      setConfirmDelete(email.id);
+                      setTimeout(() => setConfirmDelete(null), 3000);
+                    }
+                  }}
+                  className={`text-[10px] px-2 py-1 rounded transition-all ${
+                    confirmDelete === email.id
+                      ? 'text-neon-red bg-neon-red/10 border border-neon-red/30'
+                      : 'text-muted-foreground hover:text-neon-red'
+                  }`}
+                >
+                  {confirmDelete === email.id ? 'CONFIRM?' : 'DEL'}
+                </button>
+              </div>
             </div>
           </div>
         ))}
@@ -80,6 +93,15 @@ export function EmailList({ ticketId }: { ticketId: string }) {
       {/* Email Viewer */}
       {selectedEmail && (
         <EmailViewer email={selectedEmail} ticketId={ticketId} />
+      )}
+
+      {/* AI Chat Modal */}
+      {aiEmail && (
+        <AIChatModal
+          open={!!aiEmail}
+          onOpenChange={(v) => { if (!v) setAiEmail(null); }}
+          email={aiEmail}
+        />
       )}
     </div>
   );
