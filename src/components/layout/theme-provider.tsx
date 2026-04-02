@@ -8,11 +8,13 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
 
   useEffect(() => {
     const html = document.documentElement;
+    html.classList.remove('hyundai-theme', 'kia-theme', 'dark');
+
     if (theme === 'hyundai') {
       html.classList.add('hyundai-theme');
-      html.classList.remove('dark');
+    } else if (theme === 'kia') {
+      html.classList.add('kia-theme');
     } else {
-      html.classList.remove('hyundai-theme');
       html.classList.add('dark');
     }
   }, [theme]);

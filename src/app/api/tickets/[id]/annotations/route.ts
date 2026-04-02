@@ -9,14 +9,15 @@ export async function GET(
   const db = getDb();
   const { searchParams } = new URL(request.url);
   const emailId = searchParams.get('email_id');
+  const noteId = searchParams.get('note_id');
 
-  if (!emailId) {
-    return NextResponse.json({ error: 'email_id is required' }, { status: 400 });
+  if (!emailId && !noteId) {
+    return NextResponse.json({ error: 'email_id or note_id is required' }, { status: 400 });
   }
 
-  const annotations = db.prepare(
-    'SELECT * FROM annotations WHERE email_id = ? ORDER BY start_offset ASC'
-  ).all(emailId) as { id: string }[];
+  const annotations = emailId
+    ? db.prepare('SELECT * FROM annotations WHERE email_id = ? ORDER BY start_offset ASC').all(emailId) as { id: string }[]
+    : db.prepare('SELECT * FROM annotations WHERE note_id = ? ORDER BY start_offset ASC').all(noteId) as { id: string }[];
 
   const getReplies = db.prepare(
     'SELECT * FROM annotation_replies WHERE annotation_id = ? ORDER BY created_at ASC'
@@ -57,18 +58,18 @@ export async function POST(
   const db = getDb();
   const body = await request.json();
 
-  const { email_id, start_offset, end_offset, selected_text, note, color } = body;
+  const { email_id, note_id, start_offset, end_offset, selected_text, note, color } = body;
 
-  if (!email_id || start_offset === undefined || end_offset === undefined || !selected_text || !note) {
+  if ((!email_id && !note_id) || start_offset === undefined || end_offset === undefined || !selected_text || !note) {
     return NextResponse.json({ error: 'Missing required fields' }, { status: 400 });
   }
 
   const stmt = db.prepare(`
-    INSERT INTO annotations (email_id, start_offset, end_offset, selected_text, note, color)
-    VALUES (?, ?, ?, ?, ?, ?)
+    INSERT INTO annotations (email_id, note_id, start_offset, end_offset, selected_text, note, color)
+    VALUES (?, ?, ?, ?, ?, ?, ?)
   `);
 
-  const result = stmt.run(email_id, start_offset, end_offset, selected_text, note, color || '#5ec4d4');
+  const result = stmt.run(email_id || null, note_id || null, start_offset, end_offset, selected_text, note, color || '#5ec4d4');
   const annotation = db.prepare('SELECT * FROM annotations WHERE rowid = ?').get(result.lastInsertRowid);
 
   return NextResponse.json(annotation, { status: 201 });

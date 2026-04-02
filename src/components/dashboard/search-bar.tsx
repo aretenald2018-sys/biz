@@ -3,6 +3,7 @@
 import { useState, useEffect, useRef } from 'react';
 import { useRouter } from 'next/navigation';
 import { Input } from '@/components/ui/input';
+import { useThemeStore } from '@/stores/theme-store';
 
 interface SearchResult {
   type: 'ticket' | 'email';
@@ -20,6 +21,8 @@ export function SearchBar() {
   const [loading, setLoading] = useState(false);
   const router = useRouter();
   const wrapperRef = useRef<HTMLDivElement>(null);
+  const theme = useThemeStore((s) => s.theme);
+  const isHyundai = theme === 'hyundai';
 
   useEffect(() => {
     const handler = (e: MouseEvent) => {
@@ -65,37 +68,50 @@ export function SearchBar() {
   return (
     <div ref={wrapperRef} className="relative w-full max-w-md">
       <div className="relative">
-        <span className="absolute left-3 top-1/2 -translate-y-1/2 text-muted-foreground text-xs">
-          {loading ? '...' : '>_'}
+        <span className={`absolute left-3 top-1/2 -translate-y-1/2 text-xs ${isHyundai ? 'text-[#929296]' : 'text-muted-foreground'}`}>
+          {loading ? '...' : isHyundai ? '🔍' : '>_'}
         </span>
         <Input
           value={query}
           onChange={(e) => setQuery(e.target.value)}
           onFocus={() => results.length > 0 && setOpen(true)}
-          placeholder="SEARCH TICKETS & EMAILS..."
-          className="pl-9 bg-white/5 border-border text-xs h-8 tracking-wider placeholder:text-muted-foreground/50"
+          placeholder={isHyundai ? '티켓, 이메일 검색' : 'SEARCH TICKETS & EMAILS...'}
+          className={isHyundai
+            ? 'pl-9 bg-white/10 border-white/15 text-white text-[13px] h-9 placeholder:text-white/40 rounded focus:bg-white/15 focus:border-white/30'
+            : 'pl-9 bg-white/5 border-border text-xs h-8 tracking-wider placeholder:text-muted-foreground/50'
+          }
         />
       </div>
 
       {open && results.length > 0 && (
-        <div className="absolute top-full left-0 right-0 mt-1 glass rounded-lg border border-border z-50 max-h-64 overflow-y-auto">
+        <div className={`absolute top-full left-0 right-0 mt-1 rounded-lg border z-50 max-h-64 overflow-y-auto ${
+          isHyundai ? 'bg-white border-[#EFEFF0] shadow-lg' : 'glass border-border'
+        }`}>
           {results.map((result, i) => (
             <button
               key={`${result.type}-${result.id}-${i}`}
               onClick={() => handleSelect(result)}
-              className="w-full text-left px-3 py-2 hover:bg-white/5 transition-colors border-b border-border last:border-0"
+              className={`w-full text-left px-3 py-2.5 transition-colors border-b last:border-0 ${
+                isHyundai
+                  ? 'border-[#EFEFF0] hover:bg-[#F5F5F5]'
+                  : 'border-border hover:bg-white/5'
+              }`}
             >
               <div className="flex items-center gap-2">
-                <span className={`text-[10px] px-1.5 py-0.5 rounded border ${
-                  result.type === 'ticket'
-                    ? 'text-neon-cyan border-neon-cyan/30'
-                    : 'text-neon-magenta border-neon-magenta/30'
+                <span className={`text-[11px] px-1.5 py-0.5 rounded ${
+                  isHyundai
+                    ? result.type === 'ticket'
+                      ? 'text-[#002C5F] bg-[#EDF2FF]'
+                      : 'text-[#00809E] bg-[#F0FCFF]'
+                    : result.type === 'ticket'
+                      ? 'text-neon-cyan border border-neon-cyan/30'
+                      : 'text-neon-magenta border border-neon-magenta/30'
                 }`}>
-                  {result.type === 'ticket' ? 'TKT' : 'EMAIL'}
+                  {result.type === 'ticket' ? '티켓' : '이메일'}
                 </span>
-                <span className="text-xs text-foreground truncate flex-1">{result.title}</span>
+                <span className={`truncate flex-1 ${isHyundai ? 'text-[13px] text-[#121416]' : 'text-xs text-foreground'}`}>{result.title}</span>
               </div>
-              <div className="text-[10px] text-muted-foreground mt-0.5 ml-12 truncate">
+              <div className={`mt-0.5 ml-12 truncate ${isHyundai ? 'text-[11px] text-[#69696E]' : 'text-[10px] text-muted-foreground'}`}>
                 {result.subtitle}
               </div>
             </button>
@@ -104,9 +120,11 @@ export function SearchBar() {
       )}
 
       {open && query.trim() && results.length === 0 && !loading && (
-        <div className="absolute top-full left-0 right-0 mt-1 glass rounded-lg border border-border z-50 p-3">
-          <div className="text-xs text-muted-foreground text-center tracking-wider">
-            NO RESULTS FOUND
+        <div className={`absolute top-full left-0 right-0 mt-1 rounded-lg border z-50 p-3 ${
+          isHyundai ? 'bg-white border-[#EFEFF0] shadow-lg' : 'glass border-border'
+        }`}>
+          <div className={`text-center ${isHyundai ? 'text-[12px] text-[#929296]' : 'text-xs text-muted-foreground tracking-wider'}`}>
+            {isHyundai ? '검색 결과가 없습니다' : 'NO RESULTS FOUND'}
           </div>
         </div>
       )}

@@ -14,6 +14,7 @@ export async function PUT(
 
   if (body.note !== undefined) { fields.push('note = ?'); values.push(body.note); }
   if (body.color !== undefined) { fields.push('color = ?'); values.push(body.color); }
+  if (body.resolved !== undefined) { fields.push('resolved = ?'); values.push(body.resolved); }
 
   if (fields.length === 0) {
     return NextResponse.json({ error: 'No fields to update' }, { status: 400 });

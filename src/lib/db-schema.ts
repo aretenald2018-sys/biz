@@ -1,6 +1,6 @@
 import Database from 'better-sqlite3';
 
-const CURRENT_VERSION = 5;
+const CURRENT_VERSION = 8;
 
 export function initSchema(db: Database.Database) {
   db.exec(`
@@ -27,6 +27,15 @@ export function initSchema(db: Database.Database) {
   }
   if (currentVersion < 5) {
     applyV5(db);
+  }
+  if (currentVersion < 6) {
+    applyV6(db);
+  }
+  if (currentVersion < 7) {
+    applyV7(db);
+  }
+  if (currentVersion < 8) {
+    applyV8(db);
   }
 }
 
@@ -226,5 +235,43 @@ function applyV5(db: Database.Database) {
     CREATE INDEX IF NOT EXISTS idx_contract_files_category ON contract_files(file_category);
 
     INSERT INTO schema_version (version) VALUES (5);
+  `);
+}
+
+function applyV6(db: Database.Database) {
+  db.exec(`
+    ALTER TABLE annotations ADD COLUMN resolved INTEGER NOT NULL DEFAULT 0;
+    ALTER TABLE meta_annotations ADD COLUMN resolved INTEGER NOT NULL DEFAULT 0;
+
+    INSERT INTO schema_version (version) VALUES (6);
+  `);
+}
+
+function applyV7(db: Database.Database) {
+  db.exec(`
+    ALTER TABLE annotations ADD COLUMN note_id TEXT REFERENCES notes(id) ON DELETE CASCADE;
+    CREATE INDEX IF NOT EXISTS idx_annotations_note ON annotations(note_id);
+
+    INSERT INTO schema_version (version) VALUES (7);
+  `);
+}
+
+function applyV8(db: Database.Database) {
+  db.exec(`
+    CREATE TABLE IF NOT EXISTS email_flow_steps (
+      id TEXT PRIMARY KEY DEFAULT (lower(hex(randomblob(8)))),
+      email_id TEXT NOT NULL REFERENCES emails(id) ON DELETE CASCADE,
+      step_type TEXT NOT NULL CHECK(step_type IN ('request','response','follow_up')),
+      actor TEXT,
+      summary TEXT NOT NULL,
+      is_current INTEGER NOT NULL DEFAULT 0,
+      step_order INTEGER NOT NULL DEFAULT 0,
+      created_at TEXT NOT NULL DEFAULT (datetime('now','localtime')),
+      updated_at TEXT NOT NULL DEFAULT (datetime('now','localtime'))
+    );
+
+    CREATE INDEX IF NOT EXISTS idx_flow_steps_email ON email_flow_steps(email_id);
+
+    INSERT INTO schema_version (version) VALUES (8);
   `);
 }

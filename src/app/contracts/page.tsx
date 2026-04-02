@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useState, useRef, useCallback } from 'react';
+import React, { useEffect, useState, useRef, useCallback } from 'react';
 import { useContractStore } from '@/stores/contract-store';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -22,29 +22,37 @@ import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 import type { Contract, ContractFile, DataDomainValue, CreateContractInput } from '@/types/contract';
 
-/* ─── File extension → icon ─── */
+/* ─── File extension → icon with label ─── */
 function FileIcon({ fileName }: { fileName: string }) {
   const ext = fileName.split('.').pop()?.toLowerCase() || '';
-  const iconMap: Record<string, { icon: string; color: string }> = {
-    pdf: { icon: '📕', color: 'text-red-400' },
-    doc: { icon: '📘', color: 'text-blue-400' },
-    docx: { icon: '📘', color: 'text-blue-400' },
-    xls: { icon: '📗', color: 'text-green-400' },
-    xlsx: { icon: '📗', color: 'text-green-400' },
-    csv: { icon: '📗', color: 'text-green-400' },
-    ppt: { icon: '📙', color: 'text-orange-400' },
-    pptx: { icon: '📙', color: 'text-orange-400' },
-    zip: { icon: '📦', color: 'text-yellow-400' },
-    rar: { icon: '📦', color: 'text-yellow-400' },
-    jpg: { icon: '🖼', color: 'text-purple-400' },
-    jpeg: { icon: '🖼', color: 'text-purple-400' },
-    png: { icon: '🖼', color: 'text-purple-400' },
-    txt: { icon: '📄', color: 'text-muted-foreground' },
-    msg: { icon: '✉️', color: 'text-blue-400' },
-    eml: { icon: '✉️', color: 'text-blue-400' },
+  const iconMap: Record<string, { bg: string; text: string; label: string }> = {
+    pdf:  { bg: '#E81F2C', text: '#FFFFFF', label: 'PDF' },
+    doc:  { bg: '#002C5F', text: '#FFFFFF', label: 'DOC' },
+    docx: { bg: '#002C5F', text: '#FFFFFF', label: 'DOCX' },
+    xls:  { bg: '#1D7044', text: '#FFFFFF', label: 'XLS' },
+    xlsx: { bg: '#1D7044', text: '#FFFFFF', label: 'XLSX' },
+    csv:  { bg: '#1D7044', text: '#FFFFFF', label: 'CSV' },
+    ppt:  { bg: '#D04423', text: '#FFFFFF', label: 'PPT' },
+    pptx: { bg: '#D04423', text: '#FFFFFF', label: 'PPTX' },
+    zip:  { bg: '#EC8E01', text: '#FFFFFF', label: 'ZIP' },
+    rar:  { bg: '#EC8E01', text: '#FFFFFF', label: 'RAR' },
+    jpg:  { bg: '#7B3FA0', text: '#FFFFFF', label: 'JPG' },
+    jpeg: { bg: '#7B3FA0', text: '#FFFFFF', label: 'JPEG' },
+    png:  { bg: '#7B3FA0', text: '#FFFFFF', label: 'PNG' },
+    txt:  { bg: '#69696E', text: '#FFFFFF', label: 'TXT' },
+    msg:  { bg: '#0672ED', text: '#FFFFFF', label: 'MSG' },
+    eml:  { bg: '#0672ED', text: '#FFFFFF', label: 'EML' },
+    hwp:  { bg: '#00AAD2', text: '#FFFFFF', label: 'HWP' },
+    hwpx: { bg: '#00AAD2', text: '#FFFFFF', label: 'HWPX' },
   };
-  const { icon, color } = iconMap[ext] || { icon: '📎', color: 'text-muted-foreground' };
-  return <span className={`text-sm ${color}`} title={ext.toUpperCase()}>{icon}</span>;
+  const config = iconMap[ext] || { bg: '#929296', text: '#FFFFFF', label: ext.toUpperCase().slice(0, 4) || 'FILE' };
+  return (
+    <span className="inline-flex items-center justify-center rounded-sm text-[8px] font-bold leading-none shrink-0"
+      style={{ backgroundColor: config.bg, color: config.text, width: '32px', height: '18px', letterSpacing: '0.02em' }}
+      title={fileName}>
+      {config.label}
+    </span>
+  );
 }
 
 /* ─── Data Domain Cell ─── */
@@ -126,6 +134,8 @@ function TransferInfoCell({ contract, field, label }: {
   const [showPopup, setShowPopup] = useState(false);
   const [editing, setEditing] = useState(false);
   const [editValue, setEditValue] = useState('');
+  const [popupAbove, setPopupAbove] = useState(true);
+  const cellRef = useRef<HTMLTableCellElement>(null);
   const { updateContract } = useContractStore();
 
   const value = contract[field];
@@ -135,15 +145,26 @@ function TransferInfoCell({ contract, field, label }: {
     setEditing(false);
   };
 
+  const handleMouseEnter = () => {
+    // Check if there's enough space above; if not, show below
+    if (cellRef.current) {
+      const rect = cellRef.current.getBoundingClientRect();
+      setPopupAbove(rect.top > 220);
+    }
+    setShowPopup(true);
+  };
+
   return (
-    <td className="px-2 py-2 relative"
-      onMouseEnter={() => setShowPopup(true)}
+    <td ref={cellRef} className="px-2 py-2 relative"
+      onMouseEnter={handleMouseEnter}
       onMouseLeave={() => { if (!editing) setShowPopup(false); }}>
       <div className="text-[10px] text-foreground truncate max-w-[100px] cursor-pointer">
         {value ? value.substring(0, 20) + (value.length > 20 ? '...' : '') : <span className="text-muted-foreground">미설정</span>}
       </div>
       {showPopup && (
-        <div className="absolute z-50 bottom-full left-0 mb-1 w-72 p-3 bg-card border border-border rounded-lg shadow-xl"
+        <div className={`absolute z-50 left-0 w-72 p-3 bg-card border border-border rounded-lg shadow-xl ${
+          popupAbove ? 'bottom-full mb-1' : 'top-full mt-1'
+        }`}
           onClick={(e) => e.stopPropagation()}>
           <div className="text-[10px] text-primary tracking-wider font-bold mb-2">{label}</div>
           {editing ? (
@@ -234,40 +255,148 @@ function DomainFilter({ label, selected, onChange }: {
   return <CheckboxFilter label={label} options={['O', 'X', 'null']} selected={selected} onChange={onChange} labelMap={DOMAIN_LABELS} />;
 }
 
+/* ─── Column resize context for multi-select + localStorage persistence ─── */
+const COL_WIDTHS_KEY = 'bizsys-contract-col-widths';
+
+function loadSavedWidths(): Record<string, number> {
+  try {
+    const raw = localStorage.getItem(COL_WIDTHS_KEY);
+    return raw ? JSON.parse(raw) : {};
+  } catch { return {}; }
+}
+
+function saveWidths(widths: Record<string, number>) {
+  try { localStorage.setItem(COL_WIDTHS_KEY, JSON.stringify(widths)); } catch {}
+}
+
+const ColumnResizeContext = React.createContext<{
+  selected: Set<string>;
+  toggleSelect: (name: string, shift: boolean) => void;
+  applyResizeDelta: (delta: number) => void;
+  registerCol: (name: string, setWidth: (w: number | undefined) => void, getWidth: () => number, minW: number) => void;
+  savedWidths: Record<string, number>;
+  persistWidth: (name: string, w: number) => void;
+}>({
+  selected: new Set(),
+  toggleSelect: () => {},
+  applyResizeDelta: () => {},
+  registerCol: () => {},
+  savedWidths: {},
+  persistWidth: () => {},
+});
+
+function ColumnResizeProvider({ children }: { children: React.ReactNode }) {
+  const [selected, setSelected] = useState<Set<string>>(new Set());
+  const colsRef = useRef<Map<string, { setWidth: (w: number | undefined) => void; getWidth: () => number; minW: number }>>(new Map());
+  const [savedWidths, setSavedWidths] = useState<Record<string, number>>({});
+
+  useEffect(() => { setSavedWidths(loadSavedWidths()); }, []);
+
+  const toggleSelect = useCallback((name: string, shift: boolean) => {
+    setSelected(prev => {
+      const next = new Set(shift ? prev : []);
+      if (next.has(name)) next.delete(name); else next.add(name);
+      return next;
+    });
+  }, []);
+
+  const persistWidth = useCallback((name: string, w: number) => {
+    setSavedWidths(prev => {
+      const next = { ...prev, [name]: w };
+      saveWidths(next);
+      return next;
+    });
+  }, []);
+
+  const applyResizeDelta = useCallback((delta: number) => {
+    selected.forEach(name => {
+      const col = colsRef.current.get(name);
+      if (col) {
+        const newW = Math.max(col.minW, col.getWidth() + delta);
+        col.setWidth(newW);
+        persistWidth(name, newW);
+      }
+    });
+  }, [selected, persistWidth]);
+
+  const registerCol = useCallback((name: string, setWidth: (w: number | undefined) => void, getWidth: () => number, minW: number) => {
+    colsRef.current.set(name, { setWidth, getWidth, minW });
+  }, []);
+
+  return (
+    <ColumnResizeContext.Provider value={{ selected, toggleSelect, applyResizeDelta, registerCol, savedWidths, persistWidth }}>
+      {children}
+    </ColumnResizeContext.Provider>
+  );
+}
+
 /* ─── Resizable Column Header ─── */
-function ResizableTh({ children, className, minWidth = 40 }: {
+function ResizableTh({ children, className, minWidth = 40, colName }: {
   children: React.ReactNode;
   className?: string;
   minWidth?: number;
+  colName: string;
 }) {
-  const [width, setWidth] = useState<number | undefined>(undefined);
+  const { selected, toggleSelect, applyResizeDelta, registerCol, savedWidths, persistWidth } = React.useContext(ColumnResizeContext);
+  const [width, setWidth] = useState<number | undefined>(savedWidths[colName] || undefined);
   const thRef = useRef<HTMLTableCellElement>(null);
   const startX = useRef(0);
   const startW = useRef(0);
+  const isSelected = selected.has(colName);
+
+  // Restore saved width on mount
+  useEffect(() => {
+    if (savedWidths[colName]) setWidth(savedWidths[colName]);
+  }, [savedWidths, colName]);
+
+  useEffect(() => {
+    registerCol(colName, setWidth, () => thRef.current?.offsetWidth || 80, minWidth);
+  }, [colName, minWidth, registerCol]);
 
   const onMouseDown = useCallback((e: React.MouseEvent) => {
     e.preventDefault();
+    e.stopPropagation();
     startX.current = e.clientX;
     startW.current = thRef.current?.offsetWidth || 80;
 
+    const resizeMultiple = isSelected && selected.size > 1;
+
     const onMouseMove = (ev: MouseEvent) => {
       const diff = ev.clientX - startX.current;
-      setWidth(Math.max(minWidth, startW.current + diff));
+      if (resizeMultiple) {
+        applyResizeDelta(diff);
+        startX.current = ev.clientX;
+      } else {
+        setWidth(Math.max(minWidth, startW.current + diff));
+      }
     };
     const onMouseUp = () => {
       document.removeEventListener('mousemove', onMouseMove);
       document.removeEventListener('mouseup', onMouseUp);
+      // Persist single column resize
+      if (!resizeMultiple && thRef.current) {
+        persistWidth(colName, thRef.current.offsetWidth);
+      }
     };
     document.addEventListener('mousemove', onMouseMove);
     document.addEventListener('mouseup', onMouseUp);
-  }, [minWidth]);
+  }, [minWidth, isSelected, selected.size, applyResizeDelta, colName, persistWidth]);
+
+  const handleHeaderClick = useCallback((e: React.MouseEvent) => {
+    // Only toggle select on direct header text click, not resize handle
+    toggleSelect(colName, e.shiftKey);
+  }, [colName, toggleSelect]);
 
   return (
-    <th ref={thRef} className={className} style={width ? { width, minWidth } : undefined}>
+    <th ref={thRef} className={`${className} cursor-pointer select-none`}
+      style={width ? { width, minWidth } : undefined}
+      onMouseDown={handleHeaderClick}>
       <div className="flex items-center justify-between gap-1">
-        <span className="truncate">{children}</span>
+        <span className={`truncate ${isSelected ? 'text-primary font-bold' : ''}`}>{children}</span>
         <div onMouseDown={onMouseDown}
-          className="w-1 h-4 cursor-col-resize bg-border/50 hover:bg-primary/50 rounded flex-shrink-0 transition-colors" />
+          className={`w-1.5 h-full min-h-[16px] cursor-col-resize rounded flex-shrink-0 transition-colors ${
+            isSelected ? 'bg-primary/60 hover:bg-primary' : 'bg-transparent hover:bg-primary/40'
+          }`} />
       </div>
     </th>
   );
@@ -435,6 +564,32 @@ export default function ContractsPage() {
         </div>
       </div>
 
+      {/* AI Search */}
+      <div className="flex gap-2 items-start">
+        <div className="flex-1 relative">
+          <Input value={searchQuery} onChange={(e) => setSearchQuery(e.target.value)}
+            onKeyDown={(e) => { if (e.key === 'Enter') handleSearch(); }}
+            placeholder="계약 데이터 검색 (예: 'A데이터 이전 가능한 법인은?', '유럽 지역 계약 현황')"
+            className="bg-background border-border text-xs h-9 pl-8" />
+          <span className="absolute left-2.5 top-1/2 -translate-y-1/2 text-muted-foreground/50 text-xs">🔍</span>
+        </div>
+        <Button onClick={handleSearch} disabled={searchLoading}
+          className="bg-primary/20 text-primary border border-primary/30 text-[10px] h-9 px-4 shrink-0">
+          {searchLoading ? '검색중...' : 'AI SEARCH'}
+        </Button>
+      </div>
+      {searchResult && (
+        <div className="p-3 bg-muted/10 rounded-lg border border-border">
+          <div className="flex items-center justify-between mb-2">
+            <span className="text-[9px] text-primary tracking-widest font-bold">SEARCH RESULT</span>
+            <button onClick={() => useContractStore.setState({ searchResult: null })} className="text-[9px] text-muted-foreground hover:text-foreground">CLOSE</button>
+          </div>
+          <div className="markdown-preview text-xs">
+            <ReactMarkdown remarkPlugins={[remarkGfm]}>{searchResult}</ReactMarkdown>
+          </div>
+        </div>
+      )}
+
       {/* Checkbox Filters */}
       <div className="flex items-center gap-2 flex-wrap">
         <span className="text-[9px] text-muted-foreground tracking-widest">FILTERS:</span>
@@ -463,27 +618,28 @@ export default function ContractsPage() {
           <p className="text-[10px] text-muted-foreground mt-1">CSV/Excel 파일을 Import하거나 수동으로 추가하세요</p>
         </div>
       ) : (
+        <ColumnResizeProvider>
         <div className="border border-border rounded-lg overflow-hidden">
           <div className="overflow-x-auto">
             <table className="w-full text-[11px] table-fixed" style={{ minWidth: '1200px' }}>
               <thead>
                 <tr className="bg-muted/30 border-b border-border">
-                  <ResizableTh className={`${thBase} sticky left-0 bg-muted/30 z-10`} minWidth={80}>리전</ResizableTh>
-                  <ResizableTh className={thBase} minWidth={70}>국가</ResizableTh>
-                  <ResizableTh className={thBase} minWidth={50}>법인명</ResizableTh>
-                  <ResizableTh className={thBase} minWidth={40}>브랜드</ResizableTh>
-                  <ResizableTh className={thBase} minWidth={70}>법인명상세</ResizableTh>
-                  <ResizableTh className={`${thBase} text-center border-l border-border`} minWidth={40}>차량</ResizableTh>
-                  <ResizableTh className={`${thBase} text-center`} minWidth={40}>고객</ResizableTh>
-                  <ResizableTh className={`${thBase} text-center`} minWidth={40}>판매</ResizableTh>
-                  <ResizableTh className={`${thBase} text-center`} minWidth={40}>품질</ResizableTh>
-                  <ResizableTh className={`${thBase} text-center`} minWidth={40}>생산</ResizableTh>
-                  <ResizableTh className={`${thBase} text-center border-l border-border`} minWidth={60}>계약체결일</ResizableTh>
-                  <ResizableTh className={`${thBase} text-center border-l border-border`} minWidth={60}>최종계약서</ResizableTh>
-                  <ResizableTh className={`${thBase} text-center`} minWidth={60}>관련문서</ResizableTh>
-                  <ResizableTh className={`${thBase} text-center`} minWidth={60}>교신내역</ResizableTh>
-                  <ResizableTh className={`${thBase} border-l border-border`} minWidth={80}>이전가능 목적</ResizableTh>
-                  <ResizableTh className={thBase} minWidth={80}>이전가능 데이터</ResizableTh>
+                  <ResizableTh colName="region" className={`${thBase} sticky left-0 bg-muted/30 z-10`} minWidth={80}>리전</ResizableTh>
+                  <ResizableTh colName="country" className={thBase} minWidth={70}>국가</ResizableTh>
+                  <ResizableTh colName="entity_code" className={thBase} minWidth={50}>법인명</ResizableTh>
+                  <ResizableTh colName="brand" className={thBase} minWidth={40}>브랜드</ResizableTh>
+                  <ResizableTh colName="entity_name" className={thBase} minWidth={70}>법인명상세</ResizableTh>
+                  <ResizableTh colName="vehicle" className={`${thBase} text-center border-l border-border`} minWidth={40}>차량</ResizableTh>
+                  <ResizableTh colName="customer" className={`${thBase} text-center`} minWidth={40}>고객</ResizableTh>
+                  <ResizableTh colName="sales" className={`${thBase} text-center`} minWidth={40}>판매</ResizableTh>
+                  <ResizableTh colName="quality" className={`${thBase} text-center`} minWidth={40}>품질</ResizableTh>
+                  <ResizableTh colName="production" className={`${thBase} text-center`} minWidth={40}>생산</ResizableTh>
+                  <ResizableTh colName="contract_date" className={`${thBase} text-center border-l border-border`} minWidth={60}>계약체결일</ResizableTh>
+                  <ResizableTh colName="final_contract" className={`${thBase} text-center border-l border-border`} minWidth={60}>최종계약서</ResizableTh>
+                  <ResizableTh colName="related_doc" className={`${thBase} text-center`} minWidth={60}>관련문서</ResizableTh>
+                  <ResizableTh colName="correspondence" className={`${thBase} text-center`} minWidth={60}>교신내역</ResizableTh>
+                  <ResizableTh colName="transfer_purpose" className={`${thBase} border-l border-border`} minWidth={80}>이전가능 목적</ResizableTh>
+                  <ResizableTh colName="transferable_data" className={thBase} minWidth={80}>이전가능 데이터</ResizableTh>
                   <th className={`${thBase} text-center`} style={{ width: 30 }}></th>
                 </tr>
               </thead>
@@ -529,29 +685,8 @@ export default function ContractsPage() {
             </table>
           </div>
         </div>
+        </ColumnResizeProvider>
       )}
-
-      {/* AI Natural Language Search */}
-      <div className="border border-border rounded-lg p-4 bg-card">
-        <div className="text-[10px] text-primary tracking-widest font-bold mb-2">AI CONTRACT SEARCH</div>
-        <div className="flex gap-2">
-          <Input value={searchQuery} onChange={(e) => setSearchQuery(e.target.value)}
-            onKeyDown={(e) => { if (e.key === 'Enter') handleSearch(); }}
-            placeholder="자연어로 질문하세요 (예: 'A데이터를 이전가능한 법인?')"
-            className="bg-background border-border text-xs flex-1" />
-          <Button onClick={handleSearch} disabled={searchLoading}
-            className="bg-primary/20 text-primary border border-primary/30 text-[10px] h-9 px-4">
-            {searchLoading ? '검색중...' : 'SEARCH'}
-          </Button>
-        </div>
-        {searchResult && (
-          <div className="mt-3 p-3 bg-muted/20 rounded border border-border">
-            <div className="markdown-preview text-xs">
-              <ReactMarkdown remarkPlugins={[remarkGfm]}>{searchResult}</ReactMarkdown>
-            </div>
-          </div>
-        )}
-      </div>
 
       <NewContractDialog open={newOpen} onOpenChange={setNewOpen} />
     </div>

@@ -27,6 +27,7 @@ export interface MetaAnnotation {
   selected_text: string;
   note: string;
   color: string;
+  resolved: number;
   created_at: string;
   updated_at: string;
   replies?: MetaAnnotationReply[];
@@ -44,11 +45,13 @@ export interface AnnotationReply {
 export interface Annotation {
   id: string;
   email_id: string;
+  note_id?: string;
   start_offset: number;
   end_offset: number;
   selected_text: string;
   note: string;
   color: string;
+  resolved: number;
   created_at: string;
   updated_at: string;
   replies?: AnnotationReply[];
@@ -57,7 +60,8 @@ export interface Annotation {
 }
 
 export interface CreateAnnotationInput {
-  email_id: string;
+  email_id?: string;
+  note_id?: string;
   start_offset: number;
   end_offset: number;
   selected_text: string;
@@ -68,6 +72,7 @@ export interface CreateAnnotationInput {
 export interface UpdateAnnotationInput {
   note?: string;
   color?: string;
+  resolved?: number;
 }
 
 export interface CreateMetaAnnotationInput {

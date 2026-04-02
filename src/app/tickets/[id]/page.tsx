@@ -6,7 +6,7 @@ import { useTicketStore } from '@/stores/ticket-store';
 import { TicketStatusBadge } from '@/components/tickets/ticket-status-badge';
 import { EmailDropzone } from '@/components/email/email-dropzone';
 import { EmailList } from '@/components/email/email-list';
-import { NoteEditor } from '@/components/notes/note-editor';
+// NoteEditor is now integrated into EmailList
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
@@ -36,7 +36,7 @@ export default function TicketDetailPage({ params }: { params: Promise<{ id: str
   const [title, setTitle] = useState('');
   const [description, setDescription] = useState('');
   const [deleteOpen, setDeleteOpen] = useState(false);
-  const [notesPinned, setNotesPinned] = useState(true);
+  // notesPinned removed — notes now in unified stack
 
   useEffect(() => {
     fetchTicket(id);
@@ -193,14 +193,11 @@ export default function TicketDetailPage({ params }: { params: Promise<{ id: str
         </div>
       </div>
 
-      {/* Emails */}
+      {/* Emails + Notes unified stack */}
       <div className="space-y-4">
         <EmailDropzone ticketId={id} />
         <EmailList ticketId={id} />
       </div>
-
-      {/* Notes — always visible below, with pin/collapse */}
-      <NoteEditor ticketId={id} pinned={notesPinned} onTogglePin={() => setNotesPinned(!notesPinned)} />
     </div>
   );
 }

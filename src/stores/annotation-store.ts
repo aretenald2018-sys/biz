@@ -7,7 +7,7 @@ interface AnnotationStore {
   activeMetaAnnotation: string | null;
   loading: boolean;
 
-  fetchAnnotations: (ticketId: string, emailId: string) => Promise<void>;
+  fetchAnnotations: (ticketId: string, emailId: string, noteId?: string) => Promise<void>;
   createAnnotation: (ticketId: string, input: CreateAnnotationInput) => Promise<void>;
   updateAnnotation: (ticketId: string, annotationId: string, input: UpdateAnnotationInput) => Promise<void>;
   deleteAnnotation: (ticketId: string, annotationId: string) => Promise<void>;
@@ -29,10 +29,20 @@ interface AnnotationStore {
   updateMetaReply: (ticketId: string, annotationId: string, metaId: string, replyId: string, note: string) => Promise<void>;
   deleteMetaReply: (ticketId: string, annotationId: string, metaId: string, replyId: string) => Promise<void>;
 
+  // Resolve actions
+  toggleResolveAnnotation: (ticketId: string, annotationId: string) => Promise<void>;
+  toggleResolveMetaAnnotation: (ticketId: string, annotationId: string, metaId: string) => Promise<void>;
+
   // Attachment actions
   uploadAttachment: (ticketId: string, parentType: 'annotation' | 'meta_annotation', parentId: string, file: File) => Promise<void>;
   deleteAttachment: (ticketId: string, attachmentId: string) => Promise<void>;
 }
+
+const refetchForAnnotation = async (get: () => AnnotationStore, ticketId: string, annotationId: string) => {
+  const ann = get().annotations.find(a => a.id === annotationId);
+  if (ann?.email_id) await get().fetchAnnotations(ticketId, ann.email_id);
+  else if (ann?.note_id) await get().fetchAnnotations(ticketId, '', ann.note_id);
+};
 
 export const useAnnotationStore = create<AnnotationStore>((set, get) => ({
   annotations: [],
@@ -40,9 +50,10 @@ export const useAnnotationStore = create<AnnotationStore>((set, get) => ({
   activeMetaAnnotation: null,
   loading: false,
 
-  fetchAnnotations: async (ticketId: string, emailId: string) => {
+  fetchAnnotations: async (ticketId: string, emailId: string, noteId?: string) => {
     set({ loading: true });
-    const res = await fetch(`/api/tickets/${ticketId}/annotations?email_id=${emailId}`);
+    const param = noteId ? `note_id=${noteId}` : `email_id=${emailId}`;
+    const res = await fetch(`/api/tickets/${ticketId}/annotations?${param}`);
     if (res.ok) {
       const annotations = await res.json();
       set({ annotations, loading: false });
@@ -58,7 +69,11 @@ export const useAnnotationStore = create<AnnotationStore>((set, get) => ({
       body: JSON.stringify(input),
     });
     if (res.ok) {
-      await get().fetchAnnotations(ticketId, input.email_id);
+      if (input.email_id) {
+        await get().fetchAnnotations(ticketId, input.email_id);
+      } else if (input.note_id) {
+        await get().fetchAnnotations(ticketId, '', input.note_id);
+      }
     }
   },
 
@@ -69,15 +84,15 @@ export const useAnnotationStore = create<AnnotationStore>((set, get) => ({
       body: JSON.stringify(input),
     });
     if (res.ok) {
-      const emailId = get().annotations.find(a => a.id === annotationId)?.email_id;
-      if (emailId) await get().fetchAnnotations(ticketId, emailId);
+      await refetchForAnnotation(get, ticketId, annotationId);
     }
   },
 
   deleteAnnotation: async (ticketId: string, annotationId: string) => {
-    const emailId = get().annotations.find(a => a.id === annotationId)?.email_id;
+    const ann = get().annotations.find(a => a.id === annotationId);
     await fetch(`/api/tickets/${ticketId}/annotations/${annotationId}`, { method: 'DELETE' });
-    if (emailId) await get().fetchAnnotations(ticketId, emailId);
+    if (ann?.email_id) await get().fetchAnnotations(ticketId, ann.email_id);
+    else if (ann?.note_id) await get().fetchAnnotations(ticketId, '', ann.note_id);
   },
 
   setActiveAnnotation: (id: string | null) => {
@@ -95,8 +110,7 @@ export const useAnnotationStore = create<AnnotationStore>((set, get) => ({
       body: JSON.stringify({ note }),
     });
     if (res.ok) {
-      const emailId = get().annotations.find(a => a.id === annotationId)?.email_id;
-      if (emailId) await get().fetchAnnotations(ticketId, emailId);
+      await refetchForAnnotation(get, ticketId, annotationId);
     }
   },
 
@@ -107,16 +121,14 @@ export const useAnnotationStore = create<AnnotationStore>((set, get) => ({
       body: JSON.stringify({ note }),
     });
     if (res.ok) {
-      const emailId = get().annotations.find(a => a.id === annotationId)?.email_id;
-      if (emailId) await get().fetchAnnotations(ticketId, emailId);
+      await refetchForAnnotation(get, ticketId, annotationId);
     }
   },
 
   deleteReply: async (ticketId: string, annotationId: string, replyId: string) => {
     const res = await fetch(`/api/tickets/${ticketId}/annotations/${annotationId}/replies/${replyId}`, { method: 'DELETE' });
     if (res.ok) {
-      const emailId = get().annotations.find(a => a.id === annotationId)?.email_id;
-      if (emailId) await get().fetchAnnotations(ticketId, emailId);
+      await refetchForAnnotation(get, ticketId, annotationId);
     }
   },
 
@@ -128,8 +140,7 @@ export const useAnnotationStore = create<AnnotationStore>((set, get) => ({
       body: JSON.stringify(input),
     });
     if (res.ok) {
-      const emailId = get().annotations.find(a => a.id === annotationId)?.email_id;
-      if (emailId) await get().fetchAnnotations(ticketId, emailId);
+      await refetchForAnnotation(get, ticketId, annotationId);
     }
   },
 
@@ -140,15 +151,13 @@ export const useAnnotationStore = create<AnnotationStore>((set, get) => ({
       body: JSON.stringify(input),
     });
     if (res.ok) {
-      const emailId = get().annotations.find(a => a.id === annotationId)?.email_id;
-      if (emailId) await get().fetchAnnotations(ticketId, emailId);
+      await refetchForAnnotation(get, ticketId, annotationId);
     }
   },
 
   deleteMetaAnnotation: async (ticketId, annotationId, metaId) => {
     await fetch(`/api/tickets/${ticketId}/annotations/${annotationId}/meta/${metaId}`, { method: 'DELETE' });
-    const emailId = get().annotations.find(a => a.id === annotationId)?.email_id;
-    if (emailId) await get().fetchAnnotations(ticketId, emailId);
+    await refetchForAnnotation(get, ticketId, annotationId);
   },
 
   // Meta-annotation replies
@@ -159,8 +168,7 @@ export const useAnnotationStore = create<AnnotationStore>((set, get) => ({
       body: JSON.stringify({ note }),
     });
     if (res.ok) {
-      const emailId = get().annotations.find(a => a.id === annotationId)?.email_id;
-      if (emailId) await get().fetchAnnotations(ticketId, emailId);
+      await refetchForAnnotation(get, ticketId, annotationId);
     }
   },
 
@@ -171,15 +179,43 @@ export const useAnnotationStore = create<AnnotationStore>((set, get) => ({
       body: JSON.stringify({ note }),
     });
     if (res.ok) {
-      const emailId = get().annotations.find(a => a.id === annotationId)?.email_id;
-      if (emailId) await get().fetchAnnotations(ticketId, emailId);
+      await refetchForAnnotation(get, ticketId, annotationId);
     }
   },
 
   deleteMetaReply: async (ticketId, annotationId, metaId, replyId) => {
     await fetch(`/api/tickets/${ticketId}/annotations/${annotationId}/meta/${metaId}/replies/${replyId}`, { method: 'DELETE' });
-    const emailId = get().annotations.find(a => a.id === annotationId)?.email_id;
-    if (emailId) await get().fetchAnnotations(ticketId, emailId);
+    await refetchForAnnotation(get, ticketId, annotationId);
+  },
+
+  // Resolve toggle
+  toggleResolveAnnotation: async (ticketId, annotationId) => {
+    const ann = get().annotations.find(a => a.id === annotationId);
+    if (!ann) return;
+    const newResolved = ann.resolved ? 0 : 1;
+    const res = await fetch(`/api/tickets/${ticketId}/annotations/${annotationId}`, {
+      method: 'PUT',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ resolved: newResolved }),
+    });
+    if (res.ok) {
+      await refetchForAnnotation(get, ticketId, annotationId);
+    }
+  },
+
+  toggleResolveMetaAnnotation: async (ticketId, annotationId, metaId) => {
+    const ann = get().annotations.find(a => a.id === annotationId);
+    const meta = ann?.meta_annotations?.find(m => m.id === metaId);
+    if (!meta) return;
+    const newResolved = meta.resolved ? 0 : 1;
+    const res = await fetch(`/api/tickets/${ticketId}/annotations/${annotationId}/meta/${metaId}`, {
+      method: 'PUT',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ resolved: newResolved }),
+    });
+    if (res.ok) {
+      await refetchForAnnotation(get, ticketId, annotationId);
+    }
   },
 
   // Attachments
@@ -191,15 +227,16 @@ export const useAnnotationStore = create<AnnotationStore>((set, get) => ({
 
     const res = await fetch('/api/attachments', { method: 'POST', body: formData });
     if (res.ok) {
-      // Re-fetch all annotations to get updated attachment lists
-      const emailId = get().annotations[0]?.email_id;
-      if (emailId) await get().fetchAnnotations(ticketId, emailId);
+      const first = get().annotations[0];
+      if (first?.email_id) await get().fetchAnnotations(ticketId, first.email_id);
+      else if (first?.note_id) await get().fetchAnnotations(ticketId, '', first.note_id);
     }
   },
 
   deleteAttachment: async (ticketId, attachmentId) => {
     await fetch(`/api/attachments/${attachmentId}`, { method: 'DELETE' });
-    const emailId = get().annotations[0]?.email_id;
-    if (emailId) await get().fetchAnnotations(ticketId, emailId);
+    const first = get().annotations[0];
+    if (first?.email_id) await get().fetchAnnotations(ticketId, first.email_id);
+    else if (first?.note_id) await get().fetchAnnotations(ticketId, '', first.note_id);
   },
 }));

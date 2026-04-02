@@ -158,6 +158,11 @@
 @keyframes badge-pulse { 0%,100%{box-shadow:0 0 4px currentColor} 50%{box-shadow:0 0 10px currentColor,0 0 18px currentColor} }
 .badge-pulse { animation: badge-pulse 2.5s ease-in-out infinite; }
 
+@keyframes flow-dot-pulse {
+  0%,100% { opacity: 1; box-shadow: 0 0 4px currentColor; }
+  50% { opacity: 0.5; box-shadow: 0 0 10px currentColor, 0 0 20px currentColor; }
+}
+
 /* Scrollbar */
 ::-webkit-scrollbar { width:6px; height:6px; }
 ::-webkit-scrollbar-track { background:rgba(14,17,28,0.5); }
@@ -222,93 +227,186 @@
 /* Outlook dividers */
 .email-html-content p[style*="border-bottom"], .email-html-content div[style*="border-bottom"] { margin: 8px 0; }
 
+/* Tiptap Editor */
+.tiptap { outline: none; }
+.tiptap p.is-editor-empty:first-child::before {
+  content: attr(data-placeholder);
+  float: left;
+  color: var(--color-soft-muted);
+  pointer-events: none;
+  height: 0;
+}
+.tiptap h1 { font-size: 1.5em; font-weight: 700; margin: 0.8em 0 0.4em; color: var(--color-accent-primary); border-bottom: 1px solid var(--color-surface-border); padding-bottom: 0.3em; }
+.tiptap h2 { font-size: 1.25em; font-weight: 600; margin: 0.8em 0 0.3em; color: var(--color-accent-primary); }
+.tiptap h3 { font-size: 1.1em; font-weight: 600; margin: 0.6em 0 0.2em; }
+.tiptap ul, .tiptap ol { padding-left: 1.5em; margin: 0.4em 0; }
+.tiptap li { margin: 0.15em 0; }
+.tiptap code { background: var(--color-surface-elevated); padding: 0.15em 0.4em; border-radius: 3px; font-size: 0.9em; }
+.tiptap pre { background: var(--color-surface-elevated); padding: 1em; border-radius: 6px; overflow-x: auto; margin: 0.6em 0; border: 1px solid var(--color-surface-border); }
+.tiptap pre code { background: none; padding: 0; }
+.tiptap blockquote { border-left: 3px solid var(--color-accent-primary); padding-left: 1em; margin: 0.6em 0; color: var(--color-soft-secondary); }
+.tiptap hr { border: none; border-top: 1px solid var(--color-surface-border); margin: 1em 0; }
+.tiptap p { margin: 0.3em 0; }
+.tiptap mark { background-color: rgba(255, 215, 0, 0.35); border-radius: 2px; padding: 0 2px; }
+
+/* Rich content display (memos) */
+.rich-content p { display: inline; }
+.rich-content p + p::before { content: ' '; }
+
 /* React Flow */
 .react-flow__background { background: transparent !important; }
 
 /* ═══════════════════════════════════════════════════
-   HYUNDAI CORPORATE THEME
+   HYUNDAI FONT FACES
+   ═══════════════════════════════════════════════════ */
+@font-face {
+  font-family: 'HyundaiSansHeadKR';
+  src: url('/fonts/hyundai/HyundaiSansHeadKRMedium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'HyundaiSansHeadKR';
+  src: url('/fonts/hyundai/HyundaiSansHeadKRRegular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'HyundaiSansTextKR';
+  src: url('/fonts/hyundai/HyundaiSansTextKRMedium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'HyundaiSansTextKR';
+  src: url('/fonts/hyundai/HyundaiSansTextKRRegular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ═══════════════════════════════════════════════════
+   HYUNDAI DESIGN SYSTEM THEME
+   Based on HyundaiDS_Web_Design_Kit v1.1.0
+   Primary: #002C5F (Hyundai Blue)
+   Secondary: #00AAD2 (Active Blue)
+   Surface: Light mode from Figma token system
    ═══════════════════════════════════════════════════ */
 .hyundai-theme {
-  --background: #f4f6f8;
-  --foreground: #222222;
-  --card: #ffffff;
-  --card-foreground: #222222;
-  --popover: #ffffff;
-  --popover-foreground: #222222;
-  --primary: #002c5f;
-  --primary-foreground: #ffffff;
-  --secondary: #e8edf2;
-  --secondary-foreground: #002c5f;
-  --muted: #e8edf2;
-  --muted-foreground: #666666;
-  --accent: #00aad2;
-  --accent-foreground: #ffffff;
-  --destructive: #c62828;
-  --border: #d5dce4;
-  --input: #d5dce4;
-  --ring: rgba(0, 170, 210, 0.4);
+  --background: #FAFAFB;
+  --foreground: #121416;
+  --card: #FFFFFF;
+  --card-foreground: #121416;
+  --popover: #FFFFFF;
+  --popover-foreground: #121416;
+  --primary: #002C5F;
+  --primary-foreground: #FFFFFF;
+  --secondary: #F6F9FE;
+  --secondary-foreground: #002C5F;
+  --muted: #EAEAEB;
+  --muted-foreground: #69696E;
+  --accent: #00AAD2;
+  --accent-foreground: #FFFFFF;
+  --destructive: #E81F2C;
+  --border: #EFEFF0;
+  --input: #EAEAEB;
+  --ring: rgba(0, 44, 95, 0.3);
   --radius: 0.5rem;
-  --chart-1: #002c5f;
-  --chart-2: #00aad2;
-  --chart-3: #4caf50;
-  --chart-4: #ff9800;
-  --chart-5: #9c27b0;
-  --sidebar: #002c5f;
-  --sidebar-foreground: #ffffff;
-  --sidebar-primary: #00aad2;
-  --sidebar-primary-foreground: #ffffff;
-  --sidebar-accent: rgba(0, 170, 210, 0.15);
-  --sidebar-accent-foreground: #00aad2;
+  --chart-1: #002C5F;
+  --chart-2: #00AAD2;
+  --chart-3: #00809E;
+  --chart-4: #EC8E01;
+  --chart-5: #0672ED;
+  --sidebar: #002C5F;
+  --sidebar-foreground: #FFFFFF;
+  --sidebar-primary: #00AAD2;
+  --sidebar-primary-foreground: #FFFFFF;
+  --sidebar-accent: rgba(0, 170, 210, 0.12);
+  --sidebar-accent-foreground: #FFFFFF;
   --sidebar-border: rgba(255, 255, 255, 0.12);
   --sidebar-ring: rgba(0, 170, 210, 0.3);
 
-  /* Override neon/JARVIS semantic colors */
-  --color-neon-cyan: #00aad2;
-  --color-neon-magenta: #9c27b0;
-  --color-neon-green: #4caf50;
-  --color-neon-amber: #ff9800;
-  --color-neon-red: #c62828;
-  --color-neon-blue: #002c5f;
-  --color-glass: rgba(255, 255, 255, 0.95);
-  --color-glass-light: rgba(255, 255, 255, 0.8);
+  /* Semantic color overrides */
+  --color-neon-cyan: #00AAD2;
+  --color-neon-magenta: #0672ED;
+  --color-neon-green: #00809E;
+  --color-neon-amber: #EC8E01;
+  --color-neon-red: #E81F2C;
+  --color-neon-blue: #002C5F;
+  --color-glass: rgba(255, 255, 255, 0.97);
+  --color-glass-light: rgba(255, 255, 255, 0.9);
 
-  --color-soft-primary: #222222;
-  --color-soft-secondary: #444444;
-  --color-soft-muted: #888888;
+  --color-soft-primary: #121416;
+  --color-soft-secondary: #535356;
+  --color-soft-muted: #929296;
 
-  --color-accent-primary: #00aad2;
-  --color-accent-red: #c62828;
+  --color-accent-primary: #002C5F;
+  --color-accent-red: #E81F2C;
 
-  --color-surface: #ffffff;
-  --color-surface-elevated: #f0f3f7;
-  --color-surface-border: #d5dce4;
+  --color-surface: #FFFFFF;
+  --color-surface-elevated: #FAFAFB;
+  --color-surface-border: #EFEFF0;
+
+  /* Hyundai ICT DS greyscale tokens */
+  --color-grey-90: #121416;
+  --color-grey-80: #3A3A3C;
+  --color-grey-70: #535356;
+  --color-grey-60: #69696E;
+  --color-grey-50: #929296;
+  --color-grey-40: #EAEAEB;
+  --color-grey-30: #EFEFF0;
+  --color-grey-20: #F5F5F5;
+  --color-grey-10: #FAFAFB;
+
+  /* Hyundai DS semantic backgrounds */
+  --color-info-bg: #EDF2FF;
+  --color-warning-bg: #FFF5DD;
+  --color-error-bg: #FFF1F3;
+  --color-success-bg: #F0FCFF;
 }
 
 .hyundai-theme body,
 body.hyundai-theme {
-  font-family: 'Hyundai Sans Head', 'Pretendard', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif !important;
-  background: #f4f6f8 !important;
-  color: #222222 !important;
+  font-family: 'HyundaiSansTextKR', 'Pretendard', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif !important;
+  background: #FAFAFB !important;
+  color: #121416 !important;
+}
+
+/* Headings use Head font */
+.hyundai-theme h1,
+.hyundai-theme h2,
+.hyundai-theme h3,
+.hyundai-theme [class*="font-bold"],
+.hyundai-theme [class*="font-semibold"] {
+  font-family: 'HyundaiSansHeadKR', 'HyundaiSansTextKR', sans-serif !important;
 }
 
 .hyundai-theme .glass {
-  background: rgba(255, 255, 255, 0.95);
+  background: rgba(255, 255, 255, 0.97);
   backdrop-filter: blur(12px);
-  border-color: #d5dce4;
+  border: 1px solid #CDD0D5;
 }
 
 .hyundai-theme .glass-light {
-  background: rgba(255, 255, 255, 0.8);
+  background: rgba(255, 255, 255, 0.9);
   backdrop-filter: blur(8px);
-  border-color: #e0e4ea;
+  border: 1px solid #E9EAEC;
 }
 
-.hyundai-theme .glow-cyan,
+/* Hyundai DS: Clean shadows, no glow — selected state uses blue border */
+.hyundai-theme .glow-cyan {
+  box-shadow: none;
+  border-color: #002C5F !important;
+  background: #F6F9FE !important;
+}
 .hyundai-theme .glow-magenta,
 .hyundai-theme .glow-green,
 .hyundai-theme .glow-amber,
 .hyundai-theme .glow-red {
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
 }
 
 .hyundai-theme .text-glow-cyan,
@@ -328,6 +426,732 @@ body.hyundai-theme {
   animation: none;
 }
 
-.hyundai-theme ::-webkit-scrollbar-track { background: #f0f3f7; }
-.hyundai-theme ::-webkit-scrollbar-thumb { background: #c0c8d4; border-radius: 3px; }
-.hyundai-theme ::-webkit-scrollbar-thumb:hover { background: #a0aab8; }
+/* Hyundai DS Scrollbar */
+.hyundai-theme ::-webkit-scrollbar-track { background: #FAFAFB; }
+.hyundai-theme ::-webkit-scrollbar-thumb { background: #EAEAEB; border-radius: 3px; }
+.hyundai-theme ::-webkit-scrollbar-thumb:hover { background: #929296; }
+
+/* Hyundai DS: Markdown headings use primary blue */
+.hyundai-theme .markdown-preview h1,
+.hyundai-theme .markdown-preview h2,
+.hyundai-theme .tiptap h1,
+.hyundai-theme .tiptap h2 {
+  color: #002C5F;
+}
+
+/* Hyundai DS: Toolbar clean style */
+.hyundai-theme .toolbar-btn:hover {
+  background: #E9EAEC;
+  border-color: #CDD0D5;
+}
+
+/* ─── Hyundai DS: Full Component Overrides ─── */
+/* Based on Figma HyundaiDS_Web_Design_Kit v1.1.0 + ICT Design System tokens */
+
+/* ALL elements use Hyundai font */
+.hyundai-theme * {
+  font-family: 'HyundaiSansTextKR', 'Pretendard', sans-serif;
+}
+
+/* Buttons — Figma: radius 4px, h40px, padding 10px 20px */
+.hyundai-theme button,
+.hyundai-theme [role="button"] {
+  font-family: 'HyundaiSansTextKR', sans-serif !important;
+  border-radius: 4px !important;
+  transition: all 0.15s ease;
+  letter-spacing: 0 !important;
+}
+
+/* Primary filled button */
+.hyundai-theme .bg-primary\/20,
+.hyundai-theme .bg-neon-cyan\/20 {
+  background: #002C5F !important;
+  color: #FFFFFF !important;
+  border-color: #002C5F !important;
+  font-weight: 500 !important;
+}
+.hyundai-theme .bg-primary\/20:hover,
+.hyundai-theme .bg-neon-cyan\/20:hover {
+  background: #3D5F85 !important;
+  border-color: #3D5F85 !important;
+}
+.hyundai-theme .bg-primary\/20:active {
+  background: #1F4572 !important;
+}
+
+/* Secondary / ghost buttons */
+.hyundai-theme button[class*="ghost"],
+.hyundai-theme .text-muted-foreground {
+  color: #69696E !important;
+}
+.hyundai-theme button[class*="ghost"]:hover {
+  background: #F5F5F5 !important;
+  color: #121416 !important;
+}
+
+/* Danger buttons */
+.hyundai-theme .bg-neon-red\/20 {
+  background: #FFF1F3 !important;
+  color: #E81F2C !important;
+  border-color: #E81F2C !important;
+}
+
+/* Rounded corners — consistent 4px for rect, 40px for pills */
+.hyundai-theme .rounded-lg {
+  border-radius: 4px !important;
+}
+.hyundai-theme .rounded-full {
+  border-radius: 40px !important;
+}
+.hyundai-theme .rounded-md {
+  border-radius: 4px !important;
+}
+
+/* Cards — white bg, #EFEFF0 border */
+.hyundai-theme .bg-card {
+  background: #FFFFFF !important;
+  border-color: #EFEFF0 !important;
+}
+
+/* Elevated cards get shadow */
+.hyundai-theme .shadow-sm,
+.hyundai-theme .shadow-md {
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06), 0 1px 2px rgba(0, 0, 0, 0.04) !important;
+}
+
+/* Inputs — Figma: radius 4px, border #EAEAEB, focus #002C5F */
+.hyundai-theme input,
+.hyundai-theme textarea,
+.hyundai-theme select {
+  font-family: 'HyundaiSansTextKR', sans-serif !important;
+  border-radius: 4px !important;
+  border-color: #EAEAEB !important;
+  background: #FFFFFF !important;
+  color: #121416 !important;
+}
+.hyundai-theme input::placeholder,
+.hyundai-theme textarea::placeholder {
+  color: #929296 !important;
+}
+.hyundai-theme input:focus,
+.hyundai-theme textarea:focus,
+.hyundai-theme select:focus {
+  border-color: #002C5F !important;
+  box-shadow: 0 0 0 2px rgba(0, 44, 95, 0.08) !important;
+  outline: none !important;
+}
+
+/* Tables — ICT DS: header #FAFAFB, border #EFEFF0, alt #F5F5F5 */
+.hyundai-theme table {
+  border-radius: 4px;
+  border-collapse: separate;
+  border-spacing: 0;
+}
+.hyundai-theme th {
+  background: #FAFAFB !important;
+  color: #535356 !important;
+  font-weight: 500 !important;
+  font-family: 'HyundaiSansTextKR', sans-serif !important;
+  border-color: #EFEFF0 !important;
+  font-size: 12px !important;
+}
+.hyundai-theme td {
+  border-color: #EFEFF0 !important;
+  color: #3A3A3C !important;
+}
+.hyundai-theme tr:hover td {
+  background: #F5F5F5 !important;
+}
+.hyundai-theme tbody tr:nth-child(even) td {
+  background: #FAFAFB;
+}
+
+/* Header / Nav bar — white with clean bottom border */
+.hyundai-theme .glass {
+  background: #FFFFFF !important;
+  border-color: #EFEFF0 !important;
+  backdrop-filter: none !important;
+  box-shadow: 0 1px 0 #EFEFF0 !important;
+}
+
+/* Sidebar active state — matches ICT DS */
+.hyundai-theme .border-l-primary {
+  border-left-color: #002C5F !important;
+}
+.hyundai-theme .bg-primary\/10 {
+  background: #F5F5F5 !important;
+}
+
+/* Tracking — Hyundai uses tighter letter-spacing */
+.hyundai-theme .tracking-widest {
+  letter-spacing: 0.04em !important;
+}
+.hyundai-theme .tracking-wider {
+  letter-spacing: 0.02em !important;
+}
+
+/* Muted backgrounds — ICT DS tokens */
+.hyundai-theme .bg-muted\/30,
+.hyundai-theme .bg-muted\/20,
+.hyundai-theme .bg-muted\/10 {
+  background: #FAFAFB !important;
+}
+
+/* Dropzone / dashed borders */
+.hyundai-theme .border-dashed {
+  border-color: #EAEAEB !important;
+}
+.hyundai-theme .border-dashed:hover {
+  border-color: #002C5F !important;
+  background: #F6F9FE !important;
+}
+
+/* Text color overrides — ICT DS palette */
+.hyundai-theme .text-primary {
+  color: #002C5F !important;
+}
+.hyundai-theme .text-neon-cyan {
+  color: #002C5F !important;
+}
+.hyundai-theme .text-neon-green {
+  color: #00809E !important;
+}
+.hyundai-theme .text-neon-red {
+  color: #E81F2C !important;
+}
+.hyundai-theme .text-neon-magenta {
+  color: #0672ED !important;
+}
+.hyundai-theme .text-neon-amber {
+  color: #EC8E01 !important;
+}
+
+/* Tab-like elements — active uses primary blue */
+.hyundai-theme .border-l-2.border-l-primary {
+  border-left: 2px solid #002C5F !important;
+}
+
+/* Selection / ring */
+.hyundai-theme .ring-1 {
+  --tw-ring-color: rgba(0, 44, 95, 0.2) !important;
+}
+
+/* Selected state — blue bg instead of neon glow */
+.hyundai-theme .glow-cyan {
+  box-shadow: none !important;
+  border-color: #002C5F !important;
+  background: #F6F9FE !important;
+}
+
+/* Popover / dropdown — 8px radius, clean shadow */
+.hyundai-theme [class*="popover"],
+.hyundai-theme [class*="dialog"],
+.hyundai-theme .shadow-xl {
+  border-radius: 8px !important;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08), 0 1px 4px rgba(0, 0, 0, 0.04) !important;
+}
+
+/* Status badges — ICT DS semantic backgrounds */
+.hyundai-theme .bg-neon-cyan\/5 {
+  background: #F6F9FE !important;
+}
+.hyundai-theme .bg-neon-cyan\/10 {
+  background: #EDF2FF !important;
+}
+.hyundai-theme .bg-neon-red\/10 {
+  background: #FFF1F3 !important;
+}
+
+/* Annotation colors for light theme */
+.hyundai-theme mark {
+  color: #121416 !important;
+}
+
+/* Borders — consistent #EFEFF0 */
+.hyundai-theme .border-border {
+  border-color: #EFEFF0 !important;
+}
+
+/* Footer link color */
+.hyundai-theme a.text-accent-primary {
+  color: #00AAD2 !important;
+}
+
+/* ─── Hyundai DS: Kill all JARVIS-isms ─── */
+
+/* No monospace font anywhere */
+.hyundai-theme .font-mono,
+.hyundai-theme [class*="font-mono"] {
+  font-family: 'HyundaiSansTextKR', 'Pretendard', sans-serif !important;
+}
+
+/* Minimum font size 11px — no text-[9px] or text-[10px] */
+.hyundai-theme .text-\[9px\],
+.hyundai-theme .text-\[10px\] {
+  font-size: 11px !important;
+}
+.hyundai-theme .text-\[11px\] {
+  font-size: 12px !important;
+}
+
+/* Normal text case — override all-caps tracking-widest labels */
+.hyundai-theme .uppercase {
+  text-transform: none !important;
+}
+
+/* Generous spacing — Hyundai breathes */
+.hyundai-theme .space-y-3 > * + * {
+  margin-top: 16px !important;
+}
+.hyundai-theme .space-y-4 > * + * {
+  margin-top: 20px !important;
+}
+.hyundai-theme .space-y-6 > * + * {
+  margin-top: 28px !important;
+}
+.hyundai-theme .p-3 {
+  padding: 16px !important;
+}
+.hyundai-theme .p-4 {
+  padding: 20px !important;
+}
+.hyundai-theme .p-5 {
+  padding: 24px !important;
+}
+.hyundai-theme .p-6 {
+  padding: 28px !important;
+}
+.hyundai-theme .px-3 {
+  padding-left: 16px !important;
+  padding-right: 16px !important;
+}
+.hyundai-theme .py-2 {
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+}
+
+/* Remove all neon glow text effects */
+.hyundai-theme [class*="text-glow"] {
+  text-shadow: none !important;
+}
+
+/* Remove all neon-pulse animations */
+.hyundai-theme [class*="neon-pulse"] {
+  animation: none !important;
+}
+
+/* Clean border-dashed style */
+.hyundai-theme .border-2.border-dashed {
+  border-width: 1px !important;
+}
+
+/* Hyundai uses 500 weight for emphasis, not bold */
+.hyundai-theme .font-bold {
+  font-weight: 500 !important;
+}
+
+/* Card containers — add proper padding and clean border */
+.hyundai-theme .glass {
+  border-radius: 4px !important;
+}
+
+/* ─── Hyundai DS: Elevation System ─── */
+/* Below High — notifications */
+.hyundai-theme .shadow-lg {
+  box-shadow: 6px 6px 14px rgba(18, 20, 22, 0.20) !important;
+}
+/* Below Medium — dropdowns, tooltips */
+.hyundai-theme .shadow-md,
+.hyundai-theme .shadow-xl {
+  box-shadow: 4px 4px 10px rgba(18, 20, 22, 0.12) !important;
+}
+/* Elevation High — dialogs, modals */
+.hyundai-theme [class*="dialog"] .bg-card,
+.hyundai-theme [class*="popover"] {
+  box-shadow: 0 24px 28px rgba(18, 20, 22, 0.40) !important;
+}
+/* Elevation Low — sheets, cards */
+.hyundai-theme .shadow-sm {
+  box-shadow: 0 23px 23px rgba(18, 20, 22, 0.14), 0 0 4px rgba(18, 20, 22, 0.11) !important;
+}
+
+/* ─── Hyundai DS: Shapes Geometry (from DS Shapes page) ─── */
+.hyundai-theme .rounded-lg {
+  border-radius: 8px !important; /* rounded-8: Card Modules, Dialog */
+}
+.hyundai-theme .rounded-md,
+.hyundai-theme input,
+.hyundai-theme textarea,
+.hyundai-theme select,
+.hyundai-theme button {
+  border-radius: 4px !important; /* rounded-4: Default */
+}
+.hyundai-theme .rounded-sm {
+  border-radius: 2px !important; /* rounded-2: Small inputs */
+}
+
+/* ─── Hyundai DS: Button Hierarchy (from DS Button page) ─── */
+/* 1. Primary — Navy filled */
+.hyundai-theme .bg-primary\/20,
+.hyundai-theme .bg-neon-cyan\/20 {
+  background: #002C5F !important;
+  color: #FFFFFF !important;
+  border: 1px solid #002C5F !important;
+  font-weight: 500 !important;
+  padding: 8px 20px !important;
+  min-height: 40px !important;
+}
+.hyundai-theme .bg-primary\/20:hover,
+.hyundai-theme .bg-neon-cyan\/20:hover {
+  background: #3D5F85 !important;
+  border-color: #3D5F85 !important;
+}
+.hyundai-theme .bg-primary\/20:active {
+  background: #1F4572 !important;
+  border-color: #1F4572 !important;
+}
+.hyundai-theme .bg-primary\/20:disabled {
+  background: #EAEAEB !important;
+  color: #929296 !important;
+  border-color: #EAEAEB !important;
+}
+/* 2. Secondary — White + outline */
+.hyundai-theme button.border-primary\/30,
+.hyundai-theme button.border-neon-cyan\/30 {
+  background: #FFFFFF !important;
+  color: #002C5F !important;
+  border: 1px solid #002C5F !important;
+}
+.hyundai-theme button.border-primary\/30:hover {
+  background: #F5F7F9 !important;
+}
+/* 4. Quaternary — Grey line (ghost-like) */
+.hyundai-theme button[class*="ghost"] {
+  background: transparent !important;
+  color: #535356 !important;
+  border: 1px solid transparent !important;
+}
+.hyundai-theme button[class*="ghost"]:hover {
+  background: #F5F5F5 !important;
+  color: #121416 !important;
+}
+/* 5. Danger */
+.hyundai-theme .bg-neon-red\/20,
+.hyundai-theme button.border-neon-red\/30 {
+  background: #FFFFFF !important;
+  color: #E81F2C !important;
+  border: 1px solid #E81F2C !important;
+}
+.hyundai-theme .bg-neon-red\/20:hover {
+  background: #FFF1F3 !important;
+}
+
+/* ─── Hyundai DS: Interaction States ─── */
+/* Focused: 2px navy outline offset */
+.hyundai-theme button:focus-visible,
+.hyundai-theme input:focus-visible,
+.hyundai-theme textarea:focus-visible {
+  outline: 2px solid #002C5F !important;
+  outline-offset: 2px !important;
+}
+/* Disabled: grey bg, muted text */
+.hyundai-theme button:disabled,
+.hyundai-theme input:disabled,
+.hyundai-theme textarea:disabled {
+  background: #EAEAEB !important;
+  color: #929296 !important;
+  border-color: #EAEAEB !important;
+  cursor: not-allowed !important;
+  opacity: 1 !important;
+}
+
+/* ─── Hyundai DS: Surface System (Stage/Glass/Card) ─── */
+/* White Card — default card */
+.hyundai-theme .bg-card,
+.hyundai-theme .glass {
+  background: #FFFFFF !important;
+}
+/* Light Card — elevated surface */
+.hyundai-theme .bg-muted\/30,
+.hyundai-theme .bg-muted\/20,
+.hyundai-theme .bg-muted\/10 {
+  background: #FAFAFB !important;
+}
+
+/* ─── Hyundai DS: 8px Grid Spacing ─── */
+/* All spacing should be multiples of 8 */
+.hyundai-theme .gap-1 { gap: 8px !important; }
+.hyundai-theme .gap-2 { gap: 8px !important; }
+.hyundai-theme .gap-3 { gap: 16px !important; }
+.hyundai-theme .gap-4 { gap: 16px !important; }
+
+/* ─── Hyundai DS: Point Color usage ─── */
+/* Info blue */
+.hyundai-theme .text-neon-blue {
+  color: #0672ED !important;
+}
+/* Warning yellow */
+.hyundai-theme .text-neon-amber {
+  color: #EC8E01 !important;
+}
+/* Success / Progressive Blue */
+.hyundai-theme .text-neon-green {
+  color: #00809E !important;
+}
+
+/* ─── Hyundai DS: Typography Hierarchy ─── */
+/* Based on ICT DS App Design System screenshot:
+   Page title: 32px Head Medium #121416
+   Section heading: 24px Head Medium #121416
+   Card/item title: 16px Text Medium #121416
+   Body: 15px Text Regular #535356
+   Secondary: 13px Text Regular #69696E
+   Caption: 12px Text Regular #929296
+*/
+
+/* All text in main content */
+.hyundai-theme main,
+.hyundai-theme main * {
+  font-family: 'HyundaiSansTextKR', 'Pretendard', sans-serif !important;
+}
+
+/* Page title — any h1 or large bold text: 32px Head */
+.hyundai-theme main h1,
+.hyundai-theme main .text-lg.font-bold,
+.hyundai-theme main h2.text-sm.font-bold {
+  font-size: 28px !important;
+  font-weight: 500 !important;
+  font-family: 'HyundaiSansHeadKR', sans-serif !important;
+  color: #121416 !important;
+  letter-spacing: -0.02em !important;
+  line-height: 1.3 !important;
+  text-transform: none !important;
+  text-shadow: none !important;
+}
+
+/* Section heading — h2 or "subsection" labels */
+.hyundai-theme main h2 {
+  font-size: 22px !important;
+  font-weight: 500 !important;
+  font-family: 'HyundaiSansHeadKR', sans-serif !important;
+  color: #121416 !important;
+}
+
+/* Card/ticket title — font-semibold items */
+.hyundai-theme main .font-semibold,
+.hyundai-theme main .font-bold:not(h1):not(h2):not(.text-lg) {
+  font-size: 15px !important;
+  font-weight: 500 !important;
+  font-family: 'HyundaiSansTextKR', sans-serif !important;
+  color: #121416 !important;
+  text-shadow: none !important;
+  letter-spacing: 0 !important;
+  text-transform: none !important;
+}
+
+/* Body text — .text-sm */
+.hyundai-theme main .text-sm:not(.font-bold):not(.font-semibold) {
+  font-size: 14px !important;
+  color: #535356 !important;
+  line-height: 1.6 !important;
+}
+
+/* Small text — .text-xs */
+.hyundai-theme main .text-xs:not(.font-bold):not(.font-semibold) {
+  font-size: 13px !important;
+  color: #69696E !important;
+}
+
+/* Tiny text overrides — force minimum 12px */
+.hyundai-theme main .text-\[9px\],
+.hyundai-theme main .text-\[10px\],
+.hyundai-theme main .text-\[11px\] {
+  font-size: 12px !important;
+  color: #69696E !important;
+  letter-spacing: 0 !important;
+  text-transform: none !important;
+}
+
+/* Muted caption text */
+.hyundai-theme main .text-muted-foreground {
+  font-size: 12px !important;
+  color: #929296 !important;
+}
+
+/* Force all tracking-widest/wider to normal in content */
+.hyundai-theme main .tracking-widest,
+.hyundai-theme main .tracking-wider {
+  letter-spacing: 0 !important;
+  text-transform: none !important;
+}
+
+/* ═══════════════════════════════════════════════════
+   KIA LIQUID DESIGN SYSTEM THEME
+   Based on LIQUID Design System v3.1
+   Primary: Midnight Black #05141F / Polar White #FFFFFF
+   Secondary: City Grey #9EA1A2 / Live Red #EA0029 /
+              Afternoon Yellow #F3C300 / Forrest Green #5D7D2B
+   ═══════════════════════════════════════════════════ */
+.kia-theme {
+  --background: #F4F4F1;
+  --foreground: #121416;
+  --card: #FFFFFF;
+  --card-foreground: #121416;
+  --popover: #FFFFFF;
+  --popover-foreground: #121416;
+  --primary: #05141F;
+  --primary-foreground: #FFFFFF;
+  --secondary: #F4F4F1;
+  --secondary-foreground: #05141F;
+  --muted: #E8E8E5;
+  --muted-foreground: #838486;
+  --accent: rgba(243, 195, 0, 0.12);
+  --accent-foreground: #F3C300;
+  --destructive: #EA0029;
+  --border: #D9D9D7;
+  --input: #D9D9D7;
+  --ring: rgba(5, 20, 31, 0.2);
+  --chart-1: #05141F;
+  --chart-2: #EA0029;
+  --chart-3: #F3C300;
+  --chart-4: #5D7D2B;
+  --chart-5: #9EA1A2;
+  --radius: 0.375rem;
+  --sidebar: #05141F;
+  --sidebar-foreground: #E8EAEB;
+  --sidebar-primary: #F3C300;
+  --sidebar-primary-foreground: #05141F;
+  --sidebar-accent: rgba(255, 255, 255, 0.06);
+  --sidebar-accent-foreground: #FFFFFF;
+  --sidebar-border: rgba(158, 161, 162, 0.12);
+  --sidebar-ring: rgba(255, 255, 255, 0.2);
+
+  /* LIQUID semantic colors */
+  --color-neon-cyan: #05141F;
+  --color-neon-magenta: #EA0029;
+  --color-neon-green: #5D7D2B;
+  --color-neon-amber: #F3C300;
+  --color-neon-red: #EA0029;
+  --color-neon-blue: #9EA1A2;
+  --color-glass: rgba(255, 255, 255, 0.97);
+  --color-glass-light: rgba(255, 255, 255, 0.9);
+
+  --color-soft-primary: #121416;
+  --color-soft-secondary: #525355;
+  --color-soft-muted: #838486;
+
+  --color-accent-primary: #05141F;
+  --color-accent-red: #EA0029;
+
+  --color-surface: #FFFFFF;
+  --color-surface-elevated: #F4F4F1;
+  --color-surface-border: #D9D9D7;
+
+  /* LIQUID Greyscale spectrum */
+  --color-grey-90: #373739;
+  --color-grey-80: #525355;
+  --color-grey-70: #6D6E71;
+  --color-grey-60: #838486;
+  --color-grey-50: #99999A;
+  --color-grey-40: #AEAFAF;
+  --color-grey-30: #C4C4C3;
+  --color-grey-20: #D9D9D7;
+  --color-grey-10: #F4F4F1;
+}
+
+.kia-theme body,
+body.kia-theme {
+  font-family: 'Kia Signature', 'Pretendard', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif !important;
+  background: #F4F4F1 !important;
+  color: #121416 !important;
+}
+
+.kia-theme .glass {
+  background: #FFFFFF;
+  border: 1px solid #D9D9D7;
+}
+
+.kia-theme .glass-light {
+  background: #F4F4F1;
+  border: 1px solid #D9D9D7;
+}
+
+/* LIQUID: Clean shadows */
+.kia-theme .glow-cyan {
+  box-shadow: none;
+  border-color: #05141F !important;
+  background: #F4F4F1 !important;
+}
+.kia-theme .glow-magenta,
+.kia-theme .glow-green,
+.kia-theme .glow-amber,
+.kia-theme .glow-red {
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+}
+
+.kia-theme .text-glow-cyan,
+.kia-theme .text-glow-magenta {
+  text-shadow: none;
+}
+
+.kia-theme .grid-overlay {
+  background-image: none;
+}
+
+.kia-theme .neon-pulse {
+  animation: none;
+}
+
+.kia-theme .badge-pulse {
+  animation: none;
+}
+
+/* LIQUID Scrollbar */
+.kia-theme ::-webkit-scrollbar-track { background: #F4F4F1; }
+.kia-theme ::-webkit-scrollbar-thumb { background: #C4C4C3; border-radius: 3px; }
+.kia-theme ::-webkit-scrollbar-thumb:hover { background: #9EA1A2; }
+
+/* LIQUID: Alloy Frame style borders — precision metallic */
+.kia-theme .border-border {
+  border-color: rgba(158, 161, 162, 0.18);
+}
+
+/* LIQUID: Markdown/Tiptap heading colors */
+.kia-theme .markdown-preview h1,
+.kia-theme .markdown-preview h2,
+.kia-theme .tiptap h1,
+.kia-theme .tiptap h2 {
+  color: #05141F;
+}
+
+/* LIQUID: Toolbar buttons */
+.kia-theme .toolbar-btn {
+  border-radius: 2px;
+}
+.kia-theme .toolbar-btn:hover {
+  background: #E8E8E5;
+  border-color: #D9D9D7;
+}
+
+/* LIQUID: Border color for light content */
+.kia-theme .border-border {
+  border-color: #D9D9D7 !important;
+}
+
+/* LIQUID: Card backgrounds */
+.kia-theme .bg-card {
+  background: #FFFFFF !important;
+}
+.kia-theme .bg-muted\/30,
+.kia-theme .bg-muted\/20,
+.kia-theme .bg-muted\/10 {
+  background: #F4F4F1 !important;
+}
+
+/* LIQUID: Text colors for light mode content */
+.kia-theme .text-foreground {
+  color: #121416 !important;
+}
+.kia-theme .text-muted-foreground {
+  color: #838486 !important;
+}

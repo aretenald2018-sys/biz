@@ -8,6 +8,7 @@ import { useAnnotationStore } from '@/stores/annotation-store';
 import { splitTextByAnnotations, getSelectionOffsets } from '@/lib/annotation-utils';
 import { Button } from '@/components/ui/button';
 import { Textarea } from '@/components/ui/textarea';
+import { MiniRichEditor, RichContent } from '@/components/ui/rich-editor';
 
 const ANNOTATION_COLORS = [
   { bg: 'rgba(255, 220, 100, 0.35)', border: '#ffd54f', label: 'Yellow' },
@@ -303,36 +304,42 @@ function MetaReplyItem({ reply, ticketId, annotationId, metaId }: {
   );
 }
 
+
 /* ─── Meta-annotation (메메모) card ─── */
 function MetaAnnotationCard({ meta, ticketId, annotationId, isActive, onActivate, cardRef }: {
   meta: MetaAnnotation; ticketId: string; annotationId: string; isActive: boolean; onActivate: () => void;
   cardRef: (el: HTMLDivElement | null) => void;
 }) {
   const [editing, setEditing] = useState(false);
-  const [editText, setEditText] = useState('');
+  const [editHtml, setEditHtml] = useState('');
   const [replyText, setReplyText] = useState('');
   const [showReplyInput, setShowReplyInput] = useState(false);
-  const { updateMetaAnnotation, deleteMetaAnnotation, addMetaReply } = useAnnotationStore();
+  const { updateMetaAnnotation, deleteMetaAnnotation, addMetaReply, toggleResolveMetaAnnotation } = useAnnotationStore();
 
+  const isResolved = !!meta.resolved;
   const colorPreset = ANNOTATION_COLORS.find(c => c.border === meta.color) || ANNOTATION_COLORS[0];
 
-  const handleSaveEdit = async () => { if (!editText.trim()) return; await updateMetaAnnotation(ticketId, annotationId, meta.id, { note: editText.trim() }); setEditing(false); };
+  const handleSaveEdit = async () => { if (!editHtml.trim() || editHtml === '<p></p>') return; await updateMetaAnnotation(ticketId, annotationId, meta.id, { note: editHtml }); setEditing(false); };
   const handleAddReply = async () => { if (!replyText.trim()) return; await addMetaReply(ticketId, annotationId, meta.id, replyText.trim()); setReplyText(''); setShowReplyInput(false); };
 
   const replies = meta.replies || [];
   const attachments = meta.attachments || [];
 
   return (
-    <div ref={cardRef} className={`rounded-lg transition-all ${isActive ? 'ring-1 shadow-md' : 'hover:shadow-sm'}`}
-      style={{ borderLeft: `3px solid ${colorPreset.border}`, boxShadow: isActive ? `0 0 12px ${colorPreset.border}40` : undefined }}
+    <div ref={cardRef} className={`rounded-lg transition-all ${isResolved ? 'opacity-60' : ''} ${isActive ? 'ring-1 shadow-md' : 'hover:shadow-sm'}`}
+      style={{
+        borderLeft: `3px solid ${isResolved ? '#6b7a8d' : colorPreset.border}`,
+        boxShadow: isActive && !isResolved ? `0 0 12px ${colorPreset.border}40` : undefined,
+        backgroundColor: isResolved ? 'rgba(40,44,56,0.5)' : undefined,
+      }}
       onClick={onActivate}>
-      <div className="p-2.5 bg-card rounded-tr-lg rounded-br-lg">
-        <div className="text-[10px] text-muted-foreground truncate mb-1 italic">
+      <div className="p-2.5 bg-card rounded-tr-lg rounded-br-lg" style={isResolved ? { background: 'rgba(40,44,56,0.5)' } : undefined}>
+        <div className={`text-[10px] text-muted-foreground truncate mb-1 italic ${isResolved ? 'line-through' : ''}`}>
           &ldquo;{meta.selected_text.substring(0, 50)}{meta.selected_text.length > 50 ? '...' : ''}&rdquo;
         </div>
         {editing ? (
-          <div className="space-y-2">
-            <Textarea value={editText} onChange={(e) => setEditText(e.target.value)} onKeyDown={(e) => { if (e.ctrlKey && e.key === 'Enter') { e.preventDefault(); handleSaveEdit(); } }} rows={2} className="bg-background border-border text-xs resize-none text-foreground" autoFocus />
+          <div className="space-y-2" onClick={(e) => e.stopPropagation()}>
+            <MiniRichEditor content={meta.note} onChange={setEditHtml} onSubmit={handleSaveEdit} placeholder="메메모 편집..." autoFocus />
             <div className="flex gap-1">
               <Button onClick={handleSaveEdit} className="text-[10px] h-6 px-2 bg-accent-primary/20 text-accent-primary border border-accent-primary/30">SAVE</Button>
               <Button onClick={() => setEditing(false)} variant="ghost" className="text-[10px] h-6 px-2 text-muted-foreground">CANCEL</Button>
@@ -340,18 +347,22 @@ function MetaAnnotationCard({ meta, ticketId, annotationId, isActive, onActivate
           </div>
         ) : (
           <>
-            <div className="text-[11px] text-foreground leading-relaxed">{meta.note}</div>
+            <RichContent html={meta.note} className={`text-[11px] leading-relaxed ${isResolved ? 'line-through text-muted-foreground' : 'text-foreground'}`} />
             <AttachmentList attachments={attachments} ticketId={ticketId} parentType="meta_annotation" parentId={meta.id} />
             <div className="flex gap-3 mt-2">
-              <button onClick={(e) => { e.stopPropagation(); setEditing(true); setEditText(meta.note); }} className="text-[9px] text-muted-foreground hover:text-accent-primary transition-colors">EDIT</button>
+              <button onClick={(e) => { e.stopPropagation(); toggleResolveMetaAnnotation(ticketId, annotationId, meta.id); }}
+                className={`text-[9px] transition-colors ${isResolved ? 'text-neon-green hover:text-neon-green/70' : 'text-muted-foreground hover:text-neon-green'}`}>
+                {isResolved ? '✓ RESOLVED' : 'RESOLVE'}
+              </button>
+              <button onClick={(e) => { e.stopPropagation(); setEditing(true); setEditHtml(meta.note); }} className="text-[9px] text-muted-foreground hover:text-accent-primary transition-colors">EDIT</button>
               <button onClick={(e) => { e.stopPropagation(); setShowReplyInput(!showReplyInput); }} className="text-[9px] text-muted-foreground hover:text-accent-primary transition-colors">REPLY</button>
               <button onClick={(e) => { e.stopPropagation(); deleteMetaAnnotation(ticketId, annotationId, meta.id); }} className="text-[9px] text-muted-foreground hover:text-accent-red transition-colors">DEL</button>
             </div>
           </>
         )}
         {showReplyInput && (
-          <div className="mt-2 pt-2 border-t border-border">
-            <Textarea value={replyText} onChange={(e) => setReplyText(e.target.value)} onKeyDown={(e) => { if (e.ctrlKey && e.key === 'Enter') { e.preventDefault(); handleAddReply(); } }} rows={2} placeholder="Reply..." className="bg-background border-border text-xs resize-none text-foreground" autoFocus />
+          <div className="mt-2 pt-2 border-t border-border" onClick={(e) => e.stopPropagation()}>
+            <MiniRichEditor content="" onChange={setReplyText} onSubmit={handleAddReply} placeholder="Reply..." autoFocus />
             <div className="flex gap-1 mt-1">
               <Button onClick={handleAddReply} className="text-[10px] h-6 px-2 bg-accent-primary/20 text-accent-primary border border-accent-primary/30">ADD</Button>
               <Button onClick={() => { setShowReplyInput(false); setReplyText(''); }} variant="ghost" className="text-[10px] h-6 px-2 text-muted-foreground">CANCEL</Button>
@@ -378,19 +389,20 @@ function AnnotationCard({ annotation, isActive, ticketId, onActivate, cardRef, m
   metaCardRefs: React.MutableRefObject<Map<string, HTMLElement>>;
 }) {
   const [editing, setEditing] = useState(false);
-  const [editText, setEditText] = useState('');
+  const [editHtml, setEditHtml] = useState('');
   const noteRef = useRef<HTMLDivElement>(null);
   const [metaSelData, setMetaSelData] = useState<{ start: number; end: number; text: string } | null>(null);
-  const [metaNoteText, setMetaNoteText] = useState('');
+  const [metaNoteHtml, setMetaNoteHtml] = useState('');
   const [metaColor, setMetaColor] = useState(ANNOTATION_COLORS[1].border);
 
-  const { updateAnnotation, deleteAnnotation, createMetaAnnotation, activeMetaAnnotation, setActiveMetaAnnotation } = useAnnotationStore();
+  const { updateAnnotation, deleteAnnotation, createMetaAnnotation, toggleResolveAnnotation, activeMetaAnnotation, setActiveMetaAnnotation } = useAnnotationStore();
 
+  const isResolved = !!annotation.resolved;
   const colorPreset = ANNOTATION_COLORS.find(c => c.border === annotation.color) || ANNOTATION_COLORS[0];
   const metaAnnotations = annotation.meta_annotations || [];
   const attachments = annotation.attachments || [];
 
-  const handleSaveEdit = async () => { if (!editText.trim()) return; await updateAnnotation(ticketId, annotation.id, { note: editText.trim() }); setEditing(false); };
+  const handleSaveEdit = async () => { if (!editHtml.trim() || editHtml === '<p></p>') return; await updateAnnotation(ticketId, annotation.id, { note: editHtml }); setEditing(false); };
 
   const handleNoteMouseUp = useCallback(() => {
     if (!noteRef.current) return;
@@ -398,28 +410,32 @@ function AnnotationCard({ annotation, isActive, ticketId, onActivate, cardRef, m
   }, []);
 
   const handleCreateMeta = async () => {
-    if (!metaSelData || !metaNoteText.trim()) return;
+    if (!metaSelData || !metaNoteHtml.trim() || metaNoteHtml === '<p></p>') return;
     await createMetaAnnotation(ticketId, annotation.id, {
       start_offset: metaSelData.start, end_offset: metaSelData.end,
-      selected_text: metaSelData.text, note: metaNoteText.trim(), color: metaColor,
+      selected_text: metaSelData.text, note: metaNoteHtml, color: metaColor,
     });
-    setMetaSelData(null); setMetaNoteText(''); window.getSelection()?.removeAllRanges();
+    setMetaSelData(null); setMetaNoteHtml(''); window.getSelection()?.removeAllRanges();
   };
 
   const noteSegments = splitNoteByMetas(annotation.note, metaAnnotations);
 
   return (
-    <div ref={cardRef} className={`rounded-lg transition-all ${isActive ? 'ring-1 shadow-md' : 'hover:shadow-sm'}`}
-      style={{ borderLeft: `3px solid ${colorPreset.border}`, boxShadow: isActive ? `0 0 12px ${colorPreset.border}40` : undefined }}
+    <div ref={cardRef} className={`rounded-lg transition-all ${isResolved ? 'opacity-60' : ''} ${isActive ? 'ring-1 shadow-md' : 'hover:shadow-sm'}`}
+      style={{
+        borderLeft: `3px solid ${isResolved ? '#6b7a8d' : colorPreset.border}`,
+        boxShadow: isActive && !isResolved ? `0 0 12px ${colorPreset.border}40` : undefined,
+        backgroundColor: isResolved ? 'rgba(40,44,56,0.5)' : undefined,
+      }}
       onClick={onActivate}>
-      <div className="p-3 bg-card rounded-tr-lg rounded-br-lg">
-        <div className="text-[10px] text-muted-foreground truncate mb-1.5 italic">
+      <div className="p-3 bg-card rounded-tr-lg rounded-br-lg" style={isResolved ? { background: 'rgba(40,44,56,0.5)' } : undefined}>
+        <div className={`text-[10px] text-muted-foreground truncate mb-1.5 italic ${isResolved ? 'line-through' : ''}`}>
           &ldquo;{annotation.selected_text.substring(0, 60)}{annotation.selected_text.length > 60 ? '...' : ''}&rdquo;
         </div>
 
         {editing ? (
-          <div className="space-y-2">
-            <Textarea value={editText} onChange={(e) => setEditText(e.target.value)} onKeyDown={(e) => { if (e.ctrlKey && e.key === 'Enter') { e.preventDefault(); handleSaveEdit(); } }} rows={2} className="bg-background border-border text-xs resize-none text-foreground" autoFocus />
+          <div className="space-y-2" onClick={(e) => e.stopPropagation()}>
+            <MiniRichEditor content={annotation.note} onChange={setEditHtml} onSubmit={handleSaveEdit} placeholder="메모 편집..." autoFocus />
             <div className="flex gap-1">
               <Button onClick={handleSaveEdit} className="text-[10px] h-6 px-2 bg-accent-primary/20 text-accent-primary border border-accent-primary/30">SAVE</Button>
               <Button onClick={() => setEditing(false)} variant="ghost" className="text-[10px] h-6 px-2 text-muted-foreground">CANCEL</Button>
@@ -427,7 +443,7 @@ function AnnotationCard({ annotation, isActive, ticketId, onActivate, cardRef, m
           </div>
         ) : (
           <>
-            <div ref={noteRef} onMouseUp={handleNoteMouseUp} className="text-xs text-foreground leading-relaxed select-text cursor-text">
+            <div ref={noteRef} onMouseUp={handleNoteMouseUp} className={`text-xs leading-relaxed select-text cursor-text ${isResolved ? 'line-through text-muted-foreground' : 'text-foreground'}`}>
               {noteSegments.map((seg, i) => {
                 if (seg.metaId) {
                   const meta = metaAnnotations.find(m => m.id === seg.metaId);
@@ -443,16 +459,20 @@ function AnnotationCard({ annotation, isActive, ticketId, onActivate, cardRef, m
                         cursor: 'pointer', color: 'var(--color-soft-primary)', padding: '0 1px',
                       }}
                       onClick={(e) => { e.stopPropagation(); setActiveMetaAnnotation(isMetaActive ? null : seg.metaId!); }}>
-                      {seg.text}
+                      <RichContent html={seg.text} />
                     </mark>
                   );
                 }
-                return <span key={i}>{seg.text}</span>;
+                return <RichContent key={i} html={seg.text} />;
               })}
             </div>
             <AttachmentList attachments={attachments} ticketId={ticketId} parentType="annotation" parentId={annotation.id} />
             <div className="flex gap-3 mt-2">
-              <button onClick={(e) => { e.stopPropagation(); setEditing(true); setEditText(annotation.note); }} className="text-[10px] text-muted-foreground hover:text-accent-primary transition-colors">EDIT</button>
+              <button onClick={(e) => { e.stopPropagation(); toggleResolveAnnotation(ticketId, annotation.id); }}
+                className={`text-[10px] transition-colors ${isResolved ? 'text-neon-green hover:text-neon-green/70' : 'text-muted-foreground hover:text-neon-green'}`}>
+                {isResolved ? '✓ RESOLVED' : 'RESOLVE'}
+              </button>
+              <button onClick={(e) => { e.stopPropagation(); setEditing(true); setEditHtml(annotation.note); }} className="text-[10px] text-muted-foreground hover:text-accent-primary transition-colors">EDIT</button>
               <button onClick={(e) => { e.stopPropagation(); deleteAnnotation(ticketId, annotation.id); }} className="text-[10px] text-muted-foreground hover:text-accent-red transition-colors">DEL</button>
             </div>
           </>
@@ -471,8 +491,8 @@ function AnnotationCard({ annotation, isActive, ticketId, onActivate, cardRef, m
                   style={{ backgroundColor: c.border }} title={c.label} />
               ))}
             </div>
-            <Textarea value={metaNoteText} onChange={(e) => setMetaNoteText(e.target.value)} onKeyDown={(e) => { if (e.ctrlKey && e.key === 'Enter') { e.preventDefault(); handleCreateMeta(); } }} placeholder="메메모 작성..." rows={2} className="bg-background border-border text-xs resize-none text-foreground mb-1.5" autoFocus />
-            <div className="flex gap-1">
+            <MiniRichEditor content="" onChange={setMetaNoteHtml} onSubmit={handleCreateMeta} placeholder="메메모 작성..." autoFocus />
+            <div className="flex gap-1 mt-1.5">
               <Button onClick={handleCreateMeta} className="text-[10px] h-6 px-2 bg-accent-primary/20 text-accent-primary border border-accent-primary/30">SAVE</Button>
               <Button onClick={() => { setMetaSelData(null); window.getSelection()?.removeAllRanges(); }} variant="ghost" className="text-[10px] h-6 px-2 text-muted-foreground">CANCEL</Button>
             </div>
@@ -637,8 +657,7 @@ export function EmailViewer({ email, ticketId }: { email: Email; ticketId: strin
                       style={{ backgroundColor: c.border }} title={c.label} />
                   ))}
                 </div>
-                <Textarea value={noteText} onChange={(e) => setNoteText(e.target.value)} onKeyDown={(e) => { if (e.ctrlKey && e.key === 'Enter') { e.preventDefault(); handleCreateAnnotation(); } }} placeholder="Write your note..."
-                  rows={3} className="bg-background border-border text-xs resize-none text-foreground mb-2" autoFocus />
+                <MiniRichEditor content="" onChange={setNoteText} onSubmit={handleCreateAnnotation} placeholder="Write your note..." autoFocus className="mb-2" />
                 <div className="flex gap-2">
                   <Button onClick={handleCreateAnnotation} className="bg-primary/20 text-primary border border-primary/30 text-[10px] h-7 px-3">SAVE NOTE</Button>
                   <Button onClick={() => { setSelectionData(null); window.getSelection()?.removeAllRanges(); }} variant="ghost" className="text-[10px] h-7 px-3 text-muted-foreground">CANCEL</Button>
