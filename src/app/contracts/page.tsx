@@ -68,13 +68,15 @@ function DomainCell({ value, contractId, field, onUpdate, pending }: {
     onUpdate(contractId, { [field]: next[value] });
   };
 
-  // Pending: entire cell pulses with cyan tint + check icon
+  // Pending: cell pulses + half-filled circle
   if (pending && value !== 'O') {
     return (
       <td className="px-2 py-2 text-center cursor-pointer" onClick={cycle}
         style={{ animation: 'domain-pulse 1.5s ease-in-out infinite' }}>
-        <img src="/icons/hyundai/check.svg" alt="진행중" className="w-4 h-4 mx-auto"
-          style={{ filter: 'invert(55%) sepia(70%) saturate(500%) hue-rotate(150deg)' }} />
+        <svg className="w-4 h-4 mx-auto" viewBox="0 0 16 16" fill="none">
+          <circle cx="8" cy="8" r="6.5" stroke="#00AAD2" strokeWidth="1.2" strokeDasharray="3 2" />
+          <path d="M5 8.2L7.2 10.4L11 5.6" stroke="#00AAD2" strokeWidth="1.3" strokeLinecap="round" strokeLinejoin="round" opacity="0.6" />
+        </svg>
       </td>
     );
   }
@@ -82,20 +84,27 @@ function DomainCell({ value, contractId, field, onUpdate, pending }: {
   if (value === 'O') {
     return (
       <td className="px-2 py-2 text-center cursor-pointer hover:bg-primary/10 transition-colors" onClick={cycle}>
-        <img src="/icons/hyundai/check.svg" alt="O" className="w-4 h-4 mx-auto" style={{ filter: 'invert(23%) sepia(85%) saturate(2000%) hue-rotate(190deg)' }} />
+        <svg className="w-4 h-4 mx-auto" viewBox="0 0 16 16" fill="none">
+          <circle cx="8" cy="8" r="6.5" fill="#002C5F" />
+          <path d="M5 8.2L7.2 10.4L11 5.6" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+        </svg>
       </td>
     );
   }
   if (value === 'X') {
     return (
       <td className="px-2 py-2 text-center cursor-pointer hover:bg-primary/10 transition-colors" onClick={cycle}>
-        <img src="/icons/hyundai/cancel.svg" alt="X" className="w-4 h-4 mx-auto opacity-40" />
+        <svg className="w-4 h-4 mx-auto" viewBox="0 0 16 16" fill="none">
+          <circle cx="8" cy="8" r="6.5" stroke="#B2B6BD" strokeWidth="1.2" />
+        </svg>
       </td>
     );
   }
   return (
     <td className="px-2 py-2 text-center cursor-pointer hover:bg-primary/10 transition-colors" onClick={cycle}>
-      <img src="/icons/hyundai/minus.svg" alt="-" className="w-3.5 h-3.5 mx-auto opacity-20" />
+      <svg className="w-4 h-4 mx-auto" viewBox="0 0 16 16" fill="none" opacity="0.3">
+        <line x1="5" y1="8" x2="11" y2="8" stroke="#929296" strokeWidth="1.2" strokeLinecap="round" />
+      </svg>
     </td>
   );
 }
@@ -659,6 +668,8 @@ export default function ContractsPage() {
   const [filterQuality, setFilterQuality] = useState<Set<string>>(new Set());
   const [filterProduction, setFilterProduction] = useState<Set<string>>(new Set());
 
+  const [statFilter, setStatFilter] = useState<'started' | 'not-started' | 'secured' | 'not-secured' | null>(null);
+
   useEffect(() => { fetchContracts(); }, [fetchContracts]);
 
   const passesFilter = (value: string, filterSet: Set<string>) =>
@@ -676,13 +687,22 @@ export default function ContractsPage() {
     return true;
   });
 
+  const statFilteredContracts = statFilter ? filtered.filter(c => {
+    if (statFilter === 'started') return domains.some(d => c[d] === 'O');
+    if (statFilter === 'not-started') return !domains.some(d => c[d] === 'O');
+    if (statFilter === 'secured') return !domains.some(d => c[d] === 'X');
+    if (statFilter === 'not-secured') return domains.some(d => c[d] === 'X');
+    return true;
+  }) : null;
+  const displayContracts = statFilteredContracts || filtered;
+
   const regions = [...new Set(contracts.map(c => c.region))].sort();
   const countries = [...new Set(contracts.map(c => c.country))].sort();
   const brands = [...new Set(contracts.map(c => c.brand))].sort();
 
-  // Group by region for display
+  // Group by region for display — use displayContracts (stat filter applied)
   const grouped: Record<string, Contract[]> = {};
-  for (const c of filtered) {
+  for (const c of displayContracts) {
     if (!grouped[c.region]) grouped[c.region] = [];
     grouped[c.region].push(c);
   }
@@ -709,6 +729,43 @@ export default function ContractsPage() {
 
   const thBase = "px-2 py-2.5 text-left text-[9px] text-muted-foreground tracking-wider font-medium";
 
+  // Stats
+  const totalContracts = contracts.length;
+  const domains = ['data_domain_vehicle', 'data_domain_customer', 'data_domain_sales', 'data_domain_quality', 'data_domain_production'] as const;
+  const startedCount = contracts.filter(c => domains.some(d => c[d] === 'O')).length;
+  const startedPct = totalContracts > 0 ? Math.round((startedCount / totalContracts) * 100) : 0;
+  const fullySecuredCount = contracts.filter(c => !domains.some(d => c[d] === 'X')).length;
+  const fullySecuredPct = totalContracts > 0 ? Math.round((fullySecuredCount / totalContracts) * 100) : 0;
+
+  // Stat labels — editable via localStorage
+  const STAT_LABELS_KEY = 'bizsys-stat-labels';
+  const defaultLabels = {
+    leftTitle: '데이터 이전 계약 마련율',
+    leftDesc: '1개 이상 도메인 체결 법인',
+    rightTitle: '데이터 이전 근거 완전 확보',
+    rightDesc: '전 도메인 체결 완료 법인',
+    doneWord: '체결',
+    notDoneWord: '미체결',
+  };
+  const [statLabels, setStatLabels] = useState(defaultLabels);
+  const [editingStatLabels, setEditingStatLabels] = useState(false);
+  const [statLabelDraft, setStatLabelDraft] = useState(defaultLabels);
+
+  useEffect(() => {
+    try {
+      const saved = localStorage.getItem(STAT_LABELS_KEY);
+      if (saved) setStatLabels(JSON.parse(saved));
+    } catch {}
+  }, []);
+
+  const saveStatLabels = () => {
+    setStatLabels(statLabelDraft);
+    localStorage.setItem(STAT_LABELS_KEY, JSON.stringify(statLabelDraft));
+    setEditingStatLabels(false);
+  };
+
+  // statFilter moved up before filtered
+
   return (
     <div className="space-y-4">
       {/* Header */}
@@ -729,6 +786,101 @@ export default function ContractsPage() {
           </Button>
         </div>
       </div>
+
+      {/* Stats */}
+      {totalContracts > 0 && (
+        <div className="space-y-2">
+          {editingStatLabels ? (
+            <div className="rounded border border-border bg-card p-3 space-y-2">
+              <div className="grid grid-cols-3 gap-2">
+                <input value={statLabelDraft.leftTitle} onChange={e => setStatLabelDraft({ ...statLabelDraft, leftTitle: e.target.value })}
+                  placeholder="좌측 제목" className="bg-background border border-border rounded px-2 py-1 text-[11px] text-foreground" />
+                <input value={statLabelDraft.rightTitle} onChange={e => setStatLabelDraft({ ...statLabelDraft, rightTitle: e.target.value })}
+                  placeholder="우측 제목" className="bg-background border border-border rounded px-2 py-1 text-[11px] text-foreground" />
+                <div className="flex gap-1">
+                  <input value={statLabelDraft.doneWord} onChange={e => setStatLabelDraft({ ...statLabelDraft, doneWord: e.target.value })}
+                    placeholder="완료 워딩" className="bg-background border border-border rounded px-2 py-1 text-[11px] text-foreground w-1/2" />
+                  <input value={statLabelDraft.notDoneWord} onChange={e => setStatLabelDraft({ ...statLabelDraft, notDoneWord: e.target.value })}
+                    placeholder="미완 워딩" className="bg-background border border-border rounded px-2 py-1 text-[11px] text-foreground w-1/2" />
+                </div>
+              </div>
+              <div className="grid grid-cols-2 gap-2">
+                <input value={statLabelDraft.leftDesc} onChange={e => setStatLabelDraft({ ...statLabelDraft, leftDesc: e.target.value })}
+                  placeholder="좌측 설명" className="bg-background border border-border rounded px-2 py-1 text-[11px] text-foreground" />
+                <input value={statLabelDraft.rightDesc} onChange={e => setStatLabelDraft({ ...statLabelDraft, rightDesc: e.target.value })}
+                  placeholder="우측 설명" className="bg-background border border-border rounded px-2 py-1 text-[11px] text-foreground" />
+              </div>
+              <div className="flex gap-1">
+                <button onClick={saveStatLabels} className="text-[10px] px-2 py-1 rounded bg-primary text-primary-foreground">저장</button>
+                <button onClick={() => setEditingStatLabels(false)} className="text-[10px] px-2 py-1 rounded border border-border text-muted-foreground">취소</button>
+              </div>
+            </div>
+          ) : (
+            <div className="flex gap-3">
+              {/* Left stat: 마련율 */}
+              <div className="flex-1 rounded border border-border bg-card p-3 flex items-center gap-3">
+                <div className="text-2xl font-bold text-primary">{startedPct}%</div>
+                <div>
+                  <div className="text-[11px] text-foreground font-medium">{statLabels.leftTitle}</div>
+                  <div className="text-[10px] text-muted-foreground">
+                    {totalContracts}개 법인 중{' '}
+                    <button onClick={() => setStatFilter(statFilter === 'started' ? null : 'started')}
+                      className={`font-medium cursor-pointer hover:underline ${statFilter === 'started' ? 'text-primary underline' : 'text-foreground'}`}>
+                      {startedCount}개 {statLabels.doneWord}
+                    </button>
+                    {', '}
+                    <button onClick={() => setStatFilter(statFilter === 'not-started' ? null : 'not-started')}
+                      className={`font-medium cursor-pointer hover:underline ${statFilter === 'not-started' ? 'text-primary underline' : 'text-foreground'}`}>
+                      {totalContracts - startedCount}개 {statLabels.notDoneWord}
+                    </button>
+                  </div>
+                </div>
+                <div className="ml-auto w-24 h-2 rounded-full bg-muted overflow-hidden">
+                  <div className="h-full rounded-full bg-primary transition-all" style={{ width: `${startedPct}%` }} />
+                </div>
+              </div>
+              {/* Right stat: 완전 확보 */}
+              <div className="flex-1 rounded border border-border bg-card p-3 flex items-center gap-3">
+                <div className="text-2xl font-bold" style={{ color: '#00809E' }}>{fullySecuredPct}%</div>
+                <div>
+                  <div className="text-[11px] text-foreground font-medium">{statLabels.rightTitle}</div>
+                  <div className="text-[10px] text-muted-foreground">
+                    {totalContracts}개 법인 중{' '}
+                    <button onClick={() => setStatFilter(statFilter === 'secured' ? null : 'secured')}
+                      className={`font-medium cursor-pointer hover:underline ${statFilter === 'secured' ? 'text-primary underline' : 'text-foreground'}`}>
+                      {fullySecuredCount}개 {statLabels.doneWord}
+                    </button>
+                    {', '}
+                    <button onClick={() => setStatFilter(statFilter === 'not-secured' ? null : 'not-secured')}
+                      className={`font-medium cursor-pointer hover:underline ${statFilter === 'not-secured' ? 'text-primary underline' : 'text-foreground'}`}>
+                      {totalContracts - fullySecuredCount}개 {statLabels.notDoneWord}
+                    </button>
+                  </div>
+                </div>
+                <div className="ml-auto w-24 h-2 rounded-full bg-muted overflow-hidden">
+                  <div className="h-full rounded-full transition-all" style={{ width: `${fullySecuredPct}%`, backgroundColor: '#00809E' }} />
+                </div>
+              </div>
+              {/* Edit button */}
+              <button onClick={() => { setEditingStatLabels(true); setStatLabelDraft(statLabels); }}
+                className="self-start text-[9px] text-muted-foreground hover:text-foreground px-1 py-1 shrink-0">✎</button>
+            </div>
+          )}
+          {/* Active stat filter indicator */}
+          {statFilter && (
+            <div className="flex items-center gap-2 text-[10px]">
+              <span className="text-muted-foreground">필터 적용 중:</span>
+              <span className="text-primary font-medium">
+                {statFilter === 'started' && `${statLabels.doneWord} ${startedCount}개 법인`}
+                {statFilter === 'not-started' && `${statLabels.notDoneWord} ${totalContracts - startedCount}개 법인`}
+                {statFilter === 'secured' && `완전 확보 ${fullySecuredCount}개 법인`}
+                {statFilter === 'not-secured' && `미비 ${totalContracts - fullySecuredCount}개 법인`}
+              </span>
+              <button onClick={() => setStatFilter(null)} className="text-muted-foreground hover:text-foreground">✕ 해제</button>
+            </div>
+          )}
+        </div>
+      )}
 
       {/* AI Search */}
       <div className="flex gap-2 items-start">
@@ -769,7 +921,7 @@ export default function ContractsPage() {
         <DomainFilter label="품질" selected={filterQuality} onChange={setFilterQuality} />
         <DomainFilter label="생산" selected={filterProduction} onChange={setFilterProduction} />
         <span className="w-px h-4 bg-border" />
-        <span className="text-[10px] text-muted-foreground">{filtered.length}/{contracts.length}</span>
+        <span className="text-[10px] text-muted-foreground">{displayContracts.length}/{contracts.length}</span>
         {hasActiveFilters && (
           <button onClick={clearAllFilters} className="text-[9px] text-primary hover:underline">CLEAR</button>
         )}
