@@ -9,7 +9,7 @@ export async function GET() {
   ).all() as Array<{ id: string }>;
 
   const getFiles = db.prepare(
-    'SELECT id, contract_id, file_category, file_name, file_type, file_size, created_at FROM contract_files WHERE contract_id = ?'
+    'SELECT id, contract_id, file_category, file_name, file_type, file_size, version_id, created_at FROM contract_files WHERE contract_id = ?'
   );
 
   const contractsWithFiles = contracts.map((contract) => ({

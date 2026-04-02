@@ -14,7 +14,7 @@ export async function GET(
   }
 
   const files = db.prepare(
-    'SELECT id, contract_id, file_category, file_name, file_type, file_size, created_at FROM contract_files WHERE contract_id = ?'
+    'SELECT id, contract_id, file_category, file_name, file_type, file_size, version_id, created_at FROM contract_files WHERE contract_id = ?'
   ).all(id);
 
   return NextResponse.json({ contract: { ...(contract as object), files } });

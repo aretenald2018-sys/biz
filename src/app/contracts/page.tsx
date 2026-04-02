@@ -118,19 +118,19 @@ const DOMAIN_FIELDS = [
 ] as const;
 
 /* ─── File Upload Cell (icon-based) ─── */
-function FileCell({ files, contractId, category, categoryLabel, completedVersionFiles }: {
+function FileCell({ files, contractId, category, categoryLabel, completedVersionFiles, pendingVersionFiles }: {
   files: ContractFile[];
   contractId: string;
   category: 'final_contract' | 'related_document' | 'correspondence';
   categoryLabel: string;
   completedVersionFiles?: { file: ContractFile; versionNumber: number }[];
+  pendingVersionFiles?: { file: ContractFile; versionNumber: number }[];
 }) {
   const { uploadFile, deleteFile } = useContractStore();
   const fileRef = useRef<HTMLInputElement>(null);
-  // Original files (no version_id)
   const originalFiles = files.filter(f => f.file_category === category && !f.version_id);
-  // Completed version files for this category
-  const versionFiles = (completedVersionFiles || []).filter(vf => vf.file.file_category === category);
+  const confirmedFiles = (completedVersionFiles || []).filter(vf => vf.file.file_category === category);
+  const pendingFiles = (pendingVersionFiles || []).filter(vf => vf.file.file_category === category);
 
   return (
     <td className="px-2 py-2">
@@ -148,13 +148,24 @@ function FileCell({ files, contractId, category, categoryLabel, completedVersion
               className="absolute -top-1 -right-1 hidden group-hover:flex items-center justify-center w-3 h-3 rounded-full bg-destructive text-white text-[7px] leading-none">✕</button>
           </div>
         ))}
-        {versionFiles.map(vf => (
+        {confirmedFiles.map(vf => (
           <div key={vf.file.id} className="relative group inline-flex">
             <a href={`/api/contracts/files/${vf.file.id}`} download={vf.file.file_name}
               title={`${vf.file.file_name} (v${vf.versionNumber})`} className="hover:opacity-70 transition-opacity">
               <span className="inline-flex flex-col items-center">
                 <FileIcon fileName={vf.file.file_name} />
                 <span className="text-[7px] text-muted-foreground leading-none mt-0.5">v{vf.versionNumber}</span>
+              </span>
+            </a>
+          </div>
+        ))}
+        {pendingFiles.map(vf => (
+          <div key={vf.file.id} className="relative group inline-flex" style={{ animation: 'domain-pulse 0.8s ease-in-out infinite' }}>
+            <a href={`/api/contracts/files/${vf.file.id}`} download={vf.file.file_name}
+              title={`${vf.file.file_name} (수정검토본)`} className="hover:opacity-70 transition-opacity">
+              <span className="inline-flex flex-col items-center">
+                <FileIcon fileName={vf.file.file_name} />
+                <span className="text-[7px] leading-none mt-0.5" style={{ color: '#00AAD2' }}>수정검토본</span>
               </span>
             </a>
           </div>
@@ -1033,12 +1044,13 @@ export default function ContractsPage() {
                         </td>
                         {(() => {
                           // Collect files from completed versions
-                          const completedVers = (versions[contract.id] || []).filter(v => v.status === 'completed');
-                          const completedVerFiles = completedVers.flatMap(v => (v.files || []).map(f => ({ file: f, versionNumber: v.version_number })));
+                          const allVers = versions[contract.id] || [];
+                          const completedVerFiles = allVers.filter(v => v.status === 'completed').flatMap(v => (v.files || []).map(f => ({ file: f, versionNumber: v.version_number })));
+                          const pendingVerFiles = allVers.filter(v => v.status === 'pending').flatMap(v => (v.files || []).map(f => ({ file: f, versionNumber: v.version_number })));
                           return (<>
-                            <FileCell files={contract.files || []} contractId={contract.id} category="final_contract" categoryLabel="계약서" completedVersionFiles={completedVerFiles} />
-                            <FileCell files={contract.files || []} contractId={contract.id} category="related_document" categoryLabel="문서" completedVersionFiles={completedVerFiles} />
-                            <FileCell files={contract.files || []} contractId={contract.id} category="correspondence" categoryLabel="교신" completedVersionFiles={completedVerFiles} />
+                            <FileCell files={contract.files || []} contractId={contract.id} category="final_contract" categoryLabel="계약서" completedVersionFiles={completedVerFiles} pendingVersionFiles={pendingVerFiles} />
+                            <FileCell files={contract.files || []} contractId={contract.id} category="related_document" categoryLabel="문서" completedVersionFiles={completedVerFiles} pendingVersionFiles={pendingVerFiles} />
+                            <FileCell files={contract.files || []} contractId={contract.id} category="correspondence" categoryLabel="교신" completedVersionFiles={completedVerFiles} pendingVersionFiles={pendingVerFiles} />
                           </>);
                         })()}
                         <TransferInfoCell contract={contract} field="transfer_purpose" label="이전목적 전문 (계약서 원문)" />
