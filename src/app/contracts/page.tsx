@@ -160,10 +160,10 @@ function FileCell({ files, contractId, category, categoryLabel, completedVersion
           </div>
         ))}
         {pendingFiles.map(vf => (
-          <div key={vf.file.id} className="relative group inline-flex" style={{ animation: 'domain-pulse 0.8s ease-in-out infinite' }}>
+          <div key={vf.file.id} className="relative group inline-flex">
             <a href={`/api/contracts/files/${vf.file.id}`} download={vf.file.file_name}
               title={`${vf.file.file_name} (수정검토본)`} className="hover:opacity-70 transition-opacity">
-              <span className="inline-flex flex-col items-center">
+              <span className="inline-flex flex-col items-center" style={{ animation: 'file-pending-pulse 0.8s ease-in-out infinite' }}>
                 <FileIcon fileName={vf.file.file_name} />
                 <span className="text-[7px] leading-none mt-0.5" style={{ color: '#00AAD2' }}>수정검토본</span>
               </span>
