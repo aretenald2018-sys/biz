@@ -1070,7 +1070,7 @@ export default function ContractsPage() {
 
                         rows.push(
                           <tr key={`ver-${ver.id}`}
-                            className="border-b border-border bg-muted/5 cursor-pointer hover:bg-muted/10 transition-colors"
+                            className={`border-b border-border cursor-pointer hover:bg-muted/10 transition-colors ${isVerSelected ? 'bg-muted/10' : 'bg-muted/5'}`}
                             style={isPending ? { borderLeft: '3px solid #00AAD2' } : undefined}
                             onClick={(e) => { e.stopPropagation(); setExpandedRows(prev => { const n = new Set(prev); const k = `ver-${ver.id}`; n.has(k) ? n.delete(k) : n.add(k); return n; }); }}>
                             <td colSpan={17} className="px-2 py-3 text-[11px]">
@@ -1123,9 +1123,9 @@ export default function ContractsPage() {
                                   </label>
                                 </div>
 
-                                {/* Row 2: actions */}
+                                {/* Row 2: actions — right-aligned */}
                                 {!isEditingVer && (
-                                  <div className="flex items-center gap-0" onClick={(e) => e.stopPropagation()}>
+                                  <div className="flex items-center gap-0 justify-end" onClick={(e) => e.stopPropagation()}>
                                     {isPending && (<>
                                       <button onClick={() => {
                                         if (confirm('이 버전을 확정하시겠습니까? 확정 후 해당 도메인이 O로 갱신됩니다.')) {
