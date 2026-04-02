@@ -159,8 +159,8 @@
 .badge-pulse { animation: badge-pulse 2.5s ease-in-out infinite; }
 
 @keyframes domain-pulse {
-  0%, 100% { opacity: 1; background-color: rgba(0, 170, 210, 0.08); }
-  50% { opacity: 0.6; background-color: rgba(0, 170, 210, 0.18); }
+  0%, 100% { opacity: 1; background-color: rgba(0, 170, 210, 0.06); }
+  50% { opacity: 0.4; background-color: rgba(0, 170, 210, 0.25); }
 }
 
 @keyframes flow-dot-pulse {

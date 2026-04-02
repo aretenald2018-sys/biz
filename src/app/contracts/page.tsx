@@ -72,7 +72,7 @@ function DomainCell({ value, contractId, field, onUpdate, pending }: {
   if (pending && value !== 'O') {
     return (
       <td className="px-2 py-2 text-center cursor-pointer" onClick={cycle}
-        style={{ animation: 'domain-pulse 1.5s ease-in-out infinite' }}>
+        style={{ animation: 'domain-pulse 0.8s ease-in-out infinite' }}>
         <svg className="w-4 h-4 mx-auto" viewBox="0 0 16 16" fill="none">
           <circle cx="8" cy="8" r="6.5" stroke="#00AAD2" strokeWidth="1.2" strokeDasharray="3 2" />
           <path d="M5 8.2L7.2 10.4L11 5.6" stroke="#00AAD2" strokeWidth="1.3" strokeLinecap="round" strokeLinejoin="round" opacity="0.6" />
