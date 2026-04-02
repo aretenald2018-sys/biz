@@ -10,7 +10,7 @@ export async function GET(
   const { id } = await params;
   const db = getDb();
   const emails = db.prepare(
-    'SELECT id, ticket_id, file_name, subject, sender_name, sender_email, recipients, cc_list, body_text, body_html, sent_date, parsed_participants, created_at FROM emails WHERE ticket_id = ? ORDER BY sent_date ASC, created_at ASC'
+    'SELECT id, ticket_id, file_name, subject, sender_name, sender_email, recipients, cc_list, body_text, body_html, sent_date, parsed_participants, parent_note_id, parent_email_id, created_at FROM emails WHERE ticket_id = ? ORDER BY sent_date ASC, created_at ASC'
   ).all(id);
 
   return NextResponse.json(emails);

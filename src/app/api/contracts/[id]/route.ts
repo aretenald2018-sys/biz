@@ -55,6 +55,10 @@ export async function PUT(
   }
 
   fields.push("updated_at = datetime('now','localtime')");
+  // Track activity when substantive fields change
+  if (body.transfer_purpose !== undefined || body.transferable_data !== undefined || body.contract_status !== undefined) {
+    fields.push("last_activity_at = datetime('now','localtime')");
+  }
   values.push(id);
 
   db.prepare(`UPDATE contracts SET ${fields.join(', ')} WHERE id = ?`).run(...values);

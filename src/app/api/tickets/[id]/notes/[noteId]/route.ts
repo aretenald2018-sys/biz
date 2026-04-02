@@ -27,6 +27,8 @@ export async function PUT(
 
   if (body.title !== undefined) { fields.push('title = ?'); values.push(body.title); }
   if (body.content !== undefined) { fields.push('content = ?'); values.push(body.content); }
+  if (body.parent_email_id !== undefined) { fields.push('parent_email_id = ?'); values.push(body.parent_email_id); }
+  if (body.parent_note_id !== undefined) { fields.push('parent_note_id = ?'); values.push(body.parent_note_id); }
 
   if (fields.length === 0) {
     return NextResponse.json({ error: 'No fields to update' }, { status: 400 });

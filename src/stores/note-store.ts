@@ -8,7 +8,9 @@ interface NoteStore {
 
   fetchNotes: (ticketId: string) => Promise<void>;
   createNote: (ticketId: string, title?: string) => Promise<Note | null>;
-  updateNote: (ticketId: string, noteId: string, data: { title?: string; content?: string }) => Promise<void>;
+  updateNote: (ticketId: string, noteId: string, data: { title?: string; content?: string; parent_email_id?: string | null }) => Promise<void>;
+  setParentEmail: (ticketId: string, noteId: string, emailId: string | null) => Promise<void>;
+  setParentNote: (ticketId: string, noteId: string, parentNoteId: string | null) => Promise<void>;
   deleteNote: (ticketId: string, noteId: string) => Promise<void>;
   setActiveNote: (id: string | null) => void;
 }
@@ -56,6 +58,24 @@ export const useNoteStore = create<NoteStore>((set, get) => ({
         n.id === noteId ? { ...n, ...data, updated_at: new Date().toISOString() } : n
       ),
     });
+  },
+
+  setParentEmail: async (ticketId: string, noteId: string, emailId: string | null) => {
+    await fetch(`/api/tickets/${ticketId}/notes/${noteId}`, {
+      method: 'PUT',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ parent_email_id: emailId }),
+    });
+    await get().fetchNotes(ticketId);
+  },
+
+  setParentNote: async (ticketId: string, noteId: string, parentNoteId: string | null) => {
+    await fetch(`/api/tickets/${ticketId}/notes/${noteId}`, {
+      method: 'PUT',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ parent_note_id: parentNoteId }),
+    });
+    await get().fetchNotes(ticketId);
   },
 
   deleteNote: async (ticketId: string, noteId: string) => {

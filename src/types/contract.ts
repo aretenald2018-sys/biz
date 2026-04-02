@@ -15,6 +15,23 @@ export interface Contract {
   contract_status: string | null;
   transfer_purpose: string | null;
   transferable_data: string | null;
+  last_activity_at: string | null;
+  created_at: string;
+  updated_at: string;
+  files?: ContractFile[];
+  versions?: ContractVersion[];
+}
+
+export interface ContractVersion {
+  id: string;
+  contract_id: string;
+  version_number: number;
+  change_reason: string | null;
+  transfer_purpose: string | null;
+  transferable_data: string | null;
+  effective_date: string | null;
+  added_domains: string | null; // JSON: e.g. ["customer","sales"]
+  status: 'pending' | 'completed';
   created_at: string;
   updated_at: string;
   files?: ContractFile[];
@@ -23,6 +40,7 @@ export interface Contract {
 export interface ContractFile {
   id: string;
   contract_id: string;
+  version_id: string | null;
   file_category: 'final_contract' | 'related_document' | 'correspondence';
   file_name: string;
   file_type: string;

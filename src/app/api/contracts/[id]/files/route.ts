@@ -16,6 +16,7 @@ export async function POST(
   const formData = await request.formData();
   const file = formData.get('file') as File | null;
   const category = formData.get('category') as string | null;
+  const versionId = formData.get('version_id') as string | null;
 
   if (!file) {
     return NextResponse.json({ error: 'No file provided' }, { status: 400 });
@@ -31,11 +32,11 @@ export async function POST(
   const buffer = Buffer.from(await file.arrayBuffer());
 
   const stmt = db.prepare(`
-    INSERT INTO contract_files (contract_id, file_category, file_name, file_blob, file_type, file_size)
-    VALUES (?, ?, ?, ?, ?, ?)
+    INSERT INTO contract_files (contract_id, file_category, file_name, file_blob, file_type, file_size, version_id)
+    VALUES (?, ?, ?, ?, ?, ?, ?)
   `);
 
-  const result = stmt.run(id, category, file.name, buffer, file.type || 'application/octet-stream', buffer.length);
+  const result = stmt.run(id, category, file.name, buffer, file.type || 'application/octet-stream', buffer.length, versionId || null);
 
   const inserted = db.prepare(
     'SELECT id, contract_id, file_category, file_name, file_type, file_size, created_at FROM contract_files WHERE rowid = ?'

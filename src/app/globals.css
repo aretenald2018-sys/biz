@@ -158,6 +158,11 @@
 @keyframes badge-pulse { 0%,100%{box-shadow:0 0 4px currentColor} 50%{box-shadow:0 0 10px currentColor,0 0 18px currentColor} }
 .badge-pulse { animation: badge-pulse 2.5s ease-in-out infinite; }
 
+@keyframes domain-pulse {
+  0%, 100% { opacity: 1; background-color: rgba(0, 170, 210, 0.08); }
+  50% { opacity: 0.6; background-color: rgba(0, 170, 210, 0.18); }
+}
+
 @keyframes flow-dot-pulse {
   0%,100% { opacity: 1; box-shadow: 0 0 4px currentColor; }
   50% { opacity: 0.5; box-shadow: 0 0 10px currentColor, 0 0 20px currentColor; }

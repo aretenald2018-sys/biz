@@ -163,16 +163,17 @@ function EmailFlowPanel({ email, ticketId, expanded, onToggle }: {
 }
 
 /* ─── Unified item type ─── */
-type StackItem = { type: 'email'; data: Email; date: string } | { type: 'note'; data: Note; date: string };
+type StackItem = { type: 'email'; data: Email; date: string; children: StackItem[] } | { type: 'note'; data: Note; date: string; children: StackItem[] };
 
 export function EmailList({ ticketId }: { ticketId: string }) {
-  const { emails, selectedEmail, loading, fetchEmails, selectEmail, deleteEmail } = useEmailStore();
-  const { notes, activeNote, fetchNotes, setActiveNote, deleteNote } = useNoteStore();
+  const { emails, selectedEmail, loading, fetchEmails, selectEmail, deleteEmail, setParentNote, setParentEmail: setEmailParentEmail } = useEmailStore();
+  const { notes, activeNote, fetchNotes, setActiveNote, deleteNote, setParentEmail: setNoteParentEmail, setParentNote: setNoteParentNote } = useNoteStore();
   const { flowSteps, fetchFlowSteps } = useEmailFlowStore();
   const [confirmDelete, setConfirmDelete] = useState<string | null>(null);
   const [aiEmail, setAiEmail] = useState<Email | null>(null);
   const [expandedFlows, setExpandedFlows] = useState<Set<string>>(new Set());
   const [showNoteEditor, setShowNoteEditor] = useState(false);
+  const [dragOverId, setDragOverId] = useState<string | null>(null);
 
   useEffect(() => { fetchEmails(ticketId); fetchNotes(ticketId); }, [ticketId, fetchEmails, fetchNotes]);
   useEffect(() => { emails.forEach(email => { fetchFlowSteps(ticketId, email.id); }); }, [emails, ticketId, fetchFlowSteps]);
@@ -181,11 +182,109 @@ export function EmailList({ ticketId }: { ticketId: string }) {
     setExpandedFlows(prev => { const next = new Set(prev); if (next.has(emailId)) next.delete(emailId); else next.add(emailId); return next; });
   };
 
-  // Merge emails and notes into unified sorted list
-  const stackItems: StackItem[] = [
-    ...emails.map(e => ({ type: 'email' as const, data: e, date: e.sent_date || e.created_at })),
-    ...notes.map(n => ({ type: 'note' as const, data: n, date: n.updated_at || n.created_at })),
-  ].sort((a, b) => b.date.localeCompare(a.date));
+  // Handle drop: attach dragged item as child of target
+  const handleDrop = async (targetType: 'email' | 'note', targetId: string, dragData: string) => {
+    setDragOverId(null);
+    const parts = dragData.split(':');
+    if (parts.length !== 2) return;
+    const [dragType, dragId] = parts;
+    if (dragId === targetId) return; // can't drop on self
+
+    if (dragType === 'note' && targetType === 'email') {
+      // Note → Email parent
+      await setNoteParentEmail(ticketId, dragId, targetId);
+    } else if (dragType === 'email' && targetType === 'note') {
+      // Email → Note parent
+      await setParentNote(ticketId, dragId, targetId);
+    } else if (dragType === 'note' && targetType === 'note') {
+      // Note → Note parent
+      await setNoteParentNote(ticketId, dragId, targetId);
+    } else if (dragType === 'email' && targetType === 'email') {
+      // Email → Email parent
+      await setEmailParentEmail(ticketId, dragId, targetId);
+    }
+  };
+
+  // Detach: if a child item is dragged and dropped on empty space (not on another card), detach it
+  const dragChildRef = useRef<{ type: 'email' | 'note'; id: string } | null>(null);
+  const droppedOnCardRef = useRef(false);
+
+  const handleChildDragStart = (itemType: 'email' | 'note', itemId: string, isChild: boolean) => {
+    if (isChild) {
+      dragChildRef.current = { type: itemType, id: itemId };
+      droppedOnCardRef.current = false;
+    } else {
+      dragChildRef.current = null;
+    }
+  };
+
+  const handleCardDrop = () => {
+    droppedOnCardRef.current = true;
+  };
+
+  const handleDragEnd = async () => {
+    // If a child was dragged but NOT dropped on another card → detach
+    if (dragChildRef.current && !droppedOnCardRef.current) {
+      const { type, id } = dragChildRef.current;
+      if (type === 'note') {
+        // Clear both possible parents
+        const note = notes.find(n => n.id === id);
+        if (note?.parent_email_id) await setNoteParentEmail(ticketId, id, null);
+        if (note?.parent_note_id) await setNoteParentNote(ticketId, id, null);
+      } else {
+        const email = emails.find(e => e.id === id);
+        if (email?.parent_note_id) await setParentNote(ticketId, id, null);
+        if (email?.parent_email_id) await setEmailParentEmail(ticketId, id, null);
+      }
+    }
+    dragChildRef.current = null;
+    droppedOnCardRef.current = false;
+  };
+
+  // Build hierarchical stack: top-level items + their children (all 4 combos)
+  const buildStack = (): StackItem[] => {
+    const childNoteIds = new Set<string>();
+    const childEmailIds = new Set<string>();
+
+    // Notes that are children (of email or another note)
+    notes.forEach(n => { if (n.parent_email_id || n.parent_note_id) childNoteIds.add(n.id); });
+    // Emails that are children (of note or another email)
+    emails.forEach(e => { if (e.parent_note_id || e.parent_email_id) childEmailIds.add(e.id); });
+
+    // Get children for an email
+    const emailChildren = (emailId: string): StackItem[] => [
+      ...notes.filter(n => n.parent_email_id === emailId).map(n => ({
+        type: 'note' as const, data: n, date: n.updated_at || n.created_at, children: [],
+      })),
+      ...emails.filter(e => e.parent_email_id === emailId).map(e => ({
+        type: 'email' as const, data: e, date: e.sent_date || e.created_at, children: [],
+      })),
+    ];
+
+    // Get children for a note
+    const noteChildren = (noteId: string): StackItem[] => [
+      ...emails.filter(e => e.parent_note_id === noteId).map(e => ({
+        type: 'email' as const, data: e, date: e.sent_date || e.created_at, children: [],
+      })),
+      ...notes.filter(n => n.parent_note_id === noteId).map(n => ({
+        type: 'note' as const, data: n, date: n.updated_at || n.created_at, children: [],
+      })),
+    ];
+
+    const topEmails: StackItem[] = emails.filter(e => !childEmailIds.has(e.id)).map(e => ({
+      type: 'email' as const, data: e, date: e.sent_date || e.created_at,
+      children: emailChildren(e.id),
+    }));
+
+    const topNotes: StackItem[] = notes.filter(n => !childNoteIds.has(n.id)).map(n => ({
+      type: 'note' as const, data: n, date: n.updated_at || n.created_at,
+      children: noteChildren(n.id),
+    }));
+
+    return [...topEmails, ...topNotes].sort((a, b) => b.date.localeCompare(a.date));
+  };
+
+  const stackItems = buildStack();
 
   if (loading) {
     return <div className="text-center py-8 text-neon-cyan neon-pulse text-xs tracking-widest">LOADING...</div>;
@@ -199,130 +298,178 @@ export function EmailList({ ticketId }: { ticketId: string }) {
     );
   }
 
-  return (
-    <div className="space-y-3">
-      {/* Unified stack */}
-      <div className="space-y-2">
-        {stackItems.map((item) => {
-          if (item.type === 'email') {
-            const email = item.data as Email;
-            const steps = flowSteps[email.id] || [];
-            const isExpanded = expandedFlows.has(email.id);
-            const isSelected = selectedEmail?.id === email.id;
+  // Render a single item card (email or note) with drag-drop
+  const renderCard = (item: StackItem, isChild = false) => {
+    const id = item.data.id;
+    const dragKey = `${item.type}:${id}`;
+    const isDragOver = dragOverId === id;
 
-            return (
-              <div key={`email-${email.id}`}
-                className={`relative glass rounded-lg cursor-pointer transition-all border ${
-                  isSelected ? 'border-neon-cyan/40 glow-cyan bg-neon-cyan/5' : 'border-border hover:border-neon-cyan/20'
-                }`}>
-                {/* Bookmark tab — Navy for email */}
-                <BookmarkTab type="email" />
+    if (item.type === 'email') {
+      const email = item.data as Email;
+      const steps = flowSteps[email.id] || [];
+      const isExpanded = expandedFlows.has(email.id);
+      const isSelected = selectedEmail?.id === email.id;
 
-                <div className="flex items-stretch pl-3"
-                  onClick={() => selectEmail(isSelected ? null : email)}>
-                  {steps.length > 0 && (
-                    <div className="flex items-center px-2 border-r border-border/30"
-                      onClick={(e) => { e.stopPropagation(); toggleFlow(email.id); }}>
-                      <FlowTimeline steps={steps} />
-                    </div>
-                  )}
-                  <div className="flex-1 p-3 min-w-0">
-                    <div className="flex items-center justify-between">
-                      <div className="flex-1 min-w-0">
-                        <div className="flex items-center gap-2">
-                          <span className="text-[9px] px-1.5 py-0.5 rounded font-medium" style={{ backgroundColor: 'rgba(0,44,95,0.08)', color: '#002C5F' }}>EMAIL</span>
-                          <span className="text-xs font-semibold truncate">{email.subject || '(No Subject)'}</span>
-                        </div>
-                        <div className="text-[10px] text-muted-foreground mt-1 flex items-center gap-2">
-                          <span>FROM: {email.sender_name || email.sender_email || 'Unknown'}</span>
-                          {email.sent_date && <span>| {email.sent_date}</span>}
-                        </div>
-                      </div>
-                      <div className="flex items-center gap-1 shrink-0">
-                        <button onClick={(e) => { e.stopPropagation(); toggleFlow(email.id); }}
-                          className={`text-[10px] px-2 py-1 rounded transition-all ${isExpanded ? 'text-neon-magenta bg-neon-magenta/10' : 'text-muted-foreground hover:text-neon-magenta hover:bg-neon-magenta/10'}`}>
-                          FLOW{steps.length > 0 ? ` (${steps.length})` : ''}
-                        </button>
-                        <button onClick={(e) => { e.stopPropagation(); setAiEmail(email); }}
-                          className="text-[10px] px-2 py-1 rounded transition-all text-muted-foreground hover:text-neon-cyan hover:bg-neon-cyan/10">AI</button>
-                        <button onClick={(e) => {
-                          e.stopPropagation();
-                          if (confirmDelete === email.id) { deleteEmail(ticketId, email.id); setConfirmDelete(null); }
-                          else { setConfirmDelete(email.id); setTimeout(() => setConfirmDelete(null), 3000); }
-                        }}
-                          className={`text-[10px] px-2 py-1 rounded transition-all ${confirmDelete === email.id ? 'text-neon-red bg-neon-red/10 border border-neon-red/30' : 'text-muted-foreground hover:text-neon-red'}`}>
-                          {confirmDelete === email.id ? 'CONFIRM?' : 'DEL'}
-                        </button>
-                      </div>
-                    </div>
-                    {steps.length > 0 && !isExpanded && (
-                      <div className="flex items-center gap-2 mt-1.5 flex-wrap">
-                        {steps.map(step => {
-                          const config = STEP_CONFIG[step.step_type];
-                          const isCurrent = !!step.is_current;
-                          return (
-                            <span key={step.id} className={`text-[9px] px-1.5 py-px rounded-sm truncate max-w-[200px] ${isCurrent ? 'font-medium' : 'opacity-60'}`}
-                              style={{ color: config.color, backgroundColor: `${config.color}12`, border: isCurrent ? `1px solid ${config.color}40` : '1px solid transparent' }}>
-                              {config.icon} {step.summary}
-                            </span>
-                          );
-                        })}
-                      </div>
-                    )}
-                  </div>
-                </div>
-                <EmailFlowPanel email={email} ticketId={ticketId} expanded={isExpanded} onToggle={() => toggleFlow(email.id)} />
+      return (
+        <div key={`email-${email.id}`}
+          draggable
+          onDragStart={(e) => { e.dataTransfer.setData('text/plain', dragKey); e.dataTransfer.effectAllowed = 'move'; handleChildDragStart('email', email.id, isChild); }}
+          onDragEnd={handleDragEnd}
+          onDragOver={(e) => { e.preventDefault(); e.dataTransfer.dropEffect = 'move'; setDragOverId(id); }}
+          onDragLeave={() => setDragOverId(null)}
+          onDrop={(e) => { e.preventDefault(); handleCardDrop(); handleDrop('email', id, e.dataTransfer.getData('text/plain')); }}
+          className={`relative glass rounded-lg cursor-grab active:cursor-grabbing transition-all border ${
+            isSelected ? 'border-neon-cyan/40 glow-cyan bg-neon-cyan/5'
+            : isDragOver ? 'border-primary/60 bg-primary/5 shadow-md'
+            : 'border-border hover:border-neon-cyan/20'
+          } ${isChild ? 'ml-6' : ''}`}>
+          <BookmarkTab type="email" />
+          <div className="flex items-stretch pl-3" onClick={() => { selectEmail(isSelected ? null : email); if (!isSelected) { setActiveNote(null); setShowNoteEditor(false); } }}>
+            {steps.length > 0 && (
+              <div className="flex items-center px-2 border-r border-border/30" onClick={(e) => { e.stopPropagation(); toggleFlow(email.id); }}>
+                <FlowTimeline steps={steps} />
               </div>
-            );
-          }
-
-          /* ─── Note item ─── */
-          const note = item.data as Note;
-          const isNoteActive = activeNote === note.id;
-          const confirmingNoteDelete = confirmDelete === `note-${note.id}`;
-
-          return (
-            <div key={`note-${note.id}`}
-              className={`relative glass rounded-lg cursor-pointer transition-all border ${
-                isNoteActive ? 'border-neon-cyan/40 glow-cyan bg-neon-cyan/5' : 'border-border hover:border-neon-cyan/20'
-              }`}
-              onClick={() => { setActiveNote(isNoteActive ? null : note.id); if (!isNoteActive) setShowNoteEditor(true); }}>
-              {/* Bookmark tab — Cyan/teal for note */}
-              <BookmarkTab type="note" />
-
-              <div className="flex-1 p-3 pl-5 min-w-0">
-                <div className="flex items-center justify-between">
-                  <div className="flex-1 min-w-0">
-                    <div className="flex items-center gap-2">
-                      <span className="text-[9px] px-1.5 py-0.5 rounded font-medium" style={{ backgroundColor: 'rgba(0,170,210,0.08)', color: '#00AAD2' }}>NOTE</span>
-                      <span className="text-xs font-semibold truncate">{note.title}</span>
-                    </div>
-                    <div className="text-[10px] text-muted-foreground mt-1">
-                      {note.content.replace(/<[^>]*>/g, '').substring(0, 80) || 'Empty'}
-                      <span className="ml-2">| {note.updated_at?.split(' ')[0] || note.created_at?.split(' ')[0]}</span>
-                    </div>
+            )}
+            <div className="flex-1 p-3 min-w-0">
+              <div className="flex items-center justify-between">
+                <div className="flex-1 min-w-0">
+                  <div className="flex items-center gap-2">
+                    <span className="text-[9px] px-1.5 py-0.5 rounded font-medium" style={{ backgroundColor: 'rgba(0,44,95,0.08)', color: '#002C5F' }}>EMAIL</span>
+                    <span className="text-xs font-semibold truncate">{email.subject || '(No Subject)'}</span>
                   </div>
-                  <div className="flex items-center gap-1 shrink-0">
-                    <button onClick={(e) => {
-                      e.stopPropagation();
-                      if (confirmingNoteDelete) { deleteNote(ticketId, note.id); setConfirmDelete(null); }
-                      else { setConfirmDelete(`note-${note.id}`); setTimeout(() => setConfirmDelete(null), 3000); }
-                    }}
-                      className={`text-[10px] px-2 py-1 rounded transition-all ${confirmingNoteDelete ? 'text-neon-red bg-neon-red/10 border border-neon-red/30' : 'text-muted-foreground hover:text-neon-red'}`}>
-                      {confirmingNoteDelete ? 'CONFIRM?' : 'DEL'}
-                    </button>
+                  <div className="text-[10px] text-muted-foreground mt-1 flex items-center gap-2">
+                    <span>FROM: {email.sender_name || email.sender_email || 'Unknown'}</span>
+                    {email.sent_date && <span>| {email.sent_date}</span>}
                   </div>
                 </div>
+                <div className="flex items-center gap-1 shrink-0">
+                  <button onClick={(e) => { e.stopPropagation(); toggleFlow(email.id); }}
+                    className={`text-[10px] px-2 py-1 rounded transition-all ${isExpanded ? 'text-neon-magenta bg-neon-magenta/10' : 'text-muted-foreground hover:text-neon-magenta hover:bg-neon-magenta/10'}`}>
+                    FLOW{steps.length > 0 ? ` (${steps.length})` : ''}
+                  </button>
+                  <button onClick={(e) => { e.stopPropagation(); setAiEmail(email); }}
+                    className="text-[10px] px-2 py-1 rounded transition-all text-muted-foreground hover:text-neon-cyan hover:bg-neon-cyan/10">AI</button>
+                  <button onClick={(e) => {
+                    e.stopPropagation();
+                    if (confirmDelete === email.id) { deleteEmail(ticketId, email.id); setConfirmDelete(null); }
+                    else { setConfirmDelete(email.id); setTimeout(() => setConfirmDelete(null), 3000); }
+                  }}
+                    className={`text-[10px] px-2 py-1 rounded transition-all ${confirmDelete === email.id ? 'text-neon-red bg-neon-red/10 border border-neon-red/30' : 'text-muted-foreground hover:text-neon-red'}`}>
+                    {confirmDelete === email.id ? 'CONFIRM?' : 'DEL'}
+                  </button>
+                </div>
+              </div>
+              {steps.length > 0 && !isExpanded && (
+                <div className="flex items-center gap-2 mt-1.5 flex-wrap">
+                  {steps.map(step => {
+                    const config = STEP_CONFIG[step.step_type];
+                    const isCurrent = !!step.is_current;
+                    return (
+                      <span key={step.id} className={`text-[9px] px-1.5 py-px rounded-sm truncate max-w-[200px] ${isCurrent ? 'font-medium' : 'opacity-60'}`}
+                        style={{ color: config.color, backgroundColor: `${config.color}12`, border: isCurrent ? `1px solid ${config.color}40` : '1px solid transparent' }}>
+                        {config.icon} {step.summary}
+                      </span>
+                    );
+                  })}
+                </div>
+              )}
+            </div>
+          </div>
+          <EmailFlowPanel email={email} ticketId={ticketId} expanded={isExpanded} onToggle={() => toggleFlow(email.id)} />
+        </div>
+      );
+    }
+
+    // Note card
+    const note = item.data as Note;
+    const isNoteActive = activeNote === note.id;
+    const confirmingNoteDelete = confirmDelete === `note-${note.id}`;
+
+    return (
+      <div key={`note-${note.id}`}
+        draggable
+        onDragStart={(e) => { e.dataTransfer.setData('text/plain', dragKey); e.dataTransfer.effectAllowed = 'move'; handleChildDragStart('note', note.id, isChild); }}
+        onDragEnd={handleDragEnd}
+        onDragOver={(e) => { e.preventDefault(); e.dataTransfer.dropEffect = 'move'; setDragOverId(id); }}
+        onDragLeave={() => setDragOverId(null)}
+        onDrop={(e) => { e.preventDefault(); handleCardDrop(); handleDrop('note', id, e.dataTransfer.getData('text/plain')); }}
+        className={`relative glass rounded-lg cursor-grab active:cursor-grabbing transition-all border ${
+          isNoteActive ? 'border-neon-cyan/40 glow-cyan bg-neon-cyan/5'
+          : isDragOver ? 'border-primary/60 bg-primary/5 shadow-md'
+          : 'border-border hover:border-neon-cyan/20'
+        } ${isChild ? 'ml-6' : ''}`}
+        onClick={() => { setActiveNote(isNoteActive ? null : note.id); if (!isNoteActive) { setShowNoteEditor(true); selectEmail(null); } else { setShowNoteEditor(false); } }}>
+        <BookmarkTab type="note" />
+        <div className="flex-1 p-3 pl-5 min-w-0">
+          <div className="flex items-center justify-between">
+            <div className="flex-1 min-w-0">
+              <div className="flex items-center gap-2">
+                <span className="text-[9px] px-1.5 py-0.5 rounded font-medium" style={{ backgroundColor: 'rgba(0,170,210,0.08)', color: '#00AAD2' }}>NOTE</span>
+                <span className="text-xs font-semibold truncate">{note.title}</span>
+              </div>
+              <div className="text-[10px] text-muted-foreground mt-1">
+                {note.content.replace(/<[^>]*>/g, '').substring(0, 80) || 'Empty'}
+                <span className="ml-2">| {note.updated_at?.split(' ')[0] || note.created_at?.split(' ')[0]}</span>
               </div>
             </div>
-          );
-        })}
+            <div className="flex items-center gap-1 shrink-0">
+              <button onClick={(e) => {
+                e.stopPropagation();
+                if (confirmingNoteDelete) { deleteNote(ticketId, note.id); setConfirmDelete(null); }
+                else { setConfirmDelete(`note-${note.id}`); setTimeout(() => setConfirmDelete(null), 3000); }
+              }}
+                className={`text-[10px] px-2 py-1 rounded transition-all ${confirmingNoteDelete ? 'text-neon-red bg-neon-red/10 border border-neon-red/30' : 'text-muted-foreground hover:text-neon-red'}`}>
+                {confirmingNoteDelete ? 'CONFIRM?' : 'DEL'}
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    );
+  };
+
+  // Left-edge drop zone — drop here to detach from parent
+  const handleDetachDrop = async (e: React.DragEvent) => {
+    e.preventDefault();
+    const dragData = e.dataTransfer.getData('text/plain');
+    const parts = dragData.split(':');
+    if (parts.length !== 2) return;
+    const [dragType, dragId] = parts;
+    if (dragType === 'note') {
+      const note = notes.find(n => n.id === dragId);
+      if (note?.parent_email_id) await setNoteParentEmail(ticketId, dragId, null);
+      if (note?.parent_note_id) await setNoteParentNote(ticketId, dragId, null);
+    } else if (dragType === 'email') {
+      const email = emails.find(e => e.id === dragId);
+      if (email?.parent_note_id) await setParentNote(ticketId, dragId, null);
+      if (email?.parent_email_id) await setEmailParentEmail(ticketId, dragId, null);
+    }
+    setDragOverId(null);
+  };
+
+  return (
+    <div className="space-y-3">
+      {/* Unified hierarchical stack */}
+      <div className="space-y-2 relative"
+        onDragOver={(e) => { e.preventDefault(); }}
+        onDrop={handleDetachDrop}>
+        {stackItems.map((item) => (
+          <div key={`group-${item.type}-${item.data.id}`}>
+            {renderCard(item)}
+            {/* Render children indented */}
+            {item.children.length > 0 && (
+              <div className="space-y-1.5 mt-1.5 border-l-2 border-border/40">
+                {item.children.map(child => renderCard(child, true))}
+              </div>
+            )}
+          </div>
+        ))}
       </div>
 
       {/* Email Viewer */}
       {selectedEmail && <EmailViewer email={selectedEmail} ticketId={ticketId} />}
 
-      {/* Note Editor (expanded below when a note is selected) */}
+      {/* Note Editor */}
       {activeNote && showNoteEditor && (
         <NoteEditor ticketId={ticketId} pinned={true} onTogglePin={() => setShowNoteEditor(false)} />
       )}

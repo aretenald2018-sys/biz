@@ -25,6 +25,8 @@ export interface Email {
   body_html: string | null;
   sent_date: string | null;
   parsed_participants: string | null; // JSON string of ParsedParticipant[]
+  parent_note_id: string | null;
+  parent_email_id: string | null;
   created_at: string;
 }
 

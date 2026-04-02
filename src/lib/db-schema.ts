@@ -1,6 +1,6 @@
 import Database from 'better-sqlite3';
 
-const CURRENT_VERSION = 8;
+const CURRENT_VERSION = 12;
 
 export function initSchema(db: Database.Database) {
   db.exec(`
@@ -36,6 +36,18 @@ export function initSchema(db: Database.Database) {
   }
   if (currentVersion < 8) {
     applyV8(db);
+  }
+  if (currentVersion < 9) {
+    applyV9(db);
+  }
+  if (currentVersion < 10) {
+    applyV10(db);
+  }
+  if (currentVersion < 11) {
+    applyV11(db);
+  }
+  if (currentVersion < 12) {
+    applyV12(db);
   }
 }
 
@@ -273,5 +285,57 @@ function applyV8(db: Database.Database) {
     CREATE INDEX IF NOT EXISTS idx_flow_steps_email ON email_flow_steps(email_id);
 
     INSERT INTO schema_version (version) VALUES (8);
+  `);
+}
+
+function applyV9(db: Database.Database) {
+  db.exec(`
+    CREATE TABLE IF NOT EXISTS contract_versions (
+      id TEXT PRIMARY KEY DEFAULT (lower(hex(randomblob(8)))),
+      contract_id TEXT NOT NULL REFERENCES contracts(id) ON DELETE CASCADE,
+      version_number INTEGER NOT NULL DEFAULT 1,
+      change_reason TEXT,
+      transfer_purpose TEXT,
+      transferable_data TEXT,
+      effective_date TEXT,
+      created_at TEXT NOT NULL DEFAULT (datetime('now','localtime')),
+      updated_at TEXT NOT NULL DEFAULT (datetime('now','localtime'))
+    );
+
+    CREATE INDEX IF NOT EXISTS idx_contract_versions_contract ON contract_versions(contract_id);
+
+    ALTER TABLE contracts ADD COLUMN last_activity_at TEXT;
+    ALTER TABLE contract_files ADD COLUMN version_id TEXT REFERENCES contract_versions(id);
+
+    INSERT INTO schema_version (version) VALUES (9);
+  `);
+}
+
+function applyV10(db: Database.Database) {
+  db.exec(`
+    ALTER TABLE notes ADD COLUMN parent_email_id TEXT REFERENCES emails(id) ON DELETE SET NULL;
+    ALTER TABLE emails ADD COLUMN parent_note_id TEXT REFERENCES notes(id) ON DELETE SET NULL;
+    CREATE INDEX IF NOT EXISTS idx_notes_parent_email ON notes(parent_email_id);
+    CREATE INDEX IF NOT EXISTS idx_emails_parent_note ON emails(parent_note_id);
+
+    INSERT INTO schema_version (version) VALUES (10);
+  `);
+}
+
+function applyV11(db: Database.Database) {
+  db.exec(`
+    ALTER TABLE notes ADD COLUMN parent_note_id TEXT REFERENCES notes(id) ON DELETE SET NULL;
+    ALTER TABLE emails ADD COLUMN parent_email_id TEXT REFERENCES emails(id) ON DELETE SET NULL;
+
+    INSERT INTO schema_version (version) VALUES (11);
+  `);
+}
+
+function applyV12(db: Database.Database) {
+  db.exec(`
+    ALTER TABLE contract_versions ADD COLUMN added_domains TEXT;
+    ALTER TABLE contract_versions ADD COLUMN status TEXT NOT NULL DEFAULT 'pending' CHECK(status IN ('pending','completed'));
+
+    INSERT INTO schema_version (version) VALUES (12);
   `);
 }

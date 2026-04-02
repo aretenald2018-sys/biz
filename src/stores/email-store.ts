@@ -9,6 +9,8 @@ interface EmailStore {
   fetchEmails: (ticketId: string) => Promise<void>;
   selectEmail: (email: Email | null) => void;
   uploadEmail: (ticketId: string, file: File) => Promise<void>;
+  setParentNote: (ticketId: string, emailId: string, noteId: string | null) => Promise<void>;
+  setParentEmail: (ticketId: string, emailId: string, parentEmailId: string | null) => Promise<void>;
   deleteEmail: (ticketId: string, emailId: string) => Promise<void>;
 }
 
@@ -41,6 +43,24 @@ export const useEmailStore = create<EmailStore>((set, get) => ({
       body: formData,
     });
 
+    await get().fetchEmails(ticketId);
+  },
+
+  setParentNote: async (ticketId: string, emailId: string, noteId: string | null) => {
+    await fetch(`/api/tickets/${ticketId}/emails/${emailId}`, {
+      method: 'PUT',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ parent_note_id: noteId }),
+    });
+    await get().fetchEmails(ticketId);
+  },
+
+  setParentEmail: async (ticketId: string, emailId: string, parentEmailId: string | null) => {
+    await fetch(`/api/tickets/${ticketId}/emails/${emailId}`, {
+      method: 'PUT',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ parent_email_id: parentEmailId }),
+    });
     await get().fetchEmails(ticketId);
   },
 

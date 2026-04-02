@@ -20,73 +20,93 @@ import {
 } from '@/components/ui/dialog';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
-import type { Contract, ContractFile, DataDomainValue, CreateContractInput } from '@/types/contract';
+import type { Contract, ContractFile, ContractVersion, DataDomainValue, CreateContractInput } from '@/types/contract';
 
-/* ─── File extension → icon with label ─── */
+/* ─── File extension → Hyundai DS style chip ─── */
 function FileIcon({ fileName }: { fileName: string }) {
   const ext = fileName.split('.').pop()?.toLowerCase() || '';
-  const iconMap: Record<string, { bg: string; text: string; label: string }> = {
-    pdf:  { bg: '#E81F2C', text: '#FFFFFF', label: 'PDF' },
-    doc:  { bg: '#002C5F', text: '#FFFFFF', label: 'DOC' },
-    docx: { bg: '#002C5F', text: '#FFFFFF', label: 'DOCX' },
-    xls:  { bg: '#1D7044', text: '#FFFFFF', label: 'XLS' },
-    xlsx: { bg: '#1D7044', text: '#FFFFFF', label: 'XLSX' },
-    csv:  { bg: '#1D7044', text: '#FFFFFF', label: 'CSV' },
-    ppt:  { bg: '#D04423', text: '#FFFFFF', label: 'PPT' },
-    pptx: { bg: '#D04423', text: '#FFFFFF', label: 'PPTX' },
-    zip:  { bg: '#EC8E01', text: '#FFFFFF', label: 'ZIP' },
-    rar:  { bg: '#EC8E01', text: '#FFFFFF', label: 'RAR' },
-    jpg:  { bg: '#7B3FA0', text: '#FFFFFF', label: 'JPG' },
-    jpeg: { bg: '#7B3FA0', text: '#FFFFFF', label: 'JPEG' },
-    png:  { bg: '#7B3FA0', text: '#FFFFFF', label: 'PNG' },
-    txt:  { bg: '#69696E', text: '#FFFFFF', label: 'TXT' },
-    msg:  { bg: '#0672ED', text: '#FFFFFF', label: 'MSG' },
-    eml:  { bg: '#0672ED', text: '#FFFFFF', label: 'EML' },
-    hwp:  { bg: '#00AAD2', text: '#FFFFFF', label: 'HWP' },
-    hwpx: { bg: '#00AAD2', text: '#FFFFFF', label: 'HWPX' },
+  const iconMap: Record<string, { bg: string; fg: string; label: string }> = {
+    pdf:  { bg: '#FDEDEF', fg: '#E81F2C', label: 'PDF' },
+    doc:  { bg: '#EDF2FF', fg: '#002C5F', label: 'DOC' },
+    docx: { bg: '#EDF2FF', fg: '#002C5F', label: 'DOC' },
+    xls:  { bg: '#E8F5E9', fg: '#1D7044', label: 'XLS' },
+    xlsx: { bg: '#E8F5E9', fg: '#1D7044', label: 'XLS' },
+    csv:  { bg: '#E8F5E9', fg: '#1D7044', label: 'CSV' },
+    ppt:  { bg: '#FFF3E0', fg: '#D04423', label: 'PPT' },
+    pptx: { bg: '#FFF3E0', fg: '#D04423', label: 'PPT' },
+    zip:  { bg: '#FFF8E1', fg: '#EC8E01', label: 'ZIP' },
+    rar:  { bg: '#FFF8E1', fg: '#EC8E01', label: 'RAR' },
+    jpg:  { bg: '#F3E5F5', fg: '#7B3FA0', label: 'JPG' },
+    jpeg: { bg: '#F3E5F5', fg: '#7B3FA0', label: 'JPG' },
+    png:  { bg: '#F3E5F5', fg: '#7B3FA0', label: 'PNG' },
+    txt:  { bg: '#FAFAFB', fg: '#69696E', label: 'TXT' },
+    msg:  { bg: '#E3F2FD', fg: '#0672ED', label: 'MSG' },
+    eml:  { bg: '#E3F2FD', fg: '#0672ED', label: 'EML' },
+    hwp:  { bg: '#E0F7FA', fg: '#00809E', label: 'HWP' },
+    hwpx: { bg: '#E0F7FA', fg: '#00809E', label: 'HWP' },
   };
-  const config = iconMap[ext] || { bg: '#929296', text: '#FFFFFF', label: ext.toUpperCase().slice(0, 4) || 'FILE' };
+  const config = iconMap[ext] || { bg: '#FAFAFB', fg: '#69696E', label: ext.toUpperCase().slice(0, 3) || 'FILE' };
   return (
-    <span className="inline-flex items-center justify-center rounded-sm text-[8px] font-bold leading-none shrink-0"
-      style={{ backgroundColor: config.bg, color: config.text, width: '32px', height: '18px', letterSpacing: '0.02em' }}
+    <span className="inline-flex items-center justify-center rounded shrink-0"
+      style={{ backgroundColor: config.bg, color: config.fg, fontSize: '9px', fontWeight: 600, padding: '2px 6px', lineHeight: 1, letterSpacing: '0.03em' }}
       title={fileName}>
       {config.label}
     </span>
   );
 }
 
-/* ─── Data Domain Cell ─── */
-function DomainCell({ value, contractId, field, onUpdate }: {
+/* ─── Data Domain Cell — with pending state support ─── */
+function DomainCell({ value, contractId, field, onUpdate, pending }: {
   value: DataDomainValue;
   contractId: string;
   field: string;
   onUpdate: (id: string, data: Record<string, string>) => void;
+  pending?: boolean;
 }) {
   const cycle = () => {
     const next: Record<DataDomainValue, DataDomainValue> = { 'O': 'X', 'X': 'null', 'null': 'O' };
     onUpdate(contractId, { [field]: next[value] });
   };
 
+  // Pending: entire cell pulses with cyan tint + check icon
+  if (pending && value !== 'O') {
+    return (
+      <td className="px-2 py-2 text-center cursor-pointer" onClick={cycle}
+        style={{ animation: 'domain-pulse 1.5s ease-in-out infinite' }}>
+        <img src="/icons/hyundai/check.svg" alt="진행중" className="w-4 h-4 mx-auto"
+          style={{ filter: 'invert(55%) sepia(70%) saturate(500%) hue-rotate(150deg)' }} />
+      </td>
+    );
+  }
+
   if (value === 'O') {
     return (
       <td className="px-2 py-2 text-center cursor-pointer hover:bg-primary/10 transition-colors" onClick={cycle}>
-        <span className="text-xs font-bold text-foreground">O</span>
+        <img src="/icons/hyundai/check.svg" alt="O" className="w-4 h-4 mx-auto" style={{ filter: 'invert(23%) sepia(85%) saturate(2000%) hue-rotate(190deg)' }} />
       </td>
     );
   }
   if (value === 'X') {
     return (
       <td className="px-2 py-2 text-center cursor-pointer hover:bg-primary/10 transition-colors" onClick={cycle}>
-        <span className="text-xs font-bold text-foreground">X</span>
+        <img src="/icons/hyundai/cancel.svg" alt="X" className="w-4 h-4 mx-auto opacity-40" />
       </td>
     );
   }
   return (
     <td className="px-2 py-2 text-center cursor-pointer hover:bg-primary/10 transition-colors" onClick={cycle}>
-      <span className="text-[10px] text-muted-foreground">데이터없음</span>
+      <img src="/icons/hyundai/minus.svg" alt="-" className="w-3.5 h-3.5 mx-auto opacity-20" />
     </td>
   );
 }
+
+const DOMAIN_FIELDS = [
+  { key: 'vehicle', label: '차량', field: 'data_domain_vehicle' },
+  { key: 'customer', label: '고객', field: 'data_domain_customer' },
+  { key: 'sales', label: '판매', field: 'data_domain_sales' },
+  { key: 'quality', label: '품질', field: 'data_domain_quality' },
+  { key: 'production', label: '생산', field: 'data_domain_production' },
+] as const;
 
 /* ─── File Upload Cell (icon-based) ─── */
 function FileCell({ files, contractId, category, categoryLabel }: {
@@ -272,14 +292,24 @@ function saveWidths(widths: Record<string, number>) {
 const ColumnResizeContext = React.createContext<{
   selected: Set<string>;
   toggleSelect: (name: string, shift: boolean) => void;
+  dragSelect: (name: string) => void;
+  startDragSelect: (name: string) => void;
+  endDragSelect: () => void;
+  isDragging: boolean;
   applyResizeDelta: (delta: number) => void;
-  registerCol: (name: string, setWidth: (w: number | undefined) => void, getWidth: () => number, minW: number) => void;
+  autoFitCol: (name: string) => void;
+  registerCol: (name: string, setWidth: (w: number | undefined) => void, getWidth: () => number, minW: number, thEl: HTMLTableCellElement | null) => void;
   savedWidths: Record<string, number>;
   persistWidth: (name: string, w: number) => void;
 }>({
   selected: new Set(),
   toggleSelect: () => {},
+  dragSelect: () => {},
+  startDragSelect: () => {},
+  endDragSelect: () => {},
+  isDragging: false,
   applyResizeDelta: () => {},
+  autoFitCol: () => {},
   registerCol: () => {},
   savedWidths: {},
   persistWidth: () => {},
@@ -287,7 +317,8 @@ const ColumnResizeContext = React.createContext<{
 
 function ColumnResizeProvider({ children }: { children: React.ReactNode }) {
   const [selected, setSelected] = useState<Set<string>>(new Set());
-  const colsRef = useRef<Map<string, { setWidth: (w: number | undefined) => void; getWidth: () => number; minW: number }>>(new Map());
+  const [isDragging, setIsDragging] = useState(false);
+  const colsRef = useRef<Map<string, { setWidth: (w: number | undefined) => void; getWidth: () => number; minW: number; thEl: HTMLTableCellElement | null }>>(new Map());
   const [savedWidths, setSavedWidths] = useState<Record<string, number>>({});
 
   useEffect(() => { setSavedWidths(loadSavedWidths()); }, []);
@@ -299,6 +330,28 @@ function ColumnResizeProvider({ children }: { children: React.ReactNode }) {
       return next;
     });
   }, []);
+
+  // Drag select: mouse down on one header, drag across others
+  const startDragSelect = useCallback((name: string) => {
+    setIsDragging(true);
+    setSelected(new Set([name]));
+  }, []);
+
+  const dragSelect = useCallback((name: string) => {
+    if (!isDragging) return;
+    setSelected(prev => { const next = new Set(prev); next.add(name); return next; });
+  }, [isDragging]);
+
+  const endDragSelect = useCallback(() => {
+    setIsDragging(false);
+  }, []);
+
+  // Listen for global mouseup to end drag
+  useEffect(() => {
+    const handler = () => { if (isDragging) setIsDragging(false); };
+    document.addEventListener('mouseup', handler);
+    return () => document.removeEventListener('mouseup', handler);
+  }, [isDragging]);
 
   const persistWidth = useCallback((name: string, w: number) => {
     setSavedWidths(prev => {
@@ -319,12 +372,58 @@ function ColumnResizeProvider({ children }: { children: React.ReactNode }) {
     });
   }, [selected, persistWidth]);
 
-  const registerCol = useCallback((name: string, setWidth: (w: number | undefined) => void, getWidth: () => number, minW: number) => {
-    colsRef.current.set(name, { setWidth, getWidth, minW });
+  // Auto-fit: measure max content width in column, shrink to fit
+  const autoFitCol = useCallback((name: string) => {
+    const col = colsRef.current.get(name);
+    if (!col || !col.thEl) return;
+    const table = col.thEl.closest('table');
+    if (!table) return;
+    const colIndex = Array.from(col.thEl.parentElement!.children).indexOf(col.thEl);
+    let maxW = col.minW;
+    // Measure all cells in this column
+    table.querySelectorAll('tbody tr').forEach(row => {
+      const cell = row.children[colIndex] as HTMLElement;
+      if (cell) {
+        // Temporarily set width to auto to measure natural width
+        const text = cell.textContent || '';
+        maxW = Math.max(maxW, Math.min(text.length * 8 + 24, 300));
+      }
+    });
+    // Also measure header text
+    const headerText = col.thEl.textContent || '';
+    maxW = Math.max(maxW, headerText.length * 8 + 32);
+    col.setWidth(maxW);
+    persistWidth(name, maxW);
+
+    // If multiple selected, auto-fit all
+    if (selected.has(name) && selected.size > 1) {
+      selected.forEach(n => {
+        if (n !== name) {
+          const c = colsRef.current.get(n);
+          if (c && c.thEl) {
+            const t = c.thEl.closest('table');
+            if (!t) return;
+            const ci = Array.from(c.thEl.parentElement!.children).indexOf(c.thEl);
+            let mw = c.minW;
+            t.querySelectorAll('tbody tr').forEach(row => {
+              const cell = row.children[ci] as HTMLElement;
+              if (cell) mw = Math.max(mw, Math.min((cell.textContent || '').length * 8 + 24, 300));
+            });
+            mw = Math.max(mw, (c.thEl.textContent || '').length * 8 + 32);
+            c.setWidth(mw);
+            persistWidth(n, mw);
+          }
+        }
+      });
+    }
+  }, [selected, persistWidth]);
+
+  const registerCol = useCallback((name: string, setWidth: (w: number | undefined) => void, getWidth: () => number, minW: number, thEl: HTMLTableCellElement | null) => {
+    colsRef.current.set(name, { setWidth, getWidth, minW, thEl });
   }, []);
 
   return (
-    <ColumnResizeContext.Provider value={{ selected, toggleSelect, applyResizeDelta, registerCol, savedWidths, persistWidth }}>
+    <ColumnResizeContext.Provider value={{ selected, toggleSelect, dragSelect, startDragSelect, endDragSelect, isDragging, applyResizeDelta, autoFitCol, registerCol, savedWidths, persistWidth }}>
       {children}
     </ColumnResizeContext.Provider>
   );
@@ -337,23 +436,23 @@ function ResizableTh({ children, className, minWidth = 40, colName }: {
   minWidth?: number;
   colName: string;
 }) {
-  const { selected, toggleSelect, applyResizeDelta, registerCol, savedWidths, persistWidth } = React.useContext(ColumnResizeContext);
+  const { selected, toggleSelect, dragSelect, startDragSelect, endDragSelect, isDragging, applyResizeDelta, autoFitCol, registerCol, savedWidths, persistWidth } = React.useContext(ColumnResizeContext);
   const [width, setWidth] = useState<number | undefined>(savedWidths[colName] || undefined);
   const thRef = useRef<HTMLTableCellElement>(null);
   const startX = useRef(0);
   const startW = useRef(0);
   const isSelected = selected.has(colName);
 
-  // Restore saved width on mount
   useEffect(() => {
     if (savedWidths[colName]) setWidth(savedWidths[colName]);
   }, [savedWidths, colName]);
 
   useEffect(() => {
-    registerCol(colName, setWidth, () => thRef.current?.offsetWidth || 80, minWidth);
+    registerCol(colName, setWidth, () => thRef.current?.offsetWidth || 80, minWidth, thRef.current);
   }, [colName, minWidth, registerCol]);
 
-  const onMouseDown = useCallback((e: React.MouseEvent) => {
+  // Resize handle: drag to resize, double-click to auto-fit
+  const onResizeMouseDown = useCallback((e: React.MouseEvent) => {
     e.preventDefault();
     e.stopPropagation();
     startX.current = e.clientX;
@@ -373,7 +472,6 @@ function ResizableTh({ children, className, minWidth = 40, colName }: {
     const onMouseUp = () => {
       document.removeEventListener('mousemove', onMouseMove);
       document.removeEventListener('mouseup', onMouseUp);
-      // Persist single column resize
       if (!resizeMultiple && thRef.current) {
         persistWidth(colName, thRef.current.offsetWidth);
       }
@@ -382,19 +480,41 @@ function ResizableTh({ children, className, minWidth = 40, colName }: {
     document.addEventListener('mouseup', onMouseUp);
   }, [minWidth, isSelected, selected.size, applyResizeDelta, colName, persistWidth]);
 
-  const handleHeaderClick = useCallback((e: React.MouseEvent) => {
-    // Only toggle select on direct header text click, not resize handle
-    toggleSelect(colName, e.shiftKey);
-  }, [colName, toggleSelect]);
+  // Double-click on resize handle: auto-fit to content
+  const onResizeDoubleClick = useCallback((e: React.MouseEvent) => {
+    e.preventDefault();
+    e.stopPropagation();
+    autoFitCol(colName);
+  }, [colName, autoFitCol]);
+
+  // Header mousedown: start drag-select
+  const onHeaderMouseDown = useCallback((e: React.MouseEvent) => {
+    if (e.shiftKey) {
+      toggleSelect(colName, true);
+    } else {
+      startDragSelect(colName);
+    }
+  }, [colName, toggleSelect, startDragSelect]);
+
+  // Header mouseenter during drag: extend selection
+  const onHeaderMouseEnter = useCallback(() => {
+    if (isDragging) {
+      dragSelect(colName);
+    }
+  }, [colName, isDragging, dragSelect]);
 
   return (
-    <th ref={thRef} className={`${className} cursor-pointer select-none`}
+    <th ref={thRef} className={`${className} select-none`}
       style={width ? { width, minWidth } : undefined}
-      onMouseDown={handleHeaderClick}>
-      <div className="flex items-center justify-between gap-1">
+      onMouseDown={onHeaderMouseDown}
+      onMouseEnter={onHeaderMouseEnter}
+      onMouseUp={endDragSelect}>
+      <div className="flex items-center justify-between gap-1 cursor-default">
         <span className={`truncate ${isSelected ? 'text-primary font-bold' : ''}`}>{children}</span>
-        <div onMouseDown={onMouseDown}
-          className={`w-1.5 h-full min-h-[16px] cursor-col-resize rounded flex-shrink-0 transition-colors ${
+        <div
+          onMouseDown={onResizeMouseDown}
+          onDoubleClick={onResizeDoubleClick}
+          className={`w-2 h-full min-h-[16px] cursor-col-resize rounded flex-shrink-0 transition-colors ${
             isSelected ? 'bg-primary/60 hover:bg-primary' : 'bg-transparent hover:bg-primary/40'
           }`} />
       </div>
@@ -474,14 +594,60 @@ function NewContractDialog({ open, onOpenChange }: { open: boolean; onOpenChange
 /* ─── Main Contracts Page ─── */
 export default function ContractsPage() {
   const {
-    contracts, loading, searchQuery, searchResult, searchLoading,
+    contracts, versions, loading, searchQuery, searchResult, searchLoading,
     fetchContracts, updateContract, deleteContract, importCSV,
-    searchContracts, setSearchQuery,
+    searchContracts, setSearchQuery, fetchVersions, createVersion, updateVersion,
   } = useContractStore();
 
   const [newOpen, setNewOpen] = useState(false);
   const [deleteConfirm, setDeleteConfirm] = useState<string | null>(null);
+  const [expandedRows, setExpandedRows] = useState<Set<string>>(new Set());
+  const [addingVersion, setAddingVersion] = useState<string | null>(null);
+  const [versionForm, setVersionForm] = useState({ change_reason: '', transfer_purpose: '', transferable_data: '', effective_date: '', added_domains: [] as string[] });
   const importRef = useRef<HTMLInputElement>(null);
+
+  const toggleRowExpand = (contractId: string) => {
+    setExpandedRows(prev => {
+      const next = new Set(prev);
+      if (next.has(contractId)) { next.delete(contractId); } else { next.add(contractId); fetchVersions(contractId); }
+      return next;
+    });
+  };
+
+  const handleCreateVersion = async (contractId: string) => {
+    await createVersion(contractId, versionForm);
+    setAddingVersion(null);
+    setVersionForm({ change_reason: '', transfer_purpose: '', transferable_data: '', effective_date: '', added_domains: [] });
+  };
+
+  // Get pending domains for a contract (from in-progress versions)
+  const getPendingDomains = (contractId: string): Set<string> => {
+    const vers = versions[contractId] || [];
+    const pending = new Set<string>();
+    vers.forEach(v => {
+      if (v.status === 'pending' && v.added_domains) {
+        try {
+          const domains: string[] = typeof v.added_domains === 'string' ? JSON.parse(v.added_domains) : v.added_domains;
+          domains.forEach(d => pending.add(d));
+        } catch {}
+      }
+    });
+    return pending;
+  };
+
+  // Check if contract has any pending version
+  const hasPendingVersion = (contractId: string): boolean => {
+    return (versions[contractId] || []).some(v => v.status === 'pending');
+  };
+
+  // Check if contract was active in last 6 months
+  const isRecentlyActive = (contract: Contract) => {
+    const activity = contract.last_activity_at || contract.updated_at;
+    if (!activity) return false;
+    const sixMonthsAgo = new Date();
+    sixMonthsAgo.setMonth(sixMonthsAgo.getMonth() - 6);
+    return new Date(activity) > sixMonthsAgo;
+  };
 
   // Checkbox filters — empty Set means "all selected"
   const [filterRegions, setFilterRegions] = useState<Set<string>>(new Set());
@@ -638,49 +804,271 @@ export default function ContractsPage() {
                   <ResizableTh colName="final_contract" className={`${thBase} text-center border-l border-border`} minWidth={60}>최종계약서</ResizableTh>
                   <ResizableTh colName="related_doc" className={`${thBase} text-center`} minWidth={60}>관련문서</ResizableTh>
                   <ResizableTh colName="correspondence" className={`${thBase} text-center`} minWidth={60}>교신내역</ResizableTh>
-                  <ResizableTh colName="transfer_purpose" className={`${thBase} border-l border-border`} minWidth={80}>이전가능 목적</ResizableTh>
-                  <ResizableTh colName="transferable_data" className={thBase} minWidth={80}>이전가능 데이터</ResizableTh>
+                  <ResizableTh colName="transfer_purpose" className={`${thBase} border-l border-border`} minWidth={80}>이전목적 (전문)</ResizableTh>
+                  <ResizableTh colName="transferable_data" className={thBase} minWidth={80}>이전데이터 (전문)</ResizableTh>
                   <th className={`${thBase} text-center`} style={{ width: 30 }}></th>
                 </tr>
               </thead>
               <tbody>
-                {Object.entries(grouped).map(([region, regionContracts]) => (
-                  regionContracts.map((contract, idx) => (
-                    <tr key={contract.id} className="border-b border-border hover:bg-muted/10 transition-colors">
-                      {idx === 0 ? (
-                        <td className="px-2 py-2 text-foreground font-medium sticky left-0 bg-card z-10 text-[11px]" rowSpan={regionContracts.length}>
-                          {region}
+                {Object.entries(grouped).map(([region, regionContracts]) => {
+                  // Count total rows including expanded versions for rowSpan
+                  let regionRowCount = regionContracts.length;
+                  regionContracts.forEach(c => {
+                    if (expandedRows.has(c.id)) {
+                      regionRowCount += (versions[c.id]?.length || 0) + 1; // +1 for add button row
+                    }
+                  });
+
+                  let regionRowRendered = 0;
+                  return regionContracts.map((contract, idx) => {
+                    const isExpanded = expandedRows.has(contract.id);
+                    const contractVersions = versions[contract.id] || [];
+                    const active = isRecentlyActive(contract);
+                    const rows = [];
+
+                    // Main row
+                    rows.push(
+                      <tr key={contract.id}
+                        className={`border-b hover:bg-muted/10 transition-colors cursor-pointer ${active ? 'relative' : ''}`}
+                        style={{ borderColor: hasPendingVersion(contract.id) ? '#00AAD2' : undefined, borderStyle: hasPendingVersion(contract.id) ? 'dashed' : undefined }}
+                        onClick={() => toggleRowExpand(contract.id)}>
+                        {idx === 0 ? (
+                          <td className="px-2 py-2 text-foreground font-medium sticky left-0 bg-card z-10 text-[11px]" rowSpan={regionRowCount}>
+                            {region}
+                          </td>
+                        ) : null}
+                        <td className="px-2 py-2 text-foreground text-[11px]">
+                          <div className="flex items-center gap-1.5">
+                            {/* Activity indicator — 6 month bar */}
+                            {active && <div className="w-[3px] h-4 rounded-full bg-primary shrink-0" title="최근 6개월 이내 작업" />}
+                            {/* Expand arrow */}
+                            <span className="text-[9px] text-muted-foreground shrink-0">{isExpanded ? '▾' : '▸'}</span>
+                            {contract.country}
+                          </div>
                         </td>
-                      ) : null}
-                      <td className="px-2 py-2 text-foreground text-[11px]">{contract.country}</td>
-                      <td className="px-2 py-2 text-primary font-medium text-[11px]">{contract.entity_code}</td>
-                      <td className="px-2 py-2 text-foreground text-[11px]">{contract.brand}</td>
-                      <td className="px-2 py-2 text-foreground text-[11px]">{contract.entity_name}</td>
-                      <DomainCell value={contract.data_domain_vehicle} contractId={contract.id} field="data_domain_vehicle" onUpdate={updateContract} />
-                      <DomainCell value={contract.data_domain_customer} contractId={contract.id} field="data_domain_customer" onUpdate={updateContract} />
-                      <DomainCell value={contract.data_domain_sales} contractId={contract.id} field="data_domain_sales" onUpdate={updateContract} />
-                      <DomainCell value={contract.data_domain_quality} contractId={contract.id} field="data_domain_quality" onUpdate={updateContract} />
-                      <DomainCell value={contract.data_domain_production} contractId={contract.id} field="data_domain_production" onUpdate={updateContract} />
-                      <td className="px-2 py-2 text-center text-foreground text-[10px] border-l border-border">
-                        {contract.contract_status || <span className="text-muted-foreground">—</span>}
-                      </td>
-                      <FileCell files={contract.files || []} contractId={contract.id} category="final_contract" categoryLabel="계약서" />
-                      <FileCell files={contract.files || []} contractId={contract.id} category="related_document" categoryLabel="문서" />
-                      <FileCell files={contract.files || []} contractId={contract.id} category="correspondence" categoryLabel="교신" />
-                      <TransferInfoCell contract={contract} field="transfer_purpose" label="이전가능 목적" />
-                      <TransferInfoCell contract={contract} field="transferable_data" label="이전가능 데이터" />
-                      <td className="px-1 py-2 text-center">
-                        {deleteConfirm === contract.id ? (
-                          <button onClick={() => { deleteContract(contract.id); setDeleteConfirm(null); }}
-                            className="text-[9px] text-destructive">?</button>
-                        ) : (
-                          <button onClick={() => { setDeleteConfirm(contract.id); setTimeout(() => setDeleteConfirm(null), 3000); }}
-                            className="text-[9px] text-muted-foreground hover:text-destructive">✕</button>
-                        )}
-                      </td>
-                    </tr>
-                  ))
-                ))}
+                        <td className="px-2 py-2 text-primary font-medium text-[11px]">{contract.entity_code}</td>
+                        <td className="px-2 py-2 text-foreground text-[11px]">{contract.brand}</td>
+                        <td className="px-2 py-2 text-foreground text-[11px]">{contract.entity_name}</td>
+                        {(() => { const pd = getPendingDomains(contract.id); return (<>
+                        <DomainCell value={contract.data_domain_vehicle} contractId={contract.id} field="data_domain_vehicle" onUpdate={updateContract} pending={pd.has('vehicle')} />
+                        <DomainCell value={contract.data_domain_customer} contractId={contract.id} field="data_domain_customer" onUpdate={updateContract} pending={pd.has('customer')} />
+                        <DomainCell value={contract.data_domain_sales} contractId={contract.id} field="data_domain_sales" onUpdate={updateContract} pending={pd.has('sales')} />
+                        <DomainCell value={contract.data_domain_quality} contractId={contract.id} field="data_domain_quality" onUpdate={updateContract} pending={pd.has('quality')} />
+                        <DomainCell value={contract.data_domain_production} contractId={contract.id} field="data_domain_production" onUpdate={updateContract} pending={pd.has('production')} />
+                        </>); })()}
+                        <td className="px-2 py-2 text-center text-foreground text-[10px] border-l border-border">
+                          {contract.contract_status || <span className="text-muted-foreground">—</span>}
+                        </td>
+                        <FileCell files={(contract.files || []).filter(f => !f.version_id)} contractId={contract.id} category="final_contract" categoryLabel="계약서" />
+                        <FileCell files={(contract.files || []).filter(f => !f.version_id)} contractId={contract.id} category="related_document" categoryLabel="문서" />
+                        <FileCell files={(contract.files || []).filter(f => !f.version_id)} contractId={contract.id} category="correspondence" categoryLabel="교신" />
+                        <TransferInfoCell contract={contract} field="transfer_purpose" label="이전목적 전문 (계약서 원문)" />
+                        <TransferInfoCell contract={contract} field="transferable_data" label="이전데이터 전문 (계약서 원문)" />
+                        <td className="px-1 py-2 text-center" onClick={(e) => e.stopPropagation()}>
+                          {deleteConfirm === contract.id ? (
+                            <button onClick={() => { deleteContract(contract.id); setDeleteConfirm(null); }}
+                              className="text-[9px] text-destructive">?</button>
+                          ) : (
+                            <button onClick={() => { setDeleteConfirm(contract.id); setTimeout(() => setDeleteConfirm(null), 3000); }}
+                              className="text-[9px] text-muted-foreground hover:text-destructive">✕</button>
+                          )}
+                        </td>
+                      </tr>
+                    );
+
+                    // Version rows (if expanded)
+                    if (isExpanded) {
+                      contractVersions.forEach(ver => {
+                        const verDomains: string[] = ver.added_domains ? (typeof ver.added_domains === 'string' ? JSON.parse(ver.added_domains) : ver.added_domains) : [];
+                        const isPending = ver.status === 'pending';
+                        const isVerSelected = expandedRows.has(`ver-${ver.id}`);
+                        const isEditingVer = addingVersion === `edit-${ver.id}`;
+                        const chipBg = 'rgba(0,44,95,0.05)';
+                        const chipColor = '#3A3A3C';
+
+                        // Comma-joined domain label
+                        const domainLabel = verDomains.map(d => DOMAIN_FIELDS.find(f => f.key === d)?.label || d).join(', ');
+
+                        rows.push(
+                          <tr key={`ver-${ver.id}`}
+                            className="border-b border-border bg-muted/5 cursor-pointer hover:bg-muted/10 transition-colors"
+                            style={isPending ? { borderLeft: '3px solid #00AAD2' } : undefined}
+                            onClick={(e) => { e.stopPropagation(); setExpandedRows(prev => { const n = new Set(prev); const k = `ver-${ver.id}`; n.has(k) ? n.delete(k) : n.add(k); return n; }); }}>
+                            <td colSpan={17} className="px-2 py-3 text-[11px]">
+                              <div className="pl-6 space-y-1">
+                                {/* Row 1: badge + date + reason + chips + files — all one line */}
+                                <div className="flex items-center gap-2 flex-wrap text-[11px]">
+                                  <span className={`text-[10px] px-2 py-0.5 rounded font-medium shrink-0 ${isPending ? 'border border-dashed' : 'bg-primary/10 text-primary'}`}
+                                    style={isPending ? { borderColor: '#00AAD2', color: '#00AAD2' } : undefined}>
+                                    v{ver.version_number}{isPending ? ' 진행중' : ''}
+                                  </span>
+                                  <span className="text-muted-foreground shrink-0">{ver.effective_date || ver.created_at?.split(' ')[0]}</span>
+                                  {ver.change_reason && <span className="text-foreground/70 truncate max-w-[180px]">{ver.change_reason}</span>}
+                                  {domainLabel && (
+                                    <span className="inline-flex items-center gap-1 shrink-0">
+                                      <span className="text-[10px] text-muted-foreground">카테고리</span>
+                                      <span className="px-2 py-0.5 rounded" style={{ backgroundColor: chipBg, color: chipColor }}>{domainLabel}</span>
+                                    </span>
+                                  )}
+                                  {ver.transfer_purpose && (
+                                    <span className="inline-flex items-center gap-1 shrink-0">
+                                      <span className="text-[10px] text-muted-foreground">목적</span>
+                                      <span className="px-2 py-0.5 rounded" style={{ backgroundColor: chipBg, color: chipColor }}>{ver.transfer_purpose}</span>
+                                    </span>
+                                  )}
+                                  {ver.transferable_data && (
+                                    <span className="inline-flex items-center gap-1 shrink-0">
+                                      <span className="text-[10px] text-muted-foreground">데이터</span>
+                                      <span className="px-2 py-0.5 rounded" style={{ backgroundColor: chipBg, color: chipColor }}>{ver.transferable_data}</span>
+                                    </span>
+                                  )}
+                                  {ver.files && ver.files.length > 0 && ver.files.map(f => (
+                                    <a key={f.id} href={`/api/contracts/files/${f.id}`} download={f.file_name}
+                                      className="hover:opacity-70 shrink-0" onClick={(e) => e.stopPropagation()}>
+                                      <FileIcon fileName={f.file_name} />
+                                    </a>
+                                  ))}
+                                  <label className="text-[10px] text-muted-foreground hover:text-primary cursor-pointer transition-colors shrink-0" onClick={(e) => e.stopPropagation()}>
+                                    + 파일
+                                    <input type="file" className="hidden" onChange={async (e) => {
+                                      const file = e.target.files?.[0];
+                                      if (!file) return;
+                                      const fd = new FormData();
+                                      fd.append('file', file);
+                                      fd.append('category', 'final_contract');
+                                      fd.append('version_id', ver.id);
+                                      await fetch(`/api/contracts/${contract.id}/files`, { method: 'POST', body: fd });
+                                      fetchVersions(contract.id);
+                                      e.target.value = '';
+                                    }} />
+                                  </label>
+                                </div>
+
+                                {/* Row 2: actions */}
+                                {!isEditingVer && (
+                                  <div className="flex items-center gap-0" onClick={(e) => e.stopPropagation()}>
+                                    {isPending && (<>
+                                      <button onClick={() => {
+                                        if (confirm('이 버전을 확정하시겠습니까? 확정 후 해당 도메인이 O로 갱신됩니다.')) {
+                                          updateVersion(contract.id, ver.id, { status: 'completed' });
+                                        }
+                                      }}
+                                        className="text-[10px] text-primary font-medium hover:underline px-1.5 py-0.5">확정</button>
+                                      <span className="text-[10px] text-muted-foreground/30 px-0.5">|</span>
+                                    </>)}
+                                    <button onClick={() => {
+                                      setAddingVersion(`edit-${ver.id}`);
+                                      setVersionForm({ change_reason: ver.change_reason || '', transfer_purpose: ver.transfer_purpose || '', transferable_data: ver.transferable_data || '', effective_date: ver.effective_date || '', added_domains: verDomains });
+                                    }}
+                                      className="text-[10px] text-muted-foreground hover:text-foreground hover:underline px-1.5 py-0.5">수정</button>
+                                    <span className="text-[10px] text-muted-foreground/30 px-0.5">|</span>
+                                    <button onClick={() => {
+                                      if (confirm('이 버전을 삭제하시겠습니까?') && confirm('삭제된 데이터는 복구할 수 없습니다. 정말 삭제하시겠습니까?')) {
+                                        fetch(`/api/contracts/${contract.id}/versions?version_id=${ver.id}`, { method: 'DELETE' }).then(() => { fetchVersions(contract.id); fetchContracts(); });
+                                      }
+                                    }}
+                                      className="text-[10px] text-muted-foreground hover:text-destructive hover:underline px-1.5 py-0.5">삭제</button>
+                                  </div>
+                                )}
+
+                                {/* Inline edit form — appears below content when editing */}
+                                {isEditingVer && (
+                                  <div className="pt-2 mt-2 border-t border-border space-y-2 max-w-xl" onClick={(e) => e.stopPropagation()}>
+                                    <div className="grid grid-cols-2 gap-2">
+                                      <input value={versionForm.change_reason} onChange={(e) => setVersionForm({ ...versionForm, change_reason: e.target.value })}
+                                        placeholder="변경 사유" className="bg-background border border-border rounded px-2 py-1.5 text-[11px] text-foreground" />
+                                      <input value={versionForm.effective_date} onChange={(e) => setVersionForm({ ...versionForm, effective_date: e.target.value })}
+                                        placeholder="시행일 (YYYY-MM-DD)" className="bg-background border border-border rounded px-2 py-1.5 text-[11px] text-foreground" />
+                                    </div>
+                                    <div className="flex items-center gap-3 flex-wrap">
+                                      <span className="text-[10px] text-muted-foreground">추가 카테고리</span>
+                                      {[...DOMAIN_FIELDS, { key: 'etc', label: '기타', field: '' }].map(d => (
+                                        <label key={d.key} className="flex items-center gap-1 cursor-pointer">
+                                          <input type="checkbox" checked={versionForm.added_domains.includes(d.key)}
+                                            onChange={(e) => setVersionForm({ ...versionForm, added_domains: e.target.checked ? [...versionForm.added_domains, d.key] : versionForm.added_domains.filter(x => x !== d.key) })}
+                                            className="w-3 h-3 rounded accent-primary" />
+                                          <span className="text-[11px]">{d.label}</span>
+                                        </label>
+                                      ))}
+                                    </div>
+                                    <input value={versionForm.transfer_purpose} onChange={(e) => setVersionForm({ ...versionForm, transfer_purpose: e.target.value })}
+                                      placeholder="이전목적 요약" className="w-full bg-background border border-border rounded px-2 py-1.5 text-[11px] text-foreground" />
+                                    <input value={versionForm.transferable_data} onChange={(e) => setVersionForm({ ...versionForm, transferable_data: e.target.value })}
+                                      placeholder="이전데이터 요약" className="w-full bg-background border border-border rounded px-2 py-1.5 text-[11px] text-foreground" />
+                                    <div className="flex gap-2">
+                                      <button onClick={async () => {
+                                        await fetch(`/api/contracts/${contract.id}/versions`, {
+                                          method: 'PUT', headers: { 'Content-Type': 'application/json' },
+                                          body: JSON.stringify({ version_id: ver.id, ...versionForm, added_domains: versionForm.added_domains }),
+                                        });
+                                        fetchVersions(contract.id); fetchContracts();
+                                        setAddingVersion(null);
+                                        setVersionForm({ change_reason: '', transfer_purpose: '', transferable_data: '', effective_date: '', added_domains: [] });
+                                      }}
+                                        className="text-[11px] px-3 py-1.5 rounded bg-primary text-primary-foreground hover:opacity-90 font-medium">저장</button>
+                                      <button onClick={() => setAddingVersion(null)}
+                                        className="text-[11px] px-3 py-1.5 rounded border border-border text-muted-foreground hover:bg-muted/30 font-medium">취소</button>
+                                    </div>
+                                  </div>
+                                )}
+                              </div>
+                            </td>
+                          </tr>
+                        );
+                      });
+
+                      // Add version button row
+                      rows.push(
+                        <tr key={`add-ver-${contract.id}`} className="border-b border-border bg-muted/5">
+                          <td colSpan={17} className="px-2 py-1" onClick={(e) => e.stopPropagation()}>
+                            {addingVersion === contract.id ? (
+                              <div className="pl-6 py-2 space-y-2 max-w-xl">
+                                <div className="grid grid-cols-2 gap-2">
+                                  <input value={versionForm.change_reason} onChange={(e) => setVersionForm({ ...versionForm, change_reason: e.target.value })}
+                                    placeholder="변경 사유" className="bg-background border border-border rounded px-2 py-1 text-[10px] text-foreground" />
+                                  <input value={versionForm.effective_date} onChange={(e) => setVersionForm({ ...versionForm, effective_date: e.target.value })}
+                                    placeholder="시행일 (YYYY-MM-DD)" className="bg-background border border-border rounded px-2 py-1 text-[10px] text-foreground" />
+                                </div>
+                                {/* Domain checkboxes */}
+                                <div className="flex items-center gap-3">
+                                  <span className="text-[9px] text-muted-foreground">추가 데이터:</span>
+                                  {[...DOMAIN_FIELDS, { key: 'etc', label: '기타', field: '' }].map(d => (
+                                    <label key={d.key} className="flex items-center gap-1 cursor-pointer">
+                                      <input type="checkbox" checked={versionForm.added_domains.includes(d.key)}
+                                        onChange={(e) => {
+                                          const next = e.target.checked
+                                            ? [...versionForm.added_domains, d.key]
+                                            : versionForm.added_domains.filter(x => x !== d.key);
+                                          setVersionForm({ ...versionForm, added_domains: next });
+                                        }}
+                                        className="w-3 h-3 rounded border-border accent-primary" />
+                                      <span className="text-[10px] text-foreground">{d.label}</span>
+                                    </label>
+                                  ))}
+                                </div>
+                                <input value={versionForm.transfer_purpose} onChange={(e) => setVersionForm({ ...versionForm, transfer_purpose: e.target.value })}
+                                  placeholder="이전목적 요약 (예: 고객 마케팅 분석)" className="w-full bg-background border border-border rounded px-2 py-1 text-[10px] text-foreground" />
+                                <input value={versionForm.transferable_data} onChange={(e) => setVersionForm({ ...versionForm, transferable_data: e.target.value })}
+                                  placeholder="이전데이터 요약 (예: 고객명, 연락처, 구매이력)" className="w-full bg-background border border-border rounded px-2 py-1 text-[10px] text-foreground" />
+                                <div className="flex gap-1">
+                                  <Button onClick={() => handleCreateVersion(contract.id)} className="text-[10px] h-6 px-2 bg-primary/20 text-primary border border-primary/30">저장</Button>
+                                  <Button onClick={() => setAddingVersion(null)} variant="ghost" className="text-[10px] h-6 px-2 text-muted-foreground">취소</Button>
+                                </div>
+                              </div>
+                            ) : (
+                              <button onClick={() => setAddingVersion(contract.id)}
+                                className="pl-6 text-[9px] text-muted-foreground hover:text-primary transition-colors py-1">
+                                + 수정계약 추가
+                              </button>
+                            )}
+                          </td>
+                        </tr>
+                      );
+                    }
+
+                    return rows;
+                  });
+                })}
               </tbody>
             </table>
           </div>
