@@ -160,7 +160,10 @@
 
 @keyframes file-pending-pulse {
   0%, 100% { opacity: 1; }
-  50% { opacity: 0.3; }
+  50% { opacity: 0.25; }
+}
+.file-pending-blink {
+  animation: file-pending-pulse 0.8s ease-in-out infinite;
 }
 
 @keyframes domain-pulse {
