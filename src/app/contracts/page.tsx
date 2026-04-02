@@ -118,27 +118,45 @@ const DOMAIN_FIELDS = [
 ] as const;
 
 /* ─── File Upload Cell (icon-based) ─── */
-function FileCell({ files, contractId, category, categoryLabel }: {
+function FileCell({ files, contractId, category, categoryLabel, completedVersionFiles }: {
   files: ContractFile[];
   contractId: string;
   category: 'final_contract' | 'related_document' | 'correspondence';
   categoryLabel: string;
+  completedVersionFiles?: { file: ContractFile; versionNumber: number }[];
 }) {
   const { uploadFile, deleteFile } = useContractStore();
   const fileRef = useRef<HTMLInputElement>(null);
-  const categoryFiles = files.filter(f => f.file_category === category);
+  // Original files (no version_id)
+  const originalFiles = files.filter(f => f.file_category === category && !f.version_id);
+  // Completed version files for this category
+  const versionFiles = (completedVersionFiles || []).filter(vf => vf.file.file_category === category);
 
   return (
     <td className="px-2 py-2">
       <div className="flex items-center gap-1 flex-wrap">
-        {categoryFiles.map(f => (
+        {originalFiles.map(f => (
           <div key={f.id} className="relative group inline-flex">
             <a href={`/api/contracts/files/${f.id}`} download={f.file_name}
-              title={f.file_name} className="hover:opacity-70 transition-opacity">
-              <FileIcon fileName={f.file_name} />
+              title={`${f.file_name} (원본)`} className="hover:opacity-70 transition-opacity">
+              <span className="inline-flex flex-col items-center">
+                <FileIcon fileName={f.file_name} />
+                <span className="text-[7px] text-muted-foreground leading-none mt-0.5">원본</span>
+              </span>
             </a>
             <button onClick={() => deleteFile(f.id)}
               className="absolute -top-1 -right-1 hidden group-hover:flex items-center justify-center w-3 h-3 rounded-full bg-destructive text-white text-[7px] leading-none">✕</button>
+          </div>
+        ))}
+        {versionFiles.map(vf => (
+          <div key={vf.file.id} className="relative group inline-flex">
+            <a href={`/api/contracts/files/${vf.file.id}`} download={vf.file.file_name}
+              title={`${vf.file.file_name} (v${vf.versionNumber})`} className="hover:opacity-70 transition-opacity">
+              <span className="inline-flex flex-col items-center">
+                <FileIcon fileName={vf.file.file_name} />
+                <span className="text-[7px] text-muted-foreground leading-none mt-0.5">v{vf.versionNumber}</span>
+              </span>
+            </a>
           </div>
         ))}
         <label className="inline-flex items-center justify-center w-5 h-5 rounded border border-dashed border-border text-[10px] text-muted-foreground hover:text-primary hover:border-primary cursor-pointer transition-colors" title={`${categoryLabel} 추가`}>
@@ -671,6 +689,8 @@ export default function ContractsPage() {
   const [statFilter, setStatFilter] = useState<'started' | 'not-started' | 'secured' | 'not-secured' | null>(null);
 
   useEffect(() => { fetchContracts(); }, [fetchContracts]);
+  // Fetch versions for all contracts to show completed files in main row
+  useEffect(() => { contracts.forEach(c => fetchVersions(c.id)); }, [contracts, fetchVersions]);
 
   const passesFilter = (value: string, filterSet: Set<string>) =>
     filterSet.size === 0 || filterSet.has(value);
@@ -1011,9 +1031,16 @@ export default function ContractsPage() {
                         <td className="px-2 py-2 text-center text-foreground text-[10px] border-l border-border">
                           {contract.contract_status || <span className="text-muted-foreground">—</span>}
                         </td>
-                        <FileCell files={(contract.files || []).filter(f => !f.version_id)} contractId={contract.id} category="final_contract" categoryLabel="계약서" />
-                        <FileCell files={(contract.files || []).filter(f => !f.version_id)} contractId={contract.id} category="related_document" categoryLabel="문서" />
-                        <FileCell files={(contract.files || []).filter(f => !f.version_id)} contractId={contract.id} category="correspondence" categoryLabel="교신" />
+                        {(() => {
+                          // Collect files from completed versions
+                          const completedVers = (versions[contract.id] || []).filter(v => v.status === 'completed');
+                          const completedVerFiles = completedVers.flatMap(v => (v.files || []).map(f => ({ file: f, versionNumber: v.version_number })));
+                          return (<>
+                            <FileCell files={contract.files || []} contractId={contract.id} category="final_contract" categoryLabel="계약서" completedVersionFiles={completedVerFiles} />
+                            <FileCell files={contract.files || []} contractId={contract.id} category="related_document" categoryLabel="문서" completedVersionFiles={completedVerFiles} />
+                            <FileCell files={contract.files || []} contractId={contract.id} category="correspondence" categoryLabel="교신" completedVersionFiles={completedVerFiles} />
+                          </>);
+                        })()}
                         <TransferInfoCell contract={contract} field="transfer_purpose" label="이전목적 전문 (계약서 원문)" />
                         <TransferInfoCell contract={contract} field="transferable_data" label="이전데이터 전문 (계약서 원문)" />
                         <td className="px-1 py-2 text-center" onClick={(e) => e.stopPropagation()}>
