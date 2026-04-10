@@ -151,6 +151,32 @@
   background-size: 40px 40px;
 }
 
+/* Gantt Chart */
+.gantt-block {
+  border-radius: 6px;
+  backdrop-filter: blur(6px);
+  transition: transform 0.15s, box-shadow 0.15s;
+  cursor: pointer;
+  user-select: none;
+}
+.gantt-block:hover {
+  transform: scaleY(1.08);
+  z-index: 10;
+}
+.gantt-block-handle {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  cursor: col-resize;
+  border-radius: 2px;
+  opacity: 0;
+  transition: opacity 0.15s;
+}
+.gantt-block:hover .gantt-block-handle { opacity: 1; }
+.gantt-block-handle-left { left: 0; }
+.gantt-block-handle-right { right: 0; }
+
 /* Animations */
 @keyframes neon-pulse { 0%,100%{opacity:1} 50%{opacity:0.7} }
 .neon-pulse { animation: neon-pulse 2s ease-in-out infinite; }
@@ -239,6 +265,16 @@
 .email-html-content blockquote { border-left: 3px solid var(--color-border); padding-left: 12px; margin-left: 0; color: var(--color-muted-foreground); }
 /* Outlook dividers */
 .email-html-content p[style*="border-bottom"], .email-html-content div[style*="border-bottom"] { margin: 8px 0; }
+/* Annotation marks in HTML email */
+.email-html-content mark[data-annotation-id] {
+  border-radius: 2px;
+  cursor: pointer;
+  transition: background 0.15s;
+  padding: 1px 0;
+}
+/* Ensure links in email HTML are visible */
+.email-html-content a { color: var(--color-accent-primary, #5ec4d4); text-decoration: underline; }
+.email-html-content a:hover { opacity: 0.8; }
 
 /* Tiptap Editor */
 .tiptap { outline: none; }

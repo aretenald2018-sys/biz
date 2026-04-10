@@ -3,6 +3,8 @@ import { getDb } from '@/lib/db';
 import { parseEmailFile } from '@/lib/email-parser';
 import { parseParticipants } from '@/lib/ai-client';
 
+const IMAGE_TYPES = ['image/png', 'image/jpeg', 'image/gif', 'image/webp', 'image/svg+xml', 'image/bmp'];
+
 export async function GET(
   _request: NextRequest,
   { params }: { params: Promise<{ id: string }> }
@@ -11,7 +13,15 @@ export async function GET(
   const db = getDb();
   const emails = db.prepare(
     'SELECT id, ticket_id, file_name, subject, sender_name, sender_email, recipients, cc_list, body_text, body_html, sent_date, parsed_participants, parent_note_id, parent_email_id, created_at FROM emails WHERE ticket_id = ? ORDER BY sent_date ASC, created_at ASC'
-  ).all(id);
+  ).all(id) as Array<Record<string, unknown>>;
+
+  // Attach email attachment metadata (without blob)
+  const getAttachments = db.prepare(
+    'SELECT id, email_id, file_name, file_type, file_size, is_image, content_id, created_at FROM email_attachments WHERE email_id = ?'
+  );
+  for (const email of emails) {
+    (email as Record<string, unknown>).email_attachments = getAttachments.all(email.id as string);
+  }
 
   return NextResponse.json(emails);
 }
@@ -96,6 +106,19 @@ export async function POST(
     parsed.sentDate
   );
 
+  // Save email attachments
+  const email = db.prepare('SELECT id FROM emails WHERE rowid = ?').get(result.lastInsertRowid) as { id: string };
+  if (parsed.attachments.length > 0) {
+    const insertAttachment = db.prepare(`
+      INSERT INTO email_attachments (email_id, file_name, file_blob, file_type, file_size, is_image, content_id)
+      VALUES (?, ?, ?, ?, ?, ?, ?)
+    `);
+    for (const att of parsed.attachments) {
+      const isImage = IMAGE_TYPES.includes(att.contentType) ? 1 : 0;
+      insertAttachment.run(email.id, att.fileName, att.content, att.contentType, att.size, isImage, att.contentId || null);
+    }
+  }
+
   // Register participants
   const allParticipants = [
     { name: parsed.senderName || 'Unknown', email: parsed.senderEmail || '' },
@@ -116,7 +139,6 @@ export async function POST(
   }
 
   // Create communication edges
-  const email = db.prepare('SELECT id FROM emails WHERE rowid = ?').get(result.lastInsertRowid) as { id: string };
   const getParticipant = db.prepare('SELECT id FROM participants WHERE ticket_id = ? AND email = ?');
   const insertEdge = db.prepare(`
     INSERT OR IGNORE INTO communication_edges (ticket_id, from_participant_id, to_participant_id, email_id)
@@ -170,7 +192,13 @@ export async function POST(
 
   const inserted = db.prepare(
     'SELECT id, ticket_id, file_name, subject, sender_name, sender_email, recipients, cc_list, body_text, body_html, sent_date, parsed_participants, created_at FROM emails WHERE rowid = ?'
-  ).get(result.lastInsertRowid);
+  ).get(result.lastInsertRowid) as Record<string, unknown>;
+
+  // Include email attachments metadata in response
+  const getEmailAttachments = db.prepare(
+    'SELECT id, email_id, file_name, file_type, file_size, is_image, content_id, created_at FROM email_attachments WHERE email_id = ?'
+  );
+  inserted.email_attachments = getEmailAttachments.all(email.id);
 
   return NextResponse.json(inserted, { status: 201 });
 }

@@ -1,6 +1,6 @@
 import Database from 'better-sqlite3';
 
-const CURRENT_VERSION = 12;
+const CURRENT_VERSION = 14;
 
 export function initSchema(db: Database.Database) {
   db.exec(`
@@ -48,6 +48,12 @@ export function initSchema(db: Database.Database) {
   }
   if (currentVersion < 12) {
     applyV12(db);
+  }
+  if (currentVersion < 13) {
+    applyV13(db);
+  }
+  if (currentVersion < 14) {
+    applyV14(db);
   }
 }
 
@@ -337,5 +343,47 @@ function applyV12(db: Database.Database) {
     ALTER TABLE contract_versions ADD COLUMN status TEXT NOT NULL DEFAULT 'pending' CHECK(status IN ('pending','completed'));
 
     INSERT INTO schema_version (version) VALUES (12);
+  `);
+}
+
+function applyV14(db: Database.Database) {
+  db.exec(`
+    CREATE TABLE IF NOT EXISTS schedules (
+      id TEXT PRIMARY KEY DEFAULT (lower(hex(randomblob(8)))),
+      title TEXT NOT NULL,
+      description TEXT,
+      start_date TEXT NOT NULL,
+      end_date TEXT NOT NULL,
+      ticket_id TEXT REFERENCES tickets(id) ON DELETE SET NULL,
+      url TEXT,
+      color TEXT NOT NULL DEFAULT '#5ec4d4',
+      created_at TEXT NOT NULL DEFAULT (datetime('now','localtime')),
+      updated_at TEXT NOT NULL DEFAULT (datetime('now','localtime'))
+    );
+
+    CREATE INDEX IF NOT EXISTS idx_schedules_dates ON schedules(start_date, end_date);
+    CREATE INDEX IF NOT EXISTS idx_schedules_ticket ON schedules(ticket_id);
+
+    INSERT INTO schema_version (version) VALUES (14);
+  `);
+}
+
+function applyV13(db: Database.Database) {
+  db.exec(`
+    CREATE TABLE IF NOT EXISTS email_attachments (
+      id TEXT PRIMARY KEY DEFAULT (lower(hex(randomblob(8)))),
+      email_id TEXT NOT NULL REFERENCES emails(id) ON DELETE CASCADE,
+      file_name TEXT NOT NULL,
+      file_blob BLOB NOT NULL,
+      file_type TEXT NOT NULL DEFAULT 'application/octet-stream',
+      file_size INTEGER NOT NULL DEFAULT 0,
+      is_image INTEGER NOT NULL DEFAULT 0,
+      content_id TEXT,
+      created_at TEXT NOT NULL DEFAULT (datetime('now','localtime'))
+    );
+
+    CREATE INDEX IF NOT EXISTS idx_email_attachments_email ON email_attachments(email_id);
+
+    INSERT INTO schema_version (version) VALUES (13);
   `);
 }

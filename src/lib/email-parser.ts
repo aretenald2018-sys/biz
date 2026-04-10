@@ -1,5 +1,47 @@
 import MsgReader from '@kenjiuno/msgreader';
-import type { ParsedEmail, EmailRecipient } from '@/types/email';
+import type { ParsedEmail, EmailRecipient, ParsedEmailAttachment } from '@/types/email';
+
+function stripHtmlToText(html: string): string {
+  return html
+    .replace(/<style[^>]*>[\s\S]*?<\/style>/gi, '')
+    .replace(/<script[^>]*>[\s\S]*?<\/script>/gi, '')
+    .replace(/<[^>]+>/g, '')
+    .replace(/&nbsp;/g, ' ')
+    .replace(/&amp;/g, '&')
+    .replace(/&lt;/g, '<')
+    .replace(/&gt;/g, '>')
+    .replace(/&quot;/g, '"')
+    .replace(/&#39;/g, "'")
+    .replace(/\n{3,}/g, '\n\n')
+    .trim();
+}
+
+const MIME_MAP: Record<string, string> = {
+  '.pdf': 'application/pdf',
+  '.doc': 'application/msword',
+  '.docx': 'application/vnd.openxmlformats-officedocument.wordprocessingml.document',
+  '.xls': 'application/vnd.ms-excel',
+  '.xlsx': 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet',
+  '.ppt': 'application/vnd.ms-powerpoint',
+  '.pptx': 'application/vnd.openxmlformats-officedocument.presentationml.presentation',
+  '.png': 'image/png',
+  '.jpg': 'image/jpeg',
+  '.jpeg': 'image/jpeg',
+  '.gif': 'image/gif',
+  '.bmp': 'image/bmp',
+  '.webp': 'image/webp',
+  '.svg': 'image/svg+xml',
+  '.zip': 'application/zip',
+  '.txt': 'text/plain',
+  '.csv': 'text/csv',
+  '.htm': 'text/html',
+  '.html': 'text/html',
+};
+
+function guessMimeType(fileName: string): string {
+  const ext = fileName.toLowerCase().match(/\.[^.]+$/)?.[0] || '';
+  return MIME_MAP[ext] || 'application/octet-stream';
+}
 
 export function parseMsgFile(buffer: ArrayBuffer): ParsedEmail {
   const reader = new MsgReader(buffer);
@@ -28,15 +70,46 @@ export function parseMsgFile(buffer: ArrayBuffer): ParsedEmail {
     }
   }
 
+  // Extract attachments
+  const attachments: ParsedEmailAttachment[] = [];
+  if (fileData.attachments) {
+    for (const att of fileData.attachments) {
+      if (att.dataType === 'attachment') {
+        try {
+          const data = reader.getAttachment(att);
+          const attAny = att as unknown as Record<string, unknown>;
+          attachments.push({
+            fileName: data.fileName || att.name || 'unknown',
+            content: Buffer.from(data.content),
+            contentType: guessMimeType(data.fileName || att.name || ''),
+            contentId: attAny.pidContentId as string | undefined,
+            size: data.content.length,
+          });
+        } catch {
+          // Skip unreadable attachments
+        }
+      }
+    }
+  }
+
+  const bodyHtml = fileData.bodyHtml || null;
+  let bodyText = fileData.body || null;
+
+  // If HTML exists, always derive text from HTML for offset consistency
+  if (bodyHtml) {
+    bodyText = stripHtmlToText(bodyHtml);
+  }
+
   return {
     subject: fileData.subject || null,
     senderName: fileData.senderName || null,
     senderEmail: fileData.senderSmtpAddress || fileData.senderEmail || null,
     recipients,
     ccList,
-    bodyText: fileData.body || null,
-    bodyHtml: fileData.bodyHtml || null,
+    bodyText,
+    bodyHtml,
     sentDate: fileData.messageDeliveryTime || fileData.clientSubmitTime || null,
+    attachments,
   };
 }
 
@@ -92,17 +165,24 @@ function getCharset(contentType: string): string {
   return match ? match[1] : 'utf-8';
 }
 
+interface ExtractResult {
+  text: string | null;
+  html: string | null;
+  attachments: ParsedEmailAttachment[];
+}
+
 function extractBodies(
   bodyText: string,
   contentType: string,
   transferEncoding: string,
-): { text: string | null; html: string | null } {
+): ExtractResult {
   let text: string | null = null;
   let html: string | null = null;
+  const attachments: ParsedEmailAttachment[] = [];
 
   if (contentType.includes('multipart')) {
     const boundaryMatch = contentType.match(/boundary="?([^";\s]+)"?/);
-    if (!boundaryMatch) return { text: null, html: null };
+    if (!boundaryMatch) return { text: null, html: null, attachments };
 
     const boundary = boundaryMatch[1];
     const parts = bodyText.split('--' + boundary);
@@ -115,13 +195,44 @@ function extractBodies(
       const { headers: partHeaders, bodyStart } = parseMimeHeaders(partLines);
       const partCT = partHeaders['content-type'] || '';
       const partTE = partHeaders['content-transfer-encoding'] || '';
+      const partDisp = partHeaders['content-disposition'] || '';
       const partBody = partLines.slice(bodyStart).join('\n').trim();
 
       if (partCT.includes('multipart')) {
-        // Recurse into nested multipart
         const nested = extractBodies(partBody, partCT, partTE);
         if (nested.text && !text) text = nested.text;
         if (nested.html && !html) html = nested.html;
+        attachments.push(...nested.attachments);
+      } else if (partDisp.includes('attachment') || (partCT && !partCT.includes('text/') && !partCT.includes('multipart'))) {
+        // This is an attachment
+        const fileNameMatch = (partDisp + ';' + partCT).match(/(?:file)?name="?([^";\n]+)"?/i);
+        const fileName = fileNameMatch ? fileNameMatch[1].trim() : 'attachment';
+        const contentIdMatch = (partHeaders['content-id'] || '').match(/<([^>]+)>/);
+        const charset = getCharset(partCT);
+        try {
+          const enc = (partTE || '').toLowerCase().trim();
+          let buf: Buffer;
+          if (enc === 'base64') {
+            buf = Buffer.from(partBody.replace(/\s/g, ''), 'base64');
+          } else if (enc === 'quoted-printable') {
+            const decoded = partBody
+              .replace(/=\r?\n/g, '')
+              .replace(/=([0-9A-Fa-f]{2})/g, (_, hex) => String.fromCharCode(parseInt(hex, 16)));
+            buf = Buffer.from(decoded, charset.toLowerCase().includes('utf') ? 'utf-8' : 'latin1');
+          } else {
+            buf = Buffer.from(partBody, 'binary');
+          }
+          const mimeType = partCT.split(';')[0].trim() || guessMimeType(fileName);
+          attachments.push({
+            fileName: decodeEncodedWords(fileName),
+            content: buf,
+            contentType: mimeType,
+            contentId: contentIdMatch ? contentIdMatch[1] : undefined,
+            size: buf.length,
+          });
+        } catch {
+          // Skip unreadable attachment
+        }
       } else {
         const charset = getCharset(partCT);
         const decoded = decodePartBody(partBody, partTE, charset);
@@ -134,7 +245,6 @@ function extractBodies(
       }
     }
   } else {
-    // Single-part message
     const charset = getCharset(contentType);
     const decoded = decodePartBody(bodyText, transferEncoding, charset);
 
@@ -145,7 +255,7 @@ function extractBodies(
     }
   }
 
-  return { text, html };
+  return { text, html, attachments };
 }
 
 export function parseEmlFile(rawText: string): ParsedEmail {
@@ -156,23 +266,14 @@ export function parseEmlFile(rawText: string): ParsedEmail {
   const contentType = headers['content-type'] || 'text/plain';
   const transferEncoding = headers['content-transfer-encoding'] || '';
 
-  const { text: bodyText, html: bodyHtml } = extractBodies(bodyRaw, contentType, transferEncoding);
+  const { text: bodyText, html: bodyHtml, attachments } = extractBodies(bodyRaw, contentType, transferEncoding);
 
-  // If we only have HTML, strip tags for text version
+  // If HTML exists, always derive text from HTML for offset consistency with DOM textContent
   let finalText = bodyText;
-  if (!finalText && bodyHtml) {
-    finalText = bodyHtml
-      .replace(/<style[^>]*>[\s\S]*?<\/style>/gi, '')
-      .replace(/<script[^>]*>[\s\S]*?<\/script>/gi, '')
-      .replace(/<[^>]+>/g, '')
-      .replace(/&nbsp;/g, ' ')
-      .replace(/&amp;/g, '&')
-      .replace(/&lt;/g, '<')
-      .replace(/&gt;/g, '>')
-      .replace(/&quot;/g, '"')
-      .replace(/&#39;/g, "'")
-      .replace(/\n{3,}/g, '\n\n')
-      .trim();
+  if (bodyHtml) {
+    finalText = stripHtmlToText(bodyHtml);
+  } else if (!finalText) {
+    finalText = null;
   }
 
   // Parse addresses
@@ -222,6 +323,7 @@ export function parseEmlFile(rawText: string): ParsedEmail {
     bodyText: finalText,
     bodyHtml: bodyHtml,
     sentDate,
+    attachments,
   };
 }
 

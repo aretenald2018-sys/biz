@@ -28,6 +28,26 @@ export interface Email {
   parent_note_id: string | null;
   parent_email_id: string | null;
   created_at: string;
+  email_attachments?: EmailAttachment[];
+}
+
+export interface ParsedEmailAttachment {
+  fileName: string;
+  content: Buffer;
+  contentType: string;
+  contentId?: string;
+  size: number;
+}
+
+export interface EmailAttachment {
+  id: string;
+  email_id: string;
+  file_name: string;
+  file_type: string;
+  file_size: number;
+  is_image: number;
+  content_id: string | null;
+  created_at: string;
 }
 
 export interface ParsedEmail {
@@ -39,4 +59,5 @@ export interface ParsedEmail {
   bodyText: string | null;
   bodyHtml: string | null;
   sentDate: string | null;
+  attachments: ParsedEmailAttachment[];
 }

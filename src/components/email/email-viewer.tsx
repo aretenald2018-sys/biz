@@ -1,11 +1,13 @@
 'use client';
 
-import { useEffect, useRef, useState, useCallback } from 'react';
+import { useEffect, useRef, useState, useCallback, useMemo } from 'react';
+import DOMPurify from 'dompurify';
 import type { Email } from '@/types/email';
-import type { EmailRecipient } from '@/types/email';
+import type { EmailRecipient, EmailAttachment } from '@/types/email';
 import type { Annotation, MetaAnnotation, MetaAnnotationReply, Attachment } from '@/types/annotation';
 import { useAnnotationStore } from '@/stores/annotation-store';
 import { splitTextByAnnotations, getSelectionOffsets } from '@/lib/annotation-utils';
+import { applyAnnotationsToDOM, clearAnnotationMarks } from '@/lib/dom-annotation-utils';
 import { Button } from '@/components/ui/button';
 import { Textarea } from '@/components/ui/textarea';
 import { MiniRichEditor, RichContent } from '@/components/ui/rich-editor';
@@ -521,6 +523,38 @@ function splitNoteByMetas(text: string, metas: MetaAnnotation[]): { text: string
   return segments;
 }
 
+/* ─── Email Attachment Stack ─── */
+function EmailAttachmentStack({ attachments }: { attachments: EmailAttachment[] }) {
+  if (attachments.length === 0) return null;
+
+  return (
+    <div className="border-b border-border px-4 py-3 bg-muted/20">
+      <div className="text-[10px] text-primary tracking-widest font-bold mb-2">ATTACHMENTS ({attachments.length})</div>
+      <div className="flex flex-wrap gap-3">
+        {attachments.map(att => (
+          <a key={att.id} href={`/api/email-attachments/${att.id}`}
+            download={att.file_name}
+            onClick={(e) => e.stopPropagation()}
+            className="group flex items-center gap-2 p-2 rounded-lg border border-border bg-card hover:border-primary/40 transition-all max-w-[240px]">
+            {att.is_image ? (
+              <img src={`/api/email-attachments/${att.id}`} alt={att.file_name}
+                className="w-12 h-12 object-cover rounded border border-surface-border flex-shrink-0" />
+            ) : (
+              <div className="w-12 h-12 flex items-center justify-center rounded bg-muted/50 text-muted-foreground text-[10px] font-bold flex-shrink-0">
+                {att.file_name.split('.').pop()?.toUpperCase() || 'FILE'}
+              </div>
+            )}
+            <div className="min-w-0 flex-1">
+              <div className="text-[11px] text-foreground truncate group-hover:text-primary transition-colors">{att.file_name}</div>
+              <div className="text-[9px] text-muted-foreground">{(att.file_size / 1024).toFixed(1)} KB</div>
+            </div>
+          </a>
+        ))}
+      </div>
+    </div>
+  );
+}
+
 /* ─── Main EmailViewer ─── */
 export function EmailViewer({ email, ticketId }: { email: Email; ticketId: string }) {
   const textRef = useRef<HTMLDivElement>(null);
@@ -533,11 +567,46 @@ export function EmailViewer({ email, ticketId }: { email: Email; ticketId: strin
   const [selectionData, setSelectionData] = useState<{ start: number; end: number; text: string } | null>(null);
   const [noteText, setNoteText] = useState('');
   const [selectedColor, setSelectedColor] = useState(ANNOTATION_COLORS[0].border);
-  const [viewMode, setViewMode] = useState<'html' | 'text'>(email.body_html ? 'html' : 'text');
 
   const { annotations, activeAnnotation, activeMetaAnnotation, fetchAnnotations, createAnnotation, setActiveAnnotation, setActiveMetaAnnotation } = useAnnotationStore();
 
   useEffect(() => { fetchAnnotations(ticketId, email.id); }, [ticketId, email.id, fetchAnnotations]);
+
+  // Sanitize HTML and replace CID references with API URLs
+  const sanitizedHtml = useMemo(() => {
+    if (!email.body_html) return null;
+    let html = DOMPurify.sanitize(email.body_html, {
+      ADD_ATTR: ['style', 'class', 'bgcolor', 'width', 'height', 'align', 'valign', 'cellpadding', 'cellspacing', 'border', 'src', 'alt'],
+      ADD_TAGS: ['style', 'img'],
+      ALLOW_DATA_ATTR: false,
+    });
+    // Replace cid: references with actual attachment URLs
+    const emailAtts = email.email_attachments || [];
+    for (const att of emailAtts) {
+      if (att.content_id) {
+        html = html.replace(
+          new RegExp(`src=["']cid:${att.content_id.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}["']`, 'gi'),
+          `src="/api/email-attachments/${att.id}"`
+        );
+      }
+    }
+    return html;
+  }, [email.body_html, email.email_attachments]);
+
+  const isHtmlMode = !!sanitizedHtml;
+
+  // DOM-based annotation overlay for HTML mode
+  useEffect(() => {
+    if (!textRef.current || !isHtmlMode) return;
+    clearAnnotationMarks(textRef.current);
+    if (annotations.length === 0) return;
+    const refMap = applyAnnotationsToDOM(
+      textRef.current, annotations, activeAnnotation,
+      (id) => setActiveAnnotation(activeAnnotation === id ? null : id)
+    );
+    highlightRefs.current.clear();
+    refMap.forEach((el, id) => highlightRefs.current.set(id, el));
+  }, [annotations, activeAnnotation, sanitizedHtml, isHtmlMode, setActiveAnnotation]);
 
   const handleMouseUp = useCallback(() => {
     if (!textRef.current) return;
@@ -571,9 +640,15 @@ export function EmailViewer({ email, ticketId }: { email: Email; ticketId: strin
   }
 
   useEffect(() => {
-    highlightRefs.current.clear(); cardRefs.current.clear();
+    if (!isHtmlMode) {
+      highlightRefs.current.clear();
+    }
+    cardRefs.current.clear();
     metaHighlightRefs.current.clear(); metaCardRefs.current.clear();
-  }, [annotations, activeAnnotation]);
+  }, [annotations, activeAnnotation, isHtmlMode]);
+
+  // Non-inline attachments (exclude CID inline images that are shown in body)
+  const emailAttachments = (email.email_attachments || []).filter(att => !att.content_id);
 
   return (
     <div className="rounded-lg border border-border overflow-hidden bg-card">
@@ -581,18 +656,6 @@ export function EmailViewer({ email, ticketId }: { email: Email; ticketId: strin
       <div className="p-4 border-b border-border bg-muted/30">
         <div className="flex items-center justify-between mb-2">
           <div className="text-sm font-semibold text-foreground">{email.subject || '(No Subject)'}</div>
-          {email.body_html && (
-            <button
-              onClick={() => setViewMode(viewMode === 'html' ? 'text' : 'html')}
-              className={`text-[10px] px-2 py-0.5 rounded border transition-all ${
-                viewMode === 'html'
-                  ? 'bg-primary/20 text-primary border-primary/30'
-                  : 'bg-muted/30 text-muted-foreground border-border hover:text-primary'
-              }`}
-            >
-              {viewMode === 'html' ? 'HTML' : 'TEXT'}
-            </button>
-          )}
         </div>
         <div className="text-[11px] text-muted-foreground space-y-0.5">
           <div>FROM: <span className="text-primary font-medium">{email.sender_name}</span> &lt;{email.sender_email}&gt;</div>
@@ -601,6 +664,9 @@ export function EmailViewer({ email, ticketId }: { email: Email; ticketId: strin
           {email.sent_date && <div>DATE: {email.sent_date}</div>}
         </div>
       </div>
+
+      {/* Email Attachments — Outlook-style, below header */}
+      <EmailAttachmentStack attachments={emailAttachments} />
 
       {/* Email Body + Annotation + Meta-Annotation Panels */}
       <div ref={containerRef} className="flex relative">
@@ -613,12 +679,12 @@ export function EmailViewer({ email, ticketId }: { email: Email; ticketId: strin
 
         {/* Col 1: Email Body */}
         <div className={`${bodyWidth} p-5 overflow-auto transition-all`} style={{ maxHeight: '70vh' }}>
-          {viewMode === 'html' && email.body_html ? (
+          {isHtmlMode ? (
             <div
               ref={textRef}
               onMouseUp={handleMouseUp}
               className="email-html-content text-[13px] leading-[1.8] select-text text-foreground"
-              dangerouslySetInnerHTML={{ __html: email.body_html }}
+              dangerouslySetInnerHTML={{ __html: sanitizedHtml }}
             />
           ) : (
             <div ref={textRef} onMouseUp={handleMouseUp} className="text-[13px] leading-[1.8] whitespace-pre-wrap select-text text-foreground">
@@ -686,6 +752,7 @@ export function EmailViewer({ email, ticketId }: { email: Email; ticketId: strin
           </div>
         )}
       </div>
+
     </div>
   );
 }

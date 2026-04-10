@@ -37,5 +37,6 @@ export function parseMsgFile(buffer: ArrayBuffer): ParsedEmail {
     bodyText: fileData.body || null,
     bodyHtml: fileData.bodyHtml || null,
     sentDate: fileData.messageDeliveryTime || fileData.clientSubmitTime || null,
+    attachments: [],
   };
 }
