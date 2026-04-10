@@ -29,7 +29,7 @@ interface ScheduleStore {
   selectedScheduleId: string | null;
   isFormOpen: boolean;
   formMode: 'create' | 'edit';
-  dragPreview: { startDate: string; endDate: string } | null;
+  dragPreview: { startDate: string; endDate: string; ticketId?: string } | null;
 
   fetchSchedules: () => Promise<void>;
   createSchedule: (input: CreateScheduleInput) => Promise<Schedule>;
@@ -40,20 +40,20 @@ interface ScheduleStore {
   goToToday: () => void;
 
   selectSchedule: (id: string | null) => void;
-  openCreateForm: (startDate: string, endDate: string) => void;
+  openCreateForm: (startDate: string, endDate: string, ticketId?: string) => void;
   openEditForm: (id: string) => void;
   closeForm: () => void;
   setDragPreview: (preview: { startDate: string; endDate: string } | null) => void;
 }
 
-const today = getMonday(new Date());
+const yearStart = getMonday(new Date(new Date().getFullYear(), 0, 1));
 
 export const useScheduleStore = create<ScheduleStore>((set, get) => ({
   schedules: [],
   loading: false,
 
-  viewStartDate: toISO(today),
-  viewWeeks: 12,
+  viewStartDate: toISO(yearStart),
+  viewWeeks: 52,
 
   selectedScheduleId: null,
   isFormOpen: false,
@@ -81,6 +81,12 @@ export const useScheduleStore = create<ScheduleStore>((set, get) => ({
   },
 
   updateSchedule: async (id: string, input: UpdateScheduleInput) => {
+    // 낙관적 업데이트
+    set({
+      schedules: get().schedules.map(s =>
+        s.id === id ? { ...s, ...input, updated_at: new Date().toISOString() } : s
+      ),
+    });
     await fetch(`/api/schedules/${id}`, {
       method: 'PUT',
       headers: { 'Content-Type': 'application/json' },
@@ -108,12 +114,12 @@ export const useScheduleStore = create<ScheduleStore>((set, get) => ({
 
   selectSchedule: (id: string | null) => set({ selectedScheduleId: id }),
 
-  openCreateForm: (startDate: string, endDate: string) => {
+  openCreateForm: (startDate: string, endDate: string, ticketId?: string) => {
     set({
       isFormOpen: true,
       formMode: 'create',
       selectedScheduleId: null,
-      dragPreview: { startDate, endDate },
+      dragPreview: { startDate, endDate, ticketId },
     });
   },
 

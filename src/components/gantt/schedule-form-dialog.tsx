@@ -59,7 +59,7 @@ export function ScheduleFormDialog() {
       setDescription('');
       setStartDate(dragPreview?.startDate || '');
       setEndDate(dragPreview?.endDate || '');
-      setTicketId('');
+      setTicketId(dragPreview?.ticketId || '');
       setUrl('');
       setColor('#5ec4d4');
     }

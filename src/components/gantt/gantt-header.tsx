@@ -12,8 +12,6 @@ export interface WeekColumn {
 
 const MONTH_NAMES = ['JAN', 'FEB', 'MAR', 'APR', 'MAY', 'JUN', 'JUL', 'AUG', 'SEP', 'OCT', 'NOV', 'DEC'];
 
-export const WEEK_COL_WIDTH = 120;
-
 export function getWeekColumns(viewStartDate: string, viewWeeks: number): WeekColumn[] {
   const columns: WeekColumn[] = [];
   const start = new Date(viewStartDate);
@@ -33,7 +31,7 @@ export function getWeekColumns(viewStartDate: string, viewWeeks: number): WeekCo
       index: i,
       startDate: startStr,
       endDate: endStr,
-      label: `${weekStart.getMonth() + 1}/${weekStart.getDate()}`,
+      label: `${weekStart.getDate()}`,
       month: weekStart.getMonth(),
       year: weekStart.getFullYear(),
       isCurrent: todayStr >= startStr && todayStr <= endStr,
@@ -50,17 +48,22 @@ interface MonthSpan {
 function getMonthSpans(columns: WeekColumn[]): MonthSpan[] {
   const spans: MonthSpan[] = [];
   for (const col of columns) {
-    const label = `${MONTH_NAMES[col.month]} ${col.year}`;
-    if (spans.length > 0 && spans[spans.length - 1].label === label) {
-      spans[spans.length - 1].colSpan++;
+    // 같은 월+연도면 병합, 연도가 다르면 구분
+    const label = MONTH_NAMES[col.month];
+    const key = `${col.year}-${col.month}`;
+    const lastSpan = spans.length > 0 ? spans[spans.length - 1] : null;
+    if (lastSpan && (lastSpan as any)._key === key) {
+      lastSpan.colSpan++;
     } else {
-      spans.push({ label, colSpan: 1 });
+      const span = { label, colSpan: 1 } as MonthSpan & { _key: string };
+      span._key = key;
+      spans.push(span);
     }
   }
   return spans;
 }
 
-export function GanttHeader({ columns }: { columns: WeekColumn[] }) {
+export function GanttHeader({ columns, weekColWidth }: { columns: WeekColumn[]; weekColWidth: number }) {
   const monthSpans = getMonthSpans(columns);
 
   return (
@@ -71,13 +74,13 @@ export function GanttHeader({ columns }: { columns: WeekColumn[] }) {
           <div
             key={i}
             className="flex items-center justify-center text-[10px] text-neon-magenta/70 tracking-widest font-bold border-b border-border/30"
-            style={{ width: span.colSpan * WEEK_COL_WIDTH }}
+            style={{ width: span.colSpan * weekColWidth }}
           >
             {span.label}
           </div>
         ))}
       </div>
-      {/* Week row */}
+      {/* Week row — 시작일 숫자 */}
       <div className="flex" style={{ height: 28 }}>
         {columns.map((col) => (
           <div
@@ -87,9 +90,9 @@ export function GanttHeader({ columns }: { columns: WeekColumn[] }) {
                 ? 'text-neon-cyan font-bold bg-neon-cyan/5'
                 : 'text-muted-foreground'
             }`}
-            style={{ width: WEEK_COL_WIDTH }}
+            style={{ width: weekColWidth }}
           >
-            {col.label}
+            {weekColWidth >= 20 ? col.label : ''}
           </div>
         ))}
       </div>

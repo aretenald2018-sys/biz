@@ -156,18 +156,24 @@
   border-radius: 6px;
   backdrop-filter: blur(6px);
   transition: transform 0.15s, box-shadow 0.15s;
-  cursor: pointer;
+  cursor: grab;
   user-select: none;
 }
 .gantt-block:hover {
   transform: scaleY(1.08);
   z-index: 10;
 }
+.gantt-block.dragging {
+  cursor: grabbing;
+  opacity: 0.85;
+  transform: scaleY(1.04);
+  z-index: 50;
+}
 .gantt-block-handle {
   position: absolute;
   top: 0;
   bottom: 0;
-  width: 4px;
+  width: 6px;
   cursor: col-resize;
   border-radius: 2px;
   opacity: 0;

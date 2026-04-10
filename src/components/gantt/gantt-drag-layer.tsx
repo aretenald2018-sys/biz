@@ -1,7 +1,5 @@
 'use client';
 
-import { WEEK_COL_WIDTH } from './gantt-header';
-
 interface GanttDragLayerProps {
   viewStartDate: string;
   dragStartX: number | null;
