@@ -1,18 +1,11 @@
 import type { Annotation } from '@/types/annotation';
+import { ANNOTATION_COLORS } from '@/components/email/email-viewer-utils';
 
 interface TextNodeEntry {
   node: Text;
   start: number;
   end: number;
 }
-
-const ANNOTATION_COLORS = [
-  { bg: 'rgba(255, 220, 100, 0.35)', border: '#ffd54f' },
-  { bg: 'rgba(100, 220, 255, 0.30)', border: '#4dd0e1' },
-  { bg: 'rgba(255, 150, 200, 0.30)', border: '#f48fb1' },
-  { bg: 'rgba(150, 255, 150, 0.30)', border: '#81c784' },
-  { bg: 'rgba(200, 170, 255, 0.30)', border: '#b39ddb' },
-];
 
 function getColorPreset(color: string, isActive: boolean) {
   const preset = ANNOTATION_COLORS.find(c => c.border === color) || ANNOTATION_COLORS[0];
@@ -26,11 +19,23 @@ function getTextNodeMap(container: HTMLElement): TextNodeEntry[] {
   let offset = 0;
   let node: Text | null;
   while ((node = walker.nextNode() as Text | null)) {
+    if (shouldIgnoreTextNode(node, container)) continue;
     const len = node.length;
+    if (len === 0) continue;
     entries.push({ node, start: offset, end: offset + len });
     offset += len;
   }
   return entries;
+}
+
+function shouldIgnoreTextNode(node: Text, container: HTMLElement): boolean {
+  const parent = node.parentElement;
+  if (!parent) return true;
+  if (!container.contains(parent)) return true;
+  const tag = parent.tagName.toLowerCase();
+  if (tag === 'script' || tag === 'style' || tag === 'noscript' || tag === 'title') return true;
+  if (parent.closest('script, style, noscript, title')) return true;
+  return false;
 }
 
 function findNodeAtOffset(map: TextNodeEntry[], offset: number): { entry: TextNodeEntry; localOffset: number } | null {
@@ -60,9 +65,10 @@ export function applyAnnotationsToDOM(
   annotations: Annotation[],
   activeAnnotationId: string | null,
   onAnnotationClick: (id: string) => void,
-): Map<string, HTMLElement> {
+): { refMap: Map<string, HTMLElement>; abortController: AbortController } {
   const refMap = new Map<string, HTMLElement>();
-  if (annotations.length === 0) return refMap;
+  const abortController = new AbortController();
+  if (annotations.length === 0) return { refMap, abortController };
 
   // Sort by start_offset descending — process from end to avoid offset invalidation
   const sorted = [...annotations].sort((a, b) => b.start_offset - a.start_offset);
@@ -118,7 +124,7 @@ export function applyAnnotationsToDOM(
       mark.addEventListener('click', (e) => {
         e.stopPropagation();
         onAnnotationClick(annId);
-      });
+      }, { signal: abortController.signal });
 
       targetNode.parentNode!.insertBefore(mark, targetNode);
       mark.appendChild(targetNode);
@@ -131,5 +137,5 @@ export function applyAnnotationsToDOM(
     }
   }
 
-  return refMap;
+  return { refMap, abortController };
 }

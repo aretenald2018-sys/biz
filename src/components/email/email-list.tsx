@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useState, useRef } from 'react';
+import { useEffect, useMemo, useRef, useState } from 'react';
 import { useEmailStore } from '@/stores/email-store';
 import { useNoteStore } from '@/stores/note-store';
 import { useEmailFlowStore } from '@/stores/email-flow-store';
@@ -9,6 +9,7 @@ import { AIChatModal } from './ai-chat-modal';
 import { NoteEditor } from '@/components/notes/note-editor';
 import { Button } from '@/components/ui/button';
 import { Textarea } from '@/components/ui/textarea';
+import { ChevronDown } from 'lucide-react';
 import type { Email } from '@/types/email';
 import type { Note } from '@/types/note';
 import type { EmailFlowStep, FlowStepType } from '@/types/email-flow';
@@ -94,18 +95,16 @@ function FlowStepItem({ step, ticketId, emailId, onEdit }: {
 }
 
 /* ─── Flow panel ─── */
-function EmailFlowPanel({ email, ticketId, expanded, onToggle }: {
-  email: Email; ticketId: string; expanded: boolean; onToggle: () => void;
+function EmailFlowPanel({ email, ticketId, expanded }: {
+  email: Email; ticketId: string; expanded: boolean;
 }) {
-  const { flowSteps, fetchFlowSteps, createFlowStep, updateFlowStep } = useEmailFlowStore();
+  const { flowSteps, createFlowStep, updateFlowStep } = useEmailFlowStore();
   const steps = flowSteps[email.id] || [];
   const [addingStep, setAddingStep] = useState(false);
   const [editingStep, setEditingStep] = useState<string | null>(null);
   const [stepType, setStepType] = useState<FlowStepType>('request');
   const [actor, setActor] = useState('');
   const [summary, setSummary] = useState('');
-
-  useEffect(() => { fetchFlowSteps(ticketId, email.id); }, [ticketId, email.id, fetchFlowSteps]);
 
   const handleAdd = async () => {
     if (!summary.trim()) return;
@@ -165,21 +164,71 @@ function EmailFlowPanel({ email, ticketId, expanded, onToggle }: {
 /* ─── Unified item type ─── */
 type StackItem = { type: 'email'; data: Email; date: string; children: StackItem[] } | { type: 'note'; data: Note; date: string; children: StackItem[] };
 
-export function EmailList({ ticketId }: { ticketId: string }) {
-  const { emails, selectedEmail, loading, fetchEmails, selectEmail, deleteEmail, setParentNote, setParentEmail: setEmailParentEmail } = useEmailStore();
+export function EmailList({
+  ticketId,
+  pendingExpandNoteId,
+  onExpandedPendingNote,
+}: {
+  ticketId: string;
+  pendingExpandNoteId?: string | null;
+  onExpandedPendingNote?: () => void;
+}) {
+  const { emails, loading, fetchEmails, deleteEmail, setParentNote, setParentEmail: setEmailParentEmail } = useEmailStore();
   const { notes, activeNote, fetchNotes, setActiveNote, deleteNote, setParentEmail: setNoteParentEmail, setParentNote: setNoteParentNote } = useNoteStore();
-  const { flowSteps, fetchFlowSteps } = useEmailFlowStore();
+  const { flowSteps, fetchFlowStepsBatch } = useEmailFlowStore();
   const [confirmDelete, setConfirmDelete] = useState<string | null>(null);
   const [aiEmail, setAiEmail] = useState<Email | null>(null);
   const [expandedFlows, setExpandedFlows] = useState<Set<string>>(new Set());
-  const [showNoteEditor, setShowNoteEditor] = useState(false);
+  const [expandedItems, setExpandedItems] = useState<Set<string>>(new Set());
   const [dragOverId, setDragOverId] = useState<string | null>(null);
 
+  const deleteConfirmTimerRef = useRef<number | null>(null);
+
   useEffect(() => { fetchEmails(ticketId); fetchNotes(ticketId); }, [ticketId, fetchEmails, fetchNotes]);
-  useEffect(() => { emails.forEach(email => { fetchFlowSteps(ticketId, email.id); }); }, [emails, ticketId, fetchFlowSteps]);
+  useEffect(() => {
+    fetchFlowStepsBatch(ticketId, emails.map((email) => email.id));
+  }, [emails, ticketId, fetchFlowStepsBatch]);
+  useEffect(() => () => {
+    if (deleteConfirmTimerRef.current !== null) {
+      window.clearTimeout(deleteConfirmTimerRef.current);
+    }
+  }, []);
+
+  useEffect(() => {
+    if (!pendingExpandNoteId) return;
+    setExpandedItems((prev) => {
+      const next = new Set(prev);
+      next.add(pendingExpandNoteId);
+      return next;
+    });
+    setActiveNote(pendingExpandNoteId);
+    onExpandedPendingNote?.();
+  }, [pendingExpandNoteId, onExpandedPendingNote, setActiveNote]);
+
+  const scheduleDeleteConfirmReset = (value: string) => {
+    if (deleteConfirmTimerRef.current !== null) {
+      window.clearTimeout(deleteConfirmTimerRef.current);
+    }
+    setConfirmDelete(value);
+    deleteConfirmTimerRef.current = window.setTimeout(() => {
+      setConfirmDelete((current) => current === value ? null : current);
+      deleteConfirmTimerRef.current = null;
+    }, 3000);
+  };
 
   const toggleFlow = (emailId: string) => {
     setExpandedFlows(prev => { const next = new Set(prev); if (next.has(emailId)) next.delete(emailId); else next.add(emailId); return next; });
+  };
+  const toggleExpand = (id: string) => {
+    setExpandedItems((prev) => {
+      const next = new Set(prev);
+      if (next.has(id)) {
+        next.delete(id);
+      } else {
+        next.add(id);
+      }
+      return next;
+    });
   };
 
   // Handle drop: attach dragged item as child of target
@@ -242,31 +291,47 @@ export function EmailList({ ticketId }: { ticketId: string }) {
   };
 
   // Build hierarchical stack: top-level items + their children (all 4 combos)
-  const buildStack = (): StackItem[] => {
+  const stackItems = useMemo<StackItem[]>(() => {
     const childNoteIds = new Set<string>();
     const childEmailIds = new Set<string>();
+    const notesByParentEmail = new Map<string, Note[]>();
+    const notesByParentNote = new Map<string, Note[]>();
+    const emailsByParentEmail = new Map<string, Email[]>();
+    const emailsByParentNote = new Map<string, Email[]>();
 
-    // Notes that are children (of email or another note)
-    notes.forEach(n => { if (n.parent_email_id || n.parent_note_id) childNoteIds.add(n.id); });
-    // Emails that are children (of note or another email)
-    emails.forEach(e => { if (e.parent_note_id || e.parent_email_id) childEmailIds.add(e.id); });
+    const pushToMap = <T,>(map: Map<string, T[]>, key: string | null, value: T) => {
+      if (!key) return;
+      const bucket = map.get(key);
+      if (bucket) bucket.push(value);
+      else map.set(key, [value]);
+    };
 
-    // Get children for an email
+    notes.forEach((note) => {
+      if (note.parent_email_id || note.parent_note_id) childNoteIds.add(note.id);
+      pushToMap(notesByParentEmail, note.parent_email_id, note);
+      pushToMap(notesByParentNote, note.parent_note_id, note);
+    });
+
+    emails.forEach((email) => {
+      if (email.parent_note_id || email.parent_email_id) childEmailIds.add(email.id);
+      pushToMap(emailsByParentEmail, email.parent_email_id, email);
+      pushToMap(emailsByParentNote, email.parent_note_id, email);
+    });
+
     const emailChildren = (emailId: string): StackItem[] => [
-      ...notes.filter(n => n.parent_email_id === emailId).map(n => ({
+      ...(notesByParentEmail.get(emailId) || []).map(n => ({
         type: 'note' as const, data: n, date: n.updated_at || n.created_at, children: [],
       })),
-      ...emails.filter(e => e.parent_email_id === emailId).map(e => ({
+      ...(emailsByParentEmail.get(emailId) || []).map(e => ({
         type: 'email' as const, data: e, date: e.sent_date || e.created_at, children: [],
       })),
     ];
 
-    // Get children for a note
     const noteChildren = (noteId: string): StackItem[] => [
-      ...emails.filter(e => e.parent_note_id === noteId).map(e => ({
+      ...(emailsByParentNote.get(noteId) || []).map(e => ({
         type: 'email' as const, data: e, date: e.sent_date || e.created_at, children: [],
       })),
-      ...notes.filter(n => n.parent_note_id === noteId).map(n => ({
+      ...(notesByParentNote.get(noteId) || []).map(n => ({
         type: 'note' as const, data: n, date: n.updated_at || n.created_at, children: [],
       })),
     ];
@@ -282,9 +347,7 @@ export function EmailList({ ticketId }: { ticketId: string }) {
     }));
 
     return [...topEmails, ...topNotes].sort((a, b) => b.date.localeCompare(a.date));
-  };
-
-  const stackItems = buildStack();
+  }, [emails, notes]);
 
   if (loading) {
     return <div className="text-center py-8 text-neon-cyan neon-pulse text-xs tracking-widest">LOADING...</div>;
@@ -308,23 +371,23 @@ export function EmailList({ ticketId }: { ticketId: string }) {
       const email = item.data as Email;
       const steps = flowSteps[email.id] || [];
       const isExpanded = expandedFlows.has(email.id);
-      const isSelected = selectedEmail?.id === email.id;
+      const isEmailExpanded = expandedItems.has(email.id);
 
       return (
         <div key={`email-${email.id}`}
-          draggable
-          onDragStart={(e) => { e.dataTransfer.setData('text/plain', dragKey); e.dataTransfer.effectAllowed = 'move'; handleChildDragStart('email', email.id, isChild); }}
+          draggable={!isEmailExpanded}
+          onDragStart={(e) => { if (isEmailExpanded) { e.preventDefault(); return; } e.dataTransfer.setData('text/plain', dragKey); e.dataTransfer.effectAllowed = 'move'; handleChildDragStart('email', email.id, isChild); }}
           onDragEnd={handleDragEnd}
           onDragOver={(e) => { e.preventDefault(); e.dataTransfer.dropEffect = 'move'; setDragOverId(id); }}
           onDragLeave={() => setDragOverId(null)}
           onDrop={(e) => { e.preventDefault(); handleCardDrop(); handleDrop('email', id, e.dataTransfer.getData('text/plain')); }}
-          className={`relative glass rounded-lg cursor-grab active:cursor-grabbing transition-all border ${
-            isSelected ? 'border-neon-cyan/40 glow-cyan bg-neon-cyan/5'
+          className={`relative glass rounded-lg transition-all border ${
+            isEmailExpanded ? 'border-neon-cyan/40 glow-cyan bg-neon-cyan/5'
             : isDragOver ? 'border-primary/60 bg-primary/5 shadow-md'
             : 'border-border hover:border-neon-cyan/20'
-          } ${isChild ? 'ml-6' : ''}`}>
+          } ${isChild ? 'ml-6' : ''} ${!isEmailExpanded ? 'cursor-grab active:cursor-grabbing' : ''}`}>
           <BookmarkTab type="email" />
-          <div className="flex items-stretch pl-3" onClick={() => { selectEmail(isSelected ? null : email); if (!isSelected) { setActiveNote(null); setShowNoteEditor(false); } }}>
+          <div className="flex items-stretch pl-3" onClick={() => { toggleExpand(email.id); }}>
             {steps.length > 0 && (
               <div className="flex items-center px-2 border-r border-border/30" onClick={(e) => { e.stopPropagation(); toggleFlow(email.id); }}>
                 <FlowTimeline steps={steps} />
@@ -343,6 +406,7 @@ export function EmailList({ ticketId }: { ticketId: string }) {
                   </div>
                 </div>
                 <div className="flex items-center gap-1 shrink-0">
+                  <ChevronDown className={`h-4 w-4 text-muted-foreground transition-transform ${isEmailExpanded ? 'rotate-180' : ''}`} />
                   <button onClick={(e) => { e.stopPropagation(); toggleFlow(email.id); }}
                     className={`text-[10px] px-2 py-1 rounded transition-all ${isExpanded ? 'text-neon-magenta bg-neon-magenta/10' : 'text-muted-foreground hover:text-neon-magenta hover:bg-neon-magenta/10'}`}>
                     FLOW{steps.length > 0 ? ` (${steps.length})` : ''}
@@ -352,7 +416,7 @@ export function EmailList({ ticketId }: { ticketId: string }) {
                   <button onClick={(e) => {
                     e.stopPropagation();
                     if (confirmDelete === email.id) { deleteEmail(ticketId, email.id); setConfirmDelete(null); }
-                    else { setConfirmDelete(email.id); setTimeout(() => setConfirmDelete(null), 3000); }
+                    else { scheduleDeleteConfirmReset(email.id); }
                   }}
                     className={`text-[10px] px-2 py-1 rounded transition-all ${confirmDelete === email.id ? 'text-neon-red bg-neon-red/10 border border-neon-red/30' : 'text-muted-foreground hover:text-neon-red'}`}>
                     {confirmDelete === email.id ? 'CONFIRM?' : 'DEL'}
@@ -375,7 +439,12 @@ export function EmailList({ ticketId }: { ticketId: string }) {
               )}
             </div>
           </div>
-          <EmailFlowPanel email={email} ticketId={ticketId} expanded={isExpanded} onToggle={() => toggleFlow(email.id)} />
+          <EmailFlowPanel email={email} ticketId={ticketId} expanded={isExpanded} />
+          {isEmailExpanded && (
+            <div className="border-t border-border max-h-[70vh] overflow-y-auto">
+              <EmailViewer email={email} ticketId={ticketId} embedded />
+            </div>
+          )}
         </div>
       );
     }
@@ -383,22 +452,26 @@ export function EmailList({ ticketId }: { ticketId: string }) {
     // Note card
     const note = item.data as Note;
     const isNoteActive = activeNote === note.id;
+    const isNoteExpanded = expandedItems.has(note.id);
     const confirmingNoteDelete = confirmDelete === `note-${note.id}`;
 
     return (
       <div key={`note-${note.id}`}
-        draggable
-        onDragStart={(e) => { e.dataTransfer.setData('text/plain', dragKey); e.dataTransfer.effectAllowed = 'move'; handleChildDragStart('note', note.id, isChild); }}
+        draggable={!isNoteExpanded}
+        onDragStart={(e) => { if (isNoteExpanded) { e.preventDefault(); return; } e.dataTransfer.setData('text/plain', dragKey); e.dataTransfer.effectAllowed = 'move'; handleChildDragStart('note', note.id, isChild); }}
         onDragEnd={handleDragEnd}
         onDragOver={(e) => { e.preventDefault(); e.dataTransfer.dropEffect = 'move'; setDragOverId(id); }}
         onDragLeave={() => setDragOverId(null)}
         onDrop={(e) => { e.preventDefault(); handleCardDrop(); handleDrop('note', id, e.dataTransfer.getData('text/plain')); }}
-        className={`relative glass rounded-lg cursor-grab active:cursor-grabbing transition-all border ${
-          isNoteActive ? 'border-neon-cyan/40 glow-cyan bg-neon-cyan/5'
+        className={`relative glass rounded-lg transition-all border ${
+          isNoteExpanded ? 'border-neon-cyan/40 glow-cyan bg-neon-cyan/5'
           : isDragOver ? 'border-primary/60 bg-primary/5 shadow-md'
           : 'border-border hover:border-neon-cyan/20'
-        } ${isChild ? 'ml-6' : ''}`}
-        onClick={() => { setActiveNote(isNoteActive ? null : note.id); if (!isNoteActive) { setShowNoteEditor(true); selectEmail(null); } else { setShowNoteEditor(false); } }}>
+        } ${isChild ? 'ml-6' : ''} ${!isNoteExpanded ? 'cursor-grab active:cursor-grabbing' : ''}`}
+        onClick={() => {
+          toggleExpand(note.id);
+          setActiveNote(isNoteActive ? null : note.id);
+        }}>
         <BookmarkTab type="note" />
         <div className="flex-1 p-3 pl-5 min-w-0">
           <div className="flex items-center justify-between">
@@ -413,10 +486,11 @@ export function EmailList({ ticketId }: { ticketId: string }) {
               </div>
             </div>
             <div className="flex items-center gap-1 shrink-0">
+              <ChevronDown className={`h-4 w-4 text-muted-foreground transition-transform ${isNoteExpanded ? 'rotate-180' : ''}`} />
               <button onClick={(e) => {
                 e.stopPropagation();
                 if (confirmingNoteDelete) { deleteNote(ticketId, note.id); setConfirmDelete(null); }
-                else { setConfirmDelete(`note-${note.id}`); setTimeout(() => setConfirmDelete(null), 3000); }
+                else { scheduleDeleteConfirmReset(`note-${note.id}`); }
               }}
                 className={`text-[10px] px-2 py-1 rounded transition-all ${confirmingNoteDelete ? 'text-neon-red bg-neon-red/10 border border-neon-red/30' : 'text-muted-foreground hover:text-neon-red'}`}>
                 {confirmingNoteDelete ? 'CONFIRM?' : 'DEL'}
@@ -424,6 +498,11 @@ export function EmailList({ ticketId }: { ticketId: string }) {
             </div>
           </div>
         </div>
+        {isNoteExpanded && (
+          <div className="border-t border-border max-h-[70vh] overflow-y-auto" onClick={(e) => e.stopPropagation()}>
+            <NoteEditor ticketId={ticketId} pinned={true} onTogglePin={() => undefined} />
+          </div>
+        )}
       </div>
     );
   };
@@ -465,14 +544,6 @@ export function EmailList({ ticketId }: { ticketId: string }) {
           </div>
         ))}
       </div>
-
-      {/* Email Viewer */}
-      {selectedEmail && <EmailViewer email={selectedEmail} ticketId={ticketId} />}
-
-      {/* Note Editor */}
-      {activeNote && showNoteEditor && (
-        <NoteEditor ticketId={ticketId} pinned={true} onTogglePin={() => setShowNoteEditor(false)} />
-      )}
 
       {/* AI Chat Modal */}
       {aiEmail && <AIChatModal open={!!aiEmail} onOpenChange={(v) => { if (!v) setAiEmail(null); }} email={aiEmail} />}

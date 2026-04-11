@@ -5,6 +5,7 @@ import {
   closestCorners,
   DndContext,
   DragEndEvent,
+  DragOverEvent,
   DragStartEvent,
   PointerSensor,
   useSensor,
@@ -90,6 +91,34 @@ export function KanbanBoard() {
     void moveCard(active.id, targetCategoryId, targetPosition);
   };
 
+  const handleCreateCategory = async (input: { name: string; color: string }) => {
+    if (editingCategory) {
+      await updateCategory(editingCategory.id, input);
+      return;
+    }
+    await createCategory(input);
+  };
+
+  const handleDeleteCategory = editingCategory ? async () => deleteCategory(editingCategory.id) : undefined;
+
+  const handleSaveCard = async (input: {
+    category_id: string;
+    title: string;
+    description?: string | null;
+    ticket_id?: string | null;
+  }) => {
+    const cleaned = {
+      ...input,
+      description: input.description ?? undefined,
+      ticket_id: input.ticket_id ?? undefined,
+    };
+    if (editingCard) {
+      await updateCard(editingCard.id, cleaned);
+      return;
+    }
+    await createCard(cleaned);
+  };
+
   return (
     <section className="rounded-xl border border-border bg-card shadow-sm">
       <div className="flex items-center justify-between border-b border-border px-5 py-4">
@@ -155,13 +184,7 @@ export function KanbanBoard() {
         initialCategoryId={cardFormCategoryId || categories[0]?.id || ''}
         card={editingCard}
         onOpenChange={setCardFormOpen}
-        onSubmit={async (input) => {
-          if (editingCard) {
-            await updateCard(editingCard.id, input);
-            return;
-          }
-          await createCard(input);
-        }}
+        onSubmit={handleSaveCard}
         onDelete={editingCard ? async () => deleteCard(editingCard.id, editingCard.ticket_id) : undefined}
       />
 
@@ -169,14 +192,8 @@ export function KanbanBoard() {
         open={categoryFormOpen}
         category={editingCategory}
         onOpenChange={setCategoryFormOpen}
-        onSubmit={async (input) => {
-          if (editingCategory) {
-            await updateCategory(editingCategory.id, input);
-            return;
-          }
-          await createCategory(input);
-        }}
-        onDelete={editingCategory ? async () => deleteCategory(editingCategory.id) : undefined}
+        onSubmit={handleCreateCategory}
+        onDelete={handleDeleteCategory}
       />
     </section>
   );

@@ -8,6 +8,14 @@ import Color from '@tiptap/extension-color';
 import { TextStyle } from '@tiptap/extension-text-style';
 import Highlight from '@tiptap/extension-highlight';
 import Placeholder from '@tiptap/extension-placeholder';
+import Link from '@tiptap/extension-link';
+import Image from '@tiptap/extension-image';
+import TaskList from '@tiptap/extension-task-list';
+import TaskItem from '@tiptap/extension-task-item';
+import { Table } from '@tiptap/extension-table';
+import { TableRow } from '@tiptap/extension-table-row';
+import { TableHeader } from '@tiptap/extension-table-header';
+import { TableCell } from '@tiptap/extension-table-cell';
 import { useNoteStore } from '@/stores/note-store';
 import { useAnnotationStore } from '@/stores/annotation-store';
 import { getSelectionOffsets } from '@/lib/annotation-utils';
@@ -16,6 +24,11 @@ import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { MiniRichEditor, RichContent } from '@/components/ui/rich-editor';
 import type { Annotation } from '@/types/annotation';
+import { Settings } from 'lucide-react';
+import { DEFAULT_BUSINESS_EMAIL_PROMPT } from '@/lib/business-email-prompt';
+import { WeeklyReportDialog } from '@/components/notes/weekly-report-dialog';
+import { DoorayReportDialog } from '@/components/notes/dooray-report-dialog';
+import { GenerationSettings } from '@/components/settings/generation-settings';
 
 const ANNOTATION_COLORS = [
   { bg: 'rgba(255, 220, 100, 0.35)', border: '#ffd54f', label: 'Yellow' },
@@ -24,6 +37,7 @@ const ANNOTATION_COLORS = [
   { bg: 'rgba(150, 255, 150, 0.30)', border: '#81c784', label: 'Green' },
   { bg: 'rgba(200, 170, 255, 0.30)', border: '#b39ddb', label: 'Purple' },
 ];
+const BUSINESS_EMAIL_PROMPT_STORAGE_KEY = 'biz.businessEmailPrompt';
 
 /* ─── Tiptap toolbar ─── */
 function TiptapToolbar({ editor }: { editor: ReturnType<typeof useEditor> }) {
@@ -31,6 +45,31 @@ function TiptapToolbar({ editor }: { editor: ReturnType<typeof useEditor> }) {
   const colors = ['#ff4444', '#ff6600', '#ffd700', '#00cc00', '#0099ff', '#9933ff', '#ff3399'];
 
   if (!editor) return null;
+
+  const handleLink = () => {
+    const previous = editor.getAttributes('link').href as string | undefined;
+    const url = window.prompt('Enter URL', previous || 'https://');
+    if (url === null) return;
+    const trimmed = url.trim();
+    if (!trimmed) {
+      editor.chain().focus().unsetLink().run();
+      return;
+    }
+    editor.chain().focus().setLink({ href: trimmed, target: '_blank', rel: 'noopener noreferrer nofollow' }).run();
+  };
+
+  const handleImage = () => {
+    const url = window.prompt('Enter image URL', 'https://');
+    if (!url) return;
+    const src = url.trim();
+    if (!src) return;
+    editor.chain().focus().setImage({ src, alt: 'image' }).run();
+  };
+
+  const handleInsertTable = () => {
+    if (editor.isActive('table')) return;
+    editor.chain().focus().insertTable({ rows: 3, cols: 3, withHeaderRow: true }).run();
+  };
 
   return (
     <div className="flex items-center gap-0.5 px-2 py-1 border-b border-border bg-muted/20 flex-wrap">
@@ -58,8 +97,26 @@ function TiptapToolbar({ editor }: { editor: ReturnType<typeof useEditor> }) {
         className={`toolbar-btn ${editor.isActive('codeBlock') ? 'bg-muted text-foreground border-border' : ''}`}>{'{ }'}</button>
       <button onMouseDown={(e) => { e.preventDefault(); editor.chain().focus().toggleBlockquote().run(); }}
         className={`toolbar-btn ${editor.isActive('blockquote') ? 'bg-muted text-foreground border-border' : ''}`}>&quot;</button>
+      <button onMouseDown={(e) => { e.preventDefault(); editor.chain().focus().toggleTaskList().run(); }}
+        className={`toolbar-btn ${editor.isActive('taskList') ? 'bg-muted text-foreground border-border' : ''}`} title="Task List">[]</button>
       <button onMouseDown={(e) => { e.preventDefault(); editor.chain().focus().setHorizontalRule().run(); }}
         className="toolbar-btn">&#8213;</button>
+      <button onMouseDown={(e) => { e.preventDefault(); handleLink(); }}
+        className={`toolbar-btn ${editor.isActive('link') ? 'bg-muted text-foreground border-border' : ''}`} title="Link">Link</button>
+      <button onMouseDown={(e) => { e.preventDefault(); handleImage(); }}
+        className="toolbar-btn" title="Image">Img</button>
+      <button onMouseDown={(e) => { e.preventDefault(); handleInsertTable(); }}
+        className={`toolbar-btn ${editor.isActive('table') ? 'bg-muted text-foreground border-border' : ''}`} title="Insert table">Tbl</button>
+      {editor.isActive('table') && (
+        <>
+          <button onMouseDown={(e) => { e.preventDefault(); editor.chain().focus().addColumnAfter().run(); }}
+            className="toolbar-btn" title="Add column">+C</button>
+          <button onMouseDown={(e) => { e.preventDefault(); editor.chain().focus().addRowAfter().run(); }}
+            className="toolbar-btn" title="Add row">+R</button>
+          <button onMouseDown={(e) => { e.preventDefault(); editor.chain().focus().deleteTable().run(); }}
+            className="toolbar-btn" title="Delete table">DelT</button>
+        </>
+      )}
       <span className="w-px h-4 bg-border mx-1" />
       <div className="relative">
         <button onMouseDown={(e) => { e.preventDefault(); setShowColorPicker(!showColorPicker); }}
@@ -134,6 +191,43 @@ function NoteAnnotationCard({ ann, ticketId, isActive, onActivate }: {
   );
 }
 
+function escapeHtml(text: string) {
+  return text
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#39;');
+}
+
+function draftTextToHtml(draft: string) {
+  const cleaned = draft.trim();
+  if (!cleaned) return '';
+
+  return cleaned
+    .split(/\n{2,}/)
+    .map((paragraph) => `<p>${escapeHtml(paragraph.trim()).replace(/\n/g, '<br />')}</p>`)
+    .join('');
+}
+
+function markdownToHtml(markdown: string) {
+  return markdown
+    .split(/\n{2,}/)
+    .map((block) => {
+      const line = block.trim();
+      if (!line) return '';
+      if (/^###\s+/.test(line)) return `<h3>${escapeHtml(line.replace(/^###\s+/, ''))}</h3>`;
+      if (/^##\s+/.test(line)) return `<h2>${escapeHtml(line.replace(/^##\s+/, ''))}</h2>`;
+      if (/^#\s+/.test(line)) return `<h1>${escapeHtml(line.replace(/^#\s+/, ''))}</h1>`;
+      if (/^-\s+/.test(line)) {
+        const items = line.split('\n').filter((entry) => /^-\s+/.test(entry)).map((entry) => `<li>${escapeHtml(entry.replace(/^-+\s+/, ''))}</li>`);
+        return `<ul>${items.join('')}</ul>`;
+      }
+      return `<p>${escapeHtml(line).replace(/\n/g, '<br />')}</p>`;
+    })
+    .join('');
+}
+
 export function NoteEditor({ ticketId, pinned, onTogglePin }: {
   ticketId: string;
   pinned: boolean;
@@ -151,10 +245,29 @@ export function NoteEditor({ ticketId, pinned, onTogglePin }: {
   const [selectionData, setSelectionData] = useState<{ start: number; end: number; text: string } | null>(null);
   const [annoNoteHtml, setAnnoNoteHtml] = useState('');
   const [annoColor, setAnnoColor] = useState(ANNOTATION_COLORS[0].border);
+  const [businessEmailLoading, setBusinessEmailLoading] = useState(false);
+  const [businessEmailError, setBusinessEmailError] = useState<string | null>(null);
+  const [showBusinessPromptSettings, setShowBusinessPromptSettings] = useState(false);
+  const [businessEmailPrompt, setBusinessEmailPrompt] = useState(DEFAULT_BUSINESS_EMAIL_PROMPT);
+  const [weeklyDialogOpen, setWeeklyDialogOpen] = useState(false);
+  const [doorayDialogOpen, setDoorayDialogOpen] = useState(false);
+  const [generationSettingsOpen, setGenerationSettingsOpen] = useState(false);
 
   useEffect(() => {
     fetchNotes(ticketId);
   }, [ticketId, fetchNotes]);
+
+  useEffect(() => {
+    if (typeof window === 'undefined') return;
+    try {
+      const saved = window.localStorage.getItem(BUSINESS_EMAIL_PROMPT_STORAGE_KEY);
+      if (saved && saved.trim()) {
+        setBusinessEmailPrompt(saved);
+      }
+    } catch {
+      // Ignore storage errors and fall back to default prompt.
+    }
+  }, []);
 
   const currentNote = notes.find(n => n.id === activeNote);
 
@@ -203,8 +316,57 @@ export function NoteEditor({ ticketId, pinned, onTogglePin }: {
     });
     setSelectionData(null);
     setAnnoNoteHtml('');
-    window.getSelection()?.removeAllRanges();
     await fetchAnnotations(ticketId, '', activeNote);
+  };
+
+  const handleBusinessEmailDraft = async () => {
+    if (!activeNote || !currentNote) return;
+    if (businessEmailLoading) return;
+
+    setBusinessEmailLoading(true);
+    setBusinessEmailError(null);
+
+    try {
+      const res = await fetch('/api/ai/summarize-email', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          note_title: currentNote.title,
+          note_content: currentNote.content,
+          custom_prompt: businessEmailPrompt,
+        }),
+      });
+
+      const data = await res.json();
+      if (!res.ok) {
+        throw new Error(data.error || 'Failed to generate business email draft');
+      }
+
+      const fragment = [
+        currentNote.content?.trim() || '',
+        '<hr />',
+        '<h3>Business Email Draft</h3>',
+        draftTextToHtml(data.draft || ''),
+      ].filter(Boolean).join('');
+
+      await updateNote(ticketId, activeNote, { content: fragment });
+      useNoteStore.setState({
+        notes: notes.map((note) => note.id === activeNote ? { ...note, content: fragment } : note),
+      });
+    } catch (error) {
+      setBusinessEmailError(error instanceof Error ? error.message : 'Failed to generate business email draft');
+    } finally {
+      setBusinessEmailLoading(false);
+    }
+  };
+
+  const handleGeneratedMarkdown = async (title: string, markdown: string) => {
+    const note = await createNote(ticketId, title);
+    if (!note) return;
+    const html = markdownToHtml(markdown);
+    await updateNote(ticketId, note.id, { content: html });
+    await fetchNotes(ticketId);
+    setActiveNote(note.id);
   };
 
   const hasAnnotations = noteAnnotations.length > 0 || selectionData;
@@ -236,6 +398,48 @@ export function NoteEditor({ ticketId, pinned, onTogglePin }: {
           <span className="text-[10px] text-primary tracking-widest font-bold">NOTES ({notes.length})</span>
           <Button onClick={() => createNote(ticketId, 'New Note')}
             className="text-[10px] h-6 px-2 bg-primary/20 text-primary border border-primary/30">+ NEW</Button>
+          {currentNote && (
+            <div className="flex items-center gap-1">
+              <Button
+                type="button"
+                onClick={handleBusinessEmailDraft}
+                disabled={businessEmailLoading}
+                className="text-[10px] h-6 px-2 bg-neon-cyan/15 text-neon-cyan border border-neon-cyan/30"
+              >
+                {businessEmailLoading ? 'GENERATING...' : 'BUSINESS EMAIL'}
+              </Button>
+              <Button
+                type="button"
+                onClick={() => setWeeklyDialogOpen(true)}
+                className="text-[10px] h-6 px-2 bg-neon-green/15 text-neon-green border border-neon-green/30"
+              >
+                주간보고
+              </Button>
+              <Button
+                type="button"
+                onClick={() => setDoorayDialogOpen(true)}
+                className="text-[10px] h-6 px-2 bg-neon-magenta/15 text-neon-magenta border border-neon-magenta/30"
+              >
+                두레이
+              </Button>
+              <button
+                type="button"
+                onClick={() => setGenerationSettingsOpen(true)}
+                className="h-6 w-6 inline-flex items-center justify-center rounded border border-border text-muted-foreground hover:text-primary hover:border-primary/40 transition-colors"
+                aria-label="Open generation settings"
+              >
+                <Settings className="h-3.5 w-3.5" />
+              </button>
+              <button
+                type="button"
+                onClick={() => setShowBusinessPromptSettings((prev) => !prev)}
+                className="h-6 w-6 inline-flex items-center justify-center rounded border border-border text-muted-foreground hover:text-primary hover:border-primary/40 transition-colors"
+                aria-label="Toggle business email prompt settings"
+              >
+                B
+              </button>
+            </div>
+          )}
         </div>
         <div className="flex items-center gap-2">
           <button onClick={onTogglePin}
@@ -245,6 +449,43 @@ export function NoteEditor({ ticketId, pinned, onTogglePin }: {
           <button onClick={() => setCollapsed(true)} className="text-[10px] text-muted-foreground hover:text-primary transition-colors">▲ COLLAPSE</button>
         </div>
       </div>
+      {showBusinessPromptSettings && (
+        <div className="border-b border-border bg-muted/30 p-3">
+          <div className="rounded-lg border border-border bg-muted/30 p-3">
+            <div className="text-[10px] tracking-widest text-primary font-bold mb-2">이메일 톤/스타일 설정</div>
+            <textarea
+              value={businessEmailPrompt}
+              onChange={(e) => {
+                const next = e.target.value;
+                setBusinessEmailPrompt(next);
+                try {
+                  window.localStorage.setItem(BUSINESS_EMAIL_PROMPT_STORAGE_KEY, next);
+                } catch {
+                  // Ignore storage failures and keep runtime state.
+                }
+              }}
+              className="w-full min-h-[120px] rounded-md border border-border bg-background px-2 py-1.5 text-xs text-foreground outline-none focus:border-primary/40"
+            />
+            <div className="mt-2">
+              <Button
+                type="button"
+                variant="ghost"
+                onClick={() => {
+                  setBusinessEmailPrompt(DEFAULT_BUSINESS_EMAIL_PROMPT);
+                  try {
+                    window.localStorage.setItem(BUSINESS_EMAIL_PROMPT_STORAGE_KEY, DEFAULT_BUSINESS_EMAIL_PROMPT);
+                  } catch {
+                    // Ignore storage failures and keep runtime state.
+                  }
+                }}
+                className="text-[10px] h-6 px-2 text-muted-foreground"
+              >
+                기본값 복원
+              </Button>
+            </div>
+          </div>
+        </div>
+      )}
 
       <div className="flex" style={{ minHeight: '350px' }}>
         {/* Note list sidebar */}
@@ -295,6 +536,11 @@ export function NoteEditor({ ticketId, pinned, onTogglePin }: {
                 previewRef={previewRef}
                 onMouseUp={handlePreviewMouseUp}
               />
+              {businessEmailError && (
+                <div className="px-3 pb-3 text-[10px] text-accent-red">
+                  {businessEmailError}
+                </div>
+              )}
             </div>
 
             {/* Annotation panel for notes */}
@@ -315,10 +561,25 @@ export function NoteEditor({ ticketId, pinned, onTogglePin }: {
                           style={{ backgroundColor: c.border }} title={c.label} />
                       ))}
                     </div>
-                    <MiniRichEditor content="" onChange={setAnnoNoteHtml} onSubmit={handleCreateAnnotation} placeholder="Write memo..." autoFocus className="mb-2" />
-                    <div className="flex gap-2">
+                    <MiniRichEditor content="" onChange={setAnnoNoteHtml} onSubmit={handleCreateAnnotation} placeholder="Write memo..." className="mb-2" />
+                    <div className="flex gap-2 flex-wrap">
+                      <Button
+                        type="button"
+                        onClick={async () => {
+                          if (!selectionData?.text) return;
+                          try {
+                            await navigator.clipboard.writeText(selectionData.text);
+                          } catch {
+                            // Ignore clipboard failures and leave selection state intact.
+                          }
+                        }}
+                        variant="ghost"
+                        className="text-[10px] h-6 px-3 text-muted-foreground"
+                      >
+                        COPY
+                      </Button>
                       <Button onClick={handleCreateAnnotation} className="bg-primary/20 text-primary border border-primary/30 text-[10px] h-6 px-3">SAVE</Button>
-                      <Button onClick={() => { setSelectionData(null); window.getSelection()?.removeAllRanges(); }} variant="ghost" className="text-[10px] h-6 px-3 text-muted-foreground">CANCEL</Button>
+                      <Button onClick={() => { setSelectionData(null); }} variant="ghost" className="text-[10px] h-6 px-3 text-muted-foreground">CANCEL</Button>
                     </div>
                   </div>
                 )}
@@ -337,6 +598,22 @@ export function NoteEditor({ ticketId, pinned, onTogglePin }: {
           </div>
         )}
       </div>
+      <WeeklyReportDialog
+        open={weeklyDialogOpen}
+        onOpenChange={setWeeklyDialogOpen}
+        ticketId={ticketId}
+        onGenerated={async (markdown) => handleGeneratedMarkdown('주간보고', markdown)}
+      />
+      <DoorayReportDialog
+        open={doorayDialogOpen}
+        onOpenChange={setDoorayDialogOpen}
+        ticketId={ticketId}
+        onGenerated={async (markdown) => handleGeneratedMarkdown('두레이 보고', markdown)}
+      />
+      <GenerationSettings
+        open={generationSettingsOpen}
+        onOpenChange={setGenerationSettingsOpen}
+      />
     </div>
   );
 }
@@ -357,6 +634,27 @@ function NoteWysiwygEditor({ content, onChange, previewRef, onMouseUp }: {
       Underline,
       TextStyle,
       Color,
+      Link.configure({
+        autolink: true,
+        linkOnPaste: true,
+        openOnClick: false,
+        defaultProtocol: 'https',
+        protocols: ['http', 'https', 'mailto', 'tel'],
+      }),
+      Image.configure({
+        allowBase64: true,
+        inline: false,
+      }),
+      TaskList,
+      TaskItem.configure({
+        nested: true,
+      }),
+      Table.configure({
+        resizable: true,
+      }),
+      TableRow,
+      TableHeader,
+      TableCell,
       Highlight.configure({ multicolor: true }),
       Placeholder.configure({ placeholder: 'Start writing...' }),
     ],
@@ -370,6 +668,14 @@ function NoteWysiwygEditor({ content, onChange, previewRef, onMouseUp }: {
       onChange(editor.getHTML());
     },
   });
+
+  useEffect(() => {
+    if (!editor) return;
+    const currentHtml = editor.getHTML();
+    if (content !== currentHtml) {
+      editor.commands.setContent(content, { emitUpdate: false });
+    }
+  }, [content, editor]);
 
   useEffect(() => {
     return () => { editor?.destroy(); };
