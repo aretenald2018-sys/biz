@@ -3,6 +3,7 @@
 import { useEffect, useState, use } from 'react';
 import { useRouter } from 'next/navigation';
 import { useTicketStore } from '@/stores/ticket-store';
+import { useEmailFlowStore } from '@/stores/email-flow-store';
 import { TicketStatusBadge } from '@/components/tickets/ticket-status-badge';
 import { EmailDropzone } from '@/components/email/email-dropzone';
 import { EmailList } from '@/components/email/email-list';
@@ -31,7 +32,8 @@ const statuses: TicketStatus[] = ['신규', '진행중', '검토중', '종결', 
 export default function TicketDetailPage({ params }: { params: Promise<{ id: string }> }) {
   const { id } = use(params);
   const router = useRouter();
-  const { selectedTicket, fetchTicket, updateTicket, deleteTicket } = useTicketStore();
+  const { selectedTicket, fetchTicket, updateTicket, deleteTicket, clearSelectedTicket } = useTicketStore();
+  const clearFlowSteps = useEmailFlowStore((state) => state.clearFlowSteps);
   const [editing, setEditing] = useState(false);
   const [title, setTitle] = useState('');
   const [description, setDescription] = useState('');
@@ -41,6 +43,11 @@ export default function TicketDetailPage({ params }: { params: Promise<{ id: str
   useEffect(() => {
     fetchTicket(id);
   }, [id, fetchTicket]);
+
+  useEffect(() => () => {
+    clearFlowSteps();
+    clearSelectedTicket();
+  }, [clearFlowSteps, clearSelectedTicket]);
 
   useEffect(() => {
     if (selectedTicket) {
@@ -90,8 +97,8 @@ export default function TicketDetailPage({ params }: { params: Promise<{ id: str
 
       {/* Ticket Info */}
       <div className="glass rounded-lg p-6 border border-border">
-        <div className="flex items-start justify-between gap-4">
-          <div className="flex-1">
+        <div className="grid gap-6 lg:grid-cols-[minmax(0,1fr)_360px]">
+          <div className="space-y-4">
             {editing ? (
               <div className="space-y-3">
                 <Input
@@ -123,7 +130,7 @@ export default function TicketDetailPage({ params }: { params: Promise<{ id: str
                 </div>
               </div>
             ) : (
-              <>
+              <div className="space-y-3">
                 <h1
                   className="text-lg font-bold text-foreground cursor-pointer hover:text-neon-cyan transition-colors"
                   onClick={() => setEditing(true)}
@@ -131,71 +138,80 @@ export default function TicketDetailPage({ params }: { params: Promise<{ id: str
                   {selectedTicket.title}
                 </h1>
                 {selectedTicket.description && (
-                  <p className="text-sm text-muted-foreground mt-2">
+                  <p className="text-sm text-muted-foreground leading-relaxed">
                     {selectedTicket.description}
                   </p>
                 )}
-              </>
+              </div>
             )}
+
+            <div className="flex flex-wrap items-center gap-3 pt-2">
+              <Select value={selectedTicket.status} onValueChange={handleStatusChange}>
+                <SelectTrigger className="w-32 bg-white/5 border-border text-xs">
+                  <SelectValue />
+                </SelectTrigger>
+                <SelectContent className="glass border-border">
+                  {statuses.map((s) => (
+                    <SelectItem key={s} value={s} className="text-xs">
+                      {s}
+                    </SelectItem>
+                  ))}
+                </SelectContent>
+              </Select>
+
+              <Dialog open={deleteOpen} onOpenChange={setDeleteOpen}>
+                <DialogTrigger
+                  render={<Button variant="ghost" className="text-neon-red/70 hover:text-neon-red text-xs" />}
+                >
+                  DELETE
+                </DialogTrigger>
+                <DialogContent className="glass border-neon-red/20">
+                  <DialogHeader>
+                    <DialogTitle className="text-neon-red text-sm">CONFIRM DELETE</DialogTitle>
+                  </DialogHeader>
+                  <p className="text-sm text-muted-foreground">
+                    Are you sure you want to delete this ticket? This action cannot be undone.
+                  </p>
+                  <div className="flex justify-end gap-2 mt-4">
+                    <Button
+                      variant="ghost"
+                      onClick={() => setDeleteOpen(false)}
+                      className="text-xs"
+                    >
+                      CANCEL
+                    </Button>
+                    <Button
+                      onClick={handleDelete}
+                      className="bg-neon-red/20 text-neon-red border border-neon-red/30 text-xs"
+                    >
+                      DELETE
+                    </Button>
+                  </div>
+                </DialogContent>
+              </Dialog>
+            </div>
+
+            <div className="flex flex-wrap items-center gap-4 text-[10px] text-muted-foreground tracking-wider">
+              <span>CREATED: {selectedTicket.created_at}</span>
+              <span>UPDATED: {selectedTicket.updated_at}</span>
+              <TicketStatusBadge status={selectedTicket.status} />
+            </div>
           </div>
 
-          <div className="flex items-center gap-3 flex-shrink-0">
-            <Select value={selectedTicket.status} onValueChange={handleStatusChange}>
-              <SelectTrigger className="w-32 bg-white/5 border-border text-xs">
-                <SelectValue />
-              </SelectTrigger>
-              <SelectContent className="glass border-border">
-                {statuses.map((s) => (
-                  <SelectItem key={s} value={s} className="text-xs">
-                    {s}
-                  </SelectItem>
-                ))}
-              </SelectContent>
-            </Select>
-
-            <Dialog open={deleteOpen} onOpenChange={setDeleteOpen}>
-              <DialogTrigger
-                render={<Button variant="ghost" className="text-neon-red/70 hover:text-neon-red text-xs" />}
-              >
-                DELETE
-              </DialogTrigger>
-              <DialogContent className="glass border-neon-red/20">
-                <DialogHeader>
-                  <DialogTitle className="text-neon-red text-sm">CONFIRM DELETE</DialogTitle>
-                </DialogHeader>
-                <p className="text-sm text-muted-foreground">
-                  Are you sure you want to delete this ticket? This action cannot be undone.
-                </p>
-                <div className="flex justify-end gap-2 mt-4">
-                  <Button
-                    variant="ghost"
-                    onClick={() => setDeleteOpen(false)}
-                    className="text-xs"
-                  >
-                    CANCEL
-                  </Button>
-                  <Button
-                    onClick={handleDelete}
-                    className="bg-neon-red/20 text-neon-red border border-neon-red/30 text-xs"
-                  >
-                    DELETE
-                  </Button>
-                </div>
-              </DialogContent>
-            </Dialog>
+          <div className="rounded-lg border border-border/60 bg-background/40 p-4">
+            <div className="mb-3 flex items-center justify-between">
+              <div>
+                <p className="text-[10px] tracking-[0.3em] text-muted-foreground">ACTIONS</p>
+                <h2 className="mt-1 text-sm font-medium text-foreground">EMAIL UPLOAD / NEW NOTE</h2>
+              </div>
+            </div>
+            <EmailDropzone ticketId={id} />
           </div>
-        </div>
-
-        <div className="flex items-center gap-4 mt-4 text-[10px] text-muted-foreground tracking-wider">
-          <span>CREATED: {selectedTicket.created_at}</span>
-          <span>UPDATED: {selectedTicket.updated_at}</span>
-          <TicketStatusBadge status={selectedTicket.status} />
         </div>
       </div>
 
       {/* Emails + Notes unified stack */}
       <div className="space-y-4">
-        <EmailDropzone ticketId={id} />
         <EmailList ticketId={id} />
       </div>
     </div>

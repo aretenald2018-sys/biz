@@ -1,12 +1,15 @@
 'use client';
 
+import { ROW_HEIGHT } from './gantt-bar';
+
 interface GanttDragLayerProps {
   viewStartDate: string;
   dragStartX: number | null;
   dragCurrentX: number | null;
+  dragRowIndex: number;
 }
 
-export function GanttDragLayer({ viewStartDate, dragStartX, dragCurrentX }: GanttDragLayerProps) {
+export function GanttDragLayer({ dragStartX, dragCurrentX, dragRowIndex }: GanttDragLayerProps) {
   if (dragStartX === null || dragCurrentX === null) return null;
 
   const minX = Math.min(dragStartX, dragCurrentX);
@@ -19,7 +22,7 @@ export function GanttDragLayer({ viewStartDate, dragStartX, dragCurrentX }: Gant
       className="absolute rounded-md neon-pulse"
       style={{
         left: minX,
-        top: 4,
+        top: Math.max(0, dragRowIndex) * ROW_HEIGHT + 6,
         width,
         height: 28,
         zIndex: 5,

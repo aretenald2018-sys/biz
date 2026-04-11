@@ -1,18 +1,22 @@
 'use client';
 
-import { useEffect, useRef, useState, useCallback, useMemo } from 'react';
+import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
+import { createPortal } from 'react-dom';
 import { useRouter } from 'next/navigation';
 import { useScheduleStore } from '@/stores/schedule-store';
 import { useTicketStore } from '@/stores/ticket-store';
 import { GanttHeader, getWeekColumns } from './gantt-header';
 import { GanttBar, getBarPosition, ROW_HEIGHT } from './gantt-bar';
 import { GanttDragLayer } from './gantt-drag-layer';
+import { GanttLinkModal } from './gantt-link-modal';
 import { ScheduleFormDialog } from './schedule-form-dialog';
 import type { Schedule } from '@/types/schedule';
 import type { Ticket } from '@/types/ticket';
 
 const PANEL_WIDTH = 180;
-const HEADER_HEIGHT = 52; // 24 (month) + 28 (week)
+const HEADER_HEIGHT = 52;
+const TOOLTIP_WIDTH = 280;
+const TOOLTIP_HEIGHT = 112;
 
 type DragOp =
   | { type: 'create'; startX: number; rowIdx: number }
@@ -24,6 +28,12 @@ type DragOp =
 interface TicketRow {
   ticket: Ticket | null;
   schedules: Schedule[];
+}
+
+interface TooltipState {
+  schedule: Schedule;
+  x: number;
+  y: number;
 }
 
 function xToDate(x: number, viewStartDate: string, weekColWidth: number): string {
@@ -53,12 +63,46 @@ const STATUS_COLORS: Record<string, string> = {
   '보류': 'text-red-400',
 };
 
+function buildTooltipLines(schedule: Schedule) {
+  const lines = [
+    schedule.title,
+    `${schedule.start_date} ~ ${schedule.end_date}`,
+  ];
+
+  if (schedule.ticket_title) {
+    lines.push(`Ticket: ${schedule.ticket_title}`);
+  }
+
+  if (schedule.url) {
+    lines.push(schedule.url);
+  }
+
+  return lines;
+}
+
+function getTooltipPosition(tooltip: TooltipState | null) {
+  if (!tooltip || typeof window === 'undefined') return null;
+
+  return {
+    left: Math.max(12, Math.min(tooltip.x + 14, window.innerWidth - TOOLTIP_WIDTH - 12)),
+    top: Math.max(12, Math.min(tooltip.y + 14, window.innerHeight - TOOLTIP_HEIGHT - 12)),
+  };
+}
+
 export function GanttChart() {
   const router = useRouter();
   const {
-    schedules, loading, viewStartDate, viewWeeks,
-    fetchSchedules, navigateWeeks, goToToday, openEditForm,
-    openCreateForm, setDragPreview, updateSchedule,
+    schedules,
+    loading,
+    viewStartDate,
+    viewWeeks,
+    fetchSchedules,
+    navigateWeeks,
+    goToToday,
+    openEditForm,
+    openCreateForm,
+    setDragPreview,
+    updateSchedule,
   } = useScheduleStore();
 
   const { tickets, fetchTickets } = useTicketStore();
@@ -66,21 +110,19 @@ export function GanttChart() {
   const scrollRef = useRef<HTMLDivElement>(null);
   const bodyRef = useRef<HTMLDivElement>(null);
 
-  // Create-drag state
   const [createDragStartX, setCreateDragStartX] = useState<number | null>(null);
   const [createDragCurrentX, setCreateDragCurrentX] = useState<number | null>(null);
   const createDragRowRef = useRef<number>(-1);
 
-  // Bar drag state
   const dragOpRef = useRef<DragOp>(null);
   const barOverridesRef = useRef<Record<string, { start_date: string; end_date: string }>>({});
   const [barOverrides, setBarOverrides] = useState<Record<string, { start_date: string; end_date: string }>>({});
   const [draggingId, setDraggingId] = useState<string | null>(null);
+  const [linkingSchedule, setLinkingSchedule] = useState<Schedule | null>(null);
+  const [tooltip, setTooltip] = useState<TooltipState | null>(null);
 
-  // Dynamic column width
   const [weekColWidth, setWeekColWidth] = useState(30);
 
-  // Refs for latest values
   const viewStartDateRef = useRef(viewStartDate);
   viewStartDateRef.current = viewStartDate;
   const weekColWidthRef = useRef(weekColWidth);
@@ -91,22 +133,21 @@ export function GanttChart() {
     fetchTickets();
   }, [fetchSchedules, fetchTickets]);
 
-  // 티켓별 스케줄 그룹핑
   const ticketRows: TicketRow[] = useMemo(() => {
     const grouped = new Map<string, Schedule[]>();
     const unassigned: Schedule[] = [];
 
-    for (const s of schedules) {
-      if (s.ticket_id) {
-        const list = grouped.get(s.ticket_id) || [];
-        list.push(s);
-        grouped.set(s.ticket_id, list);
+    for (const schedule of schedules) {
+      if (schedule.ticket_id) {
+        const list = grouped.get(schedule.ticket_id) || [];
+        list.push(schedule);
+        grouped.set(schedule.ticket_id, list);
       } else {
-        unassigned.push(s);
+        unassigned.push(schedule);
       }
     }
 
-    const rows: TicketRow[] = tickets.map(ticket => ({
+    const rows: TicketRow[] = tickets.map((ticket) => ({
       ticket,
       schedules: grouped.get(ticket.id) || [],
     }));
@@ -115,7 +156,6 @@ export function GanttChart() {
       rows.push({ ticket: null, schedules: unassigned });
     }
 
-    // 스케줄 없는 티켓도 최소 3행 확보
     if (rows.length < 3) {
       while (rows.length < 3) {
         rows.push({ ticket: null, schedules: [] });
@@ -125,14 +165,15 @@ export function GanttChart() {
     return rows;
   }, [schedules, tickets]);
 
-  // Container width → column width
   useEffect(() => {
     const el = scrollRef.current;
     if (!el) return;
+
     const update = () => {
       const w = el.clientWidth;
       setWeekColWidth(Math.max(25, Math.floor(w / viewWeeks)));
     };
+
     update();
     const ro = new ResizeObserver(update);
     ro.observe(el);
@@ -155,7 +196,7 @@ export function GanttChart() {
   const getX = useCallback((e: MouseEvent | React.MouseEvent) => {
     if (!bodyRef.current) return 0;
     const rect = bodyRef.current.getBoundingClientRect();
-    return e.clientX - rect.left;
+    return e.clientX - rect.left + (scrollRef.current?.scrollLeft ?? 0);
   }, []);
 
   const getRowFromY = useCallback((e: React.MouseEvent) => {
@@ -164,8 +205,6 @@ export function GanttChart() {
     const y = e.clientY - rect.top;
     return Math.floor(y / ROW_HEIGHT);
   }, []);
-
-  // === 바 드래그/리사이즈 (document-level) ===
 
   const handleDocMouseMove = useCallback((e: MouseEvent) => {
     const op = dragOpRef.current;
@@ -203,8 +242,7 @@ export function GanttChart() {
     const moved = Math.abs(x - op.startX);
 
     if (op.type === 'move' && moved < 5) {
-      // 클릭 — ticket_id가 있으면 페이지 이동, 없으면 편집 폼
-      const schedule = schedules.find(s => s.id === op.id);
+      const schedule = schedules.find((s) => s.id === op.id);
       if (schedule?.ticket_id) {
         router.push(`/tickets/${schedule.ticket_id}`);
       } else {
@@ -223,23 +261,34 @@ export function GanttChart() {
     setDraggingId(null);
   }, [getX, schedules, router, openEditForm, updateSchedule]);
 
+  const moveRef = useRef(handleDocMouseMove);
+  const upRef = useRef(handleDocMouseUp);
+  moveRef.current = handleDocMouseMove;
+  upRef.current = handleDocMouseUp;
+
   useEffect(() => {
-    document.addEventListener('mousemove', handleDocMouseMove);
-    document.addEventListener('mouseup', handleDocMouseUp);
+    const onMove = (e: MouseEvent) => moveRef.current(e);
+    const onUp = (e: MouseEvent) => upRef.current(e);
+
+    document.addEventListener('mousemove', onMove);
+    document.addEventListener('mouseup', onUp);
     return () => {
-      document.removeEventListener('mousemove', handleDocMouseMove);
-      document.removeEventListener('mouseup', handleDocMouseUp);
+      document.removeEventListener('mousemove', onMove);
+      document.removeEventListener('mouseup', onUp);
     };
-  }, [handleDocMouseMove, handleDocMouseUp]);
+  }, []);
 
   const handleBarMouseDown = useCallback((e: React.MouseEvent, schedule: Schedule) => {
     if (e.button !== 0) return;
     const x = getX(e);
     const duration = dateDiffDays(schedule.start_date, schedule.end_date);
     dragOpRef.current = {
-      type: 'move', id: schedule.id,
-      origStart: schedule.start_date, origEnd: schedule.end_date,
-      startX: x, durationDays: duration,
+      type: 'move',
+      id: schedule.id,
+      origStart: schedule.start_date,
+      origEnd: schedule.end_date,
+      startX: x,
+      durationDays: duration,
     };
     setDraggingId(schedule.id);
   }, [getX]);
@@ -247,8 +296,10 @@ export function GanttChart() {
   const handleLeftHandleMouseDown = useCallback((e: React.MouseEvent, schedule: Schedule) => {
     if (e.button !== 0) return;
     dragOpRef.current = {
-      type: 'resize-left', id: schedule.id,
-      origStart: schedule.start_date, origEnd: schedule.end_date,
+      type: 'resize-left',
+      id: schedule.id,
+      origStart: schedule.start_date,
+      origEnd: schedule.end_date,
       startX: getX(e),
     };
     setDraggingId(schedule.id);
@@ -257,14 +308,14 @@ export function GanttChart() {
   const handleRightHandleMouseDown = useCallback((e: React.MouseEvent, schedule: Schedule) => {
     if (e.button !== 0) return;
     dragOpRef.current = {
-      type: 'resize-right', id: schedule.id,
-      origStart: schedule.start_date, origEnd: schedule.end_date,
+      type: 'resize-right',
+      id: schedule.id,
+      origStart: schedule.start_date,
+      origEnd: schedule.end_date,
       startX: getX(e),
     };
     setDraggingId(schedule.id);
   }, [getX]);
-
-  // === 빈 영역 드래그 (새 스케줄 생성) ===
 
   const handleBodyMouseDown = useCallback((e: React.MouseEvent) => {
     if (e.button !== 0) return;
@@ -296,7 +347,6 @@ export function GanttChart() {
     if (maxX - minX > 10) {
       const startDate = xToDate(minX, viewStartDate, weekColWidth);
       const endDate = xToDate(maxX, viewStartDate, weekColWidth);
-      // Y 좌표에서 어떤 티켓 행인지 판별
       const rowIdx = createDragRowRef.current;
       const row = ticketRows[rowIdx];
       const ticketId = row?.ticket?.id;
@@ -309,12 +359,12 @@ export function GanttChart() {
   const columns = getWeekColumns(viewStartDate, viewWeeks);
   const totalWidth = viewWeeks * weekColWidth;
   const bodyHeight = ticketRows.length * ROW_HEIGHT;
-
   const viewEndDate = columns.length > 0 ? columns[columns.length - 1].endDate : viewStartDate;
+
+  const tooltipStyle = getTooltipPosition(tooltip);
 
   return (
     <div className="glass rounded-lg border border-border overflow-hidden">
-      {/* Toolbar */}
       <div className="flex items-center justify-between px-4 py-3 border-b border-border/30">
         <div className="flex items-center gap-2">
           <h2 className="text-sm font-bold tracking-widest text-neon-cyan text-glow-cyan">
@@ -349,21 +399,17 @@ export function GanttChart() {
         </div>
       </div>
 
-      {/* WBS Layout: 좌측 패널 + 우측 차트 */}
       <div className="flex">
-        {/* 좌측 고정 패널 */}
         <div
           className="shrink-0 border-r border-border/30 z-10 bg-background"
           style={{ width: PANEL_WIDTH }}
         >
-          {/* 헤더 높이 맞춤 */}
           <div
             className="flex items-end justify-center border-b border-border/20 text-[10px] text-muted-foreground tracking-widest font-bold"
             style={{ height: HEADER_HEIGHT }}
           >
             <span className="pb-1.5">TICKET</span>
           </div>
-          {/* 티켓 행 */}
           {ticketRows.map((row, i) => (
             <div
               key={row.ticket?.id ?? `unassigned-${i}`}
@@ -391,12 +437,10 @@ export function GanttChart() {
           ))}
         </div>
 
-        {/* 우측 차트 영역 */}
         <div ref={scrollRef} className="overflow-x-auto flex-1">
           <div style={{ width: totalWidth, position: 'relative' }}>
             <GanttHeader columns={columns} weekColWidth={weekColWidth} />
 
-            {/* Body */}
             <div
               ref={bodyRef}
               style={{ position: 'relative', height: bodyHeight, cursor: 'crosshair' }}
@@ -405,7 +449,6 @@ export function GanttChart() {
               onMouseUp={handleBodyMouseUp}
               onMouseLeave={handleBodyMouseUp}
             >
-              {/* 행 구분선 + 그리드 */}
               {ticketRows.map((_, rowIdx) => (
                 <div
                   key={rowIdx}
@@ -414,7 +457,6 @@ export function GanttChart() {
                 />
               ))}
 
-              {/* Vertical grid lines */}
               {columns.map((col) => (
                 <div
                   key={col.index}
@@ -428,7 +470,6 @@ export function GanttChart() {
                 />
               ))}
 
-              {/* Schedule bars — 티켓 행별 렌더링 */}
               {ticketRows.map((row, rowIdx) =>
                 row.schedules.map((schedule) => {
                   const override = barOverrides[schedule.id];
@@ -446,6 +487,22 @@ export function GanttChart() {
                       onBarMouseDown={handleBarMouseDown}
                       onLeftHandleMouseDown={handleLeftHandleMouseDown}
                       onRightHandleMouseDown={handleRightHandleMouseDown}
+                      onMoreClick={setLinkingSchedule}
+                      onTooltipEnter={(e, nextSchedule) => {
+                        setTooltip({
+                          schedule: nextSchedule,
+                          x: e.clientX,
+                          y: e.clientY,
+                        });
+                      }}
+                      onTooltipMove={(e, nextSchedule) => {
+                        setTooltip({
+                          schedule: nextSchedule,
+                          x: e.clientX,
+                          y: e.clientY,
+                        });
+                      }}
+                      onTooltipLeave={() => setTooltip(null)}
                       positionOverride={posOverride}
                       isDragging={draggingId === schedule.id}
                     />
@@ -453,15 +510,14 @@ export function GanttChart() {
                 })
               )}
 
-              {/* Drag preview (create) */}
               <GanttDragLayer
                 viewStartDate={viewStartDate}
                 dragStartX={createDragStartX}
                 dragCurrentX={createDragCurrentX}
+                dragRowIndex={createDragRowRef.current}
               />
             </div>
 
-            {/* Empty state */}
             {!loading && schedules.length === 0 && tickets.length === 0 && (
               <div className="absolute inset-0 flex items-center justify-center pointer-events-none" style={{ top: HEADER_HEIGHT }}>
                 <span className="text-[10px] text-muted-foreground/50 tracking-wider">
@@ -473,7 +529,40 @@ export function GanttChart() {
         </div>
       </div>
 
+      {tooltip && tooltipStyle && typeof window !== 'undefined'
+        ? createPortal(
+          <div
+            className="pointer-events-none fixed z-[9999] rounded-lg border border-border/70 bg-background/95 px-3 py-2 text-xs shadow-xl backdrop-blur-md"
+            style={{
+              left: tooltipStyle.left,
+              top: tooltipStyle.top,
+              width: TOOLTIP_WIDTH,
+              maxWidth: TOOLTIP_WIDTH,
+            }}
+          >
+            <div className="space-y-1">
+              {buildTooltipLines(tooltip.schedule).map((line, index) => (
+                <div
+                  key={`${tooltip.schedule.id}-${index}`}
+                  className={index === 0 ? 'font-semibold text-foreground' : 'text-muted-foreground break-all'}
+                >
+                  {line}
+                </div>
+              ))}
+            </div>
+          </div>,
+          document.body,
+        )
+        : null}
+
       <ScheduleFormDialog />
+      <GanttLinkModal
+        schedule={linkingSchedule}
+        open={Boolean(linkingSchedule)}
+        onOpenChange={(open) => {
+          if (!open) setLinkingSchedule(null);
+        }}
+      />
     </div>
   );
 }
