@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useEffect, useState, useRef, useCallback } from 'react';
+import React, { useEffect, useState, useRef, useCallback, useMemo } from 'react';
 import { useContractStore } from '@/stores/contract-store';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -510,12 +510,14 @@ function ResizableTh({ children, className, minWidth = 40, colName }: {
     const onMouseUp = () => {
       document.removeEventListener('mousemove', onMouseMove);
       document.removeEventListener('mouseup', onMouseUp);
+      window.removeEventListener('blur', onMouseUp);
       if (!resizeMultiple && thRef.current) {
         persistWidth(colName, thRef.current.offsetWidth);
       }
     };
     document.addEventListener('mousemove', onMouseMove);
     document.addEventListener('mouseup', onMouseUp);
+    window.addEventListener('blur', onMouseUp);
   }, [minWidth, isSelected, selected.size, applyResizeDelta, colName, persistWidth]);
 
   // Double-click on resize handle: auto-fit to content
@@ -634,7 +636,7 @@ export default function ContractsPage() {
   const {
     contracts, versions, loading, searchQuery, searchResult, searchLoading,
     fetchContracts, updateContract, deleteContract, importCSV,
-    searchContracts, setSearchQuery, fetchVersions, createVersion, updateVersion,
+    searchContracts, setSearchQuery, fetchVersions, fetchVersionsBatch, clearVersions, clearVersionsFor, createVersion, updateVersion,
   } = useContractStore();
 
   const [newOpen, setNewOpen] = useState(false);
@@ -643,11 +645,18 @@ export default function ContractsPage() {
   const [addingVersion, setAddingVersion] = useState<string | null>(null);
   const [versionForm, setVersionForm] = useState({ change_reason: '', transfer_purpose: '', transferable_data: '', effective_date: '', added_domains: [] as string[] });
   const importRef = useRef<HTMLInputElement>(null);
+  const deleteConfirmTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   const toggleRowExpand = (contractId: string) => {
     setExpandedRows(prev => {
       const next = new Set(prev);
-      if (next.has(contractId)) { next.delete(contractId); } else { next.add(contractId); fetchVersions(contractId); }
+      if (next.has(contractId)) {
+        next.delete(contractId);
+        clearVersionsFor(contractId);
+      } else {
+        next.add(contractId);
+        fetchVersions(contractId);
+      }
       return next;
     });
   };
@@ -659,33 +668,6 @@ export default function ContractsPage() {
   };
 
   // Get pending domains for a contract (from in-progress versions)
-  const getPendingDomains = (contractId: string): Set<string> => {
-    const vers = versions[contractId] || [];
-    const pending = new Set<string>();
-    vers.forEach(v => {
-      if (v.status === 'pending' && v.added_domains) {
-        try {
-          const domains: string[] = typeof v.added_domains === 'string' ? JSON.parse(v.added_domains) : v.added_domains;
-          domains.forEach(d => pending.add(d));
-        } catch {}
-      }
-    });
-    return pending;
-  };
-
-  // Check if contract has any pending version
-  const hasPendingVersion = (contractId: string): boolean => {
-    return (versions[contractId] || []).some(v => v.status === 'pending');
-  };
-
-  // Check if contract was active in last 6 months
-  const isRecentlyActive = (contract: Contract) => {
-    const activity = contract.last_activity_at || contract.updated_at;
-    if (!activity) return false;
-    const sixMonthsAgo = new Date();
-    sixMonthsAgo.setMonth(sixMonthsAgo.getMonth() - 6);
-    return new Date(activity) > sixMonthsAgo;
-  };
 
   // Checkbox filters — empty Set means "all selected"
   const [filterRegions, setFilterRegions] = useState<Set<string>>(new Set());
@@ -700,13 +682,66 @@ export default function ContractsPage() {
   const [statFilter, setStatFilter] = useState<'started' | 'not-started' | 'secured' | 'not-secured' | null>(null);
 
   useEffect(() => { fetchContracts(); }, [fetchContracts]);
-  // Fetch versions for all contracts to show completed files in main row
-  useEffect(() => { contracts.forEach(c => fetchVersions(c.id)); }, [contracts, fetchVersions]);
+  useEffect(() => {
+    return () => {
+      if (deleteConfirmTimerRef.current !== null) {
+        clearTimeout(deleteConfirmTimerRef.current);
+      }
+      clearVersions();
+    };
+  }, [clearVersions]);
+  useEffect(() => {
+    fetchVersionsBatch(contracts.map((contract) => contract.id));
+  }, [contracts, fetchVersionsBatch]);
 
   const passesFilter = (value: string, filterSet: Set<string>) =>
     filterSet.size === 0 || filterSet.has(value);
 
-  const filtered = contracts.filter(c => {
+  const pendingDomainsMap = useMemo(() => {
+    const nextMap = new Map<string, Set<string>>();
+
+    Object.entries(versions).forEach(([contractId, contractVersions]) => {
+      const pendingDomains = new Set<string>();
+      contractVersions.forEach((version) => {
+        if (version.status !== 'pending' || !version.added_domains) return;
+        try {
+          const domains: string[] = typeof version.added_domains === 'string'
+            ? JSON.parse(version.added_domains)
+            : version.added_domains;
+          domains.forEach((domain) => pendingDomains.add(domain));
+        } catch {}
+      });
+      nextMap.set(contractId, pendingDomains);
+    });
+
+    return nextMap;
+  }, [versions]);
+
+  const pendingVersionIds = useMemo(() => {
+    const nextSet = new Set<string>();
+    Object.entries(versions).forEach(([contractId, contractVersions]) => {
+      if (contractVersions.some((version) => version.status === 'pending')) {
+        nextSet.add(contractId);
+      }
+    });
+    return nextSet;
+  }, [versions]);
+
+  const recentlyActiveIds = useMemo(() => {
+    const sixMonthsAgo = new Date();
+    sixMonthsAgo.setMonth(sixMonthsAgo.getMonth() - 6);
+
+    return new Set(
+      contracts
+        .filter((contract) => {
+          const activity = contract.last_activity_at || contract.updated_at;
+          return activity ? new Date(activity) > sixMonthsAgo : false;
+        })
+        .map((contract) => contract.id)
+    );
+  }, [contracts]);
+
+  const filtered = useMemo(() => contracts.filter(c => {
     if (!passesFilter(c.region, filterRegions)) return false;
     if (!passesFilter(c.country, filterCountries)) return false;
     if (!passesFilter(c.brand, filterBrands)) return false;
@@ -716,27 +751,32 @@ export default function ContractsPage() {
     if (!passesFilter(c.data_domain_quality, filterQuality)) return false;
     if (!passesFilter(c.data_domain_production, filterProduction)) return false;
     return true;
-  });
+  }), [contracts, filterRegions, filterCountries, filterBrands, filterVehicle, filterCustomer, filterSales, filterQuality, filterProduction]);
 
-  const statFilteredContracts = statFilter ? filtered.filter(c => {
+  const statFilteredContracts = useMemo(() => statFilter ? filtered.filter(c => {
     if (statFilter === 'started') return domains.some(d => c[d] === 'O');
     if (statFilter === 'not-started') return !domains.some(d => c[d] === 'O');
     if (statFilter === 'secured') return !domains.some(d => c[d] === 'X');
     if (statFilter === 'not-secured') return domains.some(d => c[d] === 'X');
     return true;
-  }) : null;
+  }) : null, [filtered, statFilter]);
   const displayContracts = statFilteredContracts || filtered;
 
-  const regions = [...new Set(contracts.map(c => c.region))].sort();
-  const countries = [...new Set(contracts.map(c => c.country))].sort();
-  const brands = [...new Set(contracts.map(c => c.brand))].sort();
+  const { regions, countries, brands } = useMemo(() => ({
+    regions: [...new Set(contracts.map(c => c.region))].sort(),
+    countries: [...new Set(contracts.map(c => c.country))].sort(),
+    brands: [...new Set(contracts.map(c => c.brand))].sort(),
+  }), [contracts]);
 
   // Group by region for display — use displayContracts (stat filter applied)
-  const grouped: Record<string, Contract[]> = {};
-  for (const c of displayContracts) {
-    if (!grouped[c.region]) grouped[c.region] = [];
-    grouped[c.region].push(c);
-  }
+  const grouped = useMemo(() => {
+    const nextGrouped: Record<string, Contract[]> = {};
+    for (const contract of displayContracts) {
+      if (!nextGrouped[contract.region]) nextGrouped[contract.region] = [];
+      nextGrouped[contract.region].push(contract);
+    }
+    return nextGrouped;
+  }, [displayContracts]);
 
   const handleImport = async (e: React.ChangeEvent<HTMLInputElement>) => {
     const file = e.target.files?.[0];
@@ -1006,14 +1046,16 @@ export default function ContractsPage() {
                   return regionContracts.map((contract, idx) => {
                     const isExpanded = expandedRows.has(contract.id);
                     const contractVersions = versions[contract.id] || [];
-                    const active = isRecentlyActive(contract);
+                    const active = recentlyActiveIds.has(contract.id);
+                    const pendingDomains = pendingDomainsMap.get(contract.id) || new Set<string>();
+                    const hasPendingVersion = pendingVersionIds.has(contract.id);
                     const rows = [];
 
                     // Main row
                     rows.push(
                       <tr key={contract.id}
                         className={`border-b hover:bg-muted/10 transition-colors cursor-pointer ${active ? 'relative' : ''}`}
-                        style={{ borderColor: hasPendingVersion(contract.id) ? '#00AAD2' : undefined, borderStyle: hasPendingVersion(contract.id) ? 'dashed' : undefined }}
+                        style={{ borderColor: hasPendingVersion ? '#00AAD2' : undefined, borderStyle: hasPendingVersion ? 'dashed' : undefined }}
                         onClick={() => toggleRowExpand(contract.id)}>
                         {idx === 0 ? (
                           <td className="px-2 py-2 text-foreground font-medium sticky left-0 bg-card z-10 text-[11px]" rowSpan={regionRowCount}>
@@ -1032,13 +1074,13 @@ export default function ContractsPage() {
                         <td className="px-2 py-2 text-primary font-medium text-[11px]">{contract.entity_code}</td>
                         <td className="px-2 py-2 text-foreground text-[11px]">{contract.brand}</td>
                         <td className="px-2 py-2 text-foreground text-[11px]">{contract.entity_name}</td>
-                        {(() => { const pd = getPendingDomains(contract.id); return (<>
-                        <DomainCell value={contract.data_domain_vehicle} contractId={contract.id} field="data_domain_vehicle" onUpdate={updateContract} pending={pd.has('vehicle')} />
-                        <DomainCell value={contract.data_domain_customer} contractId={contract.id} field="data_domain_customer" onUpdate={updateContract} pending={pd.has('customer')} />
-                        <DomainCell value={contract.data_domain_sales} contractId={contract.id} field="data_domain_sales" onUpdate={updateContract} pending={pd.has('sales')} />
-                        <DomainCell value={contract.data_domain_quality} contractId={contract.id} field="data_domain_quality" onUpdate={updateContract} pending={pd.has('quality')} />
-                        <DomainCell value={contract.data_domain_production} contractId={contract.id} field="data_domain_production" onUpdate={updateContract} pending={pd.has('production')} />
-                        </>); })()}
+                        <>
+                        <DomainCell value={contract.data_domain_vehicle} contractId={contract.id} field="data_domain_vehicle" onUpdate={updateContract} pending={pendingDomains.has('vehicle')} />
+                        <DomainCell value={contract.data_domain_customer} contractId={contract.id} field="data_domain_customer" onUpdate={updateContract} pending={pendingDomains.has('customer')} />
+                        <DomainCell value={contract.data_domain_sales} contractId={contract.id} field="data_domain_sales" onUpdate={updateContract} pending={pendingDomains.has('sales')} />
+                        <DomainCell value={contract.data_domain_quality} contractId={contract.id} field="data_domain_quality" onUpdate={updateContract} pending={pendingDomains.has('quality')} />
+                        <DomainCell value={contract.data_domain_production} contractId={contract.id} field="data_domain_production" onUpdate={updateContract} pending={pendingDomains.has('production')} />
+                        </>
                         <td className="px-2 py-2 text-center text-foreground text-[10px] border-l border-border">
                           {contract.contract_status || <span className="text-muted-foreground">—</span>}
                         </td>
@@ -1060,7 +1102,16 @@ export default function ContractsPage() {
                             <button onClick={() => { deleteContract(contract.id); setDeleteConfirm(null); }}
                               className="text-[9px] text-destructive">?</button>
                           ) : (
-                            <button onClick={() => { setDeleteConfirm(contract.id); setTimeout(() => setDeleteConfirm(null), 3000); }}
+                            <button onClick={() => {
+                              setDeleteConfirm(contract.id);
+                              if (deleteConfirmTimerRef.current !== null) {
+                                clearTimeout(deleteConfirmTimerRef.current);
+                              }
+                              deleteConfirmTimerRef.current = setTimeout(() => {
+                                setDeleteConfirm(null);
+                                deleteConfirmTimerRef.current = null;
+                              }, 3000);
+                            }}
                               className="text-[9px] text-muted-foreground hover:text-destructive">✕</button>
                           )}
                         </td>

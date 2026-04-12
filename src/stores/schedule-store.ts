@@ -19,6 +19,12 @@ function addDays(dateStr: string, days: number): string {
   return toISO(d);
 }
 
+interface ScheduleDraft {
+  startDate: string;
+  endDate: string;
+  ticketId?: string;
+}
+
 interface ScheduleStore {
   schedules: Schedule[];
   loading: boolean;
@@ -29,7 +35,7 @@ interface ScheduleStore {
   selectedScheduleId: string | null;
   isFormOpen: boolean;
   formMode: 'create' | 'edit';
-  dragPreview: { startDate: string; endDate: string; ticketId?: string } | null;
+  dragPreview: ScheduleDraft | null;
 
   fetchSchedules: () => Promise<void>;
   createSchedule: (input: CreateScheduleInput) => Promise<Schedule>;
@@ -40,7 +46,7 @@ interface ScheduleStore {
   goToToday: () => void;
 
   selectSchedule: (id: string | null) => void;
-  openCreateForm: (startDate: string, endDate: string, ticketId?: string) => void;
+  openCreateForm: (startDate: string, endDate: string, ticketId: string) => void;
   openEditForm: (id: string) => void;
   closeForm: () => void;
   setDragPreview: (preview: { startDate: string; endDate: string } | null) => void;
@@ -81,14 +87,13 @@ export const useScheduleStore = create<ScheduleStore>((set, get) => ({
   },
 
   updateSchedule: async (id: string, input: UpdateScheduleInput) => {
-    // 낙관적 업데이트
     set({
-      schedules: get().schedules.map(s =>
-        s.id === id ? { ...s, ...input, updated_at: new Date().toISOString() } : s
+      schedules: get().schedules.map((schedule) =>
+        schedule.id === id ? { ...schedule, ...input, updated_at: new Date().toISOString() } : schedule
       ),
     });
     await fetch(`/api/schedules/${id}`, {
-      method: 'PUT',
+      method: 'PATCH',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(input),
     });
@@ -114,7 +119,7 @@ export const useScheduleStore = create<ScheduleStore>((set, get) => ({
 
   selectSchedule: (id: string | null) => set({ selectedScheduleId: id }),
 
-  openCreateForm: (startDate: string, endDate: string, ticketId?: string) => {
+  openCreateForm: (startDate: string, endDate: string, ticketId: string) => {
     set({
       isFormOpen: true,
       formMode: 'create',
@@ -139,5 +144,13 @@ export const useScheduleStore = create<ScheduleStore>((set, get) => ({
     });
   },
 
-  setDragPreview: (preview) => set({ dragPreview: preview }),
+  setDragPreview: (preview) =>
+    set((state) => ({
+      dragPreview: preview
+        ? {
+            ...preview,
+            ticketId: state.dragPreview?.ticketId,
+          }
+        : null,
+    })),
 }));

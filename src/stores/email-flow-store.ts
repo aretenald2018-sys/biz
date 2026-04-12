@@ -6,7 +6,9 @@ interface EmailFlowStore {
   flowSteps: Record<string, EmailFlowStep[]>;
   loading: Record<string, boolean>;
 
+  clearFlowSteps: () => void;
   fetchFlowSteps: (ticketId: string, emailId: string) => Promise<void>;
+  fetchFlowStepsBatch: (ticketId: string, emailIds: string[]) => Promise<void>;
   createFlowStep: (ticketId: string, emailId: string, data: { step_type: FlowStepType; actor?: string; summary: string; is_current?: boolean }) => Promise<void>;
   updateFlowStep: (ticketId: string, emailId: string, data: { id: string; step_type?: FlowStepType; actor?: string; summary?: string; is_current?: boolean }) => Promise<void>;
   deleteFlowStep: (ticketId: string, emailId: string, stepId: string) => Promise<void>;
@@ -15,6 +17,10 @@ interface EmailFlowStore {
 export const useEmailFlowStore = create<EmailFlowStore>((set, get) => ({
   flowSteps: {},
   loading: {},
+
+  clearFlowSteps: () => {
+    set({ flowSteps: {}, loading: {} });
+  },
 
   fetchFlowSteps: async (ticketId, emailId) => {
     set({ loading: { ...get().loading, [emailId]: true } });
@@ -28,6 +34,46 @@ export const useEmailFlowStore = create<EmailFlowStore>((set, get) => ({
     } else {
       set({ loading: { ...get().loading, [emailId]: false } });
     }
+  },
+
+  fetchFlowStepsBatch: async (ticketId, emailIds) => {
+    const uniqueEmailIds = [...new Set(emailIds.filter(Boolean))];
+    if (uniqueEmailIds.length === 0) return;
+
+    const nextLoading = { ...get().loading };
+    uniqueEmailIds.forEach((emailId) => {
+      nextLoading[emailId] = true;
+    });
+    set({ loading: nextLoading });
+
+    const params = new URLSearchParams();
+    uniqueEmailIds.forEach((emailId) => params.append('email_id', emailId));
+
+    const res = await fetch(`/api/tickets/${ticketId}/flow-steps?${params.toString()}`);
+    if (!res.ok) {
+      const failedLoading = { ...get().loading };
+      uniqueEmailIds.forEach((emailId) => {
+        failedLoading[emailId] = false;
+      });
+      set({ loading: failedLoading });
+      return;
+    }
+
+    const flowSteps = await res.json() as Record<string, EmailFlowStep[]>;
+    const mergedFlowSteps = { ...get().flowSteps };
+    uniqueEmailIds.forEach((emailId) => {
+      mergedFlowSteps[emailId] = flowSteps[emailId] || [];
+    });
+
+    const finishedLoading = { ...get().loading };
+    uniqueEmailIds.forEach((emailId) => {
+      finishedLoading[emailId] = false;
+    });
+
+    set({
+      flowSteps: mergedFlowSteps,
+      loading: finishedLoading,
+    });
   },
 
   createFlowStep: async (ticketId, emailId, data) => {

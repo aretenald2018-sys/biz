@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>칸반 보드 Preview</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar">
+        <div class="brand">
+          <div class="brand-mark">b</div>
+          <div class="brand-title">
+            <strong>칸반 보드</strong>
+            <span>scene preview</span>
+          </div>
+        </div>
+        <nav class="nav-group">
+          <a class="nav-link" href="./index.html"><span>Overview</span><span>00</span></a>
+          <a class="nav-link" href="./tickets-list.html"><span>티켓 목록</span><span>01</span></a>
+          <a class="nav-link" href="./ticket-detail.html"><span>티켓 상세</span><span>02</span></a>
+          <a class="nav-link" href="./email-flow.html"><span>이메일 파싱</span><span>03</span></a>
+          <a class="nav-link" href="./email-viewer.html"><span>이메일 뷰어</span><span>04</span></a>
+          <a class="nav-link active" href="./kanban.html"><span>칸반 보드</span><span>05</span></a>
+          <a class="nav-link" href="./gantt.html"><span>간트 차트</span><span>06</span></a>
+        </nav>
+      </aside>
+
+      <main class="content">
+        <header class="topbar">
+          <div>
+            <div class="crumbs">티켓 / 칸반</div>
+            <h1 class="title">화이트 카드와 얇은 그림자의 칸반</h1>
+          </div>
+          <div class="search"><span>⌥⌘B</span><span>보드 배치 변경</span></div>
+          <div class="topbar-right">
+            <button class="ghost-button">카테고리</button>
+            <button class="button primary">+ 카드 추가</button>
+          </div>
+        </header>
+
+        <section class="kanban" style="margin-top: 18px">
+          <div class="kanban-column">
+            <div class="kanban-column-header">
+              <strong>To do</strong>
+              <span class="kanban-count">4</span>
+            </div>
+            <div class="kanban-card">
+              <div class="list-title">
+                <strong>파싱 에러 문구 정리</strong>
+                <span class="status review">review</span>
+              </div>
+              <div class="list-meta">
+                <span>ticket-1049</span>
+                <span>email</span>
+              </div>
+            </div>
+            <div class="kanban-card">
+              <div class="list-title">
+                <strong>드롭존 상태 분기</strong>
+                <span class="status new">new</span>
+              </div>
+              <div class="list-meta">
+                <span>msg / eml</span>
+                <span>parse</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="kanban-column">
+            <div class="kanban-column-header">
+              <strong>In progress</strong>
+              <span class="kanban-count">3</span>
+            </div>
+            <div class="kanban-card lifted">
+              <div class="list-title">
+                <strong>Apple HIG ticket detail</strong>
+                <span class="status active">active</span>
+              </div>
+              <div class="list-meta">
+                <span>rounded cards</span>
+                <span>soft depth</span>
+              </div>
+            </div>
+            <div class="kanban-card">
+              <div class="list-title">
+                <strong>Inline image rendering</strong>
+                <span class="status active">active</span>
+              </div>
+              <div class="list-meta">
+                <span>cid / vml / background</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="kanban-column">
+            <div class="kanban-column-header">
+              <strong>Done</strong>
+              <span class="kanban-count">6</span>
+            </div>
+            <div class="kanban-card">
+              <div class="list-title">
+                <strong>헤더 / 사이드바 정리</strong>
+                <span class="status closed">done</span>
+              </div>
+              <div class="list-meta">
+                <span>macOS style</span>
+                <span>clarity</span>
+              </div>
+            </div>
+            <div class="kanban-card">
+              <div class="list-title">
+                <strong>폰트 시스템 변경</strong>
+                <span class="status closed">done</span>
+              </div>
+              <div class="list-meta">
+                <span>Inter / Pretendard</span>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

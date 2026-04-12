@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { getDb } from '@/lib/db';
+import { buildContentDisposition } from '@/lib/http-disposition';
 
 export async function GET(
   _request: NextRequest,
@@ -20,7 +21,7 @@ export async function GET(
   return new NextResponse(body, {
     headers: {
       'Content-Type': file.file_type,
-      'Content-Disposition': `attachment; filename="${encodeURIComponent(file.file_name)}"`,
+      'Content-Disposition': buildContentDisposition(file.file_name, 'attachment'),
     },
   });
 }

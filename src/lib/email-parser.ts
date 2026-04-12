@@ -57,6 +57,25 @@ function decodeBufferWithCharset(buffer: Buffer, charset: string): string {
   return buffer.toString('utf-8');
 }
 
+// HTML <meta charset> / <meta http-equiv="Content-Type"> 또는 BOM에서 charset 추출.
+// 못 찾으면 'utf-8'.
+function detectHtmlCharset(buffer: Buffer): string {
+  if (buffer.length >= 3 && buffer[0] === 0xef && buffer[1] === 0xbb && buffer[2] === 0xbf) {
+    return 'utf-8';
+  }
+  if (buffer.length >= 2 && buffer[0] === 0xff && buffer[1] === 0xfe) return 'utf-16le';
+  if (buffer.length >= 2 && buffer[0] === 0xfe && buffer[1] === 0xff) return 'utf-16be';
+
+  // 헤드 4KB만 latin1로 훑어 메타 태그 검색 (한글 깨져도 ASCII 메타는 그대로 보임)
+  const head = buffer.slice(0, Math.min(buffer.length, 4096)).toString('latin1');
+  const metaCharset = head.match(/<meta[^>]+charset\s*=\s*["']?([\w-]+)/i);
+  if (metaCharset?.[1]) return metaCharset[1].toLowerCase();
+  const httpEquiv = head.match(/content\s*=\s*["'][^"']*charset=([\w-]+)/i);
+  if (httpEquiv?.[1]) return httpEquiv[1].toLowerCase();
+
+  return 'utf-8';
+}
+
 function decodeQuotedPrintableToBuffer(input: string): Buffer {
   const bytes: number[] = [];
   for (let i = 0; i < input.length; i += 1) {
@@ -469,12 +488,14 @@ export function parseMsgFile(buffer: ArrayBuffer): ParsedEmail {
     if (typeof raw === 'string') {
       bodyHtml = raw;
     } else if (raw instanceof Uint8Array || Buffer.isBuffer(raw)) {
-      bodyHtml = Buffer.from(raw).toString('utf-8');
+      const buf = Buffer.from(raw);
+      bodyHtml = decodeBufferWithCharset(buf, detectHtmlCharset(buf));
     } else if (typeof raw === 'object') {
       // Some MsgReader versions return an object with numeric keys (byte map)
       try {
         const bytes = Object.values(raw as Record<string, number>);
-        bodyHtml = Buffer.from(bytes).toString('utf-8');
+        const buf = Buffer.from(bytes);
+        bodyHtml = decodeBufferWithCharset(buf, detectHtmlCharset(buf));
       } catch {
         bodyHtml = null;
       }

@@ -6,6 +6,8 @@ export interface Ticket {
   description: string | null;
   status: TicketStatus;
   ai_summary: string | null;
+  category_id: string | null;
+  position: number;
   created_at: string;
   updated_at: string;
   email_count?: number;
@@ -15,6 +17,8 @@ export interface CreateTicketInput {
   title: string;
   description?: string;
   status?: TicketStatus;
+  category_id?: string;
+  position?: number;
 }
 
 export interface UpdateTicketInput {
@@ -22,4 +26,6 @@ export interface UpdateTicketInput {
   description?: string;
   status?: TicketStatus;
   ai_summary?: string;
+  category_id?: string | null;
+  position?: number;
 }

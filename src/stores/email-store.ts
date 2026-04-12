@@ -38,12 +38,21 @@ export const useEmailStore = create<EmailStore>((set, get) => ({
     const formData = new FormData();
     formData.append('file', file);
 
-    await fetch(`/api/tickets/${ticketId}/emails`, {
-      method: 'POST',
-      body: formData,
-    });
+    try {
+      const response = await fetch(`/api/tickets/${ticketId}/emails`, {
+        method: 'POST',
+        body: formData,
+      });
 
-    await get().fetchEmails(ticketId);
+      if (!response.ok) {
+        throw new Error(`Email upload failed with status ${response.status}`);
+      }
+    } catch (error) {
+      console.error('Failed to upload email:', error);
+      throw error;
+    } finally {
+      await get().fetchEmails(ticketId);
+    }
   },
 
   setParentNote: async (ticketId: string, emailId: string, noteId: string | null) => {

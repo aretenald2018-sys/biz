@@ -1,0 +1,22 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "lib": ["dom", "es2022"],
+    "types": ["node"],
+    "paths": {
+      "@/*": ["./src/*"],
+      "next/server": ["./server/http.ts"]
+    }
+  },
+  "include": [
+    "server/**/*.ts",
+    "src/app/api/**/*.ts",
+    "src/lib/**/*.ts",
+    "src/types/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist",
+    "src/lib/local-pdf-ocr.ts"
+  ]
+}

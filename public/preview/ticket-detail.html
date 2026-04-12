@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>티켓 상세 Preview</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar">
+        <div class="brand">
+          <div class="brand-mark">b</div>
+          <div class="brand-title">
+            <strong>티켓 상세</strong>
+            <span>scene preview</span>
+          </div>
+        </div>
+        <nav class="nav-group">
+          <a class="nav-link" href="./index.html"><span>Overview</span><span>00</span></a>
+          <a class="nav-link" href="./tickets-list.html"><span>티켓 목록</span><span>01</span></a>
+          <a class="nav-link active" href="./ticket-detail.html"><span>티켓 상세</span><span>02</span></a>
+          <a class="nav-link" href="./email-flow.html"><span>이메일 파싱</span><span>03</span></a>
+          <a class="nav-link" href="./email-viewer.html"><span>이메일 뷰어</span><span>04</span></a>
+          <a class="nav-link" href="./kanban.html"><span>칸반 보드</span><span>05</span></a>
+          <a class="nav-link" href="./gantt.html"><span>간트 차트</span><span>06</span></a>
+        </nav>
+      </aside>
+
+      <main class="content">
+        <header class="topbar">
+          <div>
+            <div class="crumbs">티켓 관리 / 상세 / ticket-1049</div>
+            <h1 class="title">티켓 상세의 중심을 제목과 상태에 둔 화면</h1>
+          </div>
+          <div class="search"><span>⌥⌘F</span><span>이 티켓에서 검색</span></div>
+          <div class="topbar-right">
+            <button class="ghost-button">공유</button>
+            <button class="ghost-button">메뉴</button>
+            <button class="button primary">수정</button>
+          </div>
+        </header>
+
+        <div class="grid two-col" style="margin-top: 18px">
+          <section class="stack">
+            <div class="card">
+              <div class="card-body">
+                <div class="section-head" style="margin-bottom: 14px">
+                  <div>
+                    <div class="crumbs">DASHBOARD / TICKET-1049</div>
+                    <h2 class="title" style="margin-top: 8px">MSG 드롭 후 파싱이 안 되는 이슈</h2>
+                  </div>
+                  <span class="status hold">hold</span>
+                </div>
+                <p class="subtitle">
+                  파일을 드롭해도 파싱되지 않는 문제와 인라인 이미지가 보이지 않는 문제를 함께 추적하는 상세 화면입니다.
+                </p>
+                <div class="list-meta" style="margin-top: 16px">
+                  <span>담당: 이서연</span>
+                  <span>우선순위: 높음</span>
+                  <span>마감: 2026년 4월 15일</span>
+                  <span>수정됨: 오늘 09:42</span>
+                </div>
+              </div>
+            </div>
+
+            <section class="grid three-col">
+              <div class="card metric">
+                <div class="label">수신 이메일</div>
+                <div class="value" style="font-size: 24px">12</div>
+                <div class="delta">stacked correctly</div>
+              </div>
+              <div class="card metric">
+                <div class="label">파싱 성공률</div>
+                <div class="value" style="font-size: 24px">96%</div>
+                <div class="delta">fallback ready</div>
+              </div>
+              <div class="card metric">
+                <div class="label">첨부 파일</div>
+                <div class="value" style="font-size: 24px">23</div>
+                <div class="delta">preview safe</div>
+              </div>
+            </section>
+
+            <section class="card">
+              <div class="card-header">
+                <div>
+                  <div class="card-title">이메일 드롭존</div>
+                  <div class="card-subtitle">드래그 시에만 강조되는 조용한 초대 UI</div>
+                </div>
+                <span class="pill blue">drop files</span>
+              </div>
+              <div class="card-body">
+                <div class="dropzone dragging">
+                  <div class="headline">MSG 또는 EML 파일을 여기에 놓으세요</div>
+                  <div class="copy">
+                    확장자가 없으면 첫 바이트를 확인해 라우팅하고, 실패 시에는 파일명과 사유를 함께 보여주는 흐름을
+                    가정했습니다.
+                  </div>
+                  <div class="hint">OLE signature / message-rfc822 / fallback</div>
+                </div>
+                <div class="alert" style="margin-top: 14px">
+                  <strong>오류 예시:</strong> `ticket-1049.msg` 파싱 실패 - MSG reader 오류, EML fallback도 실패했습니다.
+                </div>
+              </div>
+            </section>
+
+            <section class="card">
+              <div class="card-header">
+                <div>
+                  <div class="card-title">이메일 스택</div>
+                  <div class="card-subtitle">같은 제목의 메일도 중복 없이 쌓이는 레이아웃</div>
+                </div>
+              </div>
+              <div class="card-body">
+                <div class="email-grid">
+                  <article class="email-card active">
+                    <div class="subject">
+                      <span>RE: MSG/EML 업로드 실패 재현</span>
+                      <span class="status active">new</span>
+                    </div>
+                    <div class="email-meta">
+                      <span>from. support@customer.com</span>
+                      <span>to. ops@biz.local</span>
+                      <span>09:41</span>
+                    </div>
+                    <div class="annotation">파일명은 같아도 내용이 다르면 별도 카드로 보여주는 구조.</div>
+                  </article>
+                  <article class="email-card">
+                    <div class="subject">
+                      <span>RE: 인라인 이미지 누락 확인</span>
+                      <span class="status review">review</span>
+                    </div>
+                    <div class="email-meta">
+                      <span>from. qa@customer.com</span>
+                      <span>to. ops@biz.local</span>
+                      <span>08:12</span>
+                    </div>
+                    <div class="annotation">본문 아래에 inline image section 이 따로 보이는 모습.</div>
+                  </article>
+                </div>
+              </div>
+            </section>
+          </section>
+
+          <aside class="stack">
+            <section class="card">
+              <div class="card-header">
+                <div>
+                  <div class="card-title">상세 메타</div>
+                  <div class="card-subtitle">아이콘 대신 자연어 중심의 구조</div>
+                </div>
+              </div>
+              <div class="card-body">
+                <div class="details">
+                  <div class="details-row"><span class="key">상태</span><span class="value">Hold</span></div>
+                  <div class="details-row"><span class="key">카테고리</span><span class="value">Email parsing</span></div>
+                  <div class="details-row"><span class="key">최근 활동</span><span class="value">15분 전</span></div>
+                  <div class="details-row"><span class="key">담당 팀</span><span class="value">Service UX</span></div>
+                </div>
+              </div>
+            </section>
+
+            <section class="card">
+              <div class="card-header">
+                <div>
+                  <div class="card-title">액션 패널</div>
+                  <div class="card-subtitle">신중하게 배치된 주요 조작</div>
+                </div>
+              </div>
+              <div class="card-body">
+                <div class="stack">
+                  <button class="button primary">상태 변경</button>
+                  <button class="button secondary">담당자 지정</button>
+                  <button class="button secondary">이메일 다시 파싱</button>
+                  <button class="button critical">삭제</button>
+                </div>
+              </div>
+            </section>
+
+            <section class="card">
+              <div class="card-header">
+                <div>
+                  <div class="card-title">파일 칸반</div>
+                  <div class="card-subtitle">업로드 파일을 카드로 다루는 느낌</div>
+                </div>
+              </div>
+              <div class="card-body">
+                <div class="mini-grid">
+                  <div class="mini-row">
+                    <div>
+                      <strong>ticket-1049.msg</strong>
+                      <span>파싱 대기</span>
+                    </div>
+                    <span class="status review">queued</span>
+                  </div>
+                  <div class="mini-row">
+                    <div>
+                      <strong>ticket-1049.eml</strong>
+                      <span>inline image 포함</span>
+                    </div>
+                    <span class="status active">ok</span>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </aside>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

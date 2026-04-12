@@ -19,6 +19,9 @@ interface ContractStore {
   searchContracts: (query: string) => Promise<void>;
   setSearchQuery: (q: string) => void;
   fetchVersions: (contractId: string) => Promise<void>;
+  fetchVersionsBatch: (contractIds: string[]) => Promise<void>;
+  clearVersions: () => void;
+  clearVersionsFor: (contractId: string) => void;
   createVersion: (contractId: string, data: { change_reason?: string; transfer_purpose?: string; transferable_data?: string; effective_date?: string; added_domains?: string[] }) => Promise<void>;
   updateVersion: (contractId: string, versionId: string, data: { status?: string; added_domains?: string[] }) => Promise<void>;
 }
@@ -114,6 +117,30 @@ export const useContractStore = create<ContractStore>((set, get) => ({
       const versions = await res.json();
       set({ versions: { ...get().versions, [contractId]: versions } });
     }
+  },
+
+  fetchVersionsBatch: async (contractIds) => {
+    const uniqueContractIds = [...new Set(contractIds.filter(Boolean))];
+    if (uniqueContractIds.length === 0) return;
+
+    const params = new URLSearchParams();
+    uniqueContractIds.forEach((contractId) => params.append('id', contractId));
+
+    const res = await fetch(`/api/contracts/versions/batch?${params.toString()}`);
+    if (!res.ok) return;
+
+    const versions = await res.json() as Record<string, ContractVersion[]>;
+    set({ versions: { ...get().versions, ...versions } });
+  },
+
+  clearVersions: () => {
+    set({ versions: {} });
+  },
+
+  clearVersionsFor: (contractId) => {
+    const nextVersions = { ...get().versions };
+    delete nextVersions[contractId];
+    set({ versions: nextVersions });
   },
 
   createVersion: async (contractId: string, data) => {

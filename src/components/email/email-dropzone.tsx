@@ -1,6 +1,6 @@
 'use client';
 
-import { useCallback, useRef, useState } from 'react';
+import { useCallback, useEffect, useRef, useState } from 'react';
 import { useEmailStore } from '@/stores/email-store';
 import { useNoteStore } from '@/stores/note-store';
 
@@ -17,6 +17,12 @@ export function EmailDropzone({ ticketId }: { ticketId: string }) {
     if (hintTimerRef.current) clearTimeout(hintTimerRef.current);
     setOutlookHint(subject);
     hintTimerRef.current = setTimeout(() => setOutlookHint(null), 6000);
+  }, []);
+
+  useEffect(() => () => {
+    if (hintTimerRef.current) {
+      clearTimeout(hintTimerRef.current);
+    }
   }, []);
 
   const handleDrop = useCallback(async (e: React.DragEvent) => {

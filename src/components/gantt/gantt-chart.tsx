@@ -26,7 +26,7 @@ type DragOp =
   | null;
 
 interface TicketRow {
-  ticket: Ticket | null;
+  ticket: Ticket;
   schedules: Schedule[];
 }
 
@@ -54,14 +54,6 @@ function addDaysToDate(dateStr: string, days: number): string {
   d.setDate(d.getDate() + days);
   return d.toISOString().split('T')[0];
 }
-
-const STATUS_COLORS: Record<string, string> = {
-  '신규': 'text-blue-400',
-  '진행중': 'text-neon-cyan',
-  '검토중': 'text-amber-400',
-  '종결': 'text-muted-foreground',
-  '보류': 'text-red-400',
-};
 
 function buildTooltipLines(schedule: Schedule) {
   const lines = [
@@ -99,7 +91,6 @@ export function GanttChart() {
     fetchSchedules,
     navigateWeeks,
     goToToday,
-    openEditForm,
     openCreateForm,
     setDragPreview,
     updateSchedule,
@@ -135,34 +126,17 @@ export function GanttChart() {
 
   const ticketRows: TicketRow[] = useMemo(() => {
     const grouped = new Map<string, Schedule[]>();
-    const unassigned: Schedule[] = [];
 
     for (const schedule of schedules) {
-      if (schedule.ticket_id) {
-        const list = grouped.get(schedule.ticket_id) || [];
-        list.push(schedule);
-        grouped.set(schedule.ticket_id, list);
-      } else {
-        unassigned.push(schedule);
-      }
+      const list = grouped.get(schedule.ticket_id) || [];
+      list.push(schedule);
+      grouped.set(schedule.ticket_id, list);
     }
 
-    const rows: TicketRow[] = tickets.map((ticket) => ({
+    return tickets.map((ticket) => ({
       ticket,
       schedules: grouped.get(ticket.id) || [],
     }));
-
-    if (unassigned.length > 0) {
-      rows.push({ ticket: null, schedules: unassigned });
-    }
-
-    if (rows.length < 3) {
-      while (rows.length < 3) {
-        rows.push({ ticket: null, schedules: [] });
-      }
-    }
-
-    return rows;
   }, [schedules, tickets]);
 
   useEffect(() => {
@@ -170,8 +144,8 @@ export function GanttChart() {
     if (!el) return;
 
     const update = () => {
-      const w = el.clientWidth;
-      setWeekColWidth(Math.max(25, Math.floor(w / viewWeeks)));
+      const width = el.clientWidth;
+      setWeekColWidth(Math.max(25, Math.floor(width / viewWeeks)));
     };
 
     update();
@@ -242,11 +216,9 @@ export function GanttChart() {
     const moved = Math.abs(x - op.startX);
 
     if (op.type === 'move' && moved < 5) {
-      const schedule = schedules.find((s) => s.id === op.id);
-      if (schedule?.ticket_id) {
+      const schedule = schedules.find((item) => item.id === op.id);
+      if (schedule) {
         router.push(`/tickets/${schedule.ticket_id}`);
-      } else {
-        openEditForm(op.id);
       }
     } else if (moved >= 5) {
       const override = barOverridesRef.current[op.id];
@@ -259,7 +231,7 @@ export function GanttChart() {
     barOverridesRef.current = {};
     setBarOverrides({});
     setDraggingId(null);
-  }, [getX, schedules, router, openEditForm, updateSchedule]);
+  }, [getX, schedules, router, updateSchedule]);
 
   const moveRef = useRef(handleDocMouseMove);
   const upRef = useRef(handleDocMouseUp);
@@ -318,23 +290,23 @@ export function GanttChart() {
   }, [getX]);
 
   const handleBodyMouseDown = useCallback((e: React.MouseEvent) => {
-    if (e.button !== 0) return;
+    if (e.button !== 0 || ticketRows.length === 0) return;
     const x = getX(e);
     const rowIdx = getRowFromY(e);
     setCreateDragStartX(x);
     setCreateDragCurrentX(x);
     createDragRowRef.current = rowIdx;
-  }, [getX, getRowFromY]);
+  }, [getX, getRowFromY, ticketRows.length]);
 
   const handleBodyMouseMove = useCallback((e: React.MouseEvent) => {
-    if (createDragStartX === null) return;
+    if (createDragStartX === null || ticketRows.length === 0) return;
     const x = getX(e);
     setCreateDragCurrentX(x);
 
     const startDate = xToDate(Math.min(createDragStartX, x), viewStartDate, weekColWidth);
     const endDate = xToDate(Math.max(createDragStartX, x), viewStartDate, weekColWidth);
     setDragPreview({ startDate, endDate });
-  }, [createDragStartX, getX, viewStartDate, weekColWidth, setDragPreview]);
+  }, [createDragStartX, getX, ticketRows.length, viewStartDate, weekColWidth, setDragPreview]);
 
   const handleBodyMouseUp = useCallback(() => {
     if (createDragStartX === null || createDragCurrentX === null) return;
@@ -347,10 +319,13 @@ export function GanttChart() {
     if (maxX - minX > 10) {
       const startDate = xToDate(minX, viewStartDate, weekColWidth);
       const endDate = xToDate(maxX, viewStartDate, weekColWidth);
-      const rowIdx = createDragRowRef.current;
-      const row = ticketRows[rowIdx];
-      const ticketId = row?.ticket?.id;
-      openCreateForm(startDate, endDate, ticketId);
+      const row = ticketRows[createDragRowRef.current];
+
+      if (row) {
+        openCreateForm(startDate, endDate, row.ticket.id);
+      } else {
+        setDragPreview(null);
+      }
     } else {
       setDragPreview(null);
     }
@@ -358,14 +333,14 @@ export function GanttChart() {
 
   const columns = getWeekColumns(viewStartDate, viewWeeks);
   const totalWidth = viewWeeks * weekColWidth;
-  const bodyHeight = ticketRows.length * ROW_HEIGHT;
+  const bodyHeight = Math.max(ticketRows.length, 1) * ROW_HEIGHT;
   const viewEndDate = columns.length > 0 ? columns[columns.length - 1].endDate : viewStartDate;
 
   const tooltipStyle = getTooltipPosition(tooltip);
 
   return (
-    <div className="glass rounded-lg border border-border overflow-hidden">
-      <div className="flex items-center justify-between px-4 py-3 border-b border-border/30">
+    <div className="glass overflow-hidden rounded-lg border border-border">
+      <div className="flex items-center justify-between border-b border-border/30 px-4 py-3">
         <div className="flex items-center gap-2">
           <h2 className="text-sm font-bold tracking-widest text-neon-cyan text-glow-cyan">
             GANTT CHART
@@ -375,83 +350,75 @@ export function GanttChart() {
           </span>
         </div>
         <div className="flex items-center gap-2">
-          <span className="text-[10px] text-muted-foreground tracking-wider mr-2">
+          <span className="mr-2 text-[10px] tracking-wider text-muted-foreground">
             {viewStartDate} ~ {viewEndDate}
           </span>
           <button
             onClick={() => navigateWeeks(-12)}
-            className="px-2 py-1 text-[10px] tracking-wider text-muted-foreground border border-border rounded hover:text-foreground hover:border-neon-cyan/20 transition-all glass-light"
+            className="glass-light rounded border border-border px-2 py-1 text-[10px] tracking-wider text-muted-foreground transition-all hover:border-neon-cyan/20 hover:text-foreground"
           >
-            ◀ PREV
+            &lt; PREV
           </button>
           <button
             onClick={scrollToToday}
-            className="px-2 py-1 text-[10px] tracking-wider text-neon-cyan border border-neon-cyan/30 rounded hover:bg-neon-cyan/10 transition-all"
+            className="rounded border border-neon-cyan/30 px-2 py-1 text-[10px] tracking-wider text-neon-cyan transition-all hover:bg-neon-cyan/10"
           >
             TODAY
           </button>
           <button
             onClick={() => navigateWeeks(12)}
-            className="px-2 py-1 text-[10px] tracking-wider text-muted-foreground border border-border rounded hover:text-foreground hover:border-neon-cyan/20 transition-all glass-light"
+            className="glass-light rounded border border-border px-2 py-1 text-[10px] tracking-wider text-muted-foreground transition-all hover:border-neon-cyan/20 hover:text-foreground"
           >
-            NEXT ▶
+            NEXT &gt;
           </button>
         </div>
       </div>
 
       <div className="flex">
         <div
-          className="shrink-0 border-r border-border/30 z-10 bg-background"
+          className="z-10 shrink-0 border-r border-border/30 bg-background"
           style={{ width: PANEL_WIDTH }}
         >
           <div
-            className="flex items-end justify-center border-b border-border/20 text-[10px] text-muted-foreground tracking-widest font-bold"
+            className="flex items-end justify-center border-b border-border/20 text-[10px] font-bold tracking-widest text-muted-foreground"
             style={{ height: HEADER_HEIGHT }}
           >
             <span className="pb-1.5">TICKET</span>
           </div>
-          {ticketRows.map((row, i) => (
+          {ticketRows.map((row) => (
             <div
-              key={row.ticket?.id ?? `unassigned-${i}`}
-              className="flex flex-col justify-center px-3 border-b border-border/10 hover:bg-white/[0.02] transition-colors cursor-pointer"
+              key={row.ticket.id}
+              className="flex cursor-pointer flex-col justify-center border-b border-border/10 px-3 transition-colors hover:bg-white/[0.02]"
               style={{ height: ROW_HEIGHT }}
               onClick={() => {
-                if (row.ticket) router.push(`/tickets/${row.ticket.id}`);
+                router.push(`/tickets/${row.ticket.id}`);
               }}
             >
-              {row.ticket ? (
-                <>
-                  <span className="text-[11px] font-medium text-foreground/90 truncate leading-tight">
-                    {row.ticket.title}
-                  </span>
-                  <span className={`text-[9px] tracking-wider ${STATUS_COLORS[row.ticket.status] || 'text-muted-foreground'}`}>
-                    {row.ticket.status}
-                  </span>
-                </>
-              ) : (
-                <span className="text-[10px] text-muted-foreground/50 italic">
-                  (미지정)
-                </span>
-              )}
+              <span className="truncate text-[11px] font-medium leading-tight text-foreground/90">
+                {row.ticket.title}
+              </span>
+              <span className="text-[9px] tracking-wider text-muted-foreground">
+                {row.ticket.status}
+              </span>
             </div>
           ))}
         </div>
 
-        <div ref={scrollRef} className="overflow-x-auto flex-1">
+        <div ref={scrollRef} className="flex-1 overflow-x-auto">
           <div style={{ width: totalWidth, position: 'relative' }}>
             <GanttHeader columns={columns} weekColWidth={weekColWidth} />
 
             <div
               ref={bodyRef}
-              style={{ position: 'relative', height: bodyHeight, cursor: 'crosshair' }}
+              style={{ position: 'relative', height: bodyHeight, cursor: ticketRows.length > 0 ? 'crosshair' : 'default' }}
               onMouseDown={handleBodyMouseDown}
               onMouseMove={handleBodyMouseMove}
               onMouseUp={handleBodyMouseUp}
               onMouseLeave={handleBodyMouseUp}
             >
-              {ticketRows.map((_, rowIdx) => (
+              {ticketRows.map((row, rowIdx) => (
                 <div
-                  key={rowIdx}
+                  key={row.ticket.id}
                   className="absolute left-0 right-0 border-b border-border/10"
                   style={{ top: rowIdx * ROW_HEIGHT, height: ROW_HEIGHT }}
                 />
@@ -518,10 +485,10 @@ export function GanttChart() {
               />
             </div>
 
-            {!loading && schedules.length === 0 && tickets.length === 0 && (
-              <div className="absolute inset-0 flex items-center justify-center pointer-events-none" style={{ top: HEADER_HEIGHT }}>
-                <span className="text-[10px] text-muted-foreground/50 tracking-wider">
-                  DRAG TO CREATE A SCHEDULE
+            {!loading && tickets.length === 0 && (
+              <div className="pointer-events-none absolute inset-0 flex items-center justify-center" style={{ top: HEADER_HEIGHT }}>
+                <span className="text-[10px] tracking-wider text-muted-foreground/50">
+                  CREATE A TICKET BEFORE PLANNING SCHEDULES
                 </span>
               </div>
             )}
@@ -544,7 +511,7 @@ export function GanttChart() {
               {buildTooltipLines(tooltip.schedule).map((line, index) => (
                 <div
                   key={`${tooltip.schedule.id}-${index}`}
-                  className={index === 0 ? 'font-semibold text-foreground' : 'text-muted-foreground break-all'}
+                  className={index === 0 ? 'font-semibold text-foreground' : 'break-all text-muted-foreground'}
                 >
                   {line}
                 </div>

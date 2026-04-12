@@ -1,6 +1,7 @@
 import Database from 'better-sqlite3';
+import { assignTicketPlacement } from './kanban';
 
-const CURRENT_VERSION = 14;
+const CURRENT_VERSION = 21;
 
 export function initSchema(db: Database.Database) {
   db.exec(`
@@ -55,6 +56,45 @@ export function initSchema(db: Database.Database) {
   if (currentVersion < 14) {
     applyV14(db);
   }
+  if (currentVersion < 15) {
+    applyV15(db);
+  }
+  if (currentVersion < 16) {
+    applyV16(db);
+  }
+  if (currentVersion < 17) {
+    applyV17(db);
+  }
+  if (currentVersion < 18) {
+    applyV18(db);
+  }
+  if (currentVersion < 19) {
+    applyV19(db);
+  }
+  if (currentVersion < 20) {
+    applyV20(db);
+  }
+  if (currentVersion < 21) {
+    applyV21(db);
+  }
+}
+
+function applyV21(db: Database.Database) {
+  if (!hasColumn(db, 'docx_diff_uploads', 'file_type')) {
+    db.exec(`
+      ALTER TABLE docx_diff_uploads ADD COLUMN file_type TEXT;
+    `);
+  }
+
+  if (!hasColumn(db, 'docx_diff_uploads', 'overridden_text')) {
+    db.exec(`
+      ALTER TABLE docx_diff_uploads ADD COLUMN overridden_text TEXT;
+    `);
+  }
+
+  db.exec(`
+    INSERT INTO schema_version (version) VALUES (21);
+  `);
 }
 
 function applyV1(db: Database.Database) {
@@ -385,5 +425,359 @@ function applyV13(db: Database.Database) {
     CREATE INDEX IF NOT EXISTS idx_email_attachments_email ON email_attachments(email_id);
 
     INSERT INTO schema_version (version) VALUES (13);
+  `);
+}
+
+function applyV15(db: Database.Database) {
+  db.exec(`
+    CREATE TABLE IF NOT EXISTS kanban_categories (
+      id TEXT PRIMARY KEY DEFAULT (lower(hex(randomblob(8)))),
+      name TEXT NOT NULL,
+      color TEXT NOT NULL DEFAULT '#00AAD2',
+      position INTEGER NOT NULL DEFAULT 0,
+      created_at TEXT NOT NULL DEFAULT (datetime('now','localtime')),
+      updated_at TEXT NOT NULL DEFAULT (datetime('now','localtime'))
+    );
+
+    CREATE TABLE IF NOT EXISTS kanban_cards (
+      id TEXT PRIMARY KEY DEFAULT (lower(hex(randomblob(8)))),
+      category_id TEXT NOT NULL REFERENCES kanban_categories(id) ON DELETE CASCADE,
+      title TEXT NOT NULL,
+      description TEXT,
+      position INTEGER NOT NULL DEFAULT 0,
+      ticket_id TEXT REFERENCES tickets(id) ON DELETE SET NULL,
+      created_at TEXT NOT NULL DEFAULT (datetime('now','localtime')),
+      updated_at TEXT NOT NULL DEFAULT (datetime('now','localtime'))
+    );
+
+    CREATE INDEX IF NOT EXISTS idx_kanban_categories_position ON kanban_categories(position);
+    CREATE INDEX IF NOT EXISTS idx_kanban_cards_category_position ON kanban_cards(category_id, position);
+    CREATE INDEX IF NOT EXISTS idx_kanban_cards_ticket ON kanban_cards(ticket_id);
+
+    INSERT INTO schema_version (version) VALUES (15);
+  `);
+}
+
+function applyV16(db: Database.Database) {
+  db.exec(`
+    CREATE TABLE IF NOT EXISTS ticket_file_categories (
+      id TEXT PRIMARY KEY DEFAULT (lower(hex(randomblob(8)))),
+      ticket_id TEXT NOT NULL REFERENCES tickets(id) ON DELETE CASCADE,
+      name TEXT NOT NULL,
+      color TEXT NOT NULL DEFAULT '#00AAD2',
+      position INTEGER NOT NULL DEFAULT 0,
+      is_default INTEGER NOT NULL DEFAULT 0,
+      created_at TEXT NOT NULL DEFAULT (datetime('now','localtime')),
+      updated_at TEXT NOT NULL DEFAULT (datetime('now','localtime'))
+    );
+
+    CREATE INDEX IF NOT EXISTS idx_ticket_file_categories_ticket ON ticket_file_categories(ticket_id);
+    CREATE INDEX IF NOT EXISTS idx_ticket_file_categories_position ON ticket_file_categories(ticket_id, position);
+
+    CREATE TABLE IF NOT EXISTS ticket_file_cards (
+      id TEXT PRIMARY KEY DEFAULT (lower(hex(randomblob(8)))),
+      ticket_id TEXT NOT NULL REFERENCES tickets(id) ON DELETE CASCADE,
+      category_id TEXT NOT NULL REFERENCES ticket_file_categories(id) ON DELETE CASCADE,
+      email_attachment_id TEXT UNIQUE REFERENCES email_attachments(id) ON DELETE SET NULL,
+      file_name TEXT NOT NULL,
+      description TEXT,
+      position INTEGER NOT NULL DEFAULT 0,
+      created_at TEXT NOT NULL DEFAULT (datetime('now','localtime')),
+      updated_at TEXT NOT NULL DEFAULT (datetime('now','localtime'))
+    );
+
+    CREATE INDEX IF NOT EXISTS idx_ticket_file_cards_ticket ON ticket_file_cards(ticket_id);
+    CREATE INDEX IF NOT EXISTS idx_ticket_file_cards_category_position ON ticket_file_cards(category_id, position);
+
+    INSERT INTO schema_version (version) VALUES (16);
+  `);
+}
+
+function applyV17(db: Database.Database) {
+  db.exec(`
+    CREATE TABLE IF NOT EXISTS generation_templates (
+      id TEXT PRIMARY KEY DEFAULT (lower(hex(randomblob(8)))),
+      type TEXT NOT NULL CHECK(type IN ('weekly_report','dooray')),
+      name TEXT NOT NULL,
+      content TEXT NOT NULL DEFAULT '',
+      is_default INTEGER NOT NULL DEFAULT 0,
+      created_at TEXT NOT NULL DEFAULT (datetime('now','localtime')),
+      updated_at TEXT NOT NULL DEFAULT (datetime('now','localtime'))
+    );
+
+    CREATE INDEX IF NOT EXISTS idx_generation_templates_type ON generation_templates(type, is_default DESC, created_at DESC);
+
+    CREATE TABLE IF NOT EXISTS generation_best_practices (
+      id TEXT PRIMARY KEY DEFAULT (lower(hex(randomblob(8)))),
+      type TEXT NOT NULL CHECK(type IN ('weekly_report','dooray')),
+      title TEXT NOT NULL,
+      content TEXT NOT NULL DEFAULT '',
+      created_at TEXT NOT NULL DEFAULT (datetime('now','localtime'))
+    );
+
+    CREATE INDEX IF NOT EXISTS idx_generation_best_practices_type ON generation_best_practices(type, created_at DESC);
+
+    INSERT INTO generation_templates (type, name, content, is_default)
+    SELECT 'weekly_report', '기본 주간보고 템플릿',
+           '## 주간보고\n\n### 1. 금주 주요 활동\n- 처리된 이메일 및 회신 현황\n- 주요 의사결정 사항\n\n### 2. 이슈 및 현황\n- 미해결 이슈\n- 리스크 요소\n\n### 3. 차주 계획\n- 예정된 회신/발송\n- 후속 조치 사항\n\n### 4. 기타',
+           1
+    WHERE NOT EXISTS (SELECT 1 FROM generation_templates WHERE type = 'weekly_report' AND is_default = 1);
+
+    INSERT INTO generation_templates (type, name, content, is_default)
+    SELECT 'dooray', '기본 두레이 템플릿',
+           '## 업무 보고\n\n### 배경 및 경위\n### 주요 내용\n### 현재 상태\n### 향후 계획',
+           1
+    WHERE NOT EXISTS (SELECT 1 FROM generation_templates WHERE type = 'dooray' AND is_default = 1);
+
+    INSERT INTO schema_version (version) VALUES (17);
+  `);
+}
+
+function applyV18(db: Database.Database) {
+  db.exec(`
+    CREATE TABLE IF NOT EXISTS document_templates (
+      id TEXT PRIMARY KEY DEFAULT (lower(hex(randomblob(8)))),
+      title TEXT NOT NULL,
+      content_html TEXT NOT NULL DEFAULT '',
+      description TEXT,
+      version INTEGER NOT NULL DEFAULT 1,
+      created_at TEXT NOT NULL DEFAULT (datetime('now','localtime')),
+      updated_at TEXT NOT NULL DEFAULT (datetime('now','localtime'))
+    );
+
+    CREATE TABLE IF NOT EXISTS template_variables (
+      id TEXT PRIMARY KEY DEFAULT (lower(hex(randomblob(8)))),
+      template_id TEXT NOT NULL REFERENCES document_templates(id) ON DELETE CASCADE,
+      var_key TEXT NOT NULL,
+      var_label TEXT NOT NULL,
+      var_type TEXT NOT NULL DEFAULT 'text',
+      default_value TEXT,
+      sort_order INTEGER NOT NULL DEFAULT 0,
+      created_at TEXT NOT NULL DEFAULT (datetime('now','localtime')),
+      UNIQUE(template_id, var_key)
+    );
+
+    CREATE TABLE IF NOT EXISTS company_profiles (
+      id TEXT PRIMARY KEY DEFAULT (lower(hex(randomblob(8)))),
+      name TEXT NOT NULL,
+      description TEXT,
+      created_at TEXT NOT NULL DEFAULT (datetime('now','localtime')),
+      updated_at TEXT NOT NULL DEFAULT (datetime('now','localtime'))
+    );
+
+    CREATE TABLE IF NOT EXISTS company_variable_values (
+      id TEXT PRIMARY KEY DEFAULT (lower(hex(randomblob(8)))),
+      company_id TEXT NOT NULL REFERENCES company_profiles(id) ON DELETE CASCADE,
+      variable_id TEXT NOT NULL REFERENCES template_variables(id) ON DELETE CASCADE,
+      value TEXT,
+      created_at TEXT NOT NULL DEFAULT (datetime('now','localtime')),
+      UNIQUE(company_id, variable_id)
+    );
+
+    CREATE TABLE IF NOT EXISTS document_instances (
+      id TEXT PRIMARY KEY DEFAULT (lower(hex(randomblob(8)))),
+      template_id TEXT NOT NULL REFERENCES document_templates(id) ON DELETE CASCADE,
+      company_id TEXT NOT NULL REFERENCES company_profiles(id) ON DELETE CASCADE,
+      rendered_html TEXT NOT NULL DEFAULT '',
+      status TEXT NOT NULL DEFAULT 'draft' CHECK(status IN ('draft','review','approved','signed')),
+      version INTEGER NOT NULL DEFAULT 1,
+      created_at TEXT NOT NULL DEFAULT (datetime('now','localtime')),
+      updated_at TEXT NOT NULL DEFAULT (datetime('now','localtime'))
+    );
+
+    CREATE INDEX IF NOT EXISTS idx_document_templates_updated ON document_templates(updated_at DESC);
+    CREATE INDEX IF NOT EXISTS idx_template_variables_template ON template_variables(template_id, sort_order, created_at);
+    CREATE INDEX IF NOT EXISTS idx_company_values_company ON company_variable_values(company_id, variable_id);
+    CREATE INDEX IF NOT EXISTS idx_document_instances_template ON document_instances(template_id, company_id, updated_at DESC);
+
+    INSERT INTO schema_version (version) VALUES (18);
+  `);
+}
+
+function applyV19(db: Database.Database) {
+  db.exec(`
+    CREATE TABLE IF NOT EXISTS docx_templates (
+      id TEXT PRIMARY KEY DEFAULT (lower(hex(randomblob(8)))),
+      filename TEXT NOT NULL,
+      display_name TEXT,
+      file_blob BLOB NOT NULL,
+      preview_html TEXT,
+      placeholders_json TEXT,
+      tiptap_html TEXT,
+      anchor_inserts_json TEXT,
+      created_at TEXT NOT NULL DEFAULT (datetime('now','localtime')),
+      updated_at TEXT NOT NULL DEFAULT (datetime('now','localtime'))
+    );
+
+    CREATE TABLE IF NOT EXISTS docx_diff_uploads (
+      id TEXT PRIMARY KEY DEFAULT (lower(hex(randomblob(8)))),
+      filename TEXT NOT NULL,
+      file_blob BLOB NOT NULL,
+      created_at TEXT NOT NULL DEFAULT (datetime('now','localtime'))
+    );
+
+    CREATE INDEX IF NOT EXISTS idx_docx_templates_updated ON docx_templates(updated_at DESC);
+    CREATE INDEX IF NOT EXISTS idx_docx_diff_uploads_created ON docx_diff_uploads(created_at DESC);
+
+    INSERT INTO schema_version (version) VALUES (19);
+  `);
+}
+
+function applyV20(db: Database.Database) {
+  if (!hasColumn(db, 'tickets', 'category_id')) {
+    db.exec(`
+      ALTER TABLE tickets
+      ADD COLUMN category_id TEXT REFERENCES kanban_categories(id) ON DELETE SET NULL;
+    `);
+  }
+
+  if (!hasColumn(db, 'tickets', 'position')) {
+    db.exec(`
+      ALTER TABLE tickets
+      ADD COLUMN position INTEGER NOT NULL DEFAULT 0;
+    `);
+  }
+
+  const tx = db.transaction(() => {
+    if (tableExists(db, 'kanban_cards')) {
+      const cardRows = db.prepare(`
+        SELECT rowid, ticket_id, category_id, position
+        FROM kanban_cards
+        WHERE ticket_id IS NOT NULL
+        ORDER BY created_at ASC, rowid ASC
+      `).all() as Array<{ ticket_id: string; category_id: string; position: number }>;
+
+      const appliedTicketIds = new Set<string>();
+      const applyCardPlacement = db.prepare(`
+        UPDATE tickets
+        SET category_id = ?, position = ?, updated_at = datetime('now','localtime')
+        WHERE id = ?
+      `);
+
+      for (const card of cardRows) {
+        if (appliedTicketIds.has(card.ticket_id)) {
+          continue;
+        }
+
+        applyCardPlacement.run(card.category_id, card.position, card.ticket_id);
+        appliedTicketIds.add(card.ticket_id);
+      }
+    }
+
+    const ticketsWithoutCategory = db.prepare(`
+      SELECT id, status
+      FROM tickets
+      WHERE COALESCE(category_id, '') = ''
+      ORDER BY created_at ASC, rowid ASC
+    `).all() as Array<{ id: string; status: string }>;
+
+    for (const ticket of ticketsWithoutCategory) {
+      assignTicketPlacement(db, {
+        ticketId: ticket.id,
+        status: ticket.status,
+      });
+    }
+
+    if (tableExists(db, 'schedules')) {
+      const schedulesWithoutTicket = db.prepare(`
+        SELECT s.id, s.title, s.description
+        FROM schedules s
+        LEFT JOIN tickets t ON t.id = s.ticket_id
+        WHERE s.ticket_id IS NULL OR t.id IS NULL
+        ORDER BY s.created_at ASC, s.rowid ASC
+      `).all() as Array<{ id: string; title: string; description: string | null }>;
+
+      const insertTicket = db.prepare(`
+        INSERT INTO tickets (title, description)
+        VALUES (?, ?)
+      `);
+      const readInsertedTicket = db.prepare(`
+        SELECT id, status
+        FROM tickets
+        WHERE rowid = ?
+      `);
+      const attachScheduleTicket = db.prepare(`
+        UPDATE schedules
+        SET ticket_id = ?, updated_at = datetime('now','localtime')
+        WHERE id = ?
+      `);
+
+      for (const schedule of schedulesWithoutTicket) {
+        const result = insertTicket.run(schedule.title, schedule.description || null);
+        const insertedTicket = readInsertedTicket.get(result.lastInsertRowid) as { id: string; status: string } | undefined;
+        if (!insertedTicket) {
+          continue;
+        }
+
+        assignTicketPlacement(db, {
+          ticketId: insertedTicket.id,
+          status: insertedTicket.status,
+        });
+
+        attachScheduleTicket.run(insertedTicket.id, schedule.id);
+      }
+
+      recreateSchedulesTable(db);
+    }
+
+    if (tableExists(db, 'kanban_cards')) {
+      db.exec(`
+        DROP TABLE kanban_cards;
+      `);
+    }
+
+    db.exec(`
+      CREATE INDEX IF NOT EXISTS idx_tickets_category ON tickets(category_id);
+      CREATE INDEX IF NOT EXISTS idx_tickets_category_position ON tickets(category_id, position);
+    `);
+
+    db.exec(`
+      INSERT INTO schema_version (version) VALUES (20);
+    `);
+  });
+
+  tx();
+}
+
+function tableExists(db: Database.Database, tableName: string) {
+  const row = db.prepare(`
+    SELECT name
+    FROM sqlite_master
+    WHERE type = 'table' AND name = ?
+  `).get(tableName) as { name?: string } | undefined;
+
+  return Boolean(row?.name);
+}
+
+function hasColumn(db: Database.Database, tableName: string, columnName: string) {
+  const columns = db.prepare(`PRAGMA table_info(${tableName})`).all() as Array<{ name: string }>;
+  return columns.some((column) => column.name === columnName);
+}
+
+function recreateSchedulesTable(db: Database.Database) {
+  db.exec(`
+    ALTER TABLE schedules RENAME TO schedules_v20_legacy;
+
+    CREATE TABLE schedules (
+      id TEXT PRIMARY KEY DEFAULT (lower(hex(randomblob(8)))),
+      title TEXT NOT NULL,
+      description TEXT,
+      start_date TEXT NOT NULL,
+      end_date TEXT NOT NULL,
+      ticket_id TEXT NOT NULL REFERENCES tickets(id) ON DELETE CASCADE,
+      url TEXT,
+      color TEXT NOT NULL DEFAULT '#5ec4d4',
+      created_at TEXT NOT NULL DEFAULT (datetime('now','localtime')),
+      updated_at TEXT NOT NULL DEFAULT (datetime('now','localtime'))
+    );
+
+    INSERT INTO schedules (id, title, description, start_date, end_date, ticket_id, url, color, created_at, updated_at)
+    SELECT id, title, description, start_date, end_date, ticket_id, url, color, created_at, updated_at
+    FROM schedules_v20_legacy;
+
+    DROP TABLE schedules_v20_legacy;
+
+    CREATE INDEX idx_schedules_dates ON schedules(start_date, end_date);
+    CREATE INDEX idx_schedules_ticket ON schedules(ticket_id);
   `);
 }

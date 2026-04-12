@@ -6,30 +6,28 @@ import { CSS } from '@dnd-kit/utilities';
 import { useSortable } from '@dnd-kit/sortable';
 import { Pencil } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import type { KanbanCard } from '@/types/kanban';
+import type { Ticket } from '@/types/ticket';
 
 interface KanbanCardItemProps {
-  card: KanbanCard;
-  onEdit: (card: KanbanCard) => void;
+  ticket: Ticket;
+  onEdit: (ticket: Ticket) => void;
 }
 
-export function KanbanCardItem({ card, onEdit }: KanbanCardItemProps) {
+export function KanbanCardItem({ ticket, onEdit }: KanbanCardItemProps) {
   const router = useRouter();
   const startRef = useRef<{ x: number; y: number } | null>(null);
 
   const { attributes, listeners, setNodeRef, transform, transition, isDragging } = useSortable({
-    id: card.id,
+    id: ticket.id,
     data: {
       type: 'card',
-      card,
-      categoryId: card.category_id,
+      ticket,
+      categoryId: ticket.category_id,
     },
   });
 
   const openTicket = () => {
-    if (card.ticket_id) {
-      router.push(`/tickets/${card.ticket_id}`);
-    }
+    router.push(`/tickets/${ticket.id}`);
   };
 
   const handlePointerDown = (event: React.PointerEvent<HTMLDivElement>) => {
@@ -40,7 +38,7 @@ export function KanbanCardItem({ card, onEdit }: KanbanCardItemProps) {
   const handlePointerUp = (event: React.PointerEvent<HTMLDivElement>) => {
     const start = startRef.current;
     startRef.current = null;
-    if (!start || !card.ticket_id) return;
+    if (!start) return;
 
     const delta = Math.abs(event.clientX - start.x) + Math.abs(event.clientY - start.y);
     if (delta < 5) {
@@ -56,9 +54,7 @@ export function KanbanCardItem({ card, onEdit }: KanbanCardItemProps) {
         transition,
         opacity: isDragging ? 0.6 : 1,
       }}
-      className={`rounded-lg border border-border bg-card p-3 shadow-sm transition-colors ${
-        card.ticket_id ? 'cursor-pointer hover:border-neon-cyan/30 hover:bg-white/[0.03]' : ''
-      }`}
+      className="cursor-pointer rounded-lg border border-border bg-card p-3 shadow-sm transition-colors hover:border-neon-cyan/30 hover:bg-white/[0.03]"
       onPointerDown={handlePointerDown}
       onPointerUp={handlePointerUp}
       onPointerCancel={() => {
@@ -72,8 +68,8 @@ export function KanbanCardItem({ card, onEdit }: KanbanCardItemProps) {
           {...attributes}
           {...listeners}
         >
-          <div className="font-medium text-foreground">{card.title}</div>
-          {card.description && <p className="mt-1 text-sm text-muted-foreground">{card.description}</p>}
+          <div className="font-medium text-foreground">{ticket.title}</div>
+          {ticket.description && <p className="mt-1 text-sm text-muted-foreground">{ticket.description}</p>}
         </button>
         <Button
           type="button"
@@ -83,27 +79,12 @@ export function KanbanCardItem({ card, onEdit }: KanbanCardItemProps) {
           onPointerUp={(event) => event.stopPropagation()}
           onClick={(event) => {
             event.stopPropagation();
-            onEdit(card);
+            onEdit(ticket);
           }}
         >
           <Pencil />
         </Button>
       </div>
-
-      {card.ticket_title && (
-        <button
-          type="button"
-          onPointerDown={(event) => event.stopPropagation()}
-          onPointerUp={(event) => event.stopPropagation()}
-          onClick={(event) => {
-            event.stopPropagation();
-            openTicket();
-          }}
-          className="mt-3 inline-flex items-center rounded-full bg-[#EDF2FF] px-2.5 py-1 text-[11px] text-[#002C5F] transition-colors hover:bg-[#dbe6ff] hover:text-[#001f45]"
-        >
-          티켓: {card.ticket_title} {card.ticket_status ? `(${card.ticket_status})` : ''}
-        </button>
-      )}
     </div>
   );
 }

@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>이메일 파싱 Preview</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar">
+        <div class="brand">
+          <div class="brand-mark">b</div>
+          <div class="brand-title">
+            <strong>이메일 파싱</strong>
+            <span>scene preview</span>
+          </div>
+        </div>
+        <nav class="nav-group">
+          <a class="nav-link" href="./index.html"><span>Overview</span><span>00</span></a>
+          <a class="nav-link" href="./tickets-list.html"><span>티켓 목록</span><span>01</span></a>
+          <a class="nav-link" href="./ticket-detail.html"><span>티켓 상세</span><span>02</span></a>
+          <a class="nav-link active" href="./email-flow.html"><span>이메일 파싱</span><span>03</span></a>
+          <a class="nav-link" href="./email-viewer.html"><span>이메일 뷰어</span><span>04</span></a>
+          <a class="nav-link" href="./kanban.html"><span>칸반 보드</span><span>05</span></a>
+          <a class="nav-link" href="./gantt.html"><span>간트 차트</span><span>06</span></a>
+        </nav>
+      </aside>
+
+      <main class="content">
+        <header class="topbar">
+          <div>
+            <div class="crumbs">이메일 / 드롭 & 파싱</div>
+            <h1 class="title">성공과 실패가 분명히 갈리는 드롭존</h1>
+          </div>
+          <div class="search"><span>⌥D</span><span>드롭 상태 확인</span></div>
+          <div class="topbar-right">
+            <button class="ghost-button">샘플 업로드</button>
+            <button class="button primary">실패 재현</button>
+          </div>
+        </header>
+
+        <section class="grid two-col" style="margin-top: 18px">
+          <div class="stack">
+            <div class="card">
+              <div class="card-header">
+                <div>
+                  <div class="card-title">드롭존 상태</div>
+                  <div class="card-subtitle">파일 확장자 감지와 fallback 흐름을 시각화</div>
+                </div>
+                <span class="pill blue">ready</span>
+              </div>
+              <div class="card-body">
+                <div class="dropzone dragging">
+                  <div class="headline">MSG / EML 파일을 놓아주세요</div>
+                  <div class="copy">
+                    확장자가 없을 때 OLE signature를 확인하고, MIME type이 있으면 EML 우선 라우팅하는 가정을 표현했습니다.
+                  </div>
+                  <div class="hint">Fail fast, then fallback once</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-header">
+                <div>
+                  <div class="card-title">성공 / 실패 예시</div>
+                  <div class="card-subtitle">파일명과 원인을 함께 보여주는 상태 메시지</div>
+                </div>
+              </div>
+              <div class="card-body">
+                <div class="stack">
+                  <div class="alert good">
+                    <strong>성공:</strong> `invoice-2026.eml` 업로드 완료, 본문 2개와 첨부 6개가 정상 추가되었습니다.
+                  </div>
+                  <div class="alert">
+                    <strong>실패:</strong> `issue-1049.msg` 파싱 실패 - MSG reader error / EML fallback also failed.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <aside class="stack">
+            <div class="card">
+              <div class="card-header">
+                <div>
+                  <div class="card-title">Incremental update</div>
+                  <div class="card-subtitle">idx 0도 놓치지 않는 업데이트 흐름</div>
+                </div>
+              </div>
+              <div class="card-body">
+                <div class="flow">
+                  <div class="flow-step">
+                    <div class="dot green"></div>
+                    <div class="flow-body">
+                      <strong>새 텍스트 수신</strong>
+                      <span>기존 텍스트와 비교한 뒤 같지 않으면 업데이트 대상으로 넘김.</span>
+                    </div>
+                  </div>
+                  <div class="flow-step">
+                    <div class="dot"></div>
+                    <div class="flow-body">
+                      <strong>idx = 0</strong>
+                      <span>새 내용이 기존 텍스트 뒤에 붙는 경우도 정상 반영되는 장면.</span>
+                    </div>
+                  </div>
+                  <div class="flow-step">
+                    <div class="dot orange"></div>
+                    <div class="flow-body">
+                      <strong>완전 중복</strong>
+                      <span>동일 텍스트는 skip 처리되어 스택이 지저분해지지 않음.</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-header">
+                <div>
+                  <div class="card-title">상태 로그</div>
+                  <div class="card-subtitle">문제 메시지의 톤을 차분하게</div>
+                </div>
+              </div>
+              <div class="card-body">
+                <div class="mini-grid">
+                  <div class="mini-row">
+                    <div>
+                      <strong>file type</strong>
+                      <span>message/rfc822</span>
+                    </div>
+                    <span class="pill blue">eml</span>
+                  </div>
+                  <div class="mini-row">
+                    <div>
+                      <strong>signature</strong>
+                      <span>0xD0CF11E0 detected</span>
+                    </div>
+                    <span class="pill gray">msg</span>
+                  </div>
+                  <div class="mini-row">
+                    <div>
+                      <strong>error surface</strong>
+                      <span>file name + short reason</span>
+                    </div>
+                    <span class="pill red">visible</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </aside>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

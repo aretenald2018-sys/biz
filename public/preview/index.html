@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>biz Preview Scenes</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar">
+        <div class="brand">
+          <div class="brand-mark">b</div>
+          <div class="brand-title">
+            <strong>biz preview</strong>
+            <span>static HTML mockups</span>
+          </div>
+        </div>
+        <nav class="nav-group">
+          <a class="nav-link active" href="./index.html"><span>Overview</span><span>00</span></a>
+          <a class="nav-link" href="./tickets-list.html"><span>티켓 목록</span><span>01</span></a>
+          <a class="nav-link" href="./ticket-detail.html"><span>티켓 상세</span><span>02</span></a>
+          <a class="nav-link" href="./email-flow.html"><span>이메일 파싱</span><span>03</span></a>
+          <a class="nav-link" href="./email-viewer.html"><span>이메일 뷰어</span><span>04</span></a>
+          <a class="nav-link" href="./kanban.html"><span>칸반 보드</span><span>05</span></a>
+          <a class="nav-link" href="./gantt.html"><span>간트 차트</span><span>06</span></a>
+        </nav>
+      </aside>
+
+      <main class="content">
+        <section class="hero">
+          <div class="hero-card">
+            <div class="hero-badge">Apple HIG preview set</div>
+            <h1 class="title">이메일 파싱 수정 + Apple HIG 리디자인 느낌만 먼저 보는 정적 미리보기</h1>
+            <p class="subtitle">
+              실제 작동 코드는 건드리지 않고, 요청한 서비스 씬별 화면만 HTML로 분리해 둔 미리보기입니다.
+              티켓 관리, 이메일 드롭존, 인라인 이미지, 칸반, 간트를 한 번에 비교할 수 있습니다.
+            </p>
+
+            <div class="scene-list">
+              <a class="scene-item" href="./tickets-list.html">
+                <div>
+                  <strong>티켓 목록</strong>
+                  <span>세그먼트 컨트롤, 리스트 중심 계층, Apple 스타일 툴바</span>
+                </div>
+                <span class="pill blue">list / kanban / gantt</span>
+              </a>
+              <a class="scene-item" href="./ticket-detail.html">
+                <div>
+                  <strong>티켓 상세</strong>
+                  <span>제목, 상태, 메타데이터, 이메일 스택, 파일 칸반 분리</span>
+                </div>
+                <span class="pill green">detail</span>
+              </a>
+              <a class="scene-item" href="./email-flow.html">
+                <div>
+                  <strong>이메일 파싱</strong>
+                  <span>드롭 실패 상태, 성공 피드백, incremental update 흐름</span>
+                </div>
+                <span class="pill orange">parse</span>
+              </a>
+            </div>
+          </div>
+
+          <aside class="hero-card">
+            <div class="section-head">
+              <div>
+                <div class="card-title">이번 미리보기의 포인트</div>
+                <div class="card-subtitle">원본 앱과 분리된 정적 장면 세트</div>
+              </div>
+            </div>
+            <div class="mini-grid" style="margin-top: 18px">
+              <div class="mini-row">
+                <div>
+                  <strong>Apple HIG 톤</strong>
+                  <span>여백, 계층, 미묘한 깊이 위주</span>
+                </div>
+                <span class="status active">clean</span>
+              </div>
+              <div class="mini-row">
+                <div>
+                  <strong>이메일 파싱</strong>
+                  <span>MSG/EML 실패와 inline image를 가정한 UI</span>
+                </div>
+                <span class="status review">preview</span>
+              </div>
+              <div class="mini-row">
+                <div>
+                  <strong>작동코드 미변경</strong>
+                  <span>실제 앱 로직은 그대로 두고 시각만 확인</span>
+                </div>
+                <span class="status closed">static</span>
+              </div>
+            </div>
+            <p class="footer-note" style="margin-top: 16px">
+              파일은 `public/preview` 아래에만 들어가 있어 기존 라우트에는 영향이 없습니다.
+            </p>
+          </aside>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

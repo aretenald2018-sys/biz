@@ -4,7 +4,7 @@ export interface Schedule {
   description: string | null;
   start_date: string;
   end_date: string;
-  ticket_id: string | null;
+  ticket_id: string;
   ticket_title?: string | null;
   ticket_status?: string | null;
   url: string | null;
@@ -18,7 +18,7 @@ export interface CreateScheduleInput {
   description?: string;
   start_date: string;
   end_date: string;
-  ticket_id?: string;
+  ticket_id: string;
   url?: string;
   color?: string;
 }
@@ -28,7 +28,7 @@ export interface UpdateScheduleInput {
   description?: string;
   start_date?: string;
   end_date?: string;
-  ticket_id?: string | null;
+  ticket_id?: string;
   url?: string | null;
   color?: string;
 }

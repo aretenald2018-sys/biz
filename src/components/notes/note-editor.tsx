@@ -404,7 +404,8 @@ export function NoteEditor({ ticketId, pinned, onTogglePin }: {
                 type="button"
                 onClick={handleBusinessEmailDraft}
                 disabled={businessEmailLoading}
-                className="text-[10px] h-6 px-2 bg-neon-cyan/15 text-neon-cyan border border-neon-cyan/30"
+                variant="outline"
+                className="text-[10px] h-6 px-2 text-muted-foreground hover:text-foreground border border-border hover:border-foreground/20"
               >
                 {businessEmailLoading ? 'GENERATING...' : 'BUSINESS EMAIL'}
               </Button>

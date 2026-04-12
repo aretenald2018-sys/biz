@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>티켓 목록 Preview</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar">
+        <div class="brand">
+          <div class="brand-mark">b</div>
+          <div class="brand-title">
+            <strong>티켓 목록</strong>
+            <span>scene preview</span>
+          </div>
+        </div>
+        <nav class="nav-group">
+          <a class="nav-link" href="./index.html"><span>Overview</span><span>00</span></a>
+          <a class="nav-link active" href="./tickets-list.html"><span>티켓 목록</span><span>01</span></a>
+          <a class="nav-link" href="./ticket-detail.html"><span>티켓 상세</span><span>02</span></a>
+          <a class="nav-link" href="./email-flow.html"><span>이메일 파싱</span><span>03</span></a>
+          <a class="nav-link" href="./email-viewer.html"><span>이메일 뷰어</span><span>04</span></a>
+          <a class="nav-link" href="./kanban.html"><span>칸반 보드</span><span>05</span></a>
+          <a class="nav-link" href="./gantt.html"><span>간트 차트</span><span>06</span></a>
+        </nav>
+      </aside>
+
+      <main class="content">
+        <header class="topbar">
+          <div>
+            <div class="crumbs">티켓 관리 / 목록</div>
+            <h1 class="title">목록 중심의 조용한 대시보드</h1>
+          </div>
+          <div class="search"><span>⌘K</span><span>검색 / 필터 / 명령어</span></div>
+          <div class="topbar-right">
+            <div class="segmented">
+              <button class="active">목록</button>
+              <button>칸반</button>
+              <button>간트</button>
+            </div>
+            <button class="button primary">+ 새 티켓</button>
+          </div>
+        </header>
+
+        <div class="stack" style="margin-top: 18px">
+          <section class="grid metrics">
+            <div class="card metric">
+              <div class="label">오늘 들어온 티켓</div>
+              <div class="value">18</div>
+              <div class="delta">+4 from yesterday</div>
+            </div>
+            <div class="card metric">
+              <div class="label">진행 중</div>
+              <div class="value">42</div>
+              <div class="delta">+6 active</div>
+            </div>
+            <div class="card metric">
+              <div class="label">이메일 연결</div>
+              <div class="value">91%</div>
+              <div class="delta">parse stable</div>
+            </div>
+            <div class="card metric">
+              <div class="label">대기 중</div>
+              <div class="value">7</div>
+              <div class="delta" style="color: var(--warning)">needs attention</div>
+            </div>
+          </section>
+
+          <section class="grid two-col">
+            <div class="card">
+              <div class="card-header">
+                <div>
+                  <div class="card-title">최근 티켓</div>
+                  <div class="card-subtitle">가장 중요한 정보만 먼저 보이게 정리한 목록</div>
+                </div>
+                <div class="row-actions">
+                  <button class="ghost-button">필터</button>
+                  <button class="ghost-button">정렬</button>
+                </div>
+              </div>
+              <div class="card-body">
+                <div class="list">
+                  <div class="list-row">
+                    <div class="list-main">
+                      <div class="list-title">
+                        <strong>MSG 드롭 후 파싱이 안 되는 이슈</strong>
+                        <span class="status hold">hold</span>
+                      </div>
+                      <div class="list-meta">
+                        <span>ticket-1049</span>
+                        <span>메일 3개</span>
+                        <span>수신: 2026-04-11</span>
+                      </div>
+                    </div>
+                    <div class="row-actions"><span class="pill red">urgent</span></div>
+                  </div>
+
+                  <div class="list-row">
+                    <div class="list-main">
+                      <div class="list-title">
+                        <strong>인라인 이미지 미표시 레이아웃 점검</strong>
+                        <span class="status review">review</span>
+                      </div>
+                      <div class="list-meta">
+                        <span>ticket-1050</span>
+                        <span>첨부 8</span>
+                        <span>미리보기 카드</span>
+                      </div>
+                    </div>
+                    <div class="row-actions"><span class="pill orange">pending</span></div>
+                  </div>
+
+                  <div class="list-row">
+                    <div class="list-main">
+                      <div class="list-title">
+                        <strong>Apple HIG 티켓 상세 전면 개편</strong>
+                        <span class="status active">active</span>
+                      </div>
+                      <div class="list-meta">
+                        <span>ticket-1051</span>
+                        <span>칸반 / 간트 동시 작업</span>
+                        <span>오늘 14:00</span>
+                      </div>
+                    </div>
+                    <div class="row-actions"><span class="pill blue">design</span></div>
+                  </div>
+
+                  <div class="list-row">
+                    <div class="list-main">
+                      <div class="list-title">
+                        <strong>계약 현황 검색 성능 확인</strong>
+                        <span class="status closed">closed</span>
+                      </div>
+                      <div class="list-meta">
+                        <span>ticket-1002</span>
+                        <span>완료</span>
+                        <span>last week</span>
+                      </div>
+                    </div>
+                    <div class="row-actions"><span class="pill gray">archive</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="stack">
+              <section class="card">
+                <div class="card-header">
+                  <div>
+                    <div class="card-title">뷰 전환</div>
+                    <div class="card-subtitle">목록 / 칸반 / 간트를 한 화면에서 비교하는 느낌</div>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <div class="segmented" style="width: 100%; justify-content: space-between">
+                    <button class="active" style="flex: 1">List</button>
+                    <button style="flex: 1">Kanban</button>
+                    <button style="flex: 1">Gantt</button>
+                  </div>
+                  <p class="preview-caption">기본은 목록이지만, 시각적으로는 다른 뷰로 쉽게 넘어가는 구조를 표현.</p>
+                </div>
+              </section>
+
+              <section class="card">
+                <div class="card-header">
+                  <div>
+                    <div class="card-title">작업 요약</div>
+                    <div class="card-subtitle">최근 변경사항 중심</div>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <div class="details">
+                    <div class="details-row">
+                      <span class="key">파싱 실패</span>
+                      <span class="value">MSG/EML fallback + 422 안내</span>
+                    </div>
+                    <div class="details-row">
+                      <span class="key">이미지 표시</span>
+                      <span class="value">cid/background/vml 패턴</span>
+                    </div>
+                    <div class="details-row">
+                      <span class="key">디자인</span>
+                      <span class="value">Apple HIG / clean / deference</span>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </div>
+          </section>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

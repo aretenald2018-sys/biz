@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { getDb } from '@/lib/db';
+import { assignTicketPlacement } from '@/lib/kanban';
 
 export async function GET(
   _request: NextRequest,
@@ -16,7 +17,7 @@ export async function GET(
   return NextResponse.json(ticket);
 }
 
-export async function PUT(
+async function updateTicket(
   request: NextRequest,
   { params }: { params: Promise<{ id: string }> }
 ) {
@@ -24,7 +25,9 @@ export async function PUT(
   const db = getDb();
   const body = await request.json();
 
-  const existing = db.prepare('SELECT * FROM tickets WHERE id = ?').get(id);
+  const existing = db.prepare('SELECT * FROM tickets WHERE id = ?').get(id) as
+    | { id: string; status: string; category_id: string | null; position: number }
+    | undefined;
   if (!existing) {
     return NextResponse.json({ error: 'Ticket not found' }, { status: 404 });
   }
@@ -37,17 +40,51 @@ export async function PUT(
   if (body.status !== undefined) { fields.push('status = ?'); values.push(body.status); }
   if (body.ai_summary !== undefined) { fields.push('ai_summary = ?'); values.push(body.ai_summary); }
 
-  if (fields.length === 0) {
+  const requestedCategoryId = Object.prototype.hasOwnProperty.call(body, 'category_id')
+    ? (typeof body.category_id === 'string' && body.category_id.trim() ? body.category_id.trim() : null)
+    : undefined;
+  const requestedPosition = Object.prototype.hasOwnProperty.call(body, 'position') && typeof body.position === 'number'
+    ? Math.max(0, Math.trunc(body.position))
+    : undefined;
+
+  if (fields.length === 0 && requestedCategoryId === undefined && requestedPosition === undefined) {
     return NextResponse.json({ error: 'No fields to update' }, { status: 400 });
   }
 
-  fields.push("updated_at = datetime('now','localtime')");
-  values.push(id);
+  if (fields.length > 0) {
+    fields.push("updated_at = datetime('now','localtime')");
+    values.push(id);
+    db.prepare(`UPDATE tickets SET ${fields.join(', ')} WHERE id = ?`).run(...values);
+  }
 
-  db.prepare(`UPDATE tickets SET ${fields.join(', ')} WHERE id = ?`).run(...values);
+  if (requestedCategoryId !== undefined || requestedPosition !== undefined) {
+    const currentStatus = typeof body.status === 'string' ? body.status : existing.status;
+    const hasCategoryChanged = requestedCategoryId !== undefined && requestedCategoryId !== existing.category_id;
+
+    assignTicketPlacement(db, {
+      ticketId: id,
+      status: currentStatus,
+      categoryId: requestedCategoryId !== undefined ? requestedCategoryId : existing.category_id,
+      position: requestedPosition !== undefined ? requestedPosition : hasCategoryChanged ? undefined : existing.position,
+    });
+  }
+
   const updated = db.prepare('SELECT * FROM tickets WHERE id = ?').get(id);
-
   return NextResponse.json(updated);
+}
+
+export async function PUT(
+  request: NextRequest,
+  context: { params: Promise<{ id: string }> }
+) {
+  return updateTicket(request, context);
+}
+
+export async function PATCH(
+  request: NextRequest,
+  context: { params: Promise<{ id: string }> }
+) {
+  return updateTicket(request, context);
 }
 
 export async function DELETE(

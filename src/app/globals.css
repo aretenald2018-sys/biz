@@ -71,40 +71,40 @@
   --color-surface-border: rgba(80, 110, 140, 0.2);
 }
 
-/* JARVIS Dark Theme — softer palette */
 :root {
-  --background: #0a0d14;
-  --foreground: #c8d0dc;
-  --card: rgba(16, 20, 32, 0.85);
-  --card-foreground: #c8d0dc;
-  --popover: rgba(16, 20, 32, 0.97);
-  --popover-foreground: #c8d0dc;
-  --primary: #5ec4d4;
-  --primary-foreground: #0a0d14;
-  --secondary: rgba(94, 196, 212, 0.1);
-  --secondary-foreground: #5ec4d4;
-  --muted: rgba(30, 36, 52, 0.6);
-  --muted-foreground: #6b7a8d;
-  --accent: rgba(94, 196, 212, 0.12);
-  --accent-foreground: #5ec4d4;
-  --destructive: #d4606a;
-  --border: rgba(80, 110, 140, 0.2);
-  --input: rgba(80, 110, 140, 0.15);
-  --ring: rgba(94, 196, 212, 0.35);
-  --chart-1: #5ec4d4;
-  --chart-2: #d47ecf;
-  --chart-3: #5ec490;
-  --chart-4: #d4a04e;
-  --chart-5: #6498d4;
+  --font-geist-mono: "JetBrains Mono", "Fira Code", "Consolas", monospace;
+  --background: #FAFAFB;
+  --foreground: #121416;
+  --card: #FFFFFF;
+  --card-foreground: #121416;
+  --popover: #FFFFFF;
+  --popover-foreground: #121416;
+  --primary: #002C5F;
+  --primary-foreground: #FFFFFF;
+  --secondary: #F6F9FE;
+  --secondary-foreground: #002C5F;
+  --muted: #EAEAEB;
+  --muted-foreground: #69696E;
+  --accent: #00AAD2;
+  --accent-foreground: #FFFFFF;
+  --destructive: #E81F2C;
+  --border: #EFEFF0;
+  --input: #EAEAEB;
+  --ring: rgba(0, 44, 95, 0.3);
+  --chart-1: #002C5F;
+  --chart-2: #00AAD2;
+  --chart-3: #00809E;
+  --chart-4: #EC8E01;
+  --chart-5: #0672ED;
   --radius: 0.5rem;
-  --sidebar: rgba(12, 15, 24, 0.95);
-  --sidebar-foreground: #c8d0dc;
-  --sidebar-primary: #5ec4d4;
-  --sidebar-primary-foreground: #0a0d14;
-  --sidebar-accent: rgba(94, 196, 212, 0.1);
-  --sidebar-accent-foreground: #5ec4d4;
-  --sidebar-border: rgba(80, 110, 140, 0.15);
-  --sidebar-ring: rgba(94, 196, 212, 0.25);
+  --sidebar: #002C5F;
+  --sidebar-foreground: #FFFFFF;
+  --sidebar-primary: #00AAD2;
+  --sidebar-primary-foreground: #FFFFFF;
+  --sidebar-accent: rgba(0, 170, 210, 0.12);
+  --sidebar-accent-foreground: #FFFFFF;
+  --sidebar-border: rgba(255, 255, 255, 0.12);
+  --sidebar-ring: rgba(0, 170, 210, 0.3);
 }
 
 @layer base {
@@ -113,35 +113,40 @@
   }
   body {
     @apply bg-background text-foreground;
-    font-family: 'JetBrains Mono', 'Fira Code', 'Consolas', monospace;
+    font-family: 'HyundaiSansTextKR', 'Pretendard', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   }
   html {
-    @apply font-mono;
+    font-family: 'HyundaiSansTextKR', 'Pretendard', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  }
+  html, body, #root {
+    min-height: 100%;
   }
 }
 
-/* Glassmorphism */
 .glass {
-  background: rgba(14, 17, 28, 0.8);
+  background: rgba(255, 255, 255, 0.97);
   backdrop-filter: blur(12px);
-  border: 1px solid rgba(80, 110, 140, 0.15);
+  border: 1px solid #CDD0D5;
 }
 
 .glass-light {
-  background: rgba(22, 26, 40, 0.6);
+  background: rgba(255, 255, 255, 0.9);
   backdrop-filter: blur(8px);
-  border: 1px solid rgba(80, 110, 140, 0.1);
+  border: 1px solid #E9EAEC;
 }
 
-/* Glow — softer */
-.glow-cyan { box-shadow: 0 0 8px rgba(94,196,212,0.2), 0 0 16px rgba(94,196,212,0.1); }
-.glow-magenta { box-shadow: 0 0 8px rgba(212,126,207,0.2), 0 0 16px rgba(212,126,207,0.1); }
-.glow-green { box-shadow: 0 0 8px rgba(94,196,144,0.2), 0 0 16px rgba(94,196,144,0.1); }
-.glow-amber { box-shadow: 0 0 8px rgba(212,160,78,0.2), 0 0 16px rgba(212,160,78,0.1); }
-.glow-red { box-shadow: 0 0 8px rgba(212,96,106,0.2), 0 0 16px rgba(212,96,106,0.1); }
+.glow-cyan,
+.glow-magenta,
+.glow-green,
+.glow-amber,
+.glow-red {
+  box-shadow: none;
+}
 
-.text-glow-cyan { text-shadow: 0 0 6px rgba(94,196,212,0.4), 0 0 12px rgba(94,196,212,0.2); }
-.text-glow-magenta { text-shadow: 0 0 6px rgba(212,126,207,0.4), 0 0 12px rgba(212,126,207,0.2); }
+.text-glow-cyan,
+.text-glow-magenta {
+  text-shadow: none;
+}
 
 /* Grid Overlay */
 .grid-overlay {
@@ -224,6 +229,8 @@
 .markdown-preview h3 { font-size: 1.1em; font-weight: 600; margin: 0.8em 0 0.3em; }
 .markdown-preview p { margin: 0.6em 0; }
 .markdown-preview ul, .markdown-preview ol { padding-left: 1.5em; margin: 0.5em 0; }
+.markdown-preview ul { list-style-type: disc; }
+.markdown-preview ol { list-style-type: decimal; }
 .markdown-preview li { margin: 0.25em 0; }
 .markdown-preview code { background: var(--color-surface-elevated, rgba(22,27,42,0.9)); padding: 0.15em 0.4em; border-radius: 3px; font-size: 0.9em; }
 .markdown-preview pre { background: var(--color-surface-elevated, rgba(22,27,42,0.9)); padding: 1em; border-radius: 6px; overflow-x: auto; margin: 0.8em 0; border: 1px solid var(--color-surface-border); }
@@ -295,7 +302,24 @@
 .tiptap h2 { font-size: 1.25em; font-weight: 600; margin: 0.8em 0 0.3em; color: var(--color-accent-primary); }
 .tiptap h3 { font-size: 1.1em; font-weight: 600; margin: 0.6em 0 0.2em; }
 .tiptap ul, .tiptap ol { padding-left: 1.5em; margin: 0.4em 0; }
+.tiptap ul { list-style-type: disc; }
+.tiptap ol { list-style-type: decimal; }
 .tiptap li { margin: 0.15em 0; }
+.tiptap ul[data-type="taskList"] {
+  list-style: none;
+  padding-left: 0.5em;
+}
+.tiptap ul[data-type="taskList"] li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.45em;
+}
+.tiptap ul[data-type="taskList"] li > label {
+  margin-top: 0.15em;
+}
+.tiptap ul[data-type="taskList"] li > div {
+  flex: 1 1 auto;
+}
 .tiptap code { background: var(--color-surface-elevated); padding: 0.15em 0.4em; border-radius: 3px; font-size: 0.9em; }
 .tiptap pre { background: var(--color-surface-elevated); padding: 1em; border-radius: 6px; overflow-x: auto; margin: 0.6em 0; border: 1px solid var(--color-surface-border); }
 .tiptap pre code { background: none; padding: 0; }
@@ -303,10 +327,97 @@
 .tiptap hr { border: none; border-top: 1px solid var(--color-surface-border); margin: 1em 0; }
 .tiptap p { margin: 0.3em 0; }
 .tiptap mark { background-color: rgba(255, 215, 0, 0.35); border-radius: 2px; padding: 0 2px; }
+.tiptap table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 0.8em 0;
+}
+.tiptap th,
+.tiptap td {
+  border: 1px solid var(--color-surface-border);
+  padding: 0.45em 0.6em;
+  text-align: left;
+  vertical-align: top;
+}
+.tiptap th {
+  background: var(--color-surface-elevated);
+  font-weight: 600;
+}
+.tiptap a {
+  color: var(--color-accent-primary);
+  text-decoration: underline;
+}
+.tiptap img {
+  max-width: 100%;
+  height: auto;
+}
 
 /* Rich content display (memos) */
 .rich-content p { display: inline; }
 .rich-content p + p::before { content: ' '; }
+
+/* Diff preview */
+.diff-preview-docx {
+  color: #121416;
+  line-height: 1.8;
+  word-break: break-word;
+}
+.diff-preview-docx h1,
+.diff-preview-docx h2,
+.diff-preview-docx h3,
+.diff-preview-docx h4,
+.diff-preview-docx h5,
+.diff-preview-docx h6 {
+  margin: 1.1em 0 0.45em;
+  color: #121416;
+  font-weight: 600;
+}
+.diff-preview-docx h1 { font-size: 1.6em; }
+.diff-preview-docx h2 { font-size: 1.35em; }
+.diff-preview-docx h3 { font-size: 1.15em; }
+.diff-preview-docx p { margin: 0.55em 0; }
+.diff-preview-docx ul,
+.diff-preview-docx ol {
+  margin: 0.5em 0;
+  padding-left: 1.5em;
+}
+.diff-preview-docx ul { list-style-type: disc; }
+.diff-preview-docx ol { list-style-type: decimal; }
+.diff-preview-docx li { margin: 0.2em 0; }
+.diff-preview-docx table {
+  width: 100%;
+  margin: 0.9em 0;
+  border-collapse: collapse;
+}
+.diff-preview-docx th,
+.diff-preview-docx td {
+  border: 1px solid var(--color-border);
+  padding: 0.5em 0.7em;
+  vertical-align: top;
+}
+.diff-preview-docx th {
+  background: var(--color-secondary);
+  font-weight: 600;
+}
+.diff-preview-docx blockquote {
+  margin: 0.8em 0;
+  border-left: 3px solid var(--color-primary);
+  padding-left: 1em;
+  color: var(--color-muted-foreground);
+}
+.diff-preview-docx img {
+  max-width: 100%;
+  height: auto;
+}
+.diff-preview-docx a {
+  color: var(--color-primary);
+  text-decoration: underline;
+}
+.diff-preview-hit {
+  background: rgba(255, 225, 109, 0.5);
+  box-shadow: 0 0 0 2px rgba(255, 196, 0, 0.25);
+  transition: background 0.2s ease, box-shadow 0.2s ease;
+}
 
 /* React Flow */
 .react-flow__background { background: transparent !important; }
@@ -1040,173 +1151,3 @@ body.hyundai-theme {
   text-transform: none !important;
 }
 
-/* ═══════════════════════════════════════════════════
-   KIA LIQUID DESIGN SYSTEM THEME
-   Based on LIQUID Design System v3.1
-   Primary: Midnight Black #05141F / Polar White #FFFFFF
-   Secondary: City Grey #9EA1A2 / Live Red #EA0029 /
-              Afternoon Yellow #F3C300 / Forrest Green #5D7D2B
-   ═══════════════════════════════════════════════════ */
-.kia-theme {
-  --background: #F4F4F1;
-  --foreground: #121416;
-  --card: #FFFFFF;
-  --card-foreground: #121416;
-  --popover: #FFFFFF;
-  --popover-foreground: #121416;
-  --primary: #05141F;
-  --primary-foreground: #FFFFFF;
-  --secondary: #F4F4F1;
-  --secondary-foreground: #05141F;
-  --muted: #E8E8E5;
-  --muted-foreground: #838486;
-  --accent: rgba(243, 195, 0, 0.12);
-  --accent-foreground: #F3C300;
-  --destructive: #EA0029;
-  --border: #D9D9D7;
-  --input: #D9D9D7;
-  --ring: rgba(5, 20, 31, 0.2);
-  --chart-1: #05141F;
-  --chart-2: #EA0029;
-  --chart-3: #F3C300;
-  --chart-4: #5D7D2B;
-  --chart-5: #9EA1A2;
-  --radius: 0.375rem;
-  --sidebar: #05141F;
-  --sidebar-foreground: #E8EAEB;
-  --sidebar-primary: #F3C300;
-  --sidebar-primary-foreground: #05141F;
-  --sidebar-accent: rgba(255, 255, 255, 0.06);
-  --sidebar-accent-foreground: #FFFFFF;
-  --sidebar-border: rgba(158, 161, 162, 0.12);
-  --sidebar-ring: rgba(255, 255, 255, 0.2);
-
-  /* LIQUID semantic colors */
-  --color-neon-cyan: #05141F;
-  --color-neon-magenta: #EA0029;
-  --color-neon-green: #5D7D2B;
-  --color-neon-amber: #F3C300;
-  --color-neon-red: #EA0029;
-  --color-neon-blue: #9EA1A2;
-  --color-glass: rgba(255, 255, 255, 0.97);
-  --color-glass-light: rgba(255, 255, 255, 0.9);
-
-  --color-soft-primary: #121416;
-  --color-soft-secondary: #525355;
-  --color-soft-muted: #838486;
-
-  --color-accent-primary: #05141F;
-  --color-accent-red: #EA0029;
-
-  --color-surface: #FFFFFF;
-  --color-surface-elevated: #F4F4F1;
-  --color-surface-border: #D9D9D7;
-
-  /* LIQUID Greyscale spectrum */
-  --color-grey-90: #373739;
-  --color-grey-80: #525355;
-  --color-grey-70: #6D6E71;
-  --color-grey-60: #838486;
-  --color-grey-50: #99999A;
-  --color-grey-40: #AEAFAF;
-  --color-grey-30: #C4C4C3;
-  --color-grey-20: #D9D9D7;
-  --color-grey-10: #F4F4F1;
-}
-
-.kia-theme body,
-body.kia-theme {
-  font-family: 'Kia Signature', 'Pretendard', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif !important;
-  background: #F4F4F1 !important;
-  color: #121416 !important;
-}
-
-.kia-theme .glass {
-  background: #FFFFFF;
-  border: 1px solid #D9D9D7;
-}
-
-.kia-theme .glass-light {
-  background: #F4F4F1;
-  border: 1px solid #D9D9D7;
-}
-
-/* LIQUID: Clean shadows */
-.kia-theme .glow-cyan {
-  box-shadow: none;
-  border-color: #05141F !important;
-  background: #F4F4F1 !important;
-}
-.kia-theme .glow-magenta,
-.kia-theme .glow-green,
-.kia-theme .glow-amber,
-.kia-theme .glow-red {
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
-}
-
-.kia-theme .text-glow-cyan,
-.kia-theme .text-glow-magenta {
-  text-shadow: none;
-}
-
-.kia-theme .grid-overlay {
-  background-image: none;
-}
-
-.kia-theme .neon-pulse {
-  animation: none;
-}
-
-.kia-theme .badge-pulse {
-  animation: none;
-}
-
-/* LIQUID Scrollbar */
-.kia-theme ::-webkit-scrollbar-track { background: #F4F4F1; }
-.kia-theme ::-webkit-scrollbar-thumb { background: #C4C4C3; border-radius: 3px; }
-.kia-theme ::-webkit-scrollbar-thumb:hover { background: #9EA1A2; }
-
-/* LIQUID: Alloy Frame style borders — precision metallic */
-.kia-theme .border-border {
-  border-color: rgba(158, 161, 162, 0.18);
-}
-
-/* LIQUID: Markdown/Tiptap heading colors */
-.kia-theme .markdown-preview h1,
-.kia-theme .markdown-preview h2,
-.kia-theme .tiptap h1,
-.kia-theme .tiptap h2 {
-  color: #05141F;
-}
-
-/* LIQUID: Toolbar buttons */
-.kia-theme .toolbar-btn {
-  border-radius: 2px;
-}
-.kia-theme .toolbar-btn:hover {
-  background: #E8E8E5;
-  border-color: #D9D9D7;
-}
-
-/* LIQUID: Border color for light content */
-.kia-theme .border-border {
-  border-color: #D9D9D7 !important;
-}
-
-/* LIQUID: Card backgrounds */
-.kia-theme .bg-card {
-  background: #FFFFFF !important;
-}
-.kia-theme .bg-muted\/30,
-.kia-theme .bg-muted\/20,
-.kia-theme .bg-muted\/10 {
-  background: #F4F4F1 !important;
-}
-
-/* LIQUID: Text colors for light mode content */
-.kia-theme .text-foreground {
-  color: #121416 !important;
-}
-.kia-theme .text-muted-foreground {
-  color: #838486 !important;
-}

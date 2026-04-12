@@ -7,10 +7,12 @@ interface TicketStore {
   loading: boolean;
   filter: TicketStatus | null;
 
+  clearSelectedTicket: () => void;
   fetchTickets: () => Promise<void>;
   fetchTicket: (id: string) => Promise<void>;
   createTicket: (input: CreateTicketInput) => Promise<Ticket>;
   updateTicket: (id: string, input: UpdateTicketInput) => Promise<void>;
+  updateTicketCategory: (id: string, categoryId: string) => Promise<void>;
   deleteTicket: (id: string) => Promise<void>;
   setFilter: (status: TicketStatus | null) => void;
 }
@@ -20,6 +22,10 @@ export const useTicketStore = create<TicketStore>((set, get) => ({
   selectedTicket: null,
   loading: false,
   filter: null,
+
+  clearSelectedTicket: () => {
+    set({ selectedTicket: null });
+  },
 
   fetchTickets: async () => {
     set({ loading: true });
@@ -51,7 +57,7 @@ export const useTicketStore = create<TicketStore>((set, get) => ({
 
   updateTicket: async (id: string, input: UpdateTicketInput) => {
     await fetch(`/api/tickets/${id}`, {
-      method: 'PUT',
+      method: 'PATCH',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(input),
     });
@@ -59,6 +65,10 @@ export const useTicketStore = create<TicketStore>((set, get) => ({
     if (get().selectedTicket?.id === id) {
       await get().fetchTicket(id);
     }
+  },
+
+  updateTicketCategory: async (id: string, categoryId: string) => {
+    await get().updateTicket(id, { category_id: categoryId });
   },
 
   deleteTicket: async (id: string) => {

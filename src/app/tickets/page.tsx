@@ -1,11 +1,11 @@
 import { GanttChart } from '@/components/gantt/gantt-chart';
-import { TicketTimeline } from '@/components/tickets/ticket-timeline';
+import { KanbanBoard } from '@/components/kanban/kanban-board';
 
 export default function TicketsPage() {
   return (
     <div className="space-y-8">
       <GanttChart />
-      <TicketTimeline />
+      <KanbanBoard />
     </div>
   );
 }

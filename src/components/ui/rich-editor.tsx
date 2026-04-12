@@ -26,11 +26,6 @@ export function MiniRichEditor({ content, onChange, onSubmit, placeholder, autoF
     extensions: [
       StarterKit.configure({
         heading: false,
-        codeBlock: false,
-        blockquote: false,
-        horizontalRule: false,
-        bulletList: false,
-        orderedList: false,
       }),
       Underline,
       TextStyle,

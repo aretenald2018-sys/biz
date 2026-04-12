@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>이메일 뷰어 Preview</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar">
+        <div class="brand">
+          <div class="brand-mark">b</div>
+          <div class="brand-title">
+            <strong>이메일 뷰어</strong>
+            <span>scene preview</span>
+          </div>
+        </div>
+        <nav class="nav-group">
+          <a class="nav-link" href="./index.html"><span>Overview</span><span>00</span></a>
+          <a class="nav-link" href="./tickets-list.html"><span>티켓 목록</span><span>01</span></a>
+          <a class="nav-link" href="./ticket-detail.html"><span>티켓 상세</span><span>02</span></a>
+          <a class="nav-link" href="./email-flow.html"><span>이메일 파싱</span><span>03</span></a>
+          <a class="nav-link active" href="./email-viewer.html"><span>이메일 뷰어</span><span>04</span></a>
+          <a class="nav-link" href="./kanban.html"><span>칸반 보드</span><span>05</span></a>
+          <a class="nav-link" href="./gantt.html"><span>간트 차트</span><span>06</span></a>
+        </nav>
+      </aside>
+
+      <main class="content">
+        <header class="topbar">
+          <div>
+            <div class="crumbs">이메일 / 뷰어 / inline image</div>
+            <h1 class="title">본문, 첨부, 이미지가 나뉘어 보이는 레이아웃</h1>
+          </div>
+          <div class="search"><span>⇧⌘I</span><span>인라인 이미지 확인</span></div>
+          <div class="topbar-right">
+            <button class="ghost-button">원문 보기</button>
+            <button class="button primary">응답 작성</button>
+          </div>
+        </header>
+
+        <section class="grid two-col" style="margin-top: 18px">
+          <div class="stack">
+            <div class="card">
+              <div class="card-body">
+                <div class="section-head" style="margin-bottom: 16px">
+                  <div>
+                    <div class="crumbs">RE: design review / thread 12</div>
+                    <h2 class="title" style="margin-top: 8px; font-size: 24px">인라인 이미지가 포함된 이메일</h2>
+                  </div>
+                  <span class="status new">new</span>
+                </div>
+                <div class="details">
+                  <div class="details-row"><span class="key">From</span><span class="value">design@customer.com</span></div>
+                  <div class="details-row"><span class="key">To</span><span class="value">ops@biz.local</span></div>
+                  <div class="details-row"><span class="key">Date</span><span class="value">2026년 4월 11일 오전 9:24</span></div>
+                  <div class="details-row"><span class="key">Subject</span><span class="value">Inline image and CID resolution</span></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-header">
+                <div>
+                  <div class="card-title">본문</div>
+                  <div class="card-subtitle">텍스트 아래에 이미지를 자연스럽게 배치</div>
+                </div>
+              </div>
+              <div class="card-body">
+                <div class="stack">
+                  <p class="subtitle" style="margin: 0">
+                    안녕하세요. 본문 안에서 cid 기반 이미지를 찾지 못하는 경우에도, 별도의 inline image section이 아래에 남아
+                    사용자에게 보이게 구성했습니다.
+                  </p>
+                  <div class="annotation">
+                    HTML body, background cid, VML imagedata, css url(cid:...) 패턴을 모두 해석하는 구조를 가정합니다.
+                  </div>
+                  <div class="inline-image-preview"></div>
+                  <div class="alert good">
+                    CID resolve 완료: `<img src="cid:hero-banner">` 와 `background="cid:hero-banner"` 가 동일 이미지로 연결되었습니다.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <aside class="stack">
+            <div class="card">
+              <div class="card-header">
+                <div>
+                  <div class="card-title">첨부 파일</div>
+                  <div class="card-subtitle">Apple Files 느낌의 카드 그리드</div>
+                </div>
+              </div>
+              <div class="card-body">
+                <div class="attachment-grid">
+                  <div class="attachment inline-image">
+                    <div class="thumb"></div>
+                    <div>
+                      <div class="name">hero-banner.png</div>
+                      <div class="file">inline image</div>
+                    </div>
+                  </div>
+                  <div class="attachment">
+                    <div class="thumb"></div>
+                    <div>
+                      <div class="name">quote.pdf</div>
+                      <div class="file">312 KB</div>
+                    </div>
+                  </div>
+                  <div class="attachment">
+                    <div class="thumb"></div>
+                    <div>
+                      <div class="name">spec.xlsx</div>
+                      <div class="file">74 KB</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-header">
+                <div>
+                  <div class="card-title">스택 필터</div>
+                  <div class="card-subtitle">HTML에서 실제로 쓰인 CID만 숨김</div>
+                </div>
+              </div>
+              <div class="card-body">
+                <div class="mini-grid">
+                  <div class="mini-row">
+                    <div>
+                      <strong>resolved inline</strong>
+                      <span>숨김 처리</span>
+                    </div>
+                    <span class="pill blue">hide</span>
+                  </div>
+                  <div class="mini-row">
+                    <div>
+                      <strong>plain attachments</strong>
+                      <span>보임 처리</span>
+                    </div>
+                    <span class="pill gray">show</span>
+                  </div>
+                  <div class="mini-row">
+                    <div>
+                      <strong>fallback images</strong>
+                      <span>텍스트 아래 별도 섹션</span>
+                    </div>
+                    <span class="pill green">visible</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </aside>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

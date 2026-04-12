@@ -12,7 +12,7 @@ export async function GET(request: NextRequest) {
     schedules = db.prepare(`
       SELECT s.*, t.title as ticket_title, t.status as ticket_status
       FROM schedules s
-      LEFT JOIN tickets t ON t.id = s.ticket_id
+      JOIN tickets t ON t.id = s.ticket_id
       WHERE s.start_date <= ? AND s.end_date >= ?
       ORDER BY s.start_date ASC
     `).all(to, from);
@@ -20,7 +20,7 @@ export async function GET(request: NextRequest) {
     schedules = db.prepare(`
       SELECT s.*, t.title as ticket_title, t.status as ticket_status
       FROM schedules s
-      LEFT JOIN tickets t ON t.id = s.ticket_id
+      JOIN tickets t ON t.id = s.ticket_id
       ORDER BY s.start_date ASC
     `).all();
   }
@@ -31,10 +31,21 @@ export async function GET(request: NextRequest) {
 export async function POST(request: NextRequest) {
   const db = getDb();
   const body = await request.json();
-  const { title, description, start_date, end_date, ticket_id, url, color } = body;
+  const title = String(body.title || '').trim();
+  const description = typeof body.description === 'string' ? body.description.trim() : null;
+  const startDate = String(body.start_date || '').trim();
+  const endDate = String(body.end_date || '').trim();
+  const ticketId = String(body.ticket_id || '').trim();
+  const url = typeof body.url === 'string' ? body.url.trim() : null;
+  const color = typeof body.color === 'string' ? body.color.trim() : '#5ec4d4';
 
-  if (!title || !start_date || !end_date) {
-    return NextResponse.json({ error: 'title, start_date, end_date are required' }, { status: 400 });
+  if (!title || !startDate || !endDate || !ticketId) {
+    return NextResponse.json({ error: 'title, start_date, end_date, ticket_id are required' }, { status: 400 });
+  }
+
+  const ticket = db.prepare('SELECT id FROM tickets WHERE id = ?').get(ticketId);
+  if (!ticket) {
+    return NextResponse.json({ error: 'Ticket not found' }, { status: 400 });
   }
 
   const stmt = db.prepare(`
@@ -44,18 +55,18 @@ export async function POST(request: NextRequest) {
 
   const result = stmt.run(
     title,
-    description || null,
-    start_date,
-    end_date,
-    ticket_id || null,
-    url || null,
+    description,
+    startDate,
+    endDate,
+    ticketId,
+    url,
     color || '#5ec4d4'
   );
 
   const schedule = db.prepare(`
     SELECT s.*, t.title as ticket_title, t.status as ticket_status
     FROM schedules s
-    LEFT JOIN tickets t ON t.id = s.ticket_id
+    JOIN tickets t ON t.id = s.ticket_id
     WHERE s.rowid = ?
   `).get(result.lastInsertRowid);
 

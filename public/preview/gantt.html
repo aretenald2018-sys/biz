@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>간트 차트 Preview</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar">
+        <div class="brand">
+          <div class="brand-mark">b</div>
+          <div class="brand-title">
+            <strong>간트 차트</strong>
+            <span>scene preview</span>
+          </div>
+        </div>
+        <nav class="nav-group">
+          <a class="nav-link" href="./index.html"><span>Overview</span><span>00</span></a>
+          <a class="nav-link" href="./tickets-list.html"><span>티켓 목록</span><span>01</span></a>
+          <a class="nav-link" href="./ticket-detail.html"><span>티켓 상세</span><span>02</span></a>
+          <a class="nav-link" href="./email-flow.html"><span>이메일 파싱</span><span>03</span></a>
+          <a class="nav-link" href="./email-viewer.html"><span>이메일 뷰어</span><span>04</span></a>
+          <a class="nav-link" href="./kanban.html"><span>칸반 보드</span><span>05</span></a>
+          <a class="nav-link active" href="./gantt.html"><span>간트 차트</span><span>06</span></a>
+        </nav>
+      </aside>
+
+      <main class="content">
+        <header class="topbar">
+          <div>
+            <div class="crumbs">티켓 / 간트</div>
+            <h1 class="title">미묘한 깊이와 정렬이 살아있는 일정표</h1>
+          </div>
+          <div class="search"><span>⌥⌘G</span><span>기간 변경</span></div>
+          <div class="topbar-right">
+            <button class="ghost-button">오늘</button>
+            <button class="button primary">+ 일정 추가</button>
+          </div>
+        </header>
+
+        <section class="card" style="margin-top: 18px">
+          <div class="card-header">
+            <div>
+              <div class="card-title">4주 계획</div>
+              <div class="card-subtitle">Apple 스타일의 차분한 타임라인</div>
+            </div>
+          </div>
+          <div class="card-body">
+            <div class="gantt-grid">
+              <div class="gantt-label">
+                <strong>Phase 1</strong>
+                <span>Email parsing</span>
+              </div>
+              <div class="gantt-cell">
+                <div class="timeline"><div class="bar blue" style="width: 62%">MSG/EML fallback</div></div>
+              </div>
+
+              <div class="gantt-label">
+                <strong>Phase 2</strong>
+                <span>Inline image resolve</span>
+              </div>
+              <div class="gantt-cell">
+                <div class="timeline"><div class="bar green" style="width: 48%">CID / VML</div></div>
+              </div>
+
+              <div class="gantt-label">
+                <strong>Phase 3</strong>
+                <span>Apple HIG redesign</span>
+              </div>
+              <div class="gantt-cell">
+                <div class="timeline"><div class="bar orange" style="width: 78%">Tickets / email / kanban</div></div>
+              </div>
+
+              <div class="gantt-label">
+                <strong>Phase 4</strong>
+                <span>Polish & QA</span>
+              </div>
+              <div class="gantt-cell">
+                <div class="timeline"><div class="bar gray" style="width: 36%">verification</div></div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

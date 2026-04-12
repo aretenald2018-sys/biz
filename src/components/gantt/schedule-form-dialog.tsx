@@ -31,7 +31,7 @@ export function ScheduleFormDialog() {
   const { tickets, fetchTickets } = useTicketStore();
 
   const editingSchedule = selectedScheduleId
-    ? schedules.find((s) => s.id === selectedScheduleId)
+    ? schedules.find((schedule) => schedule.id === selectedScheduleId)
     : null;
 
   const [title, setTitle] = useState('');
@@ -45,36 +45,41 @@ export function ScheduleFormDialog() {
   useEffect(() => {
     if (!isFormOpen) return;
     fetchTickets();
+  }, [isFormOpen, fetchTickets]);
+
+  useEffect(() => {
+    if (!isFormOpen) return;
 
     if (formMode === 'edit' && editingSchedule) {
       setTitle(editingSchedule.title);
       setDescription(editingSchedule.description || '');
       setStartDate(editingSchedule.start_date);
       setEndDate(editingSchedule.end_date);
-      setTicketId(editingSchedule.ticket_id || '');
+      setTicketId(editingSchedule.ticket_id);
       setUrl(editingSchedule.url || '');
       setColor(editingSchedule.color);
-    } else {
-      setTitle('');
-      setDescription('');
-      setStartDate(dragPreview?.startDate || '');
-      setEndDate(dragPreview?.endDate || '');
-      setTicketId(dragPreview?.ticketId || '');
-      setUrl('');
-      setColor('#5ec4d4');
+      return;
     }
-  }, [isFormOpen, formMode, editingSchedule, dragPreview, fetchTickets]);
+
+    setTitle('');
+    setDescription('');
+    setStartDate(dragPreview?.startDate || '');
+    setEndDate(dragPreview?.endDate || '');
+    setTicketId(dragPreview?.ticketId || tickets[0]?.id || '');
+    setUrl('');
+    setColor('#5ec4d4');
+  }, [isFormOpen, formMode, editingSchedule, dragPreview, tickets]);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (!title.trim() || !startDate || !endDate) return;
+    if (!title.trim() || !startDate || !endDate || !ticketId) return;
 
     const input = {
       title: title.trim(),
       description: description.trim() || undefined,
       start_date: startDate,
       end_date: endDate,
-      ticket_id: ticketId || undefined,
+      ticket_id: ticketId,
       url: url.trim() || undefined,
       color,
     };
@@ -98,90 +103,94 @@ export function ScheduleFormDialog() {
     <Dialog open={isFormOpen} onOpenChange={(open) => { if (!open) closeForm(); }}>
       <DialogContent className="glass border-neon-cyan/20 glow-cyan">
         <DialogHeader>
-          <DialogTitle className="text-neon-cyan text-glow-cyan tracking-wider text-sm">
+          <DialogTitle className="text-sm tracking-wider text-neon-cyan text-glow-cyan">
             {formMode === 'edit' ? 'EDIT SCHEDULE' : 'NEW SCHEDULE'}
           </DialogTitle>
         </DialogHeader>
         <form onSubmit={handleSubmit} className="space-y-4">
           <div>
-            <label className="text-[10px] text-muted-foreground tracking-wider mb-1 block">TITLE</label>
+            <label className="mb-1 block text-[10px] tracking-wider text-muted-foreground">TITLE</label>
             <Input
               value={title}
               onChange={(e) => setTitle(e.target.value)}
               placeholder="Schedule title..."
-              className="bg-white/5 border-border focus:border-neon-cyan/50 text-sm"
+              className="border-border bg-white/5 text-sm focus:border-neon-cyan/50"
               autoFocus
             />
           </div>
 
           <div>
-            <label className="text-[10px] text-muted-foreground tracking-wider mb-1 block">DESCRIPTION</label>
+            <label className="mb-1 block text-[10px] tracking-wider text-muted-foreground">DESCRIPTION</label>
             <Textarea
               value={description}
               onChange={(e) => setDescription(e.target.value)}
               placeholder="Optional description..."
               rows={2}
-              className="bg-white/5 border-border focus:border-neon-cyan/50 text-sm resize-none"
+              className="resize-none border-border bg-white/5 text-sm focus:border-neon-cyan/50"
             />
           </div>
 
           <div className="flex gap-3">
             <div className="flex-1">
-              <label className="text-[10px] text-muted-foreground tracking-wider mb-1 block">START DATE</label>
+              <label className="mb-1 block text-[10px] tracking-wider text-muted-foreground">START DATE</label>
               <Input
                 type="date"
                 value={startDate}
                 onChange={(e) => setStartDate(e.target.value)}
-                className="bg-white/5 border-border focus:border-neon-cyan/50 text-sm"
+                className="border-border bg-white/5 text-sm focus:border-neon-cyan/50"
               />
             </div>
             <div className="flex-1">
-              <label className="text-[10px] text-muted-foreground tracking-wider mb-1 block">END DATE</label>
+              <label className="mb-1 block text-[10px] tracking-wider text-muted-foreground">END DATE</label>
               <Input
                 type="date"
                 value={endDate}
                 onChange={(e) => setEndDate(e.target.value)}
-                className="bg-white/5 border-border focus:border-neon-cyan/50 text-sm"
+                className="border-border bg-white/5 text-sm focus:border-neon-cyan/50"
               />
             </div>
           </div>
 
           <div>
-            <label className="text-[10px] text-muted-foreground tracking-wider mb-1 block">LINKED TICKET</label>
+            <label className="mb-1 block text-[10px] tracking-wider text-muted-foreground">TICKET</label>
             <select
               value={ticketId}
               onChange={(e) => setTicketId(e.target.value)}
-              className="w-full px-3 py-2 rounded bg-white/5 border border-border text-sm text-foreground focus:border-neon-cyan/50 outline-none"
+              className="w-full rounded border border-border bg-white/5 px-3 py-2 text-sm text-foreground outline-none focus:border-neon-cyan/50"
+              required
             >
-              <option value="">None</option>
-              {tickets.map((t) => (
-                <option key={t.id} value={t.id}>
-                  [{t.status}] {t.title}
+              <option value="" disabled>Select a ticket</option>
+              {tickets.map((ticket) => (
+                <option key={ticket.id} value={ticket.id}>
+                  [{ticket.status}] {ticket.title}
                 </option>
               ))}
             </select>
+            {tickets.length === 0 && (
+              <p className="mt-2 text-xs text-muted-foreground">Create a ticket before adding a schedule.</p>
+            )}
           </div>
 
           <div>
-            <label className="text-[10px] text-muted-foreground tracking-wider mb-1 block">URL</label>
+            <label className="mb-1 block text-[10px] tracking-wider text-muted-foreground">URL</label>
             <Input
               type="url"
               value={url}
               onChange={(e) => setUrl(e.target.value)}
               placeholder="https://..."
-              className="bg-white/5 border-border focus:border-neon-cyan/50 text-sm"
+              className="border-border bg-white/5 text-sm focus:border-neon-cyan/50"
             />
           </div>
 
           <div>
-            <label className="text-[10px] text-muted-foreground tracking-wider mb-1 block">COLOR</label>
+            <label className="mb-1 block text-[10px] tracking-wider text-muted-foreground">COLOR</label>
             <div className="flex gap-2">
               {COLORS.map((c) => (
                 <button
                   key={c.hex}
                   type="button"
                   onClick={() => setColor(c.hex)}
-                  className="w-7 h-7 rounded-full border-2 transition-all"
+                  className="h-7 w-7 rounded-full border-2 transition-all"
                   style={{
                     background: c.hex,
                     borderColor: color === c.hex ? '#fff' : 'transparent',
@@ -199,7 +208,7 @@ export function ScheduleFormDialog() {
                 <Button
                   type="button"
                   onClick={handleDelete}
-                  className="bg-red-500/10 text-red-400 border border-red-500/30 hover:bg-red-500/20 text-xs tracking-wider"
+                  className="border border-red-500/30 bg-red-500/10 text-xs tracking-wider text-red-400 hover:bg-red-500/20"
                 >
                   DELETE
                 </Button>
@@ -216,7 +225,8 @@ export function ScheduleFormDialog() {
               </Button>
               <Button
                 type="submit"
-                className="bg-neon-cyan/20 text-neon-cyan border border-neon-cyan/30 hover:bg-neon-cyan/30 text-xs tracking-wider"
+                disabled={!ticketId || tickets.length === 0}
+                className="border border-neon-cyan/30 bg-neon-cyan/20 text-xs tracking-wider text-neon-cyan hover:bg-neon-cyan/30"
               >
                 {formMode === 'edit' ? 'UPDATE' : 'CREATE'}
               </Button>

@@ -2,6 +2,25 @@ import { NextRequest, NextResponse } from 'next/server';
 import { getDb } from '@/lib/db';
 import Anthropic from '@anthropic-ai/sdk';
 
+const MAX_OCR_FILE_BYTES = 8 * 1024 * 1024;
+
+type ContractFileRow = {
+  file_blob: Uint8Array | ArrayBuffer;
+  file_type: string;
+};
+
+function toBinaryView(value: unknown): Uint8Array | null {
+  if (value instanceof Uint8Array) {
+    return value;
+  }
+
+  if (value instanceof ArrayBuffer) {
+    return new Uint8Array(value);
+  }
+
+  return null;
+}
+
 export async function POST(
   _request: NextRequest,
   { params }: { params: Promise<{ id: string }> }
@@ -12,7 +31,7 @@ export async function POST(
   // Find the latest final_contract PDF
   const file = db.prepare(
     'SELECT * FROM contract_files WHERE contract_id = ? AND file_category = ? ORDER BY created_at DESC LIMIT 1'
-  ).get(id, 'final_contract') as any;
+  ).get(id, 'final_contract') as ContractFileRow | undefined;
 
   if (!file) {
     return NextResponse.json({ error: 'No final contract file found. Upload a PDF first.' }, { status: 404 });
@@ -26,9 +45,22 @@ export async function POST(
     // Try to use Claude Vision API for PDF analysis
     if (provider === 'claude') {
       const client = new Anthropic({ apiKey: process.env.CLAUDE_API_KEY });
+      const fileBytes = toBinaryView(file.file_blob);
 
-      const fileBuffer = Buffer.from(file.file_blob);
-      const base64 = fileBuffer.toString('base64');
+      if (!fileBytes) {
+        return NextResponse.json({ error: 'Stored contract file is not a supported binary format.' }, { status: 500 });
+      }
+
+      if (fileBytes.byteLength > MAX_OCR_FILE_BYTES) {
+        return NextResponse.json({
+          error: 'OCR file is too large. Please upload a PDF smaller than 8MB.',
+        }, { status: 413 });
+      }
+
+      // Reuse the existing binary buffer when possible to avoid an extra Blob -> Buffer copy.
+      const base64 = Buffer
+        .from(fileBytes.buffer, fileBytes.byteOffset, fileBytes.byteLength)
+        .toString('base64');
       const isPdf = file.file_type === 'application/pdf';
 
       const contentBlock = isPdf
