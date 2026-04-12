@@ -1,0 +1,15 @@
+{
+  "exported_at": "2026-04-12T12:55:18.193Z",
+  "counts": {
+    "terms_market_entities": 59,
+    "terms_controllers": 19,
+    "terms_applicability": 17,
+    "terms_assets": 140,
+    "terms_asset_candidates": 0,
+    "terms_document_versions": 196,
+    "terms_clauses": 9334,
+    "terms_processing_facts": 864,
+    "terms_transfer_facts": 484,
+    "terms_fact_evidence": 1647
+  }
+}

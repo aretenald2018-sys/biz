@@ -1,0 +1,195 @@
+PRIVACY NOTICE
+
+Hyundai Auto Canada Corp. ("Hyundai" or "we") values your privacy and aims to protect your personal information. This notice explains why we collect your information, how we use it, and how we keep it safe. Please read it carefully. If you disagree with any part, do not provide us with your personal information or use our services or products that collect or use your personal information.
+
+By using the Hyundai website (hyundaicanada.com and related websites that Hyundai owns, operates, or controls, together, “Hyundai Website”), you accept our practices as described here.
+
+We may update this Privacy Notice from time to time. Any changes will be posted on our website, and the effective date will be updated accordingly. We encourage you to review this Privacy Notice periodically to stay informed about how we are protecting your information.
+
+1. Collecting Personal Information
+
+We collect personal information that is necessary for the purposes listed below. This information may come directly from you, our service providers, or dealers. When you interact with the Hyundai Website or other digital features, we may automatically gather data about you.
+
+Types of personal information collected
+
+Personal information that we collect may include:
+
+Information you provide:
+
+Contact details: Full name, email address, phone number, and mailing address.
+Demographics: Household status and purchase preferences.
+Account information: Usernames and passwords.
+Order details: Information related to your purchases of vehicles, parts, accessories, or other products and services.
+Financial information: Details shared by third-party financial service providers or dealers with your consent, including account status, financed amount, monthly payments, total balance, and maturity date.
+Purchase or lease information: When you buy or lease a vehicle, dealers may collect information about you that includes your contact information, information included in any application for credit (including financial information, and information about your assets and liabilities) that will be shared with Hyundai and, in the case of a pre-ordered vehicle, a copy of your government-issued ID.
+Call Center interactions: Information from your communications with our call center, including call recordings for quality assurance.
+Feedback and inquiries: Details you provide when contacting us, giving feedback, or making complaints or inquiries.
+Employment applications: If you apply for a job with us, we may collect your education and employment history, information relating to your qualifications, and results of any criminal record or background checks.
+
+Electronic Event Data Recorders (EDRs): Your vehicle may have an EDR that records information about the vehicle and its occupants before and during certain events, like collisions. This data helps understand how events occur and may include details such as vehicle speed, seat belt usage, and airbag deployment. While EDRs don't record personal information like names or ages, the data could be combined with personal information during investigations by law enforcement, insurance companies, Hyundai, regulators, government officials, or other interested parties. Reading EDR data requires special equipment and access to the EDR.
+
+The collection of your personal information may be subject to any other terms provided to you at the time of any transaction.
+
+2. Using Personal Information
+
+We use your personal information to provide services you request, for other purposes you have agreed to, and as allowed by law. This includes:
+
+Website interaction: When you visit the Hyundai Website, we may collect technical information to help us improve website functionality and security, understand the behavior of visitors to our website (website analytics), and improve user experience. This involves processing personal information such as the following: information you submit voluntarily, device IP address, access times, browser type and settings, internet service provider, and information related to your operating system, and may involve the use of third-party analytics service providers.
+Providing services: We use personal information to keep client databases, process transactions, fulfill orders, provide services related to vehicle warranties, maintenance, and parts, and provide customer support.
+Communication: We use personal information to communicate with you, including to send you information about products, services, promotions, and updates, and to respond to your inquiries and let you know of product recalls or similar customer notifications.
+Business operations: We use personal information to conduct market research, and to analyze and improve our operations.
+Compliance: We use personal information to comply with our legal and regulatory obligations, and as otherwise allowed or required by law.
+
+Cookies
+
+Hyundai uses cookies and other tracking technologies, such a pixels and beacons (together “Web-Based Tools), on the Hyundai Website. These tools are used to personalize your experience.
+
+Essential Web-Based Tools: These are necessary for certain features of the Hyundai Website. Essential Web-Based Tools help keep the Hyundai Website secure, including by detecting and preventing fraud, and help us understand how you use the Hyundai Website. You cannot opt-out of the use of essential Web-Based Tools, but you can disable cookies in your browser. If you do this, parts of the Hyundai Website may not work properly.
+
+Non-Essential Web-Based Tools: These Web-Based Tools help enhance your experience with personalized content, like remembering your language preference or showing relevant offers. We may also use these tools for online advertising, such as showing ads based on your interests. You can opt-out of targeted advertising by visiting the Network Advertising Initiative or the Digital Advertising Association of Canada websites.
+
+Third party websites
+
+The Hyundai Website may link to other websites not owned or operated by Hyundai. This Privacy Notice only applies to how we collect and use your information on our site. We are not responsible for the privacy practices of third-party websites. We encourage you to review their privacy policies before sharing your personal information.
+
+3. Sharing Personal Information
+
+We may share your personal information with our dealers, affiliates, parent company and service providers for the purposes listed in this Privacy Notice. Hyundai has agreements with its service providers to ensure they only use your personal information as needed to provide services to us or to you.
+
+Hyundai may share your personal information with our service providers for the following purposes:
+
+Service Providers
+
+Types of Transferred Information
+
+Purpose for Transfer
+
+Enterprise service and software providers
+
+Customer contact and vehicle information
+
+To maintain customer records
+
+Data quality service and software providers
+
+Customer contact and vehicle information
+
+To provide data quality services (e.g. standardizes and corrects physical addresses and e-mail addresses provided by individuals)
+
+Prospective customer service and software providers
+
+Information submitted by customer (e.g. a request for a test drive or request for a quote)
+
+To process prospective customer information to action requests, which includes transmitting information and requests to other parties to fulfill, if applicable (e.g. dealers)
+
+Recruitment service and software providers
+
+Employment application resumes, contact information, employment and education history, wage expectations, current employment status
+
+To assist Hyundai with processing applications for employment
+
+Customer relationship management service and software providers
+
+Customer contact and vehicle information, and information about lease or loan, payment history
+
+To maintain customer records, provide customer inquiry and support ticketing tools
+
+Automotive retailing service and software providers
+
+Customer contact and financial information
+
+To assist in assessing prospective customers, facilitate trade-ins, process credit applications, and facilitate payment
+
+Customer experience service and solution providers
+
+Opinions about Hyundai’s customer service
+
+To process customer satisfaction surveys
+
+Advertising and marketing agencies and service providers
+
+Customer contact and vehicle information, vehicle ownership status, Hyundai model of interest
+
+To facilitate marketing and promotional activities
+
+Dealership finance and insurance service and software providers
+
+Information included in credit applications
+
+To process credit applications
+
+Some of our service providers may be outside of Canada or Quebec. In that case, personal information will be subject to the laws of their jurisdiction, which may differ from the those in Canada and Quebec. In that event, and subject to the laws in place in those jurisdictions, we ensure that protections are in place to maintain equivalent data protection standards.
+
+We may also disclose your personal information to protect the rights, property and interests of Hyundai including intellectual property rights, to manage, defend or settle any actual or potential loss, and as otherwise allowed or required by law, such as to respond to court orders and subpoenas, prevent fraud, and investigate suspicious activity.
+
+Third-Party products and services
+
+We may facilitate your use of third-party products and services, like connecting your mobile phone with your vehicle. For example, services such as Android Auto™ or Apple® CarPlay may require us to share your personal information with these third parties.
+
+Hyundai does not control these third-party products and services, and we are not responsible for their privacy practices or terms. Before using these services, we recommend reading the third parties’ privacy policies and terms of use.
+
+SiriusXM subscription
+
+If you buy or lease a Hyundai vehicle with a trial subscription to SiriusXM satellite radio, we or the dealer may share your personal information with SiriusXM Canada Inc. and its affiliates (together, the "Sirius XM Entities"). This includes your name, address, phone number, email, vehicle model, and the serial number of your vehicle’s SiriusXM receiver. We share this information to activate your trial subscription, allow SiriusXM to offer additional products or services, and send marketing materials (e.g. renewal offers) by email. We may also share data about the performance or usage of SiriusXM in your vehicle with SiriusXM to improve products and services.
+
+For more about SiriusXM’s privacy practices, including how to opt out of certain uses of your personal information by SiriusXM, please review their privacy policy at SiriusXM Privacy Policy.
+
+4. Protecting Personal Information
+
+We implement policies and procedures to protect your personal information. For example, Hyundai has measures to:
+
+Prevent unauthorized access, use and disclosure of personal information.
+
+Define roles and responsibilities for handling personal information.
+
+Respond to questions, complaints, or privacy breaches.
+
+Limit the use of personal information to the purposes described in this Privacy Notice.
+
+Respect individuals’ choices about their personal information.
+
+Ensure personal information is not kept for longer than is necessary.
+
+Securely destroy or anonymize personal information once we no longer need it.
+
+Ensure our service providers protect the personal information they handle on our behalf.
+
+We regularly review these practices to make sure they are effective and appropriate.
+
+5. Retaining Personal Information
+
+We only keep personal information for the time needed to fulfill the purposes described in this Privacy Notice, or as necessary to comply with legal or regulatory requirements.
+
+6. Your Rights
+
+You have the following rights regarding your personal information:
+
+Right of access: You can request information about how we process your personal information and may request a copy of it.
+
+Right of correction: You can ask that we correct inaccurate or incomplete personal information.
+
+Right to withdraw consent: If you previously gave us consent to collect, use or disclosure your personal information, you can withdraw that consent, subject to legal requirements. Doing so may affect your ability to access or use the services affected by the withdrawal. You may also opt-out of promotional emails by clicking the “unsubscribe” button.
+
+Right to erasure (for Quebec residents): Under certain circumstances, you can ask that we delete your personal information.
+
+Right to be forgotten (for Quebec residents): Under certain circumstances, you can ask that we stop sharing your personal information or remove links to your personal information.
+
+Please contact our Privacy Officer at privacy@hyundaicanada.com to exercise any of these rights or if you have any questions about your rights. We may verify your identity before responding to your request.
+
+7. Updating Personal Information
+
+We aim to ensure your information is accurate, but it is important that you notify us if anything changes. You can update your personal information by calling 1.888.216.2626 or selecting “Communication Preferences” at the bottom of this page. In some cases, we may ask you to submit your request in writing.
+
+8. Children’s Privacy
+
+We do not knowingly collect personal information from individuals under 14 years old without verifiable parental/guardian consent. If you believe your child has provided their personal information without your consent, please contact us at privacy@hyundaicanada.com to have this information deleted.
+
+9. Contact Us
+
+If you have any questions or concerns about this Privacy Notice or our privacy practices, please contact our Privacy Officer at:
+
+Email: privacy@hyundaicanada.com
+
+Phone: 1.888.216.2626
+
+Last updated: June 5, 2025

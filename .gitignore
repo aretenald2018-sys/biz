@@ -35,8 +35,12 @@ yarn-error.log*
 .env*
 !.env.example
 
-# SQLite database (auto-created on first run)
-/data/
+# SQLite database (주 DB는 로컬 전용)
+/data/workdb.sqlite*
+
+# terms-blobs 와 terms-snapshot 은 git 으로 공유 (다른 로컬에서 pull 시 자동 import)
+!/data/terms-blobs/
+!/data/terms-snapshot/
 
 # test email files
 /test-emails/

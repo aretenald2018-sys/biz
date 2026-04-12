@@ -1,0 +1,583 @@
+Datenschutz
+
+Datenschutz Videoüberwachung
+
+Datenschutz Verkauf
+
+Datenschutz Cookies
+
+Used Vehicle Locator
+
+Datenschutz Connected Services
+
+Datenschutz
+
+Datenschutz Videoüberwachung
+
+Datenschutz Verkauf
+
+Datenschutz Cookies
+
+Used Vehicle Locator
+
+Datenschutz Connected Services
+
+GENESIS Connected Services | Datenschutzrichtlinie
+
+Version: Juni 2024
+Liste der Änderungen
+Wir haben die in Abschnitt 3 angegebenen Kontaktdaten aktualisiert.
+Wir haben die Details zum OTA-Update des Fahrzeugsystems in Abschnitt 4.3.9.2 und im Anhang „Datenverarbeitung in gemeinsamer Verantwortung mit Hyundai Motor Company“ aktualisiert, um geänderte Verantwortlichkeiten dieser Funktion zu reflektieren.
+Wir haben die Datenanalyse zur Produktverbesserung und -entwicklung in Abschnitt 4.5 angepasst.
+Wir haben Abschnitt 4.6 bezüglich der Verarbeitung von Daten zu Marketingzwecken für ähnliche Waren und Dienstleistungen hinzugefügt.
+
+1. Worum geht es in dieser Datenschutzrichtlinie?
+
+Der Zweck dieser Datenschutzrichtlinie (im Folgenden „Datenschutzrichtlinie“) besteht darin, Sie über die Erfassung und Verarbeitung Ihrer personenbezogenen Daten in Verbindung mit der Bereitstellung des Genesis Connected Services (im Folgenden „GCS“ oder „Services“) über das Infotainmentsystem AVNT, das für Audio-Video-Navigation und Telematik im Fahrzeug steht (im Folgenden „Infotainmentsystem“) und der Genesis Connected Service App (im Folgenden „GCS-App“) zu informieren.
+Wir nehmen den Schutz Ihrer Privatsphäre sehr ernst und verarbeiten Ihre personenbezogenen Daten nur in Übereinstimmung mit den geltenden Datenschutzgesetzen.
+Die Verarbeitung Ihrer personenbezogenen Daten in Verbindung mit der Registrierung des zugrunde liegenden Genesis-Kontos (einschließlich personenbezogener Daten über Sie, wie Ihr Name, Ihre E-Mail-Adresse, Ihr Geburtsdatum, Ihre Mobiltelefonnummer) unterliegt einer gesonderten Datenschutzrichtlinie.
+
+2. Wer ist für die Verarbeitung meiner Daten verantwortlich?
+
+Die Genesis Motor Switzerland AG ist eine juristische Person die im Handelsregister unter CHE-444.411.066 eingetragen ist. Der eingetragene Sitz der Gesellschaft befindet sich unter der Anschrift Bahnhofstrasse. 62, 8001 Zürich („Genesis“ oder „Verantwortliche“). Genesis ist für die Verarbeitung Ihrer personenbezogenen Daten gemäß den Ausführungen in dieser Datenschutzrichtlinie verantwortlich. Genesis ist der Betreiber der Ihnen bereitgestellten Services und fungiert zusammen mit der Genesis Motor Europe GmbH („GME“), mit Sitz in der Strahlenbergerstraße 110-112, 63067 Offenbach am Main, als gemeinsamer Verantwortlicher. Genesis und GME werden gemeinsam als „wir“ oder „uns“ bezeichnet.
+Genesis bietet Ihnen Support, z. B. erbringt Genesis Supportleistungen bei der aktiven Nutzung der Services, während GME die Bereitstellung der App und der zugrunde liegenden Services auf organisatorischer und technischer Ebene steuert. Sowohl Genesis als auch GME können Ihre personenbezogenen Daten für weitere Zwecke, wie weiter unten ausgeführt, verwenden. Genesis ist die Kontaktstelle für alle Anfragen von Betroffenen bezüglich der Verarbeitung personenbezogener Daten in Verbindung mit den Services. Allerdings sind Sie berechtigt, Ihre Rechte gemäß der DSGVO und nationaler Datenschutzgesetze in Bezug auf jeden Verantwortlichen auszuüben.
+Genesis und GME haben eine Vereinbarung über die Verarbeitung personenbezogener Daten geschlossen. Auf Verlangen informiert Sie Genesis über den wesentlichen Inhalt eines solchen Vertrages.
+
+3. Wie kann ich die Verantwortlichen und den Datenschutzbeauftragten kontaktieren?
+
+3.1. Bei Fragen im Zusammenhang mit dieser Datenschutzrichtlinie oder der Ausübung Ihrer Rechte können Sie uns per E-Mail erreichen an [email protected] oder über die Postanschrift: Genesis Motor Switzerland AG, Bahnhofstrasse 62, 8001 Zürich. Sie können diese Kontaktdaten auch verwenden, um mitdem Datenschutzbeauftragten von Genesis zu kommunizieren.
+3.2. Sie erreichen GME zudem per E-Mail: an [email protected] oder postalisch unter der Anschrift Strahlenbergerstraße 110-112, 63067 Offenbach am Main. Sie können sich diese Informationen auch an den Datenschutzbeauftragten von GME wenden.
+
+Genesis Motor Europe GmbH
+c/o Datenschutzbeauftragter
+Strahlenbergerstraße 110-112
+63067 Offenbach am Main
+E-Mail: [email protected]
+
+4. Welche Kategorien personenbezogener Daten werden verarbeitet, zu welchen Zwecken und auf welcher Rechtsgrundlage?
+
+4.1. Die Verarbeitung Ihrer personenbezogenen Daten durch uns
+4.1.1. Bereitstellung des Genesis Connected Services
+Wir erfassen und verarbeiten Ihre personenbezogenen Daten im Zusammenhang mit den Diensten nur soweit die Erfassung und Verarbeitung
+
+für den Abschluss oder die Erfüllung eines Vertrags zu Genesis Connected Service erforderlich ist (Artikel 6 Absatz 1 Buchstabe b DSGVO),
+zur Erfüllung einer rechtlichen Verpflichtung erforderlich ist (Artikel 6 Absatz 1 Buchstabe c DSGVO),
+auf einer Einwilligung beruht (Art. 6 (1) a) DSGVO) oder
+zur Wahrung berechtigter Interessen von uns oder Dritten erforderlich ist (Art. 6 (1) f) DSGVO).
+
+Näheres zu den einzelnen Diensten ist der jeweiligen Dienstbeschreibung in den „GCS-Nutzungsbedingungen: GCS-App“ zu entnen.
+
+Die (personenbezogenen) Daten, die in den Abschnitten 4.2, 4.3, 4.4, 4.5 und den zugehörigen Unterabschnitten genannt sind, werden direkt über Ihr Fahrzeug (z. B. über Sensoren und zugehörige Anwendungen des Fahrzeugs, die über das Infotainmentsystem zugänglich sind) erhoben oder von Ihnen über die App (z. B. durch die Eingabe bestimmter personenbezogener Daten über die App) bereitgestellt und in Verbindung mit den Diensten verarbeitet.
+
+Die in den Abschnitten 4.2, 4.3, 4.4 und 4.5 sowie den zugehörigen Unterabschnitten aufgeführten Daten sind für die Bereitstellung der Dienste erforderlich. Ohne die jeweiligen Informationen kann der Dienst nicht erbracht werden.
+
+4.1.2. Verarbeitung zu anderen Zwecken
+Neben der Bereitstellung der Dienste verarbeiten wir Ihre personenbezogenen Daten auch zu den im Folgenden beschriebenen Zwecken.
+
+Produktverbesserung und -entwicklung: Wir analysieren und verbessern die Services weiter, um neue mobilitäts- und mobilitätsbezogene Produkte und/oder Dienste zu entwickeln, um unsere Produkte sicher zu machen und/oder um unsere Services zu verbessern.
+
+Zu diesen Zwecken analysieren wir automatisch die bei der Bereitstellung von Diensten erhobenen Daten auf der Grundlage statistischer und mathematischer Modelle, um Verbesserungsmöglichkeiten zu erkennen. Weitere Informationen hierzu sind Abschnitt 4.5 zu entnehmen.
+
+Die Rechtsgrundlage für diese Verarbeitung ist Artikel 6 Absatz 1 Buchstabe f DSGVO (berechtigte Interessen von Genesis für die Verarbeitung Ihrer personenbezogenen Daten zur Entwicklung und Verbesserung unserer Dienste).
+
+Überwachung von Produkten/Produkthaftung: In diesem Zusammenhang verarbeiten wir Ihre personenbezogenen Daten, um unsere Produkte zu überwachen, ausreichende IT-Sicherheitsstandards sicherzustellen oder Produkthaftungsansprüche oder sonstige rechtliche Ansprüche gegenüber uns oder Dritten im Hinblick auf unsere Produkte und Dienste abzuwehren.
+Soweit diese Verarbeitung nicht gesetzlich vorgeschrieben ist (Artikel 6 Absatz 1 Buchstabe c DSGVO), bildet die Rechtsgrundlage für diese Verarbeitung Artikel 6 Absatz 1 Buchstabe f DSGVO (berechtigte Interessen von Genesis zur Verarbeitung Ihrer personenbezogenen Daten für die oben genannten Zwecke).
+
+Andere Zwecke: Wir verarbeiten Ihre personenbezogenen Daten nur für andere Zwecke, wenn wir dazu gesetzlich verpflichtet sind (Artikel 6 Absatz 1 Buchstabe c DSGVO), beispielsweise zur Übermittlung an Gerichte oder Strafverfolgungsbehörden, zur Bereitstellung bestimmter Funktionen im Fahrzeug wie dem „eCall“ auf Grundlage der Verordnung (EU) 2015/758), wenn Sie in die jeweilige Verarbeitung eingewilligt haben (Artikel 6 Absatz 1 Buchstabe a DSGVO) oder wenn die Verarbeitung anderweitig nach geltendem Recht rechtmäßig ist.
+
+Erfolgt die Verarbeitung zu einem anderen Zweck, erhalten Sie von uns gegebenenfalls weitere Informationen.
+
+4.1.3. Keine automatische Entscheidungsfindung
+Genesis nutzt keine automatisierte Entscheidungsfindung, einschließlich der Erstellung von Profilen (Profiling), in Verbindung mit den Diensten, es sei denn, Ihnen wurde etwas anderes mitgeteilt.
+
+4.2. Genesis Konto
+Mit einem Genesis-Konto können die GENESIS-Dienste angezeigt und abgerufen werden, die momentan verfügbar sind und in Zukunft hinzugefügt werden können.
+Die zugrunde liegende Verarbeitung Ihrer personenbezogenen Daten ist erforderlich, um einen Vertrag mit Ihnen abzuschließen und diesen zu erfüllen (Art. 6 (1) b) DSGVO), und beruht auf unserem berechtigten Interesse, Ihr Kundenerlebnis durch die Bereitstellung eines zentralen Benutzerkontos für Sie (Art. 6 (1) f) DSGVO) zu verbessern.
+
+Beim Genesis-Konto handelt es sich um ein zentrales Benutzerkonto, über das Sie Ihre personenbezogenen Stammdaten verwalten können und mit dem Sie die einmalige Anmeldung (Single Sign-On) für Ihre verknüpften Services nutzen können.
+
+Für eine vollständige Nutzung unserer Genesis Connected Services ist die Erstellung eines Genesis-Kontos bzw. die Anmeldung mit einem bestehenden Genesis-Konto erforderlich.
+
+In diesem Fall werden die Genesis Connected Serivices mit Ihrem Genesis-Konto verknüpft und Ihre personenbezogenen Stammdaten (E-Mail-Adresse, Anrede, Vor- und Nachname, Land und bevorzugte Sprache) angezeigt.
+
+Weitere Informationen finden Sie in der gesonderten Datenschutzerklärung zum Genesis-Konto, die hier einsehbar ist.
+
+4.3. Bereitstellung des Genesis Connected Services – Infotainmentsystem im Fahrzeug
+4.3.1. Genesis Live
+Genesis Live bietet Ihnen die folgenden Funktionen:
+
+Live-Verkehrsinformationen: Mit den Verkehrsinformationen in Echtzeit werden basierend auf Ihrem aktuellen Standort Routen berechnet, einschließlich genauer Ankunftszeiten und der Anzeige der Verkehrslage
+Live-Parkplätze: Parkmöglichkeiten auf und abseits von öffentlichen Straßen, nahe gelegene Ziele, nahe gelegene gescrollte Kennzeichen, Stadtzentrum basierend auf Ihrem aktuellen Standort
+Live-Tankstellen: Informationen über die nächstgelegenen Tankstellen und Benzinpreise basierend auf Ihrem aktuellen Standort
+Live-Ladestationen (nur Elektro-Modelle): Informationen zu Ladestationen in der Nähe, einschließlich Verfügbarkeitsstatus und Ladetechnologie, auf Grundlage Ihres aktuellen Standorts
+Wetter: Lokale Wetterinformationen basierend auf Ihrem aktuellen Standort
+Live-POI und Live-Freitextsuche: Informationen zu POI in der Nähe Ihres aktuellen Standorts, einschließlich Branded Pins und gesponserter Suchen mit Angeboten im Fahrzeug, um Ihnen Werbeaktionen von Drittanbietern in verschiedenen POI-Kategorien bereitzustellen
+Warnmeldungen bei Gefahrenzonen und Verkehrskameras (sofern in Ihrem Land gesetzlich zulässig): Dieses System sendet Warnmeldungen in Gebieten mit hoher Unfallgefahr und Gefahrenzonen sowie bei Radarkontrollen.
+Sportliga: Informationen über die Ergebnisse der letzten Sportereignisse
+Die Bereitstellung unserer Genesis Live Services erfordert die Erfassung und Verarbeitung Ihrer Fahrzeug-Identifikationsnummer (FIN), von Geolokalisierungsdaten (beispielsweise GPS-Koordinaten für „Verkehrsinformationen in Echtzeit“), des Integrated Circuit Card Identifier (ICCID) der SIM-Karte Ihres Fahrzeugs und einer eindeutigen Anfrage-ID für jede Transaktion. Wir verarbeiten Ihre personenbezogenen Daten für diese Zwecke, um unsere Services bereitzustellen (Artikel 6 Absatz 1 Buchstabe b DSGVO).
+
+4.3.2. Online-Spracherkennung
+Mit der Spracherkennung können Sie mit gesprochenen Befehlen auf das Infotainmentsystem zugreifen und es steuern sowie Textnachrichten über ein verbundenes Mobilgerät verfassen und versenden.
+
+Für diese Funktion werden die folgenden Arten personenbezogener Daten verarbeitet und an unsere Genesis-Cloud-Umgebung übertragen: Sprachaufnahme, Standortdaten (GPS-Koordinaten), Point of Interest (POI) und Cerence Benutzer-ID.
+
+Hierbei handelt es sich um eine eindeutige Kennung für die Registrierung am Server von Cerence B.V. (Niederlande), unserem Auftragsverarbeiter für diese spezifischen Dienste.
+
+Es besteht kein Zusammenhang zwischen der Cerence Benutzer-ID und der Fahrzeug-Identifikationsnummer oder sonstigen Identifizierungsnummern. Auf diese Weise wird sichergestellt, dass die Identifikation natürlicher Personen durch Cerence B.V. (Niederlande) anhand der an das Unternehmen übertragenen Daten nicht möglich ist.
+
+Beim Starten des Fahrzeugs wird die Spracherkennung gemäß Voreinstellung im Online-Modus aktiviert. Wir verarbeiten Ihre personenbezogenen Daten zu diesen Zwecken im Rahmen der Erbringung unserer Dienste (Art. 6 (1) b) DSGVO).
+
+Bei der Nutzung der Online-Spracherkennung verarbeiten wir Ihre personenbezogenen Daten in unserer Genesis-Cloud-Umgebung.
+
+Darüber hinaus erfassen wir Sprachproben sowie GPS-Koordinaten und bewahren diese bis zu 90 Tage auf, um den Dienst für die Spracherkennung auszuführen und zu verbessern.
+
+Wir verarbeiten Ihre personenbezogenen Daten zu diesen Zwecken im Rahmen der Erbringung unserer Dienste (Art. 6 (1) b) DSGVO) und im Zusammenhang mit der Verbesserung unserer Dienste auf der Grundlage unserer jeweiligen berechtigten Interessen (Art. 6 (1) f) DSGVO).
+
+Wenn Sie die Online-Spracherkennung nutzen, werden Sprachproben von Ihnen und Ihre GPS-Koordinaten durch unseren Dienstleister Cerence B.V., Olympia 2 D, 1213 NT Hilversum, Niederlande (Auftragsverarbeiter) und dessen Unterauftragsverarbeiter verarbeitet, die ggf. in Ländern außerhalb des Gebiets der EU / des EWR ansässig sind und ggf. kein angemessenes Datenschutzniveau gewährleisten können.
+
+Sie können die Online-Spracherkennung deaktivieren und die Spracherkennungsdienste im Offline-Modus nutzen. In diesem Fall werden keine Daten an einen Empfänger außerhalb Ihres Fahrzeugs übertragen.
+
+Wenn Sie der Verarbeitung Ihrer Sprachproben und GPS-Koordinaten durch uns nicht zustimmen, können Sie die Offline-Spracherkennung nutzen, bei der weder Sprachproben noch GPS-Koordinaten zum Zweck der Verbesserung des Spracherkennungsdienstes erfasst werden.
+
+4.3.3. Fahrzeugdiagnose
+Die Fahrzeugdiagnose erfasst und stellt Berichte über den Status spezifischer Steuergeräte zusammen mit der Fahrzeug-Identifikationsnummer (FIN) bereit.
+
+Diese Berichte werden zur weiteren Analyse an unseren Server übermittelt.
+
+Unter „Fahrzeugdiagnose“ im Infotainmentsystem können Sie sich den allgemeinen Status Ihres Fahrzeugs anzeigen lassen.
+
+Wir nutzen diese Daten, um Ihnen Informationen dazu bereitzustellen, ob in Bezug auf Ihr Fahrzeug ein Problem besteht. Die Abdeckung dieser Funktion umfasst das Batteriemanagementsystem, das Motorsteuerungssystem, das Fahrzeugsteuerungssystem, das integrierte Brems- und Karosseriesteuerungssystem, das Fahrerassistenzsystem, das Reifendrucküberwachungssystem und das Airbagsteuerungssystem.
+
+Wir verarbeiten Ihre personenbezogenen Daten für die Fahrzeugdiagnose im Rahmen der Erbringung unserer Dienste (Art. 6 (1) b) DSGVO).
+
+Soweit Genesis gesetzlich dazu verpflichtet ist, verarbeiten wir die oben genannten personenbezogenen Daten zur Überwachung der Produkte und zum Zweck der Einhaltung von Produktsicherheitsanforderungen (Art. 6 (1) c) DSGVO).
+
+Informationen zur Verarbeitung der oben genannten Daten zum Zweck der Verbesserung und Entwicklung von Produkten finden Sie auch in Abschnitt 4.5.
+
+4.3.4. Diagnosestörcode-Benachrichtigung
+Wenn ein Fahrzeugfehler erkannt wird, wird ein Diagnosestörcode (DTC) generiert und eine Warnung auf der Haupteinheit Ihres Fahrzeugs angezeigt. Wenn die GCS-Konnektivität aktiviert ist, werden der DTC und die entsprechende Beschreibung, das Auftretungsdatum zusammen mit der VIN Ihres Fahrzeugs an unseren Server zur weiteren Analyse und Kundenbetreuung gesendet.
+
+Diese Daten werden auch dem ausgewählten autorisierten Reparaturbetrieb für die Fahrzeugwartung zur Verfügung gestellt.
+
+Wir verarbeiten Ihre personenbezogenen Daten zur Diagnosestörcode-Benachrichtigung, um unsere Dienste zu erbringen (Art. 6 (1) b) DSGVO).
+
+Soweit Genesis gesetzlich dazu verpflichtet ist, verarbeiten wir Ihre oben genannten personenbezogenen Daten zur Überwachung der Produkte und zur Einhaltung von Produktsicherheitsanforderungen (Art. 6 (1) c) DSGVO).
+
+4.3.5. Online-Routenführung
+Die Funktion „Online-Routenführung“ ermöglicht die Berechnung einer genaueren Verkehrsprognose, genauerer Ankunftszeiten und zuverlässigerer Routenneuberechnungen, indem die relevanten Daten in unserer Genesis-Cloud-Umgebung und nicht nur in Ihrem Infotainmentsystem verarbeitet werden.
+
+Für diese Funktion werden die folgenden Arten personenbezogener Daten verarbeitet und an unsere Genesis-Cloud-Umgebung übertragen: Ihre Fahrzeug-Identifikationsnummer (FIN), Standortdaten (GPS-Koordinaten) und Navigationsdaten (z. B. Echtzeit-Verkehrsinformationen, Verkehrsmuster).
+
+Wir verarbeiten Ihre personenbezogenen Daten zu diesen Zwecken im Rahmen der Erbringung unserer Dienste (Art. 6 (1) b) DSGVO).
+
+Zufriedenheit mit der angezeigten Route
+Unter Umständen fragen wir Sie über das Infotainmentsystem nach Feedback, um Ihre Zufriedenheit mit der Streckenführung sowie den Standortinformationen zu messen.
+
+Für diese Funktion verarbeiten wir dieselben Arten personenbezogener Daten wie in 4.3.1 beschrieben sowie Ihren Zufriedenheitsscore.
+
+Die rechtliche Grundlage für die Verarbeitung Ihrer Daten für diese Zwecke ist das berechtigte Interesse von Genesis zur Verbesserung seiner Dienste (Art. 6 (1) f) DSGVO).
+
+4.3.6. Identifizierung per Fingerabdruck (Für GV70 und GV60-Modell)
+Mit dem Genesis Connected Service Benutzerprofil können Sie die Identifizierung per Fingerabdruck für jedes Benutzerprofil einrichten. Durch die Registrierung Ihres Fingerabdrucks können Sie die Fingerabdruckerkennung anstelle eines Passworts für Komfortfunktionen wie das Starten des Fahrzeugs, das Entsperren Ihres Profils und das Beenden des Valet-Modus verwenden.
+
+Für jedes Benutzerprofil wird die folgende Kategorie personenbezogener Daten in dem Fahrzeug verarbeitet: Fingerabdruck, anhand von Fingerabdruckdaten erstelltes Fingerabdruckprofil. Letzteres ist eine pseudonymisierte Kennung, mit der keine Bezugnahme auf eine natürliche Person möglich ist und die besonders verschlüsselt wird, bevor sie an das Genesis-Cloud-System übermittelt wird, um die Synchronisation eines Profils zu ermöglichen. Die Fingerabdruckinformationen werden ausschließlich lokal im Fahrzeug verarbeitet und verschlüsselt gespeichert.
+
+Wir verarbeiten Ihre personenbezogenen Daten auf Grundlage Ihrer Einwilligung (Artikel 6 Absatz 1 Buchstabe a und Artikel 9 Absatz 2 Buchstabe a DSGVO). Sie können Ihre Einwilligung jederzeit mit Wirkung für die Zukunft widerrufen, indem Sie Ihre Fingerabdruckdaten direkt im Fahrzeug löschen. Die Fingerabdruckdaten werden sofort im Speicher des Fahrzeugs, wo sie sicher gespeichert sind, gelöscht. Bitte beachten Sie, dass dies nicht die Rechtmäßigkeit der Verarbeitung berührt, die auf Grundlage der Einwilligung bis zum Widerruf erfolgt ist.
+
+4.3.7. Benachrichtigungszentrum
+Wir können Ihnen über das Benachrichtigungszentrum wichtige Informationen zu Ihrem Fahrzeug zusenden. Wir nutzen diesen Service nur für wichtige Informationen. Die Informationen erscheinen als Pop-up im Infotainmentsystem Ihres Fahrzeugs. Sie können den Empfang bestimmter Arten von Informationen in den Einstellungen oder direkt beim Empfang eines Pop-ups deaktivieren.
+
+Für diese Funktion werden die folgenden Kategorien personenbezogener Daten verarbeitet: Lesestatus; Lesezeit.
+
+Wir verarbeiten Ihre personenbezogenen Daten für diese Zwecke, um unsere Services bereitzustellen (Artikel 6 Absatz 1 Buchstabe b DSGVO).
+
+4.3.8. Kalender
+Mit dem Kalender können Sie den Google- bzw. Apple-Kalender auf Ihrem Smartphone mit der integrierten Kalenderfunktion des Infotainmentsystems Ihres Fahrzeugs synchronisieren, um das Navigationsziel auf der Grundlage des Google- bzw. Apple-Kalenders festzulegen.
+
+Für diese Funktion werden die folgenden Arten personenbezogener Daten verarbeitet und an unsere Genesis-Cloud-Umgebung übertragen: E-Mail-Adresse, Kalender-ID, Telefonnummer, Google-Token/iCloud-Passwort und Kalendereinträge (z. B. Titel des Termins, Uhrzeit/Datum, Adresse, Memo, Teilnahme).
+
+Wir verarbeiten Ihre personenbezogenen Daten zu diesen Zwecken im Rahmen der Erbringung unserer Dienste (Art. 6 (1) b) DSGVO).
+
+4.3.9. OTA („Over-the-Air“)-Software-Update
+Mit dem OTA-Software-Update können Sie die Software in Ihrem Fahrzeug mittels des Mobilfunknetzes aktualisieren, ohne eine Fahrzeugwerkstatt aufsuchen zu müssen.
+
+Ihr Infotainmentsystem sucht in regelmäßigen Abständen nach neuen Softwareversionen. Verfügbare Updates werden automatisch heruntergeladen und die Installation vorbereitet.
+
+Sie können dabei auswählen, ob Sie die Installation sofort oder zu einem späteren Zeitpunkt durchführen möchten.
+
+Sie können diese Funktion deaktivieren, indem Sie den Schalter in der GCS-App (Mehr → Serviceliste) entsprechend einstellen.
+
+Alternativ können Sie die GCS-Netzwerkverbindung auch über das Infotainmentsystem in Ihrem Fahrzeug deaktivieren (Einstellungen → Genesis Connected Services → Genesis Connected Services deaktivieren).
+
+Wenn Sie OTA-Updates deaktivieren, arbeiten die Funktionen Ihres Fahrzeugs sowie die bereitgestellten Services (z. B. sicherheitsbezogene Systeme, Infotainmentsystem, GCS) ggf. nicht wie gewünscht.
+
+4.3.9.1. OTA-Software-Update für Karten und Infotainmentsystem
+Die neuesten Updates für Karten und das Infotainmentsystem in Ihrem Fahrzeug werden ebenfalls als OTA-Updates bereitgestellt.
+
+Für diese Funktion werden die folgenden Arten personenbezogener Daten verarbeitet und an unsere Genesis-Cloud-Umgebung übertragen: Ihre Fahrzeug-Identifizierungsnummer (FIN), Hersteller der Head Unit, Modellname der Head Unit, Firmware-Version der Head Unit, Systemversion der Head Unit, Mobilfunkbetreiber, Fahrzeugmodell, Baujahr des Fahrzeugs, Verkaufsgebiet des Fahrzeugs und gewählte Sprache.
+
+Wir verarbeiten Ihre personenbezogenen Daten zum Zweck der Bereitstellung unserer Services (Art. 6 (1) b) DSGVO).
+
+4.3.9.2. Vehicle System OTA Software Update
+Wir stellen Ihnen aus unterschiedlichen Gründen und zu verschiedenen Zwecken OTA-Updates für das Fahrzeugsystem zur Verfügung, insbesondere jedoch zur Fehlerbehebung innerhalb der Garantiezeit, im Rahmen der Herstellergarantie oder aus sicherheitsbezogenen Gründen. Auf diese Weise stellen wir eine effiziente Bereitstellung und Überwachung von OTA Aktualisierungen für das Fahrzeugsystem sicher.
+
+Zu diesem Zweck werden die folgenden Arten personenbezogener Daten verarbeitet und an unsere Genesis-Cloud-Umgebung übertragen: Ihre Fahrzeug-Identifizierungsnummer (FIN), Nutzungshistorie (OTA-Update), Diagnoseinformationen (Fehlercodes, OTA-Ergebnis, Ergebnis einer Softwarewiederherstellung) und Informationen zur Softwareversion (elektronische Steuereinheit).
+
+Wir verarbeiten Ihre personenbezogenen Daten zur Erfüllung der gesetzlichen Verpflichtungen des Fahrzeugherstellers (Art. 6 (1) c) DSGVO (z. B. im Bereich der Produktsicherheitsanforderungen)), zur Bereitstellung unserer Dienste (Art. 6 (1) b) DSGVO) sowie basierend auf unserem berechtigten Interesse zur effektiven Steuerung unserer OTA Aktualisierungsprozesse (Art. 6 (1) f) DSGVO).
+
+4.3.10. Like-Funktion
+Mit der Like-Funktion für USB- und Bluetooth-Musik und Radio können Sie eine Wiedergabeliste mit Ihren Lieblingssongs auswählen und erstellen. Über die in die Musikfunktion des Infotainmentsystems integrierte Taste „Daumen hoch“ bzw. „Daumen runter“ können Sie Lieder liken oder disliken.
+
+Für diese Funktion werden die folgenden Kategorien personenbezogener Daten verarbeitet: Quellentyp (USB-Musik, Radio, Bluetooth-Musik), Name des Titels, des Interpreten und des Albums, Gefällt-mir-/Gefällt-mir-nicht-Informationen, Standortinformationen (GPS), Umgebungstemperatur, Fahrzeuggeschwindigkeit, Wetter (basierend auf Ihrem aktuellen Standort) und Zeitinformationen.
+
+Wir verarbeiten die personenbezogenen Daten zur Erbringung unserer Dienste (Art. 6 (1) (b) DSGVO) und zur Wahrung unserer berechtigten Interessen an der Erbringung unserer Dienste (Art. 6 (1) (f) DSGVO).
+
+4.3.11. Musicstreaming
+Mit der Musikstreaming-Funktion können Sie über das Infotainmentsystem Musik von bestimmten Streamingdiensten direkt in Ihr Fahrzeug streamen. Dazu benötigen Sie ein gültiges Abonnement des jeweiligen Musikstreamingdienstes und Ihr Mobiltelefon mit installierter GCS-App für den Aktivierungsvorgang.
+
+Zur Verbindung Ihres Kontos mit dem Musikstreamingdienst, den Sie ausgewählt haben, werden Ihre Zugangsdaten zunächst von der Musikstreaming-Plattform verarbeitet und dann in pseudonymisierter Form an uns übermittelt. Anschließend werden sie in unserer Genesis-Cloud-Umgebung gespeichert.
+
+Die Information, welche Musikinhalte Sie suchen und auswählen, wird vom Fahrzeug in unsere Genesis-Cloud-Umgebung übermittelt. Es erfolgt eine Anfrage an die jeweilige Musikstreaming-Plattform, die die Musikinhalte dann direkt im Fahrzeug bereitstellt. Kürzlich abgespielte Inhalte werden vorübergehend im System des Fahrzeugs gespeichert.
+
+Für diesen Zweck werden folgende Kategorien personenbezogener Daten verarbeitet: Authentifizierungsdaten des Benutzers (z. B. pseudonymisierte Zugangsdaten für das Streamingplattform-Konto, Geräte-ID, Benutzer-ID), Informationen über den Dienst (Autorisierungscode des Dienstes, Abonnementstatus, Anmeldedaten, Dienst-ID, Sitzungs-ID), Informationen zum Fahrzeug (FIN oder Fahrzeug-ID, Motortyp, Land des Verkaufs, Modellname und -jahr, Plattform und Modell der Head Unit) sowie Informationen über kürzlich abgerufene Musikinhalte (z. B. Unique Identifier, Typ, Name, Titel, Künstler, Name des Albums, Genre, Laufzeit, Datum des Contents, URLs).
+
+Ihr im Fahrzeug gespeichertes Streamingplattform-Konto ist mit Ihrem individuellen Benutzerprofil im Fahrzeug verknüpft. Wenn Sie Ihr Benutzerprofil löschen, erlischt automatisch die Verknüpfung zwischen Streamingplattform-Konto und Fahrzeug.
+
+Wir verarbeiten Ihre personenbezogenen Daten für die Zwecke der Erbringung unserer Dienste (Art. 6 (1) b) DSGVO).
+
+4.4. Bereitstellung des Genesis Connected Services – Mobile App
+4.4.1. Genesis-Konto
+Ein Genesis-Konto ermöglicht das Ansehen und den Zugriff auf Genesis-Dienste, die derzeit verfügbar sind und in Zukunft hinzugefügt werden können.
+
+Für diese Funktion werden folgende Kategorien personenbezogener Daten verarbeitet und an unser Managementsystem übermittelt: ihre persönlichen Informationen wie Name, E-Mail-Adresse, Land, bevorzugte Sprache und verschlüsseltes Passwort zur Authentifizierung.
+
+Wir verarbeiten Ihre personenbezogenen Daten zu diesen Zwecken, um unsere Dienstleistungen zu erbringen (Art. 6 Abs. 1 b DSGVO).
+
+4.4.2. Ferndienste
+Wir stellen Ihnen über die GCS-App die folgenden Ferndienste bereit. Sie werden als Voreinstellung aktiviert, wenn sie nicht gesondert oder vollständig deaktiviert werden:
+
+a) Fernverriegelung und -entriegelung (Sie können die Fahrzeugtüren verriegeln und entriegeln; alle Genesis-Fahrzeuge)
+
+b) Fernsteuerung der Fenster (Sie können die Fenster Ihres Fahrzeugs per Fernzugriff öffnen und schließen; nur bei einigen Genesis-Fahrzeugen)
+
+c) Fernsteuerung von Hupe und Licht (Sie können sowohl die Scheinwerfer als auch die Hupe Ihres Fahrzeugs per Fernzugriff aktivieren; nur bei einigen Genesis-Fahrzeugen)
+
+d) Fernsteuerung des Lichts (Sie können die Scheinwerfer Ihres Fahrzeugs per Fernzugriff aufblinken lassen; nur bei einigen Genesis-Fahrzeugen)
+
+e) Fernladen (Sie können die Batterieladefunktion aus der Ferne aktivieren; alle Elektrofahrzeuge von Genesis)
+
+f) Geplantes Laden (Sie können den Zeitplan für das Laden der Batterie aus der Ferne festlegen, einschließlich der Zieltemperatur; alle Elektrofahrzeuge von Genesis)
+
+g) Fernklimatisierung (Sie können die Temperatur einstellen und die Klimaanlage aus der Ferne aktivieren; alle Elektrofahrzeuge von Genesis)
+
+h) Ferngesteuertes Öffnen und Schließen der Ladeklappe (Sie können die Ladeklappe Ihres Fahrzeugs per Fernzugriff öffnen und schließen; alle Elektrofahrzeuge von Genesis)
+
+i) Fernsteuerung der Warnblinker / des Standlichts (Sie können die Lichter per Fernzugriff über die App ausschalten, wenn Ihr Fahrzeug mit eingeschalteten Warnblinkern und/oder Standlicht verlassen wird; nur bei einigen Genesis-Fahrzeugen)
+
+j) Abfahrtszeit (Sie können die Fernklimatisierung aktivieren, indem Sie Ihre Abfahrtszeiten einstellen; nur bei einigen Elektromodellen von Genesis)
+
+k) Ladestrom (Sie können den vom AC-Ladegerät bereitgestellten Ladestrom einstellen; nur bei einigen Elektromodellen von Genesis)
+
+l) Mein Auto finden (Sie können die Parkposition Ihres Genesis-Fahrzeugs auf der integrierten Karte lokalisieren; alle Genesis-Fahrzeuge)
+
+m) An das Fahrzeug senden (Sie können online nach Orten von Interesse (OVI) und Adressdaten suchen, um die Suchergebnisse aus der Anwendung auf Ihrem Smartphone an das Infotainmentsystem Ihres Fahrzeugs zu senden; alle Genesis-Fahrzeuge)
+
+n) Mein Fahrzeug (POI) (synchronisiert Ihre gespeicherten POI zwischen dem Infotainmentsystem und Ihrer App; alle Genesis-Fahrzeuge)
+
+o) Führung auf dem letzten Kilometer (sendet den aktuellen Standort Ihres Fahrzeugs und Informationen über Ihr Ziel (z. B. Name, Adresse, Geolokalisierungsdaten) an Ihr Smartphone, um Sie per Google Maps oder erweiterte Realität von Ihrem Parkplatz zu Ihrem Ziel zu führen; alle Genesis-Fahrzeuge)
+
+p) Valet-Parkmodus (schützt Ihre privaten Informationen im Infotainmentsystem, indem nur der Valet-Modus-Bildschirm auf dem Infotainmentsystem angezeigt wird, sofern Sie nicht das zuvor gewählte Passwort eingeben; sendet Informationen über den aktuellen Status des Valet-Parkmodus „ein/aus“, die aktuelle Fahrzeugposition (GPS-Koordinaten), das Start-/Enddatum des Valet-Modus, die Fahrtstrecke/die Fahrleistung/die Motorlaufzeit des Valet-Modus, die Höchstgeschwindigkeit des Fahrzeugs, die zurückgelegte Strecke und die Motorstandzeit an Ihr Smartphone; alle Genesis-Fahrzeuge),
+
+q) Batterieladestatus (zeigt Ihnen den Batterieladestatus des Elektromotors an; alle Elektrofahrzeuge von Genesis)
+
+r) Push-Benachrichtigungen für bestimmte Anwendungsfälle (die Anwendung sendet in bestimmten Fällen Push-Benachrichtigungen an Ihr Smartphone, z. B.: Ihr Genesis-Fahrzeug ist nicht verriegelt und Aktivierung der Einbruchsalarmanlage in Ihrem Genesis-Fahrzeug, die Fenster Ihres Fahrzeugs sind geöffnet, Rücksitzalarm, ein Motorleerlaufalarm, Alarm zur Hochspannungsbatterieentladung, Valet-Parkmodus aktiviert/deaktiviert, im Fall eines Rückrufs, etc.; alle Genesis-Fahrzeuge).
+
+Sie können die Remote-Dienste separat nach Kategorie deaktivieren.
+Um Ihnen nach der Herstellung einer Verbindung über die App die Remote-Dienste bereitzustellen, wird eine Verbindung zwischen Ihrem Fahrzeug und unserer Genesis-Cloud-Umgebung hergestellt, welche die Verarbeitung bestimmter fahrzeugbezogener Daten erfordert, einschließlich IP-Adresse der SIM-Karte Ihres Fahrzeugs, Fahrzeug-Identifikationsnummer (FIN) und sonstiger Daten in Bezug auf den App-Benutzer (IP-Adresse Ihres Geräts, PIN und sonstige Benutzerkontoinformationen, z. B. Benutzername).
+
+Die Bereitstellung der Remote-Dienste erfordert die Erhebung und Verarbeitung bestimmter Daten in Bezug auf Ihr Fahrzeug, einschließlich eines Passworts, Ihrer Fahrzeug-Identifikationsnummer (FIN) und Standortdaten (z. B. GPS-Koordinaten für „Mein Auto finden“), des Integrated Circuit Card Identifier (ICCID) der SIM-Karte Ihres Fahrzeugs, Adressdaten und fahrzeugbezogener technischer Daten (z. B. Fahrzeugstatus, Informationen wie Zündung ein/aus, Fahrzeuggeschwindigkeit, Leuchtenstatus, Status der Türverriegelung).
+
+Wir verarbeiten Ihre personenbezogenen Daten zu diesen Zwecken im Rahmen der Erbringung unserer Dienste (Art. 6 (1) b) DSGVO).
+
+4.4.3. Fahrzeugstatusinformationen über Genesis Connected Services
+Über die App stellen wird die folgenden Informationen zum Fahrzeugstatus für Sie bereit:
+
+a) Fahrzeugbericht (stellt Informationen zur Nutzung Ihres Genesis-Fahrzeugs sowie Diagnosen zu Airbag, Bremsen, Reifendruck usw. bereit (siehe Abschnitt 4.3.3); alle Genesis-Fahrzeuge)
+
+b) Statusaktualisierung (stellt Informationen zum Zustand Ihres Genesis-Fahrzeugs bereit, z. B. Restreichweite, Tankfüllstand, Motor ein/aus, Status der Türverriegelung, Klimaanlage ein/aus, Heckklappe geöffnet/geschlossen, Haube geöffnet/geschlossen, Fenster geöffnet/geschlossen, Schiebedach geöffnet/geschlossen, Reifendruck, Status der Lichter (alle Genesis-Fahrzeuge); Status der Hochspannungsbatterie, Batterieladezustand, planmäßiges Laden ein/aus, Ladeklappe geöffnet/geschlossen, Status der Lenkradheizung, Enteisung ein/aus, Heckscheibenheizung ein/aus, Seitenspiegelheizung, planmäßige Klimatisierung ein/aus (alle Genesis-Elektrofahrzeuge))
+
+c) Meine Fahrten (liefert Ihnen Informationen über die Nutzung des Genesis-Fahrzeugs pro Monat/Tag, einschließlich Fahrzeit, Fahrleistung, durchschnittliche Geschwindigkeit des Fahrzeugs, maximale Geschwindigkeit des Fahrzeugs; alle Genesis-Fahrzeuge)
+
+d) Energieverbrauch (stellt Informationen zum Energieverbrauch Ihres Genesis Fahrzeugs pro Tag und pro Monat bereit, einschließlich des Gesamt- und Durchschnittsverbrauchs, der Fahrstrecke und der Rekuperation; alle Elektrofahrzeuge von Genesis)
+
+Um Ihnen nach der Herstellung einer Verbindung über die App die Informationen zum Fahrzeugzustand bereitzustellen, wird eine Verbindung zwischen Ihrem Fahrzeug und unserer Genesis-Cloud-Umgebung hergestellt, welche die Verarbeitung bestimmter fahrzeugbezogener Daten erfordert, einschließlich IP-Adresse der SIM-Karte Ihres Fahrzeugs, Fahrzeug-Identifikationsnummer (FIN) und sonstiger Daten in Bezug auf den App-Benutzer (IP-Adresse Ihres Geräts, PIN und sonstige Benutzerkontoinformationen, z. B. Benutzername).
+
+Die Bereitstellung der Informationen zum Fahrzeugzustand erfordert die Erhebung und Verarbeitung bestimmter Daten in Bezug auf Ihr Fahrzeug (z. B. Fahrtzeit, Kilometerstand, Durchschnittsgeschwindigkeit, Höchstgeschwindigkeit) und fahrzeugbezogene technische Daten (z. B. Daten zum Fahrzeugzustand wie Motor ein/aus, Status der Türverriegelung, wie oben aufgeführt).
+
+Wir verarbeiten Ihre personenbezogenen Daten zu diesen Zwecken im Rahmen der Erbringung unserer Dienste (Art. 6 (1) b) DSGVO).
+
+4.4.4. Fahrzeug Teilen
+Sie können die Ferndienste gemeinsam mit anderen Benutzern über die Funktion „Anfrage zum Teilen des Fahrzeugs“ in der Anwendung nutzen.
+
+Wenn Sie dies tun, verarbeiten wir bestimmte fahrzeug- und benutzerkontobezogene Daten wie Ihre PIN, die Fahrzeug-Identifikationsnummer (FIN), Ihren Benutzernamen und die Telefonnummer des anderen Benutzers, um Ihre Sharing-Anfrage zu starten und zu bearbeiten. Informationen zur Sharing-Anfrage wie Ihr Name und Ihre PIN werden an die GCS-App des anderen Benutzers übermittelt und dort verarbeitet. Der andere Benutzer kann die GCS-App auf die gleiche Weise wie Sie verwenden. Er kann die Funktion „Finde mein Fahrzeug“ ebenfalls nutzen.
+
+Wir verarbeiten die personenbezogenen Daten für die gemeinsame Nutzung der Ferndienste zur Bereitstellung unserer Services (Artikel 6 Absatz 1 Buchstabe b DSGVO) und zur Wahrung unserer berechtigten Interessen im Rahmen der Bereitstellung unserer Services (Artikel 6 Absatz 1 Buchstabe f DSGVO).
+
+Bitte beachten Sie, dass Sie bei der Nutzung dieses Dienstes abgesehen von Ihren Anmeldedaten alle Ihre in der GCS-App gespeicherten personenbezogenen Daten mit den anderen Benutzern teilen.
+
+Sie können diese Funktion jederzeit deaktivieren. Bei einer Deaktivierung wird die Datenfreigabe beendet und wir löschen alle freigegebenen Daten auf der GCS-App des anderen Benutzers.
+
+4.4.5. Warnungen
+Wenn Warnungen in der App aktiviert sind, erhalten Sie Meldungen je nach Ihren gewünschten Einstellungen. Über die App können die folgenden Warnungen aktiviert werden:
+
+a) Geofence Alert (Sie erhalten eine Benachrichtung in der App, wenn Ihr Fahrzeug einen erlaubten Bereich verlässt oder in einen Sperrbereich einfährt. Sie können die Grenzen für erlaubte Bereiche und Sperrbereiche in der App festlegen.)
+
+b) Geschwindigkeitswarnung (Sie erhalten eine Benachrichtigung in der App, wenn Ihr Fahrzeug die in der App eingestellte Höchstgeschwindigkeit überschreitet.)
+
+c) Time Fencing Alert (Sie erhalten eine Benachrichtigung in der App, wenn Ihr Fahrzeug außerhalb des in der App definierten Zeitfensters gefahren wird.)
+
+d) Valet Alert (Sie erhalten eine Benachrichtigung in der App, wenn Ihr Fahrzeug die in der App definierten Grenzwerte für Entfernung, Geschwindigkeit und Leerlaufzeit überschreitet. Die zulässige Fahrstrecke beginnt an dem Ort, an dem die Warnung aktiviert wurde.)
+
+e) Leerlaufwarnung (Sie erhalten eine Benachrichtigung in der App, wenn Ihr Fahrzeug die in der App definierte Leerlaufzeit überschreitet.)
+
+Zu diesen Zwecken erfassen und verarbeiten wir die folgenden Arten personenbezogener Daten: Fahrzeug-Identifizierungssnummer (FIN), Datum- und Zeitstempel, GPS-Daten, Statusinformationen zur Warnung (z. B. Aktivierungsstatus, Start- und Endzeit der Warnung, Laufzeit, Kilometerstand, Leerlaufzeit des Motors, Höchstgeschwindigkeit, zurückgelegte Strecke), Fahrzeugindikatoren (Standort, Geschwindigkeit, Zeit, Genauigkeit, Richtung), ausgewählte erlaubte Bereiche, ausgewählte Sperrbereiche, eingestellte Höchstgeschwindigkeit, eingestellte Zeitfenster, eingestellte Fahrstreckenbegrenzung, eingestellte Leerlaufbegrenzung.
+
+Wir verarbeiten Ihre personenbezogenen Daten zum Zweck der Bereitstellung unserer Services (Art. 6 (1) b) DSGVO).
+
+4.4.6. Andere standortbasierte Dienste
+a) Frühere Fahrten anzeigen
+
+b) Für eine Tour den Zielort an das Fahrzeug übertragen und bei einer geplanten Tour Zwischenhalte hinzufügen
+
+c) Bevorzugte und letzte Points of Interest (POI) suchen
+
+d) POI freigeben
+
+Die Bereitstellung dieser Remote-Dienste erfordert die Erhebung und Verarbeitung bestimmter fahrzeugbezogener Daten, z. B. Standortdaten (GPS-Koordinaten) des Fahrzeugs.
+
+Wir verarbeiten Ihre personenbezogenen Daten zum Zweck der Bereitstellung dieser anderen standortbasierten Dienste im Rahmen der Erbringung unserer Dienste (Art. 6 (1) b) DSGVO).
+
+4.4.7. Genesis Connected Services Benutzerprofil
+Über das GCS-Benutzerprofil können Sie verschiedene Fahrzeugeinstellungen in unserer Genesis-Cloud-Umgebung speichern und diese auf verschiedene Fahrzeuge anwenden.
+
+Wenn zwei oder mehr Fahrer dasselbe Fahrzeug nutzen, jedoch unterschiedliche Einstellungen (z. B. Sitzposition, Audio-Einstellungen, Kartenansicht) bevorzugen, können diese individuellen Einstellungen separat in bis zu zwei Benutzerprofilen und einem zusätzlichen Gastprofil je Fahrzeug gespeichert werden.
+
+Für jedes Benutzerprofil werden die folgenden Arten personenbezogener Daten verarbeitet und an unsere Genesis-Cloud-Umgebung übertragen: Fahrzeug-Identifikationsnummer (FIN) Ihres Fahrzeugs und des Zielfahrzeugs (sofern zutreffend), Fahrernummer, Kontonummer, Telefonnummer, Benutzerbild, Profildaten sowie Telefonverbindung, Bluetooth-Einstellungen, Datums- und Uhrzeiteinstellungen, allgemeine Einstellungen, Audio-Einstellungen, Anzeigeeinstellungen, Spracherkennungseinstellungen, Radioeinstellungen, Fahrzeugeinstellungen, Navigationseinstellungen und Points of Interest (POI).
+
+Wir verarbeiten Ihre personenbezogenen Daten zu diesen Zwecken im Rahmen der Erbringung unserer Dienste (Art. 6 (1) b) DSGVO).
+
+4.4.8. Nutzung von Touch ID und Face ID (iOS) bzw. Fingerabdruck- und Gesichterkennung (Android)
+Bestimmte Funktionen unserer App können Sie mit Touch ID oder Face ID (iOS) bzw. Fingerabdruck- und Gesichtserkennung (Android) anstelle der PIN-Eingabe nutzen.
+
+Ihre biometrischen Daten werden ausschließlich lokal auf Ihrem Smartphone gespeichert und nicht an uns übermittelt. Wir haben keinen Zugriff auf diese Daten. Ausschließlich die Information, ob die Verifizierung der biometrischen Daten erfolgreich war, wird mittels einer Systemfunktion Ihres Smartphones an uns übermittelt.
+
+Sie können die Nutzung von Touch ID oder Face ID (iOS) bzw. Fingerabdruck- und Gesichtserkennung (Android) jederzeit in unserer App deaktivieren.
+
+4.4.9. Firebase Crashlytics
+Um die Sicherheit und Stabilität unserer App und Services zu verbessern, nutzen wir Analysen aus anonymisierten Absturzberichten. Zu diesem Zweck verwenden wir „Firebase Crashlytics“, ein Service von Goole Ireland Ltd., Google Building Gordon House, Barrow Street, Dublin 4, Irland.
+
+Zur Bereitstellung anonymisierter Absturzberichte sammelt Firebase Crashlytics im Falle eines Absturzes oder Fehlers unserer App die folgenden Daten und leitet diese ggf. an Google-Server in den USA weiter: Zustand der App zum Zeitpunkt des Absturzes, UUID der Installation, Hintergründe Absturzes, Hersteller und Betriebssystem des Mobilgeräts und letzte Log-Meldungen. Der an uns bereitgestellte Absturzbericht enthält keine personenbezogenen Daten, sodass es nicht möglich ist, die Identität eines Benutzers zu ermitteln. Firebase Crashlytics bewahrt die gesammelten Daten für einen Zeitraum von 90 Tagen auf.
+
+Die Verarbeitung personenbezogener Daten zu diesen Zwecken basiert auf unserem berechtigten Interesse, die Sicherheit und Stabilität unserer App und Services zu gewährleisten (Art. 6 (1) f) DSGVO).
+
+Weitere Informationen zu Firebase Crashlytics und zur Verarbeitung Ihrer personenbezogenen Daten durch Google finden Sie unter den folgenden Links:
+
+https://firebase.google.com/
+https://firebase.google.com/terms/crashlytics/
+https://firebase.google.com/support/privacy/
+
+4.4.10. Genesis Digital Key 2 (Digitaler Schlüssel von Genesis)
+Mit der Funktion Genesis Digital Key 2 können Sie Ihr Fahrzeug mit Ihrem Smartphone oder anderen Smart Devices entriegeln, verriegeln, starten und fahren, ohne einen physischen Fahrzeugschlüssel bei sich führen zu müssen. Sie können Ihre Genesis Digital Keys mit Geräten von Familienangehörigen und Freunden teilen.
+
+Für die korrekte Authentifizierung und Zuordnung der Genesis Digital Keys zu den verschiedenen Smart Devices und zur Gewährleistung der Sicherheit der verwendeten Dienste und Systeme werden die folgenden Kategorien personenbezogener Daten verarbeitet:
+
+Informationen zum Benutzer (z. B. Benutzer-ID, Profilname, E-Mail-Adresse, Telefonnummer), Informationen zum Smart Device (Geräte-ID, Gerätename, Geräteart, Betriebssystemversion, App-Version), Informationen zum Genesis Digital Key 2 (ID des Genesis Digital Key, Status des Genesis Digital Key, Art des Genesis Digital Key, Zugangsberechtigung/-profil, Fahrzeug-ID, ID der physischen Fahrzeugschlüssel, Anzahl geteilter Schlüssel); bei geteilten Genesis Digital Keys: zusätzliche Angaben wie Start- und Enddatum (oder festgelegter Zeitraum) der Nutzung des Genesis Digital Key, Name des Benutzers des geteilten Genesis Digital Key, von Ihnen angegebene Richtlinie für die Benutzerauthentifizierung / Berechtigungsprofil, Diagnoseinformationen (Fehlercodes) und Informationen zum Fahrzeugstatus.
+
+Bei Verwendung des Genesis Digital Key 2 (z. B. beim Verriegeln, Entriegeln oder Starten des Fahrzeugs) werden Daten über Near-Field Communication (NFC) oder Ultrabreitband (UWB) zwischen dem Mobilgerät und dem Fahrzeug übertragen. Diese Daten werden nicht an Genesis oder Vertriebspartner übermittelt.
+Wir verarbeiten Ihre personenbezogenen Daten zum Zweck der Bereitstellung unserer Dienste (Art. 6 (1) b) DSGVO).
+
+4.5. Produktverbesserung und -entwicklung:
+Genesis erhebt und verarbeitet Telematikdaten in Bezug auf die Leistung, die Nutzung, den Betrieb und den Zustand des Fahrzeugs, die aus Ihrem Fahrzeug und/oder Ihrer App stammen, zum Zweck der Verbesserung und Entwicklung der Genesis-Produkte und überträgt diese Daten an Genesis für die Verarbeitung der Daten zu diesen Zwecken durch Genesis.
+Bei den Daten, die für diese Zwecke genutzt werden, handelt es sich grundsätzlich um technische Daten.
+Die für die Verbesserung und Entwicklung von Antriebsstrang, Elektrofahrzeugen und sonstigen Fahrzeugfunktionen genutzten Daten umfassen ABS, ABS-Status, Lenkradstatus, Feststellbremse, Antriebsschlupfregelung, Kombiinstrument-Informationen, Gurt, Beschleunigung, Batteriezustand, Türverriegelung, Hauptscheinwerfer, Blinksignal, Lichtsystem, berührungsloses Kofferraumsystem, Sitzhöhe, Schiebedach, Scheibenwischer, Navigation ein/aus und ähnliche technische Daten und Fehlercodes, die in Abschnitten 4.3.3 und 4.3.4 aufgeführt sind.
+Für eine effizientere Datenanalyse sind wir berechtigt, zusätzliche Informationen zu erheben, die die Identifizierung einer natürlichen Person ermöglichen (z. B. FIN, Kontound Abonnementdaten sowie, falls relevant und aktiviert, GPS-Informationen). Wir verarbeiten diese Daten für die oben genannten Zwecke und um Ihnen personalisierte Informationen über Ihre Nutzung unserer Dienste zur Verfügung zu stellen.
+Die rechtliche Grundlage für die Verarbeitung Ihrer Daten für diese Zwecke ist das berechtigte Interesse von Genesis im Hinblick auf die Verbesserung der Dienste und die Entwicklung neuer Produkte und Dienste (Art. 6 (1) f) DSGVO; z. B. zur Identifikation technischer Fehlfunktionen, Analyse der Leistung der Fahrzeuge und Bereitstellung erweiterter Produkte oder Kundendienste).
+
+4.6. Datenverarbeitung zu Werbezwecken für ähnliche Waren und Dienste:
+Wir sind berechtigt, Ihre personenbezogen Daten, die wir direkt von Ihnen oder bei Ihrer Registrierung für unsere Dienste erhalten, zu Werbezwecken für ähnliche Produkte und/oder Dienste von uns zu verwenden (z. B. um Sie über neue Dienste oder andere ähnliche Dienste von Genesis zu informieren), sofern Sie einer solchen Nutzung nicht widersprechen. Die Rechtsgrundlage für die Verarbeitung ist Art. 6 (1) (f) DSGVO (unser berechtigtes Interesse, Sie zu informieren und unsere Dienste zu bewerben). Sie können einer solchen Nutzung jederzeit und kostenlos widersprechen, indem Sie in der jeweiligen Mitteilung auf den Link zum Abmelden klicken oder sich an den in Abschnitt 3 angegebenen Ansprechpartner wenden.
+
+5. Was gilt für Daten anderer betroffener Personen und für den Verkauf und die Überlassung des Fahrzeugs an Dritte?
+
+Wenn Sie das Fahrzeug einer anderen Person überlassen oder bei der Nutzung der Dienste ggf. die Daten von anderen betroffenen Personen (z. B. Mitfahrern) erhoben werden, müssen Sie sicherstellen, dass die betroffenen Personen angemessen über die hier dargelegte Datenverarbeitung informiert sind.
+
+Stellen Sie bei einem Verkauf oder der dauerhaften Überlassung des Fahrzeugs an einen Dritten sicher, dass der Zugriff auf Ihre personenbezogenen Daten über das Infotainmentsystem nicht möglich ist (z. B. durch Löschen von Fahrtdaten oder Zielorten in den Einstellungen).
+
+Sie können das Fahrzeug durch die Deaktivierung von Genesis Connected Serivces im Infotainmentsystem von der GCS-App trennen (dies gilt sowohl für Ihre App als auch für die App einer anderen Person).
+
+Durch die Deaktivierung von Genesis Connected Services im Infotainmentsystem werden Ihre Fahrtdaten in der Anwendung nicht mehr angezeigt und Ihr Fahrzeug wird von der GCS-App getrennt.
+
+Wenn Sie das Fahrzeug nicht von der App trennen, ist der Zugriff auf die Daten ggf. weiterhin über die App möglich.
+
+Ihre Kontodaten in der Anwendung werden erst beim Löschen Ihres Kontos gelöscht.
+
+6. Mit wem werden meine Daten geteilt?
+
+Aufgrund unserer Funktion als gemeinsame Verantwortliche in Bezug auf das Angebot der Services erhält Genesis Ihre personenbezogenen Daten. Der Zugriff auf Ihre personenbezogenen Daten bei Genesis ist auf diejenigen Personen beschränkt, die diese Daten zur Erfüllung ihrer Aufgaben benötigen.
+
+Ihre personenbezogenen Daten können für die jeweiligen Zwecke an die unten aufgeführten Empfänger und Empfängerkategorien übertragen und von diesen Empfängern für die jeweiligen Zwecke verarbeitet werden:
+
+Sonstige private Dritte – Wir übertragen Ihre personenbezogenen Daten bestimmten privaten Rechtspersonen die uns beim Anbieten unserer Dienste unterstützen. Beispielsweise nehmen wir Telekommunikationsdienste von Telekommunikationsanbietern in Anspruch. Ihre Daten können auch mit unserem Netzwerk autorisierter Reparaturbetriebe geteilt werden, wenn dies für Wartungsdienste erforderlich ist.
+
+Auftragsverarbeiter – Wir übermitteln Ihre personenbezogenen Daten an bestimmte Dritte, unabhängig davon, ob es sich um verbundene oder nicht verbundene Unternehmen handelt, die Ihre Daten im Auftrag von Genesis gemäß den entsprechenden Anweisungen verarbeiten, soweit dies für die jeweiligen Verarbeitungszwecke erforderlich ist. Die Auftragsverarbeiter sind vertraglich verpflichtet, angemessene technische und organisatorische Sicherheitsmaßnahmen zum Schutz der personenbezogenen Daten zu ergreifen und Ihre personenbezogenen Daten ausschließlich auf Anweisung zu verarbeiten.
+
+a) Für Genesis Connected Services ist der Auftragsverarbeiter: Hyundai Autoever Europe, Kaiserleistraße 8A, 63067 Offenbach am Main.
+
+b) Für Genesis Live und den Ferndienst „Finde mein Fahrzeug“ sind die Auftragsverarbeiter: Hyundai Autoever Europe, Kaiserleistraße 8A, 63067 Offenbach am Main (z. B. für Hosting und Support).
+
+c) Für die Spracherkennung sind die Auftragsverarbeiter: Cerence B.V. Netherlands, Olympia 2 D, 1213 NT Hilversum, Niederlande (z. B. Service-Bereitstellung); Hyundai Autoever Europe, Kaiserleistraße 8A, 63067 Offenbach am Main, Deutschland (z. B. für den Betrieb relevanter Anwendungen und für Support).
+
+d) Für die technische Bereitstellung der OTA Aktualisierungen für das Fahrzeugsystem und für die Sicherstellung der technischen Abläufe im Zusammenhang mit der Datenanalyse zum Zwecke der Produktverbesserung und -entwicklung werden folgende Auftragsverarbeiter eingesetzt: Hyundai Motor Company, 12, Heolleung-ro, Seocho-gu, Seoul, Republik Korea.
+
+e) Für Callcenter-Dienste ist der Auftragsverarbeiter: Webhelp Holding Germany GmbH, Tullnaustraße 20, 90402 Nürnberg.
+
+f) Die Auftragsverarbeiter für Callcenter-Dienste sind verbundene Unternehmen von Genesis, die sämtlich auf dem Gebiet der EU bzw. des EWR ansässig sind.
+
+g) Diese Auftragsverarbeiter können für die Bereitstellung der entsprechenden Dienste auch Unterauftragsverarbeiter beauftragen.
+
+h) Regierungsbehörden, Gerichte, externe Berater und vergleichbare öffentliche Einrichtungen, soweit nach geltendem Recht zulässig und erforderlich.
+
+7. Werden meine Daten ins Ausland übermittelt?
+
+Zu den in Abschnitt 6 genannten Zwecken übermitteln wir Ihre Daten aus der EU/des EWR bzw. der Schweiz an Hyundai-Unternehmen mit Sitz in der Republik Korea.
+Nach den Feststellungen der Europäischen Kommission gehört die Republik Korea zu den Ländern, die ein angemessenes Schutzniveau für personenbezogene Daten bieten.
+
+Einige der anderen Empfänger Ihrer personenbezogenen Daten sind außerhalb Ihres Landes und des Gebiets der EU bzw. des EWR ansässig oder haben möglicherweise Niederlassungen außerhalb Ihres Landes und der EU bzw. des EWR, z. B. in den Vereinigten Staaten von Amerika (z. B. Unterauftragsverarbeiter von Cerence), wo die Datenschutzgesetze ggf. ein anderes Schutzniveau aufweisen als die Gesetze im Land Ihres Wohnsitzes und für die keine Angemessenheitsentscheidung der Europäischen Kommission vorliegt und/oder für die möglicherweise kein Angemessenheitsbeschluss des Bundesrates vorliegt.
+
+Bei einer Datenübermittlung an diese Empfänger außerhalb des Gebiets der EU bzw. des EWR sichern wir angemessene Garantien zu. Dies erfolgt hauptsächlich durch den Abschluss von Datenübermittlungsverträgen mit den jeweiligen Empfängern, welche von der Europäischen Kommission verabschiedete Standardklauseln enthalten, oder durch sonstige Maßnahmen zur Gewährleistung eines angemessenen Datenschutzniveaus.
+
+Eine Kopie der jeweils von uns ergriffenen Maßnahme ist über den Datenschutzbeauftragten von Genesis erhältlich (siehe Abschnitt 3.2).
+
+8. Wie lange werden meine Daten gespeichert?
+
+8.1. Ihre personenbezogenen Daten werden von Genesis und/oder unseren Dienstleistern in Übereinstimmung mit den geltenden Datenschutzgesetzen ausschließlich in dem Umfang gespeichert, der für die Erfüllung unserer Verpflichtungen erforderlich ist, sowie ausschließlich über den Zeitraum, der zur Erfüllung der Zwecke der Erhebung Ihrer personenbezogenen Daten erforderlich ist.
+
+In keinem Fall werden Ihre personenbezogenen Daten nach der Kündigung Ihres Kontos weiter gespeichert.
+
+Ist die Verarbeitung Ihrer personenbezogenen Daten durch Genesis zur Erfüllung jener Zwecke nicht mehr erforderlich, löschen wir sie aus unseren Systemen und/oder Datensätzen und/oder unternehmen die entsprechenden Schritte zur ordnungsgemäßen Anonymisierung dieser Daten, damit Sie anhand dieser Daten nicht mehr identifizierbar sind (sofern wir Ihre Daten im Hinblick auf unsere gesetzlichen oder behördlichen Verpflichtungen, denen Genesis unterliegt, nicht aufbewahren müssen, z. B. können in Verträgen, Mitteilungen und Geschäftsbriefen enthaltene personenbezogene Daten gesetzlichen Aufbewahrungspflichten unterliegen, die eine Aufbewahrung von bis zu zehn (10) Jahren vorsehen).
+
+8.2. Für die folgenden Punkte gibt es spezielle Aufbewahrungszeiten:
+
+Spracherkennung: Sprachproben und GPS-Koordinaten (siehe Abschnitt 4.3.2 oben) werden bis zu 90 Tage lang gespeichert
+
+Genesis Live: Geolokalisierungsdaten (GPS-Koordinaten) und Service-ID (siehe Abschnitt 4.3.1 oben) werden bis zu 93 Tage lang gespeichert.
+Meine Fahrten: Die unter Meine Fahrten bereitgestellten Informationen über Ihre Fahrzeugnutzung sind bis zu 90 Tage lang verfügbar.
+
+8.3. Deaktivierung von Diensten
+Sie können bestimmte Dienste im Menü der App unter „Service-liste“ separat aktivieren bzw. deaktivieren.
+
+8.4. Kündigung des Kontos
+Wenn Sie sich entscheiden, Ihr Konto zu kündigen (z. B. durch Vornahme der entsprechenden Einstellung im Infotainmentsystem des Fahrzeugs oder im Menü der GCS-App unter „Meine Seite – Mein Konto“), werden alle mit Ihrem Konto verbundenen personenbezogenen Daten gelöscht, sofern keine Speicherzeiträume Anwendung finden (siehe Abschnitt 8.1).
+
+9. Welche Rechte habe ich, und wie übe ich sie aus?
+
+Sie können Ihre Einwilligung zur Verarbeitung Ihrer personenbezogenen Daten jederzeit mit Wirkung für die Zukunft widerrufen.
+
+Ein solcher Widerruf hat keinen Einfluss auf die Rechtmäßigkeit der Verarbeitung vor dem Zeitpunkt des Widerrufs Ihrer Zustimmung.
+
+Der Vertriebspartner agiert als Ansprechpartner für alle Anfragen von betroffenen Personen zur Verarbeitung von personenbezogenen Daten gemäß dieser Datenschutzerklärung und dem zugehörigen Anhang.
+
+Sie bleiben jedoch weiterhin berechtigt, von Ihren Rechten nach der DSGVO und nationalen Datenschutzgesetzen Gebrauch zu machen, und zwar in Bezug auf und gegenüber allen betreffenden Verantwortlichen.
+
+In Übereinstimmung mit dem geltenden Datenschutzgesetz haben Sie die folgenden Rechte in Bezug auf die Verarbeitung Ihrer personenbezogenen Daten.
+Beachten Sie, dass diese Rechte nach dem geltenden nationalen Datenschutzgesetz ggf. eingeschränkt sind.
+
+9.1. Auskunftsrecht: Sie haben das Recht, von uns eine Bestätigung darüber einzuholen, ob personenbezogene Daten mit Bezug zu Ihrer Person verarbeitet werden oder nicht, und, wo dies der Fall ist, Zugriff auf Ihre personenbezogenen Daten zu verlangen. Zu solchen Informationen gehören – unter anderem – die Zwecke der Verarbeitung, die Kategorien Ihrer personenbezogenen Daten, und die Empfänger oder Kategorien von Empfängern, denen Ihre personenbezogenen Daten offengelegt wurden oder werden. Dies ist jedoch kein absolutes Recht, und die Interessen anderer Personen können Ihr Zugriffsrecht beschränken.
+
+Sie haben auch das Recht, eine Ausfertigung derjenigen personenbezogenen Daten über Ihre Person zu verlangen, die verarbeitet werden. Für weitere Ausfertigungen, die von Ihnen verlangt werden, können wir eine angemessene Gebühr auf der Grundlage von Verwaltungskosten erheben.
+
+9.2. Recht auf Berichtigung: Sie haben das Recht auf Berichtigung unrichtiger personenbezogener Daten zu Ihrer Person. Je nach Zweck der Verarbeitung haben Sie das Recht, unvollständige personenbezogene Daten aktualisieren zu lassen, einschließlich durch Abgabe einer ergänzenden Erklärung.
+
+9.3. Recht auf Löschung ("Recht auf Vergessenwerden“): Unter bestimmten Umständen haben Sie das Recht auf Löschung Ihrer personenbezogenen Daten, und wir sind möglicherweise verpflichtet, Ihre personenbezogenen Daten zu löschen.
+
+9.4. Recht auf Einschränkung der Verarbeitung: Unter bestimmten Umständen haben Sie das Recht, die Verarbeitung Ihrer personenbezogenen Daten einschränken zu lassen. In diesem Fall werden die jeweiligen Daten markiert und dürfen von uns nur für bestimmte Zwecke verarbeitet werden.
+
+9.5. Recht auf Datenübertragbarkeit: Unter bestimmten Umständen haben Sie möglicherweise das Recht, eine Kopie Ihrer personenbezogenen Daten, die Sie uns bereitgestellt haben, in einem strukturierten, gängigen und maschinenlesbaren Format zu erhalten. Sie haben das Recht, diese Daten an ein anderes Unternehmen ohne Behinderung durch uns zu übermitteln oder direkt von uns übermitteln zu lassen.
+
+9.6. Widerspruchsrecht: Unter bestimmten Umständen haben Sie das Recht, aus Gründen, die sich auf Ihre besondere Situation beziehen, jederzeit der Verarbeitung Ihrer personenbezogenen Daten zu widersprechen, und wir werden dazu verpflichtet sein, Ihre personenbezogenen Daten nicht weiter zu verarbeiten. Wenn Ihre personenbezogenen Daten für Direktmarketingzwecke verarbeitet werden, haben Sie das Recht, der Verarbeitung Ihrer personenbezogenen Daten für solches Marketing jederzeit zu widersprechen, einschließlich der Profilierung, soweit diese im Zusammenhang mit solchem Direktmarketing steht. In diesem Fall werden Ihre personenbezogenen Daten von uns nicht mehr für solche Zwecke verarbeitet.
+
+9.7. Recht auf Beschwerde: Sie haben außerdem das Recht, eine Beschwerde bei der zuständigen Aufsichtsbehörde für Datenschutz in Ihrem Herkunftsland einzureichen. Weitere Einzelheiten erhalten Sie von Ihrer zuständigen Datenschutzbehörde: https://edpb.europa.eu/about-edpb/board/members_de
+
+10. Bin ich verpflichtet, meine Daten anzugeben?
+
+Sie sind nicht gesetzlich oder vertraglich verpflichtet, uns Ihre personenbezogenen Daten zur Verfügung zu stellen.
+
+Ferner sind Sie nicht zur Bereitstellung Ihrer personenbezogenen Daten verpflichtet, um einen Vertrag abzuschließen. Wenn Sie Ihre personenbezogenen Daten jedoch nicht bereitstellen, ist die Nutzbarkeit unserer Dienste für Sie ggf. eingeschränkt.
+
+11. Kann ich den Online-Modus deaktivieren (Offline-Modus; Modem aus)?
+
+Sie können den Online-Modus deaktivieren, indem Sie die entsprechende Einstellung vornehmen. Wenn der Online-Modus ausgeschaltet ist (Offline-Modus), sind alle Funktionen des Genesis Connected Services deaktiviert und keine personenbezogenen Daten, insbesondere keine Geolokalisierungsdaten (GPS-Koordinaten), werden für den Genesis Connected Service erfasst und ein Symbol für den Offline-Modus wird oben auf dem Bildschirm des Infotainmentsystems im Fahrzeug angezeigt.
+
+12. Wie kann diese Datenschutzrichtlinie geändert werden?
+
+Wir können diese Datenschutzrichtlinie in der Zukunft hin und wieder ändern und/oder ergänzen. Solche Änderungen und/oder Ergänzungen können vor allem wegen des Einsatzes neuer Technologien oder der Einführung neuer Dienste notwendig werden.
+
+Wir veröffentlichen die Änderungen auf unseren Websites und/oder im Infotainmentsystem Ihres Fahrzeugs sowie in der GCS-App.
+
+[ANHANG – Datenverarbeitung in gemeinsamer Verantwortung mit Hyundai Motor Company]
+
+Dieser Anhang enthält Informationen zur Erhebung und Verarbeitung Ihrer personenbezogenen Daten im Zusammenhang mit der Bereitstellung individueller Services, bei denen wir ggf. zusammen mit verbundenen Unternehmen als gemeinsamer Verantwortlicher auftreten.
+
+Sofern in diesem Anhang keine besonderen Informationen bereitgestellt werden, gelten die allgemeinen Informationen und Regelungen aus der Datenschutzerklärung auch für diesen Anhang.
+
+1. Wer trägt die Verantwortung für die Verarbeitung meiner Daten?
+
+Wir, Genesis, treten zusammen mit Hyundai Motor Company, mit Sitz in 12, Heolleung-ro, Seocho-gu, Seoul, Republik Korea, zu den folgenden Zwecken als gemeinsame Verantwortliche auf:
+
+um angemessene Cybersicherheitsstandards für unsere Fahrzeuge und Produkte zu gewährleisten
+
+1.1. Cybersicherheit
+Sobald Sie die Services aktivieren, werden wir die angemessenen Cybersicherheitsstandards unserer Fahrzeuge und Produkte verwalten und überwachen.
+
+Wir sind gemäß den Festlegungen aus Abschnitt 2 der Datenschutzerklärung verantwortlich und sammeln und übermitteln Ihre Daten an Hyundai Motor Company.
+
+Hyundai Motor Company überwacht die Cybersicherheitsstandards unserer Fahrzeuge und Produkte aus betrieblicher und technischer Sicht und nutzt Ihre personenbezogenen Daten für die unten beschriebenen Zwecke.
+
+2. Wie kann ich mit dem Verantwortlichen und dem Datenschutzbeauftragten Kontakt aufnehmen?
+
+Bei Fragen in Bezug auf der in Zusammenhang mit diesem Anhang und zur Ausübung Ihrer Rechte wenden Sie sich bitte an Genesis. Kontaktdaten finden Sie in Abschnitt 3 der Datenschutzerklärung.
+Alternativ können Sie Ihre Rechte als betroffene Person gegenüber der Hyundai Motor Company geltend machen. Wenden Sie sich in diesem Fall an Genesis Motor Swtizerland AG als Vertreter von Hyundai Motor Company gemäß Art. 14 revDSG:
+E-Mail: [email protected]
+Adresse: Genesis Motor Switzerland AG, Bahnhofstrasse 62, 8001 Zürich, Schweiz
+
+3. Welche Arten personenbezogener Daten werden zu welchen Zwecken und auf welcher rechtlichen Grundlage verarbeitet?
+
+3.1 Cybersicherheit
+Je nach der technischen Ausstattung Ihres Fahrzeugs sammeln und verarbeiten wir sicherheitsrelevante Daten zu Ihrem Fahrzeug, um angemessene Cybersicherheitsstandards in unseren Fahrzeugen und Produkten zu gewährleisten.
+
+Für diese Funktion werden die folgenden Arten personenbezogener Daten verarbeitet: Fahrzeug-Identifizierungsnummer (FIN) und Daten zu sicherheitsrelevanten Ereignissen (z. B. Zeitstempel des Sicherheitsereignisses und Daten von oder über die Komponente/Steuereinheit, von der das Sicherheitsereignis erfasst und festgestellt wurde).
+
+Die Daten werden in Ihrem Fahrzeug gesammelt und gespeichert. Bei Feststellung abnormaler Signale werden die Daten zu weiteren Analyse an unsere Systeme übermittelt. Es findet keine durchgängige Datenübermittlung aus Ihrem Fahrzeug statt.
+
+Sobald die Daten an unsere Systeme übermittelt wurden, verarbeiten und analysieren wir diese zum Zweck der Vermeidung von Cybersicherheitsrisiken und -bedrohungen, zur Reaktion auf und Beseitigung von erkannten Bedrohungen und Schwachstellen für Cybersicherheitsangriffe sowie zur Sicherstellung einer angemessenen Sicherheit unserer Fahrzeuge und Produkte.
+
+Sofern die Verarbeitung nicht zur Einhaltung unserer gesetzlichen Verpflichtungen im Zusammenhang mit Cybersicherheit (Art. 6 (1) c) DSGVO) erforderlich ist, ist die rechtliche Grundlage für die Verarbeitung Ihrer Daten das berechtigte Interesse von Genesis zur Überwachung unserer Fahrzeuge zum Zwecke der Gewährleistung und Verbesserung der Sicherheit unserer Produkte (Art. 6 (1) f) DSGVO).
+
+4. An wen werden meine Daten weitergegeben?
+
+Der Zugriff auf Ihre personenbezogenen Daten ist auf solche Personen beschränkt, die diese Daten zur Erledigung Ihrer Aufgaben benötigen.
+
+Ihre personenbezogenen Daten werden zu den jeweiligen Zwecken ggf. an die unten aufgeführten Empfänger oder Kategorien von Empfängern weitergegeben. Die Empfänger sind dazu berechtigt, die Daten zu den festgelegten Zwecken zu verarbeiten:
+
+Auftragsverarbeiter – Wir übermitteln Ihre personenbezogenen Daten an bestimmte mit uns verbundene oder nicht verbundene Dritte, die Ihre Daten im Auftrag der Verantwortlichen gemäß bestimmten Vorgaben verarbeiten, soweit dies für die jeweiligen Verarbeitungszwecke erforderlich ist. Die Auftragsverarbeiter werden vertraglich dazu verpflichtet, angemessene technische und organisatorische Sicherheitsmaßnahmen zum Schutz Ihrer personenbezogenen Daten zu ergreifen und Ihre personenbezogenen Daten nur gemäß Anweisung zu verarbeiten.
+Der Auftragsverarbeiter für GCS ist Hyundai AutoEver Europe GmbH, Kaiserleistraße 8A, 63067 Offenbach am Main, Deutschland.
+Der Auftragsverarbeiter für technischen Support und Instandhaltung der IT-Systeme im Hinblick auf die Gewährleistung angemessener Cybersicherheitsstandards ist Hyundai AutoEver Corp., 417 Yeongdong-daero Gangnam-gu Seoul, 06182 Republik Korea.
+
+5. Werden meine Daten ins Ausland übertragen?
+
+Die Hyundai Motor Company hat ihren Sitz in der Republik Korea und betreibt relevante Niederlassungen außerhalb Ihres Landes und der EU bzw. des EWR. In Zusammenhang mit der Verarbeitung Ihrer Daten gemäß den Vorgaben in diesem Anhang werden Ihre Daten in die Republik Korea übermittelt. Im Hinblick auf Datenübermittlungen in Länder ausserhalb der Schweiz treffen wir angemessene Sicherheitsvorkehrungen.
+
+6. Wie lange werden meine Daten gespeichert?
+
+Zusätzlich zu den Bestimmungen aus Abschnitt 8 der Datenschutzerklärung gelten bestimmte Speicherungsfristen:
+
+Ihr Fahrzeug speichert in regelmäßigen Abständen die letzten 100 generierten Sicherheitsereignisse. Bei Auftreten eines neuen Sicherheitsereignisses wird das älteste Sicherheitsereignis zusammen mit den zugehörigen Daten gelöscht.

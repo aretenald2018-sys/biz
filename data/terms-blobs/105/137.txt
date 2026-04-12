@@ -1,0 +1,383 @@
+Integritetspolicy
+
+Allmän Integritetspolicy
+
+Integritetspolicy avseende kundservice, kommunikation och vissa försäljningsrelaterade aktiviteter
+
+Bygg din bil
+
+Provkör
+
+Begär en offert
+
+Återförsäljare
+
+Inbytespris
+
+Prislista
+
+Dina rättigheter enligt Data Act
+EU:s Data Act, som träder i kraft den 12 september 2025, gäller för data som genereras av uppkopplade objekt (såsom våra fordon) och tillhörande tjänster (till exempel våra uppkopplade tjänster).
+
+Enligt EU:s Data Act är säljaren, uthyraren eller leasingsgivaren av fordonet skyldig att ge dig information som rör det uppkopplade fordonet.
+All obligatorisk information hittar du här: data-rights-en | Hyundai Connected Mobility
+
+Om du har några frågor kring dina rättigheter enligt EU:s Data Act, vänligen kontakta Hyundai Connected Mobility GmbH, som inom Hyundai-koncernen i Europa är den så kallade data holder enligt Data Act, på data-services.support@hyundai-europe.com
+
+1. Vad handlar denna Integritetspolicy om?
+Skyddet av dina personuppgifter är viktigt för oss och vi vill ge dig transparent information om hur vi använder dina personuppgifter. Syftet med denna Integritetspolicy är att ge dig en översikt över insamlingen och behandlingen av dina personuppgifter i samband med kundtjänst och kommunikation (inklusive marknadsföring och marknadsundersökningar). Denna integritetspolicy beskriver också hur vi behandlar dina personuppgifter när vi i vissa fall säljer våra produkter och tjänster till dig.
+
+Denna Integritetspolicy gäller för personuppgifter som vi samlar in för de ändamål som beskrivs nedan.
+
+Du är inte skyldig att tillhandahålla dina personuppgifter. Dina personuppgifter kan däremot vara nödvändiga för tillhandahållandet av vissa tjänster och funktioner och, i förekommande fall, för att ingå, verkställa och fullgöra våra avtal med dig. Utan dina personuppgifter kan vi komma att inte kunna tillhandahålla alla begärda tjänster eller bedriva vår försäljningsverksamhet.
+
+2. Vem är ansvarig för behandlingen av mina uppgifter?
+Personuppgiftsansvarig för personuppgifter som samlas in och behandlas enligt denna Integritetspolicy är:
+
+Hyundai Motor Sweden AB
+Organisationsnummer: 559441-2529
+Telegrafgatan 8A, 169 72 Solna, Sverige
+Du kan kontakta oss genom att skriva till oss på ovanstående adress eller via e-post: legal@hyundai.se.
+Hyundai Motor Sweden kommer att refereras till som “Hyundai”, “vi”, “vår” eller “oss” i denna Integritetspolicy.
+
+3. Hur kan jag kontakta den personuppgiftsansvarige?
+Om du har några frågor om eller i samband med denna Integritetspolicy eller vill lämna ett klagomål på hur vi hanterar dina personuppgifter eller om du vill utöva någon utav dina rättigheter (se avsnitt 8 nedan), vänligen kontakta oss genom att använda de kontaktuppgifter som anges i avsnitt 8.7. Om du vill klaga till en behörig dataskyddsmyndighet, se avsnitt 8.7.
+
+4. Vilka kategorier av personuppgifter behandlas, för vilka ändamål och på vilken rättslig grund?
+Följande information beskriver hur vi behandlar dina personuppgifter i två huvudsakliga situationer: interaktioner som inte involverar försäljningsaktiviteter (beskrivs i avsnitt I och II nedan) och interaktioner som involverar försäljningsaktiviteter som utförs direkt av oss (beskrivs i avsnitt III nedan).
+
+I. KOMMUNIKATION, MARKNADSFÖRING OCH MARKNADSUNDERSÖKNING
+4.1. Nyhetsbrev
+Vi erbjuder dig möjligheten att prenumerera på nyhetsbrev om du vill få reklam om våra fordon samt inbjudningar och information om produktlanseringar och information om våra befintliga eller nya produkter och tjänster, även baserat på ditt geografiska område.
+Ändamål med behandlingen
+För att kommunicera med dig via nyhetsbrev.
+De personuppgifter som behandlas
+· Namn;
+· Efternamn;
+· E-post.
+Rättslig grund för behandlingen
+Ditt samtycke (Artikel 6.1 a i GDPR).
+Hur länge behandlingen sker
+Tills du avslutar prenumerationen, dock högst två år.
+Kategorier av registrerade
+· Potentiella kunder;
+· Kunder;
+· Representanter för företagskunder.
+
+4.2. Marknadsföring och personlig kommunikation
+När du prenumererar på marknadsföringskommunikation och/eller personlig kommunikation behandlar vi dina personuppgifter endast för de ändamål som omfattas av ditt samtycke (Artikel 6.1 a i GDPR), till exempel:
+· Marknadsföringskommunikation
+Från tid till annan kommer vi att skicka informativ kommunikation om Hyundais produkter och tjänster, erbjudanden och evenemang (t.ex. om Hyundai-produkter och -tjänster som du har köpt eller kan vara intresserad av att köpa, evenemang och erbjudanden som du kan vara intresserad av att delta i).
+· Personlig kommunikation
+Från tid till annan kommer vi att skicka relevant och personlig kommunikation om Hyundais produkter och tjänster, erbjudanden och evenemang (inklusive bland annat Hyundai-produkter, tjänster, evenemang och erbjudanden, inklusive bland annat köp, hyra och leasing av bilar samt köp av biltillbehör, reservdelar, bilförsäkring, bilfinansiering och bilservice) samt inbjudningar till marknadsundersökningar och enkäter till dig via e-post, post, telefon och meddelandetjänster, baserat på dina preferenser och ditt beteende samt din användning av Hyundai-produkter och -tjänster.
+För detta ändamål kommer vi att skapa en individuell kundprofil för dig för att skicka relevant och personlig kommunikation till dig. Observera att vi för att personanpassa din kommunikation kan använda procedurer för att analysera dina preferenser och intressen samt din användning av våra produkter och tjänster. Du hittar mer information i avsnittet ”Dataanalys och segmentering för att optimera och personanpassa våra marknadsföringsaktiviteter”.
+· Kommunikation som bedrivs av våra auktoriserade återförsäljare och reparatörer
+Vi kan överföra din individuella kundprofil till Hyundais nätverk av återförsäljare och auktoriserade verkstäder (antingen din valda återförsäljare eller reparatör, eller de som ligger nära dig), som använder dina personuppgifter för samma ändamål och kan skicka marknadsföringskommunikation och/eller personlig kommunikation som är relevant för dig. I sådana fall kommer återförsäljaren och verkstaden att behandla dina personuppgifter som separata personuppgiftsansvariga. Du kan kontakta dem för att få mer information om hur de behandlar dina personuppgifter.
+Ändamål med behandlingen
+
+Marknadskommunikation
+Personlig kommunikation
+Kommunikation som bedrivs av våra auktoriserade återförsäljare och reparatörer
+
+De personuppgifter som behandlas
+· Dina kontaktuppgifter och identifieringsuppgifter
+· Din kundhistorik;
+· Information om din användning av våra appar/webbplats/sociala medier;
+· Data om fordonsanvändning;
+· Interaktioner med oss, till exempel på mässor och evenemang.
+Rättslig grund för behandlingen
+Ditt samtycke (Artikel 6.1 a, GDPR).
+Hur länge behandlingen sker
+Tills du avslutar prenumerationen, men högst 2 år.
+Kategorier av registrerade
+· Potentiella kunder;
+· Kunder;
+· Representanter för företagskunder.
+Din rätt att återkalla ditt samtycke
+Du kan när som helst kostnadsfritt återkalla ditt samtycke med verkan för framtiden via länken ”Avsluta prenumerationen” som finns i varje nyhetsbrev/personlig reklam-e-post eller via följande e-postadress: legal@hyundai.se
+
+Så snart du avregistrerar dig från nyhetsbrevet/den personanpassade reklamen kommer dina personuppgifter som du har lämnat för nyhetsbrevet/den personanpassade reklamen att raderas, med undantag för din e-postadress som kommer att lagras i en e-postlista för att dokumentera att du inte vill ta emot vår marknadskommunikation, eller om andra lagstadgade lagringstider gäller.
+
+4.3. Marknadsundersökningar
+Från tid till annan kommer vi att skicka inbjudningar till dig via e-post, post, telefon och meddelandetjänster om att delta i marknadsundersökningar (inklusive enkäter) som kan vara av intresse för dig. Deltagande är frivilligt och kan handla om att få reda på din nöjdhet med våra produkter och tjänster, faktorer som är viktiga för dig när du köper fordon och feedback om hur vi kan förbättra vår kundservice.
+Vi kan då och då ta emot personuppgifter (som beskrivs i detta avsnitt) från auktoriserade återförsäljare och reparatörer (som personuppgiftsansvariga) som du har haft kontakt med, för att vi ska kunna genomföra marknadsundersökningar och följa upp med dig baserat på ditt svar. Vi tar endast emot sådana personuppgifter i den utsträckning som detta är tillåtet enligt dataskyddslagstiftningen.
+Ändamål med behandlingen
+· Att genomföra marknadsundersökningar
+· För att följa upp ditt svar på marknadsundersökningen
+De personuppgifter som behandlas
+· Grundläggande kontaktuppgifter: t.ex. förnamn, efternamn, e-postadress, telefonnummer, land, region;
+· De Hyundai-produkter och -tjänster som du har köpt och visat intresse för;
+· Information som lämnats i undersökningen och resultaten av denna.
+Rättslig grund för behandlingen
+Vårt berättigade intresse (Artikel 6(1)(f), GDPR) som är:
+· Att bjuda in dig att delta i marknadsundersökningar som inte är relaterade till marknadsföringsaktiviteter.
+· Upprätthålla och förbättra kvaliteten på kundservicen och förbättra kundupplevelsen.
+· Inhämta feedback om nöjdhet och upplevelse hos våra auktoriserade återförsäljare och reparatörer.
+· Följa upp med dig angående det svar du har lämnat i marknadsundersökningen.
+Du kan när som helst och utan kostnad invända mot sådan användning av dina personuppgifter.
+Hur länge behandlingen sker
+6 månader från det att personuppgifterna samlades in.
+Kategorier av registrerade
+· Potentiella kunder;
+· Kunder;
+· Representanter för företagskunder.
+
+4.4. Dataanalys och segmentering för att optimera och personanpassa våra marknadsföringsaktiviteter
+För att optimera våra marknadsföringsaktiviteter och anpassa kommunikationen kan vi använda procedurer och system för dataanalys och segmentering. Vi vill ge dig meningsfull information om logiken bakom detta, samt betydelsen och de förväntade konsekvenserna av sådan behandling.
+
+För ovanstående ändamål kommer vi att skapa en enhetlig kundprofil av dig som underlag för våra marknadsföringsaktiviteter, i synnerhet för att mäta och förstå effektiviteten av vår reklam och kommunikation samt för att förse dig med relevant kommunikation om våra produkter och tjänster som är anpassade efter dina behov. För att skapa en sådan kundprofil kombinerar vi dina preferenser och intressen med information från din användning av våra produkter och tjänster, såsom din servicehistorik och din interaktion med våra återförsäljare, auktoriserade reparatörer och servicenätverk, din interaktion med marknadsförings- och CRM-kampanjer (kundrelationshantering) och evenemang, ditt onlinebeteende och din användning av webbplatser och appar och/eller dina fordonsdata.
+När dina uppgifter har sammanförts till en komplett kundprofil använder vi dessa uppgifter i våra system för att genomföra prediktiv poängsättning med hjälp av vetenskapligt erkända matematiska och statistiska metoder. Prediktiv poängsättning är användningen av data, algoritmer och maskininlärningstekniker för att tilldela poäng till olika segment baserat på dina data. Dessa segment hjälper oss att enkelt visualisera de viktigaste egenskaperna och beteendena som driver våra marknadsföringsaktiviteter. När din kundprofil är dedikerad till specifika kundsegment kan vi kontrollera typen, innehållet och frekvensen av våra marknadsföringsaktiviteter för att säkerställa att du får kommunikation som är relevant för dig.
+
+Betydelsen och effekterna av vår dataanalys och segmentering är begränsade till skapandet av målgrupper för våra marknadsföringsaktiviteter. Detta kan leda till att du får eller inte får viss kommunikation till skillnad från andra kunder.
+Under behandlingen kommer uppgifterna att användas i aggregerad form (där det är möjligt) och/eller identifierarna kommer att krypteras för att öka säkerheten vid behandlingen.
+Ändamål med behandlingen
+Dataanalys och segmentering
+De personuppgifter som behandlas
+· Information om din användning och dina aktiviteter på våra appar/webbplatser/sociala medier;
+· Privata kontakt- och identifieringsuppgifter (t.ex. e-postadress, postnummer, kön etc.);
+· Interaktionsuppgifter (t.ex. förfrågningar till kundtjänst, registrering för nyhetsbrev och andra marknadsföringsaktiviteter, deltagande i evenemang, deltagande i undersökningar, prenumerationer, interaktioner med återförsäljare eller reparatörer);
+· Servicehistorik.
+Rättslig grund för behandlingen
+Vårt berättigade intresse (Artikel 6(1)(f), GDPR) som är:
+· Att förbättra våra affärsprocesser och vår verksamhet; att förbättra vårt produkt- eller tjänsteutbud; att generera insikts er om användarbeteende och trender.
+Hur länge behandlingen sker
+12 månader från datainsamlingen, såvida inte uppgifterna också används för andra berättigade ändamål som beskrivs i Integritetspolicyn.
+Kategorier av registrerade
+· Potentiella kunder;
+· Kunder;
+· Representanter för företagskunder.
+
+I. KUNDVÅRD
+4.5. Kundtjänst
+Vi använder dina personuppgifter i samband med dina förfrågningar (till exempel förfrågningar om våra produkter och tjänster, feedback, klagomål etc.) och för att kommunicera med dig om tillhandahållandet av våra tjänster och produkter. Vi kommer också att kontakta dig när ditt fordon berörs av vad som kallas en teknisk servicebulletin, en återkallelse eller när du utövar dina lagstadgade garantirättigheter genom oss.
+
+Om du har haft kontakt med en auktoriserad återförsäljare eller reparatör (till exempel när du köpt eller reparerat din Hyundai-bil) och återförsäljaren, reparatören eller du själv lämnar in en förfrågan till oss i samband med sådan kontakt, använder vi dina personuppgifter för att hantera sådan förfrågan. I sådant fall kan återförsäljaren eller reparatören (i egenskap av personuppgiftsansvariga) förse oss med nedanstående personuppgifter så att vi kan hantera dina förfrågningar.
+
+Om du har några frågor erbjuder vi dig möjligheten att kontakta oss via formuläret på webbplatsen. Du kan också skicka en fråga eller en förfrågan till Hyundai via e-post eller våra sociala medier, samt ringa till oss.
+Ändamål med behandlingen
+· För att ta emot och hantera dina förfrågningar (inklusive när du utövar dina lagstadgade garantirättigheter).
+· För att ge dig support i dina förfrågningar som rör dina interaktioner med auktoriserade återförsäljare och reparatörer.
+· För att kommunicera med dig som en del av våra avtalsenliga skyldigheter.
+· För att uppfylla lagstadgade skyldigheter och administrera sådana skyldigheter i relation till dig.
+
+För att fastställa, skydda eller utöva våra rättigheter.
+
+De personuppgifter som behandlas
+· Grundläggande kontaktuppgifter: t.ex. förnamn, efternamn, e-postadress, telefonnummer, land, region;
+· Fordonsdata;
+· Innehållet i förfrågan eller klagomålet och efterföljande interaktioner;
+· Service- och interaktionshistorik.
+· Marknadsförings-preferenser;
+· Om du är företagskund: företagsnamn, registreringsnummer, postnummer, ort, land, region samt kontaktuppgifter till företagets behöriga representant, t.ex. namn, efternamn, telefonnummer, e-postadress;
+· Valfria personuppgifter: födelsedatum, yrke, adress.
+
+Alla typer av personuppgifter som nämns i detta avsnitt.
+I händelse av tvist kan vi också samla in andra typer av personuppgifter om dig om vi behöver dem för att utöva våra rättigheter.
+
+Rättslig grund för behandlingen
+Vårt berättigade intresse (Artikel 6(1)(f), GDPR) som är:
+· att hantera och följa upp din förfrågan eller ditt klagomål.
+Behandlingen av dina personuppgifter är nödvändig för att ingå eller fullgöra ett avtal med dig (Artikel 6.1 b i GDPR).
+Vi har en skyldighet enligt tillämplig handelsrätt och skatterätt att behandla dina personuppgifter (Artikel 6.1 c i GDPR).
+Vårt berättigade intresse (Artikel 6(1)(f), GDPR) som är:
+
+Nödvändigt för att fastställa, utöva eller försvara mot rättsliga anspråk.
+
+Hur länge behandlingen sker
+Allmänna förfrågningar som inte är relaterade till ovanstående ändamål lagras i upp till 12 månader, och för förfrågningar som rör rättsliga skyldigheter lagrar vi sådana personuppgifter så länge som tillåtet enligt tillämplig lagstiftning (vilket vanligtvis är 10 år från det att vi mottog meddelandet).
+
+Vid anspråk, 10 år från utgången av det år då klagomålet mottogs av oss.
+
+Kategorier av registrerade
+· Potentiella kunder;
+· Kunder;
+· Representanter för företagskunder.
+
+4.6. Support för underhållstjänster
+När du behöver underhållstjänster kontaktar du en auktoriserad reparatör. I vissa fall behöver reparatörerna vårt stöd för att kunna tillhandahålla sina tjänster till dig, och i samband med detta behandlar vi dina personuppgifter enligt nedan.
+· För att säkerställa bokning av tjänster.
+· För att stödja processen för att identifiera servicebehov.
+· För att stödja utförandet av bilreparationer och utföra kvalitetskontroll.
+· För att förse dig med omfattande information om underhållshistorik i form av ett digitalt servicepass.
+· För att föra våra affärshandlingar.
+
+För att fastställa, skydda eller utöva våra rättigheter.
+
+De personuppgifter som behandlas
+· Grundläggande kontaktuppgifter: t.ex. förnamn, efternamn, e-postadress, telefonnummer, land, region, adress
+· Fordonsdata (t.ex. fordonsidentifikationsnummer (VIN), bilmodell)
+· Serviceuppgifter, service- och interaktionshistorik.
+· Fordonsregistreringsuppgifter.
+· Personuppgifter som anges i detta avsnitt.
+
+Alla typer av personuppgifter som nämns i detta avsnitt.
+I händelse av tvist kan vi också samla in andra typer av personuppgifter om dig om vi behöver dem för att utöva våra rättigheter.
+
+Rättslig grund för behandlingen
+Vårt berättigade intresse (Artikel 6.1 f i GDPR), vilket är:
+· Att bistå reparatörer och även fastställa, skydda eller utöva våra rättigheter.
+· Att tillhandahålla dig det digitala servicepasset eftersom vi är skyldiga att bevara ditt fordons historik.
+Vi har en skyldighet enligt tillämplig handelsrätt och skattelagstiftning att behandla dina personuppgifter (Artikel 6(1)(c), GDPR).
+Vårt berättigade intresse (Artikel 6(1)(f), GDPR) som är:
+
+Nödvändigt för att fastställa, utöva eller försvara mot rättsliga anspråk.
+
+Hur länge behandlingen sker
+7 år från det datum då avtalet ingicks med dig.
+Inom ramen för det digitala servicepasset under fordonets hela livscykel.
+7 år enligt gällande bokföringsregler och/eller så länge som krav kan riktas mot oss (vilket är 10 år).
+Vid klagomål, 10 år från slutet av det år då klagomålet mottogs av oss.
+
+Kategorier av registrerade
+· Kunder;
+· Representanter för företagskunder.
+
+I. PROVKÖRNING OCH BILFÖRSÄLJNING AV HYUNDAI
+4.7. Provkörning
+Ändamål med behandlingen
+För att svara på din förfrågan och hantera din provkörning (inklusive ingående av provkörningsavtal).
+De personuppgifter som behandlas
+· Grundläggande kontaktuppgifter: t.ex. förnamn, efternamn, e-postadress, telefonnummer;
+· Körkort (inklusive körkortets referensnummer och personligt identifikationsnummer);
+· Testkörningsmodell, datum och villkor för testkörningen.
+Rättslig grund för behandlingen
+Vårt berättigade intresse (Artikel 6.1 f i GDPR), vilket är:
+· Att svara på din förfrågan och hantera din provkörning.
+Behandlingen av dina personuppgifter är nödvändig för att ingå eller fullgöra provkörningsavtalet med dig (Artikel 6.1 b i GPPR).
+Hur länge behandlingen sker
+Upp till 12 månader från vår senaste interaktion och ditt uttryckta intresse för våra produkter eller tjänster. Om vi inom denna period ingår ett avtal med dig kommer vi att lagra dina uppgifter i 7 år.
+Kategorier av registrerade
+· Potentiella kunder;
+· Kunder;
+· Representanter för företagskunder.
+
+4.8. Fordonsförsäljning
+När du begär en provkörning måste vi behandla dina personuppgifter för att hantera din provkörningsbokning. Provkörningar kan till exempel erbjudas vid olika evenemang och mässor. Vid särskilda tillfällen kan vi dessutom erbjuda möjligheten att köpa Hyundai-fordon direkt genom oss. I sådana fall måste vi behandla dina personuppgifter för att genomföra försäljningsprocessen.
+Ändamål med behandlingen
+· Att utarbeta en offert på din begäran.
+· För att upprätta och ingå ett försäljningsavtal med dig.
+· För att leverera ditt fordon.
+
+För att bevara våra affärshandlingar.
+För att fastställa, skydda eller utöva våra rättigheter.
+
+De personuppgifter som behandlas
+· Grundläggande kontaktuppgifter: (t.ex. förnamn, efternamn, e-postadress, telefonnummer);
+· Personnummer;
+· Fordonskonfiguration (t.ex. bilmärke, modell och tillbehör);
+· Finansiell information (t.ex. för att föreslå finansieringsalternativ och utfärda en faktura);
+· Köpintresse (t.ex. modell av intresse, potentiell köpperiod);
+· Beställnings- och fordonsuppgifter (t.ex. leveransadress, VIN-nummer, registreringsnummer).
+
+Personuppgifter som anges i detta avsnitt.
+Alla typer av personuppgifter som anges i detta avsnitt.
+I händelse av tvist kan vi också samla in andra typer av personuppgifter om dig om vi behöver dem för att utöva våra rättigheter.
+
+Rättslig grund för behandlingen
+Vårt berättigade intresse (Artikel 6.1 f i GDPR), vilket är:
+· Att svara på din offertförfrågan.
+Behandlingen av dina personuppgifter är nödvändig för att ingå eller fullgöra ett avtal med dig (Artikel 6.1 b i GDPR).
+Vi har en skyldighet enligt tillämplig handelsrätt och skatterätt att behandla dina personuppgifter (Artikel 6.1 c i GDPR).
+Vårt berättigade intresse (Artikel 6.1 f i GDPR), vilket är:
+· Nödvändighet för att fastställa, utöva eller försvara rättsliga anspråk.
+Hur länge behandlingen sker
+Upp till 12 månader från vår senaste interaktion och ditt uttryckta intresse för våra produkter eller tjänster. Om vi inom denna period ingår ett avtal med dig kommer vi att lagra dina uppgifter i 7 år.
+7 år enligt tillämpliga bokföringsregler och/eller så länge som ett krav kan riktas mot oss (vilket är tio år).
+Vid anspråk, 10 år från utgången av det år då klagomålet mottogs av oss.
+Kategorier av registrerade
+· Potentiella kunder;
+· Kunder;
+· Representanter för företagskunder.
+
+5. Med vem delas mina uppgifter?
+Under alla omständigheter är tillgången till dina personuppgifter begränsad till de personer som har behov av att känna till dem för att kunna fullgöra sina arbetsuppgifter.
+
+Vi kan komma att överföra dina personuppgifter för respektive ändamål som anges i avsnitt 4 till de mottagare och kategorier av mottagare som anges nedan:
+· Personuppgiftsbiträden – vissa tredje parter, oavsett om de är anknutna eller ej, kan ta emot dina personuppgifter för att behandla sådana uppgifter för vår räkning enligt lämpliga instruktioner som är nödvändiga för respektive behandlingsändamål. Personuppgiftsbiträdena kommer att vara föremål för avtalsenliga skyldigheter att säkerställa genomförandet av lämpliga tekniska och organisatoriska säkerhetsåtgärder för att skydda personuppgifterna och att endast behandla personuppgifterna enligt instruktioner.
+
+De nuvarande anslutna personuppgiftsbiträdena inkluderar:
+
+Hyundai Motor Company, 12 Heolleung-ro, Seocho-gu, Seoul, Sydkorea, i samband med dataanalys enligt beskrivningen i avsnitt 4.11 ovan,
+Hyundai Autoever Europe GmbH, Kaiserleistraße 8A, 63067 Offenbach am Main, i samband med IT-tjänster och underhåll av infrastruktur
+Hyundai Motor Europe GmbH, Kaiserleipromenade 5, 63067 Offenbach am Main, i samband med vissa stödfunktioner, särskilt i samband med IT-tjänster och stöd för kundupplevelser.
+
+Dessutom använder vi icke anslutna betrodda personuppgiftsbiträden som stödjer följande processer:
+· tjänster som rör vår IT-infrastruktur (t.ex. hosting eller drift och underhåll av våra IT-system och plattformar).
+· tjänster relaterade till marknadsföring:
+o marknadsföringsbyråer
+o marknadsundersökningsföretag;
+o leverantörer av dataanalys- och transformationstjänster;
+o företag inom evenemangshantering.
+· tjänster relaterade till dataanalys;
+· stöd för den verksamhet som är relaterad till hantering av kundrelationer, i synnerhet:
+o tillhandahållare av kunduppgifter från offentliga källor (se avsnitt 5a),
+o leverantörer av finansiella tjänster och betalningstjänster;
+o leverantörer av tjänster relaterade till fordonsregistrering;
+o leverantörer av billeveranstjänster;
+o leverantörer av vägassistanstjänster;
+o kontaktcenter.
+· Tredje parter - I vissa fall kan vi dela dina personuppgifter med betrodda, anknutna eller icke anknutna tredje parter som hjälper oss att leverera våra produkter och tjänster till dig på ett effektivt sätt.
+
+Dessa är i synnerhet, men inte begränsat till:
+· Vårt nätverk av auktoriserade återförsäljare: i syfte att förbereda erbjudanden och avtal, hantera kundrelationer (inklusive administration och uppdatering av kundprofil och kontakthistorik), kundnöjdhetsundersökningar, evenemangshantering, marknadsföring och marknadsundersökningar.
+
+Listan över våra återförsäljare finns tillgänglig här.
+· Våra nätverk av auktoriserade serviceverkstäder i syfte att tillhandahålla tjänster, hantering av kundrelationer, undersökningar av kundnöjdhet, hantering av evenemang, marknadsföring och marknadsundersökningar.
+Listan över våra auktoriserade serviceverkstäder finns tillgänglig här.
+· Anknutna tredje parter - bolag från Hyundai Motor-koncernen, i syfte att ge administrativt stöd och hantera affärsverksamheten.
+
+· Statliga myndigheter, domstolar, externa rådgivare och liknande tredje parter som är offentliga organ enligt vad som krävs eller tillåts enligt tillämplig lag. Vissa utlämnanden krävs enligt lag (t.ex. domstolsbeslut eller förfrågningar från polisen). I dessa fall kommer vi att behandla dina uppgifter eftersom vi är skyldiga att göra det enligt lag (Artikel 6(1)(c), GDPR).
+· Parter i företagstransaktioner: för företagstransaktioner, såsom fusion, överlåtelse, förvärv eller försäljning av Hyundai. I dessa fall kommer vi att behandla dina personuppgifter på grundval av vårt berättigade intresse (Artikel 6.1 f i GDPR) för att förbereda och genomföra sådana företagstransaktioner.
+
+5a. Tillhandahållare av kunduppgifter
+Trafikverket
+Vi kan använda personuppgifter om din Hyundai-bil som vi erhållit från det officiella vägtrafikregistret som förvaltas av Trafikverket. Sådana personuppgifter omfattar: registreringsdatum, VIN-nummer och andra fordonsidentifieringskoder, bilmärke och modell, mätarställning (km), information om bilens ägare (inklusive personnummer), ägarhistorik eller avstängningsperioder. Vi använder sådana personuppgifter i relation till och där sådana beskrivs i avsnitt 4, bland annat för att säkerställa att uppgifterna i våra system och i de system som förvaltas av Trafikverket är korrekta.
+
+Dun & Bradstreet (Bisnode)
+Vi kan använda personuppgifter som erhållits från Bisnode. Sådana personuppgifter omfattar: kontaktuppgifter (inklusive namn, adress, telefonnummer, e-postadress och personnummer) och personliga egenskaper (inklusive ålder och kön). Vi kan också använda Bisnode för att erhålla samma uppgifter som beskrivs ovan under ”Trafikverket” via Bisnode (som i sin tur erhåller uppgifterna från Trafikverket). Vi använder sådana personuppgifter i relation till och där sådana beskrivs i avsnitt 4, inklusive för att identifiera och verifiera dig i realtid (t.ex. för att förbereda och ingå ett försäljningsavtal med dig och för att leverera ett fordon till dig). För mer information om syftet och omfattningen av databehandlingen och vidare användning av dina personuppgifter av Bisnode, samt dina rättigheter, se Bisnodes integritetspolicy som finns tillgänglig på https://www.dnb.com/en-gb/privacy.html.
+
+Reaktion i Sverige
+Vi kan använda personuppgifter som erhållits från Reaktion i Sverige. Sådana personuppgifter inkluderar: kontaktuppgifter (inklusive namn, adress och telefonnummer) och fordonsinformation (inklusive tidigare ägare och ägarens namn). Vi använder sådana personuppgifter i relation till och där sådana beskrivs i avsnitt 4, inklusive marknadsföring, dataanalys och kundservice.
+
+5b. Leverantör av finansieringstjänster
+Vi samarbetar från tid till annan med olika finansieringstjänstleverantörer som erbjuder finansieringsprodukter. Endast på din begäran kommer vi att dela dina personuppgifter med en finansieringstjänstleverantör, såsom personnummer, telefonnummer, e-postadress, bilmärkesmodell, valda tillbehör, preliminär finansieringskalkyl, som kommer att kunna presentera ett finansiellt erbjudande till dig.
+Endast om du ger ditt samtycke till din finansieringstjänsteleverantör kommer sådan leverantör att dela dina personuppgifter med oss för marknadsföringsändamål, t.ex. namn, telefonnummer, e-postadress samt information från finansieringsavtalet (t.ex. objekttyp/nummer, typ av finansiering och fakturainformation, såsom månadsbetalning, löptid och utestående belopp). För mer information se avsnitt II. Marknadsföringsaktiviteter i denna Integritetspolicy.
+6. Överförs mina personuppgifter till andra länder?
+Vi överför dina uppgifter utanför EU/EES till Hyundai-bolag i Sydkorea, för de ändamål som anges i avsnitt 4.
+Europeiska kommissionen har fastställt att Sydkorea är en av de jurisdiktioner som tillhandahåller en adekvat skyddsnivå för personuppgifter (Artikel 45, GDPR).
+Vissa av de andra mottagarna av dina personuppgifter kommer att vara belägna eller kan ha relevant verksamhet utanför ditt land och EU/EES, där dataskyddslagarna kan ge en annan skyddsnivå jämfört med lagarna i din jurisdiktion och för vilka det inte finns något beslut om adekvat skyddsnivå från Europeiska kommissionen.
+När det gäller överföring av uppgifter till sådana mottagare utanför EU/EES tillhandahåller vi lämpliga skyddsåtgärder, i synnerhet genom att ingå avtal för överföring av personuppgifter som innehåller standardklausuler som antagits av Europeiska kommissionen (artikel 46(2), GDPR) och, vid behov, genom att genomföra kompletterande åtgärder, såsom ytterligare tekniska, organisatoriska och avtalsmässiga skyddsåtgärder eller genom att vidta andra åtgärder för att tillhandahålla en adekvat nivå av dataskydd. Överföringar till USA kan också ske till tredje part som ingår i EU-US Data Privacy Framework och som intygar att de har åtagit sig att följa en detaljerad uppsättning integritetsskyldigheter för att säkerställa en adekvat skyddsnivå för de överförda personuppgifterna (Artikel 45, GDPR). En kopia av de relevanta åtgärder som vi har vidtagit finns tillgänglig på begäran (se kontaktuppgifter ovan).
+7. Hur länge kommer mina uppgifter att lagras?
+Dina personuppgifter lagras generellt så länge som det är nödvändigt i förhållande till ändamålen och för att vi ska kunna tillhandahålla dig våra tjänster, samt för det ändamål som beskrivs i avsnitt 4 ovan. Dessutom lagrar vi generellt dina uppgifter i den utsträckning som behövs för att uppfylla våra rättsliga skyldigheter och för att skydda våra rättigheter: exempelvis kommer vi att lagra dina uppgifter i enlighet med lagstadgade lagringstider enligt tillämpliga bokföringsregler (vilket i Sverige är sju år) och/eller så länge som ett krav kan riktas mot oss (vilket generellt är tio år).
+
+I den mån mer specifika lagringsperioder gäller kan du se informationen om perioden för behandling av dina personuppgifter som anges i avsnitt 4 ovan.
+
+8. Vilka rättigheter har jag och hur kan jag utöva dem?
+Du har vissa rättigheter i förhållande till dina personuppgifter som du kan utöva gentemot oss. I enlighet med tillämplig dataskyddslagstiftning kan dessa rättigheter begränsas under vissa förutsättningar.
+
+Du kan alltid utöva dina rättigheter när som helst genom att kontakta oss via de kontaktuppgifter som anges i avsnitt 3. Observera att vi kan komma att kontakta dig för att bekräfta din identitet för att säkerställa att vi inte lämnar ut dina personuppgifter till obehöriga personer, och vi kan be dig att specificera din begäran innan vi vidtar några åtgärder. När vi har bekräftat din identitet kommer vi att hantera din begäran i enlighet med tillämplig lag. Observera att även om du invänder mot viss behandling av personuppgifter kan vi fortfarande fortsätta denna behandling om det är tillåtet eller krävs enligt lag, till exempel för att vi ska kunna uppfylla lagkrav, rättsliga skyldigheter eller skyldigheter enligt ett avtal med dig.
+
+Generellt har du följande rättigheter:
+
+8.1. Rätt att göra invändningar: Du har rätt att när som helst invända, på grunder som rör din särskilda situation, mot behandling av personuppgifter som rör dig när behandlingen baseras på den rättsliga grunden för databehandling i allmänhetens intresse eller när vi baserar behandlingen på ett berättigat intresse. Du har också rätt att invända mot behandling för direktmarknadsföringsändamål, inklusive profilering. Om du gör en invändning kommer vi inte längre att behandla de personuppgifter som rör dig och som vi behandlar på grundval av ett berättigat intresse, såvida vi inte kan visa att det finns tvingande och berättigade skäl för sådan behandling som väger tyngre än dina integritetsintressen eller om vi behöver fastställa, utöva eller försvara rättsliga anspråk.
+
+8.2. Rätt till tillgång: Du har rätt att få en bekräftelse från oss om huruvida vi behandlar dina personuppgifter eller inte och, om så är fallet, begära tillgång till dina personuppgifter. Du har också rätt att få en kopia av de personuppgifter som vi behandlar om dig.
+
+8.3. Rätt till rättelse: Du har rätt att få felaktiga personuppgifter som rör dig rättade. Beroende på syftet med behandlingen har du rätt att få ofullständiga personuppgifter uppdaterade, inklusive genom att tillhandahålla en kompletterande redogörelse.
+
+8.4. Rätt till radering ("rätten att bli bortglömd"): Under vissa omständigheter har du rätt att få dina personuppgifter raderade och vi kan vara skyldiga att radera dina personuppgifter.
+
+8.5. Rätt till begränsning av behandling: Under vissa omständigheter har du rätt att få en begränsning av behandlingen av dina personuppgifter. Detta innebär att dina uppgifter generellt inte kommer att behandlas av oss med undantag för lagring.
+
+8.6. Rätt till dataportabilitet: Under vissa omständigheter har du rätt att få ut de personuppgifter som du har lämnat till oss i ett strukturerat, allmänt använt och maskinläsbart format. Du har rätt att, utan hinder från oss, överföra dessa uppgifter eller få dem överförda direkt av oss till ett annat företag.
+
+8.7. Rätt att inge klagomål: Du har också rätt att lämna in ett klagomål till den behöriga tillsynsmyndigheten för dataskydd i ditt land, vilket i Sverige är Integritetsskyddsmyndigheten (www.imy.se).
+
+8.8. Rätt att återkalla samtycke: Om du har gett ditt samtycke till behandling av dina personuppgifter kan du när som helst återkalla ditt samtycke med verkan för framtida behandling. Återkallandet av samtycket påverkar inte den behandling som ägde rum innan samtycket återkallades.
+
+9. Ändringar av Integritetspolicyn
+Vi kan komma att ändra och/eller komplettera denna Integritetspolicy från tid till annan. Sådana ändringar och/eller tillägg kan vara nödvändiga på grund av implementering av ny teknik eller införande av nya tjänster. Vi kommer att publicera ändringarna på [LINK]. I förekommande fall kommer vi också att meddela dig via e-post eller brev i pappersform.
+
+När vi anger adresser och kontaktinformation till företag och organisationer i denna Integritetspolicy, observera att båda kan ändras över tid. Därför rekommenderar vi att du kontrollerar relevant information innan du kontaktar oss.
+
+Datum: januari 2026

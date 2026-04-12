@@ -1,0 +1,489 @@
+Features
+
+Services
+
+Resources
+
+Store
+
+Store
+
+Sign In
+
+My Account
+
+Vehicle Dashboard
+
+Vehicle Dashboard
+
+Features
+
+Kia Connect
+
+Kia eServices
+
+Availability
+
+Software Updates
+
+Release Notes
+
+Services
+
+Schedule a Service
+
+Parts
+
+Maintenance Plan
+
+Resources
+
+FAQs
+
+Manuals
+
+Recalls
+
+Kia Connect Support
+
+Feature Tips
+
+3G Sunset
+
+3G SVLTE
+
+Kia Connect Updates
+
+Store
+
+Kia Connect Store
+
+Entertainment and Data Services
+
+Kia myQ Connected Garage
+
+Lighting Patterns
+
+Remote Smart Parking Assist 2
+
+Boost
+
+Vehicle to Home
+
+Kia Charge Pass
+
+FIFA World Cup 2026™ Display Themes
+
+Star Wars Display Themes
+
+National Geographic Display Themes
+
+Pixar Display Themes
+
+Marvel Display Themes
+
+Disney Display Themes
+
+NBA Display Themes
+
+Store
+
+Sign In
+
+My Account
+
+Notifications
+
+Settings
+
+Kia Connect Subscription
+
+My Purchases
+
+Driver Preferences
+
+Log Out
+
+Notifications
+
+Settings
+
+Kia Connect Subscription
+
+My Purchases
+
+Driver Preferences
+
+Log Out
+
+Kia Connect Explore remote features for a more connected ride.
+
+Kia eServices Learn about connected vehicle services.
+
+Availability Check Kia Connect feature availability on your Kia.
+
+Software Updates Remotely update your Kia to enjoy the latest features.
+
+Release Notes View the latest OTA Software release notes.
+
+Schedule a Service Find a Kia expert for maintenance, repair, and more.
+Schedule a Service Find a Kia expert for maintenance, repair, and more.
+
+Parts Learn more about Genuine Kia Parts and replacement.
+
+Maintenance Plan Explore plan types and find participating dealers.
+
+FAQs Learn about features, troubleshooting, and more.
+
+Manuals Access your Kia's owner's manuals and documents
+
+Recalls Review the latest recall information for your Kia.
+
+Kia Connect Support Get assistance with your Kia Connect account.
+
+Feature Tips View and download the latest feature guides.
+
+3G Sunset Information about 3G network support.
+
+3G SVLTE Information about SVLTE software update.
+
+Kia Connect Updates Massachusetts Availability
+
+Kia Connect Store
+
+Entertainment and Data Services
+
+Kia myQ Connected Garage
+
+Lighting Patterns
+
+Remote Smart Parking Assist 2
+
+Boost
+
+Vehicle to Home
+
+Kia Charge Pass
+
+FIFA World Cup 2026™ Display Themes
+
+Star Wars Display Themes
+
+National Geographic Display Themes
+
+Pixar Display Themes
+
+Marvel Display Themes
+
+Disney Display Themes
+
+NBA Display Themes
+
+KIA CONNECT PRIVACY POLICY
+This Privacy Policy is effective and was last updated on Dec 16, 2025.
+
+Introduction
+Welcome to Kia Connect Services, formerly known as "UVO Sevices"! The term "Kia Connect Services" refers to our suite of Kia Connect products, which were formerly known as UVO products, and which include, without limitation, products currently or previously branded as Kia Connect, Kia eServices, UVO eServices, or UVO link, UVO luxe, UVO eco, or any other UVO services. To access or use features available through Kia Connect Services, you may have either visited the Kia Owners Portal (formerly known as a MyUVO account) or a Kia Connect smartphone application (the "Kia Connect Services App"), have Kia Connect Services Hardware (defined below), installed within your Vehicle (defined below), or are otherwise accessing our App Center that may be available through your Vehicle’s head unit, which, if available for your Vehicle, you can use to download applications ("Apps") for use in your Vehicle. Kia Connect Services are provided by Kia America, Inc. (formerly known as Kia Motors America, Inc., and herein referred to as "Kia," "we," "our," or "us").
+This privacy policy ("Privacy Policy") describes how we collect, use, and disclose information when you use Kia Connect Services. This Privacy Policy governs your use of Kia Connect Services, our use of your data and any data otherwise collected from your Vehicle through Kia Connect Services, and also applies to your use of the interactive features, widgets, Apps, content, or downloads that we make available through (or that interact with) Kia Connect Services and which post a link to this Privacy Policy regardless of how you access or use them, whether via personal computers, mobile devices, through your Vehicle’s head unit or otherwise. In order for you to use Kia Connect Services, the Kia-branded vehicle ("Vehicle") must come equipped with the requisite equipment, including hardware and software, used to assist with providing Kia Connect Services (the "Kia Connect Services Hardware").
+To the extent we provide you notice on any Kia Connect Services of different or additional privacy policies or practices (e.g., at the point of our collection), those additional terms shall govern such data collection and use.
+In addition, please review Kia Connect Services' Terms of Service, which governs your use of Kia Connect Services. By using Kia Connect Services, you consent to the processing of your information in accordance with this Privacy Policy, the Terms of Service, and the terms of service applicable to specific Kia Connect products or services you choose to use.
+
+Linkable Table of Contents
+
+Who We Are
+What Information Do We Collect?
+How Do We Use the Information?
+Information About Targeted Advertising and Do Not Track Disclosures
+Do Kia Connect Services Contain Third-Party Content and Links to Third-Party Services?
+Do Third-Party Apps Appear on Kia Connect Services?
+How Do I Change My Information and Communication Preferences?
+What Steps Must I Take if I Sell or Transfer My Vehicle?
+Where Does Kia Process the Information?
+What About Information on Children and Minors?
+What About Security?
+Data Retention
+What About Changes to the Privacy Policy?
+Your California Privacy Rights
+Additional State Privacy Rights
+
+1. Who We Are
+Kia is a United States based subsidiary of Kia Corporation, which is based in Seoul, South Korea. We are the exclusive distributor of Kia-branded vehicles, parts, and accessories in the United States. Our "dealers" and "licensees" are independent companies that sell our Vehicles, parts, and accessories, and are licensed to operate such businesses using the trade names, trademarks, and service marks owned by us or our affiliates. Our "business partners" are independent companies that we contract with to provide you with or offer you other services and products. This Privacy Policy governs only Kia's privacy practices for Kia Connect Services. It does not govern the privacy practices of our dealers, licensees, or partners, even if you contact them or connect to their websites from Kia Connect Services. To learn about the privacy practices of our dealers, licensees, or partners, please review the privacy policies of each of those dealers, licensees, or partners.
+Our "Affiliates" include our parent company(ies), subsidiaries, sister companies, and affiliated companies. As described below, we may disclose information that we collect with our Affiliates. Our Affiliates may have their own privacy policies that govern their treatment of information that you provide to them directly or that they collect when you use their websites, applications, or other services. For example, Kia customers who have financed or leased a Vehicle through Kia Finance America will be subject to Kia Finance America’s own privacy policy (and terms of use) with respect to the information collected via Kia Finance America’s websites, applications, and other services.
+
+2. What Information Do We Collect?
+Through Kia Connect Services, we collect information that identifies, relates to, describes, is capable of being associated with, or could reasonably be linked, directly or indirectly, with a particular consumer or household ("Personal Information"). Although our processing of Personal Information varies based upon our relationship and interactions with you and depends on what Kia Connect Services you have used, the table below identifies, generally, the categories of Personal Information we may have collected from you in the last twelve (12) months, which we may have also shared with our service providers for certain business purposes, or sold or otherwise disclosed to third parties for the purposes outlined in this Privacy Policy. The categories below are those identified in the California Consumer Privacy Act ("CCPA"), as amended by the California Privacy Rights Act ("CPRA") (Civil Code Section 1798.100, et seq.) (collectively "California Law").
+
+Category
+
+Examples
+
+Collected?
+
+Identifiers.
+
+This category may include: name, postal address, unique personal identifiers, online identifiers, email address, account name, Vehicle Identification Number, or other similar identifiers. Under California Law, "unique identifiers" or "unique personal identifier" means a persistent identifier that can be used to recognize a consumer, a family, or a device that is linked to a consumer or family, over time and across different services, including, but not limited to, a device identifier; an Internet Protocol address; cookies, beacons, pixel tags, mobile ad identifiers, or similar technology; customer number, unique pseudonym, or user alias; telephone numbers; or other forms of persistent or probabilistic identifiers that can be used to identify a particular consumer or device.
+
+YES
+
+Personal information categories listed in the California Customer Records statute (Cal. Civ. Code § 1798.80(e)).
+
+This category may include: name, physical characteristics, address, telephone number, financial account numbers, and medical information.
+
+YES
+
+Protected classification characteristics under California or federal law.
+
+This category may include: age, race, color, medical condition, physical or mental disability, or sex and gender information.
+
+YES
+
+Commercial information.
+
+This category may include: records of personal property, products or services purchased, obtained, or considered, or other purchasing or consuming histories or tendencies.
+
+YES
+
+Biometric information.
+
+This category may include: imagery of the iris, retina, fingerprint, face, hand, palm, vein patterns, and voice recordings, from which an identifier template, such as a face print, a minutiae template, or a voiceprint, can be extracted.
+
+NO
+
+Internet or other electronic network activity information.
+
+This category may include: browsing history, search history, and information regarding interactions with an Internet Web site, application, or advertisement.
+
+YES
+
+Geolocation data.
+
+This category may include: physical location or movements.
+
+YES
+
+Sensitive Personal Information.
+
+This category may include account log-in, financial account, debit card, or credit card number in combination with any required security or access code, password, or credentials allowing access to an account; precise geolocation; racial or ethnic origin; or health information.
+
+YES
+
+Sensory data.
+
+This category may include: audio, electronic, visual, thermal, olfactory, or similar information.
+
+NO
+
+Professional or employment-related information.
+
+This category may include: current or past job history or performance evaluations.
+
+NO
+
+Non-public education information
+
+This category may include: education records directly related to a student maintained by an educational institution or party acting on its behalf (e.g., grades, transcripts, schedules, and student ID numbers).
+
+NO
+
+Inferences drawn from other personal information.
+
+This category may include: inferences drawn from the above information that may reflect your preferences, characteristics, predispositions, behavior, attitudes, or similar behavioral information.
+
+YES
+
+Note: Additional information may be collected and stored by your Vehicle, depending on what in-vehicle features you choose to use and engage. This Privacy Policy only covers information that is collected by, transmitted to, or otherwise processed by us, and excludes information that is solely collected and stored by your Vehicle, and remains inaccessible to Kia.
+
+The below sections describe how we collect information from Kia Connect Services, our purposes for collection, and how we may disclose and use the information. Our data collection and usage greatly varies depending on the Kia Connect Services available in your Vehicle, and how you may choose to interact with us and the Kia Connect Services.
+Information Collected Directly From You and Your Vehicle. Depending on the Kia Connect Services available for your Vehicle, the following types of information may be provided by you (or your Vehicle) to us or our third-party service providers and business partners, as applicable:
+
+Personal Information, Demographic Information, and Payment Information. If you sign-up to use Kia Connect Services, we may ask you to provide us with certain categories of Personal Information such as: (1) identifiers, which is information that identifies you personally like the examples listed above; (2) demographic information, such as information about your gender; and (3) payment information, such as credit card numbers and other billing information. We may collect this information through various forms and from various places on Kia Connect Services, including account registration forms, when making purchases through the Kia Connect Store, or when you otherwise interact with certain Kia Connect Services.
+Vehicle Information. When using your Vehicle, certain Kia Connect Services that may be available in your Vehicle automatically (or passively), collect, store, and transmit to us information about your Vehicle, including through the use of telematics and/or an embedded modem, if applicable to your Vehicle. This type of information may include: (i) information about your Vehicle's operation, performance, and condition, including diagnostic trouble codes, oil life remaining, tire pressure, fuel economy and odometer readings, battery use management information, battery charging history, battery deterioration information, eco-related driving performance or charging data, and electrical system functions; (ii) driver behavior information, such as the actual or approximate speed of your Vehicle, seat belt use, direction and time of travel and route information, information about braking habits, and information about collisions involving your Vehicle and which air bags have deployed; (iii) information about your use of the Vehicle and its features, such as whether you have paired a mobile Device with your Vehicle; (iv) the precise geographic location of your Vehicle; (v) data about remote services we may make available such as remote lock/unlock, start/stop charge, parking location, climate control, charge schedules, and Vehicle status check; (vi) when there is a request for service made; and (vii) information about the Vehicle itself (such as the vehicle identification number (VIN), model, model year, trim, selling dealer, servicing dealer, date of purchase, or lease and service history) (collectively, "Vehicle Information").
+Voice Data.When you use interactive voice control features, we and our service providers may collect and store voice data to enable voice control and voice inputs. Voice data is transmitted as recordings from the vehicle to us and/or our service provider(s) for the purpose of conversion into text. Once the request has been analyzed, the appropriate response is then transferred back to the vehicle for purposes of providing the requested command or information.
+Customer Support Information. When you interact with us to receive customer support or other forms of customer service, we and our service providers may collect the information that you provide during these interactions. This type of information may include, but is not limited to, identifiers, Vehicle Information, and details about your reason for outreach.
+
+Information We Collect Through Automatic Data Collection Technologies. As a user navigates through and interacts with Kia Connect Services, we and third parties including analytics providers, advertising and social networks, and our service providers may use automatic data collection technologies that automatically (or passively) store or collect certain information, whenever you visit or interact with certain Kia Connect Services ("Usage Information"). Some Usage Information may be considered Personal Information, such as if and when it is linked to any information that reasonably identifies you. This Usage Information may be stored or accessed using a variety of technologies that may be downloaded to your Vehicle's Kia Connect Services Hardware, your personal computer, browser, laptop, tablet, mobile phone, or other device (each, a "Device") whenever you visit or interact with Kia Connect Services. Usage Information may include, but is not limited to, the following technologies and information:
+
+Device Information. Information about the Device used to access Kia Connect Services, which may include: your IP address or other Device identifier that is automatically assigned to a Device used to access Kia Connect Services; your Device functionality (including browser, operating system, hardware, and mobile network information), location, and characteristics; and other Device data, including the time of day, among other information.
+
+Cookies. A cookie is a data file that may be placed on a Device that is used to utilize Kia Connect Services. We use both session cookies (i.e., temporary bits of information that are erased once you exit your web browser window or otherwise turn off your computer) and persistent cookies (i.e., more permanent bits of information that are placed on the hard drive of your computer and stay there unless you delete the cookie). These cookies are used for many purposes, including, without limitation, remembering a user and his/her preferences, collecting aggregated statistical information, learning how you interact with Kia Connect Services, and/or your Kia Owners Portal account (“KOP Account”), and customizing the website based on your preferences. Please be aware that if you disable or remove cookies on a Device that you use to utilize Kia Connect Services, your ability to limit cookies is subject to your browser settings and limitations. You may manage your cookie preferences via the “Cookies Management” link available in the footer of our websites , if applicable.
+
+Pixel Tags. Small graphic images or other web programming code called "pixel tags" (also known as "web beacons," "tracking beacons," "1x1 GIFs," or "clear GIFs") may be included in Kia Connect Services. Pixel tags may be invisible to you, but any electronic image or other web programming code inserted into a web or mobile page or e-mail can act as a pixel tag. Pixel tags or similar technologies may be used for a number of purposes, including, without limitation, to count users of Kia Connect Services and to learn how users interact with Kia Connect Services, to let us know whether you viewed our emails or other electronic communications, and to learn whether our ads are effective.
+
+Embedded Scripts. An embedded script is code that helps us collect information about a user's interactions with certain Kia Connect Services, such as the links clicked by a user. The code is temporarily downloaded onto your Device from our web server or a third-party service provider, and is active only while you are connected to Kia Connect Services
+
+Precise Location-Based Information. Some Kia Connect Services use GPS (or other location-based services) to locate you so that we may verify your exact location, deliver relevant content based on your location, and provide certain Kia Connect Services (more fully described below). To opt out of the collection of location information from your Device, you can adjust the permissions on your Device or uninstall our mobile applications. We collect precise location information to provide you with information that you request, such as the location of a nearby dealer. We may also use and share precise location for any of the purposes described in the “How Do We Use the Information?” and “Why We May Disclose Information With Third Parties.” sections of this Privacy Policy. We will not, however, disclose your precise location information with unaffiliated third parties for their own use without your consent.
+
+Recording of Conversations With Sales and Customer Service Representatives. We and our service providers may monitor and record conversations between customer service center representatives and your Vehicle's occupants, as well as any conversations between our customer service center representatives and you or others contacting the customer service centers to discuss your KOP Account. We may collect, record, store, and monitor such conversations and other interactions between us and you in order to maintain and improve the quality of our service, for training purposes, or to promote and provide Kia Connect Services. Call center advisors may remain on the line, if, during a request for service, we conference in a third party such as emergency service providers or the police. It is important for you to know that these parties may also separately record and/or monitor the interaction, and such actions are outside of Kia’s control.
+Other Drivers. If you are a Vehicle owner and you permit another person to access and use your Kia Connect Services or registered Vehicle, then you acknowledge and agree that such individuals may have access to certain information that we collect, and that we may collect, use, and disclose information associated with such individuals’ use of your Vehicle and the Kia Connect Services. You should inform any such individuals of this Privacy Policy and the applicable settings and privacy choices you have made for the Vehicle and the Kia Connect Services.
+Co-branded Areas. Certain areas of Kia Connect Services may be provided to you in association with third parties ("Co-Branded Areas") such as sponsors and Kia dealers, and may require you to disclose Personal Information to them. Such Co-Branded Areas will identify the third party, which will have its own privacy policy that applies to the third party's collection and use of your information. If you elect to register for products and/or services, communicate with such third parties, or download their content or Apps, at Co-Branded Areas, you may be providing your information to both us and the third party. Further, if you sign-in to a Co-Branded Area with a username and password obtained on Kia Connect Services, your Personal Information may be disclosed to the identified third parties for that Co-Branded Area. We are not responsible for such third party's data collection practices, and you should review the third party's privacy policy for more information.
+
+3. How Do We Use the Information?
+We may use the information we collect in order to:
+
+Process your registration for Kia Connect Services.
+Deliver a variety of Kia Connect products and services.
+Provide you with information or services that you have requested or agreed to receive such as requests for a service appointment with a dealership.
+Enable you to participate in a variety of Kia Connect Services features such as Roadside Assistance, Kia Charge Pass, Plug & Charge, Driving Score, the optional Usage-Based Insurance("UBI") Program, Find My Car, or Remote Start with Climate Control (depending on availability in your Vehicle).
+Enable you to make purchases on the Kia Connect Store.
+Administer features of the Kia Connect Services', such as sweepstakes, contests, and other promotions, including fulfillment of a loyalty or rewards program.
+Deliver advertising or marketing communications based on your interests, location, or online activity, and to monitor the effectiveness of our advertising.
+Customize and personalize your experience with Kia Connect Services.
+Understand you and your preferences to enhance and personalize your experience.
+Maintain, operate, and improve the Kia Connect Services and our vehicles, products, and other offerings, including delivering software updates.
+Develop new Kia Connect Services features, vehicles, and products.
+Contact you with regard to your use of Kia Connect Services or changes to Kia Connect Services and/or policies.
+Send you special offers or promotional materials on behalf of us or third parties.
+Advise you of important safety-related information, such as recalls and service alerts.
+Learn more about our customers and their experiences and to monitor your satisfaction with Kia products and Kia Connect Services provided to you.
+Detect and prevent fraudulent, unlawful, unauthorized, or abusive use of Kia Connect Services.
+Conduct internal research.
+Support our internal business operations; and
+Process information as disclosed at the time we collect the information or as otherwise set forth in this Privacy Policy, applicable terms of service, or in any other document made available to you.
+
+Why We May Disclose Information With Third Parties. We may disclose your information to third parties including our Affiliates, our service providers, and our business partners (and their respective service providers) who assist in providing certain Kia Connect Services, including:
+
+Crash Notification Assistance. Kia Connect Services may automatically connect you to emergency services providers such as the police, fire department, or ambulance service in the event of an airbag deployment in your Vehicle and we will provide them with your precise geolocation so they can find you and respond to your emergency. If you share sensitive information, such as information regarding racial or ethnic origin or health information, during your interactions with us in connection with the emergency, this information may also be shared with our service providers and/or emergency services providers.
+
+Roadside Assistance. We may provide roadside assistance providers with your precise geolocation in the event you request roadside assistance so that the service provider may locate you and assist you with your issue.
+
+Content-Based Services. The precise geolocation of your Vehicle is collected and used to provide content-based services such as navigation, maps, guidance, point-of-interest searches, and finding you the closest charging station (for Kia electric vehicles), etc., and as such, we may disclose this information to our service providers and Affiliates supporting content-based services.
+
+Connected Routing. The precise geolocation of your Vehicle is collected and used to identify the most likely efficient route and/or preferred route based on prior trips from the Vehicle’s current location to the requested destination, and we may share this information with our service providers and Affiliates who support the connected routing feature.
+
+My Car Zone Features: Curfew Alerts, Geo-Fence, & Speed Watch. Kia Connect Services may allow you or others (such as in the case of a parent about a child driver of the Vehicle) to obtain information about a Vehicle’s precise geolocation, historical location and other Vehicle information, including the speed the Vehicle was driven. Through Kia Connect Services Hardware or your KOP Account or the Kia Connect Services App, you can opt through the settings to use certain features available for your Vehicle through the My Car Zone such as the curfew alert, geo-fence, and speed watch features. These features will collect information about the Vehicle’s location even if someone other than you is driving or occupying the Vehicle. For example, a parent who purchases a Vehicle for their child to use that includes this feature can set preferences and controls that will collect information about their child’s driving habits, such as when the Vehicle is being driven and whether the Vehicle is being driven beyond a pre-determined speed limit or boundary location. You understand that when you use any of these features, this Vehicle information may be stored and accessible on your KOP Account in the My Trips feature of Kia Connect Services and you may also receive a detailed alert on your Device, depending on the Kia Connect Services available.
+
+Driving Score. When Kia Connect Services are active in your Vehicle, a limited amount of Personal Information and certain driving behavior data may be shared with our third-party data provider, currently LexisNexis Risk Solutions, to help generate your Driving Score. In order to support the Driving Score feature, LexisNexis Risk Solutions receives from Kia: (i) participant information, including a unique identifier ID, name, mailing address, mobile phone number, date of birth (optional), email address, and date of consent; (ii) your Vehicle identification number (VIN); and (iii) driving data that records the time of drive, speed, braking, and acceleration, including: trip identifier, time stamp and time stamp offset, driver seatbelt status, counter (data collection sequence number), ignition on/off, total trip seconds and trip seconds counter, precise geolocation information (latitude/longitude coordinates), odometer reading, and speed. Additional information about the Driving Score feature can be found on the Driving Score and Usage-Based Insurance portion of the Kia Owner’s Portal website.
+
+Usage-Based Insurance. If you have an active Kia Connect subscription and a Driving Score, you may be presented with the option on the Kia Connect Services to enroll and participate in Kia’s optional UBI Program where certain driving attributes (including your Driving Score) and a limited amount of Personal Information may be shared by our third-party data provider, currently LexisNexis Risk Solutions, with participating third-party insurance providers, who may in turn provide you with tailored auto insurance offers. Please note that this disclosure of Personal Information may be considered a “sale” as the term is defined under certain state privacy laws. Detailed information about the disclosure of such information pursuant to this program can be found in the UBI Program Terms of Service. and on the Driving Score and Usage-Based Insurance portion of the Kia Owner’s Portal website.
+
+Charge Pass and Plug & Charge. If you have an active Kia Connect subscription, you may be presented with an option on the Kia Connect Services to join the Charge Pass Program.You may subsequently be presented with an option to participate in the Plug & Charge Program after you are enrolled in the Charge Pass Program. As part of enrollment in the Charge Pass Program and the Plug & Charge Program, Kia may share a limited amount of Personal Information with ChargePoint, Inc. (“ChargePoint”), its third-party provider supporting the program, and Kia may receive information from ChargePoint relating to your charging sessions. By using the Charge Pass services, you acknowledge that ChargePoint’s Privacy Policy (currently found at https://na.chargepoint.com/privacy_policy) applies to ChargePoint’s collection and use of your information.
+
+Location Sharing. When Kia Connect Services are active in your Vehicle, your Vehicle’s precise geolocation information may be sent to all persons/Devices that have been designated in your preferences via Kia Connect Services.
+
+When You Request Information From or Provide Information to Third Parties. You may be presented with an option on the Kia Connect Services to receive certain information and/or marketing offers directly from third parties or to have us send certain information to third parties or give them access to it. If you choose to do so, your Personal Information may be disclosed to such third parties and the information you disclose will be subject to the privacy policies and practices of such third parties. In addition, third parties may store, collect, or otherwise have access to your information when you interact with their technologies, content, tools, Apps or ads through our Kia Connect Services or link to them from our Kia Connect Services. This may include using third-party tools such as X (formerly Twitter), Google Maps, HERE Maps, digital wallets and keys, or other third-party posting or content sharing tools. We are not responsible for the privacy policies and practices of such third parties and you should review their terms and privacy policies prior to interacting with them. For example, if you are utilizing the maps or navigation functionality available in your Vehicle through Kia Connect Services (including point-of-interest searches), these services are provided through the incorporation of Maps APIs from Google, Inc. ("Google") or HERE Global B.V. ("HERE"), depending on the Vehicle and features utilized. If your Vehicle has maps or navigation functionality from Google and/or if you utilize the point-of-interest search provided by Google, you therefore acknowledge that Google's Privacy Policy (currently found at https://policies.google.com/privacy) applies to Google's collection and use of your information. If your Vehicle has maps or navigation functionality from HERE and/or if you utilize the point-of-interest search provided by HERE, you therefore acknowledge that HERE's Privacy Policy (currently found at https://legal.here.com/en-gb/privacy) applies to HERE’s collection and use of your information.
+
+Third Parties Providing Services on Our Behalf. While Kia Connect Services are provided by Kia, we may interact with and/or engage one or more third-party providers as necessary to provide Kia Connect Services. Those third-party providers include any person, company, or entity who provides any service, equipment, or facilities in connection with Kia Connect Services, such as wireless service providers, streaming service providers, like Amazon, telematics service providers, like Cellco Partnership, d/b/a Verizon Wireless, underlying wireless carriers, suppliers, licensors, public safety answering points, emergency responders and other service providers such as police, fire, and ambulance, towing or other roadside assistance companies, automobile makers, distributors, and dealers. Additionally, we may use third-party vendors to perform certain services on our behalf, such as hosting Kia Connect Services, designing and/or operating features, tracking Kia Connect Services activities and analytics and understanding our audience, assisting with marketing campaigns and other outreach efforts, and enabling us to send you special offers or perform other administrative services. We may provide these vendors with access to user information to carry out the services they are performing for you or for us. Third-party analytics service providers may use technology to track a Device's interactions with Kia Connect Services. For example, we may use Adobe's analytics and on-site personalization services. See https://www.adobe.com/privacy/experience-cloud.html for more information. To learn about opting out of the use of Adobe cookies for analytics and on-site personalization, visit Adobe’s website at http://www.adobe.com/privacy/opt-out.html. If you opt-out of the use of Adobe cookies for analytics and on-site personalization, Adobe will no longer collect and analyze information via cookies associated with your browser for these services. When you opt out, Adobe will place opt-out cookies on your browser. If you delete your cookies, change browsers, or change devices, you will need to repeat this opt-out process.
+
+Administrative and Legal Reasons. We may also share your information to satisfy any applicable law, regulation, subpoenas, court orders, warrants, governmental requests, or legal process if in our good faith opinion such is required or permitted by law. We may also share your information with a third party performing audit, legal, operational, or other similar services for or on Kia's behalf.
+
+Affiliates and Business Transfer. We may share your information with our Affiliates. We also reserve the right to disclose and transfer the information we collect: (i) to a subsequent owner, co-owner, or operator of the Kia Connect Services or applicable databases; or (ii) in connection with the negotiation, planning, or completion of a corporate merger, consolidation, restructure, sale of substantially all of our shares or assets, or other corporate change.
+
+We do not disclose your Personal Information that we have collected directly from you on our Kia Connect Services to third parties for those third parties' marketing purposes unless you consent to such sharing at the time you provide your Personal Information. In addition, we may disclose the information we have collected about you, including Personal Information and Vehicle Information, as disclosed at the time you provide your information.
+
+4. Information About Targeted Advertising and Do Not Track Disclosures
+We contract with third-party advertising networks, social networks, publishers, and other entities to advertise our products and services on websites not affiliated with us. Some of these third parties may use cookies or other technologies to collect information about your online activities over time and across third-party websites or online services in order to deliver advertising based on your interests and preferences, as inferred from your browsing histories. This type of targeted advertising is sometimes called “online behavioral advertising” or “targeted advertising.” We follow the industry privacy standards for this type of online advertising. When you see one of our ads on another website that is generated and delivered as part of an online behavioral advertising campaign, you should see a small symbol (also called an icon) attached to the targeted ad that you can click on to learn about why and how you are receiving that particular ad.
+We and third-party vendors, including Google, use cookies (such as the Google Analytics and Doubleclick cookies) together to report how your ad impressions, other uses of ad services, and interactions with these ad impressions and ad services are related to visits to our Kia Connect Services. Google’s use of the DoubleClick cookie enables Google and its partners to serve ads based on users’ visits to our Kia Connect Services and/or other sites and online services. To learn more about how to opt out of Google’s use of cookies, click here, and otherwise review Google’s privacy policy.
+Additionally, the Kia Connect Services may use Adobe’s Marketing Cloud, as described here. To learn about opting out of the use of Adobe cookies for analytics, visit http://www.adobe.com/privacy/opt-out.html. After you opt out of the use of Adobe cookies, Adobe will no longer collect and analyze information via cookies associated with your browser for these services. When you opt out, Adobe will place opt-out cookies on your browser. If you delete your cookies, change browsers, or change devices, you will need to repeat this opt-out process. Also, please note that this opt-out process will work only if your browser is set to accept all cookies. We may still use Adobe services to create promotions and apps within social networks after you opt out. These services do not rely on collecting and analyzing information via cookies. To learn more about your choices for these services, review the options your social network provides. Also, we are not responsible for the effectiveness of or compliance with any third parties’ opt-out options.
+We may use third-party advertising companies to target advertisements to you on the Kia Connect Services, across the web, on your mobile Device, and on any of your other Devices, based on the information we have collected from and about you, as well as information relating to your and other users’ visits to this and other websites and online services. To do so, these companies may place or recognize a unique cookie on your browser (including through the use of pixel tags) or recognize an identifier associated with your mobile Device. These companies may also use these technologies, along with Personal Information they or we collect on the different Devices you use, to recognize you across the Devices you use, such as a mobile device and a laptop or other computer. If you are in the United States and would like more information about cookies and targeted advertisements or to opt out of having this information used by companies that participate in the Self-Regulatory Program for Online Behavioral Advertising on desktop and mobile web browsers, please visit www.aboutads.info/choices. You may download the AppChoices app at https://youradchoices.com/ to opt out in mobile apps. You may also click on the informational icon contained within each interest-based ad. If eligible, you may exercise your right to opt out of such advertising by following the instructions in Section 14 (“Your California Privacy Rights”) and Section 15 (“Additional State Privacy Rights”) below. Please note that if you opt out of targeted advertising, you may still receive online advertising from Kia and others while you are browsing online. However, the advertisements you see may be less relevant to you and your interests. You should also know that the online behavioral advertising opt-out relies on the use of cookies. If you delete cookies from your Device, buy a new Device, access our Kia Connect Services from a different Device, log in under a different screen name, or change web browsers, you will need to register your opt-out preferences again.
+Various third parties are developing or have developed signals or other mechanisms for the expression of consumer choice regarding the collection of information about an individual consumer’s online activities over time and across third-party web sites or online services (e.g., browser do not track signals). Because a “Do Not Track” protocol has not yet been finalized, the information collection and disclosure practices of our websites, and the choices that our websites provide to consumers, will continue to operate as described in this Privacy Policy, whether or not a Do Not Track signal is received. Currently, we do not monitor or take any action with respect to these signals or other mechanisms.
+
+5. Do Kia Connect Services Contain Third-Party Content and Links to Third-Party Services?
+Kia Connect Services may contain content that is supplied by third parties, including our business partners. Those third parties may collect information about your use of Kia Connect Services, and they may be able to track your online activities over time and across various websites. In addition, when you are using Kia Connect Services you may be directed to other services that are operated by third parties that we do not control. We are not responsible for the privacy practices employed by any of these third parties. For example, a link may take you away from a Kia Connect Services page and onto a third party's website or application. These other websites and applications may send their own cookies to you, independently collect data, or solicit Personal Information. We encourage you to note when you leave Kia Connect Services and to read the privacy policies of all third-party websites or applications before submitting any Personal Information to third parties.
+
+6. Do Third-Party Apps Appear on Kia Connect Services?
+Third-party Apps may be available via Kia Connect Services and our App Center. The owners of these Apps ("Third-Party Owners") may collect Personal Information and other data from you and may have their own policies and practices. We are not responsible for how Third-Party Owners, or their Apps collect or use your information and they may be tracking you across multiple services and may be sharing the results of that tracking with us and/or others. These Third-Party Owners may have their own terms of service, privacy policies, or other policies and ask you to agree to the same. We are not responsible for these third-party privacy policies or the practices of Third-Party Owners. Be sure to review any available policies before submitting any personally identifiable information to a third-party application or otherwise interacting with it and exercise caution in connection with these Apps.
+
+7. How Do I Change My Information and Communications Preferences?
+You are responsible for maintaining the accuracy of the information you submit to us, such as your contact information provided as part of your KOP Account registration. Your KOP Account may allow you to review, correct, or update information that you have provided through Kia Connect Services registration forms or otherwise and may allow you to review certain Vehicle Information collected through Kia Connect Services, such as in-Vehicle diagnostics. If you make changes to your KOP Account information after logging in to your KOP Account, we will make good faith efforts to make the same changes in our active databases as soon as reasonably practicable. With respect to the Kia Connect Services App, you can prospectively stop all collection of information through your mobile Device by uninstalling the application. You may use the standard uninstallation process as may be available as part of your applicable Device or potentially via the appropriate application or app marketplace. Please note that it is not always possible to completely remove or delete all your information from our databases and that residual data may remain on backup media or for other reasons. When you edit your Personal Information or change your preferences on your KOP Account, information that you remove may persist internally for Kia’s administrative purposes. You may opt out from receiving or modify your e-mail marketing communications preferences by following the instructions contained within our promotional e-mails or in some cases by logging into your KOP Account and changing your communication preferences. This will not affect subsequent subscriptions and if your opt-out is limited to certain types of e-mails the opt-out will be so limited. If you subscribe to text messages from us, you can terminate a particular text message subscription by reply texting "STOP." Subsequent or different subscriptions will be unaffected. Please note that we reserve the right to send you certain communications relating to your KOP Account or use of Kia Connect Services, such as administrative and service announcements and these transactional account messages may be unaffected if you choose to opt out from receiving our marketing communications.
+If you have any questions about the Privacy Policy or practices described in it, you may contact us by calling (800) 333-4KIA (4542) or by writing us directly at Kia America, Inc., Kia Customer Care Center, P.O. Box 52410, Irvine, CA 92619-2410. If you wish for Kia Connect Services to stop collecting Vehicle Information, please contact your Vehicle technician who can determine whether your Kia Connect Services is collecting such information and/or whether Kia Connect Services Hardware can be deactivated or uninstalled from your Vehicle.
+California, Colorado, Connecticut, Delaware, Indiana, Iowa, Kentucky, Maryland, Minnesota, Montana, Nebraska, New Hampshire, New Jersey, Oregon, Rhode Island, Tennessee, Texas, Utah, and Virginia consumers have additional rights to learn about what Personal Information a business has collected, shared, sold, and disclosed about them, opportunities to opt out of such sales or sharing, opportunities to request deletion or correction of their Personal Information, opportunities to limit the use and disclosure of their Sensitive Personal Information and protection from discrimination for exercising their rights. Eligible residents of these states may also appeal any decision or indecision related to the exercise of any right provided under applicable law. These rights are more thoroughly discussed below in Section 14 ("Your California Privacy Rights") and Section 15 ("Additional State Privacy Rights").
+
+8. What Steps Should I Take if I Sell or Transfer My Vehicle?
+If you have Kia Connect Services installed in your Vehicle and you sell or otherwise transfer your Vehicle to a new owner, it is your responsibility to: (i) immediately cease using Kia Connect Services and remove your Vehicle from your KOP Account; and (ii) delete all stored information from your Vehicle. If you do not delete this information, it may remain in the Vehicle and may be accessible to future users of the Vehicle.
+
+9. Where Does Kia Process the Information?
+Kia Connect Services are operated from the United States and intended for users located in the United States. Please be aware that information we collect, including Personal Information, may be transferred to, processed in, and stored in the United States and/or Korea, where our parent company operates. The data protection laws applicable to our processing of your information may differ from those of the country in which you are located, and your Personal Information may be subject to access requests from governments, courts, or law enforcement according to the laws of the country in which your data is processed. By using Kia Connect Services or providing us with any information, you consent to the transfer, processing, and storage of Personal Information in accordance with this Privacy Policy.
+
+10. What About Information on Children and Minors?
+We do not knowingly collect Personal Information from children younger than the age of thirteen (13) or minors under the age of sixteen (16) nor do we knowingly sell or share the Personal Information of children or minors younger than sixteen (16) years of age. We will delete any Personal Information collected through the Kia Connect Services if it is later determined that the information belongs to a minor younger than the age of sixteen (16). If you are a parent or guardian of a child under the age of sixteen (16) and believe he or she has disclosed Personal Information to us, please contact us at 1-800-333-4542.
+
+11. What About Security?
+We incorporate commercially reasonable security procedures and practices to help protect and secure your Personal Information. However, no data transmission over the Internet, wireless transmission, or electronic storage of information can be guaranteed to be 100% secure. Please note that we cannot ensure the security of any information that we collect, and through your use of the Kia Connect Services, you provide us with your information at your own risk.
+
+12. Data Retention
+Kia is committed to only retaining Personal and Vehicle Information for the period in which retention is necessary to fulfill a legitimate business purpose and deleting the information thereafter. The legitimate business purposes for which we retain information are described in Section 3 above and throughout this Privacy Policy. In certain instances, this may potentially include retaining Personal Information and Vehicle Information in perpetuity provided we have a legitimate business purpose for doing so. Once we determine there is no longer a legitimate business purpose for retaining either Personal Information or Vehicle Information, we will delete such information, as determined in our sole discretion and as permitted by law.
+The criteria used to determine our retention periods includes:
+
+The length of time we have an ongoing relationship with you and provide the Kia Connect Services to you
+The legitimate business purposes for which we collect and process your Personal Information and Vehicle Information as described in Section 3 above and throughout this Privacy Policy, but may additionally include, without limitation: to provide, develop, and improve the products and services we make available through Kia Connect Services, to maintain the security, integrity, and operation of Kia Connect Services, to comply with our legal and regulatory obligations and other third-party requirements, to resolve disputes, to enforce our agreements, to diagnose and troubleshoot Vehicle systems, to improve Vehicle safety, to communicate with you, to prevent fraud or criminal activity, to maintain warranty and business records, and for other purposes we determine in our sole discretion; and
+Whether there is a legal obligation to which we are subject that requires us to keep records before we can delete them.
+
+13. What About Changes to the Privacy Policy?
+We reserve the right to change this Privacy Policy from time to time. Any changes will be effective immediately upon the posting of the updated Privacy Policy, or such later date as may be specified in the updated Privacy Policy. Under certain circumstances (for example, in connection with certain material changes), we may also elect to notify you of changes or updates to our Privacy Policy, such as posting a notice on the home page of our website or via a link or tab on the mobile applications. Therefore, you should review this Privacy Policy from time to time, and before using any of our products or services. You are responsible for ensuring we have a deliverable email address for you, and for periodically monitoring and reviewing any updates to this Privacy Policy. Your continued use of Kia Connect Services after such amendments will be deemed your acknowledgement of these changes to this Privacy Policy.
+
+14. Your California Privacy Rights
+California Law provides eligible California residents with specific rights with respect to our collection, retention, and use of Personal Information. This California Privacy Rights section supplements this Privacy Policy and applies solely to eligible residents of California as of January 1, 2023. Any terms not defined in this section have the same meaning as defined in California Law.
+(a) Right to Know About/Access Personal Information Collected, Disclosed, Sold, or Shared
+You have the right to request that we provide certain information to you about our collection and use of your Personal Information. Specifically, you have the right to request disclosure of the categories of Personal Information and specific pieces of Personal Information we have collected about you. Upon the submission of a verifiable consumer request (see "Exercising Your California Privacy Rights," below), we will disclose to you:
+
+the categories of Personal Information we collected about you.
+the categories of sources from which Personal Information was collected.
+the business or commercial purpose for collecting Personal Information.
+the business or commercial purpose for disclosing, selling, or sharing Personal Information; and
+the categories of third parties with whom we sold, share, or disclosed Personal Information for a business purpose.
+
+We will also provide the specific pieces of Personal Information we collected about you, subject to certain exceptions under applicable law, if you also request access to such information.
+As discussed in our General Privacy Policy, if you have visited our websites, we may have collected information about you and the Device you used to engage with our websites, such as an IP address, device type, operating system, time of visit, and other similar information, as discussed above. Such information may not be stored with other Personal Information that identifies you (such as your name, postal address, email address, etc.), and we therefore may not be able to reasonably associate this device-level information with you. Thus, we may not be able to provide you with specific information, delete, or correct specific information that we have collected that cannot be reasonably associated with you. You may exercise your privacy rights for device-level data by engaging with the consent management platform displayed when you enter our website, or by clicking on the "Cookies Management" link in the footer of our websites, if applicable. You may also exercise rights related to advertising and analytics as discussed in Section 3.
+(b) Right to Request Deletion of Personal Information
+You also have the right to request that we delete Personal Information that we have collected from and maintain about you, subject to certain exceptions. Once we receive and confirm your verifiable consumer request, we will conduct a reasonable search of our records in order to locate any Personal Information we have collected from you that is eligible for deletion and delete such Personal Information. To the extent we have disclosed any Personal Information collected about you to service providers or contractors that is eligible for deletion, we will direct those service providers or contractors to delete that Personal Information as well. For the sake of clarity, however, Kia may not be able to comply entirely with your request to delete all your Personal Information as set forth under California Law. For example, if you purchased, leased, or serviced a Vehicle at a Kia dealership, we may need to keep records related to these types of transactions to, for instance, fulfill the terms of an applicable warranty or contact you about a product recall or other safety issue. Specifically, we are not required to delete any Personal Information we have collected about you that is necessary for us and our service provider(s) to:
+
+Complete the transaction for which the Personal Information was collected, fulfill the terms of a written warranty or product recall conducted in accordance with federal law, provide a good or service requested by you, or reasonably anticipated within the context of our ongoing business relationship with you, or otherwise perform a contract between Kia and you.
+Help ensure security and integrity to the extent the use of the consumer’s Personal Information is reasonably necessary and proportionate for those purposes, including to detect security incidents that compromise the availability, authenticity, integrity, and confidentiality of stored or transmitted Personal Information; protect against malicious, deceptive, fraudulent, or illegal activity and help prosecute those responsible for that activity; or ensure the life and physical safety of natural persons.
+Debug to identify and repair errors that impair existing intended functionality.
+Exercise free speech, ensure the right of another consumer to exercise his or her right of free speech, or exercise another right provided for by law.
+Comply with the California Electronic Communications Privacy Act pursuant to Chapter 3.6 (commencing with Section 1546) of Title 12 of Part 2 of the Penal Code.
+Engage in public or peer-reviewed scientific, historical, or statistical research in the public interest that adheres to all other applicable ethics and privacy laws, when our deletion of the information is likely to render impossible or seriously impair the achievement of such research, if you have provided informed consent.
+Enable solely internal uses that are reasonably aligned with your expectations based on your relationship with us.
+Comply with a legal obligation, such as retaining records for a period as set out in local, state, or federal laws.
+Otherwise use your Personal Information, internally, in a lawful manner that is compatible with the context in which you provided your information.
+
+Following a deletion request, any Personal Information about you that was not deleted from our systems due to the above exceptions will only be used for the purposes provided for by the applicable exceptions. Thus, all Personal Information about you that is not subject to a deletion exception will either be (1) permanently deleted on our existing systems (except for archived or back-up systems maintained for emergency disaster recovery and business continuity purposes); (2) de-identified; or (3) aggregated so as to not be personal to you.
+(c) Right to Correct Inaccurate Personal Information
+You have the right to request that we correct any of your Personal Information that we maintain about you, considering the nature of the Personal Information and the purposes of the processing of your Personal Information.
+(d) Right to Opt Out of the Sale or Sharing of Personal Information
+If Kia sells or shares Personal Information about you to third parties, you may have the right to opt out and request that Kia not sell or share your Personal Information. To exercise the right to opt out, you (or your authorized representative) may submit a request to us by visiting the following Internet Web page link:
+Do Not Sell or Share My Personal Information
+Once you make an opt-out request, we will wait at least twelve (12) months before asking you to reauthorize Personal Information sales. However, if at a later time, you wish to allow us to share or sell your Personal Information to third parties, you must opt in to such sharing or sales, and may do so by calling 800-333-4KIA (4542). If a transaction requires the sharing or sale or transmission of your Personal Information in order to complete the transaction, we will notify you and provide instructions on how you can opt-in.
+If you have an opt-out preference signal enabled (e.g., the Global Privacy Control), you will automatically be opted out of the sale or sharing of your information, but we may ask you to confirm your preference if you have previously consented to the sale or sharing of your Personal Information. To download and use a browser supporting the opt-out preference signal, please visit https://globalprivacycontrol.org/orgs. If you choose to use the opt-out preference signal, you will need to enable it for each supported browser or browser extension you use.
+(e) Right to Limit the Use and Disclosure of Sensitive Personal Information
+Kia may use or disclose your Sensitive Personal Information for purposes other than those provided for under California Law. In such instances, you have the right, subject to certain exceptions, to limit how Kia uses and discloses your Sensitive Personal Information. To exercise the right to limit, you (or your authorized representative) may submit a request to us by visiting the following Internet Web page link:
+Limit the Use of My Sensitive Personal Information
+Once you make a limit request, we will wait at least twelve (12) months before asking you to reauthorize the use or disclosure of your Sensitive Personal Information for purposes other than those for which you exercised your right to limit. However, if at a later time, you wish to allow us to use or disclose your Sensitive Personal Information, you must opt in to such use or disclosure, and may do so by calling 800-333-4KIA (4542). If a transaction requires the use or disclosure of your Sensitive Personal Information in order to complete the transaction, we will notify you and provide instructions on how you can reauthorize such use or disclosure.
+If you have an opt-out preference signal enabled (e.g., the Global Privacy Control), you will automatically be opted out of the sale or sharing of your information, but we may ask you to confirm your preference if you have previously consented to the sale or sharing of your Personal Information. To download and use a browser supporting the opt-out preference signal, please visit https://globalprivacycontrol.org/orgs. If you choose to use the opt-out preference signal, you will need to enable it for each supported browser or browser extension you use.
+(f) Right to Appeal
+You have the right to appeal any decision or indecision related to the exercise of any right you are granted under California Law.
+(g) Right to Non-Discrimination for the Exercise of a Consumer's Privacy Rights
+We will not discriminate against you for exercising any of your privacy rights. Unless permitted by applicable law, we will not:
+
+Deny you goods or services.
+Charge you different prices or rates for goods or services, including through granting discounts or other benefits, or imposing penalties.
+Provide you a different level or quality of goods or services.
+Suggest that you may receive a different price or rate for goods or services or a different level or quality of goods or services.
+
+(h) Exercising Your California Privacy Rights
+You do not need to create an account with us to exercise your California Law rights. To exercise the California Law rights described above please submit a consumer request to us by either:
+
+Visiting our online request portal (available 24/7)
+Calling us at (800) 333-4KIA (4542) (open Monday-Friday from 5:00 AM to 6:00 PM PT)
+
+To exercise your right to know/access, delete, or correct your Personal Information as described above, we need to verify your identity or authority to make the request and confirm the Personal Information relates to you. These requests may be made only by you, your parent or guardian (if you are under 18 years of age), a person to whom you have given power of attorney pursuant to California Probate Code sections 4000 to 4465, or an authorized agent that is registered with the California Secretary of State. If a parent or guardian is submitting a request on behalf of a minor, the parent or guardian must submit proof that they are the parent or guardian of the subject consumer and must verify the consumer’s identity. A downloadable Letter of Parent or Guardian form is available in the online request portal and may be uploaded for submission once completed. If someone with power of attorney is making a request on behalf of a consumer, they must verify the individual consumer’s identity and submit documentation establishing the power of attorney, such as by uploading it onto the online request portal. If an authorized agent is submitting a request on behalf of a consumer, they must verify the individual consumer’s identity, provide written permission from the consumer to submit the request on the consumer's behalf, and submit documentation establishing registration with the Secretary of State. Such documentation may be uploaded onto the online request portal. If Kia cannot verify that the requestor is authorized by the consumer to act on such consumer’s behalf, Kia is not obligated to provide information or respond to the request. If you have any questions about making a request on behalf of another consumer, please call us at 800-333-4KIA (4542).
+Your verifiable consumer request to know, delete, or correct must provide sufficient information that allows us to reasonably verify that you are the person about whom we collected Personal Information or that you are an authorized representative of such person. We will not respond to your request or provide you with Personal Information if we cannot verify your identity or authority to make the request and confirm the Personal Information relates to you. While we may ask for Personal Information to verify the requestor or consumer's identity when making a request, we will only use that Personal Information provided in a verifiable consumer request to verify the requestor's identity or authority to make the request. Making a verifiable consumer request does not require you to create an account with us. Additionally, you may only make a verifiable consumer request for access twice within a 12-month period.
+(i) Your Rights Under "Shine the Light"
+In addition to your rights under California Law, California Civil Code Section 1798.83 permits California residents to request information regarding our disclosure, if any, of their Personal Information to third parties for their direct marketing purposes. If this applies, you may obtain the categories of Personal Information disclosed and the names and addresses of all third parties that received Personal Information for their direct marketing purposes during the immediately prior calendar year (e.g., requests made in 2025 will receive information about 2024 sharing activities). To make such a request, please provide sufficient information for us to determine if this applies to you, attest to the fact that you are a California resident and provide a current California address for our response. You may make this request in writing to the Kia Customer Care Center: P.O. Box 52410, Irvine, CA 92619-2410.
+
+15. Additional State Privacy Rights
+For eligible residents of Colorado, Connecticut, Delaware, Indiana, Iowa, Kentucky, Maryland, Minnesota, Montana, Nebraska, New Hampshire, New Jersey, Oregon, Rhode Island, Tennessee, Texas, Utah, and Virginia, you also have rights with respect to the Personal Information, also known as personal data, that we collect about you. This Additional State Privacy Rights section supplements this Privacy Policy and applies solely to eligible residents of Colorado, Connecticut, Delaware, Indiana, Iowa, Kentucky, Maryland, Minnesota, Montana, Nebraska, New Hampshire, New Jersey, Oregon, Rhode Island, Tennessee, Texas, Utah, and Virginia. Any terms not defined in this section have the same meaning as defined under applicable Colorado, Connecticut, Delaware, Indiana, Iowa, Kentucky, Maryland, Minnesota, Montana, Nebraska, New Hampshire, New Jersey, Oregon, Rhode Island, Tennessee, Texas, Utah, and Virginia privacy law, including the Colorado Privacy Act, Connecticut Data Privacy Act, Delaware Personal Data Privacy Act, Indiana Consumer Data Protection Act, Iowa Consumer Data Protection Act, Kentucky Consumer Data Protection Act, Maryland Online Data Privacy Act, Minnesota Consumer Data Privacy Act, Montana Consumer Data Privacy Act, Nebraska Data Privacy Act, New Hampshire Data Privacy Act, New Jersey Privacy Act, Oregon Consumer Privacy Act, Rhode Island Data Transparency and Privacy Protection Act, Tennessee Information Protection Act, Texas Data Privacy and Security Act, Utah Consumer Privacy Act, and Virginia Consumer Data Protection Act. Subject to certain exceptions, if you are an eligible resident of one of these states, you have certain privacy rights which may include, depending on your state of residency:
+
+Right to Know/Access. You have the right to confirm whether Kia processes your Personal Information and access such Personal Information. You also have the right to obtain your Personal Information in a portable, and to the extent reasonably feasible, readily usable format that you can transmit without hinderance. In addition, Delaware and Maryland residents have the right to obtain a list of the categories of third parties to which Kia has disclosed Personal Information, and Oregon and Minnesota residents have the right to receive a list of specific third parties to which Kia has disclosed any Personal Information.
+Right to Delete. You have the right to request that Kia delete the Personal Information you have provided to us or that Kia has otherwise obtained about you.
+Right to Correct. You have the right to request that Kia correct inaccuracies in your Personal Information, taking into account the nature of the Personal Information and the purposes of the processing of your Personal Information.
+Right to Opt Out. You have the right to opt out of the processing of your Personal Information for the purposes of (i) targeted advertising, (ii) the sale of your Personal Information, and (iii) profiling in furtherance of decisions that produce legal or similarly significant effects. If you are a resident of Minnesota and your Personal Information is profiled in furtherance of decisions that produce legal or similarly significant effects, then you also have the right to: (i) question the result of the profiling, (ii) be informed of the reason that the profiling resulted in the decision, (iii) if feasible, be informed of what actions you might have taken to secure a different decision and the actions you might take to secure a different decision in the future, (iv) review your Personal Information used in the profiling, and (v) if the decision is determined to have been based upon inaccurate Personal Information, to have the Personal Information corrected and the profiling decision reevaluated based upon the corrected Personal Information. Please note that we do not engage in profiling in furtherance of decisions that produce legal or similarly significant effects (as defined by applicable law), but we may sell or use your personal information for targeted advertising purposes as described within this Privacy Policy.
+NOTICE: We may sell your sensitive personal data.
+Right to Appeal. You have the right to appeal Kia’s decision with regard to your request to exercise any rights described herein.
+
+You do not need to create an account with us to exercise your Colorado, Connecticut, Delaware, Indiana, Iowa, Kentucky, Maryland, Minnesota, Montana, Nebraska, New Hampshire, New Jersey, Oregon, Rhode Island, Tennessee, Texas, Utah, and Virginia privacy law rights. To exercise the rights described in this Section 15, including your opt-out rights, please submit a consumer request to us by either:
+Visiting our online request portal (available 24/7)
+Calling us at (800) 333-4KIA (4542) (open Monday-Friday from 5:00 AM to 6:00 PM PT)
+
+kia connect privacy policy
+kia connect

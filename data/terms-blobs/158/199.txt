@@ -1,0 +1,13 @@
+Privacy Policy - Hyundai Test
+
+1. Information We Collect
+We collect the following categories of personal information: full name, email address, phone number, postal address, vehicle identification number (VIN), GPS location data from your connected vehicle, app usage data, and device identifiers.
+
+2. Purposes of Collection
+We use collected information for: service provision including remote vehicle control, emergency assistance and SOS services, route navigation, customer support, marketing communications subject to your consent, product improvement through analytics, and compliance with legal obligations.
+
+3. Third Party Transfer
+Your personal data may be shared with the following parties: Hyundai Motor Company (parent company in Korea) for global service management, service providers supporting customer support, and payment processors for subscription services.
+
+4. International Transfer to Korea
+Personal data including vehicle diagnostics, precise location, and account identifiers are transferred to Hyundai Motor Company in South Korea for centralized service operations. This transfer is based on standard contractual clauses (SCCs).

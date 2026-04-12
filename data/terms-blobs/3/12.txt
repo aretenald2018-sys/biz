@@ -1,0 +1,605 @@
+Bluelink Privacy Notice.
+
+Hyundai Connected Mobility GmbH.
+
+Privacy Notice - Bluelink Services.
+Eective from 1st Jan 2025.
+Other language versions of this Privacy Notice can be accessed and downloaded below.
+
+English version
+
+Other languages
+
+List of changes
+
+4.1.1 We will process your Vehicle Identication number (VIN), the categories of Services that you have activated and the initial activation date.
+4.1.2 We have updated the purposes of data processing.
+4.3.2 Privacy settings have been added.
+4.3.3 If you arrive and park at certain POIs, we will transfer the following data related to this event to our service provider so that they can measure the eectiveness of the third-party content and improve the services oered: GPS parking position with latitude/longitude blurred beyond 4 digits after the decimal point (no exact location data) and the day of the parking event (no exact timestamp) together with the device ID and oer ID.
+4.3.6.1 Preferred route has been added.
+4.4.2 Surround view monitor feature has been added.
+4.7 Data processing for cybersecurity related purposes has been added. Instead of this new chapter, previous appendix (Data processing in joint control with Hyundai Motor Company) has been deleted.
+8.3 The service list feature has been deleted.
+
+1. What is this Privacy Notice about?
+The purpose of this privacy notice (“Privacy Notice”) is to inform you about the collection and processing of your personal data in connection with the provision of Hyundai Bluelink Europe services (“Bluelink” or “Services”) to you via the car’s infotainment system (this is the head unit of your vehicle) and the Hyundai Bluelink Europe app (“App”). We take your privacy very seriously and will only process your personal data in accordance with applicable data protection laws. Any processing of your personal data regarding the registration of the underlying Account (including personal data about you such as your name, email address, date of birth or mobile phone number) is subject to a separate privacy notice.
+2. Who is responsible for processing my data?
+Hyundai Connected Mobility GmbH with its registeredoce in Kaiserleipromenade 5, 63067 Oenbach, Germany (“Hyundai”) is theprovider of the Services and responsible for the processing of your personaldata as explained in this Privacy Notice. Hyundai will be referred to as “we”, “our” or “us”. We may use your personal data for the purposes asdescribed below. In regard to specic Services as listed in Section 6, wewill act as a joint controller together with aliated companies of theHyundai group and/or the authorized Hyundai Distributor in your country of purchase.
+You can nd the full names and contact data of therespective joint-controllers in Section 13. We and the joint controller enter into an agreementgoverning the processing of personal data. Upon request, we will provide informationon the essence of such an agreement to you.
+3. How can I contact the controller and the data protection ocer?
+3.1. If you have any questions about or inconnection with this Privacy Notice or the exercising of any of your rights,you may contact the Hyundai's customer call centre at the phone number +49 69271472377. You may also contact Hyundai by sending anemail to bluelink@hyundaieurope.com.
+3.2. Alternatively, you may also contact our data protection ocer at the email address HCM.dataprotection@hyundai-europe.com, or by writing to:
+c/o Data Protection Ocer
+Kaiserleipromenade 5
+63067 Oenbach, German
+Hyundai Connected Mobility GmbH
+4. What categories of personal data are processed, for what purposes and on what legal basis?
+4.1. Our processing of your personal data
+4.1.1. Provision of the Bluelink Services
+We collect and process your personal data in connection with the Services only insofar as the collection and processing is:
+
+necessary for the conclusion or performance of the Bluelink contract (Art. 6 (1) b) GDPR),
+where required by law (Art. 6 (1) c) GDPR),
+where based on consent (Art. 6 (1) a) GDPR), or
+where it is necessary for the purposes of legitimate interests of us or third parties (Art. 6 (1) f) GDPR).
+
+For details on individual Services, please refer to the respective service description in the Bluelink Terms of Use. All (personal) data described in Sections 4.2, 4.3, 4.4, 4.5 and their subsections below is collected directly from your vehicle (e.g. its sensors and related applications as made accessible through the infotainment system), or was made available by you through the App (e.g. by entering certain personal data via the App) and is processed in connection with the Services. The data described in Sections 4.2, 4.3, 4.4 and 4.5 and their subsections below is required to provide the Services. Without this information, the Services cannot be performed.
+Furthermore, we will additionally process your Vehicle Identication number (VIN), the categories of Services that you have activated and the initial activation date . The legal basis is Art. 6 (1) b) GDPR (entering into a contract and performing our Services).
+4.1.2. Processing for other purposes
+Apart from the provision of the Services, we will also process your personal data for other purposes as described below.
+
+Product improvement / development: If you agree, we will analyse and further improve the Services in order to develop new mobility-related products and/or services, to make our products more secure and/or to improve our Services.
+For these purposes, we automatically analyse the data collected when providing Services based on statistical and mathematical models to identify potential for improvements if you have either activated all Services or selected the “Product/Service Improvement” service category in the privacy settings of your infotainment system. More details are provided in Section 4.5.
+The legal basis for any such processing is Art. 6 (1) f) GDPR (legitimate interests of Hyundai and the Distributor to process your personal data in order to develop and improve our Services).
+Monitoring of products / product liability: In this context, we process your personal data in order to monitor our products, ensure sucient IT security standards or to defend ourselves or third parties against product liability and other legal claims made with regard to our products and Services.
+Insofar as such processing is not required by law (Art. 6 (1) c) GDPR), the legal basis for any such processing is Art. 6 (1) f) GDPR (legitimate interests of Hyundai and the Distributor to process your personal data for the purposes as indicated above).
+Fullling legal obligations: We process your personal data in order to full various legal obligations (Art. 6 (1) c) GDPR), in particular laws applicable to car manufacturers. Examples of such obligations include:
+> provision of certain functionalities in the car such as the “eCall” in accordance with regulation (EU) 2015/758,
+> reporting of certain information (i.e. related to the functioning of the intelligent speed assistance – ISA, Driver Control Assistance Systems – DCAS, etc.) to the relevant national and/or European authorities, on the basis of regulation (EU) 2019/2144;
+> provision of information to courts or criminal prosecution authorities based on applicable criminal or administrative laws.
+Other purposes: We process your personal data for other purposes only if we are obliged to do so on the basis of legal requirements (Art. 6 (1) c) GDPR), if you have consented to the respective processing (Art. 6 (1) a) GDPR) or if the processing is otherwise lawful under applicable law.
+If processing for another purpose takes place, Hyundai and/or the Distributor will provide you with additional information where appropriate.
+
+4.1.3. No automated decision-making
+Neither Hyundai, nor the Distributor, engage in automated decision-making including proling in connection with the Services unless you have been expressly notied otherwise by other means.
+4.2. Hyundai Account
+The Hyundai Account is required to register for numerous services (provided by us or by cooperating third parties). The underlying processing of your personal data is necessary to enter into and to perform a contract with you (Art. 6 (1) b) GDPR) and is based on our legitimate interest to improve your customer experience by providing you with a centralised user account (Art. 6 (1) f) GDPR). The Hyundai Account is a central user account in which you can manage your personal master data and which you can use as a single sign-on for your linked services. To use our Bluelink Services it is necessary to create a Hyundai Account or to log in with an existing Hyundai Account. In this case, the Bluelink Services will be linked to your Hyundai Account and your personal master data (your email address, your salutation, rst and last name, your country and your preferred language) will be displayed. For more information, please refer to the separate Privacy Notice for the Hyundai Account which can be accessed here: https://euaccount.hyundai.com/auth/resources/o5704/login/hyundai-id/legal_en.html
+4.3. Provision of Bluelink Services – vehicle infotainment system
+4.3.1. Privacy Settings
+In the privacy settings of your infotainment system, you have the option to activate all in-vehicle Services, only select certain categories of the Services or activate oine mode at any time. We will only process the data that is necessary to provide you with the Services that you have selected according to the information provided below.
+4.3.2. Hyundai Live
+Hyundai Live enables you to access the following functions:
+
+Live traffic: Live trac information for calculating routes, including precise arrival times and displaying the trac situation based on your current location
+Live parking: On- and o-street parking, near current position, near the destination, near the scroll mark
+Live filling stations: Information about the nearest fuel stations and fuel prices based on your current location
+Live EV point of interest (POI) (only for electric vehicles and plug-in hybrid electric vehicles): Information on nearby charging stations including availability status and charger type based on your current location
+Weather: Local weather information based on your current location
+Hyundai service: Information on nearby Hyundai dealers or service locations based on your current location
+Live POI and live free text search: Information on nearby POIs based on your current location, including branded pins and promoted searches with in-car oers, allowing you to benet from promotions of third-party vendors in various POI categories
+Camera / danger zone alerts (if legally permissible in your country): The system provides alerts in areas where accidents are particularly common and warns you about accident black spots or speed cameras
+Sports league: Information on results from recent sports events
+
+The provision of our Hyundai Live Services requires the collection and processing of your Vehicle Identication number (VIN), geolocation data (e.g. GPS coordinates for live trac information), the Integrated Circuit Card Identier of your vehicle’s SIM card (ICCID) and a unique request ID for any transaction. With regard to live POIs that contain advertising content from third parties, it may be necessary to transfer the following data to our service provider (4.screen GmbH, Sailerstraße 17, 80809 Munich, Germany) in order to provide you with relevant information as requested: approximate search area, search term, search (POI) category, device ID, approximate location of the device, head unit language and generation, car brand, engine type (e.g. EV or petrol), vehicle class (e.g. small, SUV), vehicle production year and vehicle country. Furthermore, if relevant information and oers are provided to you, a unique oer ID is created. This oer ID is also transferred to our service provider together with the event type (e.g. shown, clicked, navigation started), screen type (e.g. head unit, app) and the timestamp of when the oer was interacted with in order to validate the invoicing process. If you arrive and park at certain POIs, we also transfer the following data related to this event to our service provider so that they can measure the eectiveness of the third-party content and improve the services oered: GPS parking position with latitude/longitude blurred beyond 4 digits after the decimal point (no exact location data) and the day of the parking event (no exact timestamp) together with the device ID and oer ID. Additionally, if oers and information from the vehicle are sent directly to the Bluelink app as push notications, we also process your user prole ID, e.g. your email address. We process your personal data for the purpose of performing our Services (Art. 6 (1) b) GDPR).
+4.3.3. Voice recognition
+Voice recognition enables you to use spoken commands to access and control the infotainment system and to draft and send text messages via a connected mobile device. For this function, the following categories of personal data are processed and sent to our Bluelink cloud environment: voice recording, geolocation data (GPS coordinates), point of interest (POI) and the Cerence user ID. The latter is a unique ID for registration on the server of Cerence GmbH, Aachen, Germany, our data processor for these specic services. There is no link between the Cerence user ID and the Vehicle Identication number (VIN) or any other identiers, which means that Cerence GmbH cannot identify a natural person from the data transmitted to it. Once you start your vehicle, voice recognition is activated as a presetting in its online mode. We process your personal data for the purpose of performing our Services (Art. 6 (1) b) GDPR). When using online voice recognition, we process your personal data in our Bluelink cloud environment. In addition, we collect voice samples and GPS coordinates and store them for up to 90 days in order to perform and improve the voice recognition service. We process your personal data for the purpose of performing our Services (Art. 6 (1) b) GDPR) and where related to the improvement of the Services based on our respective legitimate interests (Art. 6 (1) f) GDPR). When you use the online voice recognition function, your voice samples and GPS coordinates are processed by our service provider Cerence GmbH, Aachen, Germany (data processor) and its sub-processors, which may be located in countries outside the EU/EEA and may not provide for an adequate level of data protection. You can deactivate online voice recognition and use the voice recognition services in an oine mode where no data is transmitted outside of your vehicle. If you do not want us to process your voice samples and GPS coordinates, you can use oine voice recognition, which does not use your voice samples and GPS coordinates to improve the voice recognition service.
+4.3.4. Vehicle diagnostics
+Vehicle diagnostics gathers active trouble codes (i.e. the vehicle’s error messages) from all control units integrated in your vehicle together with the Vehicle Identication number (VIN). The active trouble codes and VIN will be sent to our server for further analysis. In the Vehicle diagnostics section of the infotainment system, you can view all active trouble codes for your vehicle. We use this data to provide you with information concerning whether there is an issue with your vehicle. We process your personal data for Vehicle diagnostics for the purpose of performing our Services (Art. 6 (1) b GDPR). To the extent that we are required to do so by law, we process your aforementioned personal data for monitoring the products and to comply with product security requirements (Art. 6 (1) c) GDPR). For information on the processing of the above data for the improvement and development of the products, see also Section 4.5 below.
+4.3.5. Connected Routing
+Connected Routing allows more accurate trac forecasting, more precise times of arrival and more reliable route recalculations by processing the relevant data on our Bluelink cloud environment instead of only on your infotainment system. For this function, the following categories of personal data are processed and sent to our Bluelink cloud environment: your Vehicle Identication number (VIN), geolocation data (GPS coordinates) and navigation data (e.g. real-time trac; pattern of trac information). We process your personal data for the purpose of performing our Services (Art. 6 (1) b) GDPR).
+4.3.5.1. Preferred Route
+Preferred route guidance allows you to compare your frequently travelled routes between a specic starting point and destination to provide you with a route calculation that matches your preferences. For this function, the following categories of personal data are processed and sent to our Bluelink cloud environment: Your vehicle’s SIM card (ICCID) and your frequently travelled routes, including destination information and actual route data. We process your personal data for the purpose of performing our Services (Art. 6 (1) b) GDPR).
+4.3.5.2. Route Satisfaction
+Through the infotainment system we may ask you to submit your feedback in order to measure your satisfaction with our route guidance and location information. For this function, we process the same categories of personal data as in 4.3.1. as well as your satisfaction score. The legal basis for the processing of your data for these purposes is the legitimate interest of Hyundai in improving the Services (Art. 6 (1) f) GDPR).
+4.3.6. OTA (Over-the-Air) Update
+OTA updates allow you to receive wireless (“over-the-air”) software updates (“OTA updates”) for the vehicle system as well as the map and infotainment system. Your infotainment system will regularly check whether new software versions are available and automatically download any available software updates to your vehicle and prepare the respective installation. You can choose whether you want to complete the OTA Update now or later. You can disable this feature by turning o the toggle in the infotainment system (“Settings” -> “Bluelink”-> “Privacy Settings”). Alternatively, you can deactivate Bluelink connectivity via the infotainment system in your vehicle (“Settings” -> ”Bluelink” -> ”Deactivate Bluelink”). However, if you turn o OTA updates, your vehicle or the services provided (such as security-related systems, infotainment system, Bluelink) may not function properly.
+4.3.6.1. Vehicle System OTA Update
+We may provide you with OTA updates concerning the vehicle system for various reasons and purposes, in particular to remedy a defect within the warranty period, within the scope of the manufacturer’s guarantee or for other securityrelated reasons. In this we will also ensure an ecient deploymentand monitoring of OTA updates concerning the vehicle system. For this purpose, the following categories of personal data are processed and sent to our Bluelink cloud environment: your Vehicle Identication number (VIN), usage history (OTA Update), diagnostic information (error codes, OTA result, software recovery result) and software version information (electronic control unit). We processyour personal data for the purpose of complying with the legal obligations ofthe vehicle manufacturer (Art. 6 (1) c) GDPR (e.g. in the area of productsafety requirements)) as well as for performing our Services (Art. 6 (1) b)GDPR), and based on our legitimate interest to eectively steer our OTA updateprocesses (Art. 6 (1) f) GDPR).
+4.3.6.2. Maps and Infotainment OTA Update
+Maps and infotainment OTA updates enable you to receive the latest maps and infotainment software updates for your vehicle. For this function, the following categories of personal data are processed and sent to our Bluelink cloud environment: your Vehicle Identication number (VIN), head unit manufacturer, head unit model, head unit rmware version, head unit system version, mobile network operator, vehicle model name, vehicle model year, vehicle region and your selected language. We process your personal data for the purpose of performing our Services (Art. 6 (1) b) GDPR).
+4.3.7. Notication Centre
+The Notication Centre allows us to send you important information about your vehicle. We will use this service only for important information. The information will appear as a pop-up in the infotainment system of your car. For this function, the following categories of personal data are processed: read status; reading time. We process your personal data for the purpose of performing our Services (Art. 6 (1) b) GDPR).
+4.3.8. Calendar
+The calendar allows you to synchronise your Google or Apple calendar on your smartphone with the integrated calendar function of the infotainment system of your vehicle in order to use it to set the navigation destination. For this function, the following categories of personal data are processed and sent to our Bluelink cloud environment: email address, calendar ID, phone number, Google token/iCloud password and calendar entries (e.g. title of schedule, date/time, address, memo, attendance, etc.). We process your personal data for the purpose of performing our Services (Art. 6 (1) b) GDPR).
+4.3.9. Like feature
+The like feature for USB and Bluetooth music and radio allows you to select and create a playlist with your favourite songs. You can like or unlike songs via the “thumbs-up” or “thumbs-down” button integrated in the music function of the infotainment system. For this function, the following categories of personal data are processed: the source type (USB music, radio, Bluetooth music), the name of the song, artist and album, the like/unlike information, location information (GPS), ambient air temperature, vehicle speed, weather (based on your current location) and time information. We process the personal data to perform our Services (Art. 6 (1) b) GDPR) and for the purpose of our legitimate interest in delivering our Services (Art. 6 (1) f) GDPR).
+4.3.10. Music Streaming
+With the music streaming feature, you can stream music in your vehicle directly from certain music streaming services via the infotainment system. To use this feature, you need a valid subscription for the respective music streaming service and your phone with the Bluelink app installed for the activation process. To link your account with the chosen music streaming service, your login credentials are rst processed by the music streaming platform and then transferred to us in pseudonymized form before being stored in our Bluelink cloud environment. Information about which music content you search for and select is transferred from the vehicle to our Bluelink cloud environment. A request is then sent to the respective music streaming platform, which then provides the music content directly to the vehicle. Recently played music content is temporarily stored in the vehicle’s system. For this purpose, the following categories of personal data are processed: user authentication data (e.g. pseudonymized login credentials for the streaming platform account, device ID, user ID), service information (service authorization code, subscription status, login data, service ID, session ID), vehicle information (VIN or vehicle ID, engine type, country of sale, model name, model year, headunit platform, headunit model) as well as information about the requested music content (e.g. unique identier, type, name, title, artist, album name, genre, duration, date of the content, URLs). Your platform streaming account stored in the vehicle is linked to your individual user prole in the vehicle. Deleting your user prole will automatically unlink the platform streaming account from the vehicle. We process your personal data for the purpose of performing our Services (Art. 6 (1) b) GDPR).
+4.4. Provision of Bluelink Services – App
+4.4.1. Remote Services
+Through the App we will provide you with the following remote Services. They will be activated as a presetting if not deactivated separately or entirely:
+
+Remote lock and unlock (you can lock and unlock the vehicle doors; all Hyundai vehicles)
+Remote window ventilation (you can remotely open and close the windows of your vehicle for ventilation purposes; only for some Hyundai vehicles)
+Remote horn and light (you can remotely activate both the headlights and the sound of the horn of your vehicle; only for some Hyundai vehicles)
+Remote light (you can remotely ash the headlight of your vehicle; only for some Hyundai vehicles)
+Remote charging (you can remotely activate the electric battery charging function; all Hyundai EVs and PHEVs)
+Scheduled charging (you can remotely set the electric battery charging schedule (all Hyundai EVs and PHEVs) including the target temperature; all Hyundai EVs)
+Remote climate control (you can set the temperature and activate the air conditioning remotely; all Hyundai EVs)
+Remotely open and close the charging door (you can open and close the charging door of your vehicle remotely; only for some Hyundai EVs; not for Hyundai PHEVs)
+Remote control of hazard lights / sidelights (you can turn o the lights remotely from the App when your vehicle is left with its hazard lights and/or sidelights on; only for some Hyundai vehicles)
+Remote battery conditioning (you can optimise the battery temperature in order to improve the charging performance of the vehicle; only for some Hyundai EVs)
+Departure time (you can activate scheduled climate by setting the departure schedule; only for some Hyundai EVs)
+Charging current (you can adjust the current supplied from the slow charger; only for some Hyundai EVs)
+Find my car (you can localise the parking position of your Hyundai vehicle on the integrated map; all Hyundai vehicles)
+Send to car (you can search online for points of interest (POI) and address data in order to send search results from your smartphone application to the infotainment system of your car)
+My car POI (synchronises your stored POI between the infotainment system and your App; all Hyundai vehicles)
+Last mile navigation (sends the current location of your car and information about your destination (e.g. name, address, geolocation data) to your smartphone to guide you from your parking spot to your destination via Google Maps; all Hyundai vehicles)
+First mile navigation (sends the current location of your car to your smartphone to guide you from your location (e.g. name, address, geolocation data) to your car via Google Maps; all Hyundai vehicles)
+Valet parking mode (protects your private infotainment information by showing only the valet mode screen on your infotainment system unless you enter the password you have previously selected; sends information about the current status of valet parking mode (on/o), current vehicle location (GPS coordinates), the start/end date of valet mode, the run/mileage/engine time of valet mode, maximum vehicle speed, vehicle run distance and engine idle time to your smartphone; all Hyundai vehicles)
+Battery charging status (shows you the battery charging status of the electric motor; all Hyundai EVs and PHEVs)
+Push notications for certain use cases (the application sends push notications to your smartphone in certain cases, for example: your Hyundai vehicle is unlocked and the burglar alarm is activated in your Hyundai vehicle, the windows of your vehicle are open, rear seat alert, engine idling alert, high-voltage battery discharge alarm, climate control status, charging status, software update status, valet parking mode activated/deactivated, etc.; all Hyundai vehicles, the specication varies on the country or vehicle model)
+
+You can deactivate remote services separately by category. In order to provide you with the remote Services once connected through the App, a connection is established between your vehicle and our Bluelink cloud environment which requires the processing of certain vehicle-related data including your vehicle SIM card’s IP address, the Vehicle Identication number (VIN) and further user-related data in the App (your device’s IP address, PIN and other user account information such as your user name) The provision of the remote Services requires the collection and processing of certain data relating to your vehicle including a password, your vehicle’s Vehicle Identication number (VIN) and geolocation data (e.g. GPS coordinates for “Find my car”), the Integrated Circuit Card Identier of your vehicle’s SIM card (ICCID), address data and vehicle-related technical data (e.g. vehicle status information such as ignition on/o, vehicle speed, light status, lock status). We process your personal data for the purpose of performing our Services (Art. 6 (1) b) GDPR).
+4.4.2. Vehicle status information via Bluelink
+Through the App, we will provide you with the following vehicle status information:
+
+Monthly vehicle report (provides you with information about the usage of your Hyundai car and diagnostics information covering the airbag, brakes, tyre pressure, etc. (see Section 4.4.3); all Hyundai vehicles)
+Status update (provides you with information about the vehicle status of your Hyundai car regarding the distance to empty, fuel level, engine on/o, door lock status, climate control status, tailgate open/closed, bonnet open/closed, windows open/closed, sunroof open/closed, tyre pressure status, lamp status (all Hyundai vehicles); high-voltage battery charging status, scheduled charging on/o, charging door open/closed, steering wheel heating status, defrost on/o, rear window heating on/o, side mirror heating (all Hyundai EV and PHEV vehicles); scheduled climate control on/o (all Hyundai EV Vehicles))
+Surround view monitor (you can request snapshots from the current view around your Hyundai vehicle twice every two hours and store them on your device (smartphone) including the time they were taken)
+My trips (provides you with information about the Hyundai vehicle usage per month/day, including driven time, mileage, average vehicle speed, maximum vehicle speed; all Hyundai vehicles)
+Energy consumption (provides you with information about your Hyundai vehicle’s energy consumption per day and per month, including the total and average energy consumption, driving distance and recuperation; all Hyundai EV vehicles)
+
+In order to provide you with the vehicle status information once connected through the App, a connection is established between your vehicle and our Bluelink cloud environment which requires the processing of certain vehiclerelated data including your vehicle SIM card’s IP address, the Vehicle Identication number (VIN) and further user-related data in the App (your device’s IP address, PIN and other user account information such as your user name). The provision of the vehicle status information requires the collection and processing of certain data related to your vehicle (e.g. the driven time, mileage, average vehicle speed, maximum vehicle speed) and vehicle-related technical data (e.g. vehicle status data such as engine on/o, door lock status, etc., as listed above). We process your personal data for the purpose of performing our Services (Art. 6 (1) b) GDPR). We do not have access to any image data you have requested in the surround view monitor feature. All image data is transferred in encrypted format to our servers and is deleted once the data has been transferred to the App. Please note that you are a data controller within the meaning of the GDPR if you capture images of a natural person or images that can be traced back to a natural person (such as number plates) when using this function. This means that you are responsible for all processing activities in this context, in particular the obligation to inform data subjects (e.g. passers-by or other drivers) about the fact that they might be captured in these snapshots and how you process this image data. If you violate any provisions of the GDPR, you are at risk of objections and sanctions (including nes) by the supervisory authorities. Please check our Terms of Use for more information.
+4.4.3. Car sharing
+You can share the remote Services with other users through the “Request to Share Car” function in the application. When you do so, we process certain vehicle- and user account-related data such as your PIN, Vehicle Identication number (VIN), your user name and the other user’s phone number to initiate and process your sharing request. Share request information such as your name and PIN will be transmitted to and processed in the other user’s App. The other user can use the App in the same way as you. He/she can also use the “Find my car” function. We process the personal data for sharing the remote Services for the purpose of performing our Services (Art. 6 (1) b) GDPR) and in connection with our legitimate interests in delivering our Services (Art. 6 (1) f) GDPR). Please note that when you use this service, you will share all of your personal data, excluding your login details, that is stored in the App with the other users. You can deactivate this function at any time. Deactivation stops the sharing of data and we will delete all shared data on the other user’s App.
+4.4.4. Alert Services
+When activated in the App, alert services enable you to receive notications relating to your chosen settings. We provide you with the following alert services through the App:
+
+Geofence alert (enables you to receive notications in the App if your vehicle exits an allowed area or enters a restricted area. You can set the boundaries for allowed areas and restricted areas in the App)
+Speed alert (enables you to receive notications in the App if your vehicle exceeds the speed limit you have preset in the App)
+Time fencing alert (enables you to receive notications in the App if your vehicle is driven outside of the time windows you have preset in the App)
+Valet alert (enables you to receive notications in the App if your vehicle travels beyond the selected distance limit, speed limit and idle time limit you have preset in the App. The permitted travel distance is from the location where the alert was activated)
+Idle alert (enables you to receive notications in the App if your vehicle is driven beyond the idle time limit you have preset in the App)
+
+For this purpose, we collect and process the following categories of personal data: Vehicle identication number (VIN), date and time stamp, GPS data, alert status information (e.g. activation status, alert status start and end time, run time, mileage time, engine idle time, maximum speed, run distance), vehicle indicators (e.g. location, speed, time, accuracy, direction), selected allowed areas, selected restricted areas, selected speed limit, selected time windows, selected distance limit and selected idle time limit. We process your personal data for the purpose of performing our Services (Art. 6 (1) b) GDPR).
+4.4.5. Other location-based services
+
+View previous trips
+Send a destination to the car for a trip and add tourpoints to a planned trip
+Find your favourite and recent points of interest (POI)
+Share your POI
+
+The provision of these remote Services requires the collection and processing of certain vehicle-related data such as the vehicle’s geolocation data (GPS coordinates). We process your personal data to provide you with these other location-based services, and thus for the purpose of performing our Services (Art. 6 (1) b) GDPR).
+4.4.6. Bluelink user prole
+The Bluelink user prole allows you to createbackups of your prole including vehicle settings and apply them to dierentvehicles. If two or more drivers use the same vehicle but prefer dierent settings (e.g. for seat position, audio or map view, etc.), these individual settings can be stored in up to two user proles plus one guest prole per vehicle. For each user prole, the following categories of personal data are processed and sent to our Bluelink cloud environment: Vehicle Identication number (VIN) of your vehicle and the target vehicle (if appropriate), driver number, account number, phone number, user picture, prole data as well as phone connection, date/time settings, general settings, sound settings, display settings, voice recognition settings, radio settings, vehicle settings, navigation settings and points of interest (POI). We process your personal data for the purpose of performing our Services (Art. 6 (1) b) GDPR).
+4.4.7. Use of Touch ID and Face ID (iOS) or ngerprint and face recognition (Android)
+You can use certain functions of our App with Touch ID or Face ID (iOS) or ngerprint and face recognition (Android) instead of your PIN. Your biometric data is only stored locally on your smartphone device; it is not transmitted to us and we cannot access this data. Only the information as to whether the verication of the biometric data was successful is transmitted to our App by a system function of your smartphone. You can turn o the use of Touch ID or Face ID (iOS) or ngerprint and face recognition (Android) at any time in our App.
+4.4.8. Firebase Crashlytics
+To improve the security and stability of our app and Services, we rely on the analysis of anonymised crash reports. For this purpose we use “Firebase Crashlytics”, a service of Google Ireland Ltd., Google Building Gordon House, Barrow Street, Dublin 4, Ireland. In order to provide us with anonymised crash reports, Firebase Crashlytics collects the following information in the event of a crash or malfunction of our app and may transmit it to Google servers in the USA: state of the app at the time of the crash, installation UUID, crash traces, manufacturer and operating system of the mobile device and last log messages. The crash reports provided to us do not contain any personal data on the basis of which we could trace the identity of a user. Firebase Crashlytics retains collected information for 90 days. We process your personal data for these purposes based on our legitimate interest to ensure and optimise the security and stability of our app and Services (Art. 6 (1) f) GDPR). For more information about Firebase Crashlytics and how Google is processing your personal data, please refer to the following links: https://rebase.google.com/ https://rebase.google.com/terms/crashlytics/ https://rebase.google.com/support/privacy/
+4.4.9. Hyundai Digital Key
+The Hyundai Digital Key function allows you to unlock, lock, start and drive your vehicle with your smartphone or other smart devices without the need to carry a physical key fob on you. It also allows you to share and manage your Hyundai Digital Keys with family and friends. For this purpose, the following categories of personal data are processed in order to properly authenticate and allocate the Hyundai Digital Keys to the smart devices and to ensure the security of the service and systems involved: User information (such as user ID, prole name, email address, phone number), smart device information (such as device ID, device name, device type, OS version, app version), Hyundai Digital Key information (such as Hyundai Digital Key ID, Hyundai Digital Key status, Hyundai Digital Key type, access authorization/prole, vehicle ID, ID of the physical key fobs, number of shared keys); for shared Hyundai Digital Keys: additional information such as start and end date (or xed term) of Hyundai Digital Key use, name of shared Hyundai Digital Key user, user authentication policy/authorization prole as specied by you, diagnostic information (error codes) and vehicle status information. When using the Hyundai Digital Key, i.e. to lock, unlock and start the vehicle, data is exchanged between the mobile smart device and the vehicle using near-eld communication (NFC) or ultra-wideband (UWB). This data is not transmitted to Hyundai or the Distributor. We process your personal data for the purpose of performing our Services (Art. 6 (1) b) GDPR).
+4.5. Data analysis for Product improvement and development
+Hyundai collects and processes telematicsdata regarding the performance, usage, operation and condition of the vehiclefrom your vehicle and/or your App in order to improve and develop its productsand transfers this data to authorized Hyundai distributors so that it can alsoprocess the data for these purposes. The data used for these purposes is in general limitedto technical data. Such data is used to improve and develop the powertrain, hybrid/EV vehicles and other car functions comprises ABS, the ABS status, steering wheel information, handbrake, traction control system, cluster information, seatbelt, acceleration, battery condition, door key lock, head lamp, indicator signal, light system, handsfree boot system, seat height, sunroof, wiper, navigation (on/o) and similar technical data and trouble codes as mentioned in Section 4.3.4. To assure greater eciency of the data analysis,we may also collect additionally information which allows for identication ofa natural person (such as VIN, account and subscription data, whererelevant and if enabled GPS information). We will process these data for theabove mentioned purposes and to provide you with personalised information aboutyour use of our Services. The legal basis for the processing of your data for these purposes is the legitimate interest of Hyundai in improving the Services and developing new products and services (Art. 6 (1) f) GDPR; e.g. to identify technical malfunctions, analyse the performance of the vehicles or provide enhanced products or customer services).
+4.6. Processing of data for marketing purposes for similar goods and Services
+We may use your personal data obtaineddirectly from you and your registration to our Services for marketing of ourown similar products and/or services (e.g. to notify you about new Services orother similar Hyundai services), unless you have objected to such use. The legal basis for the processing is Art.6 (1) (f) GDPR (our legitimate interests to inform you and to promote ourServices). You can object to such use at any time andfree of charge via the Unsubscribe link included in every communication or via thecontact information in Section 3.
+4.7. Processing of data for purposes relating to vehicle cybersecurity
+Once you activate the Services, depending on the technical equipment of your vehicle, we collect and process data from your vehicle relating to security events in order to ensure that our vehicles and products meet the appropriate cybersecurity standards. For this function, the following categories of personal data are processed: the Vehicle Identication number (VIN) and security-event-related data (such as the timestamp of the generated security event and information from and about the component / control unit that captured and detected the security event). The data will be collected and stored in your vehicle. If an abnormal signal is detected, the data will be sent to our systems for further analysis. There is no continuous transfer of such data out of the vehicle. Once data has been transmitted to our systems, we process and analyse the data for the purpose of preventing cybersecurity threats and vulnerabilities, responding to and eliminating detected threats and vulnerabilities arising from potential cybersecurity attacks, as well as ensuring that our vehicles and products have an appropriate level of security. Insofar as such processing is not necessary for compliance with our legal obligations in the area of cybersecurity (Art. 6 (1) c) GDPR), the legal basis for the processing of your data for these purposes is the legitimate interest of Hyundai in monitoring our vehicles in order to ensure and improve the security of our products (Art. 6 (1) f) GDPR). Your vehicle will periodically store the last 100 generated security events. If a new security event occurs, the oldest security event and the related data will be deleted. Further information about data retention can be found in section 8 of this Privacy Notice.
+5. What applies to data of other data subjects and to the sale and transfer of the vehicle to third party?
+When lending the car to another person or in cases where the data of other data subjects (such as another driver) might be collected when using the Services, you have to ensure that the data subjects are properly informed on the data processing as described herein. When selling or permanently transferring thevehicle to a third party, please ensure that you deactivate the service so thatnone of your personal data can be accessed through the infotainment system (Settings– Bluelink – Deactivate Bluelink). If youdo not deactivate Bluelink, the data might still be accessible to 3rdparties through the infotainment system.
+Your account data in the App will not bedeleted until you terminate your Hyundai Account.
+6. With whom is my data shared?
+Any access to your personal data at Hyundaiis restricted to those individuals that need to know it in order to fulltheir job responsibilities. Your personal data may be transferred to the recipients and categories of recipients listed below for the respective purposes; these recipients can then process it for the specied purposes:
+
+Hyundai distributors – We will act as joint controller with the authorizedHyundai distributor in your country of purchase regarding the followingServices: Vehicle diagnostics (Section 4.3.4) and Product improvement and development (Section 4.5) as well as in relation to the monitoring of ourproducts and the product liability.
+We will process your personal data in our role as technicaland operational provider of the Services and transmit certain personal data to Hyundai distributors.
+The Hyundai distributor receives your personal datafor customer service and maintenance purposes as well as product development.
+We and the Hyundai distributor enter into anagreement governing the processing of personal data. Upon request, we willprovide information on the essence of such an agreement to you.
+Further company details on each of theHyundai distributors can be taken from the Appendix.
+Hyundai Motor Europe – Wewill act as joint controller with the Hyundai Motor Europe GmbH with itsregistered oce in Kaiserleipromenade 5, 63067 Oenbach, Germany regarding vehicle system OTA updates.
+We will process your personal data in our role as the technical and operational provider of the Services and transmit certainpersonal data to Hyundai Motor Europe.
+Hyundai Motor Europe is responsible for thedecisions related to and the monitoring of vehicle system OTA updates distribution.
+We and Hyundai Motor Europe enter into anagreement governing the processing of personal data. Upon request, we willprovide information on the essence of such an agreement to you.
+Other private third parties – We transmit your personal data to certain private entities that help us oer the Services. For instance, we rely on telecommunication services from telecommunication providers.
+Data processors – We transmit your personal data to certain third parties, whether aliated or unaliated, that process your data on behalf of Hyundai under appropriate instructions as necessary for the respective processing purposes. The data processors will be subject to contractual obligations to implement appropriate technical and organisational security measures to safeguard the personal data, and to process your personal data only as instructed.
+> The data processor for Bluelink is Hyundai Autoever Europe, Kaiserleistraße 8A, 63067 Oenbach am Main, Germany.
+> For Hyundai LIVE and the remote Service “Find my car”, the data processor is: Hyundai Autoever Europe, Kaiserleistraße 8A, 63067 Oenbach am Main, Germany (e.g. for hosting and support or operating relevant applications).
+> For voice recognition, the data processors are: Cerence GmbH, Jülicher Straße 376, 52070 Aachen,Germany; Hyundai Autoever Europe, Kaiserleistraße 8A, 63067 Oenbach am Main,Germany (e.g. for support and operating relevant applications).
+> For the technical distribution of vehicle system OTA updates, analysis of security events and for assuring the technical processes related to dataanalysis for the purpose of Product improvement and development, the dataprocessor is Hyundai Motor Company, 12, Heolleung-ro, Seochogu, Seoul,Republic of Korea.
+> We engage data processors for call centre services.
+> All above data processors may also use sub-processors for the provision of the corresponding services.
+Governmental authorities, courts, external advisors and similar third parties that are public bodies as required or permitted by applicable law.
+
+7. Is my data transferred abroad?
+We transfer your data outside the EU/EEA to Hyundaientities located in the Republic of Korea for the purposes indicated in Section 6. The European Commission has determined thatKorea and UK are among the jurisdictions that provide an adequate level ofprotection of personal data. Some other recipients of your personal data will be located or may have relevant operations outside of your country and the EU/EEA, e.g. the United States of America (e.g. Cerence’s sub-processors), where the data protection laws may provide a dierent level of protection compared to the laws in your jurisdiction and for which an adequacy decision by the European Commission does not exist. With regard to data transfers to such recipients outside of the EU/EEA, we provide appropriate safeguards, in particular, by entering into data transfer agreements which include standard clauses adopted by the European Commission with the recipients, or by taking other measures to provide an adequate level of data protection. A copy of the respective measure we have taken is available via Hyundai’s data protection ocer (see Section 3.2 above).
+8. How long will my data be stored?
+8.1. Your personal data is stored by Hyundai and/or our service providers solely to the extent that is necessary to meet our obligations, and only for the time necessary to achieve the purposes for which the personal data is collected, in accordance with applicable data protection laws. Under no circumstances will your personal data be stored after the termination of your account. When Hyundai no longer needs to process your personal data, we will erase it from our systems and/or records, and/or take steps to properly anonymise it so that you can no longer be identied from the data (unless we need to keep your information in order to comply with legal or regulatory obligations to which Hyundai is subject; e.g. personal data contained in contracts, communications and business letters may be subject to statutory retention requirements, which may require retention of up to 10 years).
+8.2. There are specic storage periods for the following items:
+
+Voice recognition: voice samples and GPS coordinates (see Section 4.3.3 above) are stored for up to 90 days.
+Hyundai Live: geolocation data (GPS coordinates) and service ID (see Section 4.3.2 above) are stored up to 93 days.
+My trips: the information about your vehicle usage provided in “My trips” is available for up to 90 days.
+
+8.3. Termination of account: If you choose to terminate your account (e.g. by setting the respective preference in the car’s infotainment system or in the App’s menu under “My Account”), all personal data related to your account will be deleted, unless retention periods apply (see Section 8.1 above).
+9. What rights do I have and how can I exercise them?
+If you have given your consent to the processing of your personal data, you can withdraw your consent at any time with eect for future processing. Such a withdrawal will not aect the lawfulness of the processing that took place prior to your withdrawal of consent. The Distributor shall be the contact point for any request by data subjects concerning the processing of personal data in connection with this Privacy Notice and its appendix. However, you shall remain entitled to exercise your rights under the GDPR and national data protection laws with respect to and against each controller. Pursuant to applicable data protection law, you have the following rights with respect to the processing of your personal data. Please note that these rights might be limited under the applicable national data protection law.
+9.1. Right of access: You have the right to obtain from us conrmation as to whether or not personal data concerning you is processed, and, where that is the case, to request access to your personal data. This information includes – inter alia – the purposes of the processing, the categories of your personal data, and the recipients or categories of recipients to whom your personal data has been or will be disclosed. However, this is not an absolute right and the interests of other individuals may restrict your right of access. You also have the right to obtain a copy of the personal data about you that is being processed. For any further copies you might request, we may charge a reasonable fee based on administrative costs.
+9.2. Right to rectication: You have the right to the rectication of any inaccurate personal data concerning you. Depending on the purposes of the processing, you have the right to have incomplete personal data updated, including by means of providing a supplementary statement.
+9.3. Right to erasure (“right to be forgotten”): Under certain circumstances, you have the right to the erasure of your personal data and we may be obliged to erase your personal data.
+9.4. Right to restriction of processing: Under certain circumstances, you have the right to have a restriction placed on the processing of your personal data. In this case, the respective data will be marked and may only be processed by us for certain purposes.
+9.5. Right to data portability: Under certain circumstances, you may have the right to obtain from us a copy of your personal data, which you have provided to us, in a structured, commonly used and machine-readable format. You have the right, without hindrance from us, to transfer this data or have it transferred directly by us to another entity.
+9.6. Right to object: Under certain circumstances, you have the right to object, on grounds relating to your particular situation and at any time, to the processing of your personal data, and we will be required to no longer process your personal data. If your personal data is processed for direct marketing purposes, you have the right to object at any time to the processing of your personal data for such marketing, which includes proling to the extent that it is related to such direct marketing. In this case, your personal data will no longer be processed for such purposes by us.
+9.7. Right to complain: You also have the right to make a complaint with the competent data protection supervisory authority in your country of origin.
+10. Am I obliged to provide my data?
+You are under no statutory or contractual obligation to provide us with your personal data. In addition, you do not need to provide your personal data for the conclusion of a contract. However, if you do not provide your personal data, it is possible that the usability of our Services will be limited for you.
+11. Can I deactivate online mode (oine mode; modem o)?
+You may choose to deactivate online mode by setting the respective preference. If online mode is turned o (oine mode), all Bluelink functions are disabled and no personal data, in particular no geolocation data (GPS coordinates), is collected for Bluelink and an oine mode icon is displayed at the top of the infotainment system screen in the vehicle.
+12. How can this Privacy Notice be changed?
+We may change and/or supplement this Privacy Notice from time to time in the future. Such changes and/or supplements may be necessary due to the implementation of new technologies or the introduction of new services in particular. We will publish the changes on our websites and/or in your car’s infotainment system and in the App.
+13. Appendix: List of authorized Hyundai distributors
+Austria
+Hyundai ImportGesellschaft m.b.H.
+Richard StraussStraße 14
+1230 Vienna
+Austria
+Commercialregister number: 47654f
+datenschutz@hyundai.at
+Belgium
+NV Korean Motor Company SA
+Pierstraat 229
+2550 Kontich
+Belgium
+Commercial register number: BE0404273333
+privacy@hyundai.be
+Bosnia and Herzegovina
+Hyundai-Auto BH d.o.o.
+Branilaca Šipa 4C
+71000 Sarajevo
+Bosnia and Herzegovina
+Commercial register number: 65-01-0799-09
+Bulgaria
+Industrial Commerce Ltd
+1797 Sofia
+260 Ring Road
+Bulgaria
+Commercial register number: 204502867
+m.kamenova@hyundaibg.bg
+Canary Islands
+HYUNDAI CANARIAS, S.L.U.
+C/ Lomo la Plana, 16
+35.019. Las Palmas de Gran Canaria
+Las Palmas
+Commercial register number: B76156504
+dpo@domingoalonsogroup.com
+
+Croatia
+Hyundai Hrvatska d.o.o.
+Ljubljanskaavenija 4C
+10090 Jankomir
+Grad Zagreb
+Croatia
+Commercial register number: HRSR.080961241
+dubravka.posinovec@hyundai.hr
+
+Cyprus
+CTC Automotive Ltd
+Shacolas EmporiumPark-Annex 4, 4 Verginas Street
+2030 Nicosia
+Cyprus
+Commercial register number: HE145360
+bluelink@ctcautomotive.com.cy
+
+Czech Republic
+Hyundai Motor Czech s.r.o.
+Siemensova 2717/4
+155 00 Praha 5
+Czech Republic
+Commercial register number: 28399757
+info@hyundai.cz
+Denmark
+Hyundai Bil Import A/S
+Korsvej 1
+6000 Kolding
+Denmark
+Commercial register number: 14790993
+GDPR@nc.dk
+Finland
+Finland Hyundai Motor OY
+Kellokukantie 2
+01300 Vantaa
+Finland
+Commercial register number: FI16337337
+tietosuoja@hyundai.fi
+France
+France Hyundai Motor France
+Tour Nova – 71 BoulevardNational
+92250 La Garenne-Colombes
+France
+Commercial register number: 411 394 893
+contact-donnees@hyundai.fr
+Germany
+Hyundai MotorDeutschland GmbH
+Kaiserleipromenade 5
+63067 Ofdenbach
+Germany Commercial register number: HRB 47293
+datenschutz@hyundai.de
+Greece
+HyundaiHellas S.A.
+31,Viltanioti Street
+14564Kissia
+Greece
+Commercialregister number: 659601000
+gdpr@hyundai.com.gr
+Hungary
+Hyundai Holding Hungary Kft
+Czira György út 15
+1182 Budapest
+Hungary
+Commercial register number: 01-09-881438
+info@hyundai.hu
+Iceland
+BL ehf
+Kauptúni 1
+210 Garðabær
+Iceland
+Commercial register number: 630211-0500
+gudrunh@hyundai.is
+Ireland
+Hyundai Cars Ireland Limited
+JFK Drive, Naas Road
+Dublin, 12
+Ireland
+Commercial register number: 211878
+Darren.Byrne@hyundai.ie
+
+Italy
+Hyundai Motor Company ItalyS.r.l.
+Via Giovanni Bensi 11
+20152, Milano
+Italy
+Commercial register number: 6313170968
+DPO@hyundai.it
+
+Malta
+Meridian Enterprises Co.Ltd.
+Pater House 168
+Psaila Street Birkirkara BKR 9077
+Malta
+Commercial register number: C3988
+johan.micallef@meridian.com.mt
+Moldova
+Pacic Motors SRL
+Chisinau str. Calea Mosilor5/1
+Moldova
+Commercial register number: 1014600041393
+The Netherlands
+Hyundai Motor Netherlandsb.v.
+Hub van Doorneweg14
+2171 KZSassenheim
+The Netherlands
+Commercial register number: 61506230
+legal@hyundai-motor.nl
+Norway
+Hyundai Motor Norway AS
+Alf Bjerckes vei 8
+0582 Oslo
+Norway
+Commercial register number: 914 315 816
+kundeservice@hyundai.no
+Poland
+Hyundai Motor Poland Sp. Z o.o.
+ul. Woloska 24
+02-675 Warszawa
+Poland
+Commercial register number: 0000067315
+hyundai.dpo@wlaw.pl
+Portugal
+Hyundai Portugal, S.A.
+Rua do Campo Alegre
+1306-B Porto Portugal
+Commercial register number: 500820384
+privacidade@hyundai.pt
+Romania
+Hyundai Auto Romania
+Bd. Expozitiei, nr. 2,showroom Hyundai
+etaj 1, sector 1, Bucuresti
+Romania
+Commercial register number: J40/15805/1994
+daniela.avram@tiriacauto.ro
+Serbia
+Hyundai Srbija d.o.o.Beograd
+MilutinaMilankovića 7V
+11070 NoviBeograd
+Serbia
+Commercial register number: 21114804
+Slovakia
+Hyundai Motor Czech s.r.o.,organizačná zložka Slovaki
+Galvaniho 17/A
+821 04 Bratislava
+Slovak Republic
+Commercial register number: 1610/B
+dpo@hyundai.sk
+Slovenia
+Hyundai Avto Trade d.o.o.Ljubljana
+Brnčičeva 45
+1231 Ljubljana – Črnuče
+Slovenia Commercial register number: 5526485
+gdpr@hyundai.si
+Spain
+Hyundai Motor España S.L.U.
+Calle Quintanapalla 2
+28050 Madrid
+Spain
+Commercial register number: B85754646
+DPO@hyundai.es
+Sweden
+Hyundai Motor Sweden AB
+Hyllie Stationsväg 42
+215 32 Malmö Sweden
+Commercial register number: 559441-2529
+legal@hyundai.se
+Switzerland
+ASTARA MOBILITYSWITZERLAND AG
+Brandbachstrasse6
+CH-8305 Dietlikon
+Switzerland
+Commercial register number: CHE-262.166.165 dataprotection@hyundai.ch
+UK
+Hyundai Motor UK Limited
+Ground Floor BirchwoodBuilding Springeld Drive Leatherhead Surrey KT22 7LP
+United Kingdom
+Commercial register number: 05446560
+dpo@hyundai.co.uk
+Ukraine
+Hyundai Motor Ukraine LLC
+1A NovokonstantynivskaStr.,
+04080 Kyiv
+Ukraine
+Commercial register number: 33261252
+
+Albanian
+
+PDF
+346.15 KB
+
+Bosnian
+
+PDF
+332.06 KB
+
+Bulgarian
+
+PDF
+354.71 KB
+
+Croatian
+
+PDF
+332.56 KB
+
+Czech
+
+PDF
+344.72 KB
+
+Danish
+
+PDF
+332.17 KB
+
+Dutch
+
+PDF
+338.51 KB
+
+English
+
+PDF
+329.57 KB
+
+Estonian
+
+PDF
+326.06 KB
+
+Finnish
+
+PDF
+330.33 KB
+
+French
+
+PDF
+355.46 KB
+
+Georgian
+
+PDF
+358.54 KB
+
+German
+
+PDF
+351.48 KB
+
+Greek
+
+PDF
+377.01 KB
+
+Hungarian
+
+PDF
+345.41 KB
+
+Icelandic
+
+PDF
+337.01 KB
+
+Italian
+
+PDF
+341.53 KB
+
+Latvian
+
+PDF
+340.79 KB
+
+Lithuanian
+
+PDF
+340.30 KB
+
+Macedonian
+
+PDF
+356.94 KB
+
+Montenegrin
+
+PDF
+331.70 KB
+
+Norwegian
+
+PDF
+333.05 KB
+
+Polish
+
+PDF
+350.04 KB
+
+Portuguese
+
+PDF
+343.57 KB
+
+Romanian
+
+PDF
+347.17 KB
+
+Serbian
+
+PDF
+331.25 KB
+
+Slovakian
+
+PDF
+342.52 KB
+
+Slovenian
+
+PDF
+332.01 KB
+
+Spanish
+
+PDF
+342.72 KB
+
+Swedish
+
+PDF
+333.33 KB
+
+Ukranian
+
+PDF
+358.21 KB
+
+If you are looking for previously published Privacy Notices, please click here.

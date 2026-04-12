@@ -8,6 +8,7 @@ import ContractsPage from "@/routes/contracts";
 import DocumentsPage from "@/routes/documents";
 import TicketDetailPage from "@/routes/ticket-detail";
 import TicketsPage from "@/routes/tickets";
+import TermsPage from "@/routes/terms";
 
 export default function App() {
   return (
@@ -25,6 +26,7 @@ export default function App() {
                 <Route path="/tickets/:id" element={<TicketDetailPage />} />
                 <Route path="/contracts" element={<ContractsPage />} />
                 <Route path="/documents" element={<DocumentsPage />} />
+                <Route path="/terms/*" element={<TermsPage />} />
               </Routes>
             </main>
           </div>

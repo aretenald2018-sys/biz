@@ -1,0 +1,2945 @@
+GET THE APP
+
+CHANGE COUNTRY
+
+Austria
+
+Belgium(French)
+
+Belgium(Dutch)
+
+Switzerland(German)
+
+Switzerland(French)
+
+Switzerland(Italian)
+
+Czech Republic
+
+Germany
+
+Denmark
+
+Estonia
+
+Spain
+
+European Union
+
+Finland
+
+France
+
+Greece
+
+Croatia
+
+Hungary
+
+Ireland
+
+Iceland
+
+Italy
+
+Lithuania
+
+Luxembourg
+
+Latvia
+
+Netherlands
+
+Norway
+
+Poland
+
+Portugal
+
+Romania
+
+Sweden
+
+Slovenia
+
+Slovakia
+
+UK
+
+open menu
+
+CHANGE COUNTRY
+
+Austria
+
+Belgium(French)
+
+Belgium(Dutch)
+
+Switzerland(German)
+
+Switzerland(French)
+
+Switzerland(Italian)
+
+Czech Republic
+
+Germany
+
+Denmark
+
+Estonia
+
+Spain
+
+European Union
+
+Finland
+
+France
+
+Greece
+
+Croatia
+
+Hungary
+
+Ireland
+
+Iceland
+
+Italy
+
+Lithuania
+
+Luxembourg
+
+Latvia
+
+Netherlands
+
+Norway
+
+Poland
+
+Portugal
+
+Romania
+
+Sweden
+
+Slovenia
+
+Slovakia
+
+UK
+
+Kia Connect Terms of Use
+
+legal-documents
+
+Kia Account Legal Documents
+
+Kia Connect Terms of Use
+
+Kia Connect Privacy Notice
+
+Privacy Policy
+
+Cookies Policy
+
+Download
+
+Terms of Use
+
+Kia Connect
+
+Terms of Use
+
+Last updated: December 2025
+
+1. Scope of these Terms of Use, Contracting Parties2. Contact Details3. Use of the Services and Prerequisites4. Services5. Upgrades; Kia Connect Store6. Copyright7. User Obligations and Restrictions8. FREE AND PAID SERVICES9. Service Availability10. Data Protection11. Term, Termination12. DATA ACCESS AND USE UNDER THE EUROPEAN DATA ACT13. Changes to the Services; Changes to the Terms of Use14. Miscellaneous15. Customer Service / Complaints16. Instructions on the Right of Withdrawal regarding the Services and the Purchase of Upgrades17. Statutory Liability for Defects18. Liability19. LOCAL LAW AMENDMENTS
+
+1.
+
+Scope of these Terms of Use, Contracting Parties
+
+1.1.
+
+Contracting parties
+
+These terms of use ("Terms of Use") apply to the use of mobile applications provided by Kia as set forth in Section 1.3 and/or the use of Kia Connect via the car’s head unit ("Head Unit"), which provide you with the opportunity to use certain Kia Connect services ("Services") and Kia Connect upgrades ("Upgrades").
+
+The Services and Upgrades are provided by Kia Connect GmbH, registered under the registration number HRB 112541, Theodor-Heuss-Allee 11, 60486 Frankfurt am Main, ("Kia"; "we"; "us"; "our"), to the user of the Services ("User" or "you").
+
+1.2.
+
+Scope of these Terms of Use
+
+The purchase agreement for the vehicle and the agreement concerning the provision of the Services in accordance with the Terms of Use are legally separate business transactions and agreements.
+
+The performance of one of the agreements shall have no implications on the respective other agreement.
+
+The use of the Services is made available exclusively within the European Economic Area (EEA) and the United Kingdom (UK). For the avoidance of doubt, this excludes all overseas territories and dependencies of any state of the EEA or the United Kingdom.
+
+1.3.
+
+The use of the Services via the Kia Connect App and the Kia App (together: “Kia App”) requires internet access or other telecommunications services (see also Section 3 on prerequisites for the use of the Services). These Terms of Use do not apply to the telecommunications services required to use the Services via the Kia Connect App. These are subject to a separate agreement (including charges) with the provider of your telecommunications services.
+
+2.
+
+Contact Details
+
+2.1.
+
+Contact with Kia Connect GmbH
+
+If you have any questions about or in connection with these Terms of Use or the Services, you may contact us at:
+
+Kia Connect GmbH
+
+Email: [email protected]
+
+Ordinary mail: Theodor-Heuss-Allee 11, 60486 Frankfurt am Main, Germany
+
+Phone number: +49 800 5330012
+
+2.2.
+
+Contact for customer support
+
+For customer support, please visit our contact form: https://connect.kia.com/eu/customer-support/contact-form/
+
+2.3.
+
+Data protection inquiries
+
+For contact details for data protection inquiries and information regarding the personal data collected and processed in connection with the Services or the Kia App, please refer to our Kia Connect Privacy Notice or the Kia App Privacy Notice respectively that can be download under https://connect.kia.com/eu/downloads.
+
+3.
+
+Use of the Services and Prerequisites
+
+3.1.
+
+Kia Connect-enabled vehicle
+
+Use of the Kia Connect services requires your vehicle's Head Unit to be Kia Connect-enabled, i.e. technically capable of connecting to the Kia Connect back-end. This depends on the model, model year and trim line of your vehicle. You can find out whether your vehicle is Kia Connect-enabled by accessing the following webpage: https://owners.kia.com/content/owners/en/uvo-availability.htm.
+
+3.2.
+
+Kia App and Head Unit
+
+You may use the Services via the Kia App and/or the Head Unit, depending on the Service: Services listed in Section 4.2.1 ("Kia App Services") can only be used in conjunction with the Kia App; Services listed in Sections 4.2.3 ("In-car Services") and 4.2.4 ("OTA Updates") can be used via the Head Unit. Usage of the Kia App Services requires a Kia Account and you may have to connect the Kia App with one or more Kia vehicles. To use the Services via the Head Unit, you do not need to sign up and do not need a Kia Account.
+
+3.3.
+
+Internet connection
+
+Use of the Services requires that the vehicle and – in case of Services interacting with the Kia App – also the mobile device running the Kia App have unrestricted access to the internet. Furthermore, the Services can only be used if the vehicle's Head Unit is in a "connection ready"-state. This is generally the case, unless the vehicle has been switched off (ignition off) continuously for more than seven days.
+
+If the vehicle has been switched off continuously for more than seven days, a "hard reset" is required to return to the "connection ready"-state and to re-enable the Services. To do this yourself, it is sufficient to hold the reset button in the Head Unit for five seconds using a pen while the vehicle is switched on.
+
+3.4.
+
+Availability of compatible mobile communication networks
+
+The mobile communications hardware and the corresponding SIM embedded in your vehicle's Head Unit require compatible mobile communication networks and frequencies, provided by external service providers and varies between different geographical regions. The lack of compatible networks or frequencies may result in the service provision being less responsive or interrupted due to the lower data bandwidth of the network.
+
+Kia is not responsible for any reduced responsiveness or interruption of the Services caused by the unavailability of compatible network connections.
+
+3.5.
+
+Reachability of compatible mobile communication networks
+
+Even where a compatible mobile communication network is generally available, performance and availability of the Services require that the respective network can be reached by the Head Unit. This depends on the signal quality at the current location of the vehicle. Where the signal quality is too low, the Services may be degraded or interrupted. This can in particular be the case (i) in tunnels (ii) in mountainous terrain or dense forests, (iii) on roads along cliff edges, (iv) in densely built-up areas, (v) on motorways or roads in subways (vi) inside buildings.
+
+Kia is not responsible for any reduced responsiveness or interruption of the Services caused by insufficient signal quality.
+
+4.
+
+Services
+
+The Kia App and the Head Unit enable access to the Services which are described in more detail below.
+
+4.1.
+
+General Information on Kia Connect
+
+4.1.1.
+
+Language of the Services
+
+The language of the Services in the vehicle depends on the user interface language of the Head Unit, while the Kia App is a vailable in multiple languages, depending on your settings.
+
+4.1.2.
+
+Sharing of the vehicle
+
+Each Kia Connect-enabled vehicle can be linked to one or more Kia Connect accounts. The first user to link their Kia Connect account to a given vehicle is the Main User. Additional users can link their respective Kia Connect account to the same vehicle, either by invitation of the Main User or upon their request to the Main User; these additional users are referred to as Shared User(s).
+
+4.2.
+
+Overview of the Services
+
+The Services that are available to you may differ depending on your vehicle model, construction date, trim line and the version of the Kia App you use on your mobile device. For further information please contact us using the contact details provided in Section 2 above.
+
+4.2.1.
+
+Kia App Services
+
+4.2.1.1.
+
+Remote Control
+
+4.2.1.1.1.
+
+Remote Climate Control: The Service enables you to remotely control and schedule the air conditioning of your electric vehicle including defrost functions via the Kia App. Availability depends on the model, model year and trim line.
+
+4.2.1.1.2.
+
+Remote Charging (electric and plug-in hybrid vehicles only): The Service enables you to remotely initiate and stop the charging of an electric and plug-in hybrid vehicle's battery and to schedule the charging via the Kia App.
+
+4.2.1.1.3.
+
+Remote Door Control
+
+This Service enables you to remotely lock/unlock the vehicle's doors via certain user interfaces. To ensure safety and security when using this Service, the Service will check several pre-conditions. This Service may help in situations in which you cannot remember whether you locked the vehicle correctly by allowing you to perform this action remotely.
+
+Attention: Do not close the vehicle using the remote door control function while the key fob is inside. Under certain circumstances it may be impossible to open the vehicle door remotely while the key fob is inside.
+
+4.2.1.1.4.
+
+Profile Backup and Restore: This Service enables you to back up vehicle settings information on the Kia App and restore it to your vehicle.
+
+4.2.1.1.5.
+
+Remote Heated and Ventilated Seats (electric vehicles only): The Service enables you to remotely control the heating and ventilation for the front and rear seats of your electric vehicle, provided that the vehicle is fitted with heated and ventilated seats at the respective seating position.
+
+4.2.1.1.6.
+
+Remote Window Control: This Service enables you to remotely open and close the windows of your vehicle.
+
+4.2.1.1.7.
+
+Remote Hazard Light Control: This Service enables you to remotely turn off the hazard lights. Availability depends on the model, model year and trim line.
+
+4.2.1.1.8.
+
+Remote Charging Door Control: This Service enables you to remotely open and close the charging door of your vehicle.
+
+4.2.1.1.9.
+
+Remote Surround View Camera (for vehicles equipped with the required camera hardware and compatible head unit software)
+
+This Service enables you to see the vehicle surroundings on the Kia App thanks to vehicle’s surround view camera feature.
+
+4.2.1.1.10.
+
+Remote Frunk: This Service enables you to remotely open the vehicle's frunk via the Kia App. Availability depends on the model, model year and trim line.
+
+4.2.1.1.11.
+
+Remote Battery Conditioning: This Service enables you to remotely initiate and stop the conditioning of an electric vehicle's battery via the Kia App. Availability depends on the model, model year and trim line.
+
+4.2.1.1.12.
+
+Remote Light: This Service enables you to activate the flashing of the hazard lights for a short period via the Kia Connect App.
+
+4.2.1.1.13.
+
+Remote Horn and Light: This Service enables you to activate the flashing of the hazard lights and horn signal for a short period via the Kia App.
+
+4.2.1.2.
+
+Location-based Remote Services
+
+4.2.1.2.1.
+
+Send to Car: this Service enables you to send a point of interest (POI) to the vehicle's navigation system and immediately use the POI (e.g. as destination for route planning) once the vehicle's ignition is turned on.
+
+4.2.1.2.2.
+
+Find my Car and First Mile Navigation: This Service enables you to locate the vehicle and navigate to it using your smartphone. The vehicle's location will be displayed in the Kia App.
+
+4.2.1.2.3.
+
+Last Mile Navigation: This Service enables you to continue navigating to your final destination using your smartphone after parking your vehicle.
+
+4.2.1.3.
+
+Vehicle Operation and Diagnostic Information Services
+
+4.2.1.3.1.
+
+Vehicle Status: This Service presents you with the following vehicle information in the Kia App:
+
+Door status
+
+Charging door status
+
+Boot/bonnet status
+
+Climate status
+
+State of charge of battery, charging plug status, charging status (electric vehicles only)
+
+Fuel level (fuel/hybrid vehicles only)
+
+Seat heating and ventilation status
+
+Windows status
+
+Sunroof status
+
+12V battery status
+
+Lights status
+
+4.2.1.3.2.
+
+Vehicle Report: You receive a report in the Kia App that includes vehicle diagnostic information and information on driving patterns (number of vehicle starts, driving distance and driving time/idle time). This keeps you informed about issues that require maintenance or repairs as well as providing information on the severity of the issue, the urgency of repairs/maintenance and the recommended actions.
+
+4.2.1.3.3.
+
+Vehicle Diagnostics: Provision of an automated diagnostic service. Upon turning on the ignition, the vehicle automatically performs a diagnostic scan (Diagnostics Trouble Code (DTC)).
+
+If a malfunction is detected, you receive a message explaining the malfunction, its severity and the recommended action to be taken.
+
+4.2.1.3.4.
+
+Energy consumption (electric vehicles only): You can visualise current and average energy consumption, driving distance and energy recuperation information in the Kia App.
+
+4.2.1.3.5.
+
+Driving Insights - Driving Safety Score
+
+This Service allows you to display a driving safety score in the Kia App that assesses your driving behaviour. The driving safety score is calculated based on your acceleration and braking patterns, speed data, and the time of day you typically drive, all captured over the duration of a trip. The driving safety score is derived from data collected over 187 days, i.e. it interprets your driving behaviour over the aggregation of the past 187 days of data. The driving safety score ranges from 65 to 100, with 100 being the highest value, representing relatively safe driving behaviour, and 65 being the lowest value and indicating relatively risky driving behaviour. If a person different from you is driving the vehicle, you are required to inform this person of the activation of this Service. Further information about the Service can be found on the Kia Connect website at https://connect.kia.com/eu/product-information/safety-score/
+
+4.2.1.3.6.
+
+My Trips: This Service provides a summary (for the last 90 days) of every journey with date and time, average and maximum speed, distance driven and travel time.
+
+4.2.1.4.
+
+Remote Monitoring and Alerts
+
+The Services described in this section become relevant when the vehicle is driven by another person. Each time this Service shall be used, Remote Usage Monitoring must be explicitly activated in the Head Unit.
+
+4.2.1.4.1.
+
+Vehicle Alert: Whenever any of the vehicle's windows are open while the ignition is off, a notification message will be displayed in the Kia App.
+
+4.2.1.4.2.
+
+Burglar Alarm (only for vehicles that are equipped with a burglar alarm system): Whenever the burglar alarm sounds, a notification message will be displayed in the Kia App.
+
+4.2.1.4.3.
+
+Battery Discharge Alarm: Whenever the state of charge of the 12V battery drops below a certain level, a notification message will be displayed in the Kia App.
+
+4.2.1.4.4.
+
+Rear Passenger Alarm: Whenever movement is detected on the rear seat and the vehicle is in the parking gear, a notification message will be displayed in the Kia App.
+
+4.2.1.4.5.
+
+Vehicle Idle Alarm: Whenever the vehicle is in the parking gear while the engine is running and a door is opened, a notification message will be displayed in the Kia App
+
+4.2.1.4.6.
+
+High-Voltage Battery Monitoring Warning System (electric vehicles only): The status of the high-voltage battery is monitored; whenever a malfunction is detected, a notification message will be displayed in the Kia App and the Head Unit.
+
+4.2.1.4.7.
+
+Valet Parking Mode: When this function is activated in the Head Unit and the vehicle is being driven by another person, you can monitor the vehicle location, the time the ignition was turned off last, the driving time, driving distance and top speed in the Kia App.
+
+4.2.1.4.8.
+
+Valet Alert: This Service enables you to receive notifications in the Kia App if your vehicle travels beyond the selected distance limit, speed limit and idle time limit you have predefined in the Kia App. The permitted travel distance refers to the vehicle's distance from the location where the alert was activated.
+
+4.2.1.4.9.
+
+Geofence Alert: This Service enables you to receive notifications in the Kia App if your vehicle exits an allowed area or enters a restricted area. You can set the boundaries for allowed areas and restricted areas from the Kia App.
+
+4.2.1.4.10.
+
+Speed Alert: This Service enables you to receive notifications in the Kia App if your vehicle exceeds the speed limit you have predefined in the Kia App.
+
+4.2.1.4.11.
+
+Time Fencing Alert: This Service enables you to receive notifications in the Kia App if your vehicle is driven outside of the time windows you have predefined in the Kia App.
+
+4.2.1.4.12.
+
+Idle Alert: This Service enables you to receive notifications in the Kia App if your vehicle is driven beyond the idle time limit you have predefined in the Kia App.
+
+4.2.1.5.
+
+Preferred Dealer Information
+
+This Service allows you to synchronize the "Preferred Dealer" information between the MyKia website and the MyKia-App on the one hand and your account in the Kia App on the other hand. Synchronisation is optional and must be enabled before it can be used. If you choose not to synchronise the "Preferred Dealer" information, the "Preferred Dealer" feature in the Kia App will still be available but the information shown may differ from the information in MyKia.
+
+4.2.1.6.
+
+Digital Key
+
+This Service allows you to use your smartphone to carry out services such as locking and unlocking your vehicle, activating the vehicle’s climate control or starting the vehicle (only possible from inside the vehicle) using the built-in ultra-wideband (“UWB”) functionality and the built-in near-field-communication (NFC) functionality of your smartphone. It allows you to share and manage your Digital Key with up to three additional devices, e.g. those belonging to family and friends. Please note that when using this Service, data is exchanged between the mobile smart device and the vehicle using the UWB or NFC functionalities. This data is not transmitted to us. The availability of this Service depends on the model, model year and trim line of your vehicle and on the smartphone model that you use. For more compatibility information, please see the information about this Service in the Kia App or on the Kia Connect website.
+
+4.2.1.7.
+
+Tyre Concierge
+
+The Kia App provides access to the “Tyre Concierge”, a feature provided by Michelin (Manufacture Française des Pneumatiques Michelin) under its own responsibility. The feature indicates the tyre status, allows the User to select new eligible tyres and links the User to the online service booking function in the App.
+
+4.2.2.
+
+Kia App B2B mode for fleets up to 5 vehicles
+
+For registered commercial users, Kia App offers a free fleet management functionality (“Kia App B2B mode”) that provides different functionalities, depending on the user role (Fleet manager or Driver). The functionality is for information purposes only and does not fulfil any mandatory regulatory requirements.
+
+4.2.2.1.
+
+Fleet overview (Fleet manager): Overview of fleet status for up to 5 vehicles
+
+4.2.2.2.
+
+Fleet Charge overview (Fleet manager): Overview of fleet charge status for up to 5 vehicles
+
+4.2.2.3.
+
+Charging / Trip history (Fleet manager): Charging history and contract overview, Trip overview with specific details and export option for up to 5 vehicles
+
+4.2.2.4.
+
+Driver trip history (Driver): Trip history for specific vehicle
+
+4.2.2.5.
+
+Charging history / contract (Driver): Information on fleet charging history and/or option to add personal Kia Charge contract
+
+4.2.3.
+
+In-car Services
+
+4.2.3.1.
+
+Kia Connect Live services
+
+Availability of the Kia Connect Live services at your vehicle's current position is subject to the availability of respective data to Kia. Data availability and accuracy may depend on third-party providers. For example, recent traffic incidents may not (yet) be included in the data available to Kia and therefore cannot be displayed on the map in the Head Unit. Likewise, as only some of the charging station operators publish live data about the availability status of the charge points, it may be impossible to provide this information in the Head Unit.
+
+Kia Connect Live services include the following:
+
+4.2.3.1.1.
+
+Live Traffic and Online Navigation: This Service provides live traffic information for calculating routes and displaying the traffic situation. Online navigation enables you to navigate to your desired destination based on a combination of real-time and historical traffic information.
+
+4.2.3.1.2.
+
+Live point of interest (POI) and Online POI Search: This Service provides information on nearby points of interest based on the current position of the vehicle. In addition, this Service also allows you to actively search for nearby POIs by category.
+
+On eligible vehicles, this Service will be enhanced by data provided through our partner 4.screen (cf. https://www.4screen.com/). Through the enhanced Service, you have the option to receive information on stores or restaurants (such as their location) via branded pins on the map or via the search function of the map. You can also receive special deals and offers from stores and restaurants in the proximity of your vehicle. Please note that availability of the enhanced Service depends on the model, model year and trim line of your vehicle and is in any case available only if your vehicle is equipped with the Head Unit software released in Q4 2023 or later.
+
+4.2.3.1.3.
+
+Weather: This Service provides local weather information based on your current location.
+
+4.2.3.1.4.
+
+Parking: This Service provides on- and off-street parking information based on the current position, nearby destination, nearby scrolled mark or nearby city centre.
+
+4.2.3.1.5.
+
+Dealer POI: This Service provides location information of nearby Kia dealers based on the current position of the vehicle.
+
+4.2.3.1.6.
+
+Speed camera / danger zone alerts (if legally permissible in the country of use): This Service provides alerts in areas where accidents are particularly common and warns you about accident black spots or speed cameras.
+
+Please note that the use of the speed camera alerts may be prohibited in certain countries. You may only use the speed camera alert where such use is allowed under applicable national law.
+
+It is your obligation as a driver to check whether using the speed camera alert is permissible at the location where you are using the vehicle.
+
+4.2.3.1.7.
+
+Sports league: This Service provides information on past, current and upcoming events for selected sports and leagues.
+
+4.2.3.2.
+
+Location-based In-Vehicle Services
+
+4.2.3.2.1.
+
+EV Route Planner (only for electric vehicles and plug-in hybrid electric vehicles): When setting a navigation destination in the vehicle's built-in navigation system, this Service evaluates whether reaching the destination will likely require a charging stop. If a charging stop is required based on the vehicle's current state of charge and the estimated rate of energy consumption, the Service will automatically add one or more charging points to the proposed route as intermediate stops.
+
+The Service will automatically adapt the proposed charging stops if the driver choses to make an earlier charging stop, to skip a proposed charging stop or if the driving conditions result in a higher energy consumption than expected.
+
+This Service does not need to be explicitly activated; EV Route Planner is used automatically in electric vehicles when the route is calculated using the online navigation Service (see Section 4.2.3.1.1 above).
+
+4.2.3.2.2.
+
+EV POI (only for electric vehicles and plug-in hybrid electric vehicles): This Service provides information on nearby charging stations including availability status based on the current position.
+
+4.2.3.2.3.
+
+Preferred Route: This Service compares route types on your vehicle’s navigation system and provides alternative routes using preferred actual routes from the activated driver profile.
+
+4.2.3.2.4.
+
+Google Places Search Improvement (available for selected models): This Service provided by Google allows you to benefit from Google’s improved search functionality by receiving location data and details, as well as an autocomplete function.
+
+4.2.3.2.5.
+
+Emergency Vehicle Approaching (only available in selected countries): This Service notifies you in the Head Unit when an emergency vehicle, such as an ambulance, is approaching.
+
+4.2.3.3.
+
+Online Voice Recognition
+
+This Service enables the use of spoken commands to access and control certain functions of your vehicle and to draft and send text messages via a connected mobile device. Online Voice Recognition is operated in an online (cloud) environment. Upon the activation of our Services in the Head Unit of your vehicle, Online Voice Recognition is available as a default setting. This Service requires transfer of your personal data (i.e., voice samples) to our service provider Cerence B.V. Please see the Privacy Notice for details. You can prevent the transfer of your personal data to Cerence by deactivating the Online Voice Recognition Service in the respective settings of your Head Unit. If you deactivate the Online Voice Recognition Service, the voice recognition functionality of your vehicle may be limited or disabled.
+
+4.2.3.4.
+
+Kia AI Assistant (for selected models only)
+
+Based on the Voice Recognition Service, the Kia AI Assistant allows you to control vehicle features, such as temperature, seat heating, etc., and to acquire AI-generated information through a natural conversation experience. You can activate the Kia AI Assistant either by pressing the voice recognition button or by saying “Hey, Kia!”, both followed by driver’s command.
+
+Some Services may be restricted depending on the vehicle model or device. This Service is provided toenhance your vehicle usage experience; any input unrelated to vehicle usage is prohibited. Please see the separate Terms of Use for this service, available under https://connect.kia.com/eu/kia-connect-ai-assistant.
+
+4.2.3.5.
+
+Personal Calendar/Navigation Synchronisation
+
+This Service enables you to synchronise your Google Calendar or Apple Calendar on your smartphone with the integrated calendar function of the Head Unit. This allows you to see your private calendar on the Head Unit screen and to use it to set a destination. This Service is compatible with Google Calendar and Apple Calendar.
+
+4.2.3.6.
+
+Music Streaming
+
+This Service allows you to enjoy your favourite music and audio (podcasts, audio books) streaming services ’over the integrated screen and speakers via the vehicles’ infotainment system.
+
+Please note that this Service does not include the subscription with the respective streaming service. You need to create an account and set up a subscription with your favourite streaming service provider separately.
+
+The content providers compatible with this Service may vary depending on your location and the software version of your Head Unit. Please see the information on your Head Unit for compatible providers in your country.
+
+Please also note that this Service is not activated on your Head Unit by default but instead needs to be activated via the Kia Connect Store. However, activating this Service is free and it does not need to be purchased. The Service will be available for up to three years starting from when the Service is activated in the Kia Connect Store. Availability depends on the model, model year and trim line of your vehicle.
+
+4.2.3.7.
+
+Vehicle-related Notifications
+
+This Service provides you with notifications relevant to the operation and maintenance of your vehicle. Notifications will be displayed in the Notification Centre on the Head Unit. This provides you with a convenient additional channel for receiving certain reminders.
+
+Please note that absence of a notification in the Notification Centre does not mean that no action is required. E.g. ad-hoc maintenance for your vehicle may be necessary or mandatory vehicle inspections may be due even if there is no service reminder in the Notification Centre.
+
+4.2.3.7.1.
+
+Recall Campaign Notifications: Kia will inform you about open recall campaign(s) on your vehicle; to do so, Kia will use the Notification Centre referred to above. Recall campaign notifications may also be sent to you by other means (e.g. within the Kia App, via email to your registered email address or by mailed letter).
+
+4.2.3.7.2.
+
+We will send you reminders for your Kia vehicle’s upcoming regular maintenance dates and tire changes. For this purpose, Kia will use the Notification Centre mentioned above and the push notification channel.
+
+4.2.3.7.3.
+
+Service Action Notifications: Kia may also inform you about outstanding recommended service actions (such as software updates, part replacements with improved parts or quality checks to be carried out on certain components of your Kia vehicle). Information on Recommended Service Actions may be provided to you via the Notification Centre referred to above as well as within the Kia Connect App or via email to your registered email address.
+
+Provision of information about outstanding recommended service actions is not a Service as defined in the Terms of Use and is subject to your prior consent.
+
+4.2.3.7.4.
+
+Mandatory Vehicle Inspections Reminders (such as TÜV in Germany or MOT in the UK): Kia will inform you about upcoming mandatory vehicle inspections, provided that you provide Kia with the correct date of the last mandatory vehicle inspection and the date on which the vehicle was first registered or KCE was authorised by the competent department (such as the Department for Transport of the Government of the UK) to access certain history data in order to provide you with this service.
+
+Kia may not be held liable for the accuracy and timeliness of a reminder. It is your obligation to adhere to the mandatory inspection intervals in accordance with applicable law.
+
+4.2.3.8.
+
+In-car Payment Services (ICP – for selected models only): Subject to registration with Kia Pay and activation in the Kia App, ICP allows you to conduct certain payments directly from your car. Separate Terms and Conditions apply.
+
+4.2.4.
+
+OTA Updates
+
+4.2.4.1.
+
+General Information on OTA Updates
+
+This section concerns updates to your vehicle's infotainment system and map data which are provided "over the air" (OTA), i.e. via the vehicle's built-in mobile communications hardware.
+
+This section does not apply to updates installed via local connection or to updates provided by your Kia service partner.
+
+If User fails to install a required update that has been provided to him or her within a reasonable period of time, Kia shall not be liable for a defect that is solely attributable to the lack of this update.
+
+4.2.4.2.
+
+Maps and Infotainment OTA Update
+
+4.2.4.2.1.
+
+Overview of Maps and Infotainment OTA Update
+
+“Maps and Infotainment OTA Update” enables:
+
+updates of the maps in the vehicle’s navigation system (“Maps Update”); and/or
+
+updates of infotainment software or enhancements of Head Unit software (“Infotainment Update”)
+
+from our servers to the embedded telematics system using the “over-the-air” method.
+
+Further information on the update process and details of the content of each Maps Update and Infotainment Update will be provided via your Head Unit.
+
+4.2.4.2.2.
+
+Prerequisites for the Maps and Infotainment OTA Updates
+
+Maps and Infotainment OTA Update-enabling software: In order to be able to receive OTA Updates, your Kia vehicle needs to have installed the software enabling the Maps and Infotainment OTA Update functionality. Depending on your vehicle model, construction date and trim line, the OTA Update functionality may not be included in the software version installed in your vehicle. In this case, it may be necessary to install an OTA-enabling software version via local connection. However, Kia does not warrant that an OTA-enabling software version will be available for your vehicle. In case of questions, please contact us using the contact details provided in Section 2).
+
+Availability: Installation of an update via OTA requires that Kia has made a Maps Update and/or Infotainment Update available for OTA download and installation that fits for your vehicle. Your Head Unit will regularly check whether a new Maps Update and/or Infotainment Update are available. OTA Updates may be released in waves, so not all vehicles will receive the update at the same time, even where model and trim are identical.
+
+Conditions for free-of-charge Infotainment OTA Updates: If you are the first owner of a new Kia vehicle with the model year 2022 which is compatible with the “Maps and Infotainment OTA Update” and was sold from May 2021 onwards, you will be entitled to two consecutive Maps and Infotainment OTA Updates free of charge (“Free-of-Charge Infotainment OTA Updates”).
+
+Once you have used the Free-of-Charge Infotainment OTA Updates, further Maps Updates and/or Infotainment Updates will be made available in line with legal requirements. However, Kia does not make any warranty or representation with regard to the number of updates that will be available or the point in time when an update will be made available. Such further updates (if any) will only be available (i) for manual download from https://update.kia.com/EU/E1/Main or (ii) at the dealership. For the avoidance of doubt, these Maps Updates and/or Infotainment Updates from the web page and at the dealership are not offered to you via the “over-the-air” method.
+
+Even where the update file itself is made available free of charge, your dealership may charge for the labour involved in applying the update; in case of download from the website, you will have to bear the cost of your communication provider for downloading the update file.
+
+4.2.4.3.
+
+Vehicle System OTA Update
+
+4.2.4.3.1.
+
+Overview of Vehicle System OTA Update
+
+“Vehicle System OTA Update” enables the embedded software of certain control units of the vehicle to be updated with newer versions of the software or with updated parameters from our servers using the “over-the-air” method.
+
+Further information on the update process and details of the content of each Vehicle System OTA Update will be provided via your Head Unit or – if the update will be made in order to carry out the contract for the purchase of an Upgrade (see Section 5) – in the course of the purchase process in the Kia App.
+
+4.2.4.3.2.
+
+Prerequisites for the Vehicle System OTA Update
+
+Vehicle System OTA Update-enabling software In order to be able to receive Vehicle System OTA Updates, the software enabling the Vehicle System OTA Update functionality needs to be installed in your Kia vehicle. Depending on your vehicle model, construction date and trim line, Vehicle System OTA Update may not be available for your vehicle. Kia does not warrant that a Vehicle System OTA-enabling software version will be available for your vehicle. In case of questions, please contact us using the contact details provided in Section 2.
+
+Availability, purchase (if applicable) Update installations via OTA require Kia to have made a Vehicle System OTA Update available for OTA download which is compatible for installation in your vehicle. Certain Vehicle System OTA Updates may enable additional features for you to use with your vehicle. Such additional features ("Upgrades") may be made available by Kia for purchase via the Kia App. In this case, installation of the respective Vehicle System OTA Update will be possible only after conclusion of a respective purchase contract with Kia and payment of the applicable purchase price. Please see Section 5 for details on Upgrades and the purchase thereof.
+
+4.3.
+
+Information on processing of location data for Service provision
+
+The following Services require the collection and processing of location data (GPS data): Home menu map and search bar, Kia Connect Live Services, Online Voice Recognition, Map and Infotainment OTA Updates, Remote Climate Control (electric vehicles only), Remote Charging, Remote Door Control, Send to Car, Find my Car and First Mile Navigation, Last Mile Navigation, My Trips, Vehicle Status, Vehicle Report, Vehicle Diagnostic, Vehicle Alert, Burglar Alarm, Rear Passenger Alarm and Vehicle Idle Alarm.
+
+Without the collection and processing of location data, the respective Service(s) cannot be provided/used.
+
+4.4.
+
+Disabling the Services
+
+You can turn off the Services by deactivating
+
+Services via your Head Unit; and/or
+
+Services and/or Maps and Infotainment OTA Updates via the Kia App
+
+5.
+
+Upgrades; Kia Connect Store
+
+5.1.
+
+Overview
+
+Kia may offer certain additional "Upgrades"for purchase via the Kia App, such as certain features for your vehicle, including but not limited to add-ons to the software.
+
+5.1.1.
+
+Prerequisites for the availability of Upgrades
+
+Availability of the individual Upgrades depends on your vehicle model, construction date and trim line. Generally, the "Upgrades"-functionality requires that the vehicle is capable of receiving and installing Vehicle System OTA Updates (cf. Section 4.2.4.3) and is equipped with the most recent software version of the infotainment system.
+
+5.1.2.
+
+Connection between Upgrade and vehicle; beneficiary of Upgrades
+
+The Upgrades are purchased for a specific vehicle, i.e. each purchased Upgrade is linked to a specific vehicle as identified by its unique Vehicle Identification Number (VIN). This means that Upgrades can be sold with your vehicle for use by subsequent users, subject to the conditions set out herein; see in particular Section 5.4.
+
+As the purchased Upgrades are linked to a specific vehicle, the ultimate beneficiary of an Upgrade are the users of the vehicle. In case of a sale of the vehicle, the owner of the vehicle will benefit from the increased value of the vehicle due to the Upgrades. Please bear this in mind when purchasing Upgrades for a vehicle of which you are not the owner.
+
+5.1.3.
+
+Obligations of the user purchasing an Upgrade in relation to the vehicle's owner
+
+Purchasing an Upgrade will modify the functionality and properties of the affected vehicle. If you purchase an Upgrade for a vehicle which you do not own (e.g. because it is a leased or rented vehicle or because you are sharing the vehicle with a user), you need to obtain the owner's consent to the modification of their vehicle prior to purchasing an Upgrade for the respective vehicle. Kia will not be liable for any dispute or damage arising from you purchasing an Upgrade for a vehicle without the owner's consent.
+
+5.2.
+
+Description of individual Upgrades
+
+Currently, the following Upgrades are generally available and may be purchased for your vehicle, depending on your vehicle's model, construction date and trim line. The available upgrades are
+
+5.2.1.
+
+Boost (only for electric vehicles)
+
+5.2.2.
+
+Remote Smart Parking Assist 2 (RSPA2)
+
+5.2.3.
+
+Smart Regenerative System Plus (SRSP)
+
+5.2.4.
+
+Paid OTA
+
+This Upgrade allows you to obtain further Maps and Infotainment Updates via the OTA-method once the free-of-charge Infotainment Updates (cf. Section 4.2.4.2.2 (c) above) have been used up.
+
+Please note that this Upgrade enables the OTA method only as a means of obtaining and Installing Maps and Infotainment Updates. Purchasing this Upgrade neither guarantees the availability of Maps and Infotainment Updates in general nor at a specific point in time.
+
+This option is limited to two consecutive updates within two (2) years from the purchase of the option.
+
+It is recommended to install the update promptly. If User fails to install a required update that has been provided to him or her within a reasonable period of time, Kia shall not be liable for a defect that is solely attributable to the lack of this update.
+
+5.2.5.
+
+Entertainment Packages (for specific vehicles only)
+
+Depending on the chosen entertainment package (Entertainment Standard, Entertainment Plus or Entertainment Plus Wi-Fi), the services listed below are available through our various cooperation partners directly in the vehicle. The use of the entertainment packages is subject to an existing subscription for the specific package. If a free trial period is granted, you have the option of subscribing to the Service for a fee after the free trial period has ended.
+
+The Service needs to be activated via the Kia Connect Store before it is available in your vehicle.
+
+The data volume included in each entertainment package is 40 GB per month. Once the included data volume is used, the Services listed below are not accessible until the beginning of the next time period.
+
+The availability of this Service may vary depending on your location and the software version of your Head Unit. Please see the information on your Head Unit for compatible providers in your country.
+
+5.2.5.1.
+
+Music Streaming
+
+Please also note that this Service is not activated on your Head Unit by default but instead needs to be activated via the Kia Connect Store. There is a one month free trial period for first time activation. After the trial period has ended, the service can be purchased for a fee through the Kia Connect Store. Availability of the service and the trial period depends on the model, model year and trim line of your vehicle.
+
+5.2.5.2.
+
+Video Streaming
+
+The content providers compatible with this Service may vary depending on your location and the software version of your Head Unit. Please see the information on your Head Unit for compatible providers in your country.
+
+5.2.5.3.
+
+Wi-Fi Hotspot
+
+The Wi-Fi hotspot allows you and your guests to access the internet and make use of the provided content through suitable end-devices (up to 5 devices).
+
+5.2.5.4.
+
+Content access through provided apps (webOS)
+
+5.2.6.
+
+Dynamic Light Pattern
+
+5.2.7.
+
+Display Themes
+
+5.2.8.
+
+Arcade Games
+
+5.3.
+
+Purchase options
+
+5.3.1.
+
+Packages
+
+The Upgrades may be available for permanent purchase based on a one-off lump-sum payment and in different packages, allowing the use of the Upgrade for a limited period of time (e.g. 3 months or 6 months). Packages for limited time periods will automatically expire after the purchased time period. Further use of the respective Upgrade requires that the Upgrade is purchased again.
+
+5.3.2.
+
+Free trial period
+
+For some Upgrades, a free trial period will be offered before the payment obligation applies. If you deactivate the Upgrade during the trial period in the Kia App, you will not be charged for the use of the Upgrade during the trial period. Otherwise, the price of the selected Upgrade package will be charged for the time after the trial period.
+
+The free trial period is available only once per Upgrade. This means that if you purchased an Upgrade once with the subsequent ability to benefit from the trial period, any repeat purchase of the Upgrade will be directly charged to you without an additional free trial period. This also applies if the trial period has ended early due to deactivation of the connected car services (cf. Section 5.4.1(b)(iii)) or because you purchased the Upgrade package as a Shared User and vehicle sharing with your account was disabled (cf. Section 5.4.2(b)(ii)) during the trial period.
+
+Details regarding the applicable trial periods are stated in the product description in the store section of the Kia App.
+
+5.3.3.
+
+Applicable purchase conditions
+
+Please see the packages offered in the Kia Connect Store within the Kia App for available packages, the applicable trial period and prices.
+
+5.4.
+
+Conditions for the purchase and use of Upgrades
+
+5.4.1.
+
+Active connected car services ("Kia Connect")
+
+5.4.1.1.
+
+Requirement of active connected car services
+
+Installation and activation of an Upgrade, disabling an Upgrade in case of termination during the free trial period and monitoring/implementing the purchased usage duration of the Upgrade requires that the connected car services ("Kia Connect") are enabled in your vehicle throughout the usage period of the Upgrade. It is your obligation as a user to keep the connected car services active in order to be able to benefit from any Upgrade purchased.
+
+5.4.1.2.
+
+Consequences of deactivation of the connected car services
+
+If you deactivate the connected car services (CCS), the following will apply:
+
+5.4.1.2.1.
+
+Any Upgrade that has been purchased for a limited usage period will be disabled upon deactivation of the connected car services and will remain disabled as long as the connected car services are deactivated. In this case, the purchased usage period for the respective Upgrade will be interrupted and will continue to run once the connected car services are re-enabled. The Upgrade will be re-enabled once the connected car services are reactivated. This applies regardless of which user reactivates the connected car services, i.e. in case the vehicle is sold, the buyer is also able to re-enable the connected car services and benefit from the remaining usage period of an Upgrade; see also Section 5.4.3.
+
+5.4.1.2.2.
+
+Upgrades that have been purchased for an unlimited period will generally remain active. However, certain Upgrades may nevertheless cease to work if the connected car services are disabled. This applies in particular to Upgrades that require connectivity to fully function, such as for example Paid OTA but this may also be the case for other Upgrades which have been purchased for an unlimited period.
+
+5.4.1.2.3.
+
+Upgrades that are currently in the trial period will be deactivated. The trial period will end upon deactivation of the connected car services. If you wish to use the Upgrade after re-activating the connected car services, you will have to re-purchase the respective Upgrade again. In the case of re-purchasing the respective Upgrade, no trial period will be offered for the second purchase.
+
+5.4.2.
+
+Multiple Kia Connect users of a specific vehicle
+
+A vehicle can be linked to one or more Kia Connect accounts (see Section 4.1.2 above).
+
+The Main User as well as any of the Shared User(s) can purchase Upgrades for the vehicle to which their Kia Connect account is linked. In case a Shared User purchases an Upgrade, the following provisions apply:
+
+5.4.2.1.
+
+Information to the other users
+
+In case any user purchases an Upgrade, Kia shall inform the Main User and all of the Shared User(s) about the purchase of the Upgrade as well as about the activation and deactivation (if applicable) of the respective Upgrade.
+
+5.4.2.2.
+
+Effects of termination of vehicle sharing on purchased Upgrades
+
+In case a Shared User purchases an Upgrade and the Main User subsequently terminates sharing of the vehicle with the Shared User, the following applies:
+
+5.4.2.2.1.
+
+Upgrades that have been purchased by the Shared User and that are currently in the trial period will be deactivated and the trial period for such Upgrades ends.
+
+5.4.2.2.2.
+
+Upgrades that have been purchased by the Shared User which are no longer in the trial period will continue to be available on the vehicle for the purchased usage period, provided the connected car services remain active (see above Section 5.4.1 ). This means that the Main User (as well as the owner) of the vehicle continue to benefit from the Upgrade even if the Shared User is unlinked and may no longer have access to the vehicle.
+
+5.4.3.
+
+Sale and transfer of a vehicle to a new owner
+
+In case a vehicle is sold to a new owner, the following applies with regard to any Upgrades that may have been purchased for the vehicle.
+
+5.4.3.1.
+
+Before handing over the vehicle to the new owner, you have to deactivate the connected car services and adhere to the further obligations contained in Section 7.3.
+
+5.4.3.2.
+
+As the connected car services are disabled, the Upgrades will be disabled as further described in Section 5.4.1(b).
+
+5.4.3.3.
+
+The new owner or a Main User can re-activate Upgrades which have been disabled due to the deactivation of the connected car services by re-enabling the connected car services. This requires the new owner or Main User of the vehicle to create a Kia Connect account, accept these Terms of Use and link their account to the respective vehicle. After re-activation of the connected car services, the respective Upgrades will be available for the remainder of the purchased usage period.
+
+5.4.3.4.
+
+You are obliged to accurately inform the buyer of your vehicle of the Upgrades installed on the vehicle and the remaining usage periods and applicable end dates thereof. You are further obliged to inform the buyer about the requirement to create a Kia Connect account and to accept these Terms of Use in order to re-activate the Upgrades. Kia will not assume any liability for claims of the new owner due to the fact that the new owner is unable to re-activate or otherwise benefit from a certain Upgrade you have claimed to be available on the vehicle, unless this is due to technical malfunctions that are under control of Kia Connect.
+
+5.5.
+
+Kia Connect Store, purchase process, and payment process
+
+The Kia Connect Store is intended exclusively for private end-customers. Sales to commercial or self-employed customers are excluded.
+
+5.5.1.
+
+Purchase process
+
+You can select certain Upgrades and other add-ons to your vehicle's software which are available for purchase in the store section of the Kia App. By submitting an order in the Kia App relating to an Upgrade or other add-on, you make an offer to Kia regarding the purchase of the respective Upgrade or add-on. Kia confirms receipt of the order through an automatic e-mail sent to you (order confirmation). This order confirmation does not constitute acceptance of your offer, but merely confirms receipt and further processing of the offer by Kia.
+
+The contract between Kia and you is concluded for each Upgrade once the purchased Upgrade is activated in the respective vehicle for which the Upgrade was purchased. Kia is entitled to partial deliveries, unless these represent an unreasonable disadvantage to you.
+
+You may terminate the contract regarding each Upgrade at any time during the trial period as set out in Section 5.3.2.
+
+5.5.2.
+
+Expiry of your right of withdrawal
+
+Generally, if you are a consumer, you have a statutory right of withdrawal as set out in Section 16. In the course of the purchase process, we ask you for your express consent that Kia shall commence performance of the contract before the end of the withdrawal period. By giving your consent, you lose your right of withdrawal once Kia commences the performance of the contract.
+
+5.5.3.
+
+Access to these Terms of Use
+
+You can access these Terms of Use through a link in the checkout process before you submit your order. In addition, you will be provided with a copy of these Terms of Use in the order confirmation e-mail.
+
+5.5.4.
+
+Payment Processing
+
+Payment processing on the Kia Connect Store is handled by our partner Stripe Payments Europe Ltd, 1 Grand Canal Street Lower, Grand Canal Dock, Dublin, Ireland ("Stripe"). This is in line with our legitimate interest in offering an efficient and secure payment method. In this context, we share the following data with Stripe to the extent necessary for the performance of the contract:
+
+Name of account holder
+
+Account email address
+
+Customer number
+
+Bank details
+
+Subscription start date and time
+
+Number of users
+
+Your location
+
+We are not required by law or contract to process the information provided in this section. However, we cannot process a payment through Stripe without your personal information. By entering into the Agreement, you expressly consent to both the processing of the data and the use of the payment method.
+
+The individual payment methods offered via Stripe will be communicated to you in the Kia Connect Store. Stripe may use other payment services to process payments which may be subject to specific payment terms and conditions which will be notified to you separately where applicable. For more information about Stripe, please visit https://stripe.com.
+
+6.
+
+Copyright
+
+6.1.
+
+The entire content of the Services is the property of Kia, its direct or indirect subsidiaries or affiliated companies (hereinafter collectively referred to as "Kia Group") or its third-party licensors and is protected by applicable copyright laws with all rights reserved.
+
+All rights in the Services, the underlying software, the content and arrangement are owned by Kia Group and its licensors. You must not sell, distribute, publish, broadcast, circulate or commercially exploit the Services in any way without our express written consent.
+
+You may not reproduce (in whole or in part), transmit (by electronic means or otherwise), modify, display, redeliver, license, link or otherwise use the Services for any public or commercial purpose without our prior permission.
+
+6.2.
+
+Nothing in these Terms of Use shall be construed as granting any license or right to use any image, trademark, service mark or logo, all of which are the property of Kia Group.
+
+Kia Group reserves all rights with respect to its proprietary information or material in connection with the Services and will enforce such rights to the full extent of applicable copyright and trademark laws.
+
+7.
+
+User Obligations and Restrictions
+
+7.1.
+
+General obligations
+
+You must comply with all applicable laws and respect the rights of third parties when using the Services.
+
+7.2.
+
+Information obligations
+
+You are obliged to inform other drivers of the vehicle about the activation of the Services and the data processing involved in accordance with Section 10.2.
+
+7.3.
+
+Obligations in case of transfer of ownership in the vehicle
+
+If you sell your vehicle or otherwise provide it to a third party on a permanent basis, the following applies:
+
+7.3.1.
+
+You are obliged to deactivate the Services in the Head Unit of the respective vehicle and to delete the data stored in the vehicle.
+
+In order to do so, please (1) click the "Kia Connect" icon on the vehicle's head unit, then (2) select "Kia Connect settings", afterwards (3) scroll down in the menu on the left to select the "Deactivate Kia Connect" entry and finally (4) click the "Deactivate" button. The system will then guide you through the deactivation process and offer to delete the data.
+
+Attention: Please note that resetting the head unit to factory defaultsdoes not lead to the deactivation of the Kia Connect services. You must followthe deactivation process described above.
+
+After the deactivation as described above, the Services for the respective vehicle are deactivated, the data in the head unit is deleted and the vehicle is disconnected from your Kia App.
+
+Please note that the vehicle-related data will also be deleted in your account of the Kia App, but any other data in your account will remain unaffected. If you also wish to delete your account on the Kia App, please follow the account deletion process in the Kia App.
+
+7.3.2.
+
+You and Kia are entitled to terminate the agreement on the use of the Services with regard to the respective vehicle pursuant to Section [No Segment found with ID: 844].
+
+7.4.
+
+Prohibited use and other impermissible activities
+
+7.4.1.
+
+You may only use the Services for the purposes and within the limits described in Section 4.2.
+
+7.4.2.
+
+You may only use your login credentials for the Services to log into the Kia App and to connect the Head Unit to your Kia App.
+
+7.4.2.1.
+
+You are not permitted to
+
+7.4.2.1.1.
+
+share your login credentials with other users of your vehicle, or
+
+7.4.2.1.2.
+
+share your login credentials with any third party such as providers of third-party apps or other software, or
+
+7.4.2.1.3.
+
+use your login credentials in connection with non-Kia software, or
+
+7.4.2.1.4.
+
+use your login credentials to connect any third-party service to Kia's systems, such as the Kia Connect back-end.
+
+7.4.2.2.
+
+Incompliance with the above limitations may result in and Kia disclaims all liability for
+
+7.4.2.2.1.
+
+excessive power consumption of the head unit and thereby drain of the 12V vehicle battery, which may ultimately cause the vehicle to be unable to start up, and
+
+7.4.2.2.2.
+
+misuse of the login credentials by the third parties to whom the credentials were provided.
+
+7.4.2.3.
+
+Furthermore, Kia has no control over the(onward) processing of data obtained by third parties using your login credentials.
+
+7.4.3.
+
+You must not modify your vehicle (including modifying hardware or software or using third-party software) in any way that may affect the functionality of the Services.
+
+7.4.4.
+
+You may use the SIM card embedded in the Head Unit only within the Head Unit and only to access the Services. Any extraction of the SIM card from the Head Unit or the information contained in the SIM card (e.g. the ICCID) is prohibited.
+
+You must not use the SIM card
+
+for the transmission of voice (including VoIP);
+
+to access a publicly addressable destination (i.e. public IP address) including through the use of a proxy, gateway or routing;
+
+in any way that attempts to penetrate security measures whether or not the intrusion results in the corruption or loss of data;
+
+in any way that uses the Services or software relating to internet relay chat, peer-to-peer file sharing, bit torrent or proxy server networks;
+
+in any way that involves spamming, sending unsolicited bulk emails or commercial messages, or maintaining an open SMTP relay; or
+
+in any way that may have a detrimental effect on the network or the Services.
+
+7.4.5.
+
+You must not disclose to any third party the results of any benchmarking or performance testing of the SIM card, the network, the Services or any component thereof.
+
+7.5.
+
+Consequences of violations
+
+Any violation of the obligations and restrictions in this Section 7 may result in the temporary suspension of the provision of the Services. Kia will generally inform you about the intention to suspend the provision of the Services and the duration of the suspension in advance, unless immediate suspension is necessary to prevent harm to Kia, the Service, the network or other customers. The duration of the suspension shall be determined by Kia at its reasonable discretion based on the severity of the violation and the resulting risks for Kia, the Service, the network or other customers. In case of repeated violations, Kia may terminate the Agreement for cause pursuant to Section 11.3.
+
+8.
+
+FREE AND PAID SERVICES
+
+Use of the Kia App and the Kia Connected Services is generally free of charge (“Free Service”), for up to 7 years from the date of activation of the Services (“Free Service Period”) unless they are marked as a paid subscription. We reserve the right, at our sole discretion, to convert a Free Service at any time into a paid and/or subscription-based service. In this case, we will inform you in advance of the terms and fees that will apply. You will then have the right to terminate your use of the Free Service at any time before the change takes effect by your acceptance of the new terms and fees, without any cost or penalty.
+
+If the vehicle is sold and registered to a new Main User during the free service period, the new Main User may choose to use the Services free of charge during the remainder of the free service period by activating the Services in their own name. The free service period remains unaffected by any subsequent sale and registration after the initial sale, i.e. the free service period is neither interrupted nor extended by a subsequent sale and/or registration of the vehicle.
+
+9.
+
+Service Availability
+
+9.1.
+
+We reserve the right to temporarily or permanently deactivate access to the Services in whole or in part in so far as this is necessary to ensure the security or stability of the Services for all users or to ensure compliance of the Services with mandatory legal requirements.
+
+9.2.
+
+The provision and use of the Services may be subject to restrictions beyond the scope of our control with regard to the current state of the art. In particular, this relates to the availability of the data connections provided by carriers. In individual cases, the non-availability of the network can lead to the Services not being available as the necessary data transfer cannot occur.
+
+In addition, short-term capacity bottlenecks can arise from peak loads on the Services, wireless and fixed networks and on the internet.
+
+9.3.
+
+Disruptions can also arise due to force majeure, including pandemic and epidemic diseases, strikes, lockouts and official orders, and on account of technical and other measures (e.g. repairs, maintenance, software updates and extensions) necessary on our systems or those of downstream or upstream providers, content providers and network operators, which are necessary for the proper or improved performance of the Services.
+
+9.4.
+
+Where access to the Services is deactivated, restricted or disrupted as described in this Section 9, to the extent possible we will contact you in advance to inform you of this and give a reason for the deactivation, restriction or disruption.
+
+10.
+
+Data Protection
+
+10.1.
+
+For information on how we collect and process personal data in connection with the provision of the Services, please refer to our Kia Connect Privacy Notice available on the Kia Connect website https://connect.kia.com/eu/downloads.
+
+10.2.
+
+You shall inform any other user/driver of the vehicle that the Services are activated. You shall in particular inform such other user/driver about the data processing activities described in the Kia Connect Privacy Notice and the fact that the Services require the collection and processing of location data (GPS data).
+
+11.
+
+Term, Termination
+
+11.1.
+
+This agreement commences once accepted by you in the Head Unit. It expires when the free service period (cf. Section 8.1) ends, unless terminated earlier in accordance with this Section 11.
+
+11.2.
+
+The agreement concerning the provision of the Services and thereby the right to use the Services can be terminated by either party any time with one month’s notice.
+
+11.3.
+
+Either Party's right to terminate for good cause remains unaffected. A good cause for termination by Kia exists in particular in case of repeated violations of the user obligations under the prerequisites of Section 7.5.
+
+11.4.
+
+Either Party's statutory termination rights remain unaffected.
+
+12.
+
+DATA ACCESS AND USE UNDER THE EUROPEAN DATA ACT
+
+12.1.
+
+Data licence and purposes of data use
+
+12.1.1.
+
+With regard to readily available non-personal data, generated in connection with the use of the Services or the vehicle ("Relevant Data"), by accepting these Terms, you grant us a non-exclusive worldwide licence to access, use and make this data available to Kia affiliates and third parties ("Data Licence") free of charge, in a manner described in this Section and for the following purposes ("Purposes"):
+
+providing Services, as described in these Terms;
+
+providing support, warranty, guarantee or similar services or to assess your or third party's claims related to the vehicle or Services;
+
+monitoring and maintaining the functioning, safety and security of the vehicle or Services and ensuring quality control;
+
+improving the functioning of any product or related service offered by us or Kia affiliates;
+
+analysing the data and aggregating it with other data or creating services data for the purpose of improving our products and Services;
+
+developing new products or services, including artificial intelligence (AI) solutions, by us or by third parties acting on our behalf or in collaboration with us;
+
+aggregating the Relevant Data with other data or creating derived data, for any lawful purpose, including with the aim of selling or otherwise making available such aggregated or derived data to third parties, provided that such data do not allow specific data transmitted to us from the vehicle or Services to be identified or allow a third party to derive the data from the dataset.
+
+12.1.2.
+
+The Data licence can be transferred by us to another Kia affiliate. In such case, you will be notified 30 days in advance and be able to object to such transfer during that period. If you object, the Data Licence will be terminated within 7 days of your objection.
+
+12.1.3.
+
+We undertake not to use non-personal Relevant Data to derive insights about your economic situation, assets and production methods, or about the use of the vehicle or Services in any other manner that could undermine your commercial position on the markets in which you are active.
+
+12.2.
+
+Your access to Relevant Data
+
+12.2.1.
+
+You have the right to access the Relevant Data free of charge, at least at the same quality as available to us, in a comprehensive, structured, commonly used and machine-readable format.
+
+12.2.2.
+
+The technical details regarding the access procedure are available on our website (“Data Act Information Notice”).
+
+12.2.3.
+
+When you request access to Relevant Data, we may require additional information to confirm your identity, validity of the request and your eligibility to access the Relevant Data. For this purpose, we may require:
+
+proof of ownership of the vehicle, OR
+
+proof of lease or other title for temporary use of the vehicle, OR
+
+proof of other rights to use the Services.
+
+12.2.4.
+
+If you are not the legal owner of the vehicle, the request to access Relevant Data must be submitted by the owner of the vehicle.
+
+12.2.5.
+
+Prior to granting access to Relevant Data, we may ask you to ensure that technical and organisational security measures are applied to secure the Relevant Data.
+
+12.2.6.
+
+We may refuse access to the Relevant Data where disclosure of data (or any further processing of data) could have serious adverse effects on the health, safety or security of a natural person.
+
+12.2.7.
+
+Additionally in exceptional circumstances, where you are not able to ensure sufficient security of Relevant Data or where the disclosure of Relevant Data is highly likely to cause us serious economic damage, we may refuse to grant access to Relevant Data.
+
+12.2.8.
+
+If we refuse your request to access the Relevant Data per Section 12.2.6 or 12.2.7, we will also notify the relevant authority accordingly. In such case, you are also entitled to know the reasons why your request has been rejected and to lodge a complaint with the relevant authority.
+
+12.2.9.
+
+If the scope of the requested Relevant Data includes personal data, the GDPR applies. In such a case, you may be requested to demonstrate the legal basis for processing personal data, unless you are the data subject, within the meaning of the GDPR, and you may only request personal data pertaining to yourself.
+
+12.3.
+
+Your use of Relevant Data
+
+You are entitled to use the Relevant Data made available to you for any lawful purpose and share the Relevant Data freely with third parties.
+
+However, you are not permitted to:
+
+use the Relevant Data to develop a connected product that competes with the Kia vehicle, nor share the Relevant Data with third parties for this purpose;
+
+use Relevant Data to derive insights about our economic situation, assets and production methods, or those of Kia Corporation;
+
+use coercive means or exploit any gaps in our technical infrastructure designed to protect the Relevant Data in order to obtain access to data;
+
+share the Relevant Data with a third party considered to be a gatekeeper under Article 3 of Regulation (EU) 2022/1925 (an up-to-date list of gatekeepers is available here: https://digital-markets-act.ec.europa.eu/gatekeepers_en).
+
+12.4.
+
+Sharing of data with third parties in relation to the Purposes
+
+12.4.1.
+
+We may share non-personal Relevant Data with Kia affiliates and/or third parties if the data is used by the third party for one or all of the following purposes:
+
+assisting the Data Controller in achieving the Purposes;
+
+achieving the Purposes, in collaboration with the Data Controller;
+
+achieving other purposes of third parties, if you have specifically requested this. In such case, we can request compensation from such third party for sharing Relevant Data.
+
+12.4.2.
+
+Except for cases described in Section 12.4.1, first and second bullets, Section 12.4.4and/or in the Kia Connect Privacy Notice, we will only share the Relevant Data at your request, which you can submit to us or to third parties of your choice. For more information regarding the request procedure, please refer to Data Act Information Notice.
+
+12.4.3.
+
+When sharing non-personal Relevant Data with a third party, we will ensure that the third party is contractually bound:
+
+not to use the Relevant Data for any purposes or in any way beyond the use that is permissible in accordance with this Section 9;
+
+not to derive insights about your economic situation, assets and production methods, or about the use of the vehicle or Services in any other manner that could undermine your commercial position on the markets in which you are active;
+
+to apply technical and organisational measures required for ensuring an appropriate level of security of Relevant Data;
+
+not share Relevant Data further unless you specifically request or approve of such data sharing, or unless such data sharing is required and in your interest to fulfil the Purposes or any contract you may have with such third party.
+
+12.4.4.
+
+For avoidance of doubt, we and the third parties with whom the Relevant Data have been shared are authorised to use, at our sole discretion, processing services provided by third parties, such as cloud computing services (including infrastructure as a service, platform as a service and software as a service), hosting services or similar services to achieve the Purposes.
+
+12.4.5.
+
+Under no circumstances will we share the Relevant Data with a third party considered to be a gatekeeper under Article 3 of Regulation (EU) 2022/1925 (an up-to-date list of gatekeepers is available here: https://digital-markets-act.ec.europa.eu/gatekeepers_en).
+
+12.5.
+
+Termination of Data Licence
+
+12.5.1.
+
+The use of Relevant Data is limited to the retention periods specified in the Data Act Information Notice.
+
+12.5.2.
+
+Termination or withdrawal from the Services results in termination of the Data License. Please note that if you terminate the Data License, your use of Services will be limited or discontinued.
+
+12.5.3.
+
+The Data Licence also terminates automatically:
+
+upon the transfer of the vehicle or permanent discontinuation of the Services;
+
+when your title to use the vehicle expires (i.e. you sell your vehicle);
+
+in the case referred to in Section 9.2.
+
+12.5.4.
+
+Upon expiry or termination of the Data Licence, we will no longer collect Relevant Data. However, the Data Controller is entitled to further process Relevant Data already generated or collected before the date of termination or expiry of Data Licence as specified in this Section 12.
+
+12.6.
+
+Use of personal data
+
+The use and sharing of personal Relevant Data has been described in detail in the Kia Connect Privacy Notice.
+
+12.7.
+
+Transfer of the vehicle and additional users of the Services
+
+12.7.1.
+
+If you sell your vehicle or otherwise provide it to a third party on a permanent basis, you must comply with the requirements specified in Section 5.4.3.
+
+12.7.2.
+
+If you allow another individual ("Additional User") to use the Services, you must ensure that:
+
+such Additional User has acknowledged and accepted these Terms of Use and specifically this Section 12;
+
+you support the Additional User in relation to any requests made by the Additional User related to Relevant Data, in particular by acting as our primary contact in relation to the Relevant Data;
+
+you notify us of any requests or claims made by the Additional Users related to the Relevant Data without delay and cooperate with us in addressing such claims or requests, in particular by providing us with any necessary information.
+
+12.7.3.
+
+In so far as allowed by the law, you are liable for damages caused to us or to third parties if you fail to comply with your obligations, specifically in this Section 12.7.2 and/or 5.4.3
+
+12.8.
+
+Further information
+
+Detailed information regarding Relevant Data, your rights under the EU Data Act and other information required by law are available in the Data Act Information Notice
+
+12.9.
+
+Access to and use of Relevant Data of the Authorized User
+
+12.9.1.
+
+You are considered "Authorised User" if you do not hold a title to the vehicle (i.e. ownership or lease), but use the Services based on the authorisation of another party ("Business User"), in particular:
+
+your employer
+
+your business partner such as car hire company.
+
+12.9.2.
+
+Sections 12.1 to 12.9.1 do not apply to Authorised Users. Business Users are required to provide their Authorised Users with all information required by law, in particular regarding how and for what purposes the Relevant Data is used, how it can be access and with whom it is shared. Please contact the Business User for relevant information.
+
+12.9.3.
+
+Authorised Users should submit requests for access to Relevant Data through the Business User.
+
+13.
+
+Changes to the Services; Changes to the Terms of Use
+
+13.1.
+
+Changes to the Services
+
+Kia reserves the right to make reasonable changes to the Services. In particular, we occasionally make legally required updates, which are changes that keep our Services compliant with applicable law. We may also make these updates to our Services for security reasons and to ensure that they meet expected quality standards (e.g. those described in Section 17 on the Statutory Warranties).
+
+Furthermore, we may change our Services for the following additional reasons:
+
+to adapt to new technologies;
+
+to accommodate an increase or decrease in the numbers of users of the Services;
+
+to adapt to import changes in licenses or partnerships with third parties; and
+
+to prevent abuse or damage.
+
+13.2.
+
+Changes to the Terms of Use
+
+Kia shall make an offer for changes to these Terms of Use to you by displaying them in the Kia App and/or in the vehicle's Head Unit no later than two months before the proposed new Terms of Use are to enter into force. The changed Terms of Use shall only become effective if you accept them by clicking the corresponding "accept" button in the Kia Connect App or in the Head Unit.
+
+If you do not accept the proposed changed Terms of Use, we reserve the right to terminate the agreement with 6 weeks' notice.
+
+14.
+
+Miscellaneous
+
+14.1.
+
+All agreements between Kia and you are concluded in the local language version. After the conclusion of the respective agreement, the text of the agreement will be available for you to download under https://connect.kia.com/eu/downloads.
+
+14.2.
+
+These Terms of Use are the entire agreement of the parties with respect to the subject matter of the use of the Services and supersede all prior agreements, written or oral, between the parties with respect to the subject matter.
+
+14.3.
+
+Deviating, conflicting or supplementing terms and conditions of the User shall only govern the use of the Services if explicitly accepted by us in writing.
+
+14.4.
+
+Any amendments and additions to the Terms of Use as well as notifications necessary for their execution require text form (including email, fax or confirmation in the Head Unit) to be effective. This text form requirement can only be overruled in text form.
+
+14.5.
+
+We are entitled to assign our rights and duties under this agreement to another service provider either in full or in part by providing 6 weeks' notice to you. In this case, however, you shall be entitled to terminate the agreement within one month after receipt of the written notification effective at the time of the intended assignment of the agreement to the company which is taking over from Kia in the agreement. We shall expressly inform you of this right of termination in the written notification.
+
+For the avoidance of doubt, this right is without prejudice to your right to terminate the Terms of Use and thereby the right to use the Services at any time as stipulated in Section 11.2.
+
+15.
+
+Customer Service / Complaints
+
+You may use the contact details set out in Section 2 above in case of questions or complaints.
+
+Kia does not and is not obligated to participate in alternative dispute resolution procedures before an alternative dispute resolution entity for consumers.
+
+16.
+
+Instructions on the Right of Withdrawal regarding the Services and the Purchase of Upgrades
+
+If you are a consumer (i.e. a natural person who places the order for a purpose that cannot be attributed to your commercial or self-employed professional activity), you have a right of withdrawal in accordance with the statutory provisions with regard to this agreement on the provision of the Services and on any agreement on the Purchase of Upgrades (see Section 5).
+
+16.1.
+
+Right of withdrawal
+
+You have the right to withdraw from this contract within fourteen days without giving any reason.
+
+The withdrawal period will expire after 14 days from the day of the conclusion of the contract.
+
+To exercise the right of withdrawal, you must inform us (Kia Connect GmbH, Theodor-Heuss-Allee 11, 60486 Frankfurt am Main, Germany, telephone number: +49 800 7773044 and email address: [email protected]) of your decision to withdraw from this contract by making an unequivocal statement (e.g. a letter sent by post or email).
+
+You may use the attached model withdrawal form, but it is not obligatory. You can also fill in and submit the model withdrawal form or any other unequivocal statement electronically on our website at https://connect.kia.com/eu/customer-support/contact-form. If you use this option, we will communicate to you an acknowledgement of receipt of such a withdrawal on a durable medium (e.g. by email) without delay.
+
+To meet the withdrawal deadline, it is sufficient for you to send the communication concerning your exercising of the right of withdrawal before the withdrawal period has expired.
+
+16.2.
+
+Effects of withdrawal
+
+If you withdraw from this contract, we shall reimburse to you all payments received from you, including the costs of delivery (with the exception of the supplementary costs resulting from your choice of a type of delivery other than the least expensive type of standard delivery offered by us), without undue delay and in any event not later than 14 days from the day on which we are informed about your decision to withdraw from this contract.
+
+We will carry out such reimbursement using the same means of payment as you used for the initial transaction, unless you have expressly agreed otherwise; in any event, you will not incur any fees as a result of such reimbursement.
+
+16.3.
+
+IMPORTANT NOTE: Expiration of the right of withdrawal
+
+In the case of contracts for the supply of digital content that is not supplied on a tangible medium, the right of withdrawal also expires under the following conditions:
+
+16.3.1.
+
+In the case of a contract which does not oblige you to pay a price if Kia has begun with the performance of the contract;
+
+16.3.2.
+
+In the case of a contract which obliges you to pay a price, if
+
+Kia has begun with the performance of the contract,
+
+you have provided prior express consent that Kia shall begin the performance of the contract before the expiry of the withdrawal period,
+
+you have acknowledged that with your consent pursuant to item (b), you lose your right of withdrawal with the commencement of the performance of the contract; and
+
+Kia has provided you with confirmation in accordance with section 312f German Civil Code (Bürgerliches Gesetzbuch, "BGB").
+
+16.4.
+
+Model withdrawal Form
+
+Model Withdrawal Form
+
+(Complete and return this form only if you wish to withdraw from the contract)
+
+To Kia Connect GmbH, Theodor-Heuss-Allee 11, 60486 Frankfurt am Main, Germany, email address: [email protected]:
+
+I/We (*) hereby give notice that I/we (*) withdraw from my/our (*) contract for the provision of the following service (*),
+
+Ordered on (*) / received on (*),
+
+Name of consumer(s),
+
+Address of consumer(s),
+
+Signature of consumer(s) (only if this form is submitted on paper),
+
+Date
+
+(*) Delete as appropriate.
+
+17.
+
+Statutory Liability for Defects
+
+If you are a consumer, you have the statutory defect liability rights for the goods or the digital products as well as any additional rights defined in these Terms of Use. The statutory defect liability rights will become statute-barred two years after provision of the respective digital product; in cases of continuous supply, the claims will not become statute-barred prior to the expiry of 12 months following the end of the supply period.
+
+18.
+
+Liability
+
+The following liability applies to you depending on the country in which you have your habitual residence:
+
+18.1.
+
+Austria
+
+The statutory liability provisions apply.
+
+18.2.
+
+Belgium
+
+18.2.1.
+
+To the fullest extent permitted by applicable law, Kia’s contractual and extra-contractual liability shall, irrespective of its legal ground (whether on warranty, contract, tort, negligence or otherwise, including for latent/hidden defects), for losses and damages arising out of or in connection with the provision of the Services or any delay or interruption in the provision of the Services, be limited as follows: (a) Kia shall be liable up to the amount of foreseeable damages typical for this type of contract due to a breach of material contractual obligations; (b) Kia shall not be liable due to a breach of any non-material contractual obligations nor for any slightly negligent breach of any other duty of care applicable; and (c) Kia shall not be liable for any special, indirect or consequential damages, including, but not limited to, loss of use, of data, of profits, of savings, of opportunity, of goodwill, as well as for claims from third parties (even if Kia has been advised of the possibility of such damage). 18.2.2 The aforesaid limitations of liability do not apply to (i) any mandatory statutory liability (such as liability for defective products), (ii) liability for personal injuries or death caused by any act or omission of Kia, (iii) any liability for fraud or gross negligence, or (iv) any other liability which cannot be limited or excluded by law. In addition, such limitations of liability shall not apply if and to the extent that Kia has assumed a specific guarantee.
+
+18.3.
+
+Bosnia and Herzegovina
+
+18.3.1.
+
+To the fullest extent permitted under applicable mandatory laws, Kia is not subject to any liability arising out of or in connection with the provision of Services and/or Upgrades under these Terms of Use other than liability for intent or gross negligence.
+
+The aforesaid limitations of liability do not apply to any potential mandatory statutory liability (such as liability for defective products) that cannot be limited or excluded by law.
+
+18.4.
+
+Bulgaria
+
+To the extent permitted by the applicable Bulgarian legislation, Kia shall not be subject to any contractual or statutory liability to you resulting from Kia’s failure to comply with this agreement on the provision of the Services and/or on any agreement on the Purchase of Upgrades. In particular, Kia’s liability to you may not be excluded or limited in the following cases: (1) liability for gross negligence or intent, and (2) liability for bodily harm or death caused to a consumer as a result of an act or omission by Kia.
+
+18.5.
+
+Croatia
+
+18.5.1.
+
+To the extent permitted under applicable Croatian law, Kia’s contractual and extra-contractual liability (Cro. izvanugovorna odgovornost), regardless of its legal ground, for losses and damage arising out of or in connection with the provision of the Services, or any delay or interruption in the provision of the Services, is limited as follows: (a) Kia is liable only up to the amount of foreseeable damage typical for this type of contract with respect to the facts that were made known to it at the time of conclusion of the contract, and only in the event of a breach of material contractual obligations, i.e. obligations whose fulfilment is essential for the proper execution of the contract and on which the consumer may reasonably rely; (b) Kia is not liable for the breach of non-material contractual obligations, nor for any slightly negligent breach of any other applicable duty of care; (c) Kia is not liable for any indirect or consequential damage such as lost profit (Cro. izmakla dobit), including but not limited to loss of use, loss of data, loss of profits, loss of savings, loss of opportunity and loss of goodwill, or claims from third parties, even if Kia has been advised of the possibility of such damage.
+
+18.5.2.
+
+The above limitations of liability do not apply to: (i) any mandatory statutory liability, including defective product liability (Cro. odgovornost za neispravan proizvod); (ii) liability for damage caused intentionally or due to gross negligence; (iii) any other liability which cannot be limited or excluded under applicable law. Furthermore, these limitations do not apply where Kia has expressly assumed a specific guarantee or obligation, such as a commercial guarantee in the sense of Section 4.1.1 of the Croatian Obligations Act.
+
+18.5.3.
+
+You are obliged to make reasonable efforts to prevent and minimise damage.
+
+18.5.4.
+
+Kia is not liable for the use of camera / danger zone alerts prohibited under Section 283(1) of the Croatian Road Traffic Safety Act (in Croatian: Zakon o sigurnosti prometa na cestama, ZSPNC).
+
+18.5.5.
+
+TomTom Global Content B.V. is not liable for the use of camera / danger zone alerts prohibited under Section 283(1) of the ZSPNC.
+
+18.5.6.
+
+HERE Europe B.V. is not liable for the use of camera / danger zone alerts prohibited under Section 283(1) of the ZSPNC.
+
+18.6.
+
+Cyprus
+
+18.6.1.
+
+Kia is responsible to you for foreseeable loss and damage caused by Kia. If Kia fails to comply with these Terms of Use, Kia shall be responsible for any loss or damage you suffer that is a foreseeable result of Kia breaking this contract or our failing to use reasonable care and skill, but we are not liable for any loss or damage that is not foreseeable. Loss or damage is foreseeable if either it is obvious that it will happen or if, at the time the contract was made, both we and you knew it might happen.
+
+18.6.2.
+
+Kia does not exclude or limit in any way its liability to you where it would be unlawful to do so. This includes liability for death or personal injury caused by Kia's negligence or the negligence of its employees, agents or subcontractors, for fraud or fraudulent misrepresentation.
+
+18.6.3.
+
+Kia is not liable for business losses. We supply the Services for private use only. If you use the products for any commercial, business or re-sale purpose, Kia will have no liability to you for any loss of profit, loss of business, business interruption or loss of business opportunity.
+
+18.6.4.
+
+Kia is not liable for the use of camera/danger zone alerts prohibited under any applicable local law(s).
+
+18.6.5.
+
+TomTom Global Content B.V. is not liable for the use of camera/danger zone alerts prohibited under any applicable local law(s).
+
+18.7.
+
+Czech Republic
+
+18.7.1.
+
+To the fullest extent permitted by applicablelaw, Kia's contractual and statutory liability for damage or immaterial harmarising out of or in connection with the provision of the Services or Upgradesor any delay or interruption in the provision of the Services and Upgradesshall, irrespective of its legal ground, be limited as follows: (a) Kia shallbe liable for actual damage up to the amount of the foreseeable damages typicalfor this type of agreement due to a breach of contractual obligations; (b) Kiashall not be liable for loss of profit or immaterial harm. 18.5.2 The aforesaid limitations of liability shall notapply to Kia’s (a) liability for harm caused to the natural rights of anindividual; (b) liability for damage caused intentionally or by grossnegligence; (c) liability towards weaker parties, particularly consumers; or(d) any other liability which cannot be limited or excluded by law.
+
+18.8.
+
+Denmark
+
+18.8.1.
+
+Kia shall not be liable for direct or indirect loss or damage unless Kia has caused the loss or damage through wilful misconduct or gross negligence.
+
+18.8.2.
+
+The aforesaid limitations of liability shall not apply to any mandatory statutory liability, in particular to liability under the Danish Product Liability Act (Produktansvarslagen), and liability for culpably caused personal injuries. In addition, such limitations of liability shall not apply if and to the extent that Kia has assumed a specific warranty.
+
+18.8.3.
+
+You are obliged to take reasonable efforts for the prevention and minimisation of damages.
+
+18.9.
+
+Estonia
+
+18.9.1.
+
+To the extent permitted under applicable mandatory law, Kia shall not be liable on any ground whatsoever for any damage (whether direct or indirect damage, including loss of profits) arising from or in connection with the agreement for the provision of Services or the Services themselves.
+
+18.9.2.
+
+Kia is not liable for the use of camera / danger zone alerts / any other related equipment which detects or interferes with the speed measuring equipment used by the traffic supervision under Subsection 73(8) of the Road Traffic Act.
+
+18.9.3.
+
+TomTom Global Content B.V. is not liable for the use of camera / danger zone alerts / any other related equipment which detects or interferes with the speed measuring equipment used by the traffic supervision under Subsection 73(8) of the Road Traffic Act.
+
+18.9.4.
+
+HERE Europe B.V. is not liable for the use of camera / danger zone alerts / any other related equipment which detects or inter-feres with the speed measuring equipment used by the traffic supervision under Subsection 73(8) of the Road Traffic Act.
+
+18.9.5.
+
+The aforesaid limitations of liability shall not restrict or preclude liability of Kia for death or damage to the health of the User, in other cases where damage is caused intentionally or due to gross negligence, or any other liability that cannot be restricted or precluded under applicable law.
+
+18.10.
+
+Finland
+
+18.10.1.
+
+To the maximum extent permitted by applicable law, Kia shall not be liable for any direct or indirect loss or damage.
+
+18.10.2.
+
+The aforesaid limitations of liability shall not apply to any mandatory statutory liability, in particular to liability for wilful misconduct or gross negligence, liability under the Finnish Product Liability Act (Tuotevastuulaki), and liability for personal injury or death. In addition, the limitations of liability herein shall not apply if and to the extent that Kia has assumed a specific guarantee.
+
+18.10.3.
+
+Sections 18.10.1 and 18.10.2 above apply accordingly for Kia's liability for wasted expenditure.
+
+18.10.4.
+
+You are obliged to take reasonable efforts for the prevention and minimisation of damages.
+
+18.11.
+
+France
+
+18.11.1.
+
+Section 18 does not apply to you if you are aconsumer.
+
+18.11.2.
+
+Kia's contractual liability for damages caused by slight negligence shall be limited as follows: (a) Kia shall be liable up to the amount of the foreseeable damages typical for this type of agreement due to a breach of contractual obligations; (b) Kia shall not be liable for any indirect damage which may result from the use of the Services; (c) Kia shall not be liable for any damage caused by a force majeure event (i.e. an event beyond Kia's control and which could not reasonably have been foreseen at the time of conclusion). 18.11.3 The aforesaid limitations of liability shall not apply to any mandatory statutory liability, in particular to liability for gross negligence and/or wilful misconduct, liability for defective products, and liability for personal injuries. In addition, such limitations of liability shall not apply if and to the extent that Kia has assumed a specific guarantee. 18.11.4 Sections 18.11.2 and 18.11.3 apply accordingly for Kia's liability for wasted expenditure.
+
+18.12.
+
+Germany
+
+18.12.1.
+
+Kia shall be liable in accordance with the statutory provisions for intent and gross negligence on the part of Kia, its legal representatives, executive employees or other vicarious agents. The same applies in the case of violation of a guarantee (e.g. in the sense of Sections 444 or 639 BGB (Bürgerliches Gesetzbuch, German Civil Code), or other strict liability as well as claims under the Product Liability Act (Produkthaftungsgesetz) or in case of injury to life, body or health. 18.12.2 In the event of simple negligence, unless Section 18.12.1 applies, Kia shall be liable only for the breach of material contractual obligations, i.e. such obligations which make the proper fulfilment of the contract possible in the first place and on which the customer was entitled to rely or whose culpable non-fulfilment jeopardises the achievement of the purpose of the contract, in this case, however, limited to the amount of the foreseeable damage that may typically arise, the occurrence of which Kia had to expect at the time of conclusion of the contract on the basis of the circumstances known at that time. 18.12.3 You are obliged to take reasonable efforts for the prevention and minimisation of damages. 18.12.4 Kia is not liable for the use of camera / danger zone alerts prohibited under Section 23 para. 1c of the German Road Traffic Act ("StVO"). 18.12.5 TomTom Global Content B.V. is not liable for the use of camera / danger zone alerts prohibited under Section 23 para. 1c StVO. 18.12.6 HERE Europe B.V. is not liable for the use of camera / danger zone alerts prohibited under Section 23 para. 1c StVO.
+
+18.13.
+
+Greece
+
+Kia shall be liable according to the mandatory statutory liability rules requiring its fraud or gross negligence. Kia may be also liable for slight negligence if a) you are a consumer, b) in case of death or personal injury or moral harm, c) any exception therefrom has not been specifically negotiated in advance.
+
+18.14.
+
+Hungary
+
+18.14.1.
+
+To the fullest extent permitted by applicable law, Kia’s contractual and extra-contractual liability shall, irrespective of its legal ground (whether on warranty, contract, tort, negligence or otherwise, including for latent/hidden defects), for losses and damages arising out of or in connection with the provision of the Services or any delay or interruption in the provision of the Services, be limited as follows: (a) Kia shall be liable up to the amount of foreseeable damages typical for this type of contract due to a breach of material contractual obligations; (b) Kia shall not be liable due to a breach of any non-material contractual obligations, nor for any slightly negligent breach of any other duty of care applicable; and (c) Kia shall not be liable for any special, indirect or consequential damages, including, but not limited to, loss of use, of data, of profits, of savings, of opportunity, of goodwill, as well as for claims from third parties (even if Kia has been advised of the possibility of such damage). 18.12.2 The aforesaid limitations of liability shall not apply if and to the extent that Kia has assumed a specific guarantee. Nothing in these Terms of Use will limit or exclude Kia's liability for (i) death or personal injury resulting from Kia's negligence or the negligence of Kia employees or agents; (ii) wilful misconduct; (iii) breach of obligations deriving from public order rules; and (iv) any other case where Kia's liability may not be limited or excluded under applicable law.
+
+18.14.3.
+
+In case of defective performance by Kia, you may enforce a contractual warranty claim in accordance with Act V of 2013 on the Civil Code. In this context, you can either ask for a repair or a replacement unless compliance with the chosen contractual warranty right is impossible or it results in disproportionate expenses on the part of Kia as compared to alternative remedies. If you did not or could not ask for a repair or a replacement, you may ask for a proportionate reduction of the consideration or you may repair the defect yourself or have it repaired at Kia’s expense or – in the last resort – you may withdraw from the contract. You shall be entitled to switch from the contractual warranty right selected to another, but the cost of switch-over shall be covered by you unless it was justified or made necessary by Kia’s conduct. You shall be required to inform of the defect without delay but no later than within two months of the time it is detected. You shall not enforce your right to contractual warranty after two years from the performance of the contract. Within six months from the performance, if you justify that the product purchased or Service used was provided by Kia there is no other condition of the enforcement of the contractual warranty claim than to inform Kia of the defect. But after six months from the performance, you are obliged to prove that the detected defect has already existed at the time of the performance.
+
+18.14.4.
+
+As the present Terms of Use does not cover the sale of any moveable goods, you have no right to enforce product warranty claims against Kia.
+
+18.14.5.
+
+Kia does not assume any voluntary guarantee, and the provision of Services under this Terms of Use does not fall within the obligatory statutory guarantee categories established in Government Decree 151/2003. (IX. 22.) on the statutory warranty for certain non-perishable consumer goods.
+
+18.15.
+
+Iceland
+
+18.15.1.
+
+Kia's contractual and statutory liability for damages caused by slight negligence shall, irrespective of its legal ground, be limited as follows: (a) Kia shall be liable up to the amount of the foreseeable damages typical for this type of contract due to a breach of material contractual obligations; (b) Kia shall not be liable for the slightly negligent breach of any other applicable duty of care; (c) Kia's liability shall be limited to ISK 50,000 per occurrence; (d) Kia shall not be liable for any damage caused by a force majeure event (i.e. an event beyond Kia's control and which could not reasonably have been foreseen at the time of conclusion).
+
+18.15.2.
+
+The aforesaid limitations of liability shall not apply to any mandatory statutory liability, including liability under the Icelandic Product Liability Act (is. Lög um skaðsemisábyrgð). In addition, such limitations of liability shall not apply if and to the extent that Kia has assumed a specific guarantee.
+
+18.15.3.
+
+You are obliged to take reasonable efforts for the prevention and minimisation of damages.
+
+18.16.
+
+Ireland
+
+18.16.1 Kia is responsible to you for foreseeable loss and damage caused by Kia. If Kia fails to comply with these Terms of Use, Kia shall be responsible for loss or damage you suffer that is a foreseeable result of Kia breaching these Terms of Use or our failing to use reasonable care and skill, but we are not responsible for any loss or damage that is not foreseeable. Loss or damage is foreseeable either if it is obvious that it will happen or if, at the time the contract was made, both we and you knew it might happen. 18.16.2 Kia does not exclude or limit in any way its liability to you where it would be unlawful to do so. This includes liability for death or personal injury caused by Kia's negligence or the negligence of its employees, agents or subcontractors or for fraud or fraudulent misrepresentation. 18.16.3 Kia is not liable for business losses. We only supply the Services for private use. If you use the products for any commercial, business or re-sale purpose, Kia will have no liability to you for any loss of profit, loss of business, business interruption, or loss of business opportunity.
+
+18.17.
+
+Italy
+
+18.17.1.
+
+Kia's liability for damages caused by slight negligence shall be limited as follows: (a) Kia shall be liable up to the amount of the foreseeable damages typical for this type of contract due to a breach of material contractual obligations; (b) Kia shall not be liable for the slightly negligent breach of any other applicable duty of care; (c) The aforesaid limitations of liability shall not apply if and to the extent that Kia has assumed a specific guarantee. Nothing in these Terms of Use will limit or exclude Kia's liability for (i) death or personal injury resulting from Kia's negligence or the negligence of Kia employees or agents; (ii) gross negligence or wilful misconduct; (iii) breach of obligations deriving from public order rules; and (iv) any other case where Kia's liability may not be limited or excluded under applicable law. 18.17.2 Section 18.17.1 applies accordingly for Kia's liability for wasted expenditure. 18.17.3 You are obliged to take reasonable efforts for the prevention and minimisation of damages.
+
+18.18.
+
+Latvia
+
+Kia is liable for any damages arising out of this agreement or its performance according to applicable law.
+
+18.19.
+
+Lithuania
+
+To the extent permitted by applicable mandatory law, neither Kia nor its contractual partners shall be liable for any damages arising out of this agreement or its performance, except in the case of Kia's wilful misconduct or gross negligence. This clause does not limit Kia's liability for personal injury, loss of life or non-pecuniary damages.
+
+18.20.
+
+Malta
+
+Kia’s liability for damages caused by slight negligence shall be limited as follows: (a) Kia shall be liable up to the amount of the foreseeable damages typical for this type of agreement due to a breach of material contractual obligations; (b) Kia shall not be liable for the slightly negligent breach of any other applicable duty of care. Nothing in these Terms of Use shall limit or exclude Kia’s liability for (i) death or personal injury resulting from Kia’s negligence or the negligence of Kia employees or agents; (ii) gross negligence or wilful misconduct; and (iii) any other case where Kia’s liability may not be limited or excluded under applicable law.
+
+18.21.
+
+Moldova
+
+To the extent allowed under the applicable law, Kia shall not be subject to any liability other than (1) liability for gross negligence or intent; (2) statutory liability for bodily harm or death caused to the consumer as a result of an act or omission by Kia or persons acting on behalf of Kia and for culpably caused personal injuries; (3) statutory liability for defects; (4) other liability, the limitation or exclusion of which is contrary to law or good faith.
+
+18.22.
+
+Montenegro
+
+18.22.1.
+
+The general rule according to Montenegrin legislation is that party that causes damage to and is liable towards the other party is obliged to compensate for it. The claim for damages lapses three years from the day on which the injured party discovered the damage. In any case, the claim for damages lapses 5 years from the day on which the damage was caused. Kia is not liable for any damage that is not caused by intent or gross negligence.
+
+18.23.
+
+The Netherlands
+
+18.23.1.
+
+To the extent permitted under applicable mandatory law, Kia shall not be liable, irrespective of its legal ground, for breaches during the free service period as stipulated in Section 8.1. To the extent Kia is liable for such damages or if liability relates to products and/or Services other than following from Section 8.1 or any other liability, such liability shall be limited to the amount of the foreseeable damage due to a breach of a material (contractual) obligation. Kia is not liable for indirect and consequential damages. Kia shall not be liable for non-material breaches of its obligations, nor for any slightly negligent breaches. The foregoing limitation of liability shall not apply in case of mandatory liability that cannot be excluded and liability that results from gross negligence or wilful misconduct of Kia.
+
+18.23.2.
+
+You are obliged to take and exercise reasonable efforts for the prevention and minimisation of damages. Kia is not liable for damages that are the result of your failure to take or exercise such reasonable efforts.
+
+18.24.
+
+Norway
+
+18.24.1.
+
+Kia shall not be liable for direct or indirect loss or damage, unless Kia has caused the loss or damage through wilful misconduct or gross negligence. 18.4.2 The aforesaid limitations of liability shall not apply to any mandatory statutory liability, in particular to liability for wilful misconduct, liability under the Norwegian Product Liability Act (produktansvarsloven), liability under the Digital Services Act (digitalytelsesloven), and liability for culpably caused personal injuries. In addition, such limitations of liability shall not apply if and to the extent that Kia has assumed a specific guarantee.
+
+18.24.3.
+
+Sections 18.24.1 and 18.24.2 apply accordingly for Kia’s liability for wasted expenditure.
+
+18.24.4.
+
+You are obliged to take reasonable efforts for the prevention and minimisation of damages.
+
+18.25.
+
+Poland
+
+The statutory provisions on liability shall apply.
+
+18.26.
+
+Portugal
+
+18.26.1.
+
+Kia's contractual liability for damages caused by slight negligence shall be limited: (a) to the amount of the foreseeable damages typical for this type of agreement due to a breach of contractual obligations; (b) Kia shall not be held liable for any indirect damage arising from the use of the Services; (c) Kia shall not be held liable for any damages caused by a force majeure event (i.e. an event beyond Kia's control and which could not reasonably have been foreseen at the time of conclusion).
+
+18.26.2.
+
+The aforesaid limitations will not apply to cases of gross negligence or to lack of conformity products within the period of 3 (three years) or if and to the extent that Kia has assumed a specific guarantee under the Decree-Law 84/2021 of 18 October, which regulates consumer rights in the purchase and sale of digital goods, content and services.
+
+18.26.3.
+
+Kia does not exclude or limit in any way its liability to you where it would be unlawful to do so. This includes liability for death or personal injury caused by Kia's negligence or the negligence of its employees, agents or subcontractors; for fraud or fraudulent misrepresentation; for breach of your legal rights to the Services including the right to receive Services which are supplied with reasonable skill and care.
+
+18.26.4.
+
+Kia is not liable for business losses. We supply the Services for private use only. If you use the products for any commercial, business or re-sale purpose, Kia will have no liability to you for any loss of profit, loss of business, business interruption or loss of business opportunity.
+
+18.27.
+
+Romania
+
+18.27.1.
+
+To the maximum extent permitted under the applicable laws and without prejudice to (i) the statutory liability for defects, (ii) the mandatory legal guarantees and related obligations, (iii) the liability for damages caused to health, physical or mental integrity, as well as (iv) any other liability which cannot be limited or excluded by law, Kia shall not be liable or otherwise responsible for any loss, prejudice or damages caused by slight negligence or imprudence or a force majeure/ fortuitous case event. You are obliged to take reasonable efforts to prevent or mitigate damages. For avoidance of any doubt, force majeure represents any external, unpredictable, absolutely invincible and unavoidable event, while fortuitous case represents an event that cannot be foreseen nor prevented by the person who would have been otherwise liable if the event had not occurred.
+
+18.27.2.
+
+Kia is not liable for business losses. We supply the Services for private use only. In any event, Kia shall not be responsible for any unforeseeable losses, or for indirect or consequential damages, loss of profit, loss of use of profit, loss of opportunity or future losses.
+
+18.28.
+
+Serbia
+
+18.28.1.
+
+The claim for damages lapses 3 years from the day on which the injured party discovered the damage. In any case, the claim for damages lapses 5 years from the day on which the damage was caused.
+
+18.28.2.
+
+Kia is not liable for any damage that is not caused by intent or gross negligence.
+
+18.29.
+
+Slovakia
+
+18.29.1.
+
+To the fullest extent permitted by the applicable Slovak laws, Kia's contractual and statutory liability for damages (in particular, actual losses and loss of profit) arising out of or in connection with the provision of the Services or Upgrades or any delay or interruption in the provision of the Services and Upgrades shall, irrespective of its legal ground, be limited. Kia shall be liable for damages only up to the amount of the damages Kia foresaw, or which Kia could have foreseen as a possible result of the breach of Kia’s obligation, at the time of the execution of the contract, taking into account all the facts Kia knew or should have known by exercising due care. 18.29.2 The aforesaid limitations of liability shall not apply to any mandatory statutory liability. In addition, such limitations of liability shall not apply if and to the extent that Kia has assumed a specific guarantee. 18.29.3 You are obliged to take reasonable efforts for the prevention and minimisation of damages.
+
+18.30.
+
+Slovenia
+
+18.30.1.
+
+Kia’s liability is limited to:
+
+(i) damage caused by gross negligence or wilful misconduct; and
+
+(ii) liability for bodily injury, death, or damage to health causes by intent.
+
+18.30.2.
+
+Kia is not liable for indirect or consequential damage, including but not limited to loss of profits, loss of savings, loss of opportunity, loss of goodwill, loss of use and loss of data, except where such exclusion is not permitted under applicable mandatory law.
+
+18.30.3.
+
+To the maximum extent permitted by applicable law, Kia excludes all warranties, guarantees or representations not expressly set out in these Terms of Use, to the extent applicable to the Services. The Services are provided on an “as is” basis.
+
+18.30.4.
+
+You are obliged to make reasonable efforts to prevent and minimise damage. Kia is not liable for damage that is the result of your failure to make such reasonable efforts.
+
+18.31.
+
+Spain
+
+18.31.1.
+
+Kia does not limit its mandatory statutory liability, including but not limited to liability for wilful misconduct and liability for culpably caused personal injuries. 18.31.2 Section 18.31.1 applies accordingly for Kia's liability for wasted expenditure.
+
+18.32.
+
+Sweden
+
+18.32.1.
+
+Kia shall not be liable for direct or indirect loss or damage, unless Kia has caused the loss or damage through wilful misconduct or gross negligence. 18.32.2 The aforesaid limitations of liability shall not apply to any mandatory statutory liability, in particular to liability for wilful misconduct, liability under the Swedish Product Liability Act (Produktansvarslagen), and liability for culpably caused personal injuries. In addition, such limitations of liability shall not apply if and to the extent that Kia has assumed a specific guarantee. 18.32.3 Sections 18.32.1 and 18.32.2 apply accordingly for Kia's liability for wasted expenditure. 18.32.4 You are obliged to take reasonable efforts for the prevention and minimisation of damages.
+
+18.33.
+
+Switzerland
+
+To the fullest extent permitted under applicable mandatory law, Kia shall not be subject to any liability other than liability for (i) gross negligence or wilful intent and (ii) liability for culpably caused bodily harm or death. Kia shall, to the extent permitted by applicable mandatory law, not be liable for indirect damages, including, but not limited to, loss of profits, loss of savings, loss of opportunity, loss of goodwill, loss of use or loss of data. To the fullest extent permitted under applicable mandatory law, Kia excludes any and all warranties, if and to the extent applicable to the Services under this Agreement. The Services are provided on an "as is"-basis.
+
+18.34.
+
+United Kingdom
+
+18.34.1.
+
+Except for any legal liability that we cannot exclude in law (such as for death or personal injury caused by our negligence, for fraud or fraudulent misrepresentation, or for any other liability that cannot be excluded or limited by law in the UK) or arising under applicable laws relating to the protection of your personal information, Kia is not liable to you for any:
+
+18.34.1.1.
+
+loss or damage you suffer that is not a foreseeable result of Kia breaking this contract or our failing to use reasonable care and skill. Loss or damage is foreseeable if either it is obvious that it will happen or if, at the time the contract was made, both we and you knew it might happen;
+
+18.34.1.2.
+
+losses to non-consumers;
+
+18.34.1.3.
+
+business losses. We supply the Services for private use only. If you use the products for any commercial, business or re-sale purpose, Kia will have no liability to you for any loss of profit, loss of business, business interruption, or loss of business opportunity;
+
+18.34.1.4.
+
+loss or damage that was not caused by any failure or breach by us; or
+
+18.34.1.5.
+
+losses or damages (including damage to a device or other digital content belonging to you and caused by the Services where we have failed to exercise reasonable care and skill) exceeding the higher of £500 or the total price you paid for the Kia Connect App, Head Unit, Services and Upgrades.
+
+18.35.
+
+These Terms of Use may be amended by your local law. Please visit https://connect.kia.com/eu/downloads for possible deviations.
+
+19.
+
+LOCAL LAW AMENDMENTS
+
+The table below contains specific local law amendments depending on the country in which you are habitually resident.
+
+Belgium
+
+Section 6.1 last sentence shall be amended as follows:
+
+Without prejudice to mandatory rights under applicable law, you may not reproduce (in whole or part), transmit (by electronic means or otherwise), modify, display, redeliver, license, link or otherwise use the Services for any public or commercial purpose without our prior permission.
+
+Section 14.5 paragraph 1 shall be amended as follows:
+
+We are entitled to assign our rights and duties under this agreement either in full or in part to another service provider by providing 6 weeks’ notice to you without your approval, provided that this assignment does not diminish your guarantees as a consumer.
+
+Section 16 shall be amended as follows:
+
+You expressly agree that the execution of the contract begins upon your agreement, on the day on which you register for the Kia Account (in the case of the Kia Connect App). Furthermore, you accept the Terms of Use applicable at the time and therefore accept and acknowledge that you lose your right of withdrawal with regard to the agreement / contract, in accordance with Article VI.53,13 of the Belgian Code of Economic Law.
+
+Bosnia and Herzegovina
+
+Section 14.2 is replaced as follows:
+
+To the fullest extent permitted under applicable mandatory laws, Kia does not and is not obliged to participate in alternative dispute resolution procedures. Any dispute between you and Kia Connect shall be settled by the competent court in Bosnia and Herzegovina.
+
+Sections 15.1 and 15.2 are changed as follows:
+
+“Fifteen” instead of “fourteen” and “15” instead of “14”
+
+Bulgaria
+
+Section 13.2 paragraph 2 shall be deleted and replaced as follows:
+
+Kia shall make an offer for changes to these Terms of Use to you by telephone, electronic mail or via postal mail to a postal address provided by the consumer, and by displaying them in the Kia Connect App and/or in the vehicle's Head Unit no later than two months before the proposed new Terms of Use are to enter into force. The changed Terms of Use shall only become effective if you accept them by clicking the corresponding "accept" button in the Kia Connect App or in the Head Unit. If you do not accept the proposed changes to the Terms of Use, you may (i) terminate the contract governed by the Terms of Use, or (ii) continue its performance under the version of the Terms of Use effective prior to the amendments.
+
+Section 14.5 shall be supplemented as follows:
+
+In case of assignment as per the preceding sentence, Kia undertakes to secure that any warranties provided to you will remain valid and unchanged.
+
+Section 16.3.1 shall be deleted and shall not apply.
+
+Section 17 shall be deleted and replaced as follows:
+
+If you are a consumer, we shall be liable to you for any non-compliance of a Service (provided under these Terms of Use) with the contract and which existed at the time of provision of the Service and manifested within two years after provision of the Service. The consumer shall notify Kia of any non-compliance no later than 14 days after the non-compliance with the contract was detected. Failure to do so voids Kia’s liability.
+
+Croatia
+
+Section 16.3.2 paragraph 4 is replaced as follows:
+
+“Kia has provided you with confirmation in accordance with Article 76 of the Croatian Consumer Protection Act.”
+
+Section 19 is replaced as follows:
+
+“If you are a consumer, you have statutory defect liability rights for the goods or the digital products as well as any additional rights deﬁned in these Terms of Use. For digital products supplied on a one-off basis, your statutory rights for defects lapse two years after delivery. For digital content or services supplied continuously, liability for defects applies throughout the entire supply period; claims may be brought within 12 months after the supply ends, in accordance with applicable law.”
+
+Cyprus
+
+Section 16.3.2 paragraph 4 shall be replaced as follows:
+
+“Kia has provided you with confirmation in accordance with Section 27(m)(iii) of the Consumer Protection Law 112(I)/2021.”
+
+Czech Republic
+
+Section 3.7 shall be added and shall read as follows:
+
+Provision of the Services and Upgrades
+
+Unless agreed otherwise, we provide you the Services and Upgrades after the conclusion of the contract.
+
+If we do not fulfil our obligation to provide the Services and Upgrades, you as a consumer have the right to withdraw from the contract if we fail to provide the Services and Upgrades without undue delay after you notify us of the fact or within an additional period which we have mutually and expressly agreed upon. You may withdraw from the contract before the agreed additional period has elapsed only if it is explicitly evident from our statement or the circumstances that we will not provide the Services or Upgrades, or if it is clear at the time of concluding the contract or from the circumstances at the time of the contract’s conclusion that the contract’s performance within the specified time is required.
+
+Section 5.5.2 shall be deleted.
+
+Section 8 shall be added and shall read as follows:
+
+Most of the Services are provided free of charge. However, some of the Services and Upgrades are subject to a fee which is specified for each individual Service or Upgrade in the Kia Connect App or in the Head Unit. The fee is final and includes all charges and taxes.
+
+Section 8.1 shall be deleted and replaced as follows:
+
+The Services provided free of charge to the users of a specific vehicle (as identified by its respective VIN) are provided for a period of 7 years. This 7-year period commences on the day that the vehicle’s warranty period starts.
+
+If the vehicle is sold and registered to a new owner/Main User during the free service period, the new owner/Main User may choose to use the Services free of charge during the remainder of the free service period by activating the Services in their own name. The free service period remains unaffected by any subsequent sale and registration after the initial sale, i.e. the free service period is neither interrupted nor extended by a subsequent sale and/or registration of the vehicle.
+
+Section 13.1 shall be deleted and replaced as follows:
+
+Kia reserves the right to make necessary changes to the Services. We occasionally make changes to our Services to maintain their compliance with applicable legislation. We may also make changes to our Services for security reasons and to ensure that they meet quality standards (e.g. those described in Section 17 on the Statutory Liability for Defects).
+
+Kia reserves the right to make reasonable changes to the Services. Provided that reasonable changes do not create additional costs for you and that we notify you in advance about such changes, we may change our Services for the following additional reasons:
+
+to adapt to new technologies;
+
+to accommodate an increase or decrease in the numbers of users of the Services;
+
+to adapt to important changes in licenses or partnerships with third parties; and
+
+to prevent abuse or damage.
+
+If the reasonable changes significantly impair your ability to access or use the Services, we will notify you in writing within a reasonable time before the change takes effect. This notification will inform you of the nature of the change, the time of its implementation and your right to terminate the contract without penalty within thirty days of the date on which you were notified of the change or the date on which the Services were changed, whichever is later.
+
+Section 13 shall be added and shall read as follows:
+
+Before you create your Kia Connect account or before you submit an order for the Services or Upgrades, you can correct errors in your information. You can also correct or change certain information later on in your Kia Connect account.
+
+Section 14.1 shall be deleted and replaced as follows:
+
+All agreements between Kia and you are concluded in the Czech language version. After conclusion of the respective agreement, the text of the agreement will be provided to you in the confirmation email. We also store the concluded agreements for the applicable retention period stipulated by law.
+
+Section 15.2 shall be deleted and replaced as follows:
+
+We are subject to the supervision of the following authorities: (a) in the area of consumer protection in the Czech Republic by the Czech Trade Inspection Authority, and (b) in the area of personal data protection by "Der Hessische Beauftragte für Datenschutz und Informationsfreiheit", Gustav-Stresemann-Ring 1, 65189 Wiesbaden, phone: +49 (0)611-1408 0, email: [email protected], and in the Czech Republic by the Data Protection Authority. You are entitled to lodge a complaint with any of the relevant supervisory authorities.
+
+Section 15.3 shall be added and shall read as follows:
+
+If you are a consumer, you may also use the out-of-court dispute resolution system before the Czech Trade Inspection Authority (www.coi.cz). Information on out-of-court dispute resolution is available on the website: www.coi.cz/informace-o-adr/. In addition, you can use the online dispute resolution system before the European Commission, which is available on the website: https://ec.europa.eu/consumers/odr/main/index.cfm?event=main.home2.show&lng=CS
+
+Section 16.3.2 shall be deleted and replaced as follows:
+
+In the case of a contract which obliges you to pay a price, if
+
+Kia has begun with the performance of the contract with your prior express consent before the expiry of the 14-day withdrawal period,
+
+you have acknowledged that with your consent, you will lose your right of withdrawal; and
+
+Kia has provided you with confirmation in accordance with Section 1824a (1) (2) of Act No. 89/2012 Coll., the Civil Code, as amended.
+
+Section 17 shall be deleted.
+
+Section 17.1 shall be added and shall read as follows:
+
+The Services and Upgrades are subject to statutory defect liability rights as per the applicable provisions of Act No. 89/2012 Coll., the Civil Code, as amended. If you are a consumer, the following Sections 17.2 to 17.12 apply to you.
+
+Section 17.2 shall be added and shall read as follows:
+
+We are liable for failing to fulfil our obligation of providing the Services and Upgrades to you free of defects for the respective period (see Section 17.8). In particular, we are liable for failing to fulfil our obligation to ensure that the Services and Upgrades:
+
+correspond to the agreed description and scope, and to the quality, functionality, compatibility, interoperability and other agreed characteristics;
+
+are suitable for the purpose for which you require them and to which we have agreed; and
+
+are provided with the agreed accessories and instructions for use, including installation instructions and user support.
+
+We are also liable for failing to fulfil our obligation to you that, in addition to the agreed features, the Services and Upgrades:
+
+are fit for the purpose for which such digital content is normally used, including with respect to the rights of third parties, legislation, technical standards, or industry codes of practice where there are no technical standards;
+
+correspond in their scope, quality and other performance parameters, including functionality, compatibility, accessibility, continuity and security, to the usual characteristics of digital content of the same kind and which you may reasonably expect, including in light of public statements made by Kia or by another person in the same contractual chain, in particular advertising or labelling;
+
+are provided with the accessories and instructions for use which you may reasonably expect; and
+
+correspond to the trial version or preview made available by Kia before the conclusion of the contract.
+
+We are not bound by a public statement under letter (b) above if we prove that we were not aware of it, or that it was modified at the time of the contract’s conclusion in a manner that is at least comparable to how the statement was originally worded, or that it could not have influenced the decision to enter into the contract.
+
+Section 17.3 shall be added and shall read as follows:
+
+We are also liable to you for any defect resulting from the incorrect implementation of the Services and Upgrades in your digital environment as carried out by us or under our contractual obligation. This also applies to cases where you undertook the implementation and the defect arose due to a deficiency in the instructions provided by us.
+
+Section 17.4 shall be added and shall read as follows:
+
+In addition to the agreed updates, we shall ensure that you are provided with the updates necessary to maintain the Services and Upgrades in a defect-free state for the duration of the contract, or, in the case of Services or Upgrades supplied on a one-off basis, for the period you could reasonably expect. We shall notify you when these updates become available.
+
+If you fail to implement the Service and Upgrade updates that fall within the meaning of the previous paragraph within a reasonable period, you shall have no rights in respect to defects which arise solely as a result of failing to update the Services and Upgrades. This does not apply if you have not been notified of the update or of the consequences of failing to update the Services and Upgrades, or if you have updated them incorrectly due to a deficiency in the instructions provided by us.
+
+Section 17.5 shall be added and shall read as follows:
+
+If the Services or Upgrades are defective, you have the right to rectification of the defect unless this is impossible for us to do so, or its rectification is connected with unreasonable costs.
+
+Upon notification of a defect, we shall rectify the defect within a reasonable period in a manner which does not to cause any major inconvenience to you, taking into account the nature of the Services and Upgrades and the purpose for which you requested them.
+
+Section 17.6 shall be added and shall read as follows:
+
+You may request a reasonable reduction to the price or withdraw from the contract if:
+
+we have not rectified the defect in accordance with Section 16.5 or it is evident from our statement or the circumstances that the defect will not be rectified within a reasonable period or without causing major inconvenience to you;
+
+the defect continues to be apparent after rectification; or
+
+the defect constitutes a material breach of the contract.
+
+You may not withdraw from the contract if the defect of the Services or Upgrades is minor in nature.
+
+Section 17.7 shall be added and shall read as follows:
+
+If a defect appears during the term of the contract, we bear the burden of proving that the Services and Upgrades were provided without defects. In the case of Services or Upgrades supplied on a one-off basis, any defects manifesting within one year from the provision of the Services or Upgrades are deemed to have existed at the time of provision. This one-year period shall be paused for as long as you cannot use the Services or Upgrades if you have legitimately exercised your statutory defect liability rights.
+
+Section 17.8 shall be added and shall read as follows:
+
+You are entitled to assert your statutory defect liability rights for Service or Upgrade defects which manifest during the term of the contract. In the case of Services or Upgrades supplied on a one-off basis, you may assert your statutory defect liability rights for Service or Upgrade defects which manifest within two years from the date of provision of the Services or Upgrades. If you legitimately assert your statutory defect liability rights, the period for exercising your rights is paused for as long as you cannot use the Services or Upgrades.
+
+Section 17.9 shall be added and shall read as follows:
+
+If you withdraw from the contract, you shall refrain from using the Services or Upgrades, and shall not provide them to a third party. If you infringe on this, we may block your further use of the Services and Upgrades, in particular by making the Services and Upgrades or your Kia Connect account inaccessible to you.
+
+Section 17.10 shall be added and shall read as follows:
+
+You may contact us with a complaint or claim arising from statutory defect liability rights or any other commercial warranty that may be applicable, either by mail to the address: Kia Connect GmbH, Theodor-Heuss-Allee 11, 60486 Frankfurt am Main, Germany, or by email to the address: [email protected]. We shall acknowledge the complaint or claim without undue delay and shall endeavour to resolve it within a reasonable time, unless otherwise agreed with you. We reserve the right to review and verify any complaint. We will notify you of the resolution of the complaint or claim. If a refund is due, we will process the refund as soon as possible but in any event within fourteen (14) days of the date you have asserted the corresponding right. Unless otherwise agreed, refunds will normally be made using the same payment method used by you to purchase the Services or Upgrades.
+
+Section 17.11 shall be added and shall read as follows:
+
+If we fail to resolve your complaint or claim within the time limit set out in Section 17.10, you may withdraw from the contract or request a reasonable reduction to the price in the case of Services or Upgrades that were subject to fees.
+
+Section 17.12 shall be and shall read as follows:
+
+If you legitimately assert a right relating to defective performance, you are entitled to compensation of the costs reasonably incurred in connection with asserting your right.
+
+Denmark
+
+If you are a consumer, you also have the right to lodge a complaint with Ankenævnet for Biler, Lautrupvej 2, 2750 Ballerup if your complaint concerns the purchase of the car and connected services.
+
+Estonia
+
+Section 14.5 shall be supplemented as follows: Our right to assign our rights and duties under this section does not apply where this assignment may serve to reduce the likelihood of the agreement being performed.
+
+Section 15.2 shall be supplemented as follows:
+
+If you are a consumer (as defined under Section 16), you also have the right to lodge a complaint with the Consumer Disputes Committee, information for which is available at https://ttja.ee/en/consumer-disputes-committee.
+
+The second sentence of Section 15.2 does not apply to you if you are a consumer.
+
+The second sentence of Section 17 shall be deleted and replaced as follows:
+
+The statutory defect liability rights will become statute-barred two years after provision of the respective digital product; in cases of continuous supply, the claims will not become statute-barred prior to the expiry of 24 months following the end of the supply period; and, where such period of time is longer than 24 months based on a contract, the claims will not become statute-barred to the expiry of the respective period of time.
+
+Finland
+
+The last sentence of Section 15.2 shall be deleted and replaced as follows:
+
+If you are a consumer as defined in Chapter 1, Section 4 of the Consumer Protection Act (38/1978), you also have the right to lodge a complaint with the Consumer Disputes Board, Hämeentie 2, P.O. Box 306, 00531 Helsinki (www.kuluttajariita.fi). Please note that the decisions of the Consumer Disputes Board are non-binding recommendations. Before filing a complaint with the Consumer Disputes Board, you should contact the Consumer Advisory Services (www.kuluttajaneuvonta.fi).
+
+The following entirely new terms shall apply:
+
+If you are a consumer within the meaning of Chapter 1, Section 4 of the Consumer Protection Act (38/1978) and live in Finland, you are always entitled to bring an action based on Finnish consumer protection legislation before the district court in whose jurisdiction you are domiciled or habitually resident. If you are a consumer within the meaning of Chapter 1, Section 4 of the Consumer Protection Act (38/1978) and live in Finland, the mandatory national consumer protection laws and regulations of Finland shall remain unaffected and shall continue to apply regardless of the provisions of these Terms of Use.
+
+France
+
+Section 1.1 shall be deleted and replaced as follows:
+
+Contracting parties
+
+These terms of use ("Terms of Use") apply to the use of the Kia Connect App and the Kia App (together the "Kia App") and/or the use of Kia Connect via the car’s head unit ("Head Unit"), which provide you with the opportunity to use certain Kia Connect Services ("Services") and to purchase upgrades (“Upgrades”) in the store Section of the Kia Connect App for use in your vehicle.
+
+The Services and Upgrades are provided by Kia Connect GmbH, registered under the registration number HRB 112541, Theodor-Heuss-Allee 11, 60486 Frankfurt am Main, email: [email protected] ("Kia"; "we"; "us"; "our"), to the user of the Services ("User" or "you").
+
+The title of Section 5.5.2 shall be deleted and replaced as follows:
+
+5.5.2 Waiver of the consumer’s right of withdrawal
+
+Section 8.1 shall be supplemented as follows:
+
+The price and payment method for the provision of the Services when the free period of 7 years has expired as well as information on how up-to-date information on all applicable tariffs and maintenance charges can be obtained via the Kia Connect website.
+
+Section 8.3 shall be added and shall read as follows:
+
+The relevant information is listed under Sections 9, 11.3 and 11.6 of our Kia Connect Privacy Notice available on the Kia Connect website https://connect.kia.com/eu/downloads.
+
+Section 9 title shall be deleted and replaced as follows:
+
+9 Service availability and security
+
+Section 9.5 shall be added and shall read as follows:
+
+Kia Connect undertakes to make its best efforts to implement technical and organisational measures to protect your information.
+
+You declare, however, to be fully informed that the data is not entirely protected against any form of intrusion, including hacking.
+
+You acknowledge that it is impossible to guarantee total security of the data transmitted. Consequently, Kia Connect cannot be held responsible for any incidents that may arise from this transmission.
+
+Section 15 shall be deleted and replaced as follows:
+
+15.1
+
+You may use the contact details set out in Section 1 above in case of questions or complaints without additional costs.
+
+15.2
+
+If you are a consumer: under Articles L.616-1 and R.616-1 of the French Consumer Code, in the event of a complaint which has not been resolved amicably and which has not been resolved satisfactorily within the last year, you may have recourse to a mediation service free of charge. As such, Kia adheres to the service of Medicys mediation service simply and free of charge by submitting your file electronically at www.medicys-consommation.fr, or by simple mail (attach your email, phone and written complaint) to: Medicys – 73 boulevard de Clichy – 75009 Paris
+
+Section 16 shall be deleted and replaced as follows:
+
+If you are a consumer, because the provision of the Services consists of the supply of digital content which is not recorded on a durable medium, you hereby acknowledge and agree that by accepting the Terms of Use, you consent to the immediate start of the Services by Kia before the expiry of the withdrawal period and expressly waive your legal right of withdrawal from the Services when such performance has begun.
+
+Section 17 shall be deleted and replaced as follows:
+
+Section 17 Legal warranty of conformity for digital content and services
+
+If you are a consumer, you are entitled to remedies under the legal guarantee of conformity. For more information, refer to the framed information provided at the end of the ToU.
+
+Reminder of applicable guarantees for Services
+
+(art D. 211-4 C. Conso)
+
+The consumer has the right to invoke the legal warranty of conformity in the event of the appearance of a lack of conformity during a period of 7 years as from the supply of the digital content or service. During this period, the consumer is only required to establish the existence of the lack of conformity and not the date of its appearance.
+
+The legal warranty of conformity includes the obligation to provide all updates necessary to maintain the conformity of the digital content or service during 7 years.
+
+The legal guarantee of conformity entitles the consumer to have the digital content or digital service brought into conformity without undue delay following his request, at no cost and with no major inconvenience to him.
+
+The consumer may obtain a reduction in price by keeping the digital content or the digital service, or he may terminate the contract by obtaining a full refund in return for renouncing the digital content or the digital service, if:
+
+1° The professional refuses to bring the digital content or the digital service into conformity;
+
+2° The compliance of the digital content or service is unjustifiably delayed;
+
+3° The digital content or digital service cannot be brought into conformity at no cost to the consumer;
+
+4° Bringing the digital content or digital service into conformity causes major inconvenience to the consumer;
+
+5° The non-conformity of the digital content or digital service persists despite the trader's unsuccessful attempt to bring it into conformity.
+
+The consumer is also entitled to a reduction in the price or termination of the contract where the lack of conformity is so serious that it justifies an immediate reduction in the price or termination of the contract. In such cases, the consumer is not obliged to ask for the digital content or service to be brought into conformity beforehand.
+
+In cases where the lack of conformity is minor, the consumer only has the right to cancel the contract if the contract does not provide for the payment of a price.
+
+Any period of unavailability of the digital content or digital service for the purpose of bringing it back into conformity suspends the guarantee that remained until the digital content or digital service was supplied in conformity again.
+
+These rights result from the application of articles L. 224-25-1 to L. 224-25-31 of the Consumer Code.
+
+Any professional who obstructs the implementation of the legal guarantee of conformity in bad faith is liable to a civil fine of up to 300,000 euros, which may be increased to 10% of average annual sales (article L. 242-18-1 of the French Consumer Code).
+
+Consumers also benefit from the legal guarantee against hidden defects under articles 1641 to 1649 of the French Civil Code, for two years from the discovery of the defect. This guarantee entitles the consumer to a price reduction if the digital content or service is retained, or to a full refund in exchange for renouncing the digital content or service.
+
+Reminder of applicable guarantees for Upgrades purchased for a limited period
+
+(art D. 211-4 C. Conso)
+
+The consumer has the right to invoke the legal warranty of conformity in the event of the appearance of a lack of conformity during the period indicated in the purchase, starting from the supply of the digital content or service. During this period, the consumer is only required to establish the existence of the lack of conformity and not the date of its appearance.
+
+The legal warranty of conformity includes the obligation to provide all updates necessary to maintain the conformity of the digital content or service during the period indicated in the purchase.
+
+The legal guarantee of conformity entitles the consumer to have the digital content or digital service brought into conformity without undue delay following his request, at no cost and with no major inconvenience to him.
+
+The consumer may obtain a reduction in price by keeping the digital content or the digital service, or he may terminate the contract by obtaining a full refund in return for renouncing the digital content or the digital service, if:
+
+1° The professional refuses to bring the digital content or the digital service into conformity;
+
+2° The compliance of the digital content or service is unjustifiably delayed;
+
+3° The digital content or digital service cannot be brought into conformity at no cost to the consumer;
+
+4° Bringing the digital content or digital service into conformity causes major inconvenience to the consumer;
+
+5° The non-conformity of the digital content or digital service persists despite the trader's unsuccessful attempt to bring it into conformity.
+
+The consumer is also entitled to a reduction in the price or termination of the contract where the lack of conformity is so serious that it justifies an immediate reduction in the price or termination of the contract. In such cases, the consumer is not obliged to ask for the digital content or service to be brought into conformity beforehand.
+
+In cases where the lack of conformity is minor, the consumer only has the right to cancel the contract if the contract does not provide for the payment of a price.
+
+Any period of unavailability of the digital content or digital service for the purpose of bringing it back into conformity suspends the guarantee that remained until the digital content or digital service was supplied in conformity again.
+
+These rights result from the application of articles L. 224-25-1 to L. 224-25-31 of the Consumer Code.
+
+Any professional who obstructs the implementation of the legal guarantee of conformity in bad faith is liable to a civil fine of up to 300,000 euros, which may be increased to 10% of average annual sales (article L. 242-18-1 of the French Consumer Code).
+
+Consumers also benefit from the legal guarantee against hidden defects under articles 1641 to 1649 of the French Civil Code, for two years from the discovery of the defect. This guarantee entitles the consumer to a price reduction if the digital content or service is retained, or to a full refund in exchange for renouncing the digital content or service.
+
+Reminder of guarantees applicable to Upgrade purchased for an unlimited period
+
+(art D. 211-3 C. Conso)
+
+Consumers have a period of two years from the date of supply of the digital content or service in which to invoke the legal warranty of conformity in the event of a lack of conformity. During a period of one year from the date of supply, the consumer is only required to establish the existence of the lack of conformity, and not the date of its appearance.
+
+The legal warranty of conformity implies the obligation to provide all updates necessary to maintain the conformity of the digital content or service.
+
+The legal warranty of conformity entitles the consumer to have the digital content or service brought into conformity without undue delay following his request, at no cost and without major inconvenience to him.
+
+The consumer may obtain a price reduction by retaining the digital content or service, or he may terminate the contract by obtaining a full refund in exchange for relinquishing the digital content or service, if:
+
+1° The professional refuses to bring the digital content or service into conformity;
+
+2° The compliance of the digital content or service is unjustifiably delayed;
+
+3° The digital content or service cannot be brought into conformity without imposing costs on the consumer;
+
+4° Bringing the digital content or service into conformity causes major inconvenience to the consumer;
+
+5° the non-conformity of the digital content or service persists despite the professional's unsuccessful attempt to bring it into conformity.
+
+The consumer is also entitled to a price reduction or to rescission of the contract where the lack of conformity is so serious as to justify immediate price reduction or rescission of the contract. In such cases, the consumer is not obliged to ask for the digital content or service to be brought into conformity beforehand.
+
+In cases where the lack of conformity is minor, the consumer is entitled to cancel the contract only if the contract does not provide for payment of a price.
+
+Any period of unavailability of the digital content or digital service for the purpose of restoring conformity suspends the warranty that was due until the digital content or digital service was supplied in conformity again.
+
+The rights mentioned above result from the application of articles L. 224-25-1 to L. 224-25-31 of the French Consumer Code.
+
+Any professional who obstructs the implementation of the legal guarantee of conformity in bad faith is liable to a civil fine of up to 300,000 euros, which may be increased to 10% of average annual sales (article L. 242-18-1 of the French Consumer Code).
+
+Consumers are also covered by the legal warranty for hidden defects under articles 1641 to 1649 of the French Civil Code, for a period of two years from the discovery of the defect. This warranty entitles the consumer to a price reduction if the digital content or service is retained, or to a full refund in exchange for renouncing the digital content or service.
+
+Hungary
+
+These Terms of Use are concluded in electronic form. The Terms of Use will be concluded upon activation of the Services with the "I AGREE" button. The Terms of Use are not considered to be in writing, and you will be able to store, access and reproduce the Terms of Use on your data carrier or electronic medium. We will provide the technical means for identifying and correcting input errors by electronic processing before making any legally binding statement.
+
+Section 15.2 does not apply to you if you are a consumer.
+
+Kia is not bound by a code of conduct under Act XLVII of 2008 on the Prohibition of Unfair Commercial Practices against Consumers.
+
+Section 15.2 shall be deleted and replaced as follows:
+
+The European Commission provides a website for online dispute resolution, dedicated to helping consumers and traders resolve their disputes out of court, available at http://ec.europa.eu/consumers/odr/. In case of cross-border consumer disputes relating to online sales or online services contracts, the competent conciliation body is the Conciliation Body of Budapest (1016 Budapest Krisztina krt. 99 first floor 111, postal address: 1253 Budapest POB: 10, e-mail: [email protected]; phone number: +36 (1) 488 21 31, website: https://bekeltet.bkik.hu).
+
+Item (d) of Section 16.3.2 shall be deleted and replaced as follows:
+
+Kia has provided you with confirmation in accordance with Section 29(1)(m) of Government Decree 45/2014. (II. 26.) on detailed rules for contracts between consumers and businesses.
+
+Ireland
+
+The final sentence of Section 1.2 shall be deleted and replaced as follows:
+
+In the opposite case, e.g. in the case of cancellation of the purchase agreement for the vehicle, the agreement for the provision of the Services for the vehicle concerned may be terminated according to Section [No Segment found with ID: 844].
+
+The final sentence of Section 4.2.3.7 shall be deleted and replaced as follows:
+
+E.g. ad-hoc maintenance for your vehicle may be necessary or NCT inspections may be due even if there is no service reminder in the Notification Centre.
+
+The first sentence of Section 4.2.4.2.2 shall be deleted and replaced as follows:
+
+Mandatory Vehicle Inspections Reminders (such as NCT in Ireland): Kia will inform you about upcoming mandatory vehicle inspections.
+
+Section 16.3.2 shall be deleted and replaced as follows:
+
+In the case of a contract which obliges you to pay a price, if
+
+Kia has begun with the performance of the contract,
+
+you have provided prior express consent that Kia shall begin the performance of the contract before the expiry of the withdrawal period,
+
+you have acknowledged that with your consent pursuant to Section 16.3.2 item (b), you lose your right of withdrawal with the commencement of the performance of the contract; and
+
+Kia has provided you with confirmation of your acknowledgement of the loss of the right to cancel the contract.
+
+Section 17 shall be deleted and replaced as follows:
+
+We are legally obliged to supply digital content and digital services to you which are in conformity with these Terms of Use and with objective and subjective criteria set out by consumer laws.
+
+For digital content and/or digital services supplied to you on a one-off basis, or a series of such acts of supply, we may be liable for any non-conformity which exists at the time of supply.
+
+For digital content and/or digital services supplied to you on a continuous basis, we may be liable for any non-conformity which becomes apparent during the period in which it is supplied under these Terms of Use.
+
+Italy
+
+Section 13.2 shall be amended as follows:
+
+For the reasons set out in Section 13.1 above, Kia shall make an offer for changes to these Terms of Use to you by displaying them in the Kia Connect App and/or in the vehicle's Head Unit no later than two months before the proposed new Terms of Use are to enter into force. The changed Terms of Use shall only become effective if you accept them by clicking the corresponding "accept" button in the Kia Connect App or in the Head Unit.
+
+If you do not accept the proposed changed Terms of Use, we reserve the right to terminate the agreement with 6 weeks' notice, to the end of a calendar quarter.
+
+Section 14.5 shall be amended as follows:
+
+We are entitled to assign our rights and duties under this agreement either in full or in part to another service provider by providing 6 weeks' notice to you without your approval, provided that this assignment does not diminish your guarantees as a consumer. Irrespective of other provisions, you have the right to terminate your agreement with Kia within one month after receipt of the written notification. Termination of your agreement with Kia becomes effective at the time that the rights and duties of the agreement are reassigned from Kia to the new company. We shall expressly inform you of this right of termination in the written notification.
+
+For the avoidance of doubt, this right is without prejudice to your right to terminate the Terms of Use and thereby the right to use the Services at any time as stipulated in Section 11.2.
+
+Section 16.3.2, item (d) shall be amended as follows:
+
+Kia has provided you with confirmation in accordance with Article 51, par. 7, of the Legislative Decree No. 206/2005 (the Italian “Consumer Code”).
+
+Section 17 shall be amended as follows:
+
+If you are a consumer, you have the statutory defect liability rights for the goods or the digital products and any additional rights defined in these Terms of Use. The statutory defect liability rights will become statute-barred 26 months after (i) the delivery of the good for any defect of conformity existing at the time of delivery of the good and manifesting itself within two years from that time; (ii) the supply of the digital product for defects subsisting at the time of supply and not maliciously concealed by the professional, if they become evident within that period; in cases of continuous supply, the claims will not become statute-barred prior to the expiry of 26 months following the delivery of the good or the last act of supply.
+
+Latvia
+
+Section 5.5.2 shall be supplemented with the following sentence:
+
+You do not lose your right of withdrawal as a consumer if contracting out of such right is not allowed under applicable law.
+
+Section 15.2 paragraph 1 shall be amended as follows:
+
+We are entitled to assign our rights and duties under this agreement either in full or in part to another service provider by providing 6 weeks’ notice to you without your approval, provided that this assignment does not reduce your guarantees as a consumer.
+
+Section 15.2 shall be deleted and replaced as follows:
+
+If you are a consumer, apart from lodging a claim before Latvian courts or in other jurisdictions, if permitted by applicable laws, you are also entitled to alternative resolution of a consumer dispute arising out of or in connection with the agreement governed by these Terms of Use through an approved alternative dispute resolution body. If you are a consumer in Latvia, you may bring a claim to the out-of-court Consumer Dispute Resolution Committee (Patērētāju ārpustiesas strīdu risināšanas komisija) (website: https://www.ptac.gov.lv/lv/pateretaju-stridu-risinasanas-komisija).
+
+Section 17 shall be amended as follows:
+
+If you are a consumer, you have the statutory defect liability rights for the goods or the digital products and any additional rights defined in these Terms of Use. The statutory defect liability rights will become statute-barred two years after provision of the respective digital product; in cases of continuous supply, the claims will not become statute-barred prior to the expiry of 24 months following the end of the supply period or from the date on which the discrepancy becomes apparent, whichever occurs earlier.
+
+Lithuania
+
+Section 14.5 paragraph 1 shall be amended as follows:
+
+We are entitled to assign our rights and duties under this agreement either in full or in part to another service provider by providing 6 weeks’ notice to you without your approval, provided that this assignment does not reduce your guarantees as a consumer.
+
+Section 15.2 shall be deleted and replaced as follows:
+
+If you are a consumer, apart from lodging a claim before Lithuanian courts or in other jurisdictions, if permitted by applicable laws, you are also entitled to alternative resolution of a consumer dispute arising out of or in connection with the agreement governed by these Terms of Use through an approved alternative dispute resolution body. If you are a consumer in Lithuania, you may submit a complaint to the State Consumer Rights Protection Authority (Vilniaus str. 25, 01402 Vilnius, Lithuania, email: [email protected], phone: 85 262 67 51, fax. (85) 279 1466, on the website www.vvtat.lt).
+
+Section 17 shall be amended as follows:
+
+If you are a consumer, you have the statutory defect liability rights for the goods or the digital products and any additional rights defined in these Terms of Use. The statutory defect liability rights will become statute-barred two years after provision of the respective digital product; in cases of continuous supply, the claims will not become statute-barred prior to the expiry of 24 months following the end of the supply period or from the date on which the discrepancy becomes apparent, whichever occurs earlier.
+
+Malta
+
+Section 15.2 shall be amended as follows:
+
+Section 15.2 second paragraph shall be deleted.
+
+Moldova
+
+Section 6.1 last two sentences will be amended as follows:
+
+Without prejudice to the statutory copyright exemptions and limits, you must not sell, distribute, publish, broadcast, circulate or commercially exploit the Services in any way without our express written consent.
+
+Without prejudice to the statutory copyright exemptions and limits, you may not reproduce (in whole or in part), transmit (by electronic means or otherwise), modify, display, redeliver, license, link or otherwise use the Services for any public or commercial purpose without our prior permission.
+
+Section 13.2 the wording will be supplemented at the end as follows:
+
+If you do not accept the proposed changed Terms of Use, you are also entitled to terminate the agreement.
+
+Section 14.5 last paragraph will be amended and a new sentence will be added:
+
+For the avoidance of doubt, this right of termination is without prejudice to your right to terminate the Terms of Use and thereby the right to use the Services at any time as stipulated in Section 11.2. This does not affect our right to assign our rights and duties under this agreement, without your consent, to a company controlled by Kia or as a result of a merger or other reorganization, provided such assignment is not likely to adversely affect the consumer's rights.
+
+Section 15.2 first paragraph will be deleted and replaced as follows:
+
+To the extent permitted by the applicable law, if you are a consumer, apart from lodging a claim before a competent court of law, you are also entitled to mediation or alternative resolution of a consumer dispute arising out of or in connection with the agreement governed by these Terms of Use.
+
+Section 16.1 second sentence will be reworded:
+
+The withdrawal period will expire after 14 days from the day following the day of the conclusion of the contract.
+
+Section 16.3 will be deleted and replaced as follows:
+
+In the case of contracts for the supply of digital content that is not supplied on a tangible medium, the right of withdrawal also expires under the following conditions: Kia has begun with the performance of the contract with your prior express consent, and you have acknowledged that your consent will lead to the expiry of your right of withdrawal with the commencement of the performance of the contract pursuant to Art. 1065 (1), m) of the Moldovan Civil Code.
+
+Section 17 last part will be amended as follows:
+
+in cases of continuous supply, the claims will not become statute-barred prior to the expiry of 24 months following the provision of the respective digital product and, in case of contracts for continuous supply for more than 24 months, the claims will not become statute-barred prior to the expiry of the contract.
+
+Montenegro
+
+Section 7.2 is supplemented as follows:
+
+You are obliged to act responsibly and according to the Montenegrin Traffic Regulation. You cannot use mobile devices or any other devices in a way that will reduce your ability to act and drive safely while operating the vehicle
+
+Section 14.2 is replaced as follows:
+
+As a consumer, if you have previously submitted a complaint or objection that has not been resolved, you can submit a complaint to https://cezap.me.
+
+Netherlands
+
+Section 11.2 shall be supplemented as follows:
+
+After the first year of the agreement, either party may terminate the agreement subject to one month's notice.
+
+Norway
+
+Section 5.4.3.4 first and second sentence shall be amended as follows:
+
+You are kindly requested to accurately inform the buyer of your vehicle of the Upgrades installed on the vehicle and of the remaining usage periods and applicable end dates thereof. You are further kindly requested to inform the buyer about the requirement to create a Kia Connect account and accept these Terms of Use to be able to re-activate the Upgrades.
+
+Section 7.2 shall be amended as follows:
+
+You are kindly requested to inform any other users/drivers of the vehicle that the Services are activated and about the data processing involved in accordance with Section 10.2
+
+Section 10.2 shall be amended as follows:
+
+You are kindly requested to inform any other users/drivers of the vehicle that the Services are activated. In particular, you are kindly requested to inform all other users/drivers about the data processing activities described in the Kia Connect Privacy Notice and about the fact that the Services require the collection and processing of location data (GPS data).
+
+Section 16.3.2 shall be amended as follows:
+
+In the case of a contract which does not oblige you to pay a price or provide personal data if Kia has begun with the performance of the contract;
+
+Poland
+
+Section 3.4 shall be amended as follows:
+
+The mobile communications hardware and the corresponding SIM embedded in your vehicle’s Head Unit are only compatible with certain 4G/LTE frequencies. The availability of compatible 4G/LTE networks and of compatible frequencies varies between different geographical regions. In some areas, no compatible 4G/LTE frequencies are available. In this case, the Head Unit will fall back on 2G or 3G networks (where available) in order to provide the Services. In this case, service provision may be less responsive or interrupted due to the lower data bandwidth of the network. The Services cannot be used in areas where no compatible mobile communication network is available.
+
+Section 3.5 shall be amended as follows:
+
+Even where a compatible mobile communication network is generally available, performance and availability of the Services require that the respective network can be reached by the Head Unit. This depends on the signal quality at the current location of the vehicle. Where the signal quality is too low, the Services may be degraded or interrupted. In particular, this can be the case (i) in tunnels, (ii) in mountainous terrain or dense forests, (iii) on roads along cliff edges, (iv) in densely built-up areas, (v) on motorways or roads in subways, (vi) inside buildings.
+
+Section 4.2.3.7.4 shall be amended as follows:
+
+Mandatory Vehicle Inspections Reminders (such as TÜV in Germany or MOT in the UK): Kia will inform you about upcoming mandatory vehicle inspections.
+
+For example, in the UK the reminder will be about the "Ministry of Transport" test (commonly referred to as "MOT"). Use of this service requires that you provide Kia with the correct date of the last mandatory vehicle inspection and the date the vehicle was first registered. Kia may not be held liable for the correctness of the data you have entered. It is your obligation to adhere to the mandatory inspection intervals in accordance with applicable law.
+
+Section 5.1.1 shall be amended as follows:
+
+Availability of the individual Upgrades depends on your vehicle model, construction date and trim line. Generally, the "Upgrades" functionality requires that the vehicle is capable of receiving and installing Vehicle System OTA Updates (cf. Section 4.2.4.3) and is equipped with the most recent software version of the infotainment system. You will receive information on compatibility requirements when you purchase the Upgrade.
+
+Section 5.1.3 shall be amended as follows:
+
+Purchasing an Upgrade will modify the functionality and properties of the affected vehicle. If you purchase an Upgrade for a vehicle which you do not own (e.g. because it is a leased or rented vehicle or because you are sharing the vehicle with the user), you need to obtain the owner's consent to the modification of their vehicle prior to purchasing an Upgrade for the respective vehicle.
+
+Section 5.2 shall be amended as follows:
+
+Currently, the following Upgrades are generally available and may be purchased for your vehicle, depending on your vehicle’s model, construction date and trim line. Details regarding the availability of Upgrades are stated in the product description in the store section of the Kia Connect App.
+
+Section 5.5.1 shall be amended as follows:
+
+You can select certain Upgrades and other add-ons to your vehicle's software which are available for purchase in the store section of the Kia Connect App. By submitting an order in the Kia Connect App relating to an Upgrade or other add-on, you make an offer to Kia regarding the purchase of the respective Upgrade or add-on. Kia confirms receipt of the order through an automatic email sent to you (order confirmation). This order confirmation does not constitute acceptance of your offer, but merely confirms receipt and further processing of the offer by Kia.
+
+The contract between Kia and you is concluded for each Upgrade once the purchased Upgrade is activated in the respective vehicle for which the Upgrade was purchased. Kia is not entitled to make partial deliveries, unless we have received your explicit consent.
+
+You may terminate the contract regarding each Upgrade at any time during the trial period as set out in Section 5.3.2.
+
+Section 5.5.2 shall be amended as follows:
+
+Generally, if you are a consumer, you have a statutory right of withdrawal as set out in Section 16. In the course of the purchase process, we ask you for your express consent that Kia shall commence performance of the contract before the end of the withdrawal period.
+
+Section 7.1 shall not apply.
+
+Section 7.5 shall be amended as follows:
+
+Any violation of the obligations and restrictions in this Section 7 may result in the temporary suspension of the provision of the Services. Kia will inform you about the intention to suspend the provision of the Services and the duration of the suspension in advance, where we will state the reasons for suspension and its duration and will inform you of your right to appeal. The duration of the suspension shall be determined by Kia based on the severity of the violation and the resulting risks for Kia, the Service, the network or other customers. In case of repeated violations, Kia may terminate the Agreement for cause pursuant to Section 10.3.
+
+Section 9.1 shall be amended as follows:
+
+If it is necessary to ensure the security or stability of the Services for all users or to ensure compliance of the Services with mandatory legal requirements, we may temporarily or permanently deactivate access to the Services in whole or in part. This does not affect your statutory rights or our liability for providing Services and Upgrades.
+
+Section 9.2 shall be amended as follows:
+
+The provision and use of the Services may be subject to restrictions beyond the scope of our control with regard to the current state of the art. In particular, this relates to the availability of the data connections provided by carriers. In individual cases, the non-availability of the network can lead to the Services not being available as the necessary data transfer cannot occur.
+
+In addition, short-term capacity bottlenecks can arise from peak loads on the Services, wireless and fixed networks and on the internet. This does not affect your statutory rights or our liability for providing Services and Upgrades.
+
+Section 9.3 shall be amended as follows:
+
+Disruptions can also arise due to technical and other measures (e.g. repairs, maintenance, software updates and extensions) necessary on our systems or those of downstream or upstream providers, content providers and network operators, which are necessary for the proper or improved performance of the Services. This does not affect your statutory rights or our liability for providing Services and Upgrades.
+
+Section 9.4 shall be amended as follows:
+
+Where access to the Services is deactivated, restricted or disrupted as described in this Section 9, we will contact you to inform you of this and give a reason for the deactivation, restriction or disruption.
+
+Section 11.1 shall be amended as follows:
+
+This agreement commences once accepted by you in the Head Unit. It expires when the free service period (cf. Section 8.1) ends, unless terminated earlier in accordance with this Section 11.
+
+Section 11.2 shall be amended as follows:
+
+You may terminate the agreement concerning the provision of the Services at any time with one month’s notice, to the end of a calendar quarter.
+
+Section 11.3 shall be amended as follows:
+
+Kia may terminate the agreement immediately by notice in case of repeated violations of the user obligations specified in Section 7.4. We will inform you of the termination, and we will state the reasons for termination and will inform you of your right to appeal.
+
+Section [No Segment found with ID: 844] shall be amended as follows:
+
+Furthermore, in the event of the recission of the purchase agreement for a vehicle, the reacquisition or other withdrawal of the vehicle by the relevant dealer, the termination of a leasing agreement, the sale of the vehicle to a third party, theft or total damage beyond repair, each Party is entitled to the termination of the Services with regard to the vehicle concerned.
+
+Section 11.4 shall be amended as follows:
+
+Either party's statutory termination rights remain unaffected.
+
+Section 11.1 shall be amended as follows:
+
+11.1 CHANGES TO THE SERVICES OR TERMS OF USE
+
+Kia may change the Services or the Terms of Use for the following reasons:
+
+an amendment to applicable law that results in an obligation to change these Terms of Use or the Services;
+
+the introduction of new security measures;
+
+improvements of existing quality standards (e.g. those described Section 16 on the Statutory Warranties);
+
+improvements to adapt the Services to new technologies;
+
+an improvement of security measures to prevent abuse or damage.
+
+You will be notified by email about upcoming changes at least 14 days in advance. The notification will state the reason and grounds for introducing the change. If you reject or are unable to accept the changes, you will have the right to terminate the agreement at any time.
+
+Section 13.2 shall be amended as follows:
+
+13.2 OTHER CHANGES TO THE SERVICES OR TERMS OF USE
+
+Apart from those changes indicated in Section 13.1 above, Kia shall make an offer for changes to these Terms of Use or Services to you by displaying them in the Kia Connect App and/or in the vehicle's Head Unit no later than two months before the proposed new Terms of Use or changes to the Services are to enter into force. The changed Terms of Use or Services shall only become effective if you accept them by clicking the corresponding "accept" button in the Kia Connect App or in the Head Unit.
+
+If you do not accept the proposed changed Terms of Use, we reserve the right to terminate the agreement with 6 weeks' notice, to the end of a calendar quarter.
+
+Section 14.1 shall be amended as follows:
+
+All agreements between Kia and you are concluded in the local language version. After the conclusion of the respective agreement, the text of the agreement will be available for you to download under https://connect.kia.com/eu/downloads, and you will also receive it via email.
+
+Section 14.3 shall be deleted.
+
+Section 14.5 shall be deleted.
+
+Section 16 shall be amended as follows:
+
+16 INSTRUCTIONS ON THE RIGHT OF WITHDRAWAL REGARDING THE SERVICES AND THE PURCHASE OF UPGRADES
+
+If you are: (i) a consumer (i.e. a natural person who places the order for a purpose that cannot be attributed to your commercial or self-employed professional activity); or (ii) an individual conducting a business activity, you have the right of withdrawal in accordance with the statutory provisions with regard to any agreement on the Purchase of Upgrades (see Section 5) when the agreement is not of a professional nature for you.
+
+16.1 Right Of Withdrawal
+
+You have the right to withdraw from this contract within fourteen days without giving any reason.
+
+The withdrawal period will expire after 14 days from the day of the conclusion of the contract.
+
+To exercise the right of withdrawal, you must inform us (Kia Connect GmbH, Theodor-Heuss-Allee 11, 60486 Frankfurt am Main, Germany, telephone number: +49 800 7773044 and email address: [email protected]) of your decision to withdraw from this contract by making an unequivocal statement (e.g. a letter sent by post or email).
+
+You may use the attached model withdrawal form, but it is not obligatory. You can also fill in and submit the model withdrawal form or any other unequivocal statement electronically on our website at https://connect.kia.com/eu/customer-support/contact-form. If you use this option, we will communicate to you an acknowledgement of receipt of such a withdrawal on a durable medium (e.g. by email) without delay.
+
+To meet the withdrawal deadline, it is sufficient for you to send the communication concerning your exercising of the right of withdrawal before the withdrawal period has expired.
+
+16.2 Effects of withdrawal
+
+If you withdraw from this contract, we shall reimburse to you all payments received from you, including the costs of delivery (with the exception of the supplementary costs resulting from your choice of a type of delivery other than the least expensive type of standard delivery offered by us), without undue delay and in any event not later than 14 days from the day on which we are informed about your decision to withdraw from this contract.
+
+We will carry out such reimbursement using the same means of payment as you used for the initial transaction, unless you have expressly agreed otherwise; in any event, you will not incur any fees as a result of such reimbursement.
+
+16.3 Important note: expiration of the right of withdrawal
+
+In the case of contracts for the supply of digital content that is not supplied on a tangible medium, the right of withdrawal also expires under the following conditions:
+
+16.3.1
+
+In the case of a contract which does not oblige you to pay a price if Kia has begun with the performance of the contract;
+
+16.3.2
+
+In the case of a contract which obliges you to pay a price, if
+
+Kia has begun with the performance of the contract;
+
+you have provided prior express consent that Kia shall begin the performance of the contract before the expiry of the withdrawal period;
+
+you have acknowledged that with your consent pursuant to item (16.3.2), you lose your right of withdrawal with the commencement of the performance of the contract; and
+
+Kia has provided you with confirmation in accordance with Section 312f German Civil Code (Bürgerliches Gesetzbuch, "BGB").
+
+16.4 Model withdrawal form
+
+Model Withdrawal Form
+
+(Complete and return this form only if you wish to withdraw from the contract)
+
+To Kia Connect GmbH, Theodor-Heuss-Allee 11, 60486 Frankfurt am Main, Germany, email address: [email protected]:
+
+I/We (*) hereby give notice that I/we (*) withdraw from my/our (*) contract for the provision of the following service (*),
+
+Ordered on (*) / received on (*),
+
+Name of consumer(s),
+
+Address of consumer(s),
+
+Signature of consumer(s) (only if this form is submitted on paper),
+
+Date
+
+(*) Delete as appropriate.
+
+Section 17 shall be amended as follows:
+
+If you are a consumer, you have the statutory defect liability rights for the goods or the digital products and any additional rights defined in these Terms of Use. The statutory defect liability rights will become statute-barred six years after provision of the respective digital product; in cases of continuous supply, the claims will not become statute-barred prior to the expiry of six years following the end of the supply period.
+
+Portugal
+
+Section 15.2 shall be amended as follows:
+
+If you are a consumer, apart from lodging a claim before Portuguese courts or in other jurisdictions, if permitted by applicable laws, you are also entitled to alternative resolution of a consumer dispute arising out of or in connection with the agreement governed by these Terms of Use through an approved alternative dispute resolution body. You can find the current list of approved alternative dispute resolution bodies as well as further information on the applicable ADR procedure on the website of the Consumer Protection Directorale: www.consumidor.gov.pt/.
+
+Kia does not and is not obligated to participate in alternative dispute resolution procedures before an alternative dispute resolution entity for consumers.
+
+Section 16.3.2 item (16.3.2) shall be deleted.
+
+Romania
+
+Section 17 second paragraph shall be amended and shall read as follows:
+
+[…] The statutory defect liability rights will become statute-barred five years after provision of the respective digital product; […]
+
+Serbia
+
+Section 7.2 is supplemented as follows:
+
+You are obliged to act responsibly and according to the Serbian Traffic Regulation. You cannot use mobile devices or any other devices in a way that will reduce your ability to act and drive safely while operating the vehicle.
+
+Section 14.2 is replaced as follows:
+
+As a consumer, if you have previously submitted a complaint or objection that has not been resolved, you can submit a complaint to https://vansudsko.must.gov.rs/.
+
+Slovakia
+
+Section 5.5.2 shall be deleted.
+
+Section 8.1 shall be deleted and replaced as follows:
+
+Most of the Services are provided free of charge. However, some of the Services and Upgrades are subject to a fee which is specified for each individual Service or Upgrade in the Kia Connect App or in the Head Unit. The fee is final and includes all charges and taxes.
+
+The Services provided free of charge to the users of a specific vehicle (as identified by its respective VIN) are provided for a period of 7 years. This 7-year period commences on the day that the vehicle’s warranty period starts.
+
+If the vehicle is sold and registered to a new owner/Main User during the free service period, the new owner/Main User may choose to use the Services free of charge during the remainder of the free service period by activating the Services in their own name. The free service period remains unaffected by any subsequent sale and registration after the initial sale, i.e. the free service period is neither interrupted nor extended by a subsequent sale and/or registration of the vehicle.
+
+Section 14.1 shall be deleted and replaced as follows:
+
+All agreements between Kia and you are concluded in Slovak language version. After conclusion of the respective agreement, the text of the agreement will be provided to you in the confirmation email.
+
+Section 15.2 shall be deleted and replaced as follows:
+
+We are subject to the supervision of the following authorities: (a) consumer protection in Slovakia by the Slovak Trade Inspection Authority, and (b) in the area of personal data protection by "Der Hessische Beauftragte für Datenschutz und Informationsfreiheit", Gustav-Stresemann-Ring 1, 65189 Wiesbaden, phone: +49 (0)611-1408 0, email: [email protected], and in Slovakia by the Data Protection Authority. You are entitled to lodge a complaint with any of the relevant supervisory authorities.
+
+Section 15.3 shall be added and shall read as follows:
+
+If you are a consumer, you may also use the out-of-court dispute resolution system before the Slovak Trade Inspection Authority (www.soi.sk) or other relevant dispute resolution providers registered by the Slovak Ministry of Economy. Information on out-of-court dispute resolution is available on the website: https://www.soi.sk/sk/alternativne-riesenie-spotrebitelskych-sporov.soi.
+
+Section 16.3.2 shall be deleted and replaced as follows:
+
+In the case of a contract which obliges you to pay a price, if
+
+Kia has begun with the performance of the contract with your prior express consent before the expiry of the 14 days withdrawal period,
+
+you have acknowledged that with your consent, you lose your right of withdrawal; and
+
+Kia has provided you with confirmation in accordance with Section 4(6) of the Act No. 102/2014 Coll., on consumer protection when selling goods or providing services based on a contract concluded at a distance or a contract concluded outside the seller's premises, as amended.
+
+Section 17 shall be deleted.
+
+Section 17.1 shall be added and shall read as follows:
+
+If you are a consumer, the Services and Upgrades are subject to statutory liability for defective performance as per the applicable provisions of the Act No. 40/1964 Coll., the Civil Code, as amended.
+
+Section 17.2 shall be added and shall read as follows:
+
+If it is a defect that can be rectified, the consumer has the right to have it rectified free of charge, on time and properly. Kia is obliged to rectify the defect without undue delay. Instead of requesting the rectification of the defect, the consumer can demand the replacement of the goods or digital product either in whole or, if the defect concerns only a part of the goods or digital product, in part, if this does not result in unreasonable costs for Kia, taking into account the price of the goods or digital product or the severity of the defect. Kia may always replace the defective goods or digital product with a faultless version in place of rectifying the defect, provided that this does not cause major inconvenience to the consumer.
+
+If it is a defect that cannot be rectified and which prevents the defect-free, intended use of the goods or digital product, the consumer has the right to exchange the goods or digital product in question, or the right to withdraw from the contract. The same rights belong to consumer if the defects can be rectified, but the consumer is prevented from using the goods or digital product as intended due to the reappearance of the defect after rectification or due to a larger number of defects. If there are other irreparable defects, the consumer has the right to a reasonable reduction to the price of the goods or digital product.
+
+Slovenia
+
+Section 5.5.2 is supplemented as follows:
+
+“At the latest before the start of the digital service or delivery of digital content, we will provide you with confirmation of the concluded contract in accordance with Article 132(6) of the Slovenian Consumer Protection Act (Zakon o varstvu potrošnikov, “ZVPot-1”). The confirmation contains your express consent to the performance of the contract before the end of the withdrawal period.”
+
+Section 16.3.2(4) is replaced as follows:
+
+“Kia has provided you with confirmation in accordance with Article 132(6) of the Slovenian Consumer Protection Act (Zakon o varstvu potrošnikov, “ZVPot-1”).”Section 17 is replaced as follows:
+
+"STATUTORY LIABILITY FOR LACK OF CONFORMITY
+
+If you are a consumer, you have a statutory right to claim liability for lack of conformity of goods or digital products, in accordance with the Slovenian Consumer Protection Act (Zakon o varstvu potrošnikov, “ZVPot-1”), as well as any additional rights defined in these Terms of Use. The statutory liability to claim lack of conformity rights lapses two years after provision of the digital product; in cases of continuous supply, the claim lapses 12 months following the end of the supply period.”
+
+Spain
+
+These Terms of Use are concluded in electronic form. The Terms of Use are concluded upon activation of the Services with the "I AGREE" button.
+
+Section 5.5.1 Does not apply regarding Kia’s acceptance of the offer. The order confirmation email serves to confirm the contract, including Kia’s acceptance of the consumer´s order.
+
+Section 7.5 on violations is applicable if the consumer commits a serious violation of applicable laws or regulations or when your violation would result in legal liability for Kia or harm to its customers or services.
+
+Section 13.1 shall be supplemented as follows:
+
+You will be notified by us about any changes to the Services in advance when reasonably possible. If the changes are material, you will have the right to terminate this agreement within one month after receipt of the written notification.
+
+Sweden
+
+Section 17 shall be replaced as follows:
+
+If you are a consumer, you have the statutory defect liability rights for the digital products and any additional rights defined in these Terms of Use. The statutory defect liability rights will become statute-barred three years after provision; in cases of continuous supply, the claims will become statute-barred three years after provision or the longer period of the duration of the contract.
+
+Switzerland
+
+Section 16 shall be deleted.
+
+To the fullest extent permitted under applicable mandatory law, Kia excludes any and all warranties, if and to the extent applicable to the Services under this Agreement. The Services are provided on an "as is"-basis.
+
+UK
+
+Section 11.3 shall be amended as follows:
+
+Either Party may terminate immediately on notice for material breach. An example of a right for Kia to terminate for material breach is where you repeatedly or seriously breach the user obligations as set out in Section 7.5.
+
+Section 14 shall be supplemented with the following Section 14.6:
+
+No one other than a party to this contract has any right to enforce any term of this contract.
+
+Section 14 shall be supplemented with the following Section 14.7:
+
+The laws of England and Wales apply to this contract, although if you are resident elsewhere, you will retain the benefit of any mandatory protections given to you by the laws of that country. This means that, for example, if you are resident in Germany, you will retain the benefit of any mandatory protections given to you by the laws of Germany.
+
+Section 14 shall be supplemented with the following Section 14.8:
+
+Any disputes will be subject to the non-exclusive jurisdiction of the courts of England and Wales. This means that you can choose whether to bring a claim in the courts of England and Wales or in the courts of another country in which you live.
+
+Section 15.1 shall be amended as follows:
+
+We will try to resolve any disputes with you quickly and efficiently. If you have any questions, complaints or if you’re otherwise unhappy with our service to you, the digital content or any other matter, please contact us as soon as possible using the contact details set out in Section 1 above.
+
+Section 17 shall be amended as follows:
+
+17 Statutory liability for defects
+
+17.1. If you are a consumer, you have the statutory defect liability rights for the goods or the digital products and any additional rights defined in these Terms of Use. Unless you are a consumer based in the United Kingdom, the statutory defect liability rights will become statute-barred two years after provision of the respective digital product; in cases of continuous supply, the claims will not become statute-barred prior to the expiry of 12 months following the end of the supply period.
+
+17.2. The Consumer Rights Act 2015 gives consumers in the United Kingdom certain legal rights (also known as “statutory rights”). The digital content that we provide to you must be as described, fit for purpose and of satisfactory quality. We are under a legal duty to supply digital content that is in conformity with this contract.
+
+17.3. When we supply the digital content: (a) we will use all reasonable efforts to ensure that it is free from defects, viruses and other malicious content; (b) we do not promise that it is compatible with any third party software or equipment except where we have said that it is on our website; and (c) you acknowledge that there may be minor errors or bugs in it.
+
+17.4. To summarise your statutory rights under consumer protection laws in the United Kingdom, if you are a consumer in the United Kingdom and your digital content is faulty, you are entitled to a repair or a replacement. If the fault cannot be fixed, or if it has not been fixed within a reasonable time and without significant inconvenience, you can get some or all of your money back. If you can show the fault has damaged your device and we haven’t used reasonable care and skill, you may be entitled to a repair or compensation. For detailed information, please contact Citizens Advice by visiting www.citizensadvice.org.uk or calling +44 (0) 808 223 1133.
+
+17.5. Nothing in this contract affects your legal rights as a consumer in the United Kingdom (including rights under the Consumer Rights Act 2015 and other rights in law).
+
+17.6. If the digital content we provide to you is faulty, please contact us using the contact details at the top of this page.
+
+17.7. To avoid faults in the digital content we provide, you must: (a) install any fixes, updates, upgrades, new releases and new versions as soon as reasonably possible after we tell you that they are available to be downloaded; and (b) use it only on the recommended third party software and equipment set out on our website.
+
+About Us
+
+Products & Services
+
+In-App Services
+
+In-Car Services
+
+Digital Key
+
+In-Car Payments
+
+Safety Score
+
+Kia App
+
+Connected Cars Subscribtions
+
+Store
+
+Customer Support
+
+FAQ
+
+Guides
+
+Contact Us
+
+Business
+
+Business Legal Documents
+
+Kia Business Solutions portal
+
+Imprint
+
+Cookies Policy
+
+Privacy Policy
+
+Kia Connect Privacy Notice
+
+Kia Connect Legal Documents
+
+Accessibility
+
+Home Page
+
+Kia Connect Legal Documents
+
+© 2021 Kia Motors Corp.

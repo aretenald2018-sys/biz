@@ -1,0 +1,119 @@
+[
+  {
+    "code": "HME_GmbH",
+    "legal_name": "Hyundai Motor Europe GmbH",
+    "region": "EU",
+    "jurisdiction": "DE"
+  },
+  {
+    "code": "HCM_GmbH",
+    "legal_name": "Hyundai Connected Mobility GmbH",
+    "region": "EU",
+    "jurisdiction": "DE"
+  },
+  {
+    "code": "HME_TC",
+    "legal_name": "Hyundai Motor Europe Technical Center GmbH",
+    "region": "EU",
+    "jurisdiction": "DE",
+    "notes": "Navigation update operator"
+  },
+  {
+    "code": "HME_ES_Genesis",
+    "legal_name": "Hyundai Motor Espana S.L.U.",
+    "region": "EU",
+    "jurisdiction": "ES",
+    "notes": "Genesis Spain operating entity"
+  },
+  {
+    "code": "HMUK",
+    "legal_name": "Hyundai Motor UK Limited",
+    "region": "EU",
+    "jurisdiction": "GB"
+  },
+  {
+    "code": "HMA",
+    "legal_name": "Hyundai Motor America",
+    "region": "NA",
+    "jurisdiction": "US"
+  },
+  {
+    "code": "HCI",
+    "legal_name": "Hyundai Auto Canada Corp.",
+    "region": "NA",
+    "jurisdiction": "CA"
+  },
+  {
+    "code": "HMM",
+    "legal_name": "Hyundai Motor de Mexico",
+    "region": "NA",
+    "jurisdiction": "MX"
+  },
+  {
+    "code": "HMIL",
+    "legal_name": "Hyundai Motor India Limited",
+    "region": "IN",
+    "jurisdiction": "IN"
+  },
+  {
+    "code": "GM_DE",
+    "legal_name": "Genesis Motor Deutschland GmbH",
+    "region": "EU",
+    "jurisdiction": "DE"
+  },
+  {
+    "code": "GM_UK",
+    "legal_name": "Genesis Motor UK Ltd",
+    "region": "EU",
+    "jurisdiction": "GB"
+  },
+  {
+    "code": "GM_CH",
+    "legal_name": "Genesis Motor Switzerland AG",
+    "region": "EU",
+    "jurisdiction": "CH"
+  },
+  {
+    "code": "GMA",
+    "legal_name": "Genesis Motor America",
+    "region": "NA",
+    "jurisdiction": "US"
+  },
+  {
+    "code": "GMCA",
+    "legal_name": "Genesis Motors Canada",
+    "region": "NA",
+    "jurisdiction": "CA",
+    "notes": "Separated entity code for terms tracking"
+  },
+  {
+    "code": "KE",
+    "legal_name": "Kia Europe GmbH",
+    "region": "EU",
+    "jurisdiction": "DE"
+  },
+  {
+    "code": "KCONNECT",
+    "legal_name": "Kia Connect GmbH",
+    "region": "EU",
+    "jurisdiction": "DE"
+  },
+  {
+    "code": "KUS",
+    "legal_name": "Kia America, Inc.",
+    "region": "NA",
+    "jurisdiction": "US"
+  },
+  {
+    "code": "KCA",
+    "legal_name": "Kia Canada Inc.",
+    "region": "NA",
+    "jurisdiction": "CA"
+  },
+  {
+    "code": "KMX",
+    "legal_name": "Kia Mexico, S.A. de C.V.",
+    "region": "NA",
+    "jurisdiction": "MX"
+  }
+]

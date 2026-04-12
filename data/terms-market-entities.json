@@ -1,0 +1,456 @@
+[
+  {
+    "code": "HME",
+    "display_name": "Hyundai Motor Europe (central)",
+    "region": "EU",
+    "country": "EU",
+    "brand": "hyundai"
+  },
+  {
+    "code": "HME-ES",
+    "display_name": "Hyundai Espana",
+    "region": "EU",
+    "country": "ES",
+    "brand": "hyundai"
+  },
+  {
+    "code": "HMUK",
+    "display_name": "Hyundai Motor UK",
+    "region": "EU",
+    "country": "GB",
+    "brand": "hyundai"
+  },
+  {
+    "code": "HME_TC",
+    "display_name": "Hyundai Navigation Update Europe",
+    "region": "EU",
+    "country": "EU",
+    "brand": "hyundai",
+    "notes": "EU-wide navigation update operator"
+  },
+  {
+    "code": "HCM",
+    "display_name": "Hyundai Connected Mobility",
+    "region": "EU",
+    "country": "DE",
+    "brand": "hyundai",
+    "notes": "EU connected services core operator (HCM_GmbH)"
+  },
+  {
+    "code": "KCONNECT",
+    "display_name": "Kia Connect",
+    "region": "EU",
+    "country": "DE",
+    "brand": "kia",
+    "notes": "EU Kia Connect core operator"
+  },
+  {
+    "code": "HME-BE",
+    "display_name": "Hyundai Belgium",
+    "region": "EU",
+    "country": "BE",
+    "brand": "hyundai",
+    "notes": "Local market placeholder; URLs pending"
+  },
+  {
+    "code": "HME-CZ",
+    "display_name": "Hyundai Czech Republic",
+    "region": "EU",
+    "country": "CZ",
+    "brand": "hyundai",
+    "notes": "Local market placeholder; URLs pending"
+  },
+  {
+    "code": "HME-DE",
+    "display_name": "Hyundai Germany",
+    "region": "EU",
+    "country": "DE",
+    "brand": "hyundai",
+    "notes": "Local market placeholder; URLs pending"
+  },
+  {
+    "code": "HME-FR",
+    "display_name": "Hyundai France",
+    "region": "EU",
+    "country": "FR",
+    "brand": "hyundai",
+    "notes": "Local market placeholder; URLs pending"
+  },
+  {
+    "code": "HME-IT",
+    "display_name": "Hyundai Italy",
+    "region": "EU",
+    "country": "IT",
+    "brand": "hyundai",
+    "notes": "Local market placeholder; URLs pending"
+  },
+  {
+    "code": "HME-LU",
+    "display_name": "Hyundai Luxembourg",
+    "region": "EU",
+    "country": "LU",
+    "brand": "hyundai",
+    "notes": "Local market placeholder; URLs pending"
+  },
+  {
+    "code": "HME-NL",
+    "display_name": "Hyundai Netherlands",
+    "region": "EU",
+    "country": "NL",
+    "brand": "hyundai",
+    "notes": "Local market placeholder; URLs pending"
+  },
+  {
+    "code": "HME-NO",
+    "display_name": "Hyundai Norway",
+    "region": "EU",
+    "country": "NO",
+    "brand": "hyundai",
+    "notes": "Local market placeholder; URLs pending"
+  },
+  {
+    "code": "HME-PL",
+    "display_name": "Hyundai Poland",
+    "region": "EU",
+    "country": "PL",
+    "brand": "hyundai",
+    "notes": "Local market placeholder; URLs pending"
+  },
+  {
+    "code": "HME-SE",
+    "display_name": "Hyundai Sweden",
+    "region": "EU",
+    "country": "SE",
+    "brand": "hyundai",
+    "notes": "Local market placeholder; URLs pending"
+  },
+  {
+    "code": "HME-SK",
+    "display_name": "Hyundai Slovakia",
+    "region": "EU",
+    "country": "SK",
+    "brand": "hyundai",
+    "notes": "Local market placeholder; URLs pending"
+  },
+  {
+    "code": "HME-CH",
+    "display_name": "Hyundai Switzerland",
+    "region": "EU",
+    "country": "CH",
+    "brand": "hyundai",
+    "notes": "Local market placeholder; URLs pending"
+  },
+  {
+    "code": "HME-TR",
+    "display_name": "Hyundai Turkey",
+    "region": "EU",
+    "country": "TR",
+    "brand": "hyundai",
+    "notes": "Local market placeholder; URLs pending"
+  },
+  {
+    "code": "HMA",
+    "display_name": "Hyundai Motor America",
+    "region": "NA",
+    "country": "US",
+    "brand": "hyundai"
+  },
+  {
+    "code": "HCI",
+    "display_name": "Hyundai Auto Canada",
+    "region": "NA",
+    "country": "CA",
+    "brand": "hyundai"
+  },
+  {
+    "code": "HMM",
+    "display_name": "Hyundai Motor de Mexico",
+    "region": "NA",
+    "country": "MX",
+    "brand": "hyundai"
+  },
+  {
+    "code": "HMIL",
+    "display_name": "Hyundai Motor India",
+    "region": "IN",
+    "country": "IN",
+    "brand": "hyundai"
+  },
+  {
+    "code": "GEU",
+    "display_name": "Genesis Europe (central)",
+    "region": "EU",
+    "country": "EU",
+    "brand": "genesis",
+    "notes": "EU-wide navigation update placeholder"
+  },
+  {
+    "code": "GDE",
+    "display_name": "Genesis Germany",
+    "region": "EU",
+    "country": "DE",
+    "brand": "genesis"
+  },
+  {
+    "code": "GUK",
+    "display_name": "Genesis UK",
+    "region": "EU",
+    "country": "GB",
+    "brand": "genesis"
+  },
+  {
+    "code": "GCH",
+    "display_name": "Genesis Switzerland",
+    "region": "EU",
+    "country": "CH",
+    "brand": "genesis"
+  },
+  {
+    "code": "GES",
+    "display_name": "Genesis Spain",
+    "region": "EU",
+    "country": "ES",
+    "brand": "genesis"
+  },
+  {
+    "code": "GUS",
+    "display_name": "Genesis USA",
+    "region": "NA",
+    "country": "US",
+    "brand": "genesis"
+  },
+  {
+    "code": "GCA",
+    "display_name": "Genesis Canada",
+    "region": "NA",
+    "country": "CA",
+    "brand": "genesis"
+  },
+  {
+    "code": "GMX",
+    "display_name": "Genesis Mexico",
+    "region": "NA",
+    "country": "MX",
+    "brand": "genesis",
+    "notes": "Placeholder only; internal URL confirmation pending"
+  },
+  {
+    "code": "KEU",
+    "display_name": "Kia Europe (central)",
+    "region": "EU",
+    "country": "EU",
+    "brand": "kia"
+  },
+  {
+    "code": "KUK",
+    "display_name": "Kia UK",
+    "region": "EU",
+    "country": "GB",
+    "brand": "kia"
+  },
+  {
+    "code": "KEU-AT",
+    "display_name": "Kia Austria",
+    "region": "EU",
+    "country": "AT",
+    "brand": "kia",
+    "notes": "Local market placeholder; URLs pending"
+  },
+  {
+    "code": "KEU-BE",
+    "display_name": "Kia Belgium",
+    "region": "EU",
+    "country": "BE",
+    "brand": "kia",
+    "notes": "Local market placeholder; URLs pending"
+  },
+  {
+    "code": "KEU-BG",
+    "display_name": "Kia Bulgaria",
+    "region": "EU",
+    "country": "BG",
+    "brand": "kia",
+    "notes": "Local market placeholder; URLs pending"
+  },
+  {
+    "code": "KEU-CZ",
+    "display_name": "Kia Czech Republic",
+    "region": "EU",
+    "country": "CZ",
+    "brand": "kia",
+    "notes": "Local market placeholder; URLs pending"
+  },
+  {
+    "code": "KEU-DE",
+    "display_name": "Kia Germany",
+    "region": "EU",
+    "country": "DE",
+    "brand": "kia",
+    "notes": "Local market placeholder; URLs pending"
+  },
+  {
+    "code": "KEU-EE",
+    "display_name": "Kia Estonia",
+    "region": "EU",
+    "country": "EE",
+    "brand": "kia",
+    "notes": "Local market placeholder; URLs pending"
+  },
+  {
+    "code": "KEU-ES",
+    "display_name": "Kia Spain",
+    "region": "EU",
+    "country": "ES",
+    "brand": "kia",
+    "notes": "Local market placeholder; URLs pending"
+  },
+  {
+    "code": "KEU-FI",
+    "display_name": "Kia Finland",
+    "region": "EU",
+    "country": "FI",
+    "brand": "kia",
+    "notes": "Local market placeholder; URLs pending"
+  },
+  {
+    "code": "KEU-FR",
+    "display_name": "Kia France",
+    "region": "EU",
+    "country": "FR",
+    "brand": "kia",
+    "notes": "Local market placeholder; URLs pending"
+  },
+  {
+    "code": "KEU-GR",
+    "display_name": "Kia Greece",
+    "region": "EU",
+    "country": "GR",
+    "brand": "kia",
+    "notes": "Local market placeholder; URLs pending"
+  },
+  {
+    "code": "KEU-HU",
+    "display_name": "Kia Hungary",
+    "region": "EU",
+    "country": "HU",
+    "brand": "kia",
+    "notes": "Local market placeholder; URLs pending"
+  },
+  {
+    "code": "KEU-IE",
+    "display_name": "Kia Ireland",
+    "region": "EU",
+    "country": "IE",
+    "brand": "kia",
+    "notes": "Local market placeholder; URLs pending"
+  },
+  {
+    "code": "KEU-IS",
+    "display_name": "Kia Iceland",
+    "region": "EU",
+    "country": "IS",
+    "brand": "kia",
+    "notes": "Local market placeholder; URLs pending"
+  },
+  {
+    "code": "KEU-IT",
+    "display_name": "Kia Italy",
+    "region": "EU",
+    "country": "IT",
+    "brand": "kia",
+    "notes": "Local market placeholder; URLs pending"
+  },
+  {
+    "code": "KEU-LT",
+    "display_name": "Kia Lithuania",
+    "region": "EU",
+    "country": "LT",
+    "brand": "kia",
+    "notes": "Local market placeholder; URLs pending"
+  },
+  {
+    "code": "KEU-LU",
+    "display_name": "Kia Luxembourg",
+    "region": "EU",
+    "country": "LU",
+    "brand": "kia",
+    "notes": "Local market placeholder; URLs pending"
+  },
+  {
+    "code": "KEU-LV",
+    "display_name": "Kia Latvia",
+    "region": "EU",
+    "country": "LV",
+    "brand": "kia",
+    "notes": "Local market placeholder; URLs pending"
+  },
+  {
+    "code": "KEU-NL",
+    "display_name": "Kia Netherlands",
+    "region": "EU",
+    "country": "NL",
+    "brand": "kia",
+    "notes": "Local market placeholder; URLs pending"
+  },
+  {
+    "code": "KEU-PL",
+    "display_name": "Kia Poland",
+    "region": "EU",
+    "country": "PL",
+    "brand": "kia",
+    "notes": "Local market placeholder; URLs pending"
+  },
+  {
+    "code": "KEU-PT",
+    "display_name": "Kia Portugal",
+    "region": "EU",
+    "country": "PT",
+    "brand": "kia",
+    "notes": "Local market placeholder; URLs pending"
+  },
+  {
+    "code": "KEU-RO",
+    "display_name": "Kia Romania",
+    "region": "EU",
+    "country": "RO",
+    "brand": "kia",
+    "notes": "Local market placeholder; URLs pending"
+  },
+  {
+    "code": "KEU-SE",
+    "display_name": "Kia Sweden",
+    "region": "EU",
+    "country": "SE",
+    "brand": "kia",
+    "notes": "Local market placeholder; URLs pending"
+  },
+  {
+    "code": "KEU-SK",
+    "display_name": "Kia Slovakia",
+    "region": "EU",
+    "country": "SK",
+    "brand": "kia",
+    "notes": "Local market placeholder; URLs pending"
+  },
+  {
+    "code": "KUS",
+    "display_name": "Kia USA",
+    "region": "NA",
+    "country": "US",
+    "brand": "kia"
+  },
+  {
+    "code": "KCA",
+    "display_name": "Kia Canada",
+    "region": "NA",
+    "country": "CA",
+    "brand": "kia"
+  },
+  {
+    "code": "KMX",
+    "display_name": "Kia Mexico",
+    "region": "NA",
+    "country": "MX",
+    "brand": "kia"
+  }
+]

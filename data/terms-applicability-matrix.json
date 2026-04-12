@@ -1,0 +1,106 @@
+[
+  {
+    "market_entity": "HME",
+    "service_family": "website",
+    "document_type": "privacy_policy",
+    "requirement": "required"
+  },
+  {
+    "market_entity": "HME",
+    "service_family": "connected_services",
+    "document_type": "privacy_notice",
+    "requirement": "required"
+  },
+  {
+    "market_entity": "HME",
+    "service_family": "connected_services",
+    "document_type": "terms_of_use",
+    "requirement": "required"
+  },
+  {
+    "market_entity": "HME",
+    "service_family": "connected_services",
+    "document_type": "data_rights",
+    "requirement": "required",
+    "rationale": "EU Data Act"
+  },
+  {
+    "market_entity": "HME-ES",
+    "service_family": "website",
+    "document_type": "privacy_policy",
+    "requirement": "required"
+  },
+  {
+    "market_entity": "HMUK",
+    "service_family": "connected_services",
+    "document_type": "privacy_policy",
+    "requirement": "required"
+  },
+  {
+    "market_entity": "HMA",
+    "service_family": "website",
+    "document_type": "privacy_policy",
+    "requirement": "required"
+  },
+  {
+    "market_entity": "HMA",
+    "service_family": "vehicle_tech",
+    "document_type": "privacy_notice",
+    "requirement": "required"
+  },
+  {
+    "market_entity": "HMA",
+    "service_family": "account_portal",
+    "document_type": "terms_of_use",
+    "requirement": "required"
+  },
+  {
+    "market_entity": "HMA",
+    "service_family": "navigation_update",
+    "document_type": "privacy_notice",
+    "requirement": "required"
+  },
+  {
+    "market_entity": "HMA",
+    "service_family": "navigation_update",
+    "document_type": "terms_of_use",
+    "requirement": "required"
+  },
+  {
+    "market_entity": "HCI",
+    "service_family": "website",
+    "document_type": "privacy_notice",
+    "requirement": "required"
+  },
+  {
+    "market_entity": "HCI",
+    "service_family": "navigation_update",
+    "document_type": "privacy_notice",
+    "requirement": "required"
+  },
+  {
+    "market_entity": "HMM",
+    "service_family": "connected_services",
+    "document_type": "privacy_policy",
+    "requirement": "not_applicable",
+    "rationale": "Bluelink not available in Mexico (per web manual)"
+  },
+  {
+    "market_entity": "HMM",
+    "service_family": "navigation_update",
+    "document_type": "privacy_notice",
+    "requirement": "required"
+  },
+  {
+    "market_entity": "HMIL",
+    "service_family": "connected_services",
+    "document_type": "privacy_policy",
+    "requirement": "required"
+  },
+  {
+    "market_entity": "HMIL",
+    "service_family": "account_portal",
+    "document_type": "terms_of_use",
+    "requirement": "required"
+  }
+]

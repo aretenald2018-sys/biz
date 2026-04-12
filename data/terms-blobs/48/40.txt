@@ -1,0 +1,731 @@
+Go to content
+
+Privacy Settings
+
+Privacy Notice
+
+Datenschutzhinweise
+
+Help/Contact
+
+"Search"
+
+"Search"
+
+CHANGE COUNTRY
+
+Europe
+
+Croatia
+
+Cyprus
+
+United Kingdom
+
+Albania
+
+Austria
+
+Azerbaijan
+
+Belgium (Dutch)
+
+Belgium (French)
+
+Bosnia-Herzegovina
+
+Gibraltar
+
+Greece
+
+Hungary
+
+Iceland
+
+Ireland
+
+Italy
+
+Latvia
+
+Netherlands
+
+Norway
+
+Poland
+
+Portugal
+
+Romania
+
+Serbia
+
+Slovakia
+
+Sweden
+
+Switzerland
+
+Turkey
+
+Ukraine
+
+Bulgaria
+
+Canary Islands
+
+Czech Republic
+
+Finland
+
+Denmark
+
+Germany
+
+Estonia
+
+Luxembourg
+
+Lithuania
+
+Montenegro
+
+Slovenia
+
+Spain
+
+Malta
+
+Georgia
+
+Moldova
+
+Macedonia
+
+France
+
+open menu
+
+en
+
+CHANGE COUNTRY
+
+Europe
+
+Croatia
+
+Cyprus
+
+United Kingdom
+
+Albania
+
+Austria
+
+Azerbaijan
+
+Belgium (Dutch)
+
+Belgium (French)
+
+Bosnia-Herzegovina
+
+Gibraltar
+
+Greece
+
+Hungary
+
+Iceland
+
+Ireland
+
+Italy
+
+Latvia
+
+Netherlands
+
+Norway
+
+Poland
+
+Portugal
+
+Romania
+
+Serbia
+
+Slovakia
+
+Sweden
+
+Switzerland
+
+Turkey
+
+Ukraine
+
+Bulgaria
+
+Canary Islands
+
+Czech Republic
+
+Finland
+
+Denmark
+
+Germany
+
+Estonia
+
+Luxembourg
+
+Lithuania
+
+Montenegro
+
+Slovenia
+
+Spain
+
+Malta
+
+Georgia
+
+Moldova
+
+Macedonia
+
+France
+
+Home
+
+Privacy Notice
+
+Privacy Notice
+
+Privacy Notice
+
+Privacy Notice
+
+Datenschutzhinweise
+
+Cookies
+
+Legal Information
+
+Applicant Privacy Notice
+
+Table of Contents
+
+1. Introduction
+2. Controller
+3. Data protection officer
+4. Sources of personal data
+5. Categories of personal data
+6. Purposes of processing and legal bases
+7. Websites
+
+a. Log files
+b. Cookies
+
+8. Recipients or categories of recipients
+
+9. International transfer of personal data
+
+10. Data retention
+
+11. Your legal rights
+
+12. Changes to this Privacy Notice
+
+13. Definitions
+
+Last updated: February 2026
+
+1. Introduction
+
+Kia Europe GmbH (hereinafter "Kia EU”, "we”, “us”, “our”
+) may collect and process
+personal data
+that concern you. The purpose of this privacy notice (the “Privacy Notice”
+) is to inform you about our processing of your personal data.
+
+This Privacy Notice is addressed to visitors of our websites
+and other individuals outside Kia EU with whom we communicate or have a business relationship with (hereinafter “you”, “your”
+). This includes in particular:
+
+• our (potential) customers to whom we provide our services or sell our products or with whom we communicate regarding our services or products (including employees and other staff members, representatives, consultants and advisors of our (potential) customers);
+• our business partners (e.g., our vendors, service providers, affiliated entities, Kia dealers) and their employees, staff members, representatives, consultants and advisors;
+• participants in our events (e.g., workshops or seminars);
+• individuals that apply for a job or internship with us ;
+• visitors to our premises; and
+• visitors of our websites.
+
+Please note that in addition to this Privacy Notice, where appropriate, we may inform you about the processing of your personal data separately, for example in consent forms or additional privacy notices.
+
+If you disclose personal data to us about other individuals (e.g., co-workers), please ensure that you are authorised to do so, and that the relevant personal data is accurate. Please also make sure that these individuals have been informed about this Privacy Notice.
+
+2. Controller
+
+Kia EU is the controller
+of the personal data processed in accordance with this Privacy Notice, unless expressly stated otherwise.
+
+Contact Details
+
+Kia Europe GmbH
+
+Theodor-Heuss-Allee 11
+
+60486 Frankfurt am Main, Germany
+
+Email:info@kia-europe.com
+
+Further information about Kia EU can be found in our Legal Information
+section.
+
+3. Data protection officer
+
+We have appointed an external data protection officer ("DPO")
+. You may contact our DPO at:
+
+Kia Europe GmbH
+
+- Data Protection Officer -
+
+Theodor-Heuss-Allee 11
+
+60486 Frankfurt am Main, Germany
+
+Email: dpo@kia-europe.com
+
+4. Sources of personal data
+
+The personal data that we process may originate from any of the following sources:
+
+• Data subject: Most of the personal data that we process about you is provided to us by you.
+• Our websites: We may also collect certain personal data when you visit our websites or use our online offerings.
+• Third parties: To the extent permissible under applicable law, we may also obtain your personal data from third parties (e.g., your employer). As the European headquarter of the Kia group, we may obtain your personal data from other companies within our group (e.g., from Kia Connect GmbH if you give your consent in the Kia App for us to contact you in relation to surveys). We may also obtain your personal data from public authorities (e.g., any relevant data in connection with administrative and legal proceedings), or from certain service providers or advisors (e.g., credit agencies).
+• Publicly available sources: In some cases, we may obtain your personal data from publicly available sources. This includes, but is not limited to, public registers or information available on the Internet (e.g., social media).
+• Self-created data: Depending on the business relationship between you and us, or your employer and us, we may also create personal data about you (e.g., in connection with meetings, participation in our events or job interviews).
+
+5. Categories of personal data
+
+The types of personal data that we process may fall under any of the categories set out below (“Data Categories”)
+and is subject to our business relationship with you:
+
+• Personal Details: data that relate directly to your identity (e.g., first name; surname; gender; nationality; date of birth; title; photograph).
+• Contact Details: data that enable communication (e.g., correspondence address; shipping address; email address; telephone number; social media details).
+• Employer Details: data that relate to your employer and your role (e.g., name of your employer; your job title; department; your role or function in the company).
+• Communication Data: data that form the content of communication (e.g., content of conversations; written correspondence sent via email, contact form, chat, letter or other means of communication; application documents; records of your interactions with us).
+• Contract Details: data that relate to the conclusion or performance of a contract (e.g., content of the contract; information about the services or products provided under the contract; information required or used for the performance of a contract; type and date of conclusion; duration; signature).
+• Purchase Details: data that relate to your purchase of our services or products and our provision of the same (e.g., records of purchases and prices).
+• Payment Details: data that relate to the issuance or payment of invoices (e.g., billing address, invoice number; bank account details; payment history).
+• Consent Data: data that relate to consents you have given (e.g., date and time of consents; records of consents; subject matter of consents).
+• Views and Opinions: data that relate to your views and opinions about us (e.g., views and opinions that you publicly post about us on social media platforms; views and opinions that you directly send to us; complaints; feedback; information that you share with us in surveys).
+• Technical Data: data that relate to your device, your use of our websites or other online offerings (e.g., free Wi-Fi at our premises) (e.g., IP address; operating system; date and time of access; region; URL of the referring website; time zone; data volume transmitted; type of browser; language settings).
+• Content and Advertising Data: records of your interactions with our online advertising and content (e.g., websites that you have visited; time of visit; interest in content; any mouse clicks or touchscreen interactions).
+• Visitor Details: data that relate to visits of our premises (e.g., time and date of visit; purpose of visit; specific needs of visitor).
+• Recording Data: data collected when you leave a voice message.
+
+6. Purposes of processing and legal bases
+
+We will process personal data only to the extent permitted by law and to the extent necessary for the relevant purpose. The purposes
+for which we process the relevant Data Categories and the legal bases
+on which we perform such processing are as follows:
+
+Purposes
+Data Categories
+Legal Bases
+
+A. Provision of services and products:
+negotiating; concluding and performing contractual relationship; providing our services or delivering our goods; providing customer support.
+
+• Personal Details;
+• Contact Details;
+• Employer Details;
+• Contract Details;
+• Purchase Details.
+
+• Taking steps prior to entering into a contract with a potential customer (Art. 6(1)(b) GDPR)
+• Performance of the contract with respect to the processing of personal data of the customer (Art. 6(1)(b) GDPR)
+• For the rest: legitimate interests (Art. 6(1)(f) GDPR) – the legitimate interest is the performance of the contract with our customer.
+
+B. Communication and relationship management: communicating with (potential) customers and other individuals regarding our services or products, including batteries imported by us (in vehicles); responding to and handling inquiries submitted via contact form, email, letter, on the phone, voicemail or by other means; updating your contact details.
+
+• Personal Details;
+• Contact Details;
+• Employer Details;
+• Communication Data;
+• Consent Data;
+• Recording Data;
+• Views and Opinions.
+
+• Taking steps prior to entering into a contract (Art. 6(1)(b) GDPR)
+• Performance of the contract with respect to the processing of personal data of the customer (Art. 6(1)(b) GDPR);
+• Your Consent (Art. 6(1)(a) GDPR)
+• For the rest: legitimate interests (Art. 6(1)(f) GDPR) – the legitimate interest is promoting our products or services, dealing with inquiries concerning batteries imported by us, or building a or maintaining the relationship with our (potential) customers.
+
+C. Direct Marketing: sending you direct marketing materials (e.g., via email); sending you newsletters; informing you about news that relate to us or our group, our services or products and other information in which you may be interested; asking you to participate in surveys or to provide your feedback.
+
+• Personal Details;
+• Contact Details;
+• Employer Details;
+• Communication Data;
+• Consent Data.
+
+• Your Consent (Art. 6(1)(a) GDPR)
+• For the rest: legitimate interests (Art. 6(1)(f) GDPR) – the legitimate interest is promoting our products or services or building a or maintaining the relationship with our (potential) customers.
+
+D. Surveys: evaluating your feedback or responses to surveys.
+
+• Personal Details;
+• Views and Opinions.
+
+• Legitimate interests (Art. 6(1)(f) GDPR) – the legitimate interest is analysing feedback or responses to surveys in order to improve the services and products of the Kia group and Kia dealers and to adapt them to the Kia group and Kia dealers customers’ needs.
+
+E. Financial administration: invoicing; accounting; audits; vendor management; complying with tax and financial laws and regulations .
+
+• Personal Details;
+• Contact Details;
+• Employer Details;
+• Contract Details;
+• Purchase Details;
+• Payment Details.
+
+• Compliance with legal obligations (Art. 6(1)(c) GDPR)
+• For the rest: legitimate interests (Art. 6(1)(f) GDPR) – the legitimate interest is the managing of the financial affairs of our business.
+
+F. Legal compliance: compliance with applicable laws, directives and recommendations from regulatory bodies; disclosure to courts and regulatory bodies.
+
+• Personal Details;
+• Employer Details;
+• Contract Details;
+• Communication Data.
+
+• Compliance with legal obligations (Art. 6(1)(c) GDPR)
+• For the rest: legitimate interests (Art. 6(1)(f) GDPR) – the legitimate interest is ensuring our compliance with applicable legal obligations.
+
+G. Management of IT systems: managing and operating our IT systems; conducting audits of our IT systems; monitoring of our IT systems and processes.
+
+• Personal Details;
+• Contact Details;
+• Communication Data;
+• Technical Data.
+
+• Compliance with legal obligations (Art. 6(1)(c) GDPR);
+• For the rest: legitimate interests (Art. 6(1)(f) GDPR) – the legitimate interest is ensuring the efficient and secure operation of our IT systems.
+
+H. Security and access control: ensuring security of premises (e.g. by use of CCTV and visitor records).
+
+• Personal Details;
+• Contact Details;
+• Employer Details;
+• Visitor Details.
+
+• Legitimate interests (Art. 6(1)(f) GDPR) – the legitimate interest is ensuring the physical security of our premises and protection of (confidential) information.
+
+I. Managing visits to our premises: creating and managing lists of visitors; taking measures to meet specific needs of our visitors.
+
+• Personal Details;
+• Contact Details;
+• Employer Details;
+• Visitor Details.
+
+• Legitimate interests (Art. 6(1)(f) GDPR) – the legitimate interest is managing visits to our premises and meeting specific needs of our visitors.
+
+J. Product and services development: market research for better understanding the market and use of our products and services; customer analysis.
+
+• Personal Details;
+• Contact Details;
+• Employer Details;
+• Purchase Details;
+• Consent Data;
+• Views and Opinions.
+
+• Your consent (Art. 6(1)(a) GDPR);
+• For the rest: legitimate interests (Art. 6(1)(f) GDPR) – the legitimate interest is improving our products and services.
+
+K. Organising, hosting and running events and training sessions: creating and managing lists of participants; communicating with participants regarding details of relevant event(s) and training session(s).
+
+• Personal Details;
+• Contact Details;
+• Employer Details;
+• Communication Data.
+
+• Legitimate interests (Art. 6(1)(f) GDPR) – the legitimate interest is organising, hosting, and running an event or training session.
+
+L. Recruitment and job applications: carrying out the application process; reviewing applications; contacting and communicating with applicants; carrying out interviews.
+Further information about our recruitment process and related processing of your personal data is available in the Online Recruitment Tool section.
+
+• Personal Details;
+• Contact Details;
+• Communication Data.
+
+• Taking steps prior to entering into a contract with a (potential) new employee (Art. 6(1)(b) GDPR).
+
+M. Operating our business: internal management and administration, including record management or maintaining internal protocols.
+
+• Personal Details;
+• Contact Details;
+• Employer Details;
+• Communication Data;
+• Contract Details;
+• Purchase Details;
+• Payment Details.
+
+• Legitimate interests (Art. 6(1)(f) GDPR) – the legitimate interest is the appropriate and efficient operation of our business.
+
+N. Vendor and business partner management: pre-contractual correspondence; requesting details about offers and cost estimates; receiving goods or services; performing the contract and communicating regarding the performance of the contract; payment processing.
+
+• Personal Details;
+• Contact Details;
+• Employer Details;
+• Communication Data;
+• Payment Details.
+
+• Taking steps prior to entering into a contract with a vendor or business partner (Art. 6(1)(b) GDPR);
+• Performance of the contract with respect to the processing of personal data of the vendor or business partner (Art. 6(1)(b) GDPR);
+• For the rest: legitimate interests (Art. 6(1)(f) GDPR) – the legitimate interest is the performance of the contract with a vendor or business partner.
+
+O. Legal proceedings and investigations: assessing, enforcing and defending our rights and interests; investigating and detecting criminal offences and violations of our policies.
+
+• Potentially all Data Categories could be relevant for this purpose (as this is subject to the content and the subject matter of the relevant proceedings or investigations).
+
+• Legitimate interests (Art. 6(1)(f) GDPR) – the legitimate interest is protecting our interests and enforcing our rights.
+
+P. Product safety communications: communication in relation to product safety and recalls.
+
+• Personal Details;
+• Contact Details;
+• Employer Details;
+• Contract Details;
+• Purchase Details.
+
+• Compliance with legal obligations (Art. 6(1)(c) GDPR);
+• For the rest: legitimate interests (Art. 6(1)(f) GDPR) – the legitimate interest is to ensure the safety of our customers and safe use of our products.
+
+Q. Operating and improving our websites: making the websites available to you; displaying content on our websites; interacting with you on our websites; improving content and features of our websites; understanding the use of our websites; security and server stability.
+
+Further information about our processing of your personal data in connection with our websites and the use of cookies are provided in sec. 7 below.
+
+• Technical Data;
+• Content and Advertising Data.
+
+• Your consent (Art. 6(1)(a) GDPR);
+• For the rest: legitimate interests (Art. 6(1)(f) GDPR) – the legitimate interest is the appropriate and efficient operation and development of our websites, the display of content that could be of interest to the visitors of our websites, and to make the websites user friendly and secure.
+
+Where we (or other members of the Kia group on our behalf) ask for your consent for certain processing activities (e.g., for the processing of sensitive personal data, for marketing or survey mailings), you will be informed separately about the relevant processing purposes.
+
+In some cases, we may also process your personal data for purposes that are not mentioned in this Privacy Notice. Where this is the case, we will inform you separately about the relevant processing, purposes and legal bases.
+
+Generally, you have the right not to provide your personal data to us.However, in some cases (e.g., for entering into a contract with us, to purchase our services or goods, to visit our premises), we may require certain personal data from you to be able to process your enquiry. We will inform you about the required personal data accordingly. Please also note that the use of our websites is not possible without us receiving certain Technical Data.
+
+7. Websites
+
+In this section 7, we provide further details about our processing of your personal data in connection with our websites.
+
+a) Log files
+
+When you visit our websites your web browser will automatically transmit Technical Data to our web server. The Technical Data will be captured in log files and may include:
+
+• IP address;
+• Operating system;
+• Date and time of access;
+• Time zone;
+• URL of the referring website;
+• Data volume transmitted;
+• Type of browser
+
+The purpose for the processing of those data in connection with log files is for technical reasons (i.e., to enable the communication between your web browser and our web server, to understand the use of our websites, to make the websites secure and to maintain availability and functionality of the websites).
+
+The processing is necessary for the purpose of the legitimate interests pursued by us (Art. 6(1)(f) GDPR). Our legitimate interests are: the appropriate and efficient operation of our websites, to make the websites secure and to maintain availability and functionality of the websites.
+
+The log files and the relevant data captured in them will be deleted within seven (7) days.
+
+b) Cookies
+
+When you visit our websites, we may use cookies and process related information for the purposes set out below.
+
+“Cookies” are small text files that may be transferred to your device (e.g., computer; smartphone) when you visit a website by means of your web browser or other programmes. These are stored locally on your end device and kept ready for later retrieval.
+
+Cookies are generally used to make websites work, to keep track of your movements within the website, to remember your login details, to remember your preferences and interests, and so on. There are different types of Cookies, and they can be distinguished on the basis of their origin, function and lifespan.
+
+The information processed in connection with the use of Cookies might be information about you, your preferences or your device (Technical Data; Content and Advertising Data).
+
+We use strictly necessary Cookies to make our websites work, provide them securely and to store information about your consent or rejection of cookies ("Strictly Necessary Cookies"). The legal basis for the processing of your personal data in connection with such Strictly Necessary Cookies is our legitimate interest ; Art. 6(1)(f) GDPR) in operating our websites efficiently and providing them securely.
+
+Subject to your prior consent, we may use Cookies that (i) allow us to measure and improve the performance of our websites ("Performance Cookies"); (ii) enable the websites to provide enhanced functionality ("Functional Cookies”); and (iii) may be set through our websites by our advertising partners to build a profile of your interests and show you relevant adverts on other sites (“Targeting Cookies”). The legal basis for the processing of your personal data in connection with such Cookies is your consent (Art. 6(1)(a) GDPR).
+
+Please note that you can manage your consent preferences by using the cookie banner or accessing the "Privacy Settings" on our websites. This is also where you can find further information about each Cookie. We use the tool OneTrust provided by the service provider OneTrust Technology Limited for the purpose of cookie-related consent management.
+In addition, you will find more information about Cookies and their use on our websites in our Cookies Notice https://www.kia.com/eu/cookies/.
+
+8. Recipients or Categories of recipients
+
+In some cases, we may disclose your personal data to third parties. This will be done solely in connection with the purposes of processing set out above and in compliance with applicable laws. The possible recipients of your personal data include the following companies, institutions, or persons:
+
+• Kia group companies: We may disclose your personal data to other companies that are members of the Kia group, including our affiliated companies in Europe and our parent company Kia Corporation in the Republic of Korea for our internal administrative purposes (Art. 6(1)(f) GDPR), or because it is necessary for the performance of our contract with you (Art. 6(1)(b) GDPR). In some cases, the disclosure may also be based on your consent (Art. 6(1)(a) GDPR).
+• Service providers (IT, logistics, finance, facility management): We may disclose your personal data to our service providers (IT, logistics, finance, facility management) for the purpose of operating our business or in connection with the provision and sale of our services or products. For this purpose, we have entered into data processing agreements in accordance with Art. 28(3) GDPR with each of these service providers to the extent that they are our processors.
+• Service providers (print and advertising): We may disclose your personal data to our service providers (print and advertising) for the purpose of direct marketing. For this purpose, we have entered into data processing agreements in accordance with Art. 28(3) GDPR with each of these service providers to the extent that they are our processors.
+• Courts and regulatory bodies: We may disclose your personal data to courts and regulatory bodies where we have a legal obligation to do so (Art. 6(1)(c) GDPR) or for the purpose of protecting our interests or enforcing our rights (Art. 6(1)(f) GDPR).
+• Outside professional advisors: We may disclose your personal data to our tax consultants, auditors, accountants, legal advisors and other outside professional advisors for the purpose of operating our business (Art. 6(1)(f) GDPR). In some cases, we may also disclose the data for the purpose of protecting our interests or enforcing our rights (Art. 6 (1)(f) GDPR).
+• Third party acquirers: In the event that we sell or transfer all or any relevant portion of our assets or business (including reorganization, or liquidation), we may disclose your personal data to third party acquirers.
+• Others: We may also disclose your personal data to other third parties, but only if you have requested us to do so (Art. 6(1)(a) GDPR) or if such disclosure is necessary for the performance of our contract with you (Art. 6(1)(b) GDPR).
+
+9. International transfer of personal data
+
+We are a member of an international group of companies. Therefore, we may transfer personal data within the Kia group and to other third parties as noted in sec. 8 above. Some of these recipients may be located or have relevant operations in countries that are neither Member States of the European Union nor members of the European Economic Area (“Third Country”)
+
+. For some Third Countries, the European Commission has determined that they provide an adequate level of protection for personal data (e.g., Republic of Korea, United Kingdom, Switzerland), which also includes the USA to the extent that the receiving company in the USA participates in the EU-U.S. Data Privacy Framework (see Data Privacy Framework Website
+) (“Adequate Jurisdictions”)
+. Where we transfer personal data to a recipient that is located in a Third Country that has not been determined to be an Adequate Jurisdiction, we (or our processor in the European Union or the European Economic Area that transfer personal data to sub-processors in such Third Countries, as applicable) do so on the basis of standard data protection clauses as adopted by the European Commission. You may request copies of these standard data protection clauses by using the contact details provided in sec. 2 and 3 above.
+
+10. Data retention
+
+We will only process your personal data for as long as it is necessary for the purposes
+set out in this Privacy Notice or as required by applicable law.
+When determining the retention period, we consider the purposes for which we process the relevant personal data and whether such purposes can be achieved without the data, the categories of the relevant data, risks in the event of a data breach and legal obligations that require us to retain the data. For example, personal data that relate to your enquiries or orders are usually retained for six years as a “business letter” (sec. 257(4) HGB, Art. 6(1)(c) GDPR) or ten years as a “commercial letter” (sec. 147(3) AO, Art. 6(1)(c) GDPR).
+
+11. Your legal rights
+
+If you have any questions about our processing of your personal data, we are happy to provide you with the information about the personal data concerning you and the related processing activities.
+
+Under the GDPR, you have the right to request access
+to your personal data and further information about our processing of your personal data (Art. 15 GDPR).
+Subject to the legal requirements being met, you also have a right to obtain: (a) rectification
+of your personal data (Art. 16 GDPR);
+(b) erasure
+of your personal data (Art. 17 GDPR);
+and (c) restriction
+of processing of your personal data (Art. 18 GDPR).
+You also have a right to data portability
+(Art. 20 GDPR)
+and a right to lodge a complaint with a data protection authority (Art. 77 GDPR)
+.
+
+Where we process your personal data on the basis of your consent, you have the right to withdraw your consent at any time (Art. 7(3) GDPR)
+. The withdrawal of your consent will not affect the lawfulness of processing based on such consent before its withdrawal.
+
+Your right to object
+: Where we process your personal data on the basis of legitimate interests
+, you have the right to object to such processing
+at any time on grounds relating to your particular situation (Art. 21(1) GDPR).
+Furthermore, where we process your personal data for direct marketing purposes
+, you have the right to object to such processing
+at any time (Art. 21(2) GDPR).
+
+To exercise your rights, you may contact us at any time using the contact details provided in sec. 2 and 3 above.
+
+12. Changes to this Privacy Notice
+
+This Privacy Notice may be updated or amended from time to time
+(e.g., to reflect changes in applicable law or changes in our practices regarding the processing of personal data). Therefore, please regularly check this page to review any changes we might make.
+
+13. Definitions
+
+“controller”
+means the natural or legal person, public authority, agency or other body which, alone or jointly with others, determines the purposes and means of the processing of personal data.
+
+“GDPR”
+means Regulation (EU) 2016/679 (General Data Protection Regulation) or (ii) with regard to the United Kingdom, Regulation (EU) 2016/679 as it forms part of the law of the United Kingdom by virtue of section 3 of the European Union (Withdrawal) Act 2018 and as amended from time to time (also known as the UK GDPR).
+
+“personal data”
+means any information relating to an identified or identifiable natural person.
+
+“process”/ ”processing”
+means any operation or set of operations which is performed on personal data or on sets of personal data, such as collection, recording, organisation, structuring, storage, adaption or alteration, retrieval, consultation, use, disclosure by transmission, dissemination or otherwise making available, alignment or combination, restriction, erasure or destruction.
+
+“processor”
+means a natural or legal person, public authority, agency or other body which processes personal data on behalf of the controller.
+
+“websites”
+
+means the following websites operated, or maintained, by us or on our behalf: kia.com/eu
+.
+
+Vehicles
+
+Kia Fleet International
+
+Overview
+
+Drive
+
+Charge
+
+Connect
+
+Work
+
+Contact us
+
+Kia Fleet International Brochure
+
+PBV
+
+Vehicles
+
+Conversions
+
+Solutions
+
+business
+
+About Kia PBV
+
+Careers
+
+Overview
+
+About Us
+
+Culture
+
+Benefits
+
+Job Opportunities
+
+Press
+
+About Kia
+
+Kia company
+
+#inspiredbykia
+
+The Kia Brand
+
+Experience Kia
+
+Kia Concept Cars
+
+Kia PBV
+
+Privacy Notice
+
+Datenschutzhinweise
+
+Cookies
+
+Legal Information
+
+Legal Disclaimers
+
+Vulnerability Disclosure
+
+Accessibility
+
+Kia Talent Lounge
+
+Applicant Privacy Notice
+
+The fuel consumption and emission values are determined according to the prescribed measuring procedures (§ 2 Nos. 5, 6, 6a Pkw-EnVKV in the respectively valid version).
+The data do not refer to an individual vehicle and are not part of the offer, but serve only for comparison purposes between the different vehicle types. The fuel consumption and CO₂ emissions of a vehicle depend not only on the efficient use of fuel by the vehicle, but are also influenced by driving behaviour and other non-technical factors. CO₂ is the main greenhouse gas responsible for global warming.
+Further information on official fuel consumption and the official specific CO₂ emissions of new passenger cars can be found in “Leitfaden über den Kraftstoffverbrauch, die CO₂-Emissionen und den Stromverbrauch neuer Personenkraftwagen” (Guide on fuel consumption, CO₂ emissions and electricity consumption of new passenger cars), which is available free of charge at all sales outlets and from DAT Deutsche Automobil Treuhand GmbH, Hellmuth-Hirth-Straße 1, 73760 Ostfildern (www.dat.de).
+Illustrations may show optional equipment available at extra cost.
+
+Home
+
+Privacy Notice

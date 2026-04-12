@@ -1,0 +1,517 @@
+Bluelink Terms of Use.
+
+Hyundai Connected Mobility GmbH.
+
+Terms of Use - Bluelink Services.
+Effective from 1st January, 2025.
+Other language versions of these Terms of Use can be accessed and downloaded below.
+
+English version
+
+Other languages
+
+List of changes
+The new features and settings listed below become available once your infotainment software has completed our regular infotainment software update, which will be available at the beginning of 2025.
+
+2.1.5 Privacy settings menu has been added.
+2.1.6 List of compatible devices has been updated.
+3.2.3 Surround view monitor feature has been added (only for ccNC vehicles).
+3.5 Service list feature has been deleted. The setting can be now congured via the privacy settings in the infotainment system.
+4.8 Preferred route has been added.
+4.9 Bluelink user prole has been updated: If you have multiple vehicles linked with your Bluelink user prole, your navigation usage data such as your favourite addresses and recent destinations will be automatically synced between your vehicles (only for ccNC vehicles).
+
+Starting from the upcoming regular update of the infotainment software, if you disagree to the updated Terms of Use, the Bluelink services can be deactivated upon your conrmation. You will only be able to use the Bluelink services if you accept our current Terms of Use.
+1. Introduction
+1.1. In order to use our Hyundai Bluelink Europe services (“Bluelink” or “Services”), please read the following Hyundai Bluelink Europe terms (“Terms” or “Terms of Use”). These Terms will apply whenever you use the Services within the Bluelink app and inside the vehicle infotainment system. You can nd the latest version of these Terms whenever you like in the menu of the Bluelink app and in the menu of the infotainment system (this is the head unit of your vehicle).
+1.2. We are Hyundai Connected Mobility GmbH. Our registered address is Kaiserleipromenade5, 63067 Oenbach, Germany. We are your contractual partner regarding the provision of the Services.
+1.3. If you have questions then please call us at +49 69271472377 or contact us by email at bluelink@hyundai-europe.com.
+2. Use of Services
+2.1. General Preconditions
+2.1.1. You must be 18 or over to accept these Terms.
+2.1.2. You can only use the Services with Hyundai vehicles which are equipped with the specic hardware for Bluelink, in particular a modem with preinstalled SIM card and a specic antenna.
+2.1.3. Our contract regarding the provision of the Services based on these Terms must be distinguished from your contract for the purchase (or lease) of your Hyundai vehicle. The two are legally separate contracts, which do not in principle aect each other.
+2.1.4. The Services are linked to your specic vehicle and therefore cannot be received in or transferred to another vehicle.
+2.1.5. You can activate and deactivate all or only certain categories of Connected Car Services at any time through the privacy settings in your infotainment system (Settings -> Bluelink -> Privacy settings).
+2.1.6. The use of Hyundai Bluelink Europe app requires a compatible mobile device and OS version. The minimum required OS versions are iOS 10 and Android 6.0. Ocially supported devices are iPhone 11 (and above), Samsung Galaxy S20 Plus, S21, S22, S23, S23+, S24, S24+, S30 Plus, A50, A54, Z Flip 3, Note 10, Google Pixel 6 Pro, Pixel 7 Pro, Pixel 8, Huawei P40, Mate P40 Pro, Xiaomi Mi 10 & 11, Oppo Find X3 Neo.
+2.1.7. You can use our remote app services only if the application receives live information from the vehicle. This is possible only if the vehicle’s ignition has not been switched off for more than fourteen days for ccNC (Connected Car Navigation Cockpit) vehicles (installed in the all-new KONA and higher models) or seven days for Gen5W vehicles (all other models).
+2.1.8. Not all Services may be available for use with your specic vehicle – this may depend on your Hyundai vehicle model as well as on the software version of the app and the infotainment system.
+2.1.9. We will not charge you for your use of the Services during the term of our contract (see Section 11 below on when our contract based on these Terms terminates).
+2.2. Bluelink: Infotainment system and App
+2.2.1. To use the Services, you do the following:
+a) Activate Bluelink on your vehicle;
+b) Download the application “Hyundai Bluelink Europe” in the Google Play Store or Apple App Store;
+c) Log in with your Hyundai Account;
+d) Allow Bluelink to access to your personal data from your Hyundai Account (phone number, user prole, email address);
+e) Enter your phone number and verify your number with a 6-digit verication code, which we will send to your phone number via SMS;
+f) Create a 4-digit pin for your own Bluelink service;
+g) Add a Hyundai vehicle;
+h) Accept the Bluelink Terms of Use;
+i) Read the Privacy Notice; and
+j) In your infotainment system, select [Bluelink] - [Bluelink settings] - [Modem information] and scan the QR code with your mobile phone. Alternatively you can also enter your Vehicle Identication number (VIN) manually. Verify your VIN by entering an activation code, which we will send to your vehicle’s infotainment system.
+Please note that the activation of Bluelinkin the infotainment system and the use of the Bluelink app are two separateprocesses. Some Services are only available in the app (see Section 3 below). If you remove your vehicle from the Bluelinkapp, you can still decide whether to deactivate Bluelink within theinfotainment system of your vehicle or keep it activated solely for use withinyour vehicle. Please see Section 7.4 if you intend tosell your vehicle or permanently transfer its ownership to a third party.
+2.2.2. The contract between you and us regarding the Services is concluded when you are granted access to the Services either in the app upon successful activation and adding the vehicle, or upon activation of the Services in the menu of the infotainment system (the head unit of your vehicle). You are provided with setting options in the subscription process with which you can correct any input errors. The contract is concluded in your local language. We will provide you with these Terms via email after you have successfully added your vehicle in the app. The latest version of these Terms will also be available to you at any time within the app (“More”->”Legal texts” in the app menu) and in the menu of the infotainment system (“Settings”->”Bluelink”->”Terms of Use” on the head unit of your vehicle).
+2.2.3. If you do not yet have a Hyundai Account, please create a new account by doing the following:
+a) Open the Bluelink app and click “Create Account”.
+b) Enter your email, rst name, last name, country of residence and desired password.
+c) Accept the Terms of Use that apply for the Hyundai Account.
+d) Select “Register”.
+e) Verify your email address by entering a 4-digit verication code that was sent to your email.
+2.2.4. If you have forgotten your email address or password for logging into your Hyundai Account, then you can click on the “Forgot password?” link in the Bluelink app.
+2.3. Bluelink Service Packages
+2.3.1. With our Bluelink packages Bluelink Lite, Bluelink Plus and Bluelink Pro, youcan choose the services that best t your needs.
+Depending on your vehicle model, only certainBluelink packages might be available to you for varying complimentary periods ofthree (3) or ve (5) years (“Legacy Fleet”) or upto ten (10) years (“New Fleet”).
+Upon expiry of the complimentary period, you cansubscribe to a Bluelink package that is available for your vehicle model againsta fee. Furtherinformation regarding the Bluelink packages that are available for your vehiclemodel including applicable complimentary periods and pricing details can be found at https://www.hyundai.com/eu/bluelink.html
+2.3.2. For existing Bluelink users ("Legacy Fleet"), all Services will beprovided as usual during the remaining time of the complimentary period ofthree (3) or ve (5) years. Upon expiry of the complimentary period, you cansubscribe to a Bluelink package that is available for your vehicle modelagainst a fee.
+2.3.3. The Bluelink Lite package includes basic connectedvehicle services such as connected routing, online voice recognition, EV route planner & EV POI, Bluelink app status updates and the Hyundai Digital Key. With the Bluelink Plus package you can also access our Live and Remote Services. The Bluelink Pro package oers you access to allfeatures and services of Bluelink Plus and in addition our streaming servicesand OTA updates. More detailed information on the Bluelink packages can befound at https://www.hyundai.com/eu/bluelink.html
+3. Bluelink Service List: App
+3.1. Remote Services (Bluelink Plus and Bluelink Pro only)
+3.1.1. Push notications
+Once enabled, Bluelink push notications will provide you with the following information. The specications may vary depending on the country or vehicle model:
+
+Burglar alarm
+Door open / boot open / bonnet open / charging door open / window open
+High-voltage battery discharge alarm
+Rear seat alert / hazard lights alert / sidelights alert / engine idling alert
+Climate control status / charging status / door locked and unlocked / software update status
+
+3.1.2. Remote lock and unlock
+Forgot to lock your car? There's no need to worry: Bluelink will let you know by sending a push notication to your smartphone. Then, after entering your PIN, you can lock or unlock your vehicle from all over the world using a button in the Bluelink app.
+3.1.3. Remote window control (some vehicles only)
+The remote window control function allows you to remotely open and close the windows of your vehicle.
+3.1.4. Remote Window Ventilation (some vehicles only)
+The remote window ventilation function allows you to remotely open and close the windows of your vehicle a small distance for ventilation purposes.
+3.1.5. Remote horn and light (some vehicles only)
+The remote horn and light function allows you to remotely activate both the headlights and the sound of the horn of your vehicle for approximately 30 seconds. The horn can be stopped earlier if you open and lock the door with the smart key.
+3.1.6. Remote light (some vehicles only)
+The remote light function allows you to remotely ash the headlight of your vehicle for approximately 30 seconds.
+3.1.7. Remote charging (EV & PHEV only)
+Remote charging allows you to remotely start or stop your charging. To use remote charging, simply activate “Auto-charge” inside your Hyundai EV or PHEV. Charging sessions can be stopped remotely using the Bluelink app. When using charging stations, sessions should be stopped directly at the charging station.
+3.1.8. Scheduled charging (EV & PHEV only)
+This convenience feature allows you to set up a charging schedule tailored to your needs. On top of this, you can set a target temperature for the beginning of your next trip.
+3.1.9. EV POI (EV & PHEV only)
+This feature helps you to nd the closest and best EV charging stations according to your requirements (such as charging type) and your preferences (via a ltering option).
+3.1.10. Remote climate control (EV only)
+This EV-specic feature allows you to precondition your car whenever you want: just set a target temperature and start remote climate control. For your convenience, you can also activate the rear window and the steering wheel heating.
+3.1.11. Remotely opening/closing the charging door (some EV only)
+This feature allows you to remotely open and close the charging door of your vehicle.
+3.1.12. Remote control of hazard lights / sidelights (not all vehicles)
+When your vehicle is left with the hazard lights and/or sidelights on, the Bluelink app will inform you via a notication. You can turn off the lights remotely using the app.
+3.1.13. Remote battery conditioning (some EVs only)
+This feature helps you to optimise the battery temperature in order to improve the charging performance of the vehicle.
+3.1.14. Departure time (some EVs only)
+This feature allows you to activate the scheduled climate. Set the target temperature and defrost option for two dierent departure schedules.
+3.1.15. Charging current (some EVs only)
+In the charging current menu, you can adjust the current supplied from the slow charger to 60%, 90% or 100%.
+3.1.16. Find my car
+Forgot where you parked? Simply open the Bluelink app and the map will guide you there.
+3.1.17. Send to car
+The Bluelink app allows you to search for destinations while you are on your sofa. Bluelink then syncs with your navigation system, loading the route so that it is ready to go when you are. Simply get in and press go.
+3.1.18. My car POI
+My car POI is synchronises the stored POIs (points of interest) such as “Home” or “Work address” between the infotainment system and your Bluelink app.
+3.1.19. Last mile navigation
+You might have to park your car somewhere before you reach your actual destination. If you are between 200 m and 2 km away from your destination, you can hand over the navigation from your car to the Bluelink app. With Google Maps, your smartphone will then guide you exactly to where you want to go.
+3.1.20. First mile navigation
+First mile navigation guides you to the vehicle via Google Maps. Send the destination to your vehicle using the Bluelink app. If you are between 200 m and 2 km away from your vehicle, your smartphone will guide you to the vehicle location.
+3.1.21. Valet parking mode
+The valet parking mode protects your private infotainment information when you give your car keys to another person. Once the service is activated on your infotainment system, the driver can only see the valet mode screen. The rear camera and e-Call will still work. The valet parking mode also provides the following information in your Bluelink app:
+
+Drive start and end
+Driving distance
+Driving time
+Top speed
+
+You can disable the valet parking mode using your password in your infotainment system or your Bluelink app.
+3.2. Vehicle Status Information via Bluelink
+3.2.1. Vehicle report
+The vehicle report provides information about the usage of your Hyundai vehicle. You can also check the status of the most important control units such as the airbag, brakes, tyre pressure, etc.
+3.2.2. Status update
+The status update informs you about the vehicle status. Depending on your vehicle, you can view information about:
+
+Distance to empty
+Fuel level
+Engine on/off
+Door lock status
+Climate control status
+Tailgate open/closed
+Bonnet open/closed
+Window open/closed
+Sunroof open/closed
+Tyre pressure status
+High-voltage battery status (EV & PHEV only)
+Scheduled charging on/off
+Scheduled climate control on/off
+Charging door open/closed (certain electric vehicles only)
+Steering wheel heating status (certain electric vehicles only)
+Defrost on/o (electric vehicles only)
+Rear window heating on/off (certain electric vehicles only)
+Side mirror heating (certain electric vehicles only)
+Lamp status
+Current charging power (during charging, certain electric vehicles only)
+
+3.2.3. Surround View Monitor (Bluelink Plus, Bluelink Pro and some vehicles only)
+Surround view monitor allows you to request images (snapshots) from the current view around your eligible Hyundai vehicle twice every two hours. It does this using a multi-camera system mounted on the side mirrors as well as the front and rear of the vehicle that can generate a 360-degree bird’s eye view. The images can be stored on your device (e.g. smartphone) including the time they were taken. The engine must be turned off and the emergency lights must be functioning correctly. In addition, your Bluelink Package must include Remote Services. The feature is only supported for ccNC vehicles. Please note that the snapshots might capture natural persons (or number plates of vehicles that can be traced back to a natural person) in the vicinity of the vehicle when you request the images. In this case, you are responsible for complying with all applicable statutory provisions, in particular with the EU General Data Protection Regulation (“GDPR”). In this context, you are considered a data controller within the meaning of the GDPR, which means that you are responsible for the processing of personal data of the aected persons (“data subjects”). One of your obligations is to properly inform the data subjects about such processing activities. Should you fail to comply with the provisions of the GDPR, you are at risk of objections and sanctions (including nes) by the supervisory authorities as well as claims for damages from aected data subjects. Therefore, please be mindful and use this feature with the necessary care. In particular, using the feature to create surveillance-like situations (e.g. by requesting sequential snapshots without a specic reason) could be deemed as misuse for which you can be held liable. Please also make sure to only store images containing natural persons or number plates if absolutely necessary and limit the storage period to the minimum time necessary. Furthermore, do not post images containing personal data on the internet or share them with third parties who do not have a need to know about them without the data subject’s consent. Please refrain from using this feature in special zones or areas that are naturally more sensitive in nature, such as military zones or other high-security areas (e.g. government spaces, research facilities), childcare facilities and schools, etc. without consent. USE AT YOUR OWN RISK.
+3.2.4. My trips
+My trips provides information about your vehicle usage per day or per month. For each trip, you can check your time driven, mileage, average speed and top speed. My trips information is available for up to 90 days.
+3.2.5. Energy consumption (EV only)
+The energy consumption monitor provides an overview of your electric vehicle’s energy consumption per day and per month. You can check the total and average energy consumption, driving distance and recuperation.
+3.3. Car Sharing (All Bluelink packages)
+3.3.1. Share my car
+You can share the Services with one or more other users through the “Share Car” function in the Bluelink app. If you use the “Share Car” function, you will share the Services and data related to your Hyundai vehicle which you registered in the Bluelink app. To use the shared Services, the other user has to follow the steps described in Section 2.2.1 above. You can stop sharing the Services at any time by removing any other user under the “Shared car settings”. We will then delete all shared data on the other user’s Bluelink app.
+3.3.2. Request to share car
+You can request that other Bluelink users share the Services and data related to their Hyundai vehicle in the Bluelink app through the “Request to Share Car” function in the Bluelink app.
+3.4. User prole transfer (All Bluelink packages)
+You can back up yourprole and vehicle settings information and apply it to your vehicle.
+3.5. Calendar (All Bluelink packages)
+You can sync your Google calendar or iCloud calendar in the Bluelink app in order to check your upcoming appointments in your infotainment screen.
+3.6. Touch ID and Face ID (iOS) or ngerprint and face recognition (Android) (All Bluelink packages)
+You can use certain functions of our app with Touch ID or Face ID (iOS) or ngerprint and face recognition (Android) instead of your PIN. You can turn off the use of Touch ID or Face ID (iOS) or ngerprint and face recognition (Android) at any time in our app.
+3.7. Alert Services (Bluelink Plus and Bluelink Pro only)
+3.7.1. Valet alert
+The valet alert noties you if your vehicle travels beyond the distance limit, speed limit (optional) and idle time (optional) you have preset in the Bluelink app. The distance limit is calculated starting from the location where the alert was activated in your vehicle or in the Bluelink app.
+3.7.2. Geofence alert
+You can set boundaries for allowed and restricted areas for your vehicle in the Bluelink app. When you activate the geofence alert in your vehicle, you will be notied if your vehicle exits an allowed area or enters a restricted area.
+3.7.3. Speed alert
+This feature allows you to preset a speed limit for your vehicle in the Bluelink app. You will be notied if your vehicle exceeds this speed limit.
+3.7.4. Time fencing alert
+You can set time windows in the Bluelink app for when your vehicle is in motion. You will be notied if your vehicle is driven outside of these time windows.
+3.7.5. Idle alert
+You can set the idle alert in the Bluelink app to notify you if your vehicle’s engine is running while your vehicle is not moving outside the idle time limit you have entered in the Bluelink app.
+3.8. Hyundai Digital Key (All Bluelink packages)
+3.8.1. Hyundai Digital Key is an optional feature available for chosen Hyundai models and can be selected only upon vehicle purchase.
+3.8.2. Hyundai Digital Key allows you to unlock, lock and start your vehicle with your smartphone or other smart devices without the need to carry a physical smart key on you. Please check whether your smartphone is compatible and fully supports this function on our website (https://www.hyundai.com/eu/drivinghyundai/owning-a-hyundai/bluelink-connectivity/digital-key.html).
+3.8.3. In order to activate this function, the Bluelink app must be downloaded and set up (please see Section 2.2 above for instructions on how to do this) and the Hyundai Digital Key activated. To activate the Hyundai Digital Key, you must be inside your vehicle with the engine on and the gear in P status. Initiate the pairing process from the Bluelink app by clicking “More” -> “Vehicle Digital Key” -> “Register Digital Key”. The activation process will be taken over to your wallet app and will subject to the relevant terms thereof. Once the registration process is started from your wallet app, place your smartphone on the vehicle’s wireless charging pad.
+3.8.4. The initial setup requires two physical smart keys to be with you inside the vehicle. By doing so, you conrm that you are authorized to dispose of the vehicle and are entitled to activate and use the Hyundai Digital Key function of the connected vehicle in accordance with this Section.
+3.8.5. Hyundai Digital Keys can be activated on a smartphone / smart device within the Terms of Use as dened in this Section and Section 11. Each Hyundai Digital Key automatically expires when the contract with you based on these Terms of Use is terminated in accordance with Section 11.2.
+3.8.6. You may share Hyundai Digital Keys with multiple smartphones. You may also activate Hyundai Digital Keys on other smart devices depending on their interoperability. Please nd further technical details on our website (https://www.hyundai.com/eu/driving-hyundai/owning-a-hyundai/bluelinkconnectivity/digital-key.html). You may share and manage a Hyundai Digital Key via the wallet app, in which case the respective Terms of Use apply in addition. When sharing the Hyundai Digital Key, you can restrict which features can be accessed. You can revoke a shared Hyundai Digital Key or delete an activated Hyundai Digital Key at any time before it expires via the respective wallet apps or via the Infotainment system (“Settings” -> “Vehicle” -> “Digital Keys” -> “Smartphone Key” -> “Delete”). If the Hyundai Digital Key is deleted by the user it has been shared with or retrieved by the main owner of the Hyundai Digital Key, the shared user can’t access the vehicle any more.
+3.8.7. Once you have activated the Hyundai Digital Key function, you are responsible for ensuring that you allow only trusted individuals to use the Hyundai Digital Keys. In particular, you must not allow the recipient of a Hyundai Digital Key to drive the vehicle if they do not hold a valid driver's license and/or if the recipient is otherwise not able and not authorized to drive motor vehicles in the respective country at the time they wish to drive.
+3.8.8. In the event of sale or other permanent transfer of the vehicle to a third party, you are obligated to delete all active Hyundai Digital Keys in good time as part of your obligations under Section 7.4.
+3.8.9. NOTICE: Hyundai Digital Key is based on NFC technology (near-eld communication) or UWB (ultra-wideband) depending on vehicle model. If your Hyundai Digital Key device is switched off or the battery is fully discharged, you will only be able to use Hyundai Digital Key for limited time thereafter. For more guidelines regarding the safe use of the Hyundai Digital Key, please consult the vehicle’s manual.
+4. Bluelink Service List: Infotainment System
+4.1. Hyundai Live (Bluelink Plus and Bluelink Pro only)
+Hyundai Live allows you to access the following functions through the vehicle’s infotainment system:
+4.1.1. Live traffic
+Bluelink uses real-time trac information to provide you with the best routes according to prevailing conditions. This allows for faster routes and more precise arrival times.
+4.1.2. Live parking
+Live parking helps you nd a parking spot for more ecient and stress-free parking. The parking information features compare parking options in multi-storey car parks, parking lots and on the street. Live parking provides information about free parking spaces using a trac light system (green, yellow, red), as well as price information where applicable.
+4.1.3. Live lling stations
+This feature helps you nd the closest and cheapest fuel station nearby. The live lling stations function provides live fuel price information and an indication of the price level using colours (green, red).
+4.1.4. Weather
+This feature provides weather information for the next ve days.
+4.1.5. Hyundai service
+This feature allows you to easily nd the nearest Hyundai dealer or service location information and contact details.
+4.1.6. Camera / danger zone alerts (only if legally permissible in your country)
+This feature sends alerts in areas where accidents are particularly common and warns you about “danger zones”, speed cameras and trac lights.
+4.1.7. Sports league
+The sports league feature provides the results from recent games. Currently supported sports are football, basketball, baseball and golf, as well as the World Athletics Championships, the Olympics and the FIFA World Cup.
+4.2. Live EV POI (EV & PHEV only) (All Bluelink packages)
+Live EV POI helps you nd the closest and best EV charging station according to your requirements (such as charging type).
+4.3. Live POI & live free text search (All Bluelink packages)
+With Bluelink, we oer a very powerful online live POI (point of interest) service that also allows you to receive further information (such as opening hours) and location-based oers for certain POIs directly on the navigation screen of your infotainment system. These POIs will appear as a small pin branded with the respective logo of selected third-party vendor on the navigation map. You will be shown a “%”-symbol next to the logo if there is an ongoing promotion that might be of interest to you. If you click the symbol, a detail screen will open containing additional information, an oer and, for example, a discount or promotional QR code. You can also search for various POIs by selecting your desired POI category (e.g. lling station, parking, shopping/groceries) in the navigation system. If there is an ongoing promotion or campaign for one of the selected vendors, it will appear at the top of the list and you will see a “%” symbol indicating an oer. By clicking on the respective vendor, you will receive further details on the POI and access the oer such as a discount or promotional QR code on the detail screen. Furthermore, you can nd a list of relevant current location-based oers in all POI categories in “Nearby oers” under the “Nearby POI” menu of the navigation system. You may also have oers and information from the vehicle sent directly to your Bluelink app as push notications by clicking the smartphone icon or button titled “Send to Phone” in the detail screen. You can nd a list of all push notications sent from your vehicle under “More” – “Oer Inbox”. In order to provide you with interesting and high-quality oers, we use the services of a third-party service provider that oers a platform where selected vendors/partners from all relevant POI categories can launch their respective marketing campaigns. The vendor pays Hyundai for each pin impression and interaction with one of their oers. If you do not wish to see this kind of aliate marketing, please deactivate the Hyundai Live service in your Bluelink app and you will not be able to use any of the Hyundai Live services.
+4.5. Online Voice Recognition (All Bluelink packages)
+You can use spoken language to access and control the infotainment system and to draft and send text messages. Online voice recognition operates in our Bluelink cloud environment. Your voice samples and GPS coordinates will be processed in order to perform and improve the voice recognition service. Online voice recognition is currently available in the following languages: English, German, French, Italian, Spanish and Dutch. If online voice recognition is disabled or not available, you can use oine voice recognition. The dierence is that the oine mode only supports specic commands. The search results are drawn from an internal database, which may be less up to date. In oine mode we will not process your voice samples and GPS coordinates to improve the service.
+4.6. Vehicle diagnostics (All Bluelink packages)
+Vehicle diagnostics provides information about active trouble codes (vehicle error messages) of certain control units of the vehicle.
+4.7. Connected Routing (All Bluelink packages)
+Connected routing means that the route from your current position to your destination is calculated by a powerful server inside the Bluelink cloud environment, and not just by the infotainment system itself. Why is that better? Because it allows for more accurate trac forecasting, more precise times of arrival, and more reliable route recalculations.
+4.8. Preferred Route (All Bluelink packages)
+Our preferred route guidance allows you to compare your frequently travelled routes between a specic starting point and destination to provide you with a route calculation that matches your preferences.
+4.9. Bluelink User Prole (All Bluelink packages)
+The Bluelink user prole allows you to save various vehicle settings in your Bluelink cloud and apply them to dierent vehicles. To set up your user prole, follow the instructions in your infotainment system and link your prole with your Hyundai account. You can set up two proles per vehicle plus one guest prole. You can use this feature where two or more drivers use the same vehicle but prefer dierent settings for sound, language or map view. Here is a list of various items that can be stored under the driver/user profile:
+
+Profile picture
+Phone connection
+Date and time settings
+General settings
+Sound settings
+Display settings
+Voice recognition settings
+Radio settings
+Vehicle settings
+Navigation settings
+
+All these settings can be exported to another vehicle via Bluelink. If a friend is using your vehicle temporarily, you can use a guest prole. If you have multiple vehicles linked with your Bluelink user prole, your navigation usage data such as your favourite addresses and recent destinations will be automatically synced between your vehicles (only for ccNC vehicles).
+4.10. Notication Centre (All Bluelink packages)
+The Notication Centre allows us to send you information about your vehicle. We only use this service for important information. The information will appear as a pop-up in your infotainment system. You can deactivate receipt of certain types of information in the settings or when you receive a pop-up.
+4.11. Calendar (All Bluelink packages)
+Bluelink allows you to synchronise your Google or Apple calendar with the integrated calendar function in your infotainment system.
+4.12. Like feature (All Bluelink packages)
+While playing music via USB, Bluetooth or radio, you can click the “thumbs-up” or “thumbs-down” button in order to mark your preference. The liked songs will be added to the playlist (only for USB).
+4.13. Music Streaming (Bluelink Pro only)
+With the music streaming feature, you can stream music in your vehicle directly from certain music streaming services via the infotainment system. To use this feature, a valid subscription to the music streaming platform is required. No additional costs will be incurred as long as you are subscribed to Bluelink. To activate this feature, go to the “Media” menu of your infotainment system and select the music streaming service. Scan the QR code with your phone to link your account for the music streaming service. You will be directed to the login page of the respective service via the Bluelink app. After successful login, please click the ‘Link and continue’ button on the vehicle’s infotainment system screen. Please note that you can link your account only if you have added your vehicle to the Bluelink app and linked the app to the vehicle’s driver prole. Please note that music streaming is available only for certain Hyundai models. Please nd further details on our website (https://www.hyundai.com/eu/drivinghyundai/owning-a-hyundai/bluelink-connectivity/amazon-music.html)
+
+5. OTA (Over-the-Air) Update
+With respect to certain vehicle models, as communicated by Hyundai, Bluelink provides wireless (“over-the-air”) software updates (“OTA updates”) for the vehicle system as well as the map and infotainment system. Your infotainment system will regularly check whether new software versions are available and automatically download any available software updates to your vehicle and prepare the respective installation if you have consented to it. You can still use the infotainment system during the download and preparation process. Before the software update is installed and nalised, the system will ask you if you want to complete the software update now or later. With each update, you will be provided with details of its content as well as further information on the update process. You can disable this feature by turning off the toggle in the infotainment system (“Settings” -> “Bluelink” -> “Privacy Settings”). Alternatively, you can deactivate Bluelink connectivity via the infotainment system in your vehicle (“Settings” -> ”Bluelink” -> ”Deactivate Bluelink”). In this case or if for any reason you do not install an OTA Update, software updates can be performed as usual (manually via USB stick or SD card as well as in a Hyundai workshop). Please note that additional costs may be incurred for some software updates performed in a workshop upon your request. Please contact your dealer in advance for details. No fees will apply in the case of updates related to mandatory service campaigns. Furthermore, we reserve the right to perform certain software updates exclusively at our designated dealer workshops. You are not obliged to download or install the OTA updates; however, your vehicle or the services provided (such as securityrelated systems, infotainment system, Bluelink) may not function properly or at all if you don’t.
+5.1. Vehicle System OTA Update (All Bluelink packages)
+OTA updates may concern the vehicle system and can be provided due to various reasons and for dierent purposes, in particular to remedy a defect within the respective warranty period or within the scope of the manufacturer’s guarantee or for other security-related reasons. If a software update is provided via the Bluelink OTA Update service, statutory provisions or other agreements that contain overriding provisions regarding the software update itself shall remain unaected. Please read each update notice carefully and follow the displayed instructions. You cannot operate the vehicle during the installation process.
+5.2. Maps and Infotainment OTA Update (Bluelink Pro only)
+Bluelink may also provide OTA updates for the maps and the infotainment system of your vehicle during the term of our contract (see Section 2.3.1 and 2.3.2). OTA updates for the infotainment system may include updates required to maintain the Bluelink Services in accordance with these Terms (e.g. to maintain functionality, compatibility or security). We will provide you with such updates during the term of this contract. Further information on the update process and details of the content of each software update will be provided with each update notice. You cannot operate the infotainment system during the installation process.
+6. Intellectual Property Rights
+6.1. The content of the Services is protected by applicable copyright or other intellectual property law with all rights reserved. All rights for the Services, in particular the underlying software, the content and arrangement, are owned by or licensed to Hyundai Motor Group. (“Hyundai Motor Group” refers to Hyundai Motor Company and its aliated companies.)
+6.2. Nothing in these Terms of Use shall be construed as granting a licence or right to:
+6.2.1. use any image, trademark, service mark or logo, all of which are the property of Hyundai Motor Group. Hyundai Motor Group reserves all rights with respect to its proprietary information or material in connection with the Services and will enforce such rights to the full extent of applicable copyright and trademark law;
+6.2.2. rent, lease, sub-license, loan, provide, or otherwise make available Hyundai Bluelink or the Services in any form, in whole or in part to any person without prior written consent from us;
+6.2.3. copy Hyundai Bluelink or the Services, except as part of the normal use of Hyundai Bluelink or where it is necessary for the purpose of backup or operational security;
+6.2.4. translate, merge, adapt, vary, alter or modify Hyundai Bluelink or the Services in whole or in part; nor permit Hyundai Bluelink or the Services or any part of them to be combined with, or become incorporated in, any other programs, except as necessary for the use of Hyundai Bluelink and the Services on devices as permitted in these Terms of Use;
+6.2.5. disassemble, decompile, reverse engineer or create derivative works based on Hyundai Bluelink or the Services in whole or in part; nor attempt to perform such actions, unless such actions cannot be prohibited by applicable laws ("Permitted Objective"); and provided that the information obtained by you during such activities:
+6.2.5.1. is not disclosed or communicated without our prior written consent to any third party to whom it is not necessary to disclose or communicate it in order to achieve the Permitted Objective;
+6.2.5.2. is not used to create any software that is substantially similar in its expression to Hyundai Bluelink;
+6.2.5.3. is kept secure; and
+6.2.5.4. is used only for the Permitted Objective.
+7. User Obligations
+7.1. You may only use the Services if you follow these Terms.
+7.2. In particular, make sure that you:
+a) comply with applicable laws and regulations and respect the rights of third parties when using the Services;
+b) do not use the Services for unlawful purposes or facilitate unlawful use of the Services by third parties;
+c) do not alter your vehicle (including hardware and software changes as well as use of third-party software) in such way that the functionality of the Services may be aected;
+d) do not wilfully disrupt the Services by any means;
+e) do not use the SIM card built into the vehicle’s infotainment system used for the provision of the Services:
+i) for the transmission of voice (including VOIP);
+ii) to access a publicly addressable destination (i.e. public IP address) including through the use of a proxy, gateway or routing;
+iii) in any way that attempts to penetrate security measures, irrespective of whether the intrusion results in the corruption or loss of data;
+iv) in any way that uses the Services or the related software for Internet Relay Chat, peer-to-peer le sharing, BitTorrent or a proxy server network;
+v) in a way that involves spamming, the sending of bulk unsolicited emails or commercial messages, or maintaining an open SMTP relay; or
+vi) in any way that causes the network to be impaired; and
+f) do not publish any results of any benchmark or performance tests of the built-in SIM card, the network, the Services, or component thereof to any third parties.
+7.3. You will have to bear any costs caused by a misuse of the Services resulting from your breach of the aforementioned obligations.
+7.4. If you sell your vehicle or otherwise provide it to a third party on a permanent basis, make sure that you deactivate Bluelink in the infotainment system. Please note that by deactivating Bluelink in the infotainment system, your driving data will no longer be visible in the Bluelink app and your vehicle will be disconnected from the Bluelink app. However, your account data in the Bluelink app will not be deleted.
+8. Network Availability
+8.1. We provide the Services via a built-in vehicle SIM card. Therefore, the availability of our Services: is territorially limited to the reception and transmission range of the radio stations operated by the respective mobile network operator and can be aected by atmospheric, topographic conditions, the position of the vehicle and obstacles such as buildings; and depends on the functionality and operational readiness of the required mobile network of the built-in SIM card.
+8.2. 4G/LTE connectivity (provided by an external service provider) will only be available on compatible devices (i.e. the infotainment system) which support the particular 4G/LTE frequency of the specic roaming network. Where 4G/LTE is not available, 2G or 3G connectivity will be provided subject to the availability of the infotainment system and its compatibility with such networks.
+9. Service Downtime
+9.1. We may temporarily or permanently deactivate access to the Services in whole or in part for technical or security reasons or other important reasons, such as improving performance, enhancing functionality, reecting changes to the operating system or addressing security issues.
+9.2. The Services may be temporarily disrupted or restricted due to force majeure or for other reasons beyond our control. This may be the case, for example, if the data connections provided by mobile network operators are unavailable or if short-term capacity bottlenecks arise from peak loads on the Services, on wireless and xed networks, or on the internet.
+9.3. We may temporarily disrupt or restrict the Services to carry out technical or other measures (for example repairs, maintenance, software updates, and extensions) on our systems or the systems of downstream or upstream providers, content providers or mobile network operators, where such measures are necessary for the proper or improved performance of the Services.
+10. Data Protection and Cybersecurity
+10.1. For information on how we collect and process personal data in connection with the provision of the Services, please refer to our “Privacy Notice”.
+10.2. Please inform any other driver of the vehicle or potential user of the Services that the Services are activated and that data (in particular location/GPS data) will be collected and processed as described in the “Privacy Notice”.
+10.3. Whenever you assert your rights as a data subject or make declarations under data protection law (e.g. withdrawal of consent), this shall not aect the validity of the contract based on these Terms.
+10.4. However, we may terminate the contract based on these Terms without a notice period,
+
+if you withdraw your consent (if applicable) or object to further processing of your personal data, and
+if we cannot reasonably be expected to continue the contractual relationship until the agreed end of the contract or until the expiry of a statutory or contractual notice period taking into account the scope of data processing which continues to be permissible and weighing up the interests of both parties.
+
+10.5. In order to assure proper management of appropriate cybersecurity standards, our vehicles, depending on the model, may be equipped with additional cybersecurity features. In such case, once you activate the Services in your vehicle, the level of cybersecurity of your vehicle shall be continuously monitored in order to quickly detect and remove possible cyber threats. Unless a risk is detected, the security event data shall remain stored in your vehicle. The cybersecurity features may be updated from time to time, when necessary to maintain cybersecurity standards. For more information about how we collect and process personal data for these purposes, please refer to our “Privacy Notice”.
+11. Term
+11.1. You can use the Services as soon as you have completed the steps described in Section 2.2 above.
+11.2. Our contract based on these Terms will automatically terminate:
+a) when you return your vehicle to the seller in the case that the purchase (or leasing) agreement for your vehicle has been rescinded or revoked; or
+b) after expiry of the complimentary period if you don't subsequently subscribe to a Bluelink package (see section 2.3).
+11.3. We may temporarily block your use of the Services or terminate our contract by permanently blocking your use of the Services if you materially breach these Terms.
+12. Right of Withdrawal (Only for Consumers)
+12.1. Instructions on Withdrawal
+The right of withdrawal as described below shall only apply to consumers i.e. every natural persons who enters into a legal transaction for purposes that predominantly are outside his trade, business or profession. Right of Withdrawal You have the right to withdraw from this contract within 14 days without giving any reason. The withdrawal period will expire 14 days from the day of the conclusion of the contract. To exercise your right of withdrawal, you must notify us ([add Company Name], [add address], [add telephone number],[add email-address]) by means of a clear statement about your decision to withdraw from this contract. You may use the sample withdrawal form in Sec. 11.3 below, but it is not obligatory. To exercise your right of withdrawal within the withdrawal period, it is sucient that you send the notication of the exercise of the right of withdrawal before the expiry of the withdrawal period. Consequences of withdrawal If you withdraw from this contract, your access to the Services will be cancelled and your usage data will be deleted permanently.
+12.2. Your right of withdrawal does not aect your right to deactivate the Services with or without cause at any time in the infotainment system (under “Settings” -> ”Bluelink” -> ”Deactivate Bluelink”) or in the Bluelink app (under “More” -> “Account” -> “Terminate account”).
+12.3. Sample withdrawal form (complete and return this form only if you wish to withdraw from the contract.)
+
+To [Company Name], [Postal Address], [Phone number], [Email Address] I/We (*) hereby give notice that
+I/We (*) withdraw from my/our (*) contract of sale of the following goods (*)/for the provision of the following service (*),
+Ordered on (*)/received on (*),
+Name of consumer(s),
+Address of consumer(s),
+Signature of consumer(s) (only if this form is submitted on paper),
+Date
+
+(*) Delete as appropriate.
+13. Changes
+We reserve the right to amend these Terms or the Services due to future economic, legal and technical developments in line with the following provisions.
+13.1. Changes that are legally advantageous or neutral to you shall take eect immediately.
+13.2. Further, we may only make changes to the Services that go beyond what is required to maintain conformity with the contract (e.g. updates, cf. Sec. 5) if there is a valid reason for such a change, the change does not involve additional costs for you nor changes the essence of the Services and you are informed in clear and understandable language of the change. A valid reason shall exist if the change is necessary in order to
+
+improve access to and usability of the Services (including introducing new or enhances existing functions or functionalities),
+adapt the Services to amended legal requirements,
+adapt the Services to technical changes or developments in systems operated by us or third parties or to technical developments in our users' systems;
+changes necessary due to important operational reasons;
+changes resulting from the need to remove ambiguities, errors or clerical mistakes possibly occurring in the Terms of Use; or
+changes to the contact details, names, identication numbers, electronic addresses or links provided in the Terms of Use.
+
+13.3. In case of changes subject to Sec. 13.2 that have signicant negative impact on your access to or the usability of the Services, you will be informed with reasonable advance notice in clear and understandable language by means of a durable medium about the features and timing of the change and your right to terminate the contract free of charge at any time; unless we provide you access to and use of the unchanged Services at no additional cost. You may also exercise your right of termination by deactivating the Services in the infotainment system (under “Settings”->”Bluelink”->”Deactivate Bluelink”) or the Bluelink app (under “More”->“Account”->“Terminate account”).
+13.4. Otherwise, in case of all other material changes to these Terms, we will notify you of the intended changes with reasonable advance notice. If you do not tell us otherwise in writing (for example by sending a letter or email) within two weeks after our notication, we will assume that you accept the changes (we will remind you of this when we inform you about the intended changes). If you tell us that you do not accept the changes, we may terminate our contract based on these Terms with eect from the date on which the changes should have applied.
+14. Miscellaneous
+14.1. These Terms (as well as any given data protection declaration) form the contract between you and us regarding the Services and reect our entire agreement with respect to the Services (but please note, as mentioned in Section 2.2 above, separate terms of use apply to the Hyundai account). Any declarations or notications you or we make under our contract – for example, to change the terms of our contract, or to terminate our contract – will only be effective if made in text form (for example by sending a letter or email) or as otherwise expressly set forth in these Terms. Oral statements or agreements are not sucient.
+14.2. We will only accept other or additional terms if we have explicitly accepted them in writing.
+14.3. We may assign our rights and obligations under our contract with you to a third party either in full or in part. We will notify you of the intended assignment at least four weeks in advance. If you do not agree with the assignment, you can terminate your contract with us at any time (we will remind you of this when we inform you about the intended assignment).
+14.4. If any term of our contract should be found invalid, you and we agree that the other terms of our contract shall remain valid and unaected.
+14.5. Each of the paragraphs of these Terms operates separately. If any court or relevant authority decides that any of them are unlawful, the remaining paragraphs will remain in full force and eect.
+14.6. Even if we delay the enforcement of this contract, we can still enforce it later. If we do not insist immediately that you take any action that is required under these Terms, or if we delay in taking steps against you in the event that you violate this contract, this will not mean that you do not have to take this action and it will not prevent us taking steps against you at a later date.
+15. Customer Service / Complaints
+15.1. If you have questions or complaints, you can contact us at:
+Hyundai Connected Mobility GmbH, Kaiserleipromenade5, 63067 Oenbach, Germany Phone: +49 69271472377 Email: bluelink@hyundai-europe.com
+15.2. Alternative dispute resolution is a process where an independent body considers the facts of a dispute and seeks to resolve it, without you having to go to court. The European Commission provides a platform for alternative dispute resolution. You can access the platform via http://ec.europa.eu/consumers/odr/. Hyundai is not obliged to and does not participate in alternative dispute resolution procedures before an alternative dispute resolution entity for consumers.
+16. Warranty
+16.1. In the event that the provided Services are defective, warranty obligations shall apply in accordance with the applicable statutory provisions.
+16.2. In addition, the following shall apply with regard to the Services:
+a) If you do not install an update or fail to install it properly, we shall not be liable for any defects of the Services caused through the lack of the particular update.
+b) As a general rule, if the Services (including its updates) show defects, it shall be presumed that the Services were defective during the previous period of the provision. This does not apply if
+i) your digital environment was not compatible with the technical requirements of the Services at the relevant time as communicated by us, or
+ii) we cannot investigate whether the technical requirements have been complied with as a consequence of your refusal to cooperate in investigating the relevant circumstances in an appropriate manner and where possible for these purposes and we intended to use technical means to determine the relevant circumstances that represent the least intrusion for you.
+16.3. When you assert your claims in connection with defects, you shall cooperate with us to the extent reasonably necessary and possible to enable us to investigate whether the cause of the defect was in your digital environment. Your obligation to cooperate is limited to the technically available means that are least intrusive for you.
+17. Liability
+17.1. We will not be liable to you for the accuracy and timeliness of the data and information transmitted via the Services.
+17.2. We will not be liable to you for the consequences of disruption, interruptions and functional impairments of the Services.
+17.3. We are responsible to you for foreseeable loss and damage caused by us. If we fail to comply with these Terms of Use, we are responsible for loss or damage you suer that is a foreseeable result of our breaking these terms or our failing to apply reasonable care and skill, but we are not responsible for any loss or damage that is not foreseeable. Loss or damage is foreseeable if either it is obvious that it will happen or if, at the time you accepted these Terms of Use, both we and you knew it might happen.
+17.4. We do not exclude or limit in any way our liability to you where it would be unlawful to do so. This includes liability for death or personal injury caused by our negligence or the negligence of our employees, agents or subcontractors or for fraud or fraudulent misrepresentation.
+17.5. When we are liable for damage to your property. If defective digital content that we have supplied damages a device or digital content belonging to you, we will either repair the damage or pay you compensation. However, we will not be liable for damage that you could have avoided by following our advice to apply an update oered to you free of charge or for damage that was caused by you failing to correctly follow installation instructions or have in place the minimum system requirements advised by us.
+17.6. We are not liable for business losses. Hyundai Bluelink is for private use. If you use Hyundai Bluelink for any commercial, business or resale purpose, we will have no liability to you for any loss of prot, loss of business, business interruption, or loss of business opportunity.
+17.7. Hyundai Bluelink and the Services are provided for general information. They do not oer advice on which you should rely. You must obtain professional or specialist advice before taking, or refraining from, any action on the basis of information obtained from Hyundai Bluelink or the Services. Although we make reasonable eorts to update the information provided by Hyundai Bluelink and the Service, we make no representations, warranties or guarantees, whether express or implied, that such information is accurate, complete or up to date.
+17.8. Hyundai Bluelink and the Services have not been developed to meet your individual requirements. Please check that the facilities and functions of Hyundai Bluelink and the Services meet your requirements.
+18. Place of jurisdiction and applicable law
+18.1. The exclusive place of jurisdiction for all claimsarising from the business relationship with merchants is Oenbach.
+18.2. The same place of jurisdiction shall apply if the customerdoes not have a general place of jurisdiction in Germany, moves its domicile orusual place of residence after conclusion of the contract or if its domicile orusual place of residence is not known at the time the action is brought.
+18.3. All disputes arising from or on the basis of thiscontractual relationship shall be governed by German law to the exclusion ofthe UN Convention on Contracts for the International Sale of Goods (CISG). If the customer is a consumer i.e. every natural person whoenters into a legal transaction for purposes that predominantly are outside histrade, business or profession, this choice of law shall apply only to theextent that it oers the consumer the mandatory applicable consumer protectionprovisions of the country in which the consumer has its usual place ofresidence at the time of its order.
+
+Albanian
+
+PDF
+351.36 KB
+
+Bosnian
+
+PDF
+338.67 KB
+
+Bulgarian
+
+PDF
+360.02 KB
+
+Croatian
+
+PDF
+339.13 KB
+
+Czech
+
+PDF
+347.08 KB
+
+Danish
+
+PDF
+337.14 KB
+
+Dutch
+
+PDF
+346.90 KB
+
+English
+
+PDF
+336.93 KB
+
+Estonian
+
+PDF
+333.29 KB
+
+Finnish
+
+PDF
+330.58 KB
+
+French
+
+PDF
+365.36 KB
+
+Georgian
+
+PDF
+356.47 KB
+
+German
+
+PDF
+358.26 KB
+
+Greek
+
+PDF
+378.65 KB
+
+Hungarian
+
+PDF
+357.32 KB
+
+Icelandic
+
+PDF
+345.54 KB
+
+Italian
+
+PDF
+347.99 KB
+
+Latvian
+
+PDF
+344.63 KB
+
+Lithuanian
+
+PDF
+350.33 KB
+
+Macedonian
+
+PDF
+357.91 KB
+
+Montenegrin
+
+PDF
+340.35 KB
+
+Norwegian
+
+PDF
+336.11 KB
+
+Polish
+
+PDF
+348.00 KB
+
+Portuguese
+
+PDF
+347.81 KB
+
+Romanian
+
+PDF
+354.70 KB
+
+Serbian
+
+PDF
+338.92 KB
+
+Slovakian
+
+PDF
+348.15 KB
+
+Slovenian
+
+PDF
+331.40 KB
+
+Spanish
+
+PDF
+345.67 KB
+
+Swedish
+
+PDF
+340.67 KB
+
+Ukrainian
+
+PDF
+366.65 KB
+
+If you are looking for previously published Terms or Use, please click here.

@@ -1,0 +1,42 @@
+{
+  "service_family": [
+    { "code": "website", "ko": "웹사이트", "en": "Website" },
+    { "code": "account_portal", "ko": "계정 포털", "en": "Account portal" },
+    { "code": "connected_services", "ko": "커넥티드 서비스", "en": "Connected services" },
+    { "code": "vehicle_tech", "ko": "차량 기술", "en": "Vehicle tech" },
+    { "code": "navigation_update", "ko": "내비 업데이트", "en": "Navigation update" },
+    { "code": "store_payment", "ko": "스토어결제", "en": "Store & payment" },
+    { "code": "used_vehicle_locator", "ko": "중고차 조회", "en": "Used vehicle locator" },
+    { "code": "service_app", "ko": "서비스 앱", "en": "Service app" }
+  ],
+  "data": [
+    { "code": "data.account_id", "ko": "계정 식별정보", "en": "Account identifier" },
+    { "code": "data.contact", "ko": "연락처", "en": "Contact details" },
+    { "code": "data.vin", "ko": "차대번호(VIN)", "en": "Vehicle Identification Number" },
+    { "code": "data.vehicle_diagnostics", "ko": "차량 진단정보", "en": "Vehicle diagnostics" },
+    { "code": "data.driving_behavior", "ko": "주행 행태", "en": "Driving behavior" },
+    { "code": "data.precise_location", "ko": "정밀 위치정보", "en": "Precise location" },
+    { "code": "data.app_device", "ko": "앱·기기정보", "en": "App & device info" },
+    { "code": "data.payment", "ko": "결제정보", "en": "Payment info" },
+    { "code": "data.voice_recording", "ko": "음성녹음", "en": "Voice recording" },
+    { "code": "data.call_recording", "ko": "콜센터 녹취", "en": "Call center recording" }
+  ],
+  "purpose": [
+    { "code": "purpose.service_provision", "ko": "서비스 제공", "en": "Service provision" },
+    { "code": "purpose.remote_control", "ko": "원격 제어", "en": "Remote control" },
+    { "code": "purpose.safety_sos", "ko": "안전/SOS", "en": "Safety & SOS" },
+    { "code": "purpose.maintenance", "ko": "유지보수", "en": "Maintenance" },
+    { "code": "purpose.analytics_improvement", "ko": "분석·개선", "en": "Analytics & improvement" },
+    { "code": "purpose.marketing", "ko": "마케팅", "en": "Marketing" },
+    { "code": "purpose.legal_obligation", "ko": "법적 의무", "en": "Legal obligation" },
+    { "code": "purpose.payment_processing", "ko": "결제 처리", "en": "Payment processing" },
+    { "code": "purpose.customer_support", "ko": "고객 지원", "en": "Customer support" }
+  ],
+  "transfer_mechanism": [
+    { "code": "scc", "ko": "표준계약조항(SCC)", "en": "Standard Contractual Clauses" },
+    { "code": "adequacy", "ko": "적정성 결정", "en": "Adequacy decision" },
+    { "code": "consent", "ko": "정보주체 동의", "en": "Data subject consent" },
+    { "code": "intra_group_agreement", "ko": "그룹사 내부계약", "en": "Intra-group agreement" },
+    { "code": "unknown", "ko": "미확인", "en": "Unknown" }
+  ]
+}

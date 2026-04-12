@@ -1,0 +1,476 @@
+Descarregar a aplicação
+
+Alterar país
+
+Austria
+
+Belgium(French)
+
+Belgium(Dutch)
+
+Switzerland(German)
+
+Switzerland(French)
+
+Switzerland(Italian)
+
+Czech Republic
+
+Germany
+
+Denmark
+
+Estonia
+
+Spain
+
+European Union
+
+Finland
+
+France
+
+Greece
+
+Croatia
+
+Hungary
+
+Ireland
+
+Iceland
+
+Italy
+
+Lithuania
+
+Luxembourg
+
+Latvia
+
+Netherlands
+
+Norway
+
+Poland
+
+Portugal
+
+Romania
+
+Sweden
+
+Slovenia
+
+Slovakia
+
+UK
+
+open menu
+
+Alterar país
+
+Austria
+
+Belgium(French)
+
+Belgium(Dutch)
+
+Switzerland(German)
+
+Switzerland(French)
+
+Switzerland(Italian)
+
+Czech Republic
+
+Germany
+
+Denmark
+
+Estonia
+
+Spain
+
+European Union
+
+Finland
+
+France
+
+Greece
+
+Croatia
+
+Hungary
+
+Ireland
+
+Iceland
+
+Italy
+
+Lithuania
+
+Luxembourg
+
+Latvia
+
+Netherlands
+
+Norway
+
+Poland
+
+Portugal
+
+Romania
+
+Sweden
+
+Slovenia
+
+Slovakia
+
+UK
+
+Documentos Legais - Kia Connect
+
+Privacy Policy
+
+Documentos Legais - Conta Kia
+
+Kia Connect Termos de Utilização
+
+Kia Connect Política de privacidade
+
+Aviso de privacidade do website
+
+Política de cookies
+
+Última Atualização: Outubro 2025
+
+1. Introdução
+
+Este aviso de privacidade (“Aviso de Privacidade do Website”) é emitido pela Kia Connect GmbH (“Kia Connect”, “nós”, “nos” e “nosso”). É dirigido a indivíduos que visitam o nosso website em https://connect.kia.com/eu (“Website”) e a outros indivíduos fora da Kia Connect com quem comunicamos ou mantemos uma relação comercial (em conjunto, “você”), incluindo:
+
+• Nossos (potenciais) clientes a quem fornecemos os nossos serviços ou vendemos os nossos produtos ou com quem comunicamos sobre os nossos serviços ou produtos (incluindo empregados e outros membros da equipa, representantes, consultores e assessores dos nossos (potenciais) clientes empresariais);
+
+• Nossos (potenciais) parceiros comerciais (por exemplo, nossos fornecedores, prestadores de serviços, entidades afiliadas, concessionários Kia) e seus empregados, membros da equipa, representantes, consultores e assessores;
+
+• Participantes nos nossos eventos (por exemplo, workshops ou seminários); e
+
+• Visitantes das nossas instalações.
+
+Os termos definidos utilizados neste Aviso de Privacidade do Website são explicados na Secção 13 abaixo.
+Note que, além do Aviso de Privacidade do Website, quando apropriado, podemos informá-lo separadamente sobre o Processamento dos seus Dados Pessoais, por exemplo em formulários de consentimento ou avisos de privacidade separados.
+
+Por exemplo:
+
+• O Aviso de Privacidade da App Kia está disponível aqui
+.
+• O Aviso de Privacidade da Kia Connect está disponível aqui
+.
+• O Aviso de Privacidade da Conta Kia está disponível aqui
+.
+• O Aviso de Privacidade da Loja Kia Connect está disponível aqui
+.
+
+2. Responsável pelo Tratamento
+
+Salvo indicação expressa em contrário, a Kia Connect GmbH é a Responsável pelo Tratamento dos Dados Pessoais processados conforme estabelecido neste Aviso de Privacidade do Website.
+
+Se tiver quaisquer perguntas sobre este Aviso de Privacidade do Website ou sobre o nosso Processamento dos seus Dados Pessoais, ou se desejar exercer algum dos seus direitos, pode contactar-nos em:
+
+• Kia Connect GmbH, Theodor-Heuss-Allee 11, 60486 Frankfurt am Main, Alemanha, e-mail: [email protected]
+
+Também pode utilizar o nosso formulário de contacto, disponível aqui
+.
+Em alternativa, pode contactar o nosso encarregado de proteção de dados através dos dados de contacto fornecidos na Secção 3 abaixo.
+
+3. Encarregado de Proteção de Dados
+
+Designámos um encarregado externo de proteção de dados (“DPO”
+). Pode contactar o nosso DPO em:
+
+• Kia Connect GmbH, Encarregado de Proteção de Dados, Theodor-Heuss-Allee 11, 60486 Frankfurt am Main, Alemanha, e-mail: [email protected].
+
+4. Recolha de Dados Pessoais
+
+Recolhemos ou obtemos Dados Pessoais sobre si a partir das seguintes fontes:
+
+• Dados fornecidos por si: Obtemos Dados Pessoais quando estes nos são fornecidos por si (por exemplo, quando nos contacta por e-mail, telefone, através do nosso formulário de contacto ou por qualquer outro meio).
+• Dados do Website: Recolhemos ou obtemos Dados Pessoais quando visita o Website.
+• Terceiros: Na medida permitida pela legislação aplicável, podemos obter os seus Dados Pessoais de terceiros (por exemplo, o seu empregador), incluindo outros membros do grupo Kia. Também podemos obter os seus Dados Pessoais de autoridades públicas (por exemplo, em ligação com processos administrativos e legais), ou de determinados prestadores de serviços ou consultores.
+• Fontes publicamente disponíveis: Em alguns casos, podemos obter os seus Dados Pessoais de fontes publicamente disponíveis. Isto inclui, entre outros, registos públicos ou informações disponíveis na Internet (por exemplo, redes sociais).
+
+Dependendo da relação comercial que mantém connosco ou que o seu empregador mantém connosco, também podemos criar Dados Pessoais sobre si (por exemplo, em ligação com reuniões, participação nos nossos eventos ou entrevistas de emprego).
+
+5. Tipos de Dados Pessoais que Processamos
+
+Processamos os seguintes tipos de Dados Pessoais sobre si (“Dados Pessoais Relevantes”):
+
+• Detalhes Pessoais
+: dados que se relacionam diretamente com a sua identidade (por exemplo, primeiro nome; apelido; nacionalidade; título).
+• Dados Contratuais
+: dados que se relacionam com a celebração ou execução de um contrato (por exemplo, conteúdo do contrato; informações sobre os serviços ou produtos fornecidos ao abrigo do contrato; informações necessárias ou utilizadas para a execução de um contrato; tipo e data da celebração; duração; assinatura).
+• Registos de Consentimento
+: registos de quaisquer consentimentos que tenha dado, juntamente com a data e hora, meio de consentimento e quaisquer informações relacionadas (por exemplo, objeto do consentimento).
+• Detalhes de Contacto
+: dados que permitem a comunicação (por exemplo, endereço de correspondência; endereço de e-mail; número de telefone; detalhes de redes sociais).
+• Dados de Comunicação
+: dados que constituem o conteúdo da comunicação (por exemplo, conteúdo de conversas; correspondência escrita enviada por e-mail, formulário de contacto, chat, carta ou outros meios de comunicação; documentos de candidatura; registos das suas interações connosco).
+• Detalhes do Empregador
+: dados que se relacionam com o seu empregador e a sua função (por exemplo, nome do seu empregador; cargo; departamento; função ou papel na empresa).
+• Dados Técnicos
+: dados que se relacionam com o seu dispositivo, o seu veículo, a sua utilização do nosso Website ou outras ofertas online (por exemplo, endereço IP; número de identificação do veículo (VIN); sistema operativo; data e hora de acesso; região; URL do website de referência; fuso horário; volume de dados transmitidos; tipo de navegador; definições de idioma).
+• Dados de Utilização
+: registos das suas interações com a nossa publicidade online e conteúdos no Website (secções visitadas; hora de acesso; acesso a conteúdos; interesse em conteúdos; quaisquer cliques de rato ou interações no ecrã tátil).
+• Opiniões e Perspetivas
+: dados que se relacionam com as suas opiniões e perspetivas sobre nós (por exemplo, opiniões e perspetivas que publica publicamente sobre nós em plataformas de redes sociais; opiniões e perspetivas que nos envia diretamente; reclamações; feedback).
+• Detalhes de Visitantes
+: dados que se relacionam com visitas às nossas instalações (por exemplo, hora e data da visita; finalidade da visita; necessidades específicas do visitante).
+
+6. Finalidades do Processamento e Bases Legais para o Processamento
+
+As finalidades para as quais processamos os Dados Pessoais Relevantes, sujeitas à legislação aplicável, e as bases legais sobre as quais realizamos esse Processamento são as seguintes:
+
+6.1. Visita ao nosso Website
+
+Quando visita o nosso Website, certas informações técnicas são processadas automaticamente, sendo necessárias para a disponibilização e utilização do Website. Essas informações são processadas por nós para os seguintes fins: (i) disponibilizar-lhe o Website; (ii) prevenir e/ou corrigir falhas do Website; e (iii) proteger os sistemas de TI utilizados para disponibilizar o Website.
+
+Dados Pessoais Relevantes: Dados Técnicos; Dados de Utilização.
+
+Base legal: O Processamento é necessário para a prossecução dos nossos interesses legítimos (Art. 6 (1) f) RODO). Os nossos interesses legítimos são: disponibilizar um website adequado, sem erros e seguro.
+
+6.2. Comunicação e Gestão de Relacionamento
+
+Processamos os seus Dados Pessoais para comunicar com clientes (potenciais) relativamente aos nossos serviços ou produtos, para responder e tratar pedidos submetidos através do nosso formulário de contacto, e-mail, carta, telefone ou outros meios, bem como para atualizar os seus dados de contacto. Quando utiliza o nosso formulário de contacto, o seu pedido é automaticamente classificado e categorizado com funcionalidades baseadas em IA no nosso ambiente de cloud de serviços.
+
+Dados Pessoais Relevantes: Detalhes Pessoais; Dados Contratuais; Detalhes de Contacto; Dados de Comunicação; Detalhes do Empregador; Opiniões e Perspetivas; Dados Técnicos; Identificadores Pseudonimizados.
+
+Base legal: O Processamento é necessário: (i) para a execução do contrato que celebrou connosco ou para a celebração do contrato connosco (Art. 6 (1) b) RODO); e (ii) para a prossecução dos nossos interesses legítimos (Art. 6 (1) f) RODO). Os nossos interesses legítimos são: construir ou manter a relação com os nossos clientes (potenciais), prestar o melhor serviço possível aos nossos clientes e responder adequadamente a pedidos relevantes.
+
+6.3. Gestão de Visitas às Nossas Instalações
+
+Processamos os seus Dados Pessoais para efeitos de criação e gestão de listas de visitantes, bem como para tomar medidas destinadas a satisfazer necessidades específicas dos visitantes das nossas instalações.
+
+Dados Pessoais Relevantes: Detalhes Pessoais, Dados Contratuais, Detalhes de Contacto, Dados de Comunicação, Detalhes de Visitantes, Detalhes do Empregador.
+
+Base legal: O Processamento é necessário para a prossecução dos nossos interesses legítimos (Art. 6 (1) f) RODO). Os nossos interesses legítimos são: gerir visitas às nossas instalações e satisfazer necessidades específicas dos nossos visitantes.
+
+6.4. Administração Financeira
+
+Processamos os seus Dados Pessoais para efeitos de faturação, contabilidade, auditorias, gestão de fornecedores e cumprimento das leis e regulamentos fiscais e financeiros aplicáveis.
+
+Dados Pessoais Relevantes: Detalhes Pessoais, Dados Contratuais, Detalhes de Contacto, Dados de Comunicação, Detalhes do Empregador.
+
+Base legal: O Processamento é necessário (i) para o cumprimento de uma obrigação legal a que estamos sujeitos (Art. 6 (1) c) RODO); e (ii) para a prossecução dos nossos interesses legítimos (Art. 6 (1) f) RODO). Os nossos interesses legítimos são: gerir os assuntos financeiros da nossa empresa.
+
+6.5. Gestão de Sistemas de TI
+
+Processamos os seus Dados Pessoais para efeitos de gestão e operação dos nossos sistemas de TI, realização de auditorias aos nossos sistemas de TI e monitorização dos nossos sistemas e processos.
+
+Dados Pessoais Relevantes: Detalhes Pessoais, Detalhes de Contacto, Dados de Comunicação, Dados Técnicos.
+
+Base legal: O Processamento é necessário (i) para o cumprimento de uma obrigação legal a que estamos sujeitos (Art. 6 (1) c) RODO); e (ii) para a prossecução dos nossos interesses legítimos (Art. 6 (1) f) RODO). Os nossos interesses legítimos são: garantir o funcionamento eficiente e seguro dos nossos sistemas de TI.
+
+6.6. Organização, Acolhimento e Realização de Eventos e Sessões de Formação
+
+Processamos os seus Dados Pessoais para efeitos de organização, acolhimento e realização de eventos e sessões de formação, bem como para criar e gerir listas de participantes e comunicar com os participantes relativamente a detalhes dos respetivos evento(s) e sessão(ões) de formação.
+
+Dados Pessoais Relevantes: Detalhes Pessoais, Detalhes de Contacto, Dados Contratuais, Dados de Comunicação, Detalhes de Visitantes, Detalhes do Empregador.
+
+Base legal: O Processamento é necessário para a prossecução dos nossos interesses legítimos (Art. 6 (1) f) RODO). Os nossos interesses legítimos são: organizar, acolher e realizar um evento ou sessão de formação.
+
+6.7. Recrutamento e Candidaturas a Emprego
+
+Processamos os seus Dados Pessoais para efeitos de realização do processo de candidatura, análise de candidaturas, contacto e comunicação com os candidatos, bem como para a realização de entrevistas de emprego.
+
+Dados Pessoais Relevantes: Detalhes Pessoais, Detalhes de Contacto, Dados Contratuais, Dados de Comunicação, Detalhes do Empregador.
+
+Base legal: O Processamento é necessário para a execução do contrato que celebrou connosco ou para a celebração do contrato connosco (Art. 6 (1) b) RODO, Sec. 26 BDSG).
+
+6.8. Gestão de Fornecedores e Parceiros Comerciais
+
+Processamos os seus Dados Pessoais para efeitos de gestão de fornecedores e parceiros comerciais, correspondência pré-contratual, solicitação de detalhes sobre propostas e estimativas de custos, receção de bens ou serviços, execução do contrato e comunicação relativa à execução do contrato, bem como processamento de pagamentos.
+
+Dados Pessoais Relevantes: Detalhes Pessoais, Detalhes de Contacto, Dados Contratuais, Dados de Comunicação, Detalhes do Empregador.
+
+Base legal: O Processamento é necessário: (i) para a execução do contrato que celebrou connosco (Art. 6 (1) b) RODO); e (ii) para a prossecução dos nossos interesses legítimos (Art. 6 (1) f) RODO). Os nossos interesses legítimos são: execução do contrato com um fornecedor ou parceiro comercial.
+
+6.9. Operação do Negócio
+
+Podemos processar Dados Pessoais Relevantes para fins de gestão e administração interna, incluindo a gestão de registos ou a manutenção de outros protocolos internos.
+
+Potencialmente, todos os Dados Pessoais Relevantes podem ser processados para esta finalidade (uma vez que dependem do conteúdo e da natureza da operação do negócio).
+
+Base legal: O Processamento é necessário para a prossecução dos nossos interesses legítimos (Art. 6 (1) f) RODO). Os nossos interesses legítimos são: garantir o funcionamento adequado e eficiente do nosso negócio.
+
+6.10. Conformidade Legal
+
+Podemos processar Dados Pessoais Relevantes para cumprir leis, diretivas, recomendações ou solicitações de órgãos reguladores aplicáveis (por exemplo, solicitações para divulgar Dados Pessoais a tribunais ou órgãos reguladores, incluindo a polícia).
+
+Potencialmente, todos os Dados Pessoais Relevantes podem ser processados para esta finalidade (uma vez que dependem do conteúdo e da natureza das leis, diretivas, recomendações ou solicitações aplicáveis).
+
+Base legal: Esse Processamento é necessário: (i) para o cumprimento de uma obrigação legal à qual estamos sujeitos (Art. 6 (1) c) RODO); ou (ii) para a prossecução dos nossos interesses legítimos (Art. 6 (1) f) RODO). Os nossos interesses legítimos são: garantir a nossa conformidade com as obrigações legais aplicáveis.
+
+6.11. Processos Judiciais e Investigações
+
+Podemos processar Dados Pessoais Relevantes para avaliar, exercer e defender os nossos direitos e interesses.
+
+Potencialmente, todos os Dados Pessoais Relevantes podem ser processados para esta finalidade (uma vez que dependem do conteúdo e da natureza dos respetivos processos ou investigações).
+
+Base legal: O Processamento é necessário para a prossecução dos nossos interesses legítimos (Art. 6 (1) f) RODO). Os nossos interesses legítimos são: proteger os nossos interesses e fazer valer os nossos direitos.
+
+6.12. Análise e Otimização da Web
+
+Processamos determinados Dados Pessoais para efeitos de avaliação da utilização do Website e das suas funções, bem como para elaborar relatórios sobre a atividade do Website. Para este fim, e sujeito ao seu consentimento prévio, armazenamos informações no seu navegador ou no seu dispositivo final (por exemplo, cookies) para obter mais detalhes sobre a sua interação com o Website e compilar informações relativas à utilização do Website num perfil de utilizador. Isto ajuda-nos a identificar: (i) os períodos durante os quais o Website, as suas funções e/ou conteúdos são mais frequentemente acedidos e utilizados; e (ii) as partes ou áreas do Website que necessitam de otimização. Consulte a Secção 7 para mais detalhes sobre a nossa utilização de cookies e tecnologias semelhantes.
+
+Para este fim, utilizamos a ferramenta Google Analytics. Note que quaisquer Dados Pessoais (em particular, o endereço IP) recolhidos para efeitos de análise em ligação com o Google Analytics serão primeiro transmitidos e armazenados em servidores controlados por nós, onde os dados relevantes serão associados a um número interno de identificação de utilizador (que está ligado a um dispositivo final). Os dados relevantes serão então transferidos para a Google apenas de forma pseudonimizada. Este processo é também conhecido como “rastreamento do lado do servidor”.
+
+Dados Pessoais Relevantes: Registos de Consentimento, Dados Técnicos, Dados de Utilização.
+
+Base legal: O Processamento baseia-se no seu consentimento prévio (Art. 6 (1) a) RODO).
+
+7. Cookies e outras Tecnologias
+
+Utilizamos cookies e outras tecnologias, tais como pixel tags, web bugs, armazenamento web e outros ficheiros e tecnologias semelhantes que podem desempenhar as mesmas funções que os cookies (“Cookies”
+) no Website e processamos informações relacionadas para os fins descritos abaixo.
+
+Cookies
+são pequenos ficheiros de texto que podem ser colocados no seu dispositivo (por exemplo, computador; smartphone) quando visita um website. São armazenados localmente no seu dispositivo e mantidos prontos para posterior recuperação. Cada cookie contém uma sequência característica de números que permite a identificação do navegador quando volta a visitar o website relevante ou outro website que reconheça esse cookie. Os cookies armazenam informações, como as suas preferências de idioma, a duração da sua visita ou as suas entradas no website.
+
+As informações processadas em ligação com a utilização de Cookies podem ser informações sobre si, as suas preferências ou o seu dispositivo. As informações que processamos em ligação com a utilização de Cookies incluem Dados Técnicos, Registos de Consentimento e Dados de Utilização.
+
+Utilizamos Cookies estritamente necessários para o funcionamento do nosso Website, para que seja fornecido de forma segura e para armazenar informações sobre o seu consentimento ou rejeição de cookies ("Cookies Estritamente Necessários"
+). A base legal para o processamento dos seus Dados Pessoais em ligação com tais Cookies Estritamente Necessários é o nosso interesse legítimo (Art. 6 (1) f) RODO) em operar o Website de forma eficiente e segura.
+
+Sujeito ao seu consentimento prévio, podemos utilizar Cookies que (i) permitem ao Website fornecer funcionalidades melhoradas ("Cookies Funcionais"
+); (ii) nos permitem medir e melhorar o desempenho do Website ("Cookies de Desempenho"
+); e/ou (iii) permitem apresentar conteúdos personalizados de acordo com os seus interesses ("Cookies de Segmentação"
+). A base legal para o processamento dos seus Dados Pessoais em ligação com tais cookies é o seu consentimento (Art. 6 (1) a) RODO).
+
+Utilizamos a ferramenta OneTrust fornecida pelo prestador de serviços OneTrust Technology Limited para efeitos de gestão de consentimento relacionado com cookies.
+
+Note que pode gerir as suas preferências de consentimento acedendo ao "Centro de Preferências de Privacidade", acessível clicando no botão flutuante de definições de cookies disponível em qualquer página do Website, no canto inferior esquerdo. É também aí que pode encontrar mais informações sobre cada cookie. Além disso, encontrará mais informações sobre cookies e a sua utilização no Website na nossa Política de Cookies, disponível aqui
+.
+
+8. Divulgação de Dados Pessoais a Terceiros
+
+Quando nos contacta relativamente a um serviço prestado por outra entidade do grupo Kia ou por um terceiro, partilhamos os seus Dados Pessoais Relevantes com essa entidade do grupo Kia ou com esse terceiro, para que o seu pedido possa ser respondido adequadamente. Esses dados só serão partilhados mediante o seu pedido.
+
+Além disso, divulgamos Dados Pessoais Relevantes a outras entidades dentro do grupo Kia, para fins comerciais legítimos e para a operação do Website, em conformidade com a legislação aplicável. Também divulgamos Dados Pessoais Relevantes a outras entidades dentro do grupo Kia nos casos em que tenhamos obtido o seu consentimento específico prévio para tal divulgação. Adicionalmente, divulgamos Dados Pessoais Relevantes a:
+
+• você e, quando apropriado, aos seus representantes designados;
+• autoridades legais e regulatórias, mediante solicitação, ou para efeitos de comunicação de qualquer violação real ou suspeita da legislação ou regulamentação aplicável;
+• contabilistas, auditores, consultores, advogados e outros assessores profissionais externos, sujeitos a obrigações contratuais ou legais vinculativas de confidencialidade;
+• Subcontratantes terceiros (como fornecedores da infraestrutura técnica e serviços de manutenção relevantes para o Website; prestadores de serviços relacionados com o apoio ao cliente, por exemplo, serviços de call center);
+• qualquer parte relevante, órgão regulador, autoridade governamental, agência de aplicação da lei ou tribunal, na medida necessária para o estabelecimento, exercício ou defesa de direitos legais;
+• qualquer parte relevante, órgão regulador, autoridade governamental, agência de aplicação da lei ou tribunal, para efeitos de prevenção, investigação, deteção ou perseguição de infrações penais ou execução de sanções penais; e
+• qualquer adquirente(s) ou sucessor(es) relevante(s), no caso de vendermos ou transferirmos toda ou qualquer parte relevante do nosso negócio ou ativos (incluindo em caso de reorganização, dissolução ou liquidação).
+
+Se contratarmos um Subcontratante terceiro para Processar os seus Dados Pessoais, o Subcontratante estará sujeito a obrigações contratuais vinculativas para: (i) apenas Processar os Dados Pessoais de acordo com as nossas instruções prévias por escrito; e (ii) utilizar medidas para proteger a confidencialidade e segurança dos Dados Pessoais; juntamente com quaisquer requisitos adicionais previstos na legislação aplicável.
+
+9. Transferência Internacional de Dados Pessoais
+
+Somos membros de um grupo internacional de empresas. Assim, podemos transferir Dados Pessoais dentro do grupo Kia e para outros terceiros, conforme indicado na Secção 8 acima.
+
+Alguns destes destinatários podem estar localizados ou ter operações relevantes fora do seu país e da UE/EEE (por exemplo, na República da Coreia, no Reino Unido ou nos EUA) (“País Terceiro”). Para alguns Países Terceiros, a Comissão Europeia determinou que oferecem um nível adequado de proteção dos Dados Pessoais (por exemplo, a República da Coreia, o Reino Unido), o que também inclui os EUA na medida em que a empresa destinatária nos EUA participe no Quadro de Privacidade de Dados UE-EUA (https://www.dataprivacyframework.gov
+) (“Jurisdicções Adequadas”).
+
+Quando transferimos Dados Pessoais para um destinatário localizado num País Terceiro que não tenha sido determinado como Jurisdição Adequada, nós (ou os nossos Subcontratantes na UE/EEE que transferem Dados Pessoais para subcontratantes em tais Países Terceiros, conforme aplicável) fornecemos garantias adequadas através da celebração de acordos de transferência de dados adotados pela Comissão Europeia (cláusulas contratuais padrão) com os destinatários ou através da adoção de outras medidas eficazes para assegurar um nível adequado de proteção de dados. Uma cópia das respetivas garantias pode ser solicitada a nós ou ao nosso DPO (ver Secção 2 e Secção 3).
+
+10. Conservação de Dados
+
+Os seus Dados Pessoais são armazenados por nós apenas pelo tempo necessário para os fins para os quais foram recolhidos, conforme estabelecido acima. Quando já não necessitarmos dos seus Dados Pessoais para tais fins, iremos eliminá-los dos nossos sistemas e/ou registos e/ou tomar medidas para os anonimizar devidamente, de forma a que já não possa ser identificado a partir desses dados (salvo quando sejamos obrigados a conservar os Dados Pessoais para cumprir obrigações legais ou regulamentares às quais estamos sujeitos; por exemplo, Dados Pessoais contidos em contratos, comunicações e cartas comerciais podem estar sujeitos a requisitos legais de conservação).
+
+O período de conservação pode ser prolongado em conformidade com as leis nacionais quando o Processamento seja necessário para o estabelecimento, exercício ou defesa de direitos legais, e nós ou terceiros tenhamos um interesse legítimo correspondente (por exemplo, durante o período de processos legais iminentes (administrativos e/ou judiciais) e durante a duração desses processos, incluindo os prazos de recurso).
+
+11. Os Seus Direitos Legais
+
+Sujeito à legislação aplicável, poderá ter os seguintes direitos relativamente ao Processamento dos seus Dados Pessoais:
+
+• o direito de não fornecer os seus Dados Pessoais (no entanto, note que não poderemos executar o respetivo contrato, candidatura ou prestar-lhe o apoio completo ao cliente, caso não nos forneça os seus Dados Pessoais (por exemplo, poderemos não conseguir processar a sua candidatura a emprego ou pedidos de cliente sem os detalhes necessários));
+• o direito de solicitar acesso ou cópias dos seus Dados Pessoais, juntamente com informações sobre a natureza, o Processamento e a divulgação desses Dados Pessoais;
+• o direito de solicitar a retificação de quaisquer inexatidões nos seus Dados Pessoais;
+• o direito de solicitar, por motivos legítimos: (i) o apagamento dos seus Dados Pessoais; ou (ii) a restrição do Processamento dos seus Dados Pessoais;
+• o direito de ter determinados Dados Pessoais transferidos para outro Responsável pelo Tratamento, num formato estruturado, de uso comum e legível por máquina, na medida aplicável;
+• quando processamos os seus Dados Pessoais com base no seu consentimento, o direito de retirar esse consentimento (notando que tal retirada não afeta a legalidade de qualquer Processamento realizado antes da data em que recebemos a notificação dessa retirada, e não impede o Processamento dos seus Dados Pessoais com base em quaisquer outras bases legais disponíveis); e
+
+• o direito de apresentar reclamações relativamente ao Processamento dos seus Dados Pessoais junto de uma Autoridade de Proteção de Dados (por exemplo, no Reino Unido, junto do Information Commissioner’s Office (https://ico.org.uk/
+
+) ou, na UE, junto da Autoridade de Proteção de Dados do Estado-Membro da UE em que reside, trabalha ou em que ocorreu a alegada infração (ver a lista aqui
+)).
+
+Sujeito à legislação aplicável, poderá também ter os seguintes direitos adicionais relativamente ao Processamento dos seus Dados Pessoais: • o direito de se opor, por motivos relacionados com a sua situação particular, ao Processamento dos seus Dados Pessoais por nós ou em nosso nome, quando tal Processamento se baseia nos Artigos 6 (1) e) (interesse público) ou 6 (1) f) (interesses legítimos) do RODO; e • o direito de se opor ao Processamento dos seus Dados Pessoais por nós ou em nosso nome para fins de marketing direto.
+
+Isto não afeta os seus direitos legais.
+
+Para exercer um ou mais destes direitos, ou para colocar uma questão sobre estes direitos ou qualquer outra disposição deste Aviso de Privacidade do Website, ou sobre o nosso Processamento dos seus Dados Pessoais, utilize os dados de contacto fornecidos nas Secções 2 e 3 acima. Note que:
+• em alguns casos será necessário fornecer prova da sua identidade antes de podermos dar efeito a estes direitos; e
+• quando o seu pedido exigir o estabelecimento de factos adicionais (por exemplo, uma determinação sobre se algum Processamento não cumpre a legislação aplicável), iremos investigar o seu pedido de forma razoavelmente célere, antes de decidir que ação tomar.
+
+12. Atualizações
+
+Este Aviso de Privacidade do Website pode ser alterado ou atualizado periodicamente para refletir mudanças nas nossas práticas relativamente ao Processamento de Dados Pessoais, ou alterações na legislação aplicável. Incentivamos a que leia atentamente este Aviso de Privacidade do Website e que verifique regularmente esta página para rever quaisquer alterações que possamos efetuar em conformidade com os termos deste Aviso de Privacidade do Website.
+
+13. Definições
+
+“BDSG” significa a Lei Federal de Proteção de Dados da Alemanha (Bundesdatenschutzgesetz der Bundesrepublik Deutschland).
+
+“Responsável pelo Tratamento” significa a pessoa singular ou coletiva, autoridade pública, agência ou outro organismo que, sozinho ou em conjunto com outros, determina as finalidades e os meios do Processamento de Dados Pessoais.
+
+“Autoridade de Proteção de Dados” significa uma autoridade pública independente que tem como função legal supervisionar o cumprimento das leis de proteção de dados aplicáveis.
+
+“RGPD” significa Regulamento (UE) 2016/679 (Regulamento Geral sobre a Proteção de Dados).
+
+“Dados Pessoais” significa qualquer informação relativa a uma pessoa singular identificada ou identificável.
+
+“Processar”/ “Processamento” significa qualquer operação ou conjunto de operações efetuadas sobre Dados Pessoais ou conjuntos de Dados Pessoais, tais como recolha, registo, organização, estruturação, armazenamento, adaptação ou alteração, recuperação, consulta, utilização, divulgação por transmissão, difusão ou qualquer outra forma de disponibilização, alinhamento ou combinação, restrição, apagamento ou destruição.
+
+“Subcontratante” significa uma pessoa singular ou coletiva, autoridade pública, agência ou outro organismo que Processa Dados Pessoais em nome do Responsável pelo Tratamento.
+
+Sobre Nós
+
+Produtos e Serviços
+
+In-App Services
+
+In-Car Services
+
+Digital Key
+
+In-Car Payments
+
+Safety Score
+
+Kia App
+
+Connected Car Assinaturas
+
+Store
+
+Apoio a Cliente
+
+FAQ
+
+Guias
+
+Contacte-Nos
+
+Política de cookies
+
+Documentos Legais - Kia Connect
+
+Kia Connect Privacy Notice
+
+Accessibility
+
+Ficha técnica
+
+Home Page
+
+Privacy Policy
+
+© 2021 Kia Motors Corp.

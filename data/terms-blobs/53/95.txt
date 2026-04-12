@@ -1,0 +1,382 @@
+Privacy
+
+1. THIS NOTICE
+
+*1.1 This notice is provided by Kia UK Limited (company number 04415807) of Walton Green, Walton-on-Thames, Surrey, KT12 1FJ, “we”, “us” or “our”) and is addressed to all customers, prospective customers, prospective employees, individuals who work for suppliers or professional advisors of Kia UK Limited, site visitors (together, “you”). It applies both during and after contact with us.
+
+*1.2 This notice relates to personal information about you from which you can be identified. We refer to this information throughout this notice as “personal data”. Personal data does not include data where the identity has been removed (anonymous data). There are “special categories” of more sensitive personal data which require a higher level of protection. Section 3 of this notice sets out examples of your personal data that we use.
+
+*1.3 We are the controller of your personal data. This means that we are responsible for deciding how we hold and use personal data about you. As a controller we use (or ‘process’) the personal data we hold on you in accordance with this notice.
+
+*1.4 We take our data protection responsibilities seriously and this notice reflects the obligations set out in UK data protection law, tailored by the Data Protection Act 2018, the UK General Data Protection Regulation (“UK GDPR”) and any other laws in England giving effect to its provisions, in addition to other data protection legislation where applicable such as the Privacy and Electronic Communications Regulations.
+
+*1.5 This notice sets out how we collect and process your personal data. This notice also provides certain information that is legally required and lists your rights in relation to your personal data.
+
+*1.6 If you need to contact us in connection with our processing of your personal data, then you can do so by contacting our Data Protection Officer at dpo@kia.co.uk or by post to Data Protection Officer, Kia UK Ltd, Walton Green, Walton-on-Thames, Surrey KT12 1FJ.
+
+*1.7 Your personal data belongs to you and it is your choice whether you provide it to us. However, because we need certain items of your personal data in order to perform our obligations to you, please be aware that if you do not provide all of the requested detail we request from you then we may not be able to fulfil all of your requirements. It is important that the personal data we hold about you is accurate and current. Please keep us informed of any changes during your relationship with us.
+
+*1.8 Please read this notice carefully, so that you are aware of how and why we are using your data.
+
+*1.9 This notice may be amended or updated from time to time. The changes will be made on www.kia.com/uk and/or we may inform you accordingly of changes implemented.
+
+*1.10 This notice does not form part of any contract to provide services.
+
+2. PRINCIPLES OF DATA PROTECTION
+
+*2.1 The UK GDPR requires that the personal data we hold about you must be:
+
+*2.1.1 used lawfully, fairly and in a transparent way;
+
+*2.1.2 collected only for valid purposes that we have clearly explained to you and not used in any way that is incompatible with those purposes;
+
+*2.1.3 relevant to the purposes we have told you about and limited only to those purposes;
+
+*2.1.4 accurate and kept up to date;
+
+*2.1.5 kept only as long as necessary for the purposes we have told you about; and
+
+*2.1.6 kept securely.
+
+3. PERSONAL DATA
+
+*3.1 We may obtain personal data about you including but not limited to the following:
+
+*3.1.1 Personal details: given name(s), preferred name, title;
+
+*3.1.2 Contact details: home address; home and personal mobile telephone numbers, personal email addresses and social media profile details;
+
+*3.1.3 Job title and department, work address, work and business mobile telephone number and work email address;
+
+*3.1.4 Key contract data (contractual or product interest): sale type, sale date, service appointment date, selling dealer details, purchase type, trade in vehicle details;
+
+*3.1.5 Vehicle identification and information: Vehicle Identification Number (VIN), Vehicle Registration Number (VRN) (including cherished plates where applicable), model, colour, some vehicle technical details;
+
+*3.1.6 Website user data: IP address, cookies (see cookie policy);
+
+*3.1.7 Customer services: voice recordings and records of your contact with the Kia Customer Contact Centre;
+
+*3.1.8 Marketing: your marketing preferences, marketing information sent, media type, time, date;
+
+*3.1.9 Opinions: your responses to our surveys regarding products and services;
+
+*3.1.10 Written correspondence: your communications with us by letter, email or social media;
+
+*3.1.11 Competitions and games: personal data relating to competition entries and games played on our website;
+
+*3.1.12 Personal Identification: passport copy, driving licence copy when required for validation purposes;
+
+*3.1.13 Job Applications: curriculum vitae data including education and employment history, video applications, people assessment data
+
+4. SOURCES OF PERSONAL DATA
+
+*4.1 We obtain your personal data from the following sources:
+
+*4.1.1 Directly from you in-person at events.
+
+*4.1.2 Directly from you by other means including by email or by telephone.
+
+*4.1.3 Via automated technologies, such as this website’s live chat feature, CCTV or other recording systems, cookies, server logs and other similar technologies.
+
+We may automatically collect Information Technology Data about your equipment, browsing actions and patterns by using cookies, server logs and other similar technologies. We may also receive Information Technology Data about you if you visit other websites employing our cookies. Please see our cookie policy https://www.kia.com/uk/cookies/ for further details.
+
+*4.1.4 [From someone else, such as:
+
+• Analytics providers (including Google Analytics);
+
+• Kia UK’s authorised Dealer and Repairer Network;
+
+• Advertising networks (including DV360, Google Ads, Amazon Ads, Teads, MiQ Digital, Haymarket, Autotrader, CarGurus, Car Expert, Bauer Media and Carwow);
+
+• Search Engines (including Google and Bing]);
+
+• Providers of technical, payment and delivery services (including Royal Mail);
+
+• Data brokers or aggregators (including LiveRamp and Experian);
+
+• Providers of social media platforms (including Meta, LinkedIn, TikTok and Reddit);] and
+
+• Recruitment agencies or systems for job applications (including HireHive).
+
+*4.1.5 [From publicly available sources, including:
+
+• Companies House;
+
+• The electoral roll; and
+
+• HM Land Registry;
+
+*4.1.6 We may also create personal data about you. For example, if you contact us by telephone to make a complaint then we may make a written record of key details of the conversation so that we can take steps to address the complaint.
+
+5. LEGAL BASIS FOR PROCESSING
+
+*5.1 To process your personal data in connection with the purposes set out in section 6 of this notice, we will rely most commonly on one or more of the following legal bases:
+
+*5.1.1 the processing is necessary to allow us to perform a contract with you [“PC”];
+
+*5.1.2 the processing is required for compliance with a legal obligation [“LO”];
+
+*5.1.3 we have a legitimate interest in carrying out the processing, which is not overridden by your interests, fundamental rights, or freedoms [“LI”]. When we rely on this legal basis our legitimate interests include the following:
+
+(a)the efficient running of our business;
+
+(b)enhancement of the quality of our products;
+
+(c)understanding and improving the customer experience offered in Kia’s authorised dealer and repairer network;
+
+(d)marketing to you when you are acting on behalf of a business;
+
+(e)fulfilling your requests that need to be passed on to our authorised dealer and repairer network;
+
+(f)communicating with you with good understanding;
+
+(g)managing vehicle support or services;
+
+(h)verifying and ensuring the accuracy of your personal data;
+
+(i)understanding and tailoring your online experience;
+
+(j)meeting external and internal governance obligations;
+
+(k)to enable the business to share information intra group;
+
+(l)network and information security;
+
+(m)the protection of our business from unlawful competition;
+
+(n)to enable disposal, reorganisation or sale of the business or the integration of an acquired business; and
+
+(o)protection and security of property and rights.
+
+*5.1.4 the processing is necessary for the performance of a task carried out in the public interest [“PI”].
+
+*5.1.5 We will use your personal data for a variety of different purposes, many of which are listed in section 5.2. We have indicated [by using the definitions PC, LO, LI and PI] the relevant legal basis on which we are processing or will process your personal data, as well as indicating which categories of data are involved. Some of the legal bases for processing will overlap and there may be several which justify our use of your personal data.
+
+*5.2 We will use your personal data for a variety of different purposes including the following:
+
+*5.2.1 Performing our contractual obligations to you [PC];
+
+*5.2.2 Administering our business and carrying out business activities [PC, LI];
+
+*5.2.3 Sending you customer surveys asking your opinions on Kia products and services provided by our authorised dealer and repairer network [LI]
+
+*5.2.4 Contacting you by telephone, email or post about offers, products, promotions, developments or services which we think may be of interest to you when you are acting on behalf of a business [LI];
+
+*5.2.5 Processing requests for brochures, test drives, service bookings, click and collect accessories, used car, finance and rental enquiries and passing on to our authorised dealer and repairer network [LI];
+
+*5.2.6 Dealing with your enquiries or complaints such as when you contact our customer services team [LI];
+
+*5.2.7 Recording your Kia history to process customer service interactions [LI];
+
+*5.2.8 Processing warranty information relating to your vehicle [LI];
+
+*5.2.9 Validating customer offers and eligibility for Kia partner programmes [LI];
+
+*5.2.10 Providing vehicle support and services [LI];
+
+*5.2.11 Delivering targeted advertising to you online through social media and other platforms such as Google Ads. You may receive targeted advertising because you have been identified as having similar attributes to the individuals whose details an advertising platform has received from us [LI];
+
+*5.2.12 Analysing your attributes to identify individuals with similar attributes who may be interested in our products [LI];
+
+*5.2.13 Delivering relevant website content and advertisements to you [LI];
+
+*5.2.14 For internal purposes: website user processing research or analysis including to collect statistics, traffic patterns and related site information, using data analytics, identifying usage trends, determining and measuring the effectiveness of promotional campaigns and advertising and to improve our website, products/services, marketing, customer relationships and experiences and that of our partners [LI];
+
+*5.2.15 Administering your participation in, special events, programs, promotions and any prize draws or competitions [PC, LI];
+
+*5.2.16 Verifying and ensuring the accuracy of your personal data [LI];
+
+*5.1.17 Sending you important notices such as communications about changes to terms and conditions and policies [LI];
+
+*5.2.18 Keeping basic information on you to identify you when you have exercised your privacy rights including an objection to direct marketing or removal of consent [LI];
+
+*5.2.19 Managing your vehicle service plans [PC];
+
+*5.2.20 Contacting you by post when we need to recall your vehicle for safety reasons [PI];
+
+*5.2.21 Protecting our business including dealing with any misuse of our website and ensuring compliance with our security policies at our locations [LI];
+
+*5.2.22 Using your personal data to comply with our own legal [and industry] obligations e.g. to comply with health and safety requirements, or to assist in a police investigation [LO, LI];
+
+*5.2.23 Enforcing or applying contracts or agreements that we have entered into or benefit from [PC, LO, LI];
+
+*5.2.24 Detecting and preventing fraud and other illegal activities (and assisting regulators, trade bodies and law enforcement agencies in relation to the same) [LO, LI];
+
+*5.2.25 Where you work for one of our suppliers or professional advisors - as necessary in order to receive services or goods from the supplier / professional advisors or perform our contractual obligations including making or receiving payments and collecting and recovering money owed [PC, LI];
+
+*5.2.26 In connection with any finance, restructure, sale or disposal of our business in whole or in part [PC, LO, LI];
+
+*5.2.27 Using our knowledge of any health-related personal data you disclose to us in the event of illness or injury or some other related emergency or to record any accident or injury or other incident you may suffer when visiting any of our locations [LO, LI, PI];
+
+*5.2.28 Investigating and defending any third-party claims or allegations [LI].
+
+*5.2.30 Making a decision about your recruitment or appointment [PC];
+
+*5.2.31 Assessing applications for a particular job or task [PC];
+
+*5.2.32 Administrating by sharing customer data within our group [LI].
+
+*5.3 In rare circumstances we may rely on the following legal bases:
+
+*5.3.1 the processing is necessary to protect your vital interests or the interests of someone else; or
+
+*5.3.2 the processing is required for compliance with a legal obligation;
+
+*5.4 We do not need your consent if we process your data under one or more of the other legal bases set out above. We will ask your consent for the following:
+
+(a)To contact you by telephone, SMS, post and/or email about our offers, products, promotions, developments or services which we think may be of interest to you;
+
+(b)To pass your name and contact details to our online review partner who will contact you to request your independent feedback and to process results.
+
+You have the right to withdraw this consent at any time. You can do this using the unsubscribe links presented in emails, in the profile area of the MyKia Online Portal or by contacting Kia UK Customer Service.
+
+6. SPECIAL CATEGORIES OF DATA and CRIMINAL OFFENCE DATA
+
+*6.1 Some personal data may contain or consist of more sensitive personal data known as “Special Categories of Data”.
+
+*6.2 Special Categories of Data require higher levels of protection. We need to have further justification for collecting, storing and using this type of data. We have in place an appropriate policy document and safeguards which we are required by law to maintain when processing such data. In each case, where we process Special Categories of Data, we rely on one or more of the following additional legal bases:
+
+*6.2.1 You have made the information public;
+
+*6.2.2 Processing is necessary where it is needed for legal claims.
+
+*6.3 We may process the following Special Categories of Data:
+
+*6.3.1 Information about your race or ethnicity, religious or philosophical beliefs, sexual orientation, sex life and political opinions;
+
+*6.3.2 Trade union membership;
+
+*6.3.3 Information about your health.
+
+*6.4 We envisage that we may hold data about criminal convictions. We may collect information about criminal convictions related to legal cases or as part of the recruitment process but will not seek to process this data other than in rare circumstances.
+
+7. RECIPIENTS OF PERSONAL DATA
+
+*7.1 We may disclose the personal data you provide to us to our group companies and affiliates or third party data processers who may process data on our behalf to enable us to carry out our usual business practices. Any such disclosure will only be so that we can process your personal data for the purposes set out in this notice.
+
+*7.1.1 Group Companies
+
+(a)Kia Europe GmbH
+
+(b)Hyundai AutoEver Europe GmbH
+
+(c)Mobis Parts Europe NV
+
+(d)Hyundai Capital UK Limited
+https://www.kiafinance.co.uk
+
+(e)Kia Slovakia sro
+
+(f)Kia México, S.A. de C.V.
+
+(g)Kia Corporation
+
+(h)Innocean Worldwide UK Limited
+
+*7.1.2 Third Party Data Processors
+
+(a)Marketing and Research Services (including Innocean Worldwide UK, Reputation.com (UK) Ltd., Ipsos SA, Fusion 2k Ltd.)
+
+(b)IT and Software Platform Services (including Hyundai AutoEver Europe GmbH, Keyloop UK Limited, and eDynamix UK Ltd.)
+
+(c)Vehicle and Parts Logistics Services
+
+(d)Training and Consultancy Services
+
+(e)Recruitment Services
+
+(f)Customer Services (provided by ROI Ltd)
+
+*7.2 We may also share the personal data you provide to us with our network of Kia Authorised Dealers and Repairers. The full network of Kia Authorised Dealers and Repairers can be found at https://www.kia.com/uk/utility/find-a-dealer/#/step-1
+
+*7.3 We choose our service providers carefully and require them to take appropriate security measures to protect your personal data.
+
+*7.4 In addition, we may share your personal data with the following recipients:
+
+*7.4.1 Legal and regulatory authorities, on request, or for the purposes of reporting any actual or suspected breach of law or regulation;
+
+*7.4.2 External professional advisers such as accountants, auditors, lawyers and other outside professional advisers, subject to binding obligations of confidentiality;
+
+*7.4.3 Any relevant party, law enforcement agency, tribunal or court, to the extent necessary for the establishment, exercise or defence of legal rights;
+
+*7.4.4 Any relevant party for the purposes of prevention, investigation, detection or prosecution of criminal offences or the execution of criminal penalties;
+
+*7.4.5 Any relevant third party acquirer(s), in the event that we sell or transfer all or any portion of our business or assets (including in the event of a reorganisation, dissolution or liquidation); and
+
+*7.4.6 Any relevant third party (such as Meta and LinkedIn) for the purpose mentioned in section 5.2.10 - analysing your attributes to identify individuals with similar attributes who may be interested in our products.
+
+8. TRANSFERS OF PERSONAL DATA OVERSEAS
+
+*8.1 We may transfer the personal data we collect about you outside of the UK to the Republic of Korea (South Korea) in order to fulfil our obligations to you.
+
+*8.2 There is an adequacy decision by the UK in respect of that country. This means that the Republic of Korea is deemed to provide an adequate level of protection for your personal data.
+
+*8.3 We may transfer the personal data we collect about you outside of the UK to Europe in order to fulfil our obligations to you
+
+*8.4 There is an adequacy decision by the UK in respect of the EU member states and EFTA states. This means that these countries to which we transfer your data are deemed to provide an adequate level of protection for your personal data.
+
+*8.5 We have third party data processors who work with companies (sub-processors) outside of the UK. We have ensured that those companies have the appropriate safeguards in place to provide an adequate level of data protection.
+
+*8.6 To request further information about our safeguards in relation to international data transfers, please contact us using the details in section 1.6 of this policy.
+
+9. RETENTION OF PERSONAL DATA
+
+*9.1 We will hold your personal data only for so long as is necessary for us to do so. To determine the appropriate retention period for personal data, we consider the amount, nature, and sensitivity of the personal data, the potential risk of harm from unauthorised use or disclosure of your personal data, the purposes for which we process your personal data and whether we can achieve those purposes through other means, and the applicable legal requirements.
+
+*9.2 Where we no longer need to process your personal data for the purposes set out in this notice then we will delete your personal data from our system.
+
+*9.3 If you make contact with Kia having no prior relationship with us, we will store your data for up to 6 months if we have no permission to contact you for marketing purposes.
+
+*9.4 When you begin a customer relationship with Kia, your data will be retained for 8 years to enable us to deliver our customer services throughout the 7 year vehicle warranty period. The 8-year retention period will re-start when a new vehicle is purchased. As an owner of an Approved Used Car, your personal data will be retained in line with the remaining warranty period.
+
+*9.5 You may inform us, or we may find out that the customer relationship has ended. If we have no permission to use your data to contact you for marketing purposes, we will hold your data for 6 months following the notification.
+
+*9.6 Your consent to contact you for marketing purposes and to be included in online reviews is valid for 5 years from when the consent is given if you are a Kia customer, or 2 years if you have not owned a Kia vehicle. The consent may be refreshed by you during this time leading to the re-start of the consent period.
+
+*9.7 If you raise a query to the customer contact centre, we will retain your data for a longer period than stated to allow us to respond to you and to manage legal claims, complaints or concerns.
+
+*9.8 If you have applied for a job with Kia, your details will be retained for 6 months if you are unsuccessful in gaining a contract with us.
+
+10. AUTOMATED DECISION MAKING
+
+*10.1 Automated decision-making takes place when an electronic system uses personal data to make a decision without human intervention. We are allowed to use automated decision-making in the following circumstances:
+
+*10.1.1 Where it is necessary to perform the contract with you and appropriate measures are in place to safeguard your rights;
+
+*10.1.2 In limited circumstances, with your explicit written consent and where appropriate measures are in place to safeguard your rights; or
+
+*10.1.3 Where authorised by law and subject to certain conditions.
+
+*10.2 If we make an automated decision on the basis of any particularly sensitive personal data, we must have either your explicit written consent or it must be justified in the public interest, and we must also put in place appropriate measures to safeguard your rights.
+
+*10.3 You will not be subject to decisions that will have a significant impact on you based solely on automated decision-making, unless we have a lawful basis for doing so and we have notified you.
+
+*10.4 We do not envisage that any decisions will be taken about you using automated means, however we will notify you in writing if this position changes.
+
+11. YOUR RIGHTS IN RELATION TO YOUR PERSONAL DATA
+
+*11.1 You have a number of rights in connection with the processing of your personal data, subject to certain conditions set out in the UK GDPR and in UK law, including the right to:
+
+*11.1.1 Request access to your personal data (commonly known as a “data subject access request”). This enables you to receive a copy of the personal data we hold about you and to check that we are lawfully processing it.
+
+*11.1.2 Request the correction of the personal data that we hold about you. This enables you to have incomplete or inaccurate data we hold about you corrected.
+
+*11.1.3 Request the erasure of your personal data. This enables you to ask us to delete or remove personal data where there is no good reason for us continuing to process it.
+
+*11.1.4 Ask us to stop processing personal data where we are relying on a legitimate interest and there is something about your particular situation which makes you want to object to processing on this ground.
+
+*11.1.5 Request the restriction of processing of your personal data. This enables you to ask us to suspend the processing of personal data about you, for example if you want us to establish its accuracy or the reason for processing it.
+
+*11.1.6 Request the transfer of your personal data to another party.
+
+*11.1.7 Lodge a complaint regarding the processing of your data directly with Kia UK by contacting our Data Protection Officer in accordance with section 1.6. If you are unhappy with the response of our Data Protection Officer, you have the right to lodge a complaint regarding the processing of your data with the Information Commissioner’s Office.
+
+*11.2 In the circumstances where you have provided your consent to the collection, processing and transfer of your personal data for a specific purpose, you have the right to withdraw your consent for that specific processing at any time. To withdraw your consent, please follow the guidance in section 5.3 or contact our Data Protection Officer in writing in accordance with section 1.6. After we have received notification that you have withdrawn your consent in relation to a particular purpose we will no longer process your information for that purpose, unless we have another legitimate basis for doing so in law.
+
+*11.3 If you want to review, verify, correct or request erasure of your personal data, object to the processing of your personal data, or request that we transfer a copy of your personal data to another party, please contact our Data Protection Officer in writing in accordance with section 1.6.
+
+12. IF YOU HAVE FURTHER QUESTIONS
+
+The Data Protection Officer of Kia UK Ltd can be contacted for all further questions regarding this Privacy Policy or data protection in general using the contact details listed in section 1.6.
+
+Also, Kia UK Customer Services are available at 0333 202 2990 Monday- Friday 8:30am-9pm, Saturday 9am-1pm.

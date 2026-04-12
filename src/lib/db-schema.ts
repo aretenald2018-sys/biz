@@ -1,7 +1,7 @@
 import Database from 'better-sqlite3';
 import { assignTicketPlacement } from './kanban';
 
-const CURRENT_VERSION = 21;
+const CURRENT_VERSION = 25;
 
 export function initSchema(db: Database.Database) {
   db.exec(`
@@ -77,6 +77,360 @@ export function initSchema(db: Database.Database) {
   if (currentVersion < 21) {
     applyV21(db);
   }
+  if (currentVersion < 22) {
+    applyV22(db);
+  }
+  if (currentVersion < 23) {
+    applyV23(db);
+  }
+  if (currentVersion < 24) {
+    applyV24(db);
+  }
+  if (currentVersion < 25) {
+    applyV25(db);
+  }
+}
+
+function applyV25(db: Database.Database) {
+  // 수동으로 입력된 fact 를 구분하기 위한 플래그 컬럼.
+  if (!hasColumn(db, 'terms_processing_facts', 'manual_entry')) {
+    db.exec(`ALTER TABLE terms_processing_facts ADD COLUMN manual_entry INTEGER NOT NULL DEFAULT 0`);
+  }
+  if (!hasColumn(db, 'terms_transfer_facts', 'manual_entry')) {
+    db.exec(`ALTER TABLE terms_transfer_facts ADD COLUMN manual_entry INTEGER NOT NULL DEFAULT 0`);
+  }
+  db.prepare(`INSERT INTO schema_version (version) VALUES (25)`).run();
+}
+
+function applyV24(db: Database.Database) {
+  // HME 소속이지만 HCM_GmbH 가 관할하던 자산·fact 들을 HCM 법인으로 이관.
+  // KEU 소속이지만 KCONNECT 가 관할하던 건도 KCONNECT 법인으로 이관.
+  // seed-upsert 가 먼저 돌아 HCM/KCONNECT 중복 행을 만든 경우가 있으므로
+  // 그 중복을 먼저 정리한 뒤 원 행의 market_entity 만 갱신.
+  db.exec(`
+    DELETE FROM terms_assets
+     WHERE market_entity = 'HCM'
+       AND EXISTS (
+         SELECT 1 FROM terms_assets orig
+          WHERE orig.market_entity = 'HME'
+            AND orig.controller_entity = 'HCM_GmbH'
+            AND orig.service_family = terms_assets.service_family
+            AND orig.document_type = terms_assets.document_type
+            AND orig.channel = terms_assets.channel
+            AND orig.url = terms_assets.url
+            AND ifnull(orig.language, '') = ifnull(terms_assets.language, '')
+       );
+
+    DELETE FROM terms_assets
+     WHERE market_entity = 'KCONNECT'
+       AND EXISTS (
+         SELECT 1 FROM terms_assets orig
+          WHERE orig.market_entity = 'KEU'
+            AND orig.controller_entity = 'KCONNECT'
+            AND orig.service_family = terms_assets.service_family
+            AND orig.document_type = terms_assets.document_type
+            AND orig.channel = terms_assets.channel
+            AND orig.url = terms_assets.url
+            AND ifnull(orig.language, '') = ifnull(terms_assets.language, '')
+       );
+
+    UPDATE terms_assets
+       SET market_entity = 'HCM'
+     WHERE market_entity = 'HME' AND controller_entity = 'HCM_GmbH';
+
+    UPDATE terms_assets
+       SET market_entity = 'KCONNECT'
+     WHERE market_entity = 'KEU' AND controller_entity = 'KCONNECT';
+
+    UPDATE terms_processing_facts
+       SET market_entity = 'HCM'
+     WHERE market_entity = 'HME' AND controller_entity = 'HCM_GmbH';
+
+    UPDATE terms_processing_facts
+       SET market_entity = 'KCONNECT'
+     WHERE market_entity = 'KEU' AND controller_entity = 'KCONNECT';
+
+    UPDATE terms_transfer_facts
+       SET market_entity = 'HCM'
+     WHERE market_entity = 'HME' AND controller_entity = 'HCM_GmbH';
+
+    UPDATE terms_transfer_facts
+       SET market_entity = 'KCONNECT'
+     WHERE market_entity = 'KEU' AND controller_entity = 'KCONNECT';
+  `);
+
+  db.prepare(`INSERT INTO schema_version (version) VALUES (24)`).run();
+}
+
+function applyV23(db: Database.Database) {
+  if (!hasColumn(db, 'terms_market_entities', 'brand')) {
+    db.exec(`
+      ALTER TABLE terms_market_entities ADD COLUMN brand TEXT NOT NULL DEFAULT 'hyundai';
+    `);
+  }
+
+  db.exec(`
+    CREATE INDEX IF NOT EXISTS idx_terms_market_entities_brand ON terms_market_entities(brand);
+
+    UPDATE terms_assets
+       SET service_family = 'connected_services'
+     WHERE service_family IN ('bluelink', 'connected_mobility');
+
+    UPDATE terms_assets
+       SET service_family = 'navigation_update'
+     WHERE service_family = 'navigation';
+
+    UPDATE terms_assets
+       SET service_family = 'store_payment'
+     WHERE service_family IN ('payment', 'bluelink_store');
+
+    UPDATE terms_processing_facts
+       SET service_family = 'connected_services'
+     WHERE service_family IN ('bluelink', 'connected_mobility');
+
+    UPDATE terms_processing_facts
+       SET service_family = 'navigation_update'
+     WHERE service_family = 'navigation';
+
+    UPDATE terms_processing_facts
+       SET service_family = 'store_payment'
+     WHERE service_family IN ('payment', 'bluelink_store');
+
+    UPDATE terms_transfer_facts
+       SET service_family = 'connected_services'
+     WHERE service_family IN ('bluelink', 'connected_mobility');
+
+    UPDATE terms_transfer_facts
+       SET service_family = 'navigation_update'
+     WHERE service_family = 'navigation';
+
+    UPDATE terms_transfer_facts
+       SET service_family = 'store_payment'
+     WHERE service_family IN ('payment', 'bluelink_store');
+
+    UPDATE terms_applicability
+       SET service_family = 'connected_services'
+     WHERE service_family IN ('bluelink', 'connected_mobility');
+
+    UPDATE terms_applicability
+       SET service_family = 'navigation_update'
+     WHERE service_family = 'navigation';
+
+    UPDATE terms_applicability
+       SET service_family = 'store_payment'
+     WHERE service_family IN ('payment', 'bluelink_store');
+
+    UPDATE terms_asset_candidates
+       SET hint_service_family = 'connected_services'
+     WHERE hint_service_family IN ('bluelink', 'connected_mobility');
+
+    UPDATE terms_asset_candidates
+       SET hint_service_family = 'navigation_update'
+     WHERE hint_service_family = 'navigation';
+
+    UPDATE terms_asset_candidates
+       SET hint_service_family = 'store_payment'
+     WHERE hint_service_family IN ('payment', 'bluelink_store');
+
+    UPDATE terms_market_entities
+       SET brand = 'hyundai'
+     WHERE ifnull(brand, '') = '';
+
+    INSERT INTO schema_version (version) VALUES (23);
+  `);
+}
+
+function applyV22(db: Database.Database) {
+  db.exec(`
+    CREATE TABLE IF NOT EXISTS terms_market_entities (
+      code TEXT PRIMARY KEY,
+      display_name TEXT NOT NULL,
+      region TEXT NOT NULL,
+      country TEXT NOT NULL,
+      owner_team TEXT,
+      notes TEXT
+    );
+
+    CREATE TABLE IF NOT EXISTS terms_controllers (
+      code TEXT PRIMARY KEY,
+      legal_name TEXT NOT NULL,
+      region TEXT,
+      jurisdiction TEXT,
+      notes TEXT
+    );
+
+    CREATE TABLE IF NOT EXISTS terms_assets (
+      id INTEGER PRIMARY KEY AUTOINCREMENT,
+      market_entity TEXT NOT NULL REFERENCES terms_market_entities(code),
+      controller_entity TEXT REFERENCES terms_controllers(code),
+      service_family TEXT NOT NULL,
+      document_type TEXT NOT NULL,
+      channel TEXT NOT NULL,
+      url TEXT NOT NULL,
+      language TEXT,
+      auth_required INTEGER NOT NULL DEFAULT 0,
+      monitoring_tier TEXT NOT NULL DEFAULT 'P1_weekly',
+      verification_status TEXT NOT NULL DEFAULT 'unverified',
+      last_updated_text TEXT,
+      effective_date TEXT,
+      last_seen_at TEXT,
+      owner_team TEXT,
+      notes TEXT,
+      created_at TEXT NOT NULL DEFAULT (datetime('now','localtime')),
+      updated_at TEXT NOT NULL DEFAULT (datetime('now','localtime'))
+    );
+    CREATE INDEX IF NOT EXISTS idx_terms_assets_entity ON terms_assets(market_entity);
+    CREATE INDEX IF NOT EXISTS idx_terms_assets_tier ON terms_assets(monitoring_tier);
+    CREATE UNIQUE INDEX IF NOT EXISTS idx_terms_assets_unique
+      ON terms_assets(market_entity, service_family, document_type, channel, url, ifnull(language, ''));
+
+    CREATE TABLE IF NOT EXISTS terms_asset_candidates (
+      id INTEGER PRIMARY KEY AUTOINCREMENT,
+      discovered_at TEXT NOT NULL DEFAULT (datetime('now','localtime')),
+      source_url TEXT NOT NULL,
+      candidate_url TEXT NOT NULL,
+      anchor_text TEXT,
+      hint_market_entity TEXT,
+      hint_service_family TEXT,
+      hint_document_type TEXT,
+      status TEXT NOT NULL DEFAULT 'pending',
+      promoted_asset_id INTEGER REFERENCES terms_assets(id),
+      rejected_reason TEXT,
+      reviewer TEXT,
+      reviewed_at TEXT
+    );
+    CREATE UNIQUE INDEX IF NOT EXISTS idx_terms_asset_candidates_unique
+      ON terms_asset_candidates(candidate_url);
+    CREATE INDEX IF NOT EXISTS idx_terms_asset_candidates_status
+      ON terms_asset_candidates(status, discovered_at DESC);
+
+    CREATE TABLE IF NOT EXISTS terms_applicability (
+      market_entity TEXT NOT NULL REFERENCES terms_market_entities(code),
+      service_family TEXT NOT NULL,
+      document_type TEXT NOT NULL,
+      requirement TEXT NOT NULL,
+      rationale TEXT,
+      PRIMARY KEY (market_entity, service_family, document_type)
+    );
+
+    CREATE TABLE IF NOT EXISTS terms_document_versions (
+      id INTEGER PRIMARY KEY AUTOINCREMENT,
+      asset_id INTEGER NOT NULL REFERENCES terms_assets(id),
+      captured_at TEXT NOT NULL DEFAULT (datetime('now','localtime')),
+      capture_source TEXT NOT NULL,
+      http_status INTEGER,
+      etag TEXT,
+      last_modified_header TEXT,
+      raw_hash TEXT,
+      normalized_hash TEXT,
+      mime_type TEXT,
+      blob_path TEXT,
+      extracted_text_path TEXT,
+      extracted_last_updated TEXT,
+      diff_from_prev_id INTEGER REFERENCES terms_document_versions(id),
+      change_kind TEXT,
+      uploaded_by TEXT
+    );
+    CREATE INDEX IF NOT EXISTS idx_terms_dv_asset ON terms_document_versions(asset_id);
+    CREATE INDEX IF NOT EXISTS idx_terms_dv_hash ON terms_document_versions(normalized_hash);
+
+    CREATE TABLE IF NOT EXISTS terms_clauses (
+      id INTEGER PRIMARY KEY AUTOINCREMENT,
+      version_id INTEGER NOT NULL REFERENCES terms_document_versions(id),
+      path TEXT,
+      heading TEXT,
+      body TEXT NOT NULL,
+      language TEXT,
+      order_index INTEGER NOT NULL,
+      char_start INTEGER,
+      char_end INTEGER
+    );
+    CREATE INDEX IF NOT EXISTS idx_terms_clauses_version ON terms_clauses(version_id);
+
+    CREATE TABLE IF NOT EXISTS terms_processing_facts (
+      id INTEGER PRIMARY KEY AUTOINCREMENT,
+      market_entity TEXT NOT NULL REFERENCES terms_market_entities(code),
+      controller_entity TEXT REFERENCES terms_controllers(code),
+      service_family TEXT NOT NULL,
+      category TEXT NOT NULL,
+      taxonomy_code TEXT NOT NULL,
+      display_label TEXT,
+      condition TEXT,
+      confidence REAL,
+      review_status TEXT NOT NULL DEFAULT 'pending',
+      reviewer TEXT,
+      reviewed_at TEXT,
+      latest_version_id INTEGER REFERENCES terms_document_versions(id),
+      created_at TEXT NOT NULL DEFAULT (datetime('now','localtime'))
+    );
+    CREATE INDEX IF NOT EXISTS idx_pf_entity_category
+      ON terms_processing_facts(market_entity, category, review_status);
+    CREATE INDEX IF NOT EXISTS idx_pf_latest_version
+      ON terms_processing_facts(latest_version_id);
+
+    CREATE TABLE IF NOT EXISTS terms_transfer_facts (
+      id INTEGER PRIMARY KEY AUTOINCREMENT,
+      market_entity TEXT NOT NULL REFERENCES terms_market_entities(code),
+      controller_entity TEXT REFERENCES terms_controllers(code),
+      service_family TEXT NOT NULL,
+      data_taxonomy_code TEXT,
+      purpose_taxonomy_code TEXT,
+      destination_country TEXT NOT NULL,
+      recipient_entity TEXT,
+      transfer_mechanism TEXT,
+      legal_basis TEXT,
+      status TEXT NOT NULL,
+      condition TEXT,
+      confidence REAL,
+      review_status TEXT NOT NULL DEFAULT 'pending',
+      reviewer TEXT,
+      reviewed_at TEXT,
+      latest_version_id INTEGER REFERENCES terms_document_versions(id),
+      created_at TEXT NOT NULL DEFAULT (datetime('now','localtime'))
+    );
+    CREATE INDEX IF NOT EXISTS idx_tf_entity_kr
+      ON terms_transfer_facts(market_entity, destination_country, review_status);
+    CREATE INDEX IF NOT EXISTS idx_tf_latest_version
+      ON terms_transfer_facts(latest_version_id);
+
+    CREATE TABLE IF NOT EXISTS terms_fact_evidence (
+      fact_type TEXT NOT NULL CHECK(fact_type IN ('processing','transfer')),
+      fact_id INTEGER NOT NULL,
+      clause_id INTEGER NOT NULL REFERENCES terms_clauses(id),
+      excerpt TEXT,
+      PRIMARY KEY (fact_type, fact_id, clause_id)
+    );
+    CREATE INDEX IF NOT EXISTS idx_terms_fact_evidence_fact
+      ON terms_fact_evidence(fact_type, fact_id);
+
+    DROP TRIGGER IF EXISTS trg_terms_mark_facts_stale;
+    CREATE TRIGGER trg_terms_mark_facts_stale
+    AFTER INSERT ON terms_document_versions
+    WHEN NEW.change_kind IN ('normalized_change','new')
+    BEGIN
+      UPDATE terms_processing_facts
+         SET review_status = 're_review_required'
+       WHERE review_status = 'approved'
+         AND latest_version_id IN (
+           SELECT id
+           FROM terms_document_versions
+           WHERE asset_id = NEW.asset_id
+             AND id <> NEW.id
+         );
+
+      UPDATE terms_transfer_facts
+         SET review_status = 're_review_required'
+       WHERE review_status = 'approved'
+         AND latest_version_id IN (
+           SELECT id
+           FROM terms_document_versions
+           WHERE asset_id = NEW.asset_id
+             AND id <> NEW.id
+         );
+    END;
+
+    INSERT INTO schema_version (version) VALUES (22);
+  `);
 }
 
 function applyV21(db: Database.Database) {

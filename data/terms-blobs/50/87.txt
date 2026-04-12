@@ -1,0 +1,1087 @@
+GET THE APP
+
+CHANGE COUNTRY
+
+Austria
+
+Belgium(French)
+
+Belgium(Dutch)
+
+Switzerland(German)
+
+Switzerland(French)
+
+Switzerland(Italian)
+
+Czech Republic
+
+Germany
+
+Denmark
+
+Estonia
+
+Spain
+
+European Union
+
+Finland
+
+France
+
+Greece
+
+Croatia
+
+Hungary
+
+Ireland
+
+Iceland
+
+Italy
+
+Lithuania
+
+Luxembourg
+
+Latvia
+
+Netherlands
+
+Norway
+
+Poland
+
+Portugal
+
+Romania
+
+Sweden
+
+Slovenia
+
+Slovakia
+
+UK
+
+open menu
+
+CHANGE COUNTRY
+
+Austria
+
+Belgium(French)
+
+Belgium(Dutch)
+
+Switzerland(German)
+
+Switzerland(French)
+
+Switzerland(Italian)
+
+Czech Republic
+
+Germany
+
+Denmark
+
+Estonia
+
+Spain
+
+European Union
+
+Finland
+
+France
+
+Greece
+
+Croatia
+
+Hungary
+
+Ireland
+
+Iceland
+
+Italy
+
+Lithuania
+
+Luxembourg
+
+Latvia
+
+Netherlands
+
+Norway
+
+Poland
+
+Portugal
+
+Romania
+
+Sweden
+
+Slovenia
+
+Slovakia
+
+UK
+
+Kia Connect Privacy Notice
+
+kia-connect-privacy-notice
+
+Kia Account Legal Documents
+
+Kia Connect Terms of Use
+
+Kia Connect Privacy Notice
+
+Privacy Policy
+
+Cookies
+
+Download
+
+Kia Connect
+
+CONNECTED SERVICES PRIVACY NOTICE
+
+Last updated: December 2025
+
+1. Introduction2. Third-party use of the Vehicle or Connected Services3. Controller4. Data Protection Officer5. Collection of Personal Data6. Types of Personal Data that we Process7. Purposes of Processing and Legal Bases for Processing8. RECIPIENTS OR CATEGORIES OF RECIPIENTS9. International Transfer of Personal Data10. Data Retention11. Offline Mode (Modem Off)12. Your Legal Rights13. Kia Connect Terms of Use14. Updates15. Definitions16. Local Law Amendments
+
+1.
+
+Introduction
+
+This privacy notice ( “Kia Connect Privacy Notice”) is issued by Kia Connect GmbH ("Kia Connect", "we", "us", “our”) and is addressed to individuals (together “you”) that use our connected services via the head unit of the relevant vehicle (“Head Unit”) and/or the Kia App (together, the “Connected Services”).
+
+When you activate and use the Connected Services, we will Process Personal Data relating to you as set out in this Kia Connect Privacy Notice. Defined terms used in the Kia Connect Privacy Notice are explained in Section 14 below.
+
+Please note: If you have not changed to the Kia App and are still a user of the Kia Connect App, any reference to Kia App in this document shall be read as “Kia Connect App”.
+
+Please note that in addition to the Kia Connect Privacy Notice, where appropriate, we may inform you about the Processing of your Personal Data separately, for example in consent forms or separate privacy notices.
+
+The Kia App provides, inter alia, features and functions that do not require the activation of connectivity in your vehicle. Details about the Processing of your Personal Data in connection with the Kia App and its functions and features that are not Connected Services are provided in a separate privacy notice (“Kia App Privacy Notice”), which is available here: https://connect.kia.com/eu/downloads.
+
+If you are a user of our in-car payment solution, please refer to the separate in-car payment privacy notice for details about our Processing of your Personal Data in connection with this service. This privacy notice is available here: https://connect.kia.com/eu/downloads-in-car-payment/
+
+In connection with the Connected Services, we offer the purchase of certain features to use with the vehicle, such as upgrades or other add-ons to the software of the vehicle (“Upgrades”). The Kia Connect Privacy Notice also provides certain information about the Processing of Personal Data in connection with the purchase of such Upgrades.
+
+We provide our Connected Services and Upgrades to customers across Europe. As applicable data protection laws and requirements may differ in the relevant jurisdictions, please refer to Section 16 (Local Law Amendments) for specific information in relation to your jurisdiction.
+
+2.
+
+Third-party use of the Vehicle or Connected Services
+
+While this Kia Connect Privacy Notice also applies to cases in which a third party uses the vehicle for which you have activated the Connected Services, our Processing activities mainly relate to vehicle-bound information.
+
+This means that we are not usually able to identify the relevant person driving the vehicle, unless the person is logged in with their personal profile or other identifiers related to the relevant person are provided.
+
+Section 10.2 of the Kia Connect Terms of Use request that you inform other users/drivers of the vehicle about: (i) the activation of the Connected Services and the related Processing; and (ii) the fact that the provision of certain Connected Services requires the collection and Processing of location data (GPS data).
+
+3.
+
+Controller
+
+3.1.
+
+Unless expressly stated otherwise, Kia Connect GmbH is the Controller of the Personal Data Processed as set out in this Kia Connect Privacy Notice.
+
+If you have any questions about the Kia Connect Privacy Notice or our Processing of your Personal Data, or if you wish to exercise any of your rights, you may contact us at:
+
+Kia Connect GmbH, Theodor-Heuss-Allee 11, 60486 Frankfurt am Main, Germany, Email: info@kia-connect.eu
+
+You may also use our contact form, which is available via the link in the Kia App or here: https://connect.kia.com/eu/customer-support/contact-form/.
+
+Alternatively, you may also contact our data protection officer at the contact details provided in Section 4 below.
+
+3.2.
+
+We act as joint Controllers with Kia Europe GmbH, Theodor-Heuss-Allee 11, 60486 Frankfurt am Main, Germany (“Kia EU”), in relation to the provision of Vehicle System OTA Updates (please refer to Section 7.4.2 for more details).
+
+We have agreed with Kia EU that we are the main contact point for you if you have any questions about the Processing of your Personal Data or the essence of our arrangement with Kia EU in connection with the Processing activities set out in Section 7.4.2 The same applies if you wish to exercise any of your rights in this regard. However, you may also choose to contact Kia EU:
+
+Kia Europe GmbH, Data Protection Officer, Theodor-Heuss-Allee 11, 60486 Frankfurt am Main, Germany, Email: dpo@kia-europe.com
+
+4.
+
+Data Protection Officer
+
+We have designated an external data protection officer (“DPO”). You may contact our DPO at:
+
+Kia Connect GmbH, Data Protection Officer, Theodor-Heuss-Allee 11, 60486 Frankfurt am Main, Germany, Email: dpo@kia-connect.eu
+
+5.
+
+Collection of Personal Data
+
+We collect or obtain Personal Data about you from the following sources:
+
+Data provided to us: We obtain Personal Data when those data are provided to us by you (e.g. when you enter information in the Kia App or Head Unit in connection with Connected Services, or where you contact us via email, telephone, our contact form, or by any other means).
+
+Vehicle-generated data: We collect or obtain Personal Data from your vehicle (e.g. its sensors and related applications).
+
+App and/or Head Unit data: We collect or obtain Personal Data when you use the Kia App and/or the Head Unit of your vehicle in connection with Connected Services.
+
+Third party information: We collect or obtain Personal Data from third parties who provide it to us. We have referenced such sources in the relevant sections below.
+
+6.
+
+Types of Personal Data that we Process
+
+We Process the following types of Personal Data about you (“Relevant Personal Data”):
+
+Personal Details: data that relates directly to you as a person or to your demographic characteristics or preferences (e.g. name(s), country, preferred language);
+
+Contact Details: data that enables communication or verification (e.g. email address, mobile number);
+
+User Profile Information: data that relates to your user profile, including your Kia Account login details (e.g. username, password, system setup information, navigation setup information, profile picture (if provided), profile name);
+
+Contract Details: data that relates to the conclusion of a contract, including the acceptance of the Kia Connect Terms of Use and the commencement date (i.e. activation startdate) of the provision of the Connected Services (e.g. content of the contract, type and date of conclusion, duration);
+
+Consent Records: records of any consent you have given, together with the date and time, means of consent, and any related information (e.g. subject matter of the consent);
+
+Communication Data: data that forms the content of communication (e.g. content of conversations, written correspondence);
+
+Vehicle Data: vehicle identification number (“VIN”) and information on manufacturing date, first registration date, vehicle registration number, date of last inspection, inspection due date, vehicle software version, features and configurations of your vehicle (e.g. engine/battery, brake, powertrain, gears, consumption, air conditioning, heating, warning and assistance systems, steering, tyres, speed, technical and stability-related systems, Head Unit).
+
+Vehicle Status Information: data that relates to the status of your vehicle (e.g. odometer status, heating, ventilation and air conditioning status; defrost status; engine status; doors, boot, windows, bonnet and sunroof status; tyre status; lamp status; hazard lights status; smart key status; washer fluid and brake/engine oil status; charging information; ignition status; gear status; seat status; battery, fuel and distance to empty status; battery conditioning status; diagnostics data; vehicle status alert type);
+
+Verification Data: data that allows verification of inputs and actions (e.g. (verification) PIN, activation codes, SMS authentication codes, status of verification, and tokenised credentials); data that allows verification of identity, validity of requests, and eligibility;
+
+Pseudonymised Identifiers: generated IDs that are used in connection with other data about you, but which cannot be attributed directly to you without the use of additional information (e.g. user ID, vehicle ID, device ID, Digital Key ID, sequence ID, driver ID, service ID, online voice recording ID, user profile ID);
+
+Position and Movement Data: data that relates to the position and/or movement of your vehicle or devices (e.g. location data (GPS data));
+
+Trips/ Overall Driving Information: data that relates to trips made with the vehicle (e.g. mileage driven, maximum speed, average speed, distance; fuel, battery and/or power consumption; driving date and time, driving patterns, acceleration/deceleration information; idle engine time);
+
+Usage-based Data: data that is provided through interaction with the vehicle or services or generated through the use of the vehicle or services (e.g. date, time and duration of service activation and use of service; address, stop-off and/or point of interest information; route information, multimedia-related usage (e.g. list of favourite radio stations), selected restrictions (e.g. speed limit, distance limit, restricted areas), sports event information, calendar information, music and music source information);
+
+Technical Data: technical information that relates to devices or software in the vehicle or other devices used for or in connection with the Connected Services (e.g. IP address, SIM card information, telecom carrier information, navigation device information, language settings, time stamps, Unique User Identifier (“UUID”), mobile device data (e.g. device type, OS version), app version and app crash information, logfiles);
+
+Cybersecurity Data: data that relates to cyber security events (e.g. information about detected security event, timestamps of security event);
+
+OTA-related Data: data generated or created in connection with OTA (over-the-air) Updates (e.g. diagnostics data (error/trouble codes, software recovery results), usage history, provision status, update result);
+
+Recording Data: image/video data collected through recordings of vehicle cameras; voice data collected through the use of the Connected Service “Online Voice Recognition”;
+
+Dynamic Traffic Information: data that relates to the traffic situation on selected routes (e.g. traffic information, route information);
+
+Digital Key Information: data that relates to the Connected Service “Digital Key” (e.g. Digital Key type, access authorisation/profile, physical key fob ID, shared Digital Keys, diagnostics);
+
+Weather Information: data that relates to weather;
+
+Dealer Information: data that relates to your preferred Kia dealer or Kia dealers in your area (e.g. name, address and contact details of dealer and opening hours); and
+
+Purchase Details: information about any Upgrades purchased.
+
+Views and Opinions: any views and opinions that you choose to share with us, such as feedback and responses to surveys.
+
+7.
+
+Purposes of Processing and Legal Bases for Processing
+
+In the Privacy Settings of the Head Unit, you can activate and deactivate certain Connected Services or categories of Connected Services.
+
+When you activate a Connected Service (category), you are expressly requesting the provision of the relevant Connected Service (category) as set out in the Kia Connect Terms of Use, which are available at:
+
+https://connect.kia.com/eu/downloads..
+
+If you are not using the latest version of the infotainment software for your vehicle, you can activate and deactivate the Connected Services or categories of Connected Services in the service list of the Kia App.
+
+The purposes for which we Process the Relevant Personal Data, subject to applicable law, and the legal bases on which we perform such Processing are as follows:
+
+7.1.
+
+In-App
+
+7.1.1.
+
+Linking Vehicle with Device
+
+Establishing the link between your device on which the Kia App is installed, and the respective vehicle requires verification for which we will share with you a verification PIN. For details about our Processing of your Personal Data in connection with registration and log-in on the Kia App, please refer to the Kia App Privacy Notice.
+
+Relevant Personal Data: Vehicle Data, Verification Data.
+
+Legal basis: The Processing is necessary for the performance of the contract that you have entered into with us (Art. 6 (1) b) GDPR).
+
+7.1.2.
+
+User Profile
+
+The User Profile services include the following:
+
+7.1.2.1.
+
+Profile Backup and Restore
+
+This Connected Service enables you to back up vehicle settings information in the Kia App and restore it to your vehicle.
+
+Relevant Personal Data: Contact Details, User Profile Information, Vehicle Data, Verification Data, Position and Movement Data, Usage-based Data.
+
+7.1.2.2.
+
+Personal Calendar/Navigation Synchronisation
+
+This Connected Service enables you to synchronise your Google Calendar or Apple Calendar on your smartphone with the integrated calendar function of the Head Unit. This allows you to see your private calendar on the Head Unit screen and to use it to set a destination.
+
+Relevant Personal Data: Contact Details, Vehicle Data, Verification Data, Pseudonymised Identifiers, Usage-based Data.
+
+Legal basis: The Processing in connection with the User Profile services is necessary for the performance of the contract that you have entered into with us (Art. 6 (1) b) GDPR).
+
+7.1.3.
+
+Remote Control
+
+The following Connected Services allow you to control or set up your vehicle remotely via the Kia App: Remote Climate Control, Remote Charging, Remote Door Control, Remote Heated and Ventilated Seats, Remote Window Control, Remote Hazard Light Control, Remote Charging Door Control, Remote Frunk, Remote Battery Conditioning, Remote Light, Remote Horn and Light, and Vehicle Alert.
+
+Further information about these Connected Services is available in Section 4.2.1.1 of the Kia Connect Terms of Use.
+
+Relevant Personal Data: Vehicle Data, Vehicle Status Information, Position and Movement Data, Technical Data.
+
+Legal basis: The Processing is necessary for the performance of the contract that you have entered into with us (Art. 6 (1) b) GDPR).
+
+7.1.4.
+
+Location-based Remote Services
+
+The following Connected Services allow you to set up, locate points of interest (“POI”) and/or use navigation for your vehicle remotely based on location data: Send to Car, Find my Car and First Mile Navigation, and Last Mile Navigation.
+
+Further information about these Connected Services is available in Section 4.2.1.2 of the Kia Connect Terms of Use.
+
+Please note that if another person uses the Kia App and is connected to the same vehicle as you are, this person may also see the vehicle's location data (GPS data) in their profile of the Kia App by using the "Find my Car and First Mile Navigation" Service, even if you are using the vehicle at this time.
+
+While this person will not be able to access your live routes, they may be able to see the live location of the vehicle.
+
+Relevant Personal Data: Personal Details, Vehicle Data, Position and Movement Data, Trips/Overall Driving Information, Usage-based Data, Technical Data.
+
+Legal basis: The Processing is necessary for the performance of the contract that you have entered into with us (Art. 6 (1) b) GDPR).
+
+7.1.5.
+
+Vehicle Operation and Diagnostics Information Services
+
+The following Connected Services allow you to receive and display certain vehicle operation and diagnostics information in the Kia App: Vehicle Status, Vehicle Report, Vehicle Diagnostics, Energy Consumption, Driving Safety Score, and My Trips.
+
+Further information about these Connected Services is available in Sections 4.2.1.3 of the Kia Connect Terms of Use.
+
+Regarding the Driving Safety Score: Please note that we have engaged LexisNexis Risk Solutions (Europe) Limited (“LNRSE”) to assist us with the analysis of the Relevant Personal Data (see Section 8 for more details about this service provider).
+
+All data that we share with LNRSE is pseudonymised. Please note that, if you share your vehicle with others, the driving safety score will reflect trips made by all drivers and their combined driving behaviour.
+
+You are therefore required to inform other drivers of your vehicle about the activation of the driving safety score service. Drivers who share your vehicle may also be able to view the driving safety score information. If you deactivate this service, all driving safety score data will be deleted permanently.
+
+Relevant Personal Data: Vehicle Data, Vehicle Status information, Pseudonymised Identifiers, Position and Movement Data, Trips/Overall Driving Information, Usage-based Data, Technical Data.
+
+Legal basis: The Processing is necessary for the performance of the contract that you have entered into with us (Art. 6 (1) b) GDPR).
+
+7.1.6.
+
+Remote Monitoring and Alerts
+
+The following Connected Services allow you to monitor your vehicle remotely and receive alerts via the Kia App: Vehicle Alert, Burglar Alarm, Battery Discharge Alarm, Rear Passenger Alarm, Vehicle Idle Alarm, High-Voltage Battery Monitoring Warning System, Valet Parking Mode, Valet Alert, Geofence Alert, Speed Alert, Time Fencing Alert and Idle Alert.
+
+Further information about these services is available in Section 4.2.1.4 of the Kia Connect Terms of Use.
+
+Regarding the High-Voltage Battery Monitoring Warning System: Please note that, where the malfunction could cause damage to the vehicle or physical harm to you or other persons in or outside the relevant vehicle, we will share that information and the VIN of your vehicle with the Kia national sales company or the Kia distributor, who may get in touch with you directly to warn you about the malfunction and the potential risk of damage or physical harm.
+
+Upon receipt of the information from us, the relevant Kia national sales company or Kia distributor will Process such information as a separate and independent Controller. Please note that we will share such information only where the malfunction is considered severe and there is a risk of damage to the vehicle or physical harm.
+
+Relevant Personal Data: Vehicle Data, Position and Movement Data, Trips/Overall Driving Information, Usage-based Data, Technical Data.
+
+Legal basis: The Processing is necessary for the performance of the contract that you have entered into with us (Art. 6 (1) b) GDPR). The sharing of the relevant information with third parties for the High-Voltage Battery Monitoring Warning System service is necessary for the purpose of the legitimate interests pursued by us, but also our customers and other third parties (Art. 6 (1) f) GDPR).
+
+The legitimate interests are: ensuring the proper provision and function of our services, providing safe services and products to our and Kia group customers, protecting our customers’ health and life, protecting our customers’ property, and protecting the health, life and property of other people in or around the vehicle.
+
+7.1.7.
+
+Digital Key
+
+This Connected Service enables you to use certain Digital Key features by using the built-in, ultra-wide band (“UWB”) and near-field-communication (“NFC”) functionalities of your device.
+
+You may also share and manage your Digital Key with up to three additional devices. Please note that when using this service, data is exchanged between the mobile smart device and the vehicle using the UWB or NFC functionalities. This data is not transmitted to us
+
+Further information about this service is available in Section 4.2.1.6 of the Kia Connect Terms of Use.
+
+Relevant Personal Data: Personal Details, Contact Details, User Profile Information, Pseudonymised Identifiers, Usage-based Data, Technical Data, Digital Key Information.
+
+Legal basis: The Processing is necessary for the performance of the contract that you have entered into with us (Art. 6 (1) b) GDPR).
+
+7.1.8.
+
+Car Sharing
+
+You can share certain Connected Services with other users through the “Request to Share Car” function in the Kia App. When you do so, we will Process certain vehicle and user account-related data to initiate and process your sharing request.
+
+Share request information such as your name and PIN will be transmitted to and processed in the other user’s account for the Kia App. The other user can use the Kia App for the linked vehicle in the same way as you. They can also use the “Find my car” function.
+
+Further information about this Service is available in Section 4.1.2 of the Kia Connect Terms of Use.
+
+Relevant Personal Data Personal Details, Contact Details, Vehicle Data, Verification Data.
+
+Legal basis: The Processing is necessary for the performance of the contract that you have entered into with us (Art. 6 (1) b) GDPR) and in connection with our legitimate interests in delivering our services (Art. 6 (1) f) GDPR).
+
+Please note that when you use this service, you will share all of your Personal Data, excluding your login details, that is stored in your Kia App account with the other users. You can deactivate this function at any time.
+
+Deactivation stops the sharing of data, and we will delete all shared data in the other user’s account for the Kia App.
+
+7.1.9.
+
+Home Menu Map and Search Bar
+
+The home menu map displays your current location. The home menu search bar can be used to search for points of interest (POI).
+
+Relevant Personal Data: Position and Movement Data, Usage-based Data, Technical Data.
+
+Legal basis: The processing is necessary for the performance of the contract that you have entered into with us (Art. 6 (1) b) GDPR).
+
+7.1.10.
+
+Product and Service Improvement
+
+By activating "Product/Service Improvement", data regarding the performance, usage, operation and condition of the vehicle will be Processed by us in order to improve product and service quality based on your consent.
+
+Your consent is voluntary and can be withdrawn at any time by deactivating the respective button.
+
+To activate "Product/Service Improvement", it is also necessary to activate the geographic information system ("GIS") for technical reasons.
+
+Relevant Personal Data: Consent Records, Vehicle Data, Position and Movement Data, Usage-based Data.
+
+Legal basis: The Processing is based on your prior consent (Art. 6 (1) a) GDPR). Your consent is voluntary and can be withdrawn at any time (e.g. by deactivating the respective consent button in the consent list of the Kia App).
+
+The withdrawal of your consent will not affect the lawfulness of processing based on such consent before its withdrawal.
+
+7.2.
+
+In-Car
+
+7.2.1.
+
+Notification Centre
+
+The Notification Centre in your Head Unit enables you to receive messages from us on the Head Unit screen. Such messages include, among others, Recall Campaign Notifications (i.e. notifications about open recall campaigns), Service Reminders (i.e. reminders for upcoming regular maintenance dates), Service Action Notifications (i.e. information about outstanding recommended service actions), and Mandatory Vehicle Inspection Reminders (i.e. information about upcoming mandatory vehicle inspections).
+
+Please refer to the Kia App Privacy Notice or the Kia Connect Terms of Use (Section 4.2.3.7) for more details about our Processing of your Personal Data in connection with these notifications.
+
+Please note that we will inform the Kia national sales company or distributor in your country about the vehicle-related notifications that we have sent to you to avoid that you receive the same message via multiple channels from different Kia group companies.
+
+Relevant Personal Data: Vehicle Data, Pseudonymised Identifiers, Usage-based Data.
+
+Legal basis: The Processing is necessary for the performance of the contract that you have entered into with us (Art. 6 (1) b) GDPR) or in relation to Service Action Notification, subject to your prior consent (Art. 6 (1) a) GDPR).
+
+The sharing of the referenced information with the relevant Kia national sales company or distributor is necessary for the purpose of legitimate interests pursued by us (Art. 6 (1) f) GDPR). Our legitimate interests are: providing the best possible service to our customers (sharing this information will avoid customer frustration caused by receiving the same message via multiple channels and from different Kia group companies).
+
+7.2.2.
+
+Kia Connect Live Services
+
+The Kia Connect Live Services include the following features and functions: Live Traffic and Online Navigation, Live Point of Interest (POI) and Online POI Search, Weather, Parking, Dealer POI, Speed Camera / Danger Zone Alerts (if legally permissible in the country of use), and Sports League.
+
+When you activate a Kia Connect Live Service, we will also Process Relevant Personal Data for the purpose of improving the Kia Connect Live Services.
+
+Further information about these services is available in Section 4.2.3.1 of the Kia Connect Terms of Use.
+
+Regarding the Live Point of Interest (POI) and Online POI Search Service: On eligible vehicles, this service will be enhanced by data provided through our partner 4.screen GmbH (“4.Screen”). Please refer to Section 7.8.6 for more details.
+
+Relevant Personal Data: Contact Details, Vehicle Data, Pseudonymised Identifiers, Position and Movement Data, Usage-based Data, Technical Data, Dynamic Traffic Information, Weather Information, Dealer Information.
+
+Legal basis: The Processing is necessary for the performance of the contract that you have entered into with us (Art. 6 (1) b) GDPR). The Processing in connection with improving the Kia Connect Live Services is necessary for the purpose of the legitimate interests pursued by us (Art. 6 (1) f) GDPR). Our legitimate interests are: improving the Kia Connect Live Services.
+
+7.2.3.
+
+Location-based In-Vehicle Services
+
+The following Connected Services allow you to set up, locate POIs and/or use navigation for your vehicle based on location data: EV Route Planner, EV POI, Preferred Route, Google Places Search Improvement, and Emergency Vehicle Approaching.
+
+When you activate a location-based in-vehicle service, we will also Process Relevant Personal Data for the purpose of improving the location-based in-vehicle services.
+
+Further information about these services is available in Section 4.2.3.2. of the Kia Connect Terms of Use.
+
+Regarding Google Places Search Improvement: This service allows you to benefit from Google’s improved search functionality. For this purpose, we share location data with Google and Google provides us with relevant information via the Google Place API. Please note that Google does not receive any other information from us.
+
+Relevant Personal Data: Contact Details, Vehicle Data, Pseudonymised Identifiers, Position and Movement Data, Usage-based Data, Technical Data, Dynamic Traffic Information.
+
+Legal basis: The Processing is necessary for the performance of the contract that you have entered into with us (Art. 6 (1) b) GDPR).
+
+The Processing in connection with improving the location-based in-vehicle services is necessary for the purpose of the legitimate interests pursued by us (Art. 6 (1) f) GDPR). Our legitimate interests are: improving the location-based in-vehicle services.
+
+7.2.4.
+
+Online Voice Recognition
+
+This Connected Service allows you the use of spoken commands to access and control certain functions of your vehicle and to draft and send text messages via a connected mobile device.
+
+The Online Voice Recognition service requires the transfer of your Personal Data (i.e. voice samples) to our service provider Cerence B.V. and its sub-processors, which may be located in countries outside the EU/EEA that do not provide for an adequate level of data protection (please refer to Sections 15 and 16 for more details).
+
+Cerence B.V. transforms the voice samples into text samples, semantically interpreting them (if necessary), and then sends the result back to the vehicle. Please note that a unique ID will be created for registering with the server of Cerence B.V. The user ID and VIN of your vehicle or any other identifiers are not linked to each other.
+
+This means that Cerence B.V. cannot identify a natural person from the data transmitted to it. You can prevent the transfer of your Personal Data to Cerence B.V. and its sub-processors by deactivating the Online Voice Recognition service in the respective settings of your Head Unit.
+
+When you use this service, we will Process Relevant Personal Data for the purpose of performing and also improving the Online Voice Recognition service.
+
+Further information about this service is available in Section 4.2.3.3 of the Kia Connect Terms of Use.
+
+Relevant Personal Data: Pseudonymised Identifiers, Position and Movement Data, Usage-based Data, Recording Data.
+
+Legal basis: The Processing is necessary for the performance of the contract that you have entered into with us (Art. 6 (1) b) GDPR). The Processing of Position and Movement Data, Recording Data and Usage-based Data in connection with improving the Online Voice Recognition service is necessary for the purpose of the legitimate interests pursued by us (Art. 6 (1) f) GDPR). Our legitimate interests are: improving the Online Voice Recognition service.
+
+7.2.5.
+
+Kia AI Assistant
+
+If you have activated the Online Voice Recognition service (please refer to Section 7.2.4 for more details), the Kia AI Assistant allows you to control certain vehicle features and to acquire AI-generated information through a natural conversation experience. The Kia AI Assistant is activated either by pressing the voice recognition button or by saying “Hey, Kia!”.
+
+Further information about this Service is available in Section 4.2.3.4 of the Kia Connect Terms of Use and the Kia AI Assistant Terms of Use.
+
+Relevant Personal Data: Pseudonymised Identifiers, Usage-based Data, Recording Data.
+
+Legal basis: The processing is necessary for the performance of the contract that you have entered into with us (Art. 6 (1) b) GDPR).
+
+7.2.6.
+
+Internet in the Car and Entertainment Packages
+
+7.2.6.1.
+
+Internet in the Car
+
+When you purchase an entertainment package in the Kia Connect Store, you will be redirected to the registration page of the Vodafone group member or Vodafone partner that provides telecommunication services in your country (“Vodafone”) to register with their internet service so that you can be provided with internet in the car (“IITC”), without which you would not be able to use the services of the entertainment package.
+
+For the purposes of your registration with Vodafone and receiving IITC: (i) we will share the Relevant Personal Data listed below with Vodafone and Vodafone Global Enterprise Ltd (“VGEL”); and (ii) VGEL and Vodafone will share with us Contract Details and Pseudonymised Identifiers. This is to that we can match the data, manage your contract with us, and ensure that you are provided with IITC in your Kia vehicle.
+
+Please note that the relevant Vodafone group members and partners Process your Personal Data as separate and independent Controllers. Please refer to their privacy notices for more details about their Processing of your Personal Data.
+
+Relevant Personal Data: Personal Details, Contact Details, Contract Details, Verification Data; Pseudonymised Identifiers, Technical Data, Purchase Details.
+
+Legal basis: The Processing is necessary for the performance of the contract that you have entered into with us (Art. 6 (1) b) GDPR).
+
+7.2.6.2.
+
+Entertainment Packages
+
+Purchasing an entertainment package in the Kia Connect Store allows you to use Wi-Fi Hotspot, Music Streaming, and Video Streaming. The services Music and Video Streaming do not include the subscription with the respective streaming services. You need to create an account and set up a subscription with your favourite streaming service provider separately.
+
+Purchasing the Entertainment Plus or Entertainment Plus Wi-Fi package allows you to access content through the apps provided (webOS). Such content is provided through the LG webOS solution (Entertainment tile in the vehicle).
+
+Further information about these services is provided in Section 5.2.5 of the Kia Connect Terms of Use
+
+Relevant Personal Data: Vehicle Data, Verification Data, Pseudonymised Identifiers, Usage-based Data.
+
+Legal basis: The processing is necessary for the performance of the contract that you have entered into with us (Art. 6 (1) b) GDPR).
+
+7.3.
+
+Cyber Security Standards
+
+When you activate Connected Services in the Head Unit, we Process security event-related data of your vehicle for the purpose of managing and monitoring appropriate cyber security standards of Kia vehicles.
+
+However, such data will first be stored in your vehicle. Only if an abnormal signal is detected, the data will be sent to our systems for further analysis. There is no continuous transfer of such data out of the vehicle, and your vehicle will periodically store the last 100 generated security events. In case of a new security event, the oldest security event and related data will be deleted.
+
+The relevant data will be processed and analysed for the purpose of preventing cybersecurity threats and vulnerabilities, responding to and eliminating detected threats and vulnerabilities from potential cybersecurity attacks, as well as ensuring the appropriate security of Kia vehicles.
+
+Relevant Personal Data: Vehicle data, Cybersecurity Data.
+
+Legal basis: The Processing is necessary: (i) for compliance with a legal obligation to which we are subject (Art. 6 (1) c) GDPR); or (ii) for the purpose of our legitimate interests (Art. 6 (1) f) GDPR).
+
+Our legitimate interests are: ensuring and improving the security of Kia vehicles.
+
+7.4.
+
+OTA (Over the Air) Updates
+
+7.4.1.
+
+Maps and Infotainment OTA Update
+
+The “Maps and Infotainment OTA Update” enables:
+
+updates of the maps in the vehicle's navigation system (“Maps Update”); and/or
+
+updates of infotainment software or enhancements of Head Unit software (“Infotainment Update”)
+
+from our servers to the embedded telematics system using the “over-the-air” method.
+
+Further information about this service is provided in Section 4.2.4.2 of the Kia Connect Terms of Use.
+
+For the avoidance of doubt, if you receive the Maps Updates and/or Infotainment Updates by accessing the web page https://update.kia.com/EU/E1/Main or at the dealership, these updates are not offered to you via the “over-the-air” method, and we are not the Controller of the related Processing of Personal Data.
+
+7.4.2.
+
+Vehicle System OTA Update
+
+“Vehicle System OTA Update” enables the updating of embedded software of certain control units of the vehicle with newer versions of the software or with updated parameters (“Vehicle System Update”) from our servers using the “over-the-air” method. We provide you with Vehicle System OTA Updates for various reasons and purposes, in particular to remedy a defect within the warranty period, within the scope of the manufacturer's guarantee or for other security-related reasons. Further information about Vehicle System OTA Updates is provided in Section 4.2.4.3 of the Kia Connect Terms of Use.
+
+Please note that in connection with the provision of vehicle system OTA Updates (including for making Vehicles System OTA Updates more efficient and convenient, ensuring that Vehicle System OTA Updates meet technical requirements and standards (in particular with regard to cyber security and system stability) and for steering the deployment and monitoring of the Vehicle System OTA Updates on a global level), we will share your Personal Data with Kia EU (cf. Section 3.2). Kia EU and we process your Personal Data as joint Controllers.
+
+For the avoidance of doubt, if you receive Vehicle System Updates by accessing the web page https://update.kia.com/EU/E1/Main or at the dealership, these updates are not offered to you via the “over-the-air” method, and we are not the Controller of the related processing of Personal Data.
+
+Relevant Personal Data: Vehicle Data, Vehicle Status Information, Pseudonymised Identifiers, Position and Movement Data, Technical Data, OTA-related Data.
+
+Legal basis: The Processing is necessary for the performance of the contract that you have entered into with us (Art. 6 (1) b) GDPR). With respect to the Vehicle System OTA Update, the Processing is also necessary for us for the purpose of the legitimate interests pursued by us and Kia EU (Art. 6 (1) f) GDPR).
+
+The legitimate interests are: making Vehicle System OTA Updates more efficient and convenient and ensuring that Vehicle System OTA Updates meet technical requirements and standards, in particular with regard to cyber security and system stability.
+
+For Kia EU, the Processing is necessary for compliance with a legal obligation (Art. 6 (1) c) GDPR), and for the purpose of the legitimate interests pursued by Kia EU and other members of the Kia group (Art. 6 (1) f) GDPR).
+
+The legitimate interests are: ensuring that Kia EU and other members of the Kia group comply with legal obligations, ensuring that Kia Connect as a member of the Kia group is able to provide good and appropriate services to its customers, making Vehicle System OTA Updates more efficient and convenient, steering the deployment and monitoring of the Vehicle System OTA Updates on a global level, and ensuring that Vehicle System OTA Updates meet the technical requirements and standards, in particular with regard to cyber security and system stability.
+
+7.5.
+
+Kia Connect Diagnosis
+
+In case of malfunction of your type of Kia vehicle or vehicle model, we may assist the vehicle manufacturer in troubleshooting the issue on a general basis by way of a remote diagnosis. For this purpose, we will collect the diagnostics trouble code from the vehicle and then anonymise the relevant data before sharing the data with the vehicle manufacturer for their analysis.
+
+Relevant Personal Data: Vehicle Data, Technical Data.
+
+Legal basis: The Processing is necessary for the purpose of the legitimate interests pursued by us, but also our Kia customers and the Kia vehicle manufacturer (Art. 6 (1) f) GDPR). The legitimate interests are: fixing technical issues in relation to certain types of Kia vehicles or vehicle models.
+
+7.6.
+
+Upgrades
+
+7.6.1.
+
+General
+
+We offer Upgrades that can be purchased in the Kia Connect Store. The Upgrades themselves will not require the Processing of Personal Data, unless the relevant Upgrade includes or relates to a Connected Service referenced in the sections above. If this is the case, please refer to the relevant section above for information about our Processing of your Personal Data.
+
+7.6.2.
+
+Informing other Users of Upgrades
+
+If your vehicle is linked to the account of other users, we will inform the user who first linked their account to the relevant vehicle (“Main User”) and any further users who have linked the vehicle to their account (“Shared Users”) via email about the purchase of an Upgrade by another Shared User and the activation and deactivation (if applicable) of the respective Upgrade.
+
+Relevant Personal Data: Personal Details, Contact Details, Vehicle Data, Pseudonymised Identifiers, Technical Data, Purchase Details.
+
+Legal basis: The Processing is necessary for the performance of the contract that you have entered into with us (Art. 6 (1) b) GDPR).
+
+7.7.
+
+Kia Connect Store: Purchase and Payment Process
+
+You can select Upgrades and/or certain Connected Services and purchase and/or activate them in the Kia Connect Store. Details about the Processing of your Personal Data in connection with the Kia Connect Store and the purchase process are provided in the Kia Connect Store Privacy Notice, which is accessible in the Kia Connect Store and is also available here: https://connect.kia.com/eu/downloads.
+
+Details about the Processing of your Personal Data in connection with the payment process are provided in the Kia Pay Privacy Notice, which will be made available to you before you issue the payment for the relevant Upgrade or Connected Service in the Kia Connect Store and is also available here: https://connect.kia.com/eu/downloads
+
+7.8.
+
+Other Processing Activities
+
+7.8.1.
+
+Communication
+
+We Process your Personal Data to communicate with you via several communication channels (e.g. email, telephone, in-app or push notification or the Head Unit of your vehicle such as through the Notification Centre or infotainment system) in relation to the Connected Services (e.g. to provide customer support, inform you about technical issues, perform our contractual obligations, inform you about changes to the Kia Connect Terms of Use or this Kia Connect Privacy Notice). For information about communication regarding our marketing activities, please see Section 7.8.3 For information about our communication with you regarding Upgrades purchased for your vehicle, please see Section 7.6.2
+
+Relevant Personal Data: Personal Details, Contact Details, Contract Details, Communication Data, Vehicle Data, Pseudonymised Identifiers, Technical Data.
+
+Legal basis: The Processing is necessary for the performance of the contract that you have entered into with us (Art. 6 (1) b) GDPR), or for the purpose of the legitimate interests pursued by us (Art. 6 (1) f) GDPR). Our legitimate interests are: providing the best possible service to our customers and appropriately answering and processing our customers’ requests.
+
+7.8.2.
+
+Technical Support
+
+Where a technical issue has been detected in relation to your vehicle and Connected Services, we might be required to read out information from your vehicle for the purpose of analysing such information and to resolve the detected issue.
+
+Subject to your prior consent, we will collect and Process what is known as a log file of the Head Unit from your vehicle, which contains certain categories of Personal Data. Please note that the refusal to grant or the withdrawal of your consent might prevent us from offering or completing an analysis of the detected issue of your vehicle and Connected Services.
+
+Relevant Personal Data: Consent Records, Vehicle Data, Vehicle Status Information, Position and Movement Data, Usage-based Data, Technical Data.
+
+Legal basis: The Processing is based on your prior consent (Art. 6 (1) a) GDPR). Your consent is voluntary and can be withdrawn at any time. The withdrawal of your consent will not affect the lawfulness of Processing based on such consent before its withdrawal.
+
+7.8.3.
+
+Direct Marketing
+
+We Process Relevant Personal Data to contact you via email, messages or notifications within the Kia App, the Head Unit of your vehicle or other communication formats to provide you with promotional information regarding the Connected Services, our products and services or the products and services of other Kia group members, or to ask you to participate in surveys or to provide your feedback, usually subject to your prior opt-in consent and to the extent required under applicable law.
+
+You may give your consent by activating the respective consent button in the consent list of the Kia App or by other relevant means (if applicable). Your consent is voluntary and can be withdrawn at any time (e.g. by deactivating the respective consent button in the consent list of the Kia App).
+
+You may also unsubscribe from our promotional email list at any time by clicking on the unsubscribe link included in each promotional email that we send. The withdrawal of your consent will not affect the lawfulness of Processing based on such consent before its withdrawal.
+
+If youprovide us with your email address when signing up to Connected Services, wemay send you information about similar services or products to the relevantemail address without asking you for your prior specific consent, withoutprejudice to your right to object under Section 12.
+
+This is because specific consent from you as an existing customer is not required in such cases. This also applies to sending you such information via notifications within the Kia App to the inbox which is provided separately within the app. However, you have the right to opt out from receiving such electronic mail marketing at any time without incurring any costs (other than the transmission costs according to the basic rates) (e.g. by deactivating the respective buttons in the “Service-related Advertising” list of the Kia App).
+
+You may also unsubscribe from our promotional email list at any time by clicking on the unsubscribe link included in each promotional email that we send. In addition, you also have the right to object to the Processing of your Personal Data for direct marketing purposes (see Section 12 for more details).
+
+Through the consent list of the Kia App, we may also obtain consent from you on behalf of an affiliated Kia entity in Europe to contact you for their direct marketing purposes. Where this is the case, we inform the relevant Kia entity about your consent and share your relevant contact details with them accordingly.
+
+In relation to the relevant Kia entity’s direct marketing activities based on such consent, the relevant Kia entity acts as a Controller and is responsible for the Processing of your Personal Data in connection with such activities.
+
+If you wish to withdraw consent that we have obtained from you on behalf of the relevant Kia entity, in addition to de-activating the respective consent button in the Kia App, you may also directly contact the relevant Kia entity for the withdrawal of your consent.
+
+Relevant Personal Data: Personal Details, Contact Details, Consent Records, Vehicle Data, Pseudonymised Identifiers, Technical Data.
+
+Legal basis: The Processing is based on your prior consent (Art. 6 (1) a) GDPR in conjunction with applicable local marketing laws (e.g. in Germany Section 7 (2) No. 2 of the German Act against Unfair Competition (“UWG”)); or it is necessary for the purpose of the legitimate interests pursued by us (Art. 6 (1) f) GDPR in conjunction with the applicable local marketing laws (e.g., in Germany Sec. 7 (3) UWG)). Our legitimate interests are: promoting our services and products.
+
+Your consent is voluntary and can be withdrawn at any time. The withdrawal of your consent will not affect the lawfulness of Processing based on such consent before its withdrawal.
+
+7.8.4.
+
+Feedback and Surveys: From time to time, we may invite you to provide your feedback and/or participate in surveys relating to us and our services, including support services (see Section 7.8.1 for details about our communication with you).
+
+If you provide your feedback or participate in our surveys, we may Process Relevant Personal Data for the purpose of processing and evaluating the feedback or conducting, processing and evaluating the survey. This is in order to improve our services and adapt them to our customers’ needs.
+
+In some cases, we may conduct surveys using the Salesforce Marketing Cloud platform provided by salesforce.com Germany GmbH or the online survey tool SurveyMonkey provided by Momentive Europe UC (“Momentive”) (see Section 8 for more details about these providers).
+
+To participate in surveys conducted on SurveyMonkey, you may have to click a link which will be included in the survey invitation. When you click on the link, you will be referred to a website of Momentive on which the survey will be conducted.
+
+Momentive will Process the survey related information on our behalf and for our purposes. Furthermore, Momentive may: (i) collect and Process information about your device and other technical data to avoid multiple participations; and (ii) use cookies to recognise whether the participant has already visited the survey and to reassign responses that the relevant participant has already given.
+
+More information about Momentive’s processing of personal data is available at https://www.surveymonkey.com/mp/legal/privacy/.
+
+Relevant Personal Data: Personal Details, Technical Data, Views and Opinions.
+
+Legal basis: The Processing is necessary for the purpose of the legitimate interests pursued by us (Art. 6 (1) f) GDPR). Our legitimate interests are: improving our services.
+
+7.8.5.
+
+Route Satisfaction
+
+From time to time, we may ask you via the Head Unit of your vehicle (through the infotainment system) to submit your feedback in order to measure your satisfaction with our route guidance and location information.
+
+Relevant Personal Data: Vehicle Data, Pseudonymised Identifiers, Position and Movement Data, Technical Data, Views and Opinions.
+
+Legal basis: The Processing is necessary for the purpose of the legitimate interests pursued by us (Art. 6 (1) f) GDPR). Our legitimate interests are: improving our services.
+
+7.8.6.
+
+Enhanced POI Service
+
+On eligible vehicles, the Service “Live Point of Interest (POI) and Online POI Search” (see Section 7.2.2) will be enhanced by data provided through our partner 4.screen (see https://www.4screen.com/).
+
+This means that the live POIs may contain additional content from third parties. You will receive information on stores or restaurants (such as their location) via branded pins on the map or via the search function of the map. You will also receive special deals and offers from stores and restaurants in the proximity of your vehicle.
+
+To be able to provide you with this feature and the relevant information, it may be necessary to transfer the following data to 4.screen: Approximate search area, search term, search (POI) category, device ID, approximate location of the device, Head Unit language and generation, vehicle brand, engine type (e.g. EV or petrol), vehicle class (e.g. small or SUV), vehicle production year and vehicle country.
+
+Furthermore, if relevant information and offers are provided to you, a unique offer ID is created. This offer ID is also transferred to 4.screen together with the event type (e.g. shown, clicked, navigation started), screen type (e.g. Head Unit, app) and the timestamp of when the offer was interacted with in order to validate the invoicing process. If offers and information from the vehicle are sent directly to the Kia App as push notifications, we also process your user profile ID.
+
+Relevant Personal Data: Vehicle Data, Pseudonymised Identifiers, Position and Movement Data, Usage-based Data, Technical Data.
+
+Legal basis: The Processing is necessary for the performance of the contract that you have entered into with us (Art. 6 (1) b) GDPR).
+
+7.8.7.
+
+Data Access under the EU Data Act
+
+Under Regulation (EU) 2023/2854 ("Data Act”), you may have certain rights regarding data generated in connection with the use of our Connected Services and/or the vehicle.
+
+When you exercise your rights under the Data Act, we Process Relevant Personal Data to comply with applicable laws.
+
+In particular, when you request access under the Data Act, we may require additional information to be able to confirm your identity, the validity of the request and your eligibility to access the data (e.g. proof of ownership; proof of lease; proof of any other title that allows temporary use of the vehicle; proof of right to use the Services; information about the legal basis to the extent that the Relevant Data pertains to other individuals).
+
+In some cases, responding to your request under the Data Act may require us to disclose the Relevant Personal Data to other members of the Kia group.
+
+Relevant Personal Data: Personal Details, Contact Details, Verification Data.
+
+Legal basis: The Processing is necessary: (i) for compliance with a legal obligation to which we are subject (Art. 6 (1) c) GDPR); or (ii) for the purpose of our legitimate interests (Art. 6 (1) f) GDPR). Our legitimate interests are: ensuring our compliance with applicable legal obligations.
+
+7.8.8.
+
+Operation of Business
+
+We may Process Relevant Personal Data for internal management and administration purposes, including record management or maintaining other internal protocols. In some cases, this may also require us to disclose the Relevant Personal Data to other members of the Kia group.
+
+Legal basis: The Processing is necessary for the purpose of the legitimate interests pursued by us (Art. 6 (1) f) GDPR). Our legitimate interests are: ensuring the appropriate and efficient operation of our business.
+
+7.8.9.
+
+Legal Compliance
+
+We may Process Relevant Personal Data to comply with applicable laws, directives, recommendations or requests from regulatory bodies (e.g. requests to disclose Personal Data to courts or regulatory bodies, including the police).
+
+Legal basis: The Processing is necessary: (i) for compliance with a legal obligation to which we are subject (Art. 6 (1) c) GDPR); or (ii) for the purpose of our legitimate interests (Art. 6 (1) f) GDPR). Our legitimate interests are: ensuring our compliance with applicable legal obligations.
+
+7.8.10.
+
+Legal Proceedings and Investigations
+
+We may Process Relevant Personal Data in order to assess, enforce and defend our rights and interests.
+
+Legal basis: The Processing is necessary for the purpose of the legitimate interests pursued by us (Art. 6 (1) f) GDPR). Our legitimate interests are: protecting our interests and enforcing our rights.
+
+8.
+
+RECIPIENTS OR CATEGORIES OF RECIPIENTS
+
+We disclose Relevant Personal Data to other entities within the Kia group, for legitimate business purposes and the operation of the Connected Services, in accordance with applicable law.
+
+We also disclose Relevant Personal Data to other Kia group entities in cases in which we have obtained your prior specific consent for such disclosure. In addition, we disclose Relevant Personal Data to:
+
+you and, where appropriate, your appointed representatives;
+
+legal and regulatory authorities, upon request, or for the purposes of reporting any actual or suspected breach of applicable law or regulation;
+
+accountants, auditors, consultants, lawyers and other outside professional advisors to us, subject to binding contractual or legal obligations of confidentiality;
+
+third party Processors, such as
+
+The service provider for the technical infrastructure and maintenance services relevant to Connected Services: Hyundai AutoEver Europe GmbH, Kaiserleistraße 8a, 63067 Offenbach am Main, Germany;
+
+The service providers for our customer data management platforms and connected vehicle data management platforms: salesforce.com Germany GmbH, Erika-Mann-Strasse 31-37, 80636 Munich, Germany, and Amazon Web Services EMEA SARL, 38 avenue, John. F. Kennedy, L-1855, Luxembourg, with their servers located within the EU/EEA;
+
+The service provider Hyundai AutoEver Corp., 510, Teheran-ro, Gangnam-gu, Seoul, Republic of Korea, which provides assistance with analysing and handling security events;
+
+The service provider Momentive Europe UC, Second Floor, 2 Shelbourne Buildings, Shelbourne Road, Dublin 4, Ireland, which provides the online survey tool SurveyMonkey and related services for the purpose of conducting and evaluating surveys;
+
+The service provider Cerence B.V., CBS Weg 11, 6412EX Heerlen, Netherlands, which provides services in connection with the Online Voice Recognition Service;
+
+The service provider LexisNexis Risk Solutions (Europe) Limited, Riverside One, Sir John Rogerson’s Quay, Dublin 2 D02 X576, Ireland, which assists us with the analysis of relevant data in connection with the Driving Safety Score Service;
+
+Our affiliated entities in the EU/EEA, which provide services relating to customer support, including call centre services;
+
+The service providers TomTom Global Content B.V. and HERE Europe B.V., which provide map-related services;
+
+Kia Corporation in connection with our Processing of security event-related data for the purpose of managing and monitoring appropriate cybersecurity standards of Kia vehicles (see Section 7.3).
+
+third party Controllers, such as
+
+Kia group companies and Kia distributers as independent Controller (cf. Section 7.1.6);
+
+certain members of the Vodafone group (namely, Vodafone GmbH, Ferdinand-Braun-Platz 1, 40549 Düsseldorf, Germany, and Vodafone Global Enterprise Ltd, Vodafone House, The Connection, Newbury, RG14 2FN UK) which provide the relevant telecommunications services as an independent Controller (cf. Section 7.2.6);
+
+Kia EU in connection with the provision of Vehicle System OTA Updates as joint Controller with us (cf. Section 7.4.2);
+
+any relevant party, regulatory body, governmental authority, law enforcement agency or court, to the extent necessary for the establishment, exercise or defence of legal claims;
+
+any relevant party, regulatory body, governmental authority, law enforcement agency or court, for the purposes of prevention, investigation, detection or prosecution of criminal offences or the execution of criminal penalties; and
+
+any relevant third party acquirer(s) or successor(s) in title, in the event that we sell or transfer all or any relevant portion of our business or assets (including in the event of a reorganization, dissolution or liquidation).
+
+Furthermore, we disclose Relevant Personal Data to other third party organisations (namely, Kia dealers or workshops, the provider of Kia Charge (i.e. Digital Charging Solutions GmbH), insurance companies, leasing companies, financial service providers, fleet companies, data aggregators); however, we will only share your Personal Data with such third parties where: (i) you have given your prior consent for such disclosure (Art. 6 (1) a) GDPR); (ii) such disclosure is necessary for the performance of our contract or the relevant third party’s contract with you (Art. 6 (1) b) GDPR); or (iii) the sharing is necessary for the purpose of the legitimate interest pursued by the relevant third party to the extent that such legitimate interest is not overridden by your interests, fundamental rights or freedoms (Art. 6 (1) f) GDPR).
+
+If we engage a third-party Processor to Process your Personal Data, the Processor will be subject to binding contractual obligations to: (i) only Process the Personal Data in accordance with our prior written instructions; and (ii) use measures to protect the confidentiality and security of the Personal Data; together with any additional requirements under applicable law.
+
+If we are joint Controllers together with a third party, the Processing will be subject to a respective arrangement between us and the third party.
+
+9.
+
+International Transfer of Personal Data
+
+We are a member of an international group of companies. Therefore, we may transfer Personal Data within the Kia group and to other third parties as noted in Section 8. Some of these recipients may be located or have relevant operations outside of your country and the EU/EEA (e.g. in the Republic of Korea, the United Kingdom or the USA) (“Third Country”).
+
+For some Third Countries, the European Commission has determined that they provide an adequate level of protection for personal data (e.g., the Republic of Korea, the United Kingdom), which also includes the USA to the extent that the receiving company in the USA participates in the EU-U.S. Data Privacy Framework (see https://www.dataprivacyframework.gov) (“Adequate Jurisdictions”).
+
+Where we transfer Personal Data to a recipient that is located in a Third Country which has not been determined an Adequate Jurisdiction, we (or our processors in the EU/EEA that transfer Personal Data to sub-processors in such Third Countries, as applicable) provide appropriate safeguards by way of entering into data transfer agreements adopted by the European Commission (standard contractual clauses) with the recipients or taking other effective measures to provide an adequate level of data protection.
+
+A copy of the respective safeguards may be requested from us or our DPO (see Section 3 and Section 4).
+
+10.
+
+Data Retention
+
+10.1.
+
+General
+
+Your Personal data is stored by us for no longer than is necessary for the purposes for which the Personal Data have been collected as set out above.
+
+When we no longer require your Personal Data for such purposes, we will erase it from our systems and/or records and/or take steps to properly anonymise it so that you can no longer be identified from the data (unless we are required to retain the relevant Personal Data to comply with legal or regulatory obligations to which we are subject; e.g. Personal Data contained in contracts, communications and business letters may be subject to statutory retention requirements).
+
+The retention period may be extended in accordance with national laws when Processing is necessary for the establishment, exercise or defence of legal claims, and we or third parties have a corresponding legitimate interest (e.g. for the period of impending legal (administrative and/or judicial) procedures and for the duration of such legal proceedings, including the expiration periods of any recourse).
+
+10.2.
+
+Manual Deletion of Data in the Head Unit and in the Kia App
+
+You can manually delete your Personal Data stored in the Head Unit by deactivating the Connected Services in the Head Unit. To do so, please (1) click the "Kia Connect" icon on the vehicle's Head Unit, (2) select "Kia Connect settings", (3) scroll down in the menu on the left to select the "Deactivate Kia Connect" entry, (4) click the "Deactivate" button. The system will then guide you through the deactivation process and offer to delete the data.
+
+Attention: Please note that resetting the Head Unit to factory default settings does not lead to the deactivation of the Connected Services. You must follow the deactivation process described above.
+
+After the deactivation as described above, Connected Services for the respective vehicle are deactivated, the data in the Head Unit is deleted and the vehicle is disconnected from your account on the Kia App. The data that was transmitted to us via the Head Unit in connection with the Connected Services will also be deleted, unless retention periods apply (see Section 10.1).
+
+Please note that the any data that relates to the Connected Services will also be deleted in your account on the Kia App. However, any other data in your account will remain unaffected. If you also wish to delete your account on the Kia App, please follow the account deletion process in the Kia App.
+
+11.
+
+Offline Mode (Modem Off)
+
+You may choose to activate offline mode in the Head Unit by setting the respective preference. If offline mode is switched on, all Connected Service functions are disabled and no Personal Data, in particular no location data (GPS data), is collected. An offline mode icon is displayed at the top of the Head Unit screen in the vehicle.
+
+12.
+
+Your Legal Rights
+
+Subject to applicable law, you may have the following rights regarding the Processing of your Personal Data:
+
+the right not to provide your Personal Data to us (however, please note that we will be unable to provide you with the full benefit of the Connected Services, if you do not provide us with your Personal Data (e.g., we might not be able to process your requests without the necessary details);
+
+the right to request access to, or copies of, your Personal Data, together with information regarding the nature, Processing and disclosure of those Personal Data;
+
+the right to request rectification of any inaccuracies in your Personal Data;
+
+the right to request, on legitimate grounds: (i) erasure of your Personal Data; or (ii) restriction of Processing of your Personal Data;
+
+under certain circumstances, for example if Art. 6 (1) a or Art. 6 (1) b GDPR constitutes a legal basis for the Processing, you may have the right to receive the Personal Data concerning you and which you have provided to us, in a structured, commonly used and machine-readable format, and you may have the right to transmit this data to another Controller without hindrance by us;
+
+where we Process your Personal Data on the basis of your consent, the right to withdraw that consent (noting that such withdrawal does not affect the lawfulness of any Processing performed prior to the date on which we receive notice of such withdrawal, and does not prevent the Processing of your Personal Data in reliance upon any other available legal bases); and
+
+the right to lodge complaints regarding the Processing of your Personal Data with a Data Protection Authority (i.e. in relation to the UK, the Information Commissioner’s Office (https://ico.org.uk/) or in relation to the EU, the Data Protection Authority for the EU Member State in which you live, or in which you work, or in which the alleged infringement occurred (see the list here: https://www.edpb.europa.eu/about-edpb/about-edpb/members_en).
+
+Subject to applicable law, you may also have the following additional rights regarding the Processing of your Personal Data:
+
+the right to object, on grounds relating to your particular situation, to the Processing of your Personal Data by us or on our behalf, where such processing is based on Articles 6(1)(e) (public interest) or 6(1)(f) (legitimate interests) of the GDPR; and
+
+the right to object to the Processing of your Personal Data by us or on our behalf for direct marketing purposes.
+
+This does not affect your statutory rights.
+
+Please note that we will not Process your Personal Data for profiling purposes without your consent.
+
+To exercise one or more of these rights, or to ask a question about these rights or any other provision of this Kia Connect Privacy Notice, or about our Processing of your Personal Data, please use the contact details provided in Sections 3 and 4 above.
+
+13.
+
+Kia Connect Terms of Use
+
+The use of Connected Services is subject to our Kia Connect Terms of Use, which are available here: https://connect.kia.com/eu/downloads. We recommend that you review these terms regularly, in order to review any changes we might make from time to time.
+
+14.
+
+Updates
+
+This Kia Connect Privacy Notice may be amended or updated from time to time to reflect changes in our practices with respect to the Processing of Personal Data, or changes in applicable law. We encourage you to read this Kia Connect Privacy Notice carefully, and to regularly check this page to review any changes we might make in accordance with the terms of this Kia Connect Privacy Notice.
+
+We will publish the updated Kia Connect Privacy Notice on our websites, in the Kia App and the Head Unit. The date of the last update is mentioned at the top of this Kia Connect Privacy Notice.
+
+15.
+
+Definitions
+
+“Controller” means the natural or legal person, public authority, agency or other body which, alone or jointly with others, determines the purposes and means of the processing of personal data.
+
+“Data Protection Authority” means an independent public authority that is legally tasked with overseeing compliance with applicable data protection laws
+
+“GDPR” means: (i) Regulation (EU) 2016/679 (General Data Protection Regulation); or (ii) with regard to the United Kingdom, Regulation (EU) 2016/679 as it forms part of the law of the United Kingdom by virtue of section 3 of the European Union (Withdrawal) Act 2018 and as amended from time to time (also known as the UK GDPR).
+
+“Personal Data” means any information relating to an identified or identifiable natural person.
+
+“Process”/ ”Processing” means any operation or set of operations which is performed on personal data or on sets of personal data, such as collection, recording, organisation, structuring, storage, adaption or alteration, retrieval, consultation, use, disclosure by transmission, dissemination or otherwise making available, alignment or combination, restriction, erasure or destruction.
+
+“Processor” means a natural or legal person, public authority, agency or other body which processes personal data on behalf of the controller.
+
+16.
+
+Local Law Amendments
+
+The following local law amendments apply:
+
+France
+
+Regarding Section 11 (“Your Legal Rights”): Post-mortem privacy: You also have the right to define specific instructions regarding the storage, erasure and communication of your Personal Data after your death.
+
+Spain
+
+Section 11 (“Your Legal Rights”) shall be amended as follows with regard to the right to request access to, or copies of, your Personal Data:
+
+You may have the right to obtain a copy of the Personal Data undergoing processing. For further copies requested by you within six months, unless there is legitimate cause to do so, we may charge a reasonable fee based on administrative costs.
+
+Switzerland
+
+Data Protection Authority: The contact details of the Swiss data protection authority are as follows: Eidgenössischer Datenschutz- und Öffentlichkeitsbeauftragter (EDÖB), Feldeggweg 1,3003 Bern, Switzerland, phone: +41 (0) 58 462 43 95, website: https://www.edoeb.admin.ch
+
+Section 9 shall be complemented with the following information:
+
+Your Personal Data is stored in the following countries/jurisdictions: [WORLDWIDE].
+
+Regarding references to the GDPR, to the extent that Swiss data protection laws and related laws apply, references to Articles of the GDPR shall be read as references to the respective Articles of the Swiss Federal Act on Data Protection as from 1st September 2023 (“FADP”), and references to sections of the UWG shall be read as references to the respective Articles of the Swiss Federal Act against Unfair Competition (“Swiss UWG”), namely:
+
+–Art. 6(1) b) GDPR shall be read as Art. 6 FADP when referenced for the execution purposes of a contract;
+
+–Art. 6 (1) f) GDPR shall be read as Art. 31 para. 1 FADP;
+
+–Art. 6(1) c) GDPR shall be read as Art. 31 FADP;
+
+–Art. 6(1) a) GDPR shall be read as Art. 31 FADP;
+
+–Sec. 7 (2) No. 2 of the UWG shall be read as Art. 3 para. 1 lit o of the Swiss UWG;
+
+–References to Art. 7(3) GDPR shall be read as a reference to similar principles under the FADP;
+
+–Art. 15 GDPR shall be read as Art. 25 FADP;
+
+–Art. 16 GDPR shall be read as Art. 32 FADP;
+
+–Art. 17 GDPR shall be read as Art. 32 FADP;
+
+–Art. 18 GDPR shall be read as Art. 32 FADP;
+
+–Art. 20 GDPR shall be read as Art. 28 FADP;
+
+–Art. 21(1) and (2) GDPR shall be read as Art. 30 para 2 lit b FADP;
+
+–Art. 77 GDPR shall be read as Art. 49 FADP;
+
+–Art. 28(3) GDPR shall be read as Art. 9 FADP.
+
+United Kingdom
+
+Section 9 (“International Transfer of Personal Data”) shall be supplemented as follows:
+
+Similarly to “Adequate Jurisdictions” determined by the European Commission, the government in the United Kingdom has decided that particular countries (see https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/international-transfers/international-transfers-a-guide/#adequacy) ensure an adequate level of protection of Personal Data in accordance with Article 45, UK GDPR (“Adequacy Regulation”).
+
+Where we transfer Personal Data to a recipient that is located in a Third Country which has not been determined an Adequate Jurisdiction or compliant with the Adequacy Regulation, we (or our Processors in the UK/EU/EEA that transfer Personal Data to sub-Processors in such Third Countries, as applicable) provide appropriate safeguards by way of entering into data transfer agreements adopted by the European Commission (standard contractual clauses) or the United Kingdom (if applicable) with the recipients or by taking other effective measures to provide an adequate level of data protection.
+
+A copy of the respective safeguards may be requested from us or our DPO (see Section 3 and Section 4).
+
+About Us
+
+Products & Services
+
+In-App Services
+
+In-Car Services
+
+Digital Key
+
+In-Car Payments
+
+Safety Score
+
+Kia App
+
+Connected Cars Subscribtions
+
+Store
+
+Customer Support
+
+FAQ
+
+Guides
+
+Contact Us
+
+Business
+
+Business Legal Documents
+
+Kia Business Solutions portal
+
+Imprint
+
+Cookies Policy
+
+Privacy Policy
+
+Kia Connect Privacy Notice
+
+Kia Connect Legal Documents
+
+Accessibility
+
+Home Page
+
+Kia Connect Privacy Notice
+
+© 2021 Kia Motors Corp.

@@ -1,0 +1,492 @@
+Privacy Policy
+
+Video surveillance policy
+
+Sales and after-sales policy
+
+Cookie policy
+
+Used Vehicle Locator policy
+
+Connected Services policy
+
+Privacy Policy
+
+Video surveillance policy
+
+Sales and after-sales policy
+
+Cookie policy
+
+Used Vehicle Locator policy
+
+Connected Services policy
+
+GENESIS Connected Services privacy notice
+
+1. What is this Privacy Notice about?
+
+Genesis Motor UK Ltd (“Genesis”, “we”, “us”, “our”) is committed to protecting the privacy and the security of your personal data.
+
+The purpose of this privacy notice ("Privacy Notice") is to inform you about the collection and processing of your personal data in connection with the provision of Genesis Connected Services (“GCS” or "Services") via the infotainment system, AVNT (Audio Video Navigation and Telematics), in the vehicle (“Infotainment System”) and the Genesis Connected Services App (“GCS App”).
+We take your privacy very seriously and will only process your personal data in accordance with applicable data protection laws.
+Any processing of your personal data regarding the registration of the underlying Genesis Account (including personal data about you such as your name, your email address, your date of birth, your mobile phone number) is subject to a separate privacy notice.
+
+2. Who is responsible for processing my data?
+
+Genesis Motor UK (“Genesis UK”), having its registered address in Birchwood Building, Springfield Drive, Leatherhead, Surrey, United Kingdom KT22 7LP, is responsible for the processing of your personal data as detailed in this Privacy Notice. Genesis UK is the operator of the Services provided to you and acts together with Genesis Motor Europe GmbH (“GME”), with its registered office at Strahlenbergerstrasse 110-112, 63067 Offenbach am Main, Germany, as joint controller. Genesis UK and GME are collectively referred to as “we” or “us”.
+
+Genesis UK provides support to you in the active use of the Services, while GME manages the provision of the App and the underlying Services on an organisational and technical level. Genesis UK and GME may both use your personal data for further purposes as described below. Genesis UK shall be the contact point for any data subject request concerning the processing of personal data in connection with the Services. However, you are entitled to exercise your rights under the applicable data privacy legislation in respect to and against any controller.
+
+Genesis UK and GME have concluded an agreement on the processing of personal data. Upon request, Genesis UK will provide you with information of the essential content of that agreement.
+
+3. How can I contact the controller and the data protection officer?
+
+3.1. If you have any questions about or in connection with this Privacy Notice or the exercise of any of your rights, you may contact Genesis UK via email at [email protected], or via the postal address: Genesis Motor UK, Birchwood Building, Sprinfield Drive, Leatherhead, Surrey, United Kingdom KT22 7LP.
+3.2. You also have the option to contact GME by email: to [email protected] or by mail to Strahlenbergerstrasse 110-112, 63067 Offenbach am Main. You may also use this information to contact the data protection officer of GME.
+
+4. What categories of personal data are processed, for what purposes and on what legal basis?
+
+4.1. Our processing of your personal data
+4.1.1. Provision of the Genesis Connected Services
+We collect and process your personal data in connection with the Services only insofar as the collection and processing is:
+
+necessary for the conclusion or the performance of the Genesis Connected Services contract (Art. 6(1)(b) UK GDPR),
+where required by law (Art. 6(1)(c) UK GDPR),
+where based on your consent (Art. 6(1)(a) UK GDPR), or
+where it is necessary for the purposes of our legitimate interests or those of third parties (Art. 6(1)(f) UK GDPR).
+
+For details on individual Services, please look at the relevant service description in the Genesis Connected Services Terms of Use.
+
+All (personal) data described in Sections 4.2, 4.4, 4.5, 4.5 and their subsections below is collected directly from your vehicle (e.g. its sensors and related applications as made accessible through the Infotainment System) or were made available by you through the GCS App (e.g. by entering certain personal data via the GCS App) and is processed in connection with the Services.
+
+The data described in Sections 4.2, 4.4, 4.4 and 4.5 and its subsections below is required to provide the Services. Without the respective information, the Services cannot be performed.
+
+4.1.2. Processing for other purposes
+Apart from the provision of the Services, we will process your personal data also for other purposes as further described below.
+
+Product improvement / development: We will further analyse and improve the Services to develop new mobility and mobility-related products and/or services, to secure our products and/or to improve our Services. For these purposes, we automatically analyse the data collected when providing Services based on statistical and mathematical models to identify potential for improvements. More details are provided in Section 4.5.
+
+The legal basis for any such processing is Art. 6(1)(f) UK GDPR (legitimate interests of Genesis UK and GME to process your personal data to develop and improve our Services).
+Monitoring of products / product liability: In this context we process your personal data for monitoring our products, providing sufficient IT security standards or to defend us or third parties against product liability and other legal claims made with regard to our products and services.
+
+Insofar as such processing is not required by law (Art. 6(1)(c) UK UK GDPR), the legal basis for any such processing is Art. 6(1)(f) UK GDPR (legitimate interests of Genesis UK and GME Genesis UKto process your personal data for the purposes as indicated above).
+Other purposes: We process your personal data for other purposes only if obligated to do so on the basis of legal requirements (Art. 6(1)(c) UK GDPR, for example, transfer to courts or criminal prosecution authorities, to provide certain functionalities in the car such as the “eCall” as based on Regulation (EU) 2015/758), if you have consented to the respective processing (Art. 6(1)(a) UK GDPR), or if the processing is otherwise lawful under applicable laws. If processing for another purpose takes place, we will provide you with additional information, as appropriate.
+
+4.1.3. No automated decision-making
+We do not engage in automated decision-making, including profiling, in connection with the Services unless you have been expressly notified otherwise by other means.
+
+4.2. Genesis Account
+The Genesis Account is required to register for numerous services (provided by us or by cooperating third parties). The underlying processing of your personal data is necessary to enter into and to perform a contract with you (Art. 6(1)(b) UK GDPR) and is based on our legitimate interest to improve your customer experience by providing you with a centralised user account (Art. 6(1)(f) UK GDPR).
+
+The Genesis Account is a central user account in which you can manage your personal master data and which you can use as a single sign-on for your linked services. To use our Genesis Connected Services it is necessary to create a Genesis Account or to log in with an existing Genesis Account. In this case, the Genesis Connected Services will be linked to your Genesis Account and your personal master data (your email address, your salutation, first and last name, your country and your preferred language) will be displayed.
+
+For more information, please refer to the separate Privacy Notice for the Genesis Account.
+
+4.3. Provision of Genesis Connected Services – Vehicle Infotainment System
+4.3.1. Genesis Live
+Genesis Live enables you to access the following functions:
+
+Live traffic: Live traffic information to calculate routes including precise arrival times and display traffic situation based on your current location
+Live parking: On- and Off-Street parking, nearby destination, nearby scrolled mark, nearby city centre based on your current location
+Live filling stations: Information about the nearest fuel stations and fuel prices based on your current location
+Live EV point of interest (POI) (only for Electric Vehicles): Information on nearby charging stations including availability status and charger type based on your current location
+Weather: Local weather information based on your current location
+Live POI and Live free text search: Information on nearby POI based on your current location
+Camera / danger zone alerts: The system provides alerts in areas where accidents are particularly common and warns you about accident black spots or speed cameras
+Sports league: Information on results from recent sports events
+
+The provision of our Genesis Live Services requires the collection and processing of your Vehicle Identification Number (VIN), geolocation data (e.g. GPS coordinates for “Live Traffic Information”), the Integrated Circuit Card Identifier of your vehicle's SIM card (ICCID) and a Unique request ID for any transaction.
+
+We process your personal data for these purposes to perform our Services (Art. 6(1)(b) UK GDPR).
+
+4.3.2. Voice Recognition
+Voice Recognition enables you to use spoken commands to access and control the Infotainment System and to draft and send text messages via a connected mobile device.
+
+For this function, the following categories of personal data are processed and sent to our Genesis cloud environment: Voice recording, geolocation data (GPS coordinates), point of interest (POI) and the Cerence User ID. This is a unique ID for the registration on the server of Cerence B.V., Netherlands, our data processor for these specific services. There is no link between the Cerence User ID and the Vehicle Identification Number (VIN) or any other identifiers, which means that Cerence B.V., Netherlands cannot identify a natural person from the data transmitted to it. Once you start your vehicle, Voice Recognition is activated as a pre-setting in its online mode. We process your personal data for these purposes to perform our Services (Art. 6(1)(b) UK GDPR).
+
+When using Online Voice Recognition, we process your personal data in our Genesis cloud environment.
+
+In addition, we collect voice samples and GPS coordinates and store them for up to 90 days in order to perform and improve the voice recognition service.
+
+We process your personal data for these purposes to perform our Services (Art. 6((1)(b) UK GDPR) and where related to the improvement of the services based on our respective legitimate interests (Art. 6(1)(f) UK GDPR).
+
+When you use the Online Voice Recognition, your voice samples and GPS coordinates are processed by our service provider Cerence B.V., Olympia 2 D, 1213 NT Hilversum, Netherlands (data processor) and its sub-processors, which may be located in countries outside the EU/EEA and the UK and may not provide for an adequate level of data protection.
+
+You can deactivate the Online Voice Recognition and use the Voice Recognition services in an offline mode where no data is transmitted outside of your vehicle.
+
+If you do not want us to process your voice samples and GPS coordinates, you can use Offline Voice Recognition, which does not use your voice samples and GPS coordinates to improve the voice recognition service.
+
+4.3.3. Vehicle Diagnostics
+Vehicle Diagnostics gathers and provides reports about the status of specific control units together with the Vehicle Identification Number (VIN). These reports will be sent to our server for further analysis. Within the Vehicle Diagnostics section of the Infotainment System you can view the general status of your vehicle. We use this data to provide you with information concerning whether there is an issue with your vehicle. The coverage of this feature is Battery Management System, Motor Control System, Vehicle Control System, Integrated Braking and Body Control System, Driver Assistance System, Tyre Pressure Monitoring System and Airbag Control System.
+
+We process your personal data for Vehicle Diagnostics to perform our Services (Art. 6(1)(b) UK GDPR).
+
+To the extent that Genesis UK or GME is required to do so by law, we process this personal data for monitoring the products and to comply with product security requirements (Art. 6(1)(c) UK GDPR).
+
+For processing the above data for the improvement and development of the products see also Section 4.5 below.
+
+4.3.4. Diagnostic Trouble Code Notification
+Whenever a vehicle malfunction is detected, a Diagnostic Trouble Code (DTC) is generated and an alert is displayed on the head unit of your vehicle. If GCS connectivity is activated, the DTC and the respective description, occurrence date, together with the VIN of your car, are sent to our server for further analysis and customer care.
+
+This data will also be made available to the selected authorised repairer for car servicing.
+
+We process your personal data for Diagnostic Trouble Code Alert to perform our Services (Art. 6(1)(b) UK GDPR).
+
+To the extent that Genesis UK or GME is required to do so by law, we process this personal data for monitoring the products and to comply with product security requirements (Art. 6(1)(c) UK GDPR).
+
+4.3.5. Connected Routing
+Connected Routing allows the calculation of more accurate traffic forecasting, more precise times of arrival and more reliable route recalculations by processing the relevant data on our Genesis cloud environment instead of only on your Infotainment System.
+
+For this function the following categories of personal data are processed and sent to our Genesis cloud environment: Your Vehicle Identification Number (VIN) geolocation data (GPS coordinates) and navigation data (e.g. real time traffic; pattern of traffic information).
+
+We process your personal data for these purposes to perform our Services (Art. 6(1)(b) UK GDPR).
+
+4.3.5.1. Route Satisfaction
+Through the infotainment system we may ask you to submit your feedback in order to measure your satisfaction with our route guidance and location information. For this function, we process the same categories of personal data as in 4.3.1. as well as your satisfaction score. The legal basis for the processing of your data for these purposes is our legitimate interest in improving the Services (Art. 6(1)(f) UK GDPR).
+
+4.3.6. Fingerprint Identification (For GV70 and GV60 Model)
+Genesis Connected Services User Profile allows you to set up Fingerprint Identification for each user profile. By setting your fingerprint, you can use fingerprint recognition instead of a password for convenience functions such as starting the vehicle, unlocking your profile and exiting valet mode.
+
+For each user profile the following category of personal data is processed within the car: fingerprint, fingerprint profile created from fingerprint data. The latter is a pseudonymised identifier that does not allow any reference to a natural person and will be especially encrypted.
+
+The fingerprint information will be processed locally in the car only and will be stored in an encrypted form.
+
+We process your personal data based on your consent (Art. 6(1)(a) and Art. 9(2)(a) UK GDPR). You may withdraw your consent at any time with effect for the future by deleting your fingerprint data directly in the vehicle. The fingerprint data will be instantly deleted in the storage in the vehicle where it is securely stored. Please note that this does not affect the lawfulness of the processing that was carried out on the basis of the consent until the withdrawal.
+
+4.3.7. Notification Center
+Through the Notification Center we can send you important information about your vehicle. We will use this service only for important information. The information will appear as a pop-up in the Infotainment System of your car. You can deactivate receipt of certain types of information in the settings or directly when receiving a pop-up.
+
+For this function, the following categories of personal data are processed: read status; reading time.
+
+We process your personal data for these purposes to perform our Services (Art. 6(1)(b) UK GDPR).
+
+4.3.8. Calendar
+The calendar allows you to synchronize your Google or Apple calendar on your smartphone with the integrated calendar function of the Infotainment System of your vehicle in order to use it to set the navigation destination.
+
+For this function the following categories of personal data are processed and sent to our Genesis cloud environment: email address, calendar ID, phone number, Google Token/iCloud password and calendar entries (e.g. title of schedule, date/time, address, memo, attendance etc.).
+
+We process your personal data for these purposes to perform our Services (Art. 6(1)(b) UK GDPR).
+
+4.3.9. OTA (Over-the-Air) Software Update
+OTA software update (“OTA Updates”) allows you to update the software wirelessly in your vehicle using mobile network without having to visit a vehicle repair shop .
+
+Your infotainment system will regularly check whether new software versions are available and automatically download any available software updates to your vehicle and prepare the respective installation.
+
+You can choose whether you want to complete the OTA Update now or later.
+
+You can disable this feature by turning off the toggle in the GCS app (“More” → “Service List”).
+
+Alternatively, you can deactivate GCS connectivity via the infotainment system in your vehicle (“Settings” → ”Genesis Connected Services” → ”Deactivate Genesis Connected Services”).
+
+However, if you turn off OTA Updates, your vehicle or the services provided (such as security-related systems, infotainment system, GCS) may not function properly.
+
+4.3.9.1. Maps and Infotainment OTA Software Update
+Maps and infotainment OTA Updates enable you to receive the latest maps and infotainment software updates for your vehicle.
+
+For this function, the following categories of personal data are processed and sent to our Genesis cloud environment: your Vehicle Identification Number (VIN), head unit manufacturer, head unit model, head unit firmware version, head unit system version, mobile network operator, vehicle model name, vehicle model year, vehicle region and your selected language.
+
+We process your personal data for the purpose of performing our Services (Art. 6(1)(b) UK GDPR).
+
+4.3.9.2. Vehicle System OTA Software Update
+We may provide you with OTA Updates concerning the vehicle system for various reasons and purposes, in particular to remedy a defect within the warranty period, within the scope of the manufacturer’s guarantee or for other security-related reasons. In this we will also ensure an efficient deployment and monitoring of OTA updates concerning the vehicle system.
+
+For this purpose, the following categories of personal data are processed and sent to our Genesis cloud environment: your Vehicle Identification Number (VIN), usage history (OTA Update), diagnostic information (error codes, OTA result, software recovery result) and software version information (electronic control unit).
+
+We process your personal data for the purpose of complying with the legal obligations of the vehicle manufacturer (Art. 6(1)(c) UK GDPR (e.g. in the area of product safety requirements)) as well as for performing our Services (Art. 6(1)(b) UK GDPR), and based on our legitimate interest to effectively steer our OTA update processes (Art. 6(1)(f) UK GDPR).
+
+4.3.10. ‘Like’ Feature
+The like feature for USB and Bluetooth music and radio allows you to select and create a playlist with your favourite songs. You can like or unlike songs via the “thumbs-up” or “thumbs-down” button integrated in the music function of the infotainment system.
+
+For this function, the following categories of personal data are processed: the source type (USB music, radio, Bluetooth music), the name of the song, artist and album, the like/unlike information, location information (GPS), ambient air temperature, vehicle speed, weather (based on your current location) and time information.
+
+We process the personal data to perform our Services (Art. 6(1)(b) UK GDPR) and for the purpose of our legitimate interest in delivering our Services (Art. 6(1)(f) UK GDPR).
+
+4.3.11. Music Streaming
+With the music streaming feature, you can stream music in your vehicle directly from certain music streaming services via the infotainment system. To use this feature, you need a valid subscription for the respective music streaming service and your phone with the GCS app installed for the activation process.
+
+To link your account with the chosen music streaming service, your login credentials are first processed by the music streaming platform and then transferred to us in pseudonymised form before being stored in our Genesis cloud environment.
+
+Information about which music content you search for and select is transferred from the vehicle to our Genesis cloud environment. A request is then sent to the respective music streaming platform, which then provides the music content directly to the vehicle. Recently played music content is temporarily stored in the vehicle’s system.
+
+For this purpose, the following categories of personal data are processed: user authentication data (e.g. pseudonymised login credentials for the streaming platform account, device ID, user ID), service information (service authorisation code, subscription status, login data, service ID, session ID), vehicle information (VIN or vehicle ID, engine type, country of sale, model name, model year, headunit platform, headunit model) as well as information about the requested music content (e.g. unique identifier, type, name, title, artist, album name, genre, duration, date of the content, URLs).
+
+Your platform streaming account stored in the vehicle is linked to your individual user profile in the vehicle. Deleting your user profile will automatically unlink the platform streaming account from the vehicle.
+
+We process your personal data for the purpose of performing our Services (Art. 6(1)(b) UK GDPR).
+
+4.4. Provision of Genesis Connected Services – GCS Mobile Application
+4.4.1. Genesis Account
+A Genesis Account allows viewing and accessing of Genesis services, which are available now and which may be added in the future.
+
+For this function the following categories of personal data are processed and sent to our management system: your personal information such as name, email address, phone number, country, preferred language and encrypted password for authentication.
+
+We process your personal data for these purposes to perform our Services (Art. 6(1)(b) UK GDPR).
+
+4.4.2. Remote Services
+Through the GCS App we will provide you with the following Remote Services. They will be activated as a pre-setting if not deactivated separately or entirely:
+a) Remote lock and unlock (you can lock and unlock the vehicle doors; all Genesis vehicles)
+b) Remote window control (you can remotely open and close the windows of your vehicle; only for some Genesis vehicles)
+c) Remote horn and light (you can remotely activate both the headlights and the sound of the horn of your vehicle; only for some Genesis vehicles)
+d) Remote light (you can remotely flash the headlight of your vehicle; only for some Genesis vehicles)
+e) Remote charging (you can remotely activate the electric battery charging function; all Genesis EV vehicles)
+f) Scheduled charging (you can remotely set the electric battery charging schedule (all Genesis EV vehicles) including the target temperature; all Genesis EV vehicles)
+g) Remote climate control (you can set the temperature and activate the A/C remotely; all Genesis EV vehicles)
+h) Remotely open and close the charging door (you can open and close the charging door of your vehicle remotely; Only for GV60)
+i) Remote control of hazard lights / sidelights (you can turn off the lights remotely from the App when your vehicle is left with its hazard lights and/or sidelights on; only for some Genesis vehicles)
+j) Remote battery conditioning (you can optimise the battery temperature in order to improve the charging performance of the vehicle; only for some Genesis EVs)
+k) Departure time (you can activate scheduled climate by setting the departure schedule; only for some Genesis EVs)
+l) Charging current (you can adjust the current supplied from the slow charger; only for some Genesis EVs)
+m) Find my car (you can localize the parking position of your Genesis vehicle on the integrated map; all Genesis vehicles)
+n) Send to car (you can search online for points of interest (POI) and address data in order to send search results from your smartphone application to the Infotainment System of your car)
+o) My car POI (synchronizes your stored POI between the Infotainment System and your GCS App; all Genesis vehicles)
+p) Last mile guidance (sends the current location of your car and information about your destination (e.g. name, address, geolocation data) to your smartphone to guide you from your parking spot to your destination via Google Maps or augmented reality; all Genesis vehicles)
+q) Valet parking mode (protects your private information in Infotainment System by showing only the valet mode screen on your Infotainment System unless you enter the password you have previously selected; sends information about current status of valet parking mode on/off, current vehicle location (GPS coordinates), valet mode start/end date, valet mode run/mileage/engine time, vehicle max speed, vehicle run distance and engine idle time to your smartphone; all Genesis vehicles)
+r) Battery charging status (shows you the battery charging status of the electric engine; all Genesis EV vehicles)
+s) Push notifications for certain use cases (the application sends to your smartphone push notifications in certain cases, for example: your Genesis vehicle is unlocked and burglar alarm activation in your Genesis vehicle, windows of your vehicle are open, rear seat alert, engine idling alarm, high voltage battery discharge alarm, valet parking mode activated/deactivated, in case of a recall for the vehicle, etc.; all Genesis vehicles)
+
+You can deactivate all Remote Services separately by category.
+
+In order to provide you with the Remote Services once connected through the GCS App, a connection is established between your vehicle and our Genesis cloud environment which requires the processing of certain vehicle-related data including your vehicle SIM card’s IP address, the Vehicle Identification Number (VIN) and further GCS App user-related data (your device’s IP address, PIN and further user account information such as your user name).
+
+The provision of the Remote Services requires the collection and processing of certain data relating to your vehicle including PIN, your vehicle’s Vehicle Identification Number (VIN) and geolocation data (e.g. GPS coordinates for “Find my Car”), the Integrated Circuit Card Identifier of your vehicle's SIM card (ICCID), address data and vehicle-related technical data (e.g. vehicle status information such as ignition on/off, vehicle speed, light status, lock status).
+
+We process your personal data for these purposes to perform our Services (Art. 6(1)(b) UK GDPR).
+
+4.4.3. Vehicle Status Information via Genesis Connected Services
+Through the GCS App we will provide you with the following Vehicle Status Information:
+
+a) Monthly Vehicle report (provides you with information about the usage of your Genesis vehicle and diagnostics like airbag, brakes, tyre pressure etc. (see Section 4.3.3); all Genesis vehicles)
+b) Status update (provides you with information about the vehicle status of your Genesis vehicle regarding the distance to empty, fuel level, engine on/off, door lock status, climate control status, tailgate open/closed, bonnet open/closed, windows open/closed, sunroof open/closed, tyre pressure status, lamp status (all Genesis vehicles); high-voltage battery charging status, scheduled charging on/off, charging door open/closed, steering wheel heating status, defrost on/off, rear window heating on/off, side mirror heating, scheduled climate control on/off (all Genesis EV Vehicles))
+c) My trips (provides you with information about the Genesis vehicle usage per month/day, including driven time, mileage, vehicle average speed, vehicle max speed; all Genesis vehicles)
+d) Energy consumption (provides you with information about your Genesis vehicle’s energy consumption per day and per month, including the total and average energy consumption, driving distance and recuperation; all Genesis EV vehicles)
+
+In order to provide you with the Vehicle Status Information once connected through the GCS App, a connection is established between your vehicle and our Genesis cloud environment which requires the processing of certain vehicle-related data including your vehicle SIM card’s IP address, the Vehicle Identification Number (VIN) and further GCS App user-related data (your device’s IP address, PIN and further user account information such as your user name).
+
+The provision of the Vehicle Status Information requires the collection and processing of certain data related to your vehicle (e.g. the time driven, mileage, vehicle average speed, vehicle max speed) and vehicle-related technical data (e.g. vehicle status data such as engine on/off, door lock status etc. as further listed above).
+
+We process your personal data for these purposes to perform our Services (Art. 6(1)(b) UK GDPR).
+
+4.4.4. Car Sharing
+You can share the Remote Services with other users through the “Request to Share Car” function in the application.
+
+When you do so, we process certain vehicle and user account related data such as your PIN, Vehicle Identification Number (VIN), your user name and the other user’s phone number to initiate and process your sharing request. Share request information such as your name and PIN will be transmitted to and processed in the other user’s GCS App. The other user can use the GCS App in the same way as you. He/she can also use the “Find my Car” function.
+
+We process the personal data for sharing the Remote Services to perform our Services (Art. 6(1)(b) UK GDPR) and for the purposes of our legitimate interests in delivering our Services (Art. 6(1)(f) UK GDPR).
+
+Please note that when you use this service, you will share all of your personal data, excluding your log-in details, stored in the GCS App with the other users. You can deactivate this function at any time. The deactivation stops the data sharing and we will delete all shared data on the other user´s GCS App.
+
+4.4.5. Alert Services
+When activated in the App, alert services enable you to receive notifications relating to your chosen settings. We provide you with the following alert services through the App:
+
+a) Geofence alert (enables you to receive notifications in the App if your vehicle exits an allowed area or enters a restricted area. You can set the boundaries for allowed areas and restricted areas in the App)
+b) Speed alert (enables you to receive notifications in the App if your vehicle exceeds the speed limit you have preset in the App)
+c) Time fencing alert (enables you to receive notifications in the App if your vehicle is driven outside of the time windows you have preset in the App)
+d) Valet alert (enables you to receive notifications in the App if your vehicle travels beyond the selected distance limit, speed limit and idle time limit you have preset in the App. The permitted travel distance is from the location where the alert was activated)
+
+For this purpose, we collect and process the following categories of personal data: Vehicle identification number (VIN), date and time stamp, GPS data, alert status information (e.g. activation status, alert status start and end time, run time, mileage time, engine idle time, maximum speed, run distance), vehicle indicators (e.g. location, speed, time, accuracy, direction), selected allowed areas, selected restricted areas, selected speed limit, selected time windows, selected distance limit and selected idle time limit.
+
+We process your personal data for the purpose of performing our Services (Art. 6(1)(b) UK GDPR).
+
+4.4.6. Other location based services
+
+a) View previous trips;
+b) Send a destination to the car for a tour and add tourpoints to a planned tour;
+c) Find your favourite and recent points of interest (POI);
+d) Share your POI.
+
+The provision of these Remote Services requires the collection and processing of certain vehicle-related data such as the vehicle’s geolocation data (GPS coordinates).
+
+We process your personal data to provide you with these other location-based services to perform our Services (Art. 6(1)(b) UK GDPR).
+
+4.4.7. Genesis Connected Services User Profile
+Genesis Connected Services User Profile allows you to save various vehicle settings in our Genesis cloud environment and apply them to different vehicles. If two or more drivers use the same vehicle but prefer different settings (e.g. for seat position, audio or map view etc.), these individual settings can be stored individually in up to two user profiles plus one guest profile per vehicle.
+
+For each user profile the following categories of personal data are processed and sent to our Genesis cloud environment: Vehicle Identification Number (VIN) of your vehicle and the target vehicle (if appropriate), driver number, account number, phone number, user picture, profile data as well as phone connection, Bluetooth settings, date/time settings, general settings, sound settings, display settings, Voice Recognition settings, radio settings, vehicle settings, navigation settings and points of interest (POI).
+
+We process your personal data for these purposes to perform our Services (Art. 6(1)(b) UK GDPR).
+
+4.4.8. Use of Touch ID and Face ID (Apple iOS) or Fingerprint and Face Recognition (Google Android)
+You can use certain functions of our App with Touch ID or Face ID (iOS) or fingerprint and face recognition (Android) instead of your PIN.
+
+Your biometric data is only stored locally on your smartphone device; it is not transmitted to us and we cannot access this data. Only the information as to whether the verification of the biometric data was successful is transmitted to our App by a system function of your smartphone.
+
+You can turn off the use of Touch ID or Face ID (iOS) or fingerprint and face recognition (Android) at any time in our App.
+
+4.4.9. Genesis Digital Key 2 (“Digital Key”)
+The Digital Key function allows you to unlock, lock, start and drive your vehicle with your smartphone or other smart devices without the need to carry a physical key fob and share and manage such Digital Keys with up to three additional devices e.g. of family and friends.
+
+For this purpose, the following categories of personal data are processed in order to properly authenticate and allocate the Digital Keys to the smart devices and to ensure security of the service and involved systems:
+
+User information (such as user ID, profile name, email address, phone number), smart device information (such as device ID, device name, device type, OS version, app version), Digital Key information (such as Digital Key ID, Digital Key status, Digital Key type, access authorisation/profile, vehicle ID, ID of the physical key fobs, number of shared key), for shared Digital Keys additional information such as start and end date (or fixed term) of Digital Key use, name of shared Digital Key user, user authentication policy/authorisation profile as specified by you, diagnostic information (error codes) as well as vehicle status information.
+
+When using the Digital Key, i.e. to lock, unlock and start the vehicle, data is exchanged between the mobile smart device and the vehicle using Bluetooth Low Energy (BLE), Ultra Wide-band (UWB) and Near Field Communication (NFC). This data is not transmitted to us.
+
+We process your personal data for the purpose of performing our Services (Art. 6(1)(b) UK GDPR).
+
+4.4.10. Firebase Crashlytics
+To improve the security and stability of our app and Services, we rely on the analysis of anonymised crash reports. For this purpose we use “Firebase Crashlytics”, a service of Google Ireland Ltd., Google Building Gordon House, Barrow Street, Dublin 4, Ireland.
+
+In order to provide us with anonymised crash reports, Firebase Crashlytics collects the following information in the event of a crash or malfunction of our app and may transmit it to Google servers in the USA: state of the app at the time of the crash, installation UUID, crash traces, manufacturer and operating system of the mobile device and last log messages. The crash reports provided to us do not contain any personal data on the basis of which we could trace the identity of a user. Firebase Crashlytics retains collected information for 90 days.
+
+We process your personal data for these purposes based on our legitimate interest to ensure and optimise the security and stability of our app and Services (Art. 6(1)(f) UK GDPR).
+
+For more information about Firebase Crashlytics and how Google is processing your personal data, please refer to the following links:
+
+https://firebase.google.com/
+https://firebase.google.com/terms/crashlytics/
+https://firebase.google.com/support/privacy/
+
+4.5. Product improvement and development
+Genesis collects and processes telematics data regarding performance, usage, operation and condition of the vehicle from your vehicle and/or your GCS App for improving and developing its products and transfers this data to other local Genesis branches in EU in order to allow it to process the data for these purposes as well.
+
+The data which is used for these purposes is in general limited to technical data. The data used to improve and develop for example the powertrain, EV vehicles and other car functions include ABS, ABS status, steering wheel info, parking brake, traction control system, cluster information, buckle, acceleration, battery condition, door key lock, head lamp, indicator signal, light system, hands-free boot system, seat height, sunroof, wiper, navigation on/off and similar technical data and trouble codes as mentioned in Sections 4.3.3 and 4.3.4.
+
+To assure greater efficiency of the data analysis, we may also collect additionally information which allows for identification of a natural person (such as VIN, account and subscription data, where relevant and if enabled GPS information). We will process these data for the above mentioned purposes and to provide you with personalised information about your use of our Services.
+
+The legal basis for the processing of your data for these purposes is the legitimate interest of Genesis in improving the Services and developing new products and services (Art. 6(1)(f) UK GDPR; e.g. to identify technical malfunctions, analyze the performance of the vehicles or provide enhanced products or customer services).
+
+4.6. Processing of data for marketing purposes for similar goods and Services
+We may use your personal data obtained directly from you and your registration to our Services for marketing of our own similar products and/or services (e.g. to notify you about new Services or other similar Hyundai services), unless you have objected to such use. The legal basis for the processing is Art. 6(1)(f) UK GDPR (our legitimate interests to inform you and to promote our Services). You can object to such use at any time and free of charge via the Unsubscribe link included in every communication or via the contact information in Section 3
+
+5. What applies to data of other data subjects and to the sale and transfer of the vehicle to third parties?
+
+In the case of lending the car to another person or where data of other data subjects (such as a co-driver) might be collected during the use of the Services you have to ensure that the data subjects are properly informed of the data processing as described in this Privacy Notice.
+
+In case of sale or permanent transfer of the vehicle to a third party, please ensure that none of your personal data can be accessed through the Infotainment System (e.g. by erasing trip data or destinations in the settings).
+
+You can disconnect the vehicle from a GCS App (whether your own or another person’s GCS App) by deactivating Genesis Connected Services in the Infotainment System. By deactivating Genesis Connected Services in the Infotainment System, your driving data will no longer be visible in the application and your vehicle is disconnected from the application. If you do not disconnect the vehicle the data might still be accessible through the GCS App. Your account data in the application will not be deleted until you delete your account.
+
+6. With whom is my data shared?
+
+Due to our role as joint controllers when offering the Services, we will receive your personal data. Any access to your personal data at Genesis UK and GME is restricted to those individuals that have a need to know in order to fulfil their job responsibilities.
+
+Your personal data may be transferred for the respective purposes to the recipients and categories of recipients listed below and processed by those recipients for the respective purposes:
+
+Other private third parties – We transmit your personal data to certain private entities that help us in offering the Services. For instance, we rely on telecommunication services. Your data may be also shared with our network of authorised repairers whenever needed for car services.
+Data processors – We transmit your personal data to certain third parties, whether affiliated or unaffiliated, that process your data on behalf of Genesis under appropriate instructions as necessary for the respective processing purposes. The data processors will be subject to contractual obligations to implement appropriate technical and organisational security measures to safeguard the personal data, and to process your personal data only as instructed.
+For Genesis Connected Services, the data processor is: Hyundai Autoever Europe, Kaiserleistraße 8A, 63067 Offenbach am Main, Germany.
+For Genesis Live and the Remote Service “Find my Car”, the data processors are: Hyundai Autoever Europe, Kaiserleistraße 8A, 63067 Offenbach am Main, Germany (e.g. for hosting and support or operating relevant applications).
+For Voice Recognition, the data processors are: Cerence B.V. Netherlands, Olympia 2 D, 1213 NT Hilversum, Netherlands (e.g. Service providing); Hyundai Autoever Europe, Kaiserleistraße 8A, 63067 Offenbach am Main, Germany (e.g. for operating relevant applications and for support).
+For the technical distribution of vehicle system OTA updates, and for assuring the technical processes related to data analysis for the purpose of Product improvement and development, the data processor is Hyundai Motor Company, 12, Heolleung-ro, Seocho-gu, Seoul, Republic of Korea.
+For call centre services, the data processors are: Webhelp Holding Germany GmbH, Tullnaustraße 20, 90402 Nuremberg and Automobile Association Developments Limited, Fanum House, Basing View, Basingstoke, Hampshire RG21 4EA, United Kingdom.
+
+These data processors may also use sub-processors for the provision of the respective services.
+
+Governmental authorities, courts, external advisors, and similar third parties that are public bodies as required or permitted by applicable law.
+
+7. Is my data transferred abroad?
+
+We transfer your data outside EU/EEA and the UK to Hyundai entities located in the Republic of Korea, for the purposes indicated in Section 6.
+
+The European Commission and the UK have determined that the Republic of Korea is among the jurisdictions that provide an adequate level of protection of personal data.
+
+Some of other recipients of your personal data will be located or may have relevant operations outside of the EU/EEA and the UK, e.g. the United States of America (e.g. Cerence’s sub-processors), where the data protection laws may provide a different level of protection compared to the laws in your jurisdiction and for which an adequacy decision by the European Commission does not exist and/or may not be covered by UK adequacy regulations.
+
+With regard to data transfers to such recipients outside of the EU/EEA and the UK we provide appropriate safeguards, in particular, by way of entering into data transfer agreements which include standard clauses adopted by the European Commission and where necessary by implementing supplementary measures, such as additional technical, organisational and contractual safeguards or taking other measures to provide an adequate level of data protection. A copy of the relevant measure we have taken is available and can be obtained by reaching out via Genesis UK contact details (see Section 3 above).
+
+8. How long will my data be stored?
+
+8.1. Your personal data is stored by Genesis UK and/or our service providers, strictly to the extent necessary for the performance of our obligations, and strictly for the time necessary to achieve the purposes for which the personal data is collected, in accordance with applicable data protection laws. Under no circumstances will your personal data be stored after the termination of your account. When we no longer need to process your personal data, we will erase it from our systems and/or records and/or take steps to properly anonymise it so that you can no longer be identified from the data (unless we need to keep your information to comply with legal or regulatory obligations to which we are subject; e.g., personal data contained in contracts, communications, and business letters may be subject to statutory retention requirements, which may require retention of up to 10 years).
+
+8.2. There are specific storage periods for the following items:
+
+Voice Recognition: Voice samples and GPS coordinates (see Section 4.3.2 above) are stored up to 90 days
+Genesis Live: geolocation data (GPS coordinates) and Service ID (see Section 4.3.1 above) are stored up to 93 days.
+My trips: the information about your vehicle usage provided in “My trips” is available for up to 90 days.
+
+8.3. Deactivation of Services: You can turn certain Services on/off separately in the App’s menu under “Service list”.
+
+8.4. Termination of account: If you choose to terminate your account (e.g. by setting the relevant preference in the car's Infotainment System or in the GCS App’s menu under “My Page – My Account”) all personal data related to your account will be deleted, unless retention periods apply (see Section 8.1 above).
+
+8.5. Reset of account: Your account may be reset by setting the respective preference (e.g. in the vehicle's Infotainment System). Upon reset of the account, you will be logged out of Genesis Connected Services and will have to perform a new sign-up procedure or log in with different credentials if you intend to use Genesis Connected Services.
+
+9. What rights do I have and how can I exercise them?
+
+If you have given your consent to the processing of your personal data, you can withdraw your consent at any time for future processing. Such a withdrawal will not affect the lawfulness of the processing prior to your withdrawal of consent.
+
+Pursuant to applicable data protection laws, you have the following rights with respect to the processing of your personal data. Please note that these rights might be limited under the applicable national data protection laws.
+9.1. Right of access: You have the right to obtain from us confirmation as to whether or not personal data concerning you is processed and, where that is the case, to request access to your personal data. This information includes – inter alia – the purposes of the processing, the categories of your personal data, and the recipients or categories of recipients to whom your personal data have been or will be disclosed. However, this is not an absolute right and the interests of other individuals may restrict your right of access.
+
+You also have the right to obtain a copy of the personal data about you undergoing processing. For any further copies you might request, we may charge a reasonable fee based on administrative costs.
+9.2. Right to rectification: You have the right to the rectification of any inaccurate personal data concerning you. Depending on the purposes of the processing, you have the right to have incomplete personal data updated, including by means of providing a supplementary statement.
+9.3. Right to erasure ("right to be forgotten"): Under certain circumstances, you have the right to the erasure of your personal data and we may be obliged to erase your personal data.
+9.4. Right to restriction of processing: Under certain circumstances, you have the right to have a restriction placed on the processing of your personal data. In this case, the respective data will be marked and may only be processed by us for certain purposes.
+9.5. Right to data portability: Under certain circumstances, you may have the right to obtain from us a copy of your personal data, which you have provided to us, in a structured, commonly-used and machine-readable format.You have the right, without hindrance from us, to transfer this data or have it transferred directly by us to another entity.
+9.6. Right to object: Under certain circumstances, you have the right to object, on grounds relating to your particular situation, at any time to processing your personal data, and we will be required to no longer process your personal data. If your personal data is processed for direct marketing purposes, you have the right to object at any time to the processing of your personal data for such marketing, which includes profiling to the extent that it is related to such direct marketing. In this case your personal data will no longer be processed for such purposes by us.
+9.7. Right to complain: You also have the right to make a complaint with the competent data protection supervisory authority.
+
+10. Am I obliged to provide my data?
+
+You are not obliged by any statutory or contractual obligation to provide us with your personal data. You do not need to provide your personal data for the conclusion of a contract. But if you do not provide your personal data, it is possible that the usability of our Services will be limited for you.
+
+11. Can I deactivate the Online Mode (Offline Mode; Modem Off)?
+
+You can deactivate the online mode by making the appropriate setting. When online mode is switched off (Offline mode), all functions of the Genesis Connected Service are deactivated and no personal data, in particular no geolocalisation data (GPS coordinates), is collected for the Genesis Connected Service and an offline mode symbol is displayed at the top of the screen of the infotainment system in the vehicle.
+
+12. How can this Privacy Notice be changed?
+
+We may change and/or supplement this Privacy Notice from time to time in the future. Such changes and/or supplements may be necessary in particular due to the implementation of new technologies or the introduction of new services. We will publish the changes on our websites and/or in your car’s Infotainment System and in the GCS App.
+
+[Appendix – Data processing in joint control with Hyundai Motor Company]
+
+The purpose of this Appendix is to inform you about the collection and processing of your personal data in connection with the provision of individual Services for which we may act as joint controller with affiliated companies.
+
+Insofar as no specific information is provided via this Appendix, the general information and regulations from the Privacy Notice shall also apply to this Appendix.
+
+1. Who is responsible for processing my data?
+
+Genesis UK and GME will act as joint controllers with the Hyundai Motor Company with its registered office at 12, Heolleung-ro, Seocho-gu, Seoul, Republic of Korea for the following purposes:
+
+To ensure appropriate cyber security standards of our vehicles and products
+
+1.1. Cyber security
+Once you activate the Services we will manage and monitor appropriate cyber security standards of our vehicles and products. We are responsible as set out in Section 2 of the Privacy Notice and will collect and transmit your data to Hyundai Motor Company. Hyundai Motor Company will monitor the appropriate cyber security standards of our vehicles and products on an operational and technical level and use your personal data for the purposes as described below.
+
+2. How can I contact the controller and the data protection officer?
+
+If you have any questions about or in connection with this Appendix or the exercising of any of your rights, you may contact Genesis UK via the contact details as listed in Section 3 of the Privacy Notice.
+
+Alternatively, you may also assert your rights as a data subject vis-à-vis Hyundai Motor Company. In this case, please contact Hyundai Motor UK Ltd as a representative of Hyundai Motor Company in accordance with Art. 27 UK GDPR as follows:
+
+Email: [email protected]
+Postal address: Hyundai Motor UK Ltd
+Data Protection Representative of Hyundai Motor Company
+Birchwood Building, Sprinfield Drive, Leatherhead, Surrey
+United Kingdom, KT22 7LP
+
+3. What categories of personal data are processed, for what purposes and on what legal basis?
+
+Depending on the technical equipment of your vehicle, we collect and process security event-related data of your vehicle to ensure appropriate cyber security standards of our vehicles and products.
+
+For this function, the following categories of personal data are processed: the Vehicle Identification Number (VIN) and security event-related data (such as the timestamp of the generated security event and information from and about the component / control unit that captured and detected a security event).
+
+The data will be collected and stored in your vehicle. If an abnormal signal is detected, the data will be sent to our systems for further analysis. There is no continuous transfer of such data out of the vehicle.
+
+Once data has been transmitted to our systems, we process and analyse the data for the purpose of preventing cyber security threats and vulnerabilities, responding to and eliminating detected threats and vulnerabilities from potential cyber security attacks, as well as ensuring appropriate security of our vehicles and products.
+
+Insofar as such processing is not necessary for compliance with our legal obligations in the area of cyber security (Art. 6(1)(c) UK GDPR), the legal basis for the processing of your data for these purposes is our legitimate interest in monitoring our vehicles in order to ensure and improve the security of our products (Art. 6(1)(f) UK GDPR).
+
+4. With whom is my data shared?
+
+Any access to your personal data is restricted to those individuals that need to know it in order to fulfil their job responsibilities.
+
+Your personal data may be transferred to the recipients and categories of recipients listed below for the respective purposes; these recipients can then process it for the specified purposes:
+
+Data processors – We transmit your personal data to certain third parties, whether affiliated or unaffiliated, that process your data on behalf of the controllers under appropriate instructions as necessary for the respective processing purposes. The data processors will be subject to contractual obligations to implement appropriate technical and organisational security measures to safeguard the personal data, and to process your personal data only as instructed.
+The data processor for Genesis is Hyundai AutoEver Europe GmbH, Kaiserleistraße 8A, 63067 Offenbach am Main, Germany.
+The data processor for providing technical support and maintenance of IT systems with regard to ensuring appropriate cyber security standards is Hyundai AutoEver Corp., 417 Yeongdong-daero Gangnam-gu Seoul, 06182 Republic of Korea.
+
+5. Is my data transferred abroad?
+
+Hyundai Motor Company is located and has relevant operations outside of the UK and the EU/EEA, in the Republic of Korea. With regard to the processing of your data as described in this Appendix, your data will be transferred to the Republic of Korea. The Republic of Korea has data protection laws that provide an equal level of protection to the laws in your jurisdiction and has an adequacy decision by the European Commission and is covered by a UK adequacy regulation.
+
+6. How long will my data be stored?
+
+In addition to Section 8 of the Privacy Notice, there are specific storage periods:
+
+Your vehicle will periodically store the last 100 generated security events. In case of a new security event, the oldest security event and related data will be deleted.
+
+Genesis Motor UK Limited is an appointed representative of Product Partnerships Limited which is authorised and regulated by the Financial Conduct Authority. Product Partnerships Limited’s FCA registration number is 626349 and its address is Second Floor, Atlas House, 31 King Street, Leeds LS1 2HL.
+
+Genesis Motor UK Limited acts as a credit broker not a lender. We can only introduce you to Hyundai Capital UK Limited T/A Genesis Finance (FRN: 581186) who may be able to offer you finance facilities for your purchase. We will only introduce you to this lender. We do not receive any commission for introducing customers to a finance provider. You may be able to obtain finance for your purchase from other lenders and you are encouraged to seek alternative quotations. If you would like to know how we handle complaints, please ask for a copy of our complaints handling process. You can also find information about referring a complaint to the Financial Ombudsman Service (FOS) at financial-ombudsman.org.uk

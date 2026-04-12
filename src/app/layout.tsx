@@ -13,8 +13,8 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "J.A.R.V.I.S — Personal Work System",
-  description: "Ticket management & email intelligence system",
+  title: "컴플라이언스 시스템",
+  description: "컴플라이언스 시스템",
 };
 
 export default function RootLayout({

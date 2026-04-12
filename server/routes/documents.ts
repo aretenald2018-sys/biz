@@ -5,6 +5,7 @@ import mammoth from 'mammoth';
 import PizZip from 'pizzip';
 import { getDb } from '@/lib/db';
 import { extractTextForDiff } from '../lib/text-extract';
+import { buildDocxDiffResult } from '../lib/terms-diff';
 import type {
   DocxAnchorInsert,
   DocxAnchorStatus,
@@ -84,6 +85,13 @@ documentRoutes.post('/api/documents/templates', async (c) => {
   }
 
   const rawBuffer = Buffer.from(await file.arrayBuffer());
+
+  try {
+    validateDocxBuffer(rawBuffer, file.name);
+  } catch (error) {
+    return c.json({ error: error instanceof Error ? error.message : '파일을 인식할 수 없습니다.' }, 400);
+  }
+
   const fileBuffer = normalizeDocxPlaceholders(rawBuffer);
   const previewResult = await mammoth.convertToHtml({ buffer: fileBuffer });
   const originalPlaceholders = extractOriginalPlaceholders(fileBuffer);
@@ -222,11 +230,20 @@ documentRoutes.post('/api/documents/diff/upload', async (c) => {
   }
 
   const fileType = resolveDiffFileType(file);
+  const diffBuffer = Buffer.from(await file.arrayBuffer());
+
+  if (file.name.toLowerCase().endsWith('.docx')) {
+    try {
+      validateDocxBuffer(diffBuffer, file.name);
+    } catch (error) {
+      return c.json({ error: error instanceof Error ? error.message : '파일을 인식할 수 없습니다.' }, 400);
+    }
+  }
 
   const result = db.prepare(`
     INSERT INTO docx_diff_uploads (filename, file_blob, file_type)
     VALUES (?, ?, ?)
-  `).run(file.name, Buffer.from(await file.arrayBuffer()), fileType);
+  `).run(file.name, diffBuffer, fileType);
 
   const row = db.prepare('SELECT * FROM docx_diff_uploads WHERE rowid = ?').get(result.lastInsertRowid) as DocxDiffUploadRow | undefined;
 
@@ -320,7 +337,7 @@ documentRoutes.post('/api/documents/diff/run', async (c) => {
       extractTextForDiff(right.file_blob, right.filename, right.file_type, { overrideText: right.overridden_text }),
     ]);
 
-    const diff = buildDiffResult(left.filename, right.filename, leftExtraction.text, rightExtraction.text);
+    const diff = buildDocxDiffResult(left.filename, right.filename, leftExtraction.text, rightExtraction.text);
     diff.sources = { left: leftExtraction.source, right: rightExtraction.source };
     diff.warnings = [...leftExtraction.warnings, ...rightExtraction.warnings];
     return c.json(diff);
@@ -379,6 +396,26 @@ function validateDocxFile(file: File) {
 
   if (file.size > MAX_UPLOAD_BYTES) {
     throw new Error('파일이 너무 큽니다. 20MB 이하로 올려주세요.');
+  }
+}
+
+function validateDocxBuffer(buffer: Buffer, fileName: string) {
+  if (buffer.length < 4) {
+    throw new Error(`파일이 비어있거나 손상되었습니다 (${fileName}).`);
+  }
+  const b0 = buffer[0];
+  const b1 = buffer[1];
+  const b2 = buffer[2];
+  const isZip = b0 === 0x50 && b1 === 0x4b && (b2 === 0x03 || b2 === 0x05 || b2 === 0x07);
+  console.log(
+    `[docx-validate] name=${fileName} size=${buffer.length} head=${buffer.slice(0, 4).toString('hex')}`,
+  );
+  if (!isZip) {
+    throw new Error(
+      `워드 파일이 정상적으로 전송되지 않았습니다 (${fileName}). ` +
+        `OneDrive/Dropbox 동기화 중이거나 백신 스캔 중일 수 있습니다. ` +
+        `로컬 디스크 기본 폴더(예: 바탕화면)로 파일을 복사한 뒤 다시 업로드해 주세요.`,
+    );
   }
 }
 

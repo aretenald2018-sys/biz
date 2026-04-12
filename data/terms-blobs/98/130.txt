@@ -1,0 +1,128 @@
+video
+video play
+last slide
+
+Charte de protection de la vie privée.
+
+Essai
+
+Configurer
+
+Voir le stock
+
+Entretien
+
+Point de vente
+
+Mise à jour à la date du 14 janvier 2026.
+Préambule
+Hyundai Motor France (ci-après « HMF ») respecte la vie privée de ses clients, de ses salariés, des membres de son réseau de distributeurs et réparateurs agréés, de ses prestataires et de tout autre tiers dont les Données Personnelles lui sont fournies et s’engage à les protéger (ci-après « les Personnes concernées »). A cet égard, vous pouvez consulter notre politique de protection des données personnelles applicable au site internet à l’adresse suivante : https://www.hyundai.com/fr/rgpd.html
+
+Pour assurer la protection des Données Personnelles, il est essentiel d’instaurer des normes et des procédures uniformisées afin de garantir un traitement efficace et licite des demandes des Personnes concernées cherchant à exercer leurs droits.
+Les droits conférés aux Personnes concernées permettent aux Personnes concernées de contrôler l’utilisation de leurs Données Personnelles et de prévenir une utilisation abusive de ces données, y compris les violations de données.
+La présente charte relative à la protection de la vie privée (ci-après la « Charte ») décrit le traitement par HMF des demandes des Personnes concernées en conformité avec les lois applicables en matière de protection des données, et notamment le Règlement européen sur la protection des données (UE) 2016/679 ; RGPD).
+
+1. Champ d’application
+La présente Charte est respectée par tous les employés de HMF, ses prestataires et les salariés de ses prestataires agissant pour le compte de HMF (désignés collectivement les « Collaborateurs ») traitant des Données Personnelles lorsqu’ils répondent à des demandes de personnes, internes ou externes, faisant valoir leurs droits au titre du RGPD en tant que Personnes concernées.
+La présente Charte décrit les principes fondamentaux et les méthodes applicables au traitement par HMF des demandes des Personnes concernées, afin d’agir en conformité avec les lois applicables en matière de protection des Données Personnelles.
+Définitions
+« Données personnelles » s’entend de données concernant une personne physique identifiable à partir de ces données (seules ou combinées avec d’autres informations en notre possession). Les données personnelles peuvent être factuelles (comme le nom, l’adresse ou la date de naissance) ou subjectives (comme une évaluation de la performance).
+« Droits des personnes concernées » s’entend de tous les droits des Personnes concernées sur leurs Données Personnelles, notamment tous les droits prévus par le chapitre III du RGPD, en particulier le droit à l’information (article 12 et suivants du RGPD), le droit d’accès (article 15 du RGPD), le droit de rectification (article 16 du RGPD), le droit à l’effacement ou « droit à l’oubli » (article 17 du RGPD), le droit à la limitation du traitement (article 18 du RGPD), le droit à la portabilité des données (article 20 du RGPD), le droit d’opposition (article 21 du RGPD) et le droit de ne pas faire l’objet de décisions automatisées (article 22 du RGPD). Les droits des Personnes concernées sont détaillés en Annexe 1.
+« Personnes concernées » s’entend, dans le cadre de la présente Charte, de toutes les personnes physiques pour lesquelles HMF détient des Données Personnelles, y compris nos employés et les membres de leur famille.
+« Traitement » s’entend de toute activité impliquant l’utilisation de Données Personnelles. Cela inclut l’obtention, l’enregistrement ou la détention de Données Personnelles, ou toute opération ou ensemble d’opérations effectuées sur les informations, y compris leur organisation, modification, récupération, utilisation, communication, effacement ou destruction. Le traitement inclut également le transfert de Données Personnelles à des tiers.
+« Violation de données » s’entend d’une violation de la sécurité entraînant, de manière accidentelle ou illicite, la destruction, la perte, l’altération, la divulgation non autorisée de Données Personnelles transmises, conservées ou traitées d’une autre manière, ou l’accès non autorisé à de telles données.
+
+2. Traitement des demandes des Personnes concernées et responsabilités associées
+Il appartient à chaque Collaborateur d’identifier les demandes des Personnes concernées et de les traiter en suivant les procédures définies ci-dessous.
+
+3. Identification des demandes des Personnes concernées
+3.1 Le Collaborateur saisi doit étudier chaque demande faite par une Personne concernée, que cette demande concerne ou pas un droit de la Personne concernée. L’Annexe 1 à la présente Charte donne un aperçu des droits des Personnes concernées au titre du RGPD de manière à permettre leur identification et le traitement approprié des demandes y afférentes.
+
+4. Analyse et traitement des demandes des Personnes concernées
+4.1 Toute demande d’une Personne concernée reçue par un Collaborateur doit être transférée immédiatement aux adresses emails suivantes (ci-après dénommées « Adresses ») :
+• si vous êtes client, prospect ou tout autre tiers, vous pouvez écrire à l’adresse email : contact-donnees@hyundai.fr
+• si vous êtes Collaborateur, vous pouvez écrire à l’adresse email : donnees-interne@hyundai.fr
+• en cas de violation de données, vous pouvez écrire à l’adresse email : alerte-donnees@hyundai.fr
+Les salariés de HMF doivent mettre en copie leur responsable hiérarchique lors du transfert de la demande de la Personne concernée.
+4.2 Si la demande a été faite oralement, les informations sur l’objet de la demande doivent être insérées dans un e-mail qui doit être envoyé immédiatement à l’une des Adresses.
+4.3 Si la demande a été reçue par courrier, elle peut soit être numérisée et envoyée à l’une des Adresses de HMF par e-mail, soit être remise telle quelle au même service.
+4.4 Les demandes des Personnes concernées cherchant à exercer leurs droits, reçues par des prestataires partenaires de HMF ou leurs employés, doivent également être transférées à l’une des Adresses par les Collaborateurs.
+4.5 Toute demande transmise à l’une des Adresses de HMF – sous quelque forme que ce soit – doit comporter :
+• la date et l’heure de réception de la demande ;
+• le destinataire (initial) de la demande (si différent de l’expéditeur) ;
+• la personne à contacter en cas de questions de HMF (si différente de l’expéditeur) ;
+• la mesure déjà prise (le cas échéant) ;
+• les autres informations utiles.
+
+5. Traitement de demandes des Personnes concernées / priorité de ces demandes
+5.1 HMF traite la demande et répond à la Personne concernée conformément au droit applicable. HMF peut consulter tous les services concernés et/ou leur demander des informations afin de s’assurer qu’ils se sont conformés à la demande.
+5.2 En raison des délais accordés pour répondre à ces demandes, les services sollicités doivent traiter ces demandes en priorité et les transférer immédiatement, au plus tard à midi le lendemain à l’une des Adresses de HMF.
+HMF traite les demandes dans les meilleurs délais et en tout état de cause dans un délai d’un mois à compter de la réception de la demande. Au besoin, ce délai peut être prolongé de deux mois compte tenu de la complexité et du nombre de demandes. Dans ce cas, HMF informe la Personne concernée de cette prolongation et des motifs du report dans un délai d’un mois à compter de la réception de la demande. Si HMF décide de ne pas donner suite à la demande formulée par la Personne concernée, il informe celle-ci sans tarder et au plus tard dans un délai d’un mois à compter de la réception de la demande des motifs de son inaction et de la possibilité d’introduire une réclamation auprès d’une autorité de contrôle et de former un recours juridictionnel.
+
+6. Traitement des demandes des Personnes concernées par HMF
+HMF évalue toute demande signalée afin de déterminer la réponse à apporter à la Personne concernée, et pouvoir se conformer aux lois applicables en matière de protection des données. Pour cette évaluation, HMF procédera de la manière suivante :
+• Vérifier que la Personne concernée qui fait la demande est autorisée à exercer les droits concernés vis-à-vis de HMF (par ex. le droit de recevoir certaines informations sur les Données Personnelles conservées par HMF). HMF doit mettre en place des mécanismes appropriés pour vérifier l’identité du demandeur de manière à ce que seules les Personnes concernées autorisées puissent faire valoir les droits conférés par le RGPD ;
+• Déterminer le droit exercé par la Personne concernée sur la base des faits présentés dans la demande adressée à HMF (par ex. déterminer si une Personne concernée fait valoir le droit d’accès ou le droit à la portabilité des données) ;
+• Avant de traiter la demande, vérifier que la demande est légitime ou fondée (fondement juridique ou analyse du lien avec HMF) ;
+• Évaluer si les circonstances de la demande faite à HMF nécessitent des mesures supplémentaires, notamment en cas de violation de données au sens du RGPD qui pourrait engendrer par exemple des obligations supplémentaires de signalement aux autorités compétentes ou d’autres mesures supplémentaires, liées par exemple à la sécurité du traitement des données chez HMF.
+• Archiver tous les échanges avec les services impliqués au sein de HMF, ainsi qu’avec les Personnes concernées demandeuses, y compris toute décision d’acceptation (ou de rejet) de la demande, ainsi que toute autre information utile (par ex. concernant le contenu d’une réponse apportée à une Personne concernée) ;
+Contacter HMF en cas de doute sur la manière de traiter une demande correctement, et conformément aux dispositions du RGPD.
+
+7. Droits post-mortem
+Conformément à l’article 48 de la Loi n°78-17 du 6 janvier 1978 relative au traitement des données, aux fichiers et aux libertés (« Loi française sur la protection des données »), vous avez le droit de définir des directives relatives au sort de vos Données après votre décès. Ces directives peuvent être générales ou spécifiques et peuvent être modifiées ou révoquées à tout moment.
+En l’absence de directives ou de toute mention contraire dans ces directives, les droits sur vos Données après votre décès pourront être exercés dans les conditions de l’article 85 de la Loi sur la protection des données.
+
+8. Autres questions
+Pour toute question relative au traitement des demandes des Personnes concernées cherchant à exercer leurs droits, veuillez contacter :
+• si vous êtes client, prospect ou tout autre tiers, vous pouvez écrire à l’adresse email : contact-donnees@hyundai.fr
+• si vous êtes Collaborateur, vous pouvez écrire à l’adresse email : donnees-interne@hyundai.fr
+• en cas de violation de données, vous pouvez écrire à l’adresse email : alerte-donnees@hyundai.fr
+
+Annexe 1 – Droits des personnes concernées
+
+1. Droit d’accès (article 15 du RGPD)
+Les Personnes concernées ont le droit d'obtenir :
+• la confirmation que leurs données sont traitées ;
+• l'accès à leurs Données Personnelles ;
+• et des informations supplémentaires.
+
+2. Droit de rectification (article 16 du RGPD)
+Les Personnes concernées ont le droit d'obtenir la rectification de leurs Données Personnelles qui sont inexactes ou incomplètes. Si les informations en question ont été communiquées à un tiers, HMF est tenue d’informer ce tiers de la demande de rectification, dans la mesure du possible. La Personne concernée a également le droit d’être informée des tiers auxquels les données ont été communiquées, le cas échéant.
+
+3. Droit à l'effacement ou «droit à l'oubli» (article 17 du RGPD)
+Les Personnes concernées peuvent demander la suppression de leurs Données Personnelles si HMF n’a aucune raison impérieuse de poursuivre leur traitement. Le droit à l’effacement s’applique dans les cas suivants :
+• les Données Personnelles ne sont plus nécessaires au regard des finalités pour lesquelles elles ont été collectées initialement ;
+• la Personne concernée retire le consentement sur lequel est fondé le traitement ;
+• la Personne concernée s'oppose à des opérations de traitement spécifiques et HMF n’a pas d’intérêt légitime impérieux ;
+• les données ont fait l’objet d’un traitement illicite ;
+• les données doivent être effacées pour respecter une obligation légale.
+Des Données Personnelles peuvent naturellement être stockées plus longtemps en cas d’obligations de conservation légales, ou pour des raisons judiciaires. Dans ces cas particuliers, une évaluation minutieuse devra être effectuée afin de légitimer la prorogation du stockage des Données Personnelles.
+
+4. Droit à la limitation du traitement (article 18 du RGPD)
+Les Personnes concernées ont le droit d'obtenir la limitation du traitement de leurs données. Lorsque ce droit est exercé, HMF est autorisée à conserver les Données Personnelles mais pas de poursuivre leur traitement. Des informations limitées sur la Personne concernée peuvent être conservées pour s’assurer que la limitation sera respectée à l’avenir.
+Le droit à la limitation du traitement s’applique dans les cas suivants :
+• lorsqu’une Personne concernée conteste l'exactitude de ses Données Personnelles, le traitement doit être limité à la conservation uniquement pendant que l'exactitude des Données Personnelles est vérifiée ;
+• lorsqu’une Personne concernée s’oppose à un traitement nécessaire à l'exécution d'une mission d'intérêt public ou aux fins des intérêts légitimes de HMF, HMF doit limiter le traitement à la conservation uniquement pendant la vérification portant sur le point de savoir si les motifs légitimes qu’elle poursuit prévalent sur les droits et libertés de la Personne concernée ;
+• lorsque le traitement est illicite et qu’une Personne concernée s’oppose à l’effacement et demande à la place la limitation du traitement au stockage.
+• lorsque HMF n'a plus besoin des Données Personnelles mais que celles-ci sont encore nécessaires à la Personne concernée pour faire valoir des droits en justice.
+
+5. Droit à la portabilité des données (article 20 du RGPD)
+Les Personnes concernées peuvent obtenir leurs Données Personnelles et les réutiliser pour leurs propres besoins et pour d’autres services. Le droit à la portabilité des données permet à la Personne concernée de déplacer, copier ou transférer facilement ses Données Personnelles d’un environnement informatique à l’autre, de manière sûre et sécurisée, dans un format couramment utilisé.
+Le droit à la portabilité des données s’applique dans les cas suivants :
+• lorsque les Données Personnelles ont été fournies au responsable du traitement directement par la Personne concernée,
+• lorsque le traitement est fondé sur le consentement ou sur l’exécution d’un contrat,
+• lorsque le traitement est effectué à l'aide de procédés automatisés.
+Il est parfois difficile de déterminer si et dans quelle mesure des données doivent être communiquées au titre du droit à la portabilité des données. À moins qu’il existe un processus spécifique pour le traitement de ces demandes chez HMF, ces cas doivent être signalés à HMF qui doit les examiner attentivement afin de veiller au respect de la loi.
+
+6. Droit d’opposition (article 21 du RGPD)
+Les Personnes concernées ont le droit de s’opposer à :
+• un traitement fondé sur des intérêts légitimes ou l’exécution d’une mission d’intérêt public ou relevant de l’exercice d’une autorité publique (y compris le profilage), en tenant compte de la situation particulière de la Personne concernée ;
+• la prospection (y compris profilage) ;
+• un traitement à des fins statistiques ou de recherche scientifique ou historique.
+
+7. Droits concernant la prise de décision automatisée et le profilage (article 22 du RGPD)
+Les Personnes concernées ont le droit de ne pas faire l'objet d'une décision fondée exclusivement sur un traitement automatisé, y compris le profilage. Ce droit apporte des garanties à ces Personnes concernées contre le risque qu’une décision potentiellement préjudiciable ne soit prise sans intervention humaine.
+Le droit de ne pas faire l’objet d’une décision automatisée s’applique lorsque :
+• la décision est fondée exclusivement sur un traitement automatisé ;
+• la décision produit des effets juridiques concernant la Personne concernée (ou l’affecte de manière significative).
+Il ne s’applique pas aux décisions nécessaires à la conclusion ou à l’exécution d’un contrat ni aux décisions autorisées par la loi ou fondées sur le consentement des Personnes concernées.

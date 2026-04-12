@@ -12,6 +12,10 @@ import documentRoutes from "./routes/documents";
 import scheduleRoutes from "./routes/schedules";
 import searchRoutes from "./routes/search";
 import ticketRoutes from "./routes/tickets";
+import termsAssetRoutes from "./routes/terms-assets";
+import termsDocumentRoutes from "./routes/terms-documents";
+import termsFactRoutes from "./routes/terms-facts";
+import termsMetaRoutes from "./routes/terms-meta";
 
 const app = new Hono();
 const isProduction = process.env.NODE_ENV === "production";
@@ -28,6 +32,10 @@ app.route("/", documentRoutes);
 app.route("/", scheduleRoutes);
 app.route("/", searchRoutes);
 app.route("/", ticketRoutes);
+app.route("/", termsAssetRoutes);
+app.route("/", termsDocumentRoutes);
+app.route("/", termsFactRoutes);
+app.route("/", termsMetaRoutes);
 
 app.onError((error, c) => {
   console.error(error);

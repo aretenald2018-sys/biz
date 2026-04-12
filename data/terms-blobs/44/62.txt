@@ -1,0 +1,346 @@
+Policy GuideTerms of UsePrivacy Policy01-01-2020 ~ Present01-01-2020 ~ Present
+
+Effective Date: January 1, 2020Your privacy is important to Hyundai AutoEver, Inc. and its affiliate companies, including Hyundai Motor Company and Genesis Motor America (“Genesis” “we,” “us” or “our”), as is your trust in Genesis’s products and services. We strive to protect your privacy, while providing opportunities to receive desired information regarding Genesis’s products, services, and offers that are relevant and useful to you. This Genesis Motor America Privacy Policy (this “Privacy Policy”) describes how we collect, use and share your personal information, including, as applicable, your rights regarding access, deletion, opting-out, and correction of your personal information.
+
+OVERVIEW
+
+This bullets below provides a summary of the personal information we collect and how we us it, which is further explained in our Privacy Policy below. While the actual information we collect and our use of such personal information varies depending upon the nature of our relationship and interactions, the bullets below provides a general overview of the categories of personal information we collect and the purposes for which we use such information.
+
+CATEGORIES OF PERSONAL INFORMATION COLLECTED
+
+Identifiers
+
+Such as a real name, alias, address, , VIN, IP address and online identifiers, email address, account name, SSN, driver’s license number and other government identifiers, or other unique personal identifiers.
+
+Customer records
+
+Paper and electronic customer records containing personal information, such as name, signature, , address, telephone number, education, current employment, employment history, SSN, driver’s license number, and other government identifiers, insurance policy number, financial account number and other financial or payment information and medical information.
+
+Commercial information
+
+Including records of property, products or services purchased, obtained, or considered, vehicle ownership reports, or other purchasing or use histories.
+
+Internet or other electronic network usage data
+
+Including, but not limited to, browsing history, clickstream data, search history, and information regarding a resident’s interaction with an internet website, application, or advertisement, including access logs and other usage data related to your use of any company websites, applications or other online services.
+
+Geolocation data
+
+Precise location information about a particular individual or device.
+
+Audio, video and other electronic data
+
+Audio, electronic, visual, thermal, olfactory, or similar information such as, CCTV footage, photographs, and call recordings and other audio recording (e.g., recorded meetings).
+
+Employment history
+
+Professional or employment-related information
+
+Education information
+
+Education information that is not publicly available personally identifiable information as defined in the federal Family Educational Rights and Privacy Act.
+
+Profiles and inferences
+
+Including inferences drawn from any of the information identified above to create a profile reflecting a resident’s preferences, characteristics, behavior or attitudes.
+
+USES OF PERSONAL INFORMATION
+
+Providing our Services. Safety, recall and warranty Analyzing and improving our Services. Personalizing content and experiences. Marketing and promotional purposes. In support of our general business operations. Securing and protecting our rights. Complying with legal obligations
+
+California residents.
+
+If you are a California resident, please be sure to review the section Additional Information for California Residents below for important information, as required by California privacy laws, about the categories of personal information we collect and disclose and your rights under California privacy laws.
+
+SCOPE
+
+This Privacy Policy applies to our collection, use and disclosure of personal information related to (a) current and former US owner(s) of Genesis vehicles, (b) our websites (each a “Site”) and mobile applications (each as “App”) that link to or display this Privacy Policy, (c) our vehicle technologies and services that we make available via your vehicle, and (d) subscribers to Genesis Connected Services and other subscription services (collectively the “Services”), as well as individuals that contact us, interact with us or express interest in our vehicles.
+
+Additional Privacy Notices
+
+We may also provide additional privacy notices for specific services, such as the Genesis Vehicle Owner Privacy Policy, which applies to and provides additional information about our collection, use and disclosure of personal information related to our vehicle technologies and services.
+
+Personal Information
+
+Personal information includes any information that identifies, relates to, describes, or is reasonably capable of being associated, or reasonably linked or linkable with a particular individual or household. Personal information includes information that can identify you, such as contact information, vehicle ownership information, geolocation data, web tracking information, payment card information, and demographic data.Not Covered by this Policy
+
+This Policy does not apply to job applicants and candidates who apply for employment with us, or to employees and non-employee workers.
+
+USER CONSENT
+
+Your use of our Services is subject to the applicable terms of use, including our Terms of Use and Connected Services Terms and Conditions (collectively, the “Terms”), including applicable limitations on liability and the resolution of disputes. Our terms are incorporated by reference into this Privacy Policy.
+
+By disclosing your personal information to us or using our Services, you understand and agree that Genesis may collect, use and disclose your personal information in accordance with this Privacy Policy and the Terms. If required by applicable law, we will obtain your consent to our collection, use, transfer and disclosure of your personal information. IF YOU DO NOT AGREE WITH ANY PART OF THIS PRIVACY POLICY OR OUR TERMS, THEN PLEASE DO NOT USE THE SERVICES.
+
+Our Services are intended for use and access by U.S. residents only. Genesis does not knowingly collect, process, access or intend to access the personal information of persons residing outside of the U.S., including in Europe and China. If you do not reside in the U.S., you should visit the Genesis-affiliated website that is applicable to your country or region.
+
+PERSONAL INFORMATION WE COLLECT
+
+We collect information about you directly from you, from third parties, and automatically through your use of our Services or interactions with us. We may combine the information we collect from these various sources.
+
+Sources of Personal Information
+
+The personal information we collect varies depending upon the circumstances. For example, we collect personal information when you engage with Genesis, its retailers, or its service providers directly, such as buying a vehicle, registering for a service or creating an account, requesting information from us, make part or service requests, participating in promotional activities, such as surveys, sweepstakes, contests, special events, blogs and chats, or when you contact us or otherwise voluntarily provide information to us.
+
+Genesis also automatically collects usage data when you use Genesis’ Sites and other Services. This may include via cookie data and web beacons; web analytics and log files; and vehicle, driver, and connected services usage data. Please see below for additional information regarding our collection of this type of information. Some of our Services may capture and record geolocation and general location data about your vehicle. If you visit a physical Genesis location, we may use CCTV and other security monitoring to secure our premises, which may lead to the collection of personal information about visitors to our premises.
+
+In addition, Genesis may also obtain information about you and your vehicle in a number of other ways. For example, we may obtain information about you or your vehicle from vehicle sales records and other public sources, from Genesis affiliates and business partners such as satellite radio and roadside assistance programs, and Genesis retailers (which are all independently owned and operated) and other sources that provide us leads including lists of potential vehicle purchasers or current owners.
+
+Categories of Personal Information
+
+Certain privacy laws, such as the CCPA, require that we disclose the categories of personal information that we may collect about individuals. While the actual information we collect varies depending upon the circumstances, generally we may collect the following categories of personal information:
+
+Identifiers
+
+Such as a real name, alias, address, VIN, IP address and online identifiers, email address, account name, SSN, driver’s license number and other government identifiers, or other unique personal identifiers.
+
+Customer records
+
+Paper and electronic customer records containing personal information, such as name, signature, address, telephone number, education, current employment, employment history, SSN, driver’s license number, and other government identifiers, insurance policy number, financial account number and other financial or payment information and medical information.
+
+Commercial information
+
+Including records of property, products or services purchased, obtained, or considered, vehicle ownership reports, or other purchasing or use histories.
+
+Internet or other electronic network usage data
+
+Including, but not limited to, browsing history, clickstream data, search history, and information regarding a resident’s interaction with an internet website, application, or advertisement, including access logs and other usage data related to your use of any company websites, applications or other online services.
+
+Geolocation data
+
+Precise location information about a particular individual or device.
+
+Audio, video and other electronic data
+
+Audio, electronic, visual, thermal, olfactory, or similar information such as, CCTV footage, photographs, and call recordings and other audio recording (e.g., recorded meetings).
+
+Employment history
+
+Professional or employment-related information
+
+Education information
+
+Education information that is not publicly available personally identifiable information as defined in the federal Family Educational Rights and Privacy Act.
+
+Profiles and inferences
+
+Including inferences drawn from any of the information identified above to create a profile reflecting a resident’s preferences, characteristics, behavior or attitudes.
+
+USE OF PERSONAL INFORMATION
+
+Genesis uses the information collected above in a number of ways. We may also use your information individually or combine it with other information to generate aggregate statistical information. The primary uses of your information include:
+
+Providing our ServicesTo provide and maintain our Services; to improve our Services; to authenticate users; to perform technical operations, such as updating software; for recall purposes; to provide and communicate with you about our Websites, Services, vehicles and other products and services; to respond to your requests; to administer Events that you participate in; to fulfill your orders, and process your payments; to provide technical support; and for other customer service and support purposes.
+
+Safety, recall and warrantyFor safety, recall and warranty purposes, such as to send recall notices, process recall and warranty claims, and for other purposes related to vehicle safety.
+
+Analyzing and improving our ServicesTo better understand how users access and use our vehicles and other products and the Services, for other research and analytical purposes, such as to evaluate and improve our Services and business operations, develop new features, products, or services, and to otherwise improve our Services and user experiences.
+
+Personalizing content and experiencesTo tailor content we send or display on the Websites in order to offer location customization and personalized help and instructions and to otherwise personalize your experiences; to reach you with more relevant ads and to measure ad campaigns.
+
+Marketing and promotional purposesTo send you newsletters, offers or other information we think may interest you and contact you about our products or services or information we think may interest you, and to administer promotions and contests, and to promote other services we offer.
+
+In support of our general business operationsWhere necessary to the administration of our general business, accounting, record keeping and legal functions, including to analyze operational and business results and risks, to collect outstanding amounts owed, and maintain business records.
+
+Securing and protecting our rightsTo protect our business operations, secure our network and information technology, assets and services; to prevent and detect fraud, unauthorized activities, access and other misconduct; where we believe necessary to investigate, prevent or take action regarding suspected violations of our Terms and other agreements with you, as well as fraud, illegal activities and other situations involving potential threats to the rights or safety of any person or third party.
+
+Complying with legal obligationsTo comply with the law or legal proceedings. For example, we may disclose information in response to subpoenas, court orders, and other lawful requests by regulators and law enforcement, including responding to national security or law enforcement disclosure requirements.
+
+Anonymous and De-identified Information.We also may de-identify information and create anonymous and aggregated data sets and reports in order to assess, improve, and develop our business, products, and services; prepare benchmarking reports; and for other research and analytics purposes.
+
+DISCLOSURE OF PERSONAL INFORMATION
+
+We disclose personal information, in order to provide and improve Services, reach you with more relevant information and offers, for recall, warranty and safety purposes, to make available third party offers you may be interested in, with your consent, or as otherwise set out below:
+
+AffiliatesGenesis may share your personal information with our parent company headquartered in South Korea. Genesis may also share your personal information with our affiliate Hyundai AutoEver, Inc.
+
+Service providers and suppliersWe may disclose personal information to our vendors, service providers, suppliers, contractors or agents who use such data in order to perform functions on our behalf.
+
+Marketing partners and third partiesGenesis may share personal information, including website user or vehicle owner information, with third parties including our affiliates, authorized retailers, and licensees. In addition, user or vehicle owner data may be used by our business partners, including marketing and promotional partners, to conduct joint marketing programs with Genesis, show you advertisements about our products and services on third party sites, and to offer you other valuable products and services. We may share personal information, such as name, contact information and other data about your vehicles or interests, with our authorized retailers in your area so that they may contact you about your vehicle needs and purchase plans, or otherwise reach out to you for marketing purposes.
+
+ProgramsGenesis may invite you to participate in promotional activities, such as surveys, sweepstakes, contests, special events, blogs and chats (“Programs”). These Programs are oftentimes co-marketed with an unaffiliated Genesis business partner. If you participate in a Program, we may use personal information you provide. For example, we may send you email messages to invite you to join a contest Program. Your personal information may also be shared with our business partners and may also be used by our business partners if you indicate your interest in receiving communications directly from that company. If you elect to receive communications from our business partners, your information will be used by that company in accordance with its policies and this Privacy Policy will not apply to that company’s use of your information. Sometimes the rules, terms and conditions, or disclaimers that apply to a particular Program include information on how we may use the personal information that you provide to us through your participation in the Program. If there is a conflict between the rules, terms, and conditions that apply to a particular Program and this Privacy Policy, those applying to the particular Program will govern. Please review all of the information about a Program before you provide us (or our business partners) with any personal information.
+
+Participating vendorsSome of our websites offer opportunities to make purchases online from special participating vendors. On websites with online purchase opportunities for products and merchandise, we may also give participating vendors the order information and authorization for the merchant bank. Any time you order from a participating vendor, that vendor will automatically have all the information related to the order. Participating vendors may use that information to advise you directly of other products and offerings that they provide.
+
+Credit card companies and payment servicesIn some cases, we use third party payment and transaction services to facilitate your transactions and process your orders. In such cases, we will share your personal information and credit card information with third party payment services companies solely for the purpose of completing the transaction or processing your order.
+
+Public postingsYou should be aware that if you voluntarily disclose information, personal or otherwise, online in any community area (whether through Genesis’ websites or any other service available online), that information can be collected and used by others. Accordingly, you should use caution when sharing any personal information or other sensitive information with others in any community area (whether through Genesis’ websites or any other service available online).
+
+Business transfersWe may disclose and transfer personal information as part of any merger, acquisition, financing, sale of company assets or interests in the respective company, or in the case of insolvency, bankruptcy, or receivership, including during negotiations related to such business transfers.
+
+Protecting rights and interestsWe may disclose your information to protect or defend the safety, rights, property, or security of Genesis, third parties or the general public, including to protect the Services, to detect, prevent, or otherwise address fraud, security, technical issues, or other activity which we, in our sole discretion, consider to be, or to pose a risk of being, illegal, unethical, or legally actionable activity. We may also use personal information as evidence in litigation in which we are involved, and as necessary to enforce this Privacy Policy or our Terms and other applicable agreements with you. Legal complianceWe may disclose your information to comply with applicable legal or regulatory obligations, including as part of a judicial proceeding, in response to a subpoena, warrant, court order, or other legal process, or as part of an investigation or request, whether formal or informal, from law enforcement or a government official.
+
+Anonymized and Aggregated Data.We may share aggregate or de-identified information with third parties for research, marketing, analytics, and other purposes, provided such information does not identify you.
+
+Categories of Personal Information Disclosed.Certain privacy laws, such as the CCPA, require that we tell you about the categories of personal information that we have disclosed for a business purpose as well as the categories that we have “sold”. Please review the section Categories of Personal Information Collected above for further descriptions of each category of personal information.
+
+Disclosed for a business purposeIn general, we may disclose the following categories of personal information for the business purposes described above: identifiers; customer records; commercial information; internet or other electronic network usage data; geolocation data; audio, video and other electronic data; employment history; education information; and profiles and inferences.
+
+SoldThe CCPA defines a “sale” as disclosing or making available to a third party personal information in exchange for monetary or other valuable consideration. While we do not disclose personal information to third parties in exchange for direct monetary compensation from such third parties, we do disclose or make available personal information to retailers for marketing purposes, as well as other third parties, in order to receive certain services or benefits from them (such as when we allow third party tags to collect information such as browsing history on our Sites) to improve and measure our ad campaigns, including: identifiers; customer records; commercial information; internet or other electronic network usage data; and profiles and inferences
+
+COOKIES AND TRACKINGWe and our third-party providers use cookies, clear GIFs/pixel tags, JavaScript, local storage, log files, and other mechanisms to automatically collect and record information about your browsing activities, and use of the Websites and other Services. We may combine this data with other personal information we collect about you. This data is used to understand how our Services are used, track bugs and errors, provide and improve our Services, verify account credentials, allow logins, track sessions, prevent fraud, and protect our Services, as well as for targeted marketing and advertising, to personalize content and for analytics purposes (see the Individual Rights and Choices section below for information about opting-in out of certain uses of your personal information)CookiesWe may collect certain preference information of website users through the use of HTTP cookies which are small files stored on your web browser in order to optimize the design of our websites. Cookies enable us to track and aggregate user behavior data so that we may better target the interests of our users and enhance their experience on our websites. You can set your browser to refuse all cookies or to indicate when a cookie is being sent. However, some website features or services may not function properly without cookies.Web beaconsSome of our web pages, commercial email messages and/or newsletters may contain electronic images known as web beacons, which are also called single-pixel GIFs. Web beacons collect information including a cookie number, time and date of a page view and a description of the page on which the web beacon resides. Web beacons are a technique we may use to enhance and personalize the websites and the products and services we offer, to provide product information and advertisements that are more relevant to your interests, compile aggregated statistics about the usage of our websites and to track the number of users who have opened and acted upon our commercial email messages.Log filesLike most websites, we collect log information to analyze trends, administer the sites, track users’ movement around our websites and gather broad demographic information for aggregate use in improving the websites. IP addresses are not linked to personal information.
+
+Do Not TrackOur websites do not support Do Not Track at this time. Do Not Track (DNT) is a privacy preference that you can set in your web browser to indicate that you do not want certain information about your webpage visits collected across websites when you have not interacted with that service on the page. For all the details, including how to turn on Do Not Track, visit donottrack.us.
+
+Third-Party AnalyticsWe may use third-party analytics companies, for example Google Analytics (see privacy policy and opt-out) to evaluate use of our Services. We use these tools to help us understand use of, and to improve, our Services, performance, ad campaigns, and user experiences. These entities may use cookies and other tracking technologies, such as web beacons or local storage objects (LSOs), to perform their services.
+
+INTEREST-BASED ADVERTISING
+
+On some of our Websites, we may work with third-party ad networks, analytics companies, measurement services and others (“third-party ad companies”) to display advertising on our Services and to manage our advertising on third-party sites, mobile apps and online services. We and these third-party ad companies may use cookies, pixels tags and other tools to collect information on our Websites (and on third-party sites and services), such as browsing history, IP address, device ID, cookie and advertising IDs, and other identifiers, general location information and, with your consent, your device’s geolocation information; we and these third-party ad companies use this information to provide you more relevant ads and content and to evaluate the success of such ads and content.
+
+For more information or to opt out of third party advertising cookies and tags on our Sites, go to www.privacyrights.info/. You may also obtain more information about targeted or “interest-based advertising” by visiting the Network Advertising Initiative or the Digital Advertising Alliance.
+
+Opting out of participating ad networks does not opt you out of being served advertising. You may continue to receive generic or “contextual” ads on our Services. You may also continue to receive targeted ads on other websites, from companies that do not participate in the above programs.
+
+Custom Audiences and Matching.We may share certain hashed customer list information (such as your email address) with third parties—such as Facebook and Google—so that we can better target ads and content to our customers, and others with similar interests, within their services. These third parties use the personal information we provide to help us target ads and to enforce their terms, but we do not permit them to use or share the data we submit with other third-party advertisers.
+
+INDIVIDUAL RIGHTS AND CHOICES
+
+You may access, delete and update certain of your personal information by accessing and adjusting your account settings, or by contacting us as specified below. Please note that we may maintain copies of information that you have updated, modified or deleted, as permitted, in our business records and in the normal course of our business operations.Opting-Out of Certain Communications.Genesis offers you the opportunity to opt-out from receiving commercial email, calls, or mail from Genesis about our products and services.
+
+You may opt-out of emails or manage your subscription preferences at any time by using the unsubscribe mechanism within any marketing email we send to you. Even if you opt out, we may still send you non-commercial emails, such as registration confirmation, vehicle updates, and responses to direct requests.
+
+You also may call, email, or write to us directly if you wish to opt-out or request that we cease sending you commercial or other information via call, mail or email. Such requests can be made by emailing us at customercare@genesismotorsusa.com, by calling (844) 340-9741 or by writing us directly at: Genesis Customer Care, P.O. Box 20850,Fountain Valley, CA 92728-0850.
+
+Accessing and Updating Your Information.If you register for an account on MyGenesis.com, you can access and update certain information we have relating to your online account by signing into your account and going to the “My Account” section of the website. You may also update or delete your contact information by emailing us at customercare@genesismotorsusa.com, by calling (844) 340-9741or by writing us directly at: Genesis Customer Care, P.O. Box 20850, Fountain Valley, CA 92728-0850-.
+If you have opted out of receiving future emails from us, we will implement your opt-out request within ten (10) business days of receiving the opt-out request. If you have opted out of receiving future promotional materials by regular mail, we will implement your opt-out request within a commercially reasonable time. In those instances, we will retain your information in a “do not promote” file in our database, and you will receive no further communications from us except as required by law.
+
+California Residents. California residents have certain rights, under California privacy laws, regarding their personal information, which are set forth in the Additional Information for California Residents.
+
+THE SECURITY OF YOUR INFORMATIONWe use security policies, procedures, and tools which are designed to safeguard the personal information we collect. However, the security of information transmitted through the Internet can never be guaranteed regardless of the level of security. We are not responsible for any interception or interruption of any communications through the Internet or for changes to or losses of data. Users of our Services are responsible for maintaining the security of any password, user ID or other form of authentication involved in obtaining access to password protected or secure areas of any of our website. In order to protect you and your data, we may suspend your use of any of the websites, without notice, pending an investigation, if any security issue arises. Access to and use of password protected and/or secure areas of any of the websites are restricted to authorized users only. Unauthorized access to such areas is prohibited and may lead to criminal prosecution or civil action.
+
+THIRD PARTY SITES
+
+We may offer links to or from our websites to other websites within the Genesis family as well as to websites, services, and resources operated by third parties. We offer links to third party websites so that you can conveniently visit our vendors and advertisers or locate other content likely to be of interest to you. We are not responsible for the privacy practices, content or policies of websites operated by third parties and urge you to inquire about their privacy and information sharing practices before providing any persona information. In the event that you provide personal information to any third party website or service, you understand that Genesis is not responsible for such third parties’ use or misuse of your personal information. You further acknowledge and agree that Genesis shall not be responsible or liable, directly or indirectly, for any damage or loss caused or alleged to be caused by or in connection with use of or reliance on any such content, goods or services available on or through any such third party website, service, or resource.
+
+CHILDREN’S PRIVACYWe do not knowingly collect or maintain personal information from any person under the age of thirteen (13) as they are not of driving age. No parts of our products or services are directed to or designed to attract anyone under the age of thirteen (13).
+
+CHANGES TO THIS PRIVACY POLICY
+
+Genesis reserves the right to change this Privacy Policy at any time. Genesis will use, share, and disclose all personal and other user information in accordance with the Privacy Policy in effect at the time the information is collected. We will post any changes to this Privacy Policy on this page so check back frequently so that you are always aware of what information we collect, how we use it, and under what circumstances we may disclose it. Continued interaction with us following changes to these terms will mean that you accept the changes.
+
+HOW TO CONTACT US
+
+Please email us at customercare@genesismotorsusa.com, call us at (844) 340-9741, or write us at Genesis Customer Care, P.O. Box 20850, Fountain Valley, CA 92728-0850 if you have any questions about this Privacy Policy.
+
+1. ADDITIONAL INFORMATION FOR CALIFORNIA RESIDENTS
+
+This section provides information for California residents about their rights regarding their personal information, as required under California privacy laws, including the California Consumer Privacy Act (“CCPA”).
+
+Notice at Collection.We are required to notify California residents, at or before the point of collection of their personal information, the categories of personal information collected and the purposes for which such information is used.
+
+Do-Not-Sell.California residents have the right to opt-out of our sale of their personal information. Opt-out rights can be exercised by visiting this page. We do not sell personal information about residents who we know are younger than 16 years old without opt-in consent.
+
+Verifiable Requests to Delete, and Requests to Know.Subject to certain exceptions, California residents have the right to make the following requests, at no charge, up to twice every 12 months:
+
+Right of DeletionCalifornia residents have the right to request deletion of their personal information that we have collected about them, subject to certain exemptions, and to have such personal information deleted, except where necessary for any of a list of exempt purposes.
+
+Right to Know – Right to a Copy
+California residents have the right to request a copy of the specific pieces of personal information that we have collected about them in the prior 12 months and to have this delivered, free of charge, either (a) by mail or (b) electronically in a portable and, to the extent technically feasible, readily useable format that allows the individual to transmit this information to another entity without hindrance.
+
+Right to Know – Right to InformationCalifornia residents have the right to request that we provide them certain information about how we have handled their personal information in the prior 12 months, including the:
+
+• categories of personal information collected;
+• categories of sources of personal information;
+• business and/or commercial purposes for collecting and selling their personal information;
+• categories of third parties/with whom we have disclosed or shared their personal information;
+• categories of personal information that we have disclosed or shared with a third party for a business purpose;
+• categories of personal information collected; and
+• categories of third parties to whom the residents’ personal information has been sold and the specific categories of personal information sold to each category of third party.
+
+Submitting RequestsYou may submit requests to us at https://owners.genesis.com/us/en/privacy/data-request.html . In addition, you may make certain requests to us by contacting as at: (844) 340-9741 (toll free).
+
+Discrimination and IncentivesThe CCPA prohibits discrimination against those who exercise their rights under the CCPA and imposes requirements on any financial incentives offered to California residents related to their Personal Information. A business may offer financial incentives for the collection, sale or deletion of California residents’ personal information, provided it is not unjust, unreasonable, coercive or usurious, and is made available in compliance with applicable transparency, informed consent, and opt-out requirements. California residents have the right to be notified of any financial incentives offers and their material terms, the right to opt-out of such incentives at any time, and may not be included in such incentives without their prior informed opt-in consent.
+
+Shine the Light
+Under California’s Shine the Light law Civil Code Section 1798.83), California residents with whom we have an established business relationship are entitled to request and receive, free of charge, once per calendar year, information about the customer information we shared, if any, with other businesses for their own direct marketing uses in the previous calendar year. You may call (844) 340-9741 or email us at consumeraffairs@hmausa.com to request a copy. We will provide the requested information to you at your email address in response. Please be aware that not all information sharing is covered by the “Shine the Light” law requirements and only information on covered sharing will be included in our response.
+
+2. GENESIS MOTOR AMERICA OWNER’S PRIVACY POLICY
+
+Effective Date: June 1, 2016
+
+Thank you for choosing a Genesis vehicle. Your privacy is important to the Genesis brand of Hyundai Motor America (“Genesis,” “we,” “us” or “our”), and its affiliates. At Genesis, we are continually developing technologies and services to make our vehicles safer, more environmentally friendly, more convenient and more fun to drive. Some of these technologies and services collect, use or share information that is collected, generated, recorded or stored by our Genesis vehicles (“Technologies and Services”). Your Genesis vehicle may be equipped with one or more of these Technologies and Services. Genesis has created this Vehicle Owner Privacy Policy (this “Privacy Policy”) to explain how we collect, use and share the following types of information related to these Technologies and Services (“Covered Information”):
+
+1. Information that vehicles collect, generate, record or store in electronic form, which is retrieved from the vehicle by us or on our behalf, and which is linked or reasonably linkable to (a) the vehicle from which the information was retrieved, (b) the owner of the vehicle or (c) the registered user of Technologies and Services; and2. Information that you may provide during the subscription or registration process for Technologies and Services. This Privacy Policy explains:- The types of Covered Information we may collect- How we may use Covered Information- How we may share Covered Information- Choices that vehicle owners and registered users of Technologies and Services have regarding their Covered Information- How vehicle owners and registered users of Technologies and Services may access, review and correct their Covered Information- How to contact us with questions about the collection, use and sharing of Covered Information
+
+CONSENT AND INCORPORATION
+
+PLEASE REVIEW THIS PRIVACY POLICY CAREFULLY. By using the Technologies and Services, you accept the terms of this Privacy Policy and any terms and conditions of use that may be applicable to such Technologies and Services and consent to our collection, use and sharing of your Covered Information as described in this Privacy Policy. IF YOU DO NOT AGREE WITH ANY PART OF THIS PRIVACY POLICY OR THE APPLICABLE TERMS OF USE, THEN PLEASE DO NOT USE ANY OF THE TECHNOLOGIES AND SERVICES.
+
+OVERVIEW AND SCOPE
+
+Genesis WebsitesThis Privacy Policy applies only to Covered Information. We also operate the genesis.com and genesismotorsusa.com/owners websites, as well as certain other Genesis websites (such as genesiscertified.com), which collect other types of information. We use a separate privacy policy to explain our privacy practices related to those websites or the information collected by those websites. That means this Privacy Policy does not apply to information collected on those websites unless such information is Covered Information. You may provide us with Covered Information through one of our websites when, for example, you provide information to us during the registration process for certain Technologies and Services, such as Genesis Connected Services®, on genesismotorsusa.com/owners. You can review the Privacy Policy for the Genesis websites here .
+
+Genesis Connected Services®Genesis Connected Services® (including the Genesis Connected Services® related apps) is one of our Technologies and Services that collects, uses and shares Covered Information. We have included general information about our privacy practices related to Genesis Connected Services® in this Privacy Policy. We also maintain a separate Genesis Connected Services ® Service Subscriber Privacy Policy that provides more detailed information about our collection, use and sharing of Covered Information through our Genesis Connected Services ®. If you use Blue Link®, we encourage you to read the Genesis Connected Services ® Subscriber Privacy Policy so that you can get a complete picture of our Genesis Connected Services ® privacy practices. The Genesis Connected Services ® Subscriber Privacy Policy can be accessed here . With respect to Genesis Connected Services ®, the terms of the Genesis Connected Services® Subscriber Privacy Policy are incorporated into and made a part of this Vehicle Owner Privacy Policy by this reference.
+
+Third Party Products and ServicesAs a convenience to our vehicle owners and registered users of Technologies and Services, we may offer the ability to use certain third party products and services, such as your mobile phone, mobile applications, with your vehicle. For example, these third party products and services may include data services through your mobile phone carrier, Android Auto and Apple® CarPlay. These third party products and services are not owned or controlled by Genesis and we are not responsible for the privacy practices of the third parties that provide such products and services or the terms and conditions under which they offer such products. You use such third party products and services at your own risk. If you choose to use such third party products and services, we strongly encourage you to read the privacy policies and terms and conditions of such third parties to make sure they are acceptable to you.
+
+THE TYPES OF COVERED INFORMATION WE MAY COLLECT
+
+We collect Covered Information when you use, subscribe to, or register for, Technologies and Services. The Technologies and Services available on Genesis vehicles include Genesis Connected Services®, navigation technologies, telematics systems, and vehicle diagnostic tools.
+
+Subscription and Registration InformationCertain Technologies and Services require you to register or subscribe prior to use. When you subscribe to or register for Technologies and Services, we may collect Covered Information, including:
+
+- First name- Last name- Home Address- Email address- Telephone number- Work Address- Credit card number (solely for payment purposes)- Password- Vehicle Identification Number (VIN)- Vehicle usage information
+
+Information Collected by the Technologies and ServicesWhen you use the Technologies and Services, we may collect Covered Information collected, generated, recorded or stored by the Genesis vehicle, including:
+
+- Information about your vehicle, such as:- VIN- Model- Model year- Engine type- Service data- Mechanical condition- Incidents involving vehicle- Diagnostic data, such as:- Trouble codes- Freeze frame data- Tire pressure- Battery voltage- Coolant temperature- Oil temperature- Service requirements
+
+- Eco-related driving performance data per trip, such as:- MPG- Vehicle greenhouse gas emissions
+
+- Information about your use of the Technologies and Services, such as:- Customer chosen points of interest for navigation- Search content- Information about individuals making a Genesis Connected Services call from vehicle or subscriber account- Date, time and duration of calls
+
+- Information about use of your vehicle, such as:- Direction of travel- Time of travel- Odometer reading- Fuel level- Refuel indication- Date of refuel activity- EV Battery Status – Charge Level, range, charging status (in appropriate vehicles)
+
+Geolocation and Driver Behavior InformationIN ADDITION TO THE COVERED INFORMATION SPECIFIED ABOVE, OUR GENESIS CONNECTED SERVICES ®, NAVIGATION TECHNOLOGIES AND TELEMATICS SYSTEM MAY COLLECT GEOLOCATION AND DRIVER BEHAVIOR INFORMATION. DRIVER BEHAVIOR INFORMATION COLLECTED BY OUR TECHNOLOGIES AND SERVICES INCLUDES VEHICLE SPEED, AVERAGE RPM, CRUISE CONTROL STATUS AND SEATBELT STATUS, BUT DOES NOT INCLUDE INFORMATION THAT IS USED ONLY FOR SAFETY, DIAGNOSTICS, WARRANTY, MAINTENANCE OR COMPLIANCE PURPOSES. WE WILL ONLY COLLECT, USE AND SHARE COVERED INFORMATION THAT CONSTITUTES GEOLOCATION AND DRIVER BEHAVIOR INFORMATION AS STATED IN THIS PRIVACY POLICY.
+
+HOW WE MAY USE COVERED INFORMATION
+
+We will only use and share Covered Information in ways that are consistent with the context in which the Covered Information was collected and are committed to making reasonable and responsible use of Covered Information. We may use Covered Information:- As reasonably necessary to provide requested services- To respond to a possible emergency or other situation requiring urgent attention- To conduct research or analysis for Technologies and Services, vehicles, vehicle safety and security- To diagnose or troubleshoot vehicle systems- For our operational purposes- To prevent fraud and criminal activity or to safeguard Covered Information associated with vehicle owners or their vehicles- To improve products and services or develop new offerings associated with Technologies and Services, vehicles, vehicle safety, security, or transportation infrastructure- To provide you with notices about your account and subscriptions- To communicate with vehicle owners and registered users of Technologies and Services, including to provide vehicle owners and registered users of Technologies with information about goods and services that may be of interest to them- To protect the safety, property, or rights of Genesis, vehicle owners or others- In any other way we may describe to you when you provide Covered Information- For any other purpose with your consent
+
+HOW WE MAY SHARE COVERED INFORMATION
+
+We may disclose Covered Information as follows:To Our Service ProvidersWe share Covered Information with our third party service providers and other third parties we use to support our business, including our third party service providers that help us provide you with the Technologies and Services. Our agreements with these service providers require them to use your Covered Information only as necessary to assist us.
+
+To Defend Our Rights or Comply with the LawWe reserve the right to disclose your Covered Information based on the good faith belief that such action is necessary or appropriate to: (a) comply with any court order, law or legal process, including to respond to any government or regulatory request; (b) protect and defend our rights or property; and (c) protect the rights, property or safety of Genesis, our affiliates, our customers or others.In the Event of a Change of ControlIn the event that Genesis is involved in a transaction such as a merger, stock purchase or sale, or sale of the Genesis assets to which the Covered Information pertains, Covered Information may be transferred to the other party in such transaction. The party to which the Covered Information is transferred will be required to adhere to the same privacy practices as those described in this Privacy Policy.
+
+With Our Affiliate CompaniesTo our parent company, subsidiaries, dealers, joint venture partners or other companies that we control or that are under common control with us, in which case we will require those companies to agree to use your Covered Information in a way that is consistent with this Privacy Policy.
+
+Independent Vehicle Repair and Service ProvidersWe may share Covered Information collected by the diagnostic tools with independent repair business you choose to provide you with repair, maintenance and other services related to your vehicle.
+
+In Aggregate FormWe may aggregate Covered Information so that does not identify any individual or vehicle. We may share such aggregate information for any lawful purpose without restriction.
+
+With Your ConsentOther than the cases above, we won’t disclose your Covered Information for any purpose unless you consent to it in some way, including by your continued use after notice.
+
+SECURITY OF YOUR COVERED INFORMATION
+
+We employ industry standard data security measures designed to protect the security, confidentiality and integrity of Covered Information. However, the security of Covered Information transmitted through wireless carriers or the Internet cannot be guaranteed. We are not responsible for any interception or interruption of any communications transmitted through wireless carriers or the Internet or for changes to or losses of data. Users of the Technologies and Services are responsible for maintaining the security of any password, user ID or other form of authentication involved in obtaining access to the Technologies and Services. In order to protect you and your Covered Information, we may suspend your use of any of the Technologies and Services, without notice, pending an investigation, if any breach of security is suspected. We will retain Covered Information in accordance with our record retention policies and applicable law. Note that after the applicable retention period expires, Covered Information may be deleted and may not be retrievable.
+
+YOUR PRIVACY CHOICES
+
+You can decline to subscribe to or use Technologies and Services such as Genesis Connected Services ® (by not subscribing) and the navigation technologies (by not using them). We do not allow you to “turn off” the collection of Covered Information by the diagnostic tools. This is so that we and our affiliates, our independent dealers and others who you may choose to service your Genesis vehicle can access the diagnostic data to provide appropriate repair, maintenance and other safety-related services. If you decline to subscribe to or use any Technologies or Services, those Technologies and Services will not collect Covered Information. Please note, however, that if you decline to subscribe to or use any Technologies or Services, those Technologies and Services will be unavailable to you.
+
+Genesis offers you the opportunity to opt-out from receiving promotional email or mail from Genesis about our products and services. For information on how to opt-out of the Genesis Connected Services®, please see the Genesis Connected Services® Subscriber Privacy Policy here.
+
+- For email, you may opt-out at any time by using the unsubscribe mechanism within the email. The unsubscribe mechanism allows you to manage your subscription preferences to email alerts and special offers. Notwithstanding the above, this mechanism does not allow you to opt-out of receiving transactional email, such as registration confirmation, vehicle updates and responses to direct requests.- For calls or direct mail, you may opt out at customercare@genesismotorsusa.com or by calling (844) 340-9741.- If the information you have provided will be available to third parties for marketing purposes, you will also be given the opportunity to opt-out from this practice at customercare@genesismotorsusa.com or by calling (844) 340-9741.- You also may write to us directly if you wish to: (a) ask that we not share your Covered Information with third parties for marketing purposes; or (b) opt out or request that we cease sending you promotional or other information via calls, mail or email. Such written requests should be sent to Genesis Customer Care, P.O. Box 20850, Fountain Valley, CA 92728-0850.If you have opted out of receiving future emails from us, we will implement your opt-out request within ten (10) business days of receiving the opt-out request. If you have opted out of receiving future promotional materials by regular mail, we will implement your opt-out request within a commercially reasonable time. In those instances, we will retain your information in a “do not promote” file in our database, and you will receive no further communications from us as required by law.
+
+HOW TO ACCESS, REVIEW AND CORRECT YOUR COVERED INFORMATION
+
+You may access, review and correct your Technologies and Services subscription and account information, as well as certain other Covered Information, at any time by emailing, calling or writing us at the address below or by updating your Covered Information directly on the “My Account” page of genesismotorsusa.com/ownersFor Genesis Connected Services®, you may also press the Genesis Connected Services® button in your vehicle and speak to a Genesis Connected Services® agent at any time.
+
+YOUR CALIFORNIA PRIVACY RIGHTS
+
+Under California Civil Code Section 1798.83, also known as Senate Bill 27, or “Shine the Light” law California residents with whom we have an established business relationship are entitled to request and receive, free of charge, once per calendar year, a copy of Hyundai’s California Information Sharing Disclosure Notice about the customer information we shared, if any, with other businesses for their own direct marketing uses in the previous calendar year. You may call (844) 340-9741 or email us at customercare@genesismotorsusa.com. We will provide the requested information to you at your email address in response. Please be aware that not all information sharing is covered by the “Shine the Light” law requirements and only information on covered sharing will be included in our response.EFFECTIVE DATE AND CHANGES TO THIS POLICYThe effective date of this Privacy Policy is set forth at the top of this page. We may change this Privacy Policy from time to time by posting the changes here so please come back and review this Privacy Policy regularly. We will take reasonable steps to alert vehicle owners and registered users of Technologies and Services prior to changing the collection, use or sharing practices associated with Covered Information in ways that have a material impact on vehicle owners and registered users of Technologies and Services. If the new practices involve using Covered Information in a materially different manner than when the Covered Information was collected, we will obtain the consent of vehicle owners and registered users of Technologies and Services to the new practices.
+
+CLASS ACTION WAIVER
+
+You may only resolve disputes with us on an individual basis and may not bring and expressly waive bringing a claim as a plaintiff or a class member in a class, consolidated, or representative action. Class arbitrations, class actions, private attorney general actions, and consolidation with other arbitrations are not allowed.
+
+APPLICABLE LAW AND JURISDICTION
+
+All matters relating to the Technologies and Services are governed by the laws of the State of California in the United States irrespective of its conflicts of laws provisions. In the event that Genesis or Hyundai Motor America wishes to pursue legal action against you, it may bring such legal action in any federal or state court having jurisdiction. Lawsuits against Genesis or Hyundai Motor America must be brought in federal or state court in Orange County, California.
+
+HOW TO CONTACT US WITH QUESTIONS
+
+Please email us at customercare@genesismotorsusa.com or by calling (844) 340-9741, or write us at Genesis Customer Care, P.O. Box 20850, Fountain Valley, CA 92728-0850 if you have any questions about this Privacy Policy.

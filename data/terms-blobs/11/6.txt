@@ -1,0 +1,165 @@
+Close
+
+Confirm your ZIP Code
+
+ZIP Code
+
+Please enter a valid ZIP Code.
+
+Please enter a ZIP Code for offers, inventory, and dealers near you.
+
+Your location could not be detected. Please enter a ZIP Code.
+
+Please enter a valid ZIP Code.
+
+Use my current location
+
+Confirm
+
+Close
+
+My Preferred Dealer
+Local Dealer
+
+{{ dealer.dealerNm }}
+
+{{ dealer.distance | round }} mi.
+
+Preferred Dealer
+
+Set as Preferred Dealer
+
+Showroom
+Service Center
+
+{{ dealer.address1 }} {{ dealer.address2 }}
+{{ dealer.city }}, {{ dealer.state }} {{ dealer.zipCd }}
+
+Get directions
+
+{{ dealer.calltrackingShowroomPhoneMobile | phone }}
+
+{{ dealer.phone | phone }}
+
+{{ dealer.calltrackingShowroomPhone | phone }}
+
+{{ dealer.phone | phone }}
+
+Showroom Hours
+
+{{ item.day.replace(/,/g, ", ") }}
+{{item.hour}}
+
+Test Drive
+
+See Inventory
+
+{{ dealer.address1 }} {{ dealer.address2 }}
+{{ dealer.city }}, {{ dealer.state }} {{ dealer.zipCd }}
+
+Get directions
+
+{{ dealer.calltrackingServiceCenterPhoneMobile | phone }}
+
+{{ dealer.serviceCenterPhone | phone }}
+
+{{ dealer.calltrackingServiceCenterPhone | phone }}
+
+{{ dealer.serviceCenterPhone | phone }}
+
+Service Center Hours (May Vary)
+
+{{ item.day.replace(/,/g, ", ") }}
+{{item.hour}}
+
+Schedule Service
+
+Visit Dealer Site
+
+Select a different dealer
+
+Vehicle Technologies and Services
+
+Privacy Notice
+
+Vehicle Technologies and Services
+
+Your Privacy Choices
+
+MyHyundai Privacy
+
+Hyundai Vehicle Technologies and Services Privacy Notice
+
+Last Updated: January 1, 2026
+This Hyundai Vehicle Technologies and Services Privacy Notice (the “Notice”) is provided by Hyundai Motor America and its parent company and affiliates (“Hyundai,” “we,” “us” or “our”). This Notice describes how we collect, use, disclose, and otherwise process personal information related to Hyundai Bluelink® connected services and other vehicle technologies and services, which includes: in-vehicle and onboard systems, sensors, software, features and equipment; mobile applications we provide (“Apps”); and other features, technologies and services we make available for eligible Hyundai connected vehicles (collectively, the “Vehicle Technologies and Services”).
+If you see the logo when you start your vehicle this indicates that Bluelink® connected services are active.
+
+Scope & Purpose
+This Notice applies to the personal information that Hyundai collects, uses, discloses, and otherwise processes through the Vehicle Technologies and Services (“Covered Information”), which includes:
+
+Information retrieved from the Vehicle Technologies and Services by us or on our behalf, which is linked or reasonably linkable to that vehicle, the owner of that vehicle, or any additional driver registered for that vehicle;
+Information provided during the subscription or registration process for Vehicle Technologies and Services; and
+Other identifiable information related to the performance, location, operation and use of the Vehicle Technologies and Services.
+
+This Notice supplements the Hyundai Motor America Privacy Notice⁠
+(“Hyundai Privacy Notice”), with respect to our collection, use, and disclosure of Covered Information. For example, for additional information about your choices, see the “Your Rights and Choices” section, and rights regarding your personal information (including Covered Information), please see the “Additional Privacy Disclosures for Applicable State Residents” or “Applicable Privacy Disclosures for California Residents.” Capitalized terms not defined here have the meanings set out in the Privacy Notice.
+This Notice does not apply to online services, such as websites and apps, that we do not provide and do not link to this Notice.
+Please note, you are responsible for ensuring that anyone driving your vehicle has read and understood this Notice and acknowledges our collection, use and/or disclosure of Covered Information when driving your vehicle.
+Covered Information We Collect
+We and our vendors may obtain the categories of Covered Information disclosed below from the following sources: directly from you, from the Vehicle Technologies and Services you use, and from third parties such as our affiliates and partners or authorized dealers.
+The Covered Information we collect varies depending on the nature of your interactions with us and may not include all of the examples listed below.
+
+Vehicle Data: We may collect information about your vehicle and its performance, including VIN, performance metrics, diagnostic codes, maintenance history, fuel and battery levels, tire pressure, driving conditions, feature usage, and related date/time stamps.
+Driving Data: We may collect information about your driving, including speed, acceleration, braking, direction, trip details (e.g., mileage, duration, conditions), ignition and steering events, cruise control, seatbelt status, incident information, and related timestamps.
+Account and Subscription Information: We may collect information about your account, including name, email address, account credentials, billing information and subscription details and history, and data from third party accounts services that you link to your MyHyundai account (e.g., calendar integration).
+App and Web Data: We may collect information about your use of our Apps and connected vehicle browsing, including IP address, online identifiers, device ID, browser type, pages visited, links clicked, search queries, and other activity and usage data.
+Location Data: We may collect precise latitude and longitude of your vehicle, as well as geolocation data from your mobile device.
+Audio, Visual and Other Electronic Data: We may collect images, audio data (e.g., such as from voice commands and other utterances), and event data generated in connection with certain Vehicle Technologies and Services (e.g., autonomous driving features), and records of customer interactions (e.g., communications, contact details, request information, and related resolution data).
+Profiles and inferences: including inferences and trends derived from Covered Information (e.g., for quality, safety, improvement, and analytics).
+
+Biometric Data. If you enroll in certain Vehicle Technology Services, such as Digital Key, your fingerprint or facial geometry data, which may be considered biometric identifiers or biometric information under certain laws, may be used to enable access to your vehicle, your profile, Hyundai Pay features, and other vehicle services that use biometric credentials. We only provide biometric features at your request and with your explicit consent.
+Your facial geometry and fingerprint data are stored exclusively on your vehicle, are not sent to Hyundai or any other parties, and remain on the vehicle until you delete them or reset the system. You may delete your data at any time. For details on system functionality , please refer to your owner’s manual.
+Use of Covered Information
+Generally, we use Covered Information for the following purposes:
+
+Providing our Vehicle Technologies and Services: To deliver, maintain, and improve the Vehicle Technologies and Services and our other products and services; to enable certain features and services, such as roadside assistance, remote start, and vehicle alerts; to authenticate users; and to provide in-vehicle payment features.
+Communicating With You: To communicate with you about your vehicle and the Vehicle Technologies and Services, including to send you notices and alerts and to respond to your requests.
+Performing Quality, Safety, and Internal Research: To better understand how users access and use our vehicles and our Vehicle Technologies and Services; to evaluate and improve our vehicles and our Vehicle Technologies and Services; to develop new features, products, or services; for troubleshooting and maintenance; for quality and product improvements; and for other research and analytical purposes.
+Maintaining Safety, Recalls, and Warranties: For safety, recall and warranty purposes, such as to send recall notices, process recall and warranty claims, and for other purposes related to vehicle safety.
+Security and protection of rights: To protect the safety, rights, property, or security of Hyundai, our vehicles, the Vehicle Technologies and Services, any third party, or the general public; to detect, prevent, or otherwise address fraud, security, or technical issues; to prevent or stop activity that we, in our sole discretion, consider to be, or to pose a risk of being, an illegal, unethical, or legally actionable activity; to use as evidence in litigation; for defense or investigation of actual or anticipated legal claims; and to enforce this Notice or our Terms of Use.
+Complying With Legal Requests and Obligations: To comply with applicable legal or regulatory obligations, including as part of a judicial proceeding; to respond to a subpoena, warrant, court order, or other legal process; or as part of an investigation or request, whether formal or informal, from law enforcement or a governmental authority.
+For Business Transactions: In connection with planning or implementing transfers, restructuring or reorganization of our business or assets and similar business transactions.
+
+In limited circumstances, we may collect vehicle location data, regardless of location data settings, to protect Hyundai’s rights or property (including repossession in cases of delinquency), comply with applicable law, respond to valid legal processes (such as requests from law enforcement or government agencies), or, in exigent circumstances, help prevent loss of life, serious injury, or protect the safety of Hyundai personnel, vehicle users, visitors, or the public.
+
+Disclosure of Covered Information
+We may disclose Covered Information for any purposes not inconsistent with this Notice, our Privacy Notice, our written statements at the point of collection, or applicable law. In general, we disclose Covered Information as follows:
+
+Affiliates and Subsidiaries: We may disclose Covered Information with Hyundai Motor Company, our parent company headquartered in South Korea. Hyundai may also disclose Covered Information with our manufacturing subsidiaries, our finance affiliate Hyundai Capital America, and our R&D affiliate Hyundai America Technical Center, Inc.
+Vendors and Service Providers: We may disclose Covered Information to our vendors, service providers, suppliers, contractors or agents who process such data in order to provide services to us or to perform functions on our behalf.
+Business Partners: You may choose to disclose Covered Information with third parties, or direct Hyundai to share it with third parties, when you use their applications or services that: (i) are available through your vehicle’s infotainment system; (ii) are accessed through a third-party app on your mobile device when connected to the vehicle via Bluetooth or tethering; or (iii) require or allow linking your third-party account to a Hyundai vehicle or mobile app. If you choose to share Covered Information with a third party, that third party’s terms and privacy policies, and not this Notice, will govern the information you disclose or direct Hyundai to disclose.
+Dealers: We may disclose Covered Information about you when you use our Vehicle Technologies and Services with our authorized dealers, who may contact you directly for vehicle maintenance, repairs, and service scheduling, marketing, service offers, and similar purposes.
+Business Transfers: We may disclose and transfer Covered Information as part of any actual or contemplated merger, acquisition, financing, sale, bankruptcy or restructuring of all or part our business or assets, including during negotiations and due diligence related to such business transactions.
+Protecting Rights and Interests: We may disclose Covered Information to protect or defend the safety, rights, property or security of Hyundai, other parties or the general public, including to protect our Vehicle Technologies and Services, to detect, prevent or otherwise address fraud, security, technical issues or other activity which we, in our sole discretion, consider to be, or to pose a risk of being, illegal, unethical or legally actionable activity. We may also use Covered Information as evidence in litigation in which we are involved or for defense or investigation of actual or anticipated legal claims and as necessary to enforce this Notice, our Terms of Use,⁠
+the Hyundai Motor America Privacy Notice,⁠
+and the Bluelink Connected Services Agreement Terms and Conditions⁠
+and other applicable agreements with you.
+Legal Compliance and Lawful Requests: We may disclose Covered Information to comply with the law or legal proceedings pursuant to applicable statutes and regulations in response to subpoenas, court orders, search warrants and other lawful requests including responding to national security or law enforcement.
+With Your Consent: We may disclose Covered Information with your consent.
+
+Your Rights and Choices
+We offer several ways for you to exercise choices related to your Covered Information.
+Accessing and Updating Your Account Information. If you register for an account to use our Vehicle Technologies and Services, you can access and update certain information we have relating to your account within your account settings. For Bluelink® services, this can be done on the My Account page of MyHyundai.com⁠⁠⁠
+⁠.
+Bluelink® Cancelation. For vehicles equipped with Bluelink®, certain Vehicle Technologies and Services may be enabled prior to purchase, and Covered Information will be transmitted from your vehicle to us and others as set forth in this Notice. To stop remote transmission and collection from your vehicle, you must: (i) declining Bluelink® services at the point of purchase of a new vehicle, or (ii) cancel your vehicle’s existing Bluelink® subscription. You may cancel your vehicle’s subscription for Hyundai Bluelink® services by calling Bluelink® Customer Care at 855-2BlueLink. You may also cancel your vehicle’s subscription for Hyundai Bluelink® services by going to the Bluelink settings screen in your vehicle’s dashboard and clicking “Remove Vehicle Owner.”
+If you decline or cancel Bluelink® services, most Vehicle Technologies and Services will not be available to you. For cancellations or if you decline Bluelink® services, remote transmission of Covered Information from your vehicle will be stopped once your request has been processed, which may take up to several business days. Further, canceling or declining your subscription does not stop your vehicle and in-vehicle systems from generating or storing information all together. The in-vehicle safety, diagnostic and other tools and systems may continue to generate and store information, which may be accessed by independent dealers and others who service your vehicle, and shared with Hyundai, for performance, safety or diagnostic data to provide appropriate repair, maintenance and other safety-related services. Including, with law enforcement in the case of exigent circumstances.
+Canceling Third Party Subscriptions. Your vehicle may include a free trial of and access to certain third-party subscription-based services, including SiriusXM Radio and Wi-Fi hotspot functionality. If you subscribe to these third-party services at the end of your free trial, you must contact these third parties directly if you would like to subsequently cancel your subscription.
+Submitting Privacy Requests. Depending on your state of residence, you may have specific privacy rights and choices. For more information, please review the “Additional Privacy Disclosures for Applicable State Residents” section of the Privacy Notice⁠
+. California residents can find information about their rights in the “Additional Privacy Disclosures for California Residents” section of the Privacy Notice⁠
+.
+Sale or Transfer of Vehicle. If you sell or otherwise transfer your vehicle, it is your responsibility to: (i) contact us to cancel or transfer your Bluelink® subscription; and (ii) delete all stored information (such as contacts and saved locations) from your vehicle. If you do not delete this information, it may remain in the vehicle and may be accessible to future users of the vehicle. For instructions on how to delete information from your vehicle, please refer to your vehicle owner’s manual.
+Updating this Notice
+Hyundai reserves the right to change this Notice at any time. Hyundai will use, disclose, and otherwise process Covered Information in accordance with the Notice in effect at the time such Covered Information is processed. We will post any changes to this Notice on this page and update the “Last Updated” date at the top of this page. If we make material changes to this Notice, we will provide notice or obtain consent regarding such changes, as may be required by law. We encourage you to check back frequently so that you are always aware of our data practices.
+How to Contact Us
+Please visit our Contact Us⁠⁠⁠
+page.
