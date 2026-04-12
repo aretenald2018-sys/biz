@@ -132,6 +132,19 @@ export function TermsHubView() {
 
   useEffect(() => {
     setSelectedFilterKeys([]);
+    // 법인이 바뀌면 이전 법인의 자동정리 결과/차단 알림 배너도 함께 초기화
+    setProgress({
+      running: false,
+      phase: '',
+      current: 0,
+      total: 0,
+      succeeded: 0,
+      unchanged: 0,
+      failed: 0,
+      blocked: 0,
+      blockedUrls: [],
+      lastError: null,
+    });
   }, [selectedEntity]);
 
   useEffect(() => {
