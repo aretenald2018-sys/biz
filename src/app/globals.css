@@ -1151,3 +1151,65 @@ body.hyundai-theme {
   text-transform: none !important;
 }
 
+
+/* =========================================================================
+   국내약관 (KDP) — 모달 리치 HTML 렌더링 스타일
+   ========================================================================= */
+.kdp-rich {
+  font-family: HyundaiSansTextKR, sans-serif;
+  font-size: 13.5px;
+  line-height: 1.7;
+  color: #121416;
+}
+.kdp-rich p { margin: 0.35em 0; }
+.kdp-rich ul, .kdp-rich ol { margin: 0.35em 0 0.45em 1.2em; padding: 0; }
+.kdp-rich li { margin: 0.15em 0; }
+.kdp-rich h1, .kdp-rich h2, .kdp-rich h3, .kdp-rich h4, .kdp-rich h5, .kdp-rich h6 {
+  font-family: HyundaiSansHeadKR, HyundaiSansTextKR, sans-serif;
+  color: #002C5F;
+  margin: 0.8em 0 0.3em;
+  font-weight: 500;
+}
+.kdp-rich h3 { font-size: 15px; }
+.kdp-rich h4 { font-size: 13.5px; }
+.kdp-rich h5, .kdp-rich h6 { font-size: 12.5px; }
+.kdp-rich table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0.6em 0 0.8em;
+  font-size: 12.5px;
+  background: #FFFFFF;
+  border: 1px solid #EFEFF0;
+}
+.kdp-rich thead th,
+.kdp-rich th {
+  background: #F5F7F9;
+  color: #002C5F;
+  font-weight: 500;
+  text-align: left;
+  padding: 6px 10px;
+  border: 1px solid #EFEFF0;
+  vertical-align: top;
+}
+.kdp-rich td {
+  padding: 6px 10px;
+  border: 1px solid #EFEFF0;
+  vertical-align: top;
+  color: #121416;
+  white-space: pre-wrap;
+  word-break: keep-all;
+}
+.kdp-rich tr:nth-child(even) td { background: #FAFAFB; }
+.kdp-rich strong, .kdp-rich b { color: #121416; font-weight: 500; }
+.kdp-rich a { color: #0672ED; text-decoration: underline; }
+.kdp-rich dl { margin: 0.4em 0; }
+.kdp-rich dt { font-weight: 500; color: #002C5F; margin-top: 0.3em; }
+.kdp-rich dd { margin: 0 0 0.3em 0.8em; color: #535356; }
+.kdp-rich hr { border: 0; border-top: 1px solid #EFEFF0; margin: 0.8em 0; }
+.kdp-rich img { max-width: 100%; height: auto; }
+.kdp-modal-card[data-kdp-cited="true"] {
+  background: #FFF7E8 !important;
+  border-color: #EC8E01 !important;
+  box-shadow: 0 0 0 3px rgba(236,142,1,0.15);
+  transition: all 0.2s ease;
+}

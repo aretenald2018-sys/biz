@@ -9,6 +9,7 @@ import DocumentsPage from "@/routes/documents";
 import TicketDetailPage from "@/routes/ticket-detail";
 import TicketsPage from "@/routes/tickets";
 import TermsPage from "@/routes/terms";
+import DomesticTermsPage from "@/routes/domestic-terms";
 
 export default function App() {
   return (
@@ -27,6 +28,7 @@ export default function App() {
                 <Route path="/contracts" element={<ContractsPage />} />
                 <Route path="/documents" element={<DocumentsPage />} />
                 <Route path="/terms/*" element={<TermsPage />} />
+                <Route path="/domestic-terms" element={<DomesticTermsPage />} />
               </Routes>
             </main>
           </div>

@@ -9,6 +9,7 @@ const navItems = [
   { href: '/contracts', label: 'CONTRACTS', labelKo: '계약 현황', icon: '▤', exact: false },
   { href: '/documents', label: 'DOCUMENTS', labelKo: '표준문서', icon: '▥', exact: false },
   { href: '/terms', label: 'TERMS', labelKo: '약관처리', icon: '▧', exact: false },
+  { href: '/domestic-terms', label: 'KDP', labelKo: '국내약관', icon: '▨', exact: false },
 ];
 
 export function Sidebar() {

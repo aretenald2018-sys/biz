@@ -16,6 +16,7 @@ import termsAssetRoutes from "./routes/terms-assets";
 import termsDocumentRoutes from "./routes/terms-documents";
 import termsFactRoutes from "./routes/terms-facts";
 import termsMetaRoutes from "./routes/terms-meta";
+import kdpRoutes from "./routes/kdp";
 
 const app = new Hono();
 const isProduction = process.env.NODE_ENV === "production";
@@ -36,6 +37,7 @@ app.route("/", termsAssetRoutes);
 app.route("/", termsDocumentRoutes);
 app.route("/", termsFactRoutes);
 app.route("/", termsMetaRoutes);
+app.route("/", kdpRoutes);
 
 app.onError((error, c) => {
   console.error(error);
